@@ -13,11 +13,9 @@ Usage: #example
 * effectiveDateTime = "2022-01-08T15:30:00-05:00"
 * performer.reference = "Practitioner/us-core-practitioner-vr-s-jones"
 * valueDateTime.extension
-  * extension[0]
-    * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-day-vr"
+  * extension[ExtensionDateDayVitalRecords]
     * valueUnsignedInt = 8
-  * extension[+]
-    * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr"
+  * extension[ExtensionDateYearVitalRecords]
     * valueUnsignedInt = 2022
   * extension[+]
     * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr"
