@@ -1,0 +1,19 @@
+Instance: observation-parent-education-level-carmen-teresa-lee-common
+InstanceOf: ObservationParentEducationLevelVitalRecords
+Title: "Observation - Parent Education Level example [Carmen Teresa Lee]"
+Description: "Example of Observation-parent-education-level-vr profile (Carmen Teresa Lee)"
+Usage: #example
+* meta
+  * versionId = "6"
+  * lastUpdated = "2022-10-12T23:19:28.580+00:00"
+  * source = "#l59gdiBQVCtLWsut"
+* status = #final
+* code = $loinc#57712-2 "Highest level of education Mother"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named-common"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* focus
+  * reference = "RelatedPerson/relatedperson-mother-gestational-carmen-teresa-lee-common"
+  * display = "Patient - Mother (Carmen Teresa Lee)"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1449 "9th through 12th grade; no diploma"
+  * text = "9th through 12th grade; no diploma"
