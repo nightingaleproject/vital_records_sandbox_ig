@@ -9,12 +9,6 @@ Description: """This profile represents the average number of cigarettes smoked 
 * Number of Cigarettes Smoked in third or last trimester
 
 Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number."""
-* ^meta.versionId = "36"
-* ^meta.lastUpdated = "2023-04-25T05:49:48.067+00:00"
-* ^meta.source = "#R8QYl3QqRagN3H0S"
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * code 1..1 MS
 * code from CigaretteSmokingBeforeAndDuringPregnancy (required)
   * ^short = "This value set contains codes to determine the number of cigarettes smoked in specific periods before and during pregnancy."

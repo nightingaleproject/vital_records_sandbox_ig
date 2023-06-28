@@ -9,4 +9,4 @@ Usage: #example
 * performedDateTime = "2022-01-18T16:39:40-05:00"
 * performer
   * function = $sct#455381000124109 "Death certification by medical examiner or coroner (procedure)"
-  * actor.reference = "Practitioner/us-core-practitioner-vr-j-jones"
+  * actor = Reference(practitioner-vital-records-janet-seito-common) // "Practitioner/us-core-practitioner-vr-s-jones"
