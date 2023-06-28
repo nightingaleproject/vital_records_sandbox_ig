@@ -19,7 +19,7 @@ Usage: #example
 * valueCodeableConcept.text = "drug toxicity"
 * component[workInjuryIndicator]
   * valueCodeableConcept = $v2-0136#N "No"
-* component[placeOfDeath]
+* component[placeOfInjury]
   * code = $loinc#69450-5
   * valueCodeableConcept.text = "Private house"
 * component[transportationRole]
