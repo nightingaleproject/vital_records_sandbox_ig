@@ -3,10 +3,6 @@ InstanceOf: ObservationCauseOfDeathPart1VitalRecords
 Title: "Observation - Cause of Death Part1 Vital Records - A Freeman"
 Description: "Example "
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2022-12-08T18:13:43.360+00:00"
-  * source = "#ca9mDhZ05JN2UxRZ"
 * status = #final
 * code = $loinc#69453-9 "Cause of death [US Standard Certificate of Death]"
 * subject.reference = "Patient/us-core-patient-vr-a-freeman"

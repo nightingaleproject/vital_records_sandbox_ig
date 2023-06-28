@@ -3,12 +3,7 @@ InstanceOf: ObservationHistologicalPlacentalExamPerformed
 Title: "Observation - Histological Placental Exam Performed example [Fetus Not Named]"
 Description: "Example of Observation-histological-placental-exam-performed profile (Fetus Not Named)"
 Usage: #example
-* meta
-  * versionId = "5"
-  * lastUpdated = "2023-04-05T20:29:54.673+00:00"
-  * source = "#DwdwwmXJTfpbhvwp"
 * status = #final
-* code = $loinc#73767-6 "Histological placental examination was performed [US Standard Report of Fetal Death]"
 * subject
   * reference = "Patient/patient-decedent-fetus-not-named"
   * display = "Patient - Decedent Fetus (Fetus Not Named)"

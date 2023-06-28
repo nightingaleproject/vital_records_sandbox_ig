@@ -3,12 +3,6 @@ Parent: USCoreConditionProblemsHealthConcernsProfile
 Id: Condition-congenital-anomaly-of-newborn
 Title: "Condition - Congenital Anomaly of Newborn"
 Description: "This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."
-* ^meta.versionId = "29"
-* ^meta.lastUpdated = "2023-04-25T05:55:20.355+00:00"
-* ^meta.source = "#vlJeGZCO5mV8vNor"
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * . ^short = "Information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."
 * category contains congenitalAnomolyNewborn 1..1 MS
 * category[congenitalAnomolyNewborn] = $loinc#73780-9

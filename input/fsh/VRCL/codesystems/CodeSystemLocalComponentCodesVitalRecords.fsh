@@ -2,23 +2,6 @@ CodeSystem: CodeSystemLocalComponentCodesVitalRecords
 Id: CodeSystem-local-component-codes-vr
 Title: "CodeSystem - Local Components Codes Vital Records"
 Description: "Local Component Codes for observation components that lack an appropriate LOINC code."
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2022-12-02T02:03:56.605+00:00"
-* ^meta.source = "#oTMZpUXgpU8BBOcA"
-* ^version = "1.9.0"
-* ^status = #active
-* ^experimental = false
-* ^date = "2022-07-22T14:53:51+00:00"
-* ^publisher = "HL7 Public Health Working Group"
-* ^contact.name = "HL7 Public Health Working Group"
-* ^contact.telecom[0].system = #url
-* ^contact.telecom[=].value = "http://www.hl7.org/Special/committees/pher/index.cfm"
-* ^contact.telecom[+].system = #email
-* ^contact.telecom[=].value = "pher@lists.HL7.org"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^caseSensitive = false
-* ^content = #complete
-* ^count = 64
 * #position "position"
 * #lineNumber "line number"
 * #eCodeIndicator "e Code Indicator"

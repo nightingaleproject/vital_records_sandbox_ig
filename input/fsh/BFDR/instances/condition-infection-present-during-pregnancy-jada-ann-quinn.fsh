@@ -7,8 +7,8 @@ Usage: #example
   * versionId = "4"
   * lastUpdated = "2023-04-18T06:29:15.476+00:00"
   * source = "#fhSNnWz1OfZv7nxz"
-* category[0] = $condition-category#problem-list-item "Problem List Item"
-* category[+] = $loinc#72519-2 "Infections present AndOr treated during this pregnancy for live birth [US Standard Certificate of Live Birth]"
+* category[us-core] = $condition-category#problem-list-item "Problem List Item"
+* category[infectionDuringPregnancy] = $loinc#72519-2 "Infections present AndOr treated during this pregnancy for live birth [US Standard Certificate of Live Birth]"
 * code = $sct#105629000 "Chlamydial infection (disorder)"
   * text = "Chlamydial infection (disorder)"
 * subject
