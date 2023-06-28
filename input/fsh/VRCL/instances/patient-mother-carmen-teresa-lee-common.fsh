@@ -3,10 +3,6 @@ InstanceOf: PatientMotherVitalRecords
 Title: "Patient - Mother example [Carmen Teresa Lee]"
 Description: "Example of Patient-mother-vr profile (Carmen Teresa Lee)"
 Usage: #example
-* meta
-  * versionId = "5"
-  * lastUpdated = "2022-10-12T23:47:00.204+00:00"
-  * source = "#zy0leZXVNEKsb4C1"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

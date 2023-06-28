@@ -4,7 +4,6 @@ Title: "Observation - Cause of Death Part1 Vital Records - A Freeman"
 Description: "Example "
 Usage: #example
 * status = #final
-* code = $loinc#69453-9 "Cause of death [US Standard Certificate of Death]"
 * subject.reference = "Patient/us-core-patient-vr-a-freeman"
 * performer.reference = "Practitioner/us-core-practitioner-vr-s-jones"
 * valueCodeableConcept.text = "Fentanyl toxicity"

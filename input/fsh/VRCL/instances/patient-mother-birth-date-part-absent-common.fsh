@@ -3,10 +3,6 @@ InstanceOf: PatientMotherVitalRecords
 Title: "Patient - Mother Date Part Absent"
 Description: "Example of Patient-mother-vr profile (Date Part Absent)"
 Usage: #example
-* meta
-  * versionId = "5"
-  * lastUpdated = "2022-10-12T23:47:00.204+00:00"
-  * source = "#RU5P8yxoI2gvtQo0"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

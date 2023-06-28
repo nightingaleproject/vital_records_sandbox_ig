@@ -3,10 +3,6 @@ InstanceOf: RelatedPersonParentVitalRecords
 Title: "RelatedPerson - Stepmother"
 Description: "Example of RelatedPerson-parent-vr profile (stepmother)"
 Usage: #example
-* meta
-  * versionId = "7"
-  * lastUpdated = "2022-10-12T23:20:51.337+00:00"
-  * source = "#7WaAhX2LoivJOuBw"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

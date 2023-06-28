@@ -3,10 +3,6 @@ InstanceOf: RelatedPersonFatherNaturalVitalRecords
 Title: "RelatedPerson - Father Natural example [Tom Yan Lee]"
 Description: "Example of Relatedperson-father-natural-vr (Tom Yan Lee)"
 Usage: #example
-* meta
-  * versionId = "10"
-  * lastUpdated = "2022-10-12T23:44:48.451+00:00"
-  * source = "#2Fj2aXKtLXRSkizK"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

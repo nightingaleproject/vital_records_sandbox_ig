@@ -3,10 +3,6 @@ InstanceOf: PatientDecedentFetusVitalRecords
 Title: "Patient - Decedent Fetus example [Fetus Not Named]"
 Description: "Example of Patient-decedent-fetus-vr (Fetus Not Named)"
 Usage: #example
-* meta
-  * versionId = "6"
-  * lastUpdated = "2022-10-12T23:20:22.366+00:00"
-  * source = "#jxOVgdPtoiw6goDY"
 * extension[0]
   * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
   * valueCode = #F

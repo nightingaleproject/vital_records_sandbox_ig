@@ -3,10 +3,6 @@ InstanceOf: PatientMotherVitalRecords
 Title: "Patient - Mother Jada Ann Quinn"
 Description: "Example of Patient-mother-vr profile (Jada Ann Quinn)"
 Usage: #example
-* meta
-  * versionId = "5"
-  * lastUpdated = "2022-10-12T23:47:00.205+00:00"
-  * source = "#7SSQiZThvEXo2QZe"
 * extension[0]
   * extension[0]
     * url = "ombCategory"
