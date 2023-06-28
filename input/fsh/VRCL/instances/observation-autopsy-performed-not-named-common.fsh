@@ -6,6 +6,6 @@ Usage: #example
 * status = #final
 //* code = $loinc#73768-4 "Autopsy was performed [US Standard Report of Fetal Death]"
 * subject
-  * reference = "Patient/patient-decedent-fetus-not-named-common"
+  * reference = Reference(patient-decedent-fetus-not-named-common)
   * display = "Patient - Decedent Fetus (Fetus Not Named)"
-* valueCodeableConcept = $sct#719828003 "Autopsy not done"
+* valueCodeableConcept = = $v2-0136#N "No" // $sct#719828003 "Autopsy not done"

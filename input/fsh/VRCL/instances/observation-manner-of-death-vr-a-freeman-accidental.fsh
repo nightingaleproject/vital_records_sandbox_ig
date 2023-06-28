@@ -5,5 +5,5 @@ Description: "Example "
 Usage: #example
 * status = #final
 * subject = Reference(us-core-patient-vr-a-freeman)
-* performer = Reference(Practitioner/us-core-practitioner-vr-s-jones)
+* performer = Reference(practitioner-vital-records-janet-seito-common)
 * valueCodeableConcept = $sct#7878000 "Accidental death"
