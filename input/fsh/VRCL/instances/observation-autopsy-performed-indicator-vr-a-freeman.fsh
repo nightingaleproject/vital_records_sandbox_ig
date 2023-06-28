@@ -4,7 +4,7 @@ Title: "Observation - Autopsy Performed Indicator Vital Records - A Freeman"
 Description: "Example "
 Usage: #example
 * status = #final
-* subject.reference = "Patient/us-core-patient-vr-a-freeman"
+* subject = Reference(us-core-patient-vr-a-freeman)
 * valueCodeableConcept = $v2-0136#Y "Yes"
 * component
   * code = $loinc#69436-4
