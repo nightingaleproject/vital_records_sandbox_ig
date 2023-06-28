@@ -3,13 +3,9 @@ InstanceOf: ObservationToxicologyLabResult
 Title: "Observation - Toxicology Lab Result - Fentanyl Blood Freeman"
 Description: "Observation  - Toxicology Lab Result: Fentanyl Blood Freeman example"
 Usage: #example
-* meta
-  * versionId = "9"
-  * lastUpdated = "2022-08-16T00:44:09.899+00:00"
-  * source = "#p6Xwgen4OETJwwWD"
+
 * status = #final
-* category = $observation-category#laboratory "Laboratory"
-  * text = "Laboratory"
+
 * code = $loinc#73938-3 "fentaNYL [Mass/volume] in Blood by Confirmatory method"
   * text = "fentaNYL [Mass/volume] in Blood by Confirmatory method"
 * subject
