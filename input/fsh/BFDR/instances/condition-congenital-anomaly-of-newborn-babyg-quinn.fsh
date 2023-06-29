@@ -7,8 +7,8 @@ Usage: #example
   * versionId = "2"
   * lastUpdated = "2023-04-18T06:17:36.910+00:00"
   * source = "#ma1LRiBdSMh2kMxw"
-* category[us-core] = $condition-category#problem-list-item "Problem List Item"
-* category[congenitalAnomolyNewborn] = $loinc#73780-9 "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
+//* category[us-core] = $condition-category#problem-list-item "Problem List Item"
+//* category[congenitalAnomolyNewborn] = $loinc#73780-9 "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
 * code = $sct#12770006 "Cyanotic congenital heart disease (disorder)"
   * text = "Cyanotic congenital heart disease (disorder)"
 * subject
