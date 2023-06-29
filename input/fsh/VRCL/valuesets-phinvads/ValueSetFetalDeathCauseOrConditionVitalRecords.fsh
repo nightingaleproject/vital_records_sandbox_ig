@@ -12,7 +12,7 @@ Description: "This value set contains codes to represent fetal death cause or co
 * SNOMED_CT#702709008 "Congenital anomaly of fetus"
 * SNOMED_CT#277489001 "Fetal Injury"
 * SNOMED_CT#128270001 "Infectious disorder of the fetus"
-* FetalDeathCauseOrConditionCS#materialconditions "Maternal Conditions/Diseases (Specify)" // PHC1301
+* FetalDeathCauseOrConditionCS#maternalconditions "Maternal Conditions/Diseases (Specify)" // PHC1301
 * FetalDeathCauseOrConditionCS#membranes "Membranes: Other (Specify)" // PHC1299
 * FetalDeathCauseOrConditionCS#fetalconditions "Other Fetal Conditions/Disorder (Specify)" // PHC1300
 * $v3-NullFlavor#UNK "unknown"
