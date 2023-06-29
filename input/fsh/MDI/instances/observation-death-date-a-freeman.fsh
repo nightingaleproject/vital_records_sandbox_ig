@@ -12,22 +12,10 @@ Usage: #example
 * subject.reference = "Patient/us-core-patient-a-freeman"
 * effectiveDateTime = "2022-01-08T15:30:00-05:00"
 * performer.reference = "Practitioner/us-core-practitioner-s-jones"
-* valueDateTime.extension
-  * extension[0]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-day"
-    * valueUnsignedInt = 8
-  * extension[+]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-year"
-    * valueUnsignedInt = 2022
-  * extension[+]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-month"
-    * valueUnsignedInt = 1
-  * extension[+]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-time"
-    * valueTime.extension
-      * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-      * valueCode = #unknown
-  * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"
+* valueDateTime.extension[partialDateTime].extension[day].valueUnsignedInt = 8
+* valueDateTime.extension[partialDateTime].extension[month].valueUnsignedInt = 1
+* valueDateTime.extension[partialDateTime].extension[year].valueUnsignedInt = 2022
+* valueDateTime.extension[partialDateTime].extension[time].valueTime.extension[dataabsent].valueCode = $dataabsentreason401#unknown
 * method = CodeSystemMDI#approximate "Approximate"
 * component[0]
   * code = $loinc#80616-6 "Date and time pronounced dead [US Standard Certificate of Death]"
