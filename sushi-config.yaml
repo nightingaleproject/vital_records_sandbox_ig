@@ -161,16 +161,20 @@ menu:
 # URL when generating the IG JSON.
 #
 groups:
-  VRCL CodeSystems:
+  VRCLCodeSystems:
     name: VRCL CodeSystems
-    description: VRCL CodeSystems 
     resources:
       - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemDeathPregnancyStatusVitalRecords
+      - FetalDeathCauseOrConditionCS
+  
+  PHINVADSValuesets:
+    name: PHINVADS ValueSets
+    resources:
+      - ValueSetFetalDeathCauseOrCondition
 
-  VRCL ValueSets:
+  VRCLValueSets:
     name: VRCL ValueSets
-    description: VRCL ValueSets
     resources:
       - ValueSetDatePartVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
@@ -187,7 +191,7 @@ groups:
       - ValueSetCertifierTypes
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetFatherRelationshipVitalRecords
-  BFDR ValueSets:
+  BFDRValueSets:
     name: BFDR ValueSets
     description: BFDR ValueSets
     resources:
@@ -219,9 +223,8 @@ groups:
       - OrganizationTypeCS
       - DocumentSectionCS
 
-    VRDR ValueSets:
+    VRDRValueSets:
       name: VRDR ValueSets
-      description: VRDR ValueSets 
       resources:    
         - AdministrativeGenderVS
         - SpouseAliveVS
