@@ -28,5 +28,5 @@ Alias: $ValueSet-death-pregnancy-status = ValueSetPregnancyStatusVitalRecords
 Alias: $ValueSet-transportation-incident-role = ValueSetTransportationIncidentRoleVitalRecords
 Alias: $ValueSet-manner-of-death = ValueSetMannerOfDeathVitalRecords
 Alias: $v3-Ethnicity_1 = http://terminology.hl7.org/ValueSet/v3-Ethnicity
-Alias: $ValueSet-contributory-tobacco-use = http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-contributory-tobacco-use
-Alias: $ValueSet-certifier-types = http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types
+Alias: $ValueSet-contributory-tobacco-use = ValueSetContributoryTobaccoUse //http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-contributory-tobacco-use
+Alias: $ValueSet-certifier-types = ValueSetCertifierTypes // http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types
