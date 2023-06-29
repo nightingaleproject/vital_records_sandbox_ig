@@ -10,7 +10,6 @@ name: VitalRecordsSandboxIG
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
 version: 0.1.0
-license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 5.0.1
@@ -26,8 +25,8 @@ dependencies:
 
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+license: CC0-1.0  # https://www.hl7.org/fhir/valueset-spdx-license.html
+jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: Example Publisher
   url: http://example.org/example-publisher
@@ -161,20 +160,110 @@ menu:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
-# groups:
-#   GroupA:
-#     name: Group A
-#     description: The Alpha Group
-#     resources:
-#     - StructureDefinition/animal-patient
-#     - StructureDefinition/arm-procedure
-#   GroupB:
-#     name: Group B
-#     description: The Beta Group
-#     resources:
-#     - StructureDefinition/bark-control
-#     - StructureDefinition/bee-sting
-#
+groups:
+  VRCL CodeSystems:
+    name: VRCL CodeSystems
+    description: VRCL CodeSystems 
+    resources:
+      - CodeSystemLocalComponentCodesVitalRecords
+      - CodeSystemDeathPregnancyStatusVitalRecords
+
+  VRCL ValueSets:
+    name: VRCL ValueSets
+    description: VRCL ValueSets
+    resources:
+      - ValueSetDatePartVitalRecords
+      - ValueSetUnitsOfAgeVitalRecords
+      - ValueSetEducationLevelPersonVitalRecords
+      - ValueSetApgarTimingVitalRecords
+      - ValueSetYesNoNotApplicableVitalRecords
+      - ValueSetDeathPregnancyStatusVitalRecords
+      - ValueSetYesNoUnknownVitalRecords
+      - ValueSetDateEstablishmentApproachVitalRecords
+      - ValueSetPlaceOfDeathVitalRecords
+      - ValueSetYesNoUnknownNotApplicableVitalRecords
+      - ValueSetTransportationIncidentRoleVitalRecords
+      - ValueSetMannerOfDeathVitalRecords
+      - ValueSetCertifierTypes
+      - ValueSetMotherRelationshipVitalRecords
+      - ValueSetFatherRelationshipVitalRecords
+  BFDR ValueSets:
+    name: BFDR ValueSets
+    description: BFDR ValueSets
+    resources:
+      - CigaretteSmokingBeforeAndDuringPregnancy
+  
+  VRDR CodeSystems:
+    name: VRDR CodeSystems
+    description: VRDR CodeSystems 
+    resources:
+      - SystemRejectCS
+      - BypassEditFlagCS
+      - ActivityAtTimeOfDeathCS
+      - PregnancyStatusCS
+      - CountryCodeCS
+      - ReplaceStatusCS
+      - LocationTypeCS
+      - FilingFormatCS
+      - HispanicOriginCS
+      - TransaxConversionCS
+      - IntentionalRejectCS
+      - RaceCodeCS
+      - JurisdictionsCS
+      - DateOfDeathDeterminationMethodsCS
+      - MissingValueReasonCS
+      - CanadianProvincesCS
+      - RaceRecode40CS
+      - ObservationsCS
+      - ComponentCS
+      - OrganizationTypeCS
+      - DocumentSectionCS
+
+    VRDR ValueSets:
+      name: VRDR ValueSets
+      description: VRDR ValueSets 
+      resources:    
+        - AdministrativeGenderVS
+        - SpouseAliveVS
+        - PlaceOfInjuryVS
+        - MannerOfDeathVS
+        - IntentionalRejectVS
+        - SystemRejectVS
+        - TransaxConversionVS
+        - ActivityAtTimeOfDeathVS
+        - ICD10CausesOfDeathVS
+        - PlaceOfDeathVS
+        - DateOfDeathDeterminationMethodsVS
+        - HispanicNoUnknownVS
+        - YesNoNotApplicableVS
+        - YesNoUnknownVS
+        - YesNoUnknownNotApplicableVS
+        - ResidenceCountryVS
+        - BirthplaceCountryVS
+        - EducationLevelVS
+        - PregnancyStatusVS
+        - FilingFormatVS
+        - MethodOfDispositionVS
+        - UnitsOfAgeVS
+        - USStatesAndTerritoriesVS
+        - StatesTerritoriesAndProvincesVS
+        - JurisdictionsProvincesVS
+        - CanadaProvincesVS
+        - JurisdictionVS
+        - HispanicOriginVS
+        - RaceCodeVS
+        - RaceRecode40VS
+        - ContributoryTobaccoUseVS
+        - CertifierTypesVS
+        - RaceMissingValueReasonVS
+        - MaritalStatusVS
+        - ReplaceStatusVS
+        - TransportationIncidentRoleVS
+        - EditBypass01VS
+        - EditBypass012VS
+        - EditBypass0124VS
+        - EditBypass01234VS      
+
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and

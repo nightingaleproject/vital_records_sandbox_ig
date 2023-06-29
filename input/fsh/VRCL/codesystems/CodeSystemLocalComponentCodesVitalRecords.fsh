@@ -2,6 +2,8 @@ CodeSystem: CodeSystemLocalComponentCodesVitalRecords
 Id: CodeSystem-local-component-codes-vr
 Title: "CodeSystem - Local Components Codes Vital Records"
 Description: "Local Component Codes for observation components that lack an appropriate LOINC code."
+* ^caseSensitive = true
+* ^experimental = false
 * #position "position"
 * #lineNumber "line number"
 * #eCodeIndicator "e Code Indicator"

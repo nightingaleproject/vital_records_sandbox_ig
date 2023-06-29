@@ -3,10 +3,6 @@ InstanceOf: ObservationCigaretteSmokingBeforeDuringPregnancy
 Title: "Observation - Cigarette Smoking Before During Pregnancy example [second 3 months: Carmen Teresa Lee]"
 Description: "Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Carmen Teresa Lee)"
 Usage: #example
-* meta
-  * versionId = "3"
-  * lastUpdated = "2023-04-05T20:26:27.870+00:00"
-  * source = "#l6VdKAfYbIPWkDxQ"
 * status = #final
 * code = $loinc#87299-4 "Cigarettes smoked per day by Mother--2nd trimester"
   * text = "Cigarettes smoked per day by Mother--2nd trimester"

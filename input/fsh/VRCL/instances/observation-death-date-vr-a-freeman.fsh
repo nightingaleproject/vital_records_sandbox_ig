@@ -4,10 +4,9 @@ Title: "Observation - Death Date Vital Records - A Freeman example"
 Description: "Example "
 Usage: #example
 * status = #final
-* code = $loinc#81956-5 "Date+time of death"
-* subject.reference = "Patient/us-core-patient-vr-a-freeman"
+* subject = Reference(us-core-patient-vr-a-freeman)
 * effectiveDateTime = "2022-01-08T15:30:00-05:00"
-* performer.reference = "Practitioner/us-core-practitioner-vr-s-jones"
+* performer = Reference(practitioner-vital-records-janet-seito-common) // "Practitioner/us-core-practitioner-vr-s-jones"
 * valueDateTime.extension[partialDateTime].extension[day].valueUnsignedInt = 12
 * valueDateTime.extension[partialDateTime].extension[month].valueUnsignedInt = 11
 * valueDateTime.extension[partialDateTime].extension[year].valueUnsignedInt = 2020

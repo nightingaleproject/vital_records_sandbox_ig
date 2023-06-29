@@ -4,7 +4,6 @@ Title: "Observation - Birth Weight example [Baby G Quinn]"
 Description: "Example of Observation-birth-weight-vr profile (Baby G Quinn)"
 Usage: #example
 * status = #final
-* code = $loinc#8339-4 "Birth weight Measured"
 * subject
   * reference = "Patient/patient-child-babyg-quinn-common"
   * display = "BabyG Quinn"

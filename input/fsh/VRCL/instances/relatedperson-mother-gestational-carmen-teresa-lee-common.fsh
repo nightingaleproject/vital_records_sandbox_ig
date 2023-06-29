@@ -3,10 +3,6 @@ InstanceOf: RelatedPersonMotherGestationalVitalRecords
 Title: "RelatedPerson - Mother Gestaional example [Carmen Teresa Lee]"
 Description: "Example of Relatedperson-gestational-vr profile (Carmen Teresa Lee)"
 Usage: #example
-* meta
-  * versionId = "7"
-  * lastUpdated = "2022-10-12T23:20:51.337+00:00"
-  * source = "#sQjZXfQ23NoQakck"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

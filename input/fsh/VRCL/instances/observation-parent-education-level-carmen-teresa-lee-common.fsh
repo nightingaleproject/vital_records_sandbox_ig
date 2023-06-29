@@ -3,10 +3,6 @@ InstanceOf: ObservationParentEducationLevelVitalRecords
 Title: "Observation - Parent Education Level example [Carmen Teresa Lee]"
 Description: "Example of Observation-parent-education-level-vr profile (Carmen Teresa Lee)"
 Usage: #example
-* meta
-  * versionId = "6"
-  * lastUpdated = "2022-10-12T23:19:28.580+00:00"
-  * source = "#l59gdiBQVCtLWsut"
 * status = #final
 * code = $loinc#57712-2 "Highest level of education Mother"
 * subject

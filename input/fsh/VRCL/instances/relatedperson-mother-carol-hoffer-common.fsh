@@ -3,10 +3,6 @@ InstanceOf: RelatedPersonMotherVitalRecords
 Title: "RelatedPerson - Adoptive Mother"
 Description: "Example of RelatedPerson-mother-vr profile (adoptive mother)"
 Usage: #example
-* meta
-  * versionId = "6"
-  * lastUpdated = "2022-10-12T23:20:51.336+00:00"
-  * source = "#tBXtKcKTjm5vIXbF"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

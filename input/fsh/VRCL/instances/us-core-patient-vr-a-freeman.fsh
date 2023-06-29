@@ -2,10 +2,6 @@ Instance: us-core-patient-vr-a-freeman
 InstanceOf: USCorePatientProfile
 Description: "Example "
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2022-12-08T18:35:37.423+00:00"
-  * source = "#SF68CSAKw6s3C7A3"
 * extension[0]
   * extension[0]
     * url = "detailed"

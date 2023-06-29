@@ -4,6 +4,7 @@ Title: "CodeSystem - MDI"
 Description: "This code system contains codes for use in death investigations and reporting."
 * ^caseSensitive = true
 * ^content = #complete
+* ^experimental = false
 * #demographics "Demographics Section"
 * #circumstances "Circumstances of the Death Section"
 * #jurisdiction "Jurisdiction Section"

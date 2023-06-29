@@ -3,10 +3,6 @@ InstanceOf: RelatedPersonFatherVitalRecords
 Title: "RelatedPerson - Adoptive Father"
 Description: "Example of RelatedPerson-father-vr profile (adoptive father)"
 Usage: #example
-* meta
-  * versionId = "6"
-  * lastUpdated = "2022-10-12T23:44:48.451+00:00"
-  * source = "#NFXMtTGuThQOo4IY"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

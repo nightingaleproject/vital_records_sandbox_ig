@@ -3,10 +3,6 @@ InstanceOf: PatientChildVitalRecords
 Title: "Patient - Child example [Baby G Quinn]"
 Description: "Example of Patient-child-vr profile (Baby G Quinn)"
 Usage: #example
-* meta
-  * versionId = "4"
-  * lastUpdated = "2022-10-12T23:20:22.368+00:00"
-  * source = "#cxlRqVvrSrzlzdK4"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

@@ -1,0 +1,17 @@
+Profile: BundleMessageToxToMDI
+Parent: Bundle
+Id: Bundle-message-tox-to-mdi
+Title: "Bundle - Message Toxicology to MDI"
+Description: "This Bundle profile represents a Message Bundle from a forensic toxicology laboratory to an MDI information management system. It contains a Message Header and a DiagnosticReport - Toxicology Lab Result to MDI."
+* ^meta.versionId = "10"
+* ^meta.lastUpdated = "2022-08-19T12:54:02.228+00:00"
+* ^meta.source = "#EV2XKzJlth2HTMeA"
+* identifier 1.. MS
+* type = #message (exactly)
+* type MS
+* entry ^slicing.discriminator.type = #profile
+  * ^slicing.discriminator.path = "$this.resource"
+  * ^slicing.rules = #open
+* entry contains ToxtoMDIMessage 1..1 MS
+* entry[ToxtoMDIMessage].resource 1..
+* entry[ToxtoMDIMessage].resource only MessageHeaderToxicologyToMDI
