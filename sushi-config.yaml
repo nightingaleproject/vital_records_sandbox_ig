@@ -172,6 +172,7 @@ groups:
     name: PHINVADS ValueSets
     resources:
       - ValueSetFetalDeathCauseOrCondition
+      - ValueSetHistologicalPlacentalExamination
 
   VRCLValueSets:
     name: VRCL ValueSets
