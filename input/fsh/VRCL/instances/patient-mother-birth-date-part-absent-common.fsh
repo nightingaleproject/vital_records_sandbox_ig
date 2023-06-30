@@ -42,26 +42,11 @@ Usage: #example
   * given[+] = "Teresa"
 * gender = #female
 * birthDate = "1986"
-  * extension[0]
-    * extension[0]
-      * url = "date-part"
-      * valueCodeableConcept = $sct#258706009 "month (qualifier value)"
-    * extension[+]
-      * url = "absent-reason"
-      * valueCode = #asked-unknown
-    * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason-vr"
-  * extension[+]
-    * extension[0]
-      * url = "date-part"
-      * valueCodeableConcept = $sct#258703001 "day (qualifier value)"
-    * extension[+]
-      * url = "absent-reason"
-      * valueCode = #asked-unknown
-    * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason-vr"
+  * extension[datePartAbsentReason]
+    * extension[date-part].valueCodeableConcept = $sct#258706009 "month (qualifier value)"
+    * extension[absent-reason].valueCode = #asked-unknown
 * address
-  * extension
-    * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr"
-    * valueCoding = $v2-0532#N "No"
+  * extension[withinCityLimitsIndicator].valueCoding = $v2-0532#N "No"
   * use = #home
   * line = "3670 Miller Road"
   * city = "Ann Arbor"

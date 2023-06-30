@@ -197,7 +197,7 @@ groups:
     resources:
       - CigaretteSmokingBeforeAndDuringPregnancy
   
-  VRDR CodeSystems:
+  VRDRCodeSystems:
     name: VRDR CodeSystems
     description: VRDR CodeSystems 
     resources:
