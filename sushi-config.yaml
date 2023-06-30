@@ -177,6 +177,7 @@ groups:
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetDeliveryRoutes
       - ValueSetFetalDeathTimePoints
+      - ValueSetNewbornCongenitalAnomalies
 
   VRCLValueSets:
     name: VRCL ValueSets
