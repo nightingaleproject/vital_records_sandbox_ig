@@ -10,6 +10,7 @@ Alias: $v3-Ethnicity = http://terminology.hl7.org/CodeSystem/v3-Ethnicity
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v2-0532 = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: $CodeSystem-local-component-codes = CodesystemLocalComponentCodes 
+Alias: $CodeSystem-birth-and-fetal-death-financial-class = CodesystemLocalComponentCodes 
 
 Alias: $Extension-partial-date-time = ExtensionPartialDateTimeVitalRecords //// http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time
 Alias: $Extension-date-year = ExtensionDateYearVitalRecords // http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year
