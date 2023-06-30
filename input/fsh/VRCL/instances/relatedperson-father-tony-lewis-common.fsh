@@ -3,25 +3,13 @@ InstanceOf: RelatedPersonFatherVitalRecords
 Title: "RelatedPerson - Adoptive Father"
 Description: "Example of RelatedPerson-father-vr profile (adoptive father)"
 Usage: #example
-* extension[0]
-  * extension[0]
-    * url = "ombCategory"
-    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
-  * extension[+]
-    * url = "text"
-    * valueString = "White"
-  * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-* extension[+]
-  * extension[0]
-    * url = "ombCategory"
-    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
-  * extension[+]
-    * url = "text"
-    * valueString = "Not Hispanic or Latino"
-  * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"
-  * valueAddress.state = "VT"
+* extension[race]
+  * extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
+  * extension[text].valueString = "White"
+* extension[ethnicity]
+  * extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
+  * extension[text].valueString = "Not Hispanic or Latino"
+* extension[birthPlace].valueAddress.state = "VT"
 * active = true
 * patient
   * reference = "Patient/patient-child-babyg-quinn-common"
