@@ -58,9 +58,7 @@ Usage: #example
 * gender = #female
 * birthDate = "1985-01-15"
 * address[0]
-  * extension
-    * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr"
-    * valueCoding = $v2-0532#Y "Yes"
+  * extension[withinCityLimitsIndicator].valueCoding = $v2-0532#Y "Yes"
   * use = #home
   * line = "1875 West Morton Avenue"
   * city = "Salt Lake City"
