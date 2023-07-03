@@ -173,6 +173,7 @@ groups:
     resources:
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetHistologicalPlacentalExamination
+      - ValueSetDeliveryRoutes
 
   VRCLValueSets:
     name: VRCL ValueSets
