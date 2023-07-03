@@ -173,11 +173,12 @@ groups:
     resources:
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetHistologicalPlacentalExamination
+      - ValueSetInfectionsDuringPregnancyLiveBirth
+      - ValueSetNewbornCongenitalAnomalies
       - ValueSetObstetricProcedure
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetDeliveryRoutes
       - ValueSetFetalDeathTimePoints
-      - ValueSetNewbornCongenitalAnomalies
 
   VRCLValueSets:
     name: VRCL ValueSets
