@@ -175,6 +175,7 @@ groups:
       - ValueSetHistologicalPlacentalExamination
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetDeliveryRoutes
+      - ValueSetFetalDeathTimePoints
 
   VRCLValueSets:
     name: VRCL ValueSets
