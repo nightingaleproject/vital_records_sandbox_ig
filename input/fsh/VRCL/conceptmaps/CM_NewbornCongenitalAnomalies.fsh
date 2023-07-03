@@ -4,34 +4,6 @@ Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(NewbornCongenitalAnomalies, ValueSetNewbornCongenitalAnomalies)
 * insert AddGroup("IJE", $sct)
-
-Congenital Anomalies of the Newborn--Anencephaly	ANEN
-Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida	MNSB
-Congenital Anomalies of the Newborn--Cyanotic congenital heart disease	CCHD
-Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia	CDH
-Congenital Anomalies of the Newborn--Omphalocele	OMPH
-Congenital Anomalies of the Newborn--Gastroschisis	GAST
-Congenital Anomalies of the Newborn--Limb Reduction Defect	LIMB
-Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate	CL
-Congenital Anomalies of the Newborn--Cleft Palate Alone	CP
-Congenital Anomalies of the Newborn--Down Syndrome	DOWT
-Congenital Anomalies of the Newborn--Suspected Chromosomal disorder	CDIT
-Congenital Anomalies of the Newborn--Hypospadias	HYPO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * insert MapConcept( #ANEN,  "Congenital Anomalies of the Newborn--Anencephaly", #89369001, "Anencephaly")
 * insert MapConcept( #MNSB,  "Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida", #67531005, "Meningomyelocele/Spina bifida")
 * insert MapConcept( #CCHD,  "Congenital Anomalies of the Newborn--Cyanotic congenital heart disease", #12770006, "Cyanotic congenital heart disease")
@@ -46,6 +18,3 @@ Congenital Anomalies of the Newborn--Hypospadias	HYPO
 * insert MapConcept( #HYPO,  "Congenital Anomalies of the Newborn--Hypospadias", #416010008, "Hypospadias")
 // not IJE mapping for "none" because these mappings are to IJE fields that can be Y N U
 //* insert MapConcept( ---,  ---, #260413007, "None")
-
-
-
