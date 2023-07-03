@@ -202,7 +202,7 @@ Usage: #example
 * item[+]
   * linkId = "mother-education"
   * insert definition(definition, Canonical(ObservationParentEducationLevelVitalRecords\), Observation.value)
-  * definition = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr#Observation.value"
+  //* definition = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr#Observation.value"
   * code = $loinc#57712-2 "Highest level of education Mother"
   * prefix = "8"
   * text = "What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received)."
