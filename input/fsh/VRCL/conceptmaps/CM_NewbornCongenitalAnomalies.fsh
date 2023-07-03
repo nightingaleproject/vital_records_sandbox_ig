@@ -10,7 +10,7 @@ Usage: #definition
 * insert MapConcept( #CDH,  "Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia", #17190001, "Congenital diaphragmatic hernia")
 * insert MapConcept( #OMPH,  "Congenital Anomalies of the Newborn--Omphalocele", #18735004, "Omphalocele")
 * insert MapConcept( #GAST,  "Congenital Anomalies of the Newborn--Gastroschisis", #72951007, "Gastroschisis")
-* insert MapConcept( #LIMB,  "Congenital Anomalies of the Newborn--Limb Reduction Defect", #67341007, "Limb reduction defect \(excluding congenital amputation and dwarfing syndromes\)")
+* insert MapConcept( #LIMB,  "Congenital Anomalies of the Newborn--Limb Reduction Defect", #67341007, "Limb reduction defect (excluding congenital amputation and dwarfing syndromes\)")
 * insert MapConcept( #CL,  "Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate", #80281008, "Cleft Lip with or without Cleft Palate")
 * insert MapConcept( #CP,  "Congenital Anomalies of the Newborn--Cleft Palate Alone", #87979003, "Cleft Palate alone")
 * insert MapConcept( #DOWT,  "Congenital Anomalies of the Newborn--Down Syndrome", #70156005, "Down Syndrome")
