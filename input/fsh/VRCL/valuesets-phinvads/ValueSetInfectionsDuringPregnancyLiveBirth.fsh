@@ -1,7 +1,7 @@
 ValueSet: ValueSetInfectionsDuringPregnancyLiveBirth
 Id: ValueSet-infections-during-pregnancy-live-birth
 Title: "ValueSet - Infections During Pregnancy Live Birth"
-Description: "This value set contains codes to represent infections during pregnancy for live birth (PHVS_InfectionsDuringPregnancyLiveBirth_NCHS)."
+Description: "This valueset is based on [PHVS_InfectionsDuringPregnancyLiveBirth_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=AEF5A3D4-960C-4194-8BB6-392C7282D216)"
 * ^experimental = false
 * insert SNOMEDCopyright
 * SNOMED_CT#15628003 "Gonorrhea"
