@@ -160,16 +160,14 @@ menu:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
-groups:
-  VRCLCodeSystems:
-    name: VRCL CodeSystems
+groups:  
+  VRCommonProfiles:
+    name: VRCL New Common Profiles 
     resources:
-      - CodeSystemLocalComponentCodesVitalRecords
-      - CodeSystemDeathPregnancyStatusVitalRecords
-      - FetalDeathCauseOrConditionCS
-  
+      - ObservationTobaccoUseContributedToDeathVitalRecordsNew
+
   PHINVADSValuesets:
-    name: PHINVADS ValueSets
+    name: New ValueSets from PHINVADS
     resources:
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetHistologicalPlacentalExamination
@@ -178,6 +176,13 @@ groups:
       - ValueSetDeliveryRoutes
       - ValueSetFetalDeathTimePoints
 
+  VRCLCodeSystems:
+    name: VRCL CodeSystems
+    resources:
+      - CodeSystemLocalComponentCodesVitalRecords
+      - CodeSystemDeathPregnancyStatusVitalRecords
+      - FetalDeathCauseOrConditionCS
+      
   VRCLValueSets:
     name: VRCL ValueSets
     resources:
