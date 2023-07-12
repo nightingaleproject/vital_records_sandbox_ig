@@ -1,3 +1,18 @@
+/*
+BFDR Has 3 Autopsy related fields:
+   AUTOP and HISTOP have yes/no/planned values.   
+   AUTOPF has yes/no/NA -- here it means has an autopsy OR a histological exam
+
+VRDR and MDI have two fields:
+   AUTOP have yes/no/unknown values.   
+   AUTOPF has yes/no/unknown/NA -- here it means has an autospy 
+
+Seems like BFDR is a different use case.   The modeling in the BFDR histology profile is wrong, since the data value is boolean (not y/n/uknown).   These are two very similar use cases, but need to figure out how to model them in the smoothest way for sharing.
+
+BFDR has a different, but related, profile (Observation - Autopsy or Histological Exam Results Used) for whether or not autopsy or histological examinations were used, which does not include a performer or results available slice. BFDR subject is a patient.
+*/
+
+
 Profile: ObservationAutopsyPerformedIndicatorVitalRecordsNew
 Parent: Observation
 Id: Observation-autopsy-performed-indicator-vital-records-new
