@@ -6,7 +6,7 @@ Performer in VRDR is certifier. US Core Practitioner in MDI; either in VRCL. Per
 VRDR does not mark MS for any elements. Marked MS in MDI and VRCL: status, code, subject, performer, value[x] (slice def)
 
 */
-Profile: ObservationContributingCauseOfDeathPart2VitalRecords-new
+Profile: ObservationCauseOfDeathPart2VitalRecords-new
 Parent: Observation
 Id: Observation-cause-of-death-part2-vr-new
 Title: "Observation - Contributing Cause of Death Part 2 Vital Records"

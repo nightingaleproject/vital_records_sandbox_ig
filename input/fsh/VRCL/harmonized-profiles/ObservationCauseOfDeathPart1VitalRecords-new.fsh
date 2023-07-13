@@ -24,8 +24,8 @@ Description: "The Observation - Cause of Death Part 1 profile reflects the order
   * ^short = "The decedent"
 * performer ^short = "Certifier"
 * performer only Reference(USCorePractitioner)
-* ^label = "Cause of death certifier (coroner or medical examiner)"
-* ^short = "Cause of death certifier (coroner or medical examiner)"
+  * ^label = "Cause of death certifier (coroner or medical examiner)"
+  * ^short = "Cause of death certifier (coroner or medical examiner)"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
