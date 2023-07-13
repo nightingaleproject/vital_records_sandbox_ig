@@ -161,6 +161,12 @@ menu:
 # URL when generating the IG JSON.
 #
 groups:
+
+  VRCommonProfiles:
+    name: VRCL New Common Profiles 
+    resources:
+      - InputRaceAndEthnicityVitalRecords
+      - CodedRaceAndEthnicityVitalRecords
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
