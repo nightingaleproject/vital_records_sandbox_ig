@@ -10,22 +10,10 @@ Usage: #example
 * status = #final
 * code = $loinc#11374-6 "Injury incident description Narrative"
 * subject.reference = "Patient/us-core-patient-a-freeman"
-* effectiveDateTime.extension
-  * extension[0]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-day"
-    * valueUnsignedInt = 8
-  * extension[+]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-year"
-    * valueUnsignedInt = 2022
-  * extension[+]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-month"
-    * valueUnsignedInt = 1
-  * extension[+]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-time"
-    * valueTime.extension
-      * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-      * valueCode = #unknown
-  * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"
+* effectiveDateTime.extension[partialDateTime].extension[day].valueUnsignedInt = 8
+* effectiveDateTime.extension[partialDateTime].extension[month].valueUnsignedInt = 1
+* effectiveDateTime.extension[partialDateTime].extension[year].valueUnsignedInt = 2022
+* effectiveDateTime.extension[partialDateTime].extension[time].valueTime.extension[dataabsent].valueCode = $dataabsentreason401#unknown
 * performer.reference = "Practitioner/us-core-practitioner-s-jones"
 * valueCodeableConcept.text = "drug toxicity"
 * component[0]

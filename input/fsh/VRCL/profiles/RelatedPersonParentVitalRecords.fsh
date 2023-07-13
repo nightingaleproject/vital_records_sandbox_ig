@@ -3,14 +3,6 @@ Parent: RelatedPerson
 Id: RelatedPerson-parent-vr
 Title: "Related Person - Parent Vital Records"
 Description: "The RelatedPerson profile contains constraints common to the Mother and Father profiles."
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-10-12T22:13:36.397+00:00"
-* ^meta.source = "#QQ0u3N86X8mpzPBo"
-* ^status = #active
-* ^contact.name = "HL7 International - Public Health"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://www.hl7.org/Special/committees/pher"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * extension contains
     ExtensionRelatedPersonDeceasedVitalRecords named deceased 0..1 MS and
     ExtensionRelatedpersonBirthplaceVitalRecords named birthPlace 0..1 MS and
