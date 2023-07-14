@@ -86,6 +86,13 @@ Description: "Local Component Codes for observation components that lack an appr
 * #SecondOtherPacificIslanderLiteral "Second Other Pacific Islander Literal"
 * #FirstOtherRaceLiteral "First Other Race Literal"
 * #SecondOtherRaceLiteral "Second Other Race Literal"
+// For BFDR Drug Use During Pregnancy.   Needs to be moved into common library
+* #Marijuana "Marijuana"
+* #Amphetamines "Amphetamines"
+* #Cocaine "Cocaine"
+* #Methadone "Methadone"
+* #Heroin "Heroin"
+* #OtherDrugs "Other Drugs"
 * ^experimental = false
 
 
