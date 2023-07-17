@@ -168,12 +168,15 @@ groups:
       - CodeSystemDeathPregnancyStatusVitalRecords
       - FetalDeathCauseOrConditionCS
       - EditFlagsCS
+      - BirthDeliveryOccurredCS
   
   PHINVADSValuesets:
     name: PHINVADS ValueSets
     resources:
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetHistologicalPlacentalExamination
+      - ValueSetBirthDeliveryOccurred
+      - ValueSetNewbornCongenitalAnomalies
       - ValueSetObstetricProcedure
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetDeliveryRoutes
