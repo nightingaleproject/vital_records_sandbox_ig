@@ -173,6 +173,7 @@ groups:
     resources:
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetHistologicalPlacentalExamination
+      - ValueSetNewbornCongenitalAnomalies
       - ValueSetObstetricProcedure
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetDeliveryRoutes
