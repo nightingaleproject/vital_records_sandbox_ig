@@ -1,8 +1,9 @@
 Profile: RelatedPersonFatherVitalRecordsNew
-Parent: RelatedPersonParentVitalRecords
+Parent: RelatedPersonParentVitalRecords //Based on US Core Related Person Profile
 Id: RelatedPerson-father-vr-new
 Title: "RelatedPerson - Father Vital Records"
-Description: "The father of the subject. Different individuals may play different roles as the father (e.g., biological father, adoptive father, etc.)."
-* relationship from ValueSetFatherRelationshipVitalRecords (required)
+Description: "The father of the report subject. Different individuals may play different roles as the father (e.g., biological father, adoptive father, etc.).
+This profile is designed to supplant the similar profile in VRDR"
+* relationship from ValueSetFatherRelationshipVitalRecords (required) //uses a vs, whereas VRDR used a fixed value (FTH) from codesystem
   * ^short = "Relationships describing the father's role relative to the subject."
   * ^binding.description = "FatherRelationship"
