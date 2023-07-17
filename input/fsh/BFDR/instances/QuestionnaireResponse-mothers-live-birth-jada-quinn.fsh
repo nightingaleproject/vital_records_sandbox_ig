@@ -123,7 +123,7 @@ Usage: #example
   * item[+]
     * linkId = "mother-detailed-race"
     * text = "Extended race codes"
-    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#1002-5 "American Indian or Alaska Native"
+    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#1004-1: "American Indian"
 * item[+]
   * linkId = "receive-wic"
   * text = "Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"

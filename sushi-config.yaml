@@ -175,6 +175,7 @@ groups:
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetHistologicalPlacentalExamination
       - ValueSetBirthDeliveryOccurred
+      - ValueSetNewbornCongenitalAnomalies
       - ValueSetObstetricProcedure
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetDeliveryRoutes
