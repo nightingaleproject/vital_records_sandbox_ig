@@ -168,6 +168,7 @@ groups:
       - ObservationCauseOfDeathPart1VitalRecords-new
       - LocationInjuryVitalRecordsNew
       - ObservationDecedentDispositionMethodVitalRecordsNew
+      - ObservationMannerOfDeathVitalRecordsNew
       
   VRCLCodeSystems:
     name: VRCL CodeSystems
