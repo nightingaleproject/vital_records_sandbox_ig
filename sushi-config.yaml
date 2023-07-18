@@ -201,6 +201,8 @@ groups:
       - ValueSetCertifierTypes
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetFatherRelationshipVitalRecords
+      - ValueSetContributoryTobaccoUseVitalRecords
+      
   BFDRValueSets:
     name: BFDR ValueSets
     description: BFDR ValueSets
