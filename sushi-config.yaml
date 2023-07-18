@@ -161,13 +161,13 @@ menu:
 # URL when generating the IG JSON.
 #
 groups:
-
   VRCommonProfiles:
     name: VRCL New Common Profiles 
     resources:
       - ObservationCauseOfDeathPart2VitalRecords-new
       - ObservationCauseOfDeathPart1VitalRecords-new
       - LocationInjuryVitalRecordsNew
+      - ObservationDecedentDispositionMethodVitalRecordsNew
       
   VRCLCodeSystems:
     name: VRCL CodeSystems
@@ -190,14 +190,6 @@ groups:
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetDeliveryRoutes
       - ValueSetFetalDeathTimePoints
-
-  VRCLCodeSystems:
-    name: VRCL CodeSystems
-    resources:
-      - CodeSystemLocalComponentCodesVitalRecords
-      - CodeSystemDeathPregnancyStatusVitalRecords
-      - FetalDeathCauseOrConditionCS
-      - CodeSystemLocationTypeVitalRecordsNew
 
   VRCLValueSets:
     name: VRCL ValueSets
