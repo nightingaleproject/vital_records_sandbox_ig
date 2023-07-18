@@ -167,6 +167,7 @@ groups:
     resources:
       - ObservationCauseOfDeathPart2VitalRecords-new
       - ObservationCauseOfDeathPart1VitalRecords-new
+      - LocationInjuryVitalRecordsNew
       
   VRCLCodeSystems:
     name: VRCL CodeSystems
@@ -176,9 +177,10 @@ groups:
       - FetalDeathCauseOrConditionCS
       - EditFlagsCS
       - BirthDeliveryOccurredCS
+      - CodeSystemLocationTypeVitalRecordsNew
   
   PHINVADSValuesets:
-    name: PHINVADS ValueSets
+    name: New ValueSets from PHINVADS
     resources:
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetHistologicalPlacentalExamination
@@ -188,6 +190,14 @@ groups:
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetDeliveryRoutes
       - ValueSetFetalDeathTimePoints
+
+  VRCLCodeSystems:
+    name: VRCL CodeSystems
+    resources:
+      - CodeSystemLocalComponentCodesVitalRecords
+      - CodeSystemDeathPregnancyStatusVitalRecords
+      - FetalDeathCauseOrConditionCS
+      - CodeSystemLocationTypeVitalRecordsNew
 
   VRCLValueSets:
     name: VRCL ValueSets
