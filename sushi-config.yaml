@@ -182,6 +182,7 @@ groups:
       - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemDeathPregnancyStatusVitalRecords
       - FetalDeathCauseOrConditionCS
+      - CodeSystemLocationTypeVitalRecordsNew
 
   VRCLValueSets:
     name: VRCL ValueSets
