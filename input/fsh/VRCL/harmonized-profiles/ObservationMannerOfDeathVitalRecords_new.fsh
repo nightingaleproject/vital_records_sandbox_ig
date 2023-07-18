@@ -8,8 +8,6 @@ Id: Observation-manner-of-death-vr-new
 Title: "Observation - Manner of Death Vital Records"
 Description: "This Observation provides the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident).
 This profile is designed to supplant the similar profiles in VRDR and MDI"
-* id 0..1
-  * ^short = "id"
 * status 
   * ^short = "Status of the manner of death determination"
 * code = $loinc#69449-7
