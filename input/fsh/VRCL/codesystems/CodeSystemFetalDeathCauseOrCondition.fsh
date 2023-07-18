@@ -6,5 +6,7 @@ Description: "This code system contains codes local codes from PHINVADs valueset
 * ^content = #complete
 * ^experimental = false
 * #maternalconditions "Maternal Conditions/Diseases (Specify)" // PHC1301
-* #membranes "Membranes: Other (Specify)" // PHC1299
+* #membranes "Complications of Placenta, Cord, or Membranes: Other (Specify)" // PHC1298
+* #obstetricalcomplications "Other Obstetrical or Pregnancy Complications (Specify)" // PHC1299
 * #fetalconditions "Other Fetal Conditions/Disorder (Specify)" // PHC1300
+
