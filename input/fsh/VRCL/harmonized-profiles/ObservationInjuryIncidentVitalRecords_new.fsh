@@ -27,6 +27,7 @@ This profile is designed to supplant the similar profiles in VRDR and MDI"
   * text 
     * ^short = "Description of how injured"
 * note 
+  * ^short = "Note"
 * component ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "code"
   * ^slicing.rules = #open
