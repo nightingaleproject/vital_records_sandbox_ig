@@ -1,3 +1,7 @@
+/*Subject: In VRDR, is Decedent. In MDI, is Patient --> Generalized to USCorePatient
+Performer: In VRDR, is Certifier. In MDI, is Practitioner --> Generalized to USCorePractitioner, and loosened cardinality restriction 
+Value[x] uses VRCL ValueSet
+*/
 Profile: ObservationMannerOfDeathVitalRecordsNew
 Parent: Observation
 Id: Observation-manner-of-death-vr-new
@@ -6,12 +10,8 @@ Description: "This Observation provides the conclusion arrived at upon completio
 This profile is designed to supplant the similar profiles in VRDR and MDI"
 * id 0..1
   * ^short = "id"
-* status 1..1 
-* status only code
-  * ^label = "Status of the manner of death determination"
+* status 
   * ^short = "Status of the manner of death determination"
-* code 1..1 
-* code only CodeableConcept
 * code = $loinc#69449-7
   * ^short = "Manner of death"
 * subject 1..1 
