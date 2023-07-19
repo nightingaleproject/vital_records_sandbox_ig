@@ -29,7 +29,7 @@ This profile is designed to supplant the similar profiles in VRDR and MDI."
   * ^short = "Date/Time of Death"
   * ^definition = "Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."
 * valueDateTime 0..1
-  * extension contains ExtensionPartialDateTime named partialDateTime 0..1
+  * extension contains ExtensionPartialDateTimeVitalRecords named partialDateTime 0..1 //uses VRCL extension
 * note 0..1 
   * ^short = "Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"
   * ^definition = "Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"
