@@ -1,3 +1,6 @@
+/*Performer: In MDI, is Practitioner. In VRDR, is certifier. --> generalized to USCorePractitioner
+Using VRCL valueset for certifier types. 
+*/
 Profile: ProcedureDeathCertificationVitalRecordsNew
 Parent: USCoreProcedureProfile
 Id: Procedure-death-certification-vr-new
@@ -5,6 +8,7 @@ Title: "Procedure - Death Certification Vital Records"
 Description: "This Procedure records the certification of death by the certifier. 
 This profile is designed to supplant the similar profiles in VRDR and MDI"
 * status 
+  * ^short = "Status of the manner of death determination"
 * category 1..1 
 * category = $sct#103693007
 * code = $sct#308646001
