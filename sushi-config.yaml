@@ -172,6 +172,7 @@ groups:
       - ObservationMannerOfDeathVitalRecordsNew
       - ProcedureDeathCertificationVitalRecordsNew 
       - ObservationEducationLevelVitalRecordsNew
+      - ObservationDeathDateVitalRecordsNew  
       
   VRCLCodeSystems:
     name: VRCL CodeSystems
@@ -217,7 +218,7 @@ groups:
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetEducationLevelPersonVitalRecordsNew
-      
+
   BFDRValueSets:
     name: BFDR ValueSets
     description: BFDR ValueSets
