@@ -161,13 +161,16 @@ menu:
 # URL when generating the IG JSON.
 #
 groups:
-
   VRCommonProfiles:
     name: VRCL New Common Profiles 
     resources:
       - ObservationCauseOfDeathPart2VitalRecords-new
       - ObservationCauseOfDeathPart1VitalRecords-new
       - ObservationInjuryIncidentVitalRecordsNew
+      - LocationInjuryVitalRecordsNew
+      - ObservationDecedentDispositionMethodVitalRecordsNew
+      - ObservationMannerOfDeathVitalRecordsNew
+      - ProcedureDeathCertificationVitalRecordsNew 
       
   VRCLCodeSystems:
     name: VRCL CodeSystems
@@ -177,10 +180,11 @@ groups:
       - FetalDeathCauseOrConditionCS
       - EditFlagsCS
       - BirthDeliveryOccurredCS
+      - CodeSystemLocationTypeVitalRecordsNew
   
 
   PHINVADSValuesets:
-    name: New ValueSets from PHINVADS 
+    name: New ValueSets from PHINVADS
     resources:
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetHistologicalPlacentalExamination
