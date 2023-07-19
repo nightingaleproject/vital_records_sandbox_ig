@@ -201,6 +201,7 @@ groups:
       - ValueSetCertifierTypes
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetFatherRelationshipVitalRecords
+      - ValueSetEducationLevelPersonVitalRecordsNew
   BFDRValueSets:
     name: BFDR ValueSets
     description: BFDR ValueSets
