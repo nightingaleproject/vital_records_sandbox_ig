@@ -1,3 +1,20 @@
+/*subject:
+   - VRDR Decedent
+   - MDI Patient 
+   - VRCL Patient or Decedent
+value:
+   - MDI not bound to anything --literal
+   - VR Common not bound -- literal
+   - VRDR not bound -- literal
+note:
+     not MS in VRDR
+performer:
+   - VRDR no performer
+   - MDI practitioner
+   - VRCL practitioner or Certifier
+
+InjuryAtWork and TransportationRole:   no differences?
+*/
 Profile: ObservationInjuryIncidentVitalRecordsNew
 Parent: Observation
 Id: Observation-injury-incident-vr-new
