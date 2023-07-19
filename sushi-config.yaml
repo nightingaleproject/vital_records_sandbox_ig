@@ -192,14 +192,6 @@ groups:
       - ValueSetDeliveryRoutes
       - ValueSetFetalDeathTimePoints
 
-  VRCLCodeSystems:
-    name: VRCL CodeSystems
-    resources:
-      - CodeSystemLocalComponentCodesVitalRecords
-      - CodeSystemDeathPregnancyStatusVitalRecords
-      - FetalDeathCauseOrConditionCS
-      - CodeSystemLocationTypeVitalRecordsNew
-
   VRCLValueSets:
     name: VRCL ValueSets
     resources:
