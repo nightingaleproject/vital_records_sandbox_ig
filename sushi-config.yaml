@@ -167,8 +167,13 @@ groups:
     resources:
       - ObservationCauseOfDeathPart2VitalRecords-new
       - ObservationCauseOfDeathPart1VitalRecords-new
+      - ObservationInjuryIncidentVitalRecordsNew
       - LocationInjuryVitalRecordsNew
       - ObservationTobaccoUseContributedToDeathVitalRecordsNew
+      - ObservationDecedentDispositionMethodVitalRecordsNew
+      - ObservationMannerOfDeathVitalRecordsNew
+      - ProcedureDeathCertificationVitalRecordsNew 
+      - ObservationEducationLevelVitalRecordsNew
       
   VRCLCodeSystems:
     name: VRCL CodeSystems
@@ -179,7 +184,7 @@ groups:
       - EditFlagsCS
       - BirthDeliveryOccurredCS
       - CodeSystemLocationTypeVitalRecordsNew
-  
+
   PHINVADSValuesets:
     name: New ValueSets from PHINVADS
     resources:
@@ -211,7 +216,8 @@ groups:
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetContributoryTobaccoUseVitalRecordsNew
-      
+      - ValueSetEducationLevelPersonVitalRecordsNew
+
   BFDRValueSets:
     name: BFDR ValueSets
     description: BFDR ValueSets
