@@ -215,7 +215,7 @@ groups:
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetEducationLevelPersonVitalRecordsNew
-      
+      - ValueSetDeathPregnancyStatusVitalRecordsNew
   BFDRValueSets:
     name: BFDR ValueSets
     description: BFDR ValueSets
