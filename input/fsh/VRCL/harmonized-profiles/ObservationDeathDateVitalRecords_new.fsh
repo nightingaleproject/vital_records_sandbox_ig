@@ -1,3 +1,12 @@
+/*
+MDI subject is patient. VRCL subject can also be a decedent (not just patient). VRDR subject must be a decedent, rather than a patient. 
+
+Interval should allow a text string or a quantity with time units, as per MDI requirement.
+
+VRDR, VRCL, and MDI value date/time with partialDateTime - same
+
+VRDR does not have any MS flags. VRCL and MDI have the same MS flags.
+*/
 Profile: ObservationDeathDateVitalRecordsNew
 Parent: Observation
 Id: Observation-death-date-vr-new
@@ -12,21 +21,19 @@ This profile is designed to supplant the similar profiles in VRDR and MDI."
 * subject only Reference(USCorePatientProfile) //generalized to patient
   * ^label = "The decedent"
   * ^short = "The decedent"
-* performer 0..1 MS
+* performer 0..1 
 * performer only Reference(USCorePractitionerProfile)
   * ^label = "Death Pronouncement Performer"
   * ^short = "Death Pronouncement Performer"
 * value[x] only dateTime
   * ^short = "Date/Time of Death"
   * ^definition = "Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."
-//* valueDateTime 0..1
-  //* extension contains $Extension-partial-date-time named partialDateTime 0..1
-* valueDateTime.extension contains
-    PartialDateTime named partialDateTime 0..1
-* note 0..1 MS
+* valueDateTime 0..1
+  * extension contains ExtensionPartialDateTime named partialDateTime 0..1
+* note 0..1 
   * ^short = "Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"
   * ^definition = "Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"
-* method 0..1 MS
+* method 0..1 
 * method from $ValueSet-date-establishment-approach (extensible) //need to consolidate on the right valueset. this references the VRCL valueset
   * ^short = "Codes that describe the approach to establishing a date."
   * ^binding.description = "ValueSetDateEstablishmentApproach"
