@@ -164,23 +164,34 @@ groups:
   VRCommonProfiles:
     name: VRCL New Common Profiles 
     resources:
+      - ObservationCauseOfDeathPart2VitalRecords-new
+      - ObservationCauseOfDeathPart1VitalRecords-new
+      - LocationInjuryVitalRecordsNew
+      - ObservationDecedentDispositionMethodVitalRecordsNew
+      - ObservationMannerOfDeathVitalRecordsNew
       - ProcedureDeathCertificationVitalRecordsNew 
-  PHINVADSValuesets:
-    name: New ValueSets from PHINVADS 
-    resources:
-      - ValueSetFetalDeathCauseOrCondition
-      - ValueSetHistologicalPlacentalExamination
-      - ValueSetObstetricProcedure
-      - ValueSetBirthAndFetalDeathFinancialClass
-      - ValueSetDeliveryRoutes
-      - ValueSetFetalDeathTimePoints
-
+      
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
       - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemDeathPregnancyStatusVitalRecords
       - FetalDeathCauseOrConditionCS
+      - EditFlagsCS
+      - BirthDeliveryOccurredCS
+      - CodeSystemLocationTypeVitalRecordsNew
+  
+  PHINVADSValuesets:
+    name: New ValueSets from PHINVADS
+    resources:
+      - ValueSetFetalDeathCauseOrCondition
+      - ValueSetHistologicalPlacentalExamination
+      - ValueSetBirthDeliveryOccurred
+      - ValueSetNewbornCongenitalAnomalies
+      - ValueSetObstetricProcedure
+      - ValueSetBirthAndFetalDeathFinancialClass
+      - ValueSetDeliveryRoutes
+      - ValueSetFetalDeathTimePoints
 
   VRCLValueSets:
     name: VRCL ValueSets
@@ -232,49 +243,48 @@ groups:
       - OrganizationTypeCS
       - DocumentSectionCS
 
-    VRDRValueSets:
-      name: VRDR ValueSets
-      resources:    
-        - AdministrativeGenderVS
-        - SpouseAliveVS
-        - PlaceOfInjuryVS
-        - MannerOfDeathVS
-        - IntentionalRejectVS
-        - SystemRejectVS
-        - TransaxConversionVS
-        - ActivityAtTimeOfDeathVS
-        - ICD10CausesOfDeathVS
-        - PlaceOfDeathVS
-        - DateOfDeathDeterminationMethodsVS
-        - HispanicNoUnknownVS
-        - YesNoNotApplicableVS
-        - YesNoUnknownVS
-        - YesNoUnknownNotApplicableVS
-        - ResidenceCountryVS
-        - BirthplaceCountryVS
-        - EducationLevelVS
-        - PregnancyStatusVS
-        - FilingFormatVS
-        - MethodOfDispositionVS
-        - UnitsOfAgeVS
-        - USStatesAndTerritoriesVS
-        - StatesTerritoriesAndProvincesVS
-        - JurisdictionsProvincesVS
-        - CanadaProvincesVS
-        - JurisdictionVS
-        - HispanicOriginVS
-        - RaceCodeVS
-        - RaceRecode40VS
-        - ContributoryTobaccoUseVS
-        - CertifierTypesVS
-        - RaceMissingValueReasonVS
-        - MaritalStatusVS
-        - ReplaceStatusVS
-        - TransportationIncidentRoleVS
-        - EditBypass01VS
-        - EditBypass012VS
-        - EditBypass0124VS
-        - EditBypass01234VS      
+  VRDRValueSets:
+    name: VRDR ValueSets
+    resources:    
+      - AdministrativeGenderVS
+      - SpouseAliveVS
+      - PlaceOfInjuryVS
+      - MannerOfDeathVS
+      - IntentionalRejectVS
+      - SystemRejectVS
+      - TransaxConversionVS
+      - ActivityAtTimeOfDeathVS
+      - ICD10CausesOfDeathVS
+      - PlaceOfDeathVS
+      - DateOfDeathDeterminationMethodsVS
+      - HispanicNoUnknownVS
+      - YesNoUnknownVS
+      - YesNoUnknownNotApplicableVS
+      - ResidenceCountryVS
+      - BirthplaceCountryVS
+      - EducationLevelVS
+      - PregnancyStatusVS
+      - FilingFormatVS
+      - MethodOfDispositionVS
+      - UnitsOfAgeVS
+      - USStatesAndTerritoriesVS
+      - StatesTerritoriesAndProvincesVS
+      - JurisdictionsProvincesVS
+      - CanadaProvincesVS
+      - JurisdictionVS
+      - HispanicOriginVS
+      - RaceCodeVS
+      - RaceRecode40VS
+      - ContributoryTobaccoUseVS
+      - CertifierTypesVS
+      - RaceMissingValueReasonVS
+      - MaritalStatusVS
+      - ReplaceStatusVS
+      - TransportationIncidentRoleVS
+      - EditBypass01VS
+      - EditBypass012VS
+      - EditBypass0124VS
+      - EditBypass01234VS      
 
 #
 # The ImplementationGuide resource defines several other properties
