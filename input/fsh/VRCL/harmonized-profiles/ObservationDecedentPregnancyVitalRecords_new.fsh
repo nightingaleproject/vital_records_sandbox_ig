@@ -1,3 +1,15 @@
+/*
+Subject:
+   VRDR - subject is decedent
+   VRCL - subject can be patient or decedent. 
+   MDI - subject is a patient.
+Value:
+   MDI and VRCL missing one value from valueset. --> created new valueset in Common that includes value 7 as well as updated codesystem to include value 7
+Status:
+   VRDR status is fixed to final
+BypassEditFlag slice:  Missing from MDI
+VRDR has no MS flags. MDI and VRCL have the same MS flags. 
+*/
 Profile: ObservationDecedentPregnancyVitalRecordsNew
 Parent: Observation
 Id: Observation-decedent-pregnancy-vr-new
@@ -16,7 +28,7 @@ This profile is designed to supplant the similar profiles in VRDR and MDI"
   * ^short = "subject"
 * value[x] 1..1 
 * value[x] only CodeableConcept
-* value[x] from ValueSetDeathPregnancyStatusVitalRecords (required) //need to consolidate on right valueset. this references the vrcl valueset. MDI and VRCL valuesets are missing value 7 (included in VRDR)
+* value[x] from ValueSetDeathPregnancyStatusVitalRecordsNew (required) //MDI and VRCL valuesets are missing value 7 (included in VRDR). New VS generalized to include 7
   * ^short = "Whether the decedent was pregnant at or around the time of death."
   * ^binding.description = "A set of codes that reflect whether the decedent was pregnant at or around the time of death."
 * value[x].extension contains
