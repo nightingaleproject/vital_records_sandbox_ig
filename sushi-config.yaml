@@ -164,24 +164,37 @@ groups:
   VRCommonProfiles:
     name: VRCL New Common Profiles 
     resources:
+      - ObservationCauseOfDeathPart2VitalRecords-new
+      - ObservationCauseOfDeathPart1VitalRecords-new
+      - ObservationInjuryIncidentVitalRecordsNew
+      - LocationInjuryVitalRecordsNew
+      - ObservationDecedentDispositionMethodVitalRecordsNew
+      - ObservationMannerOfDeathVitalRecordsNew
+      - ProcedureDeathCertificationVitalRecordsNew 
+      - ObservationEducationLevelVitalRecordsNew
       - ObservationDecedentPregnancyVitalRecordsNew
-  
-  PHINVADSValuesets:
-    name: New ValueSets from PHINVADS 
-    resources:
-      - ValueSetFetalDeathCauseOrCondition
-      - ValueSetHistologicalPlacentalExamination
-      - ValueSetObstetricProcedure
-      - ValueSetBirthAndFetalDeathFinancialClass
-      - ValueSetDeliveryRoutes
-      - ValueSetFetalDeathTimePoints
-
+      
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
       - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemDeathPregnancyStatusVitalRecords
       - FetalDeathCauseOrConditionCS
+      - EditFlagsCS
+      - BirthDeliveryOccurredCS
+      - CodeSystemLocationTypeVitalRecordsNew
+
+  PHINVADSValuesets:
+    name: New ValueSets from PHINVADS
+    resources:
+      - ValueSetFetalDeathCauseOrCondition
+      - ValueSetHistologicalPlacentalExamination
+      - ValueSetBirthDeliveryOccurred
+      - ValueSetNewbornCongenitalAnomalies
+      - ValueSetObstetricProcedure
+      - ValueSetBirthAndFetalDeathFinancialClass
+      - ValueSetDeliveryRoutes
+      - ValueSetFetalDeathTimePoints
 
   VRCLValueSets:
     name: VRCL ValueSets
@@ -201,7 +214,8 @@ groups:
       - ValueSetCertifierTypes
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetFatherRelationshipVitalRecords
-
+      - ValueSetEducationLevelPersonVitalRecordsNew
+      
   BFDRValueSets:
     name: BFDR ValueSets
     description: BFDR ValueSets
@@ -249,7 +263,6 @@ groups:
       - PlaceOfDeathVS
       - DateOfDeathDeterminationMethodsVS
       - HispanicNoUnknownVS
-      - YesNoNotApplicableVS
       - YesNoUnknownVS
       - YesNoUnknownNotApplicableVS
       - ResidenceCountryVS

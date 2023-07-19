@@ -1,10 +1,10 @@
 ValueSet: ValueSetFetalPresentations
 Id: ValueSet-fetal-presentations-vr
 Title: "ValueSet - Fetal Presentations Vital Records"
-Description: "This value set contains codes to represent fetal presentations."
+Description: "This value set contains codes to represent fetal presentations. This value set is based on [PHVS_FetalPresentations_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3C696B7B-BB33-4818-8996-1E3461E3F512)"
 * ^experimental = false
-* ^copyright = "include appropriate copyright ruleset"
-* SNOMED_CT#70028003 "Vertex presentation (finding)"
-* SNOMED_CT#6096002 "Breech presentation (finding)"
-* SNOMED_CT#163518000 "On examination - fetal presentation unsure	Unknown fetal presentation"
+* insert SNOMEDCopyright
+* $sct#70028003 "Vertex presentation (finding)"
+* $sct#6096002 "Breech presentation (finding)"
+* $sct#163518000 "On examination - fetal presentation unsure	Unknown fetal presentation"
 * $v3-NullFlavor#OTH "Other"
