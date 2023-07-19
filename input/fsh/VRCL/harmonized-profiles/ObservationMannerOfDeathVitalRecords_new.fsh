@@ -1,6 +1,11 @@
-/*Subject: In VRDR, is Decedent. In MDI, is Patient --> Generalized to USCorePatient
-Performer: In VRDR, is Certifier. In MDI, is Practitioner --> Generalized to USCorePractitioner, and loosened cardinality restriction 
-Value[x] uses VRCL ValueSet
+/*Subject is Decedent in VRDR.  In MDI, it is Patient. In VRCL, subject is either.  --> Vital Records USCorePatient. 
+
+Performer is Certifier in VRDR. In MDI, it is Practitioner.  Can be either in VRCL. --> Vital Records USCorePractitioner. 
+Performer cardinality is 0..* in VRDR, 1..1 in VRCL and MDI.
+
+Each profile has different VS bindings for value[x] (manner of death codeableConcept): VRDR has Manner of Death VS, MDI has ValueSet - Manner of Death, and VRCL has ValueSet - Certifier Types - Vital Records (all include the same codes from snomed/null flavor)
+
+VRDR does not mark MS for any elements. Marked MS in MDI and VRCL: status, code, subject, performer, value[x] (manner codeableConcept)
 */
 Profile: ObservationMannerOfDeathVitalRecordsNew
 Parent: Observation
