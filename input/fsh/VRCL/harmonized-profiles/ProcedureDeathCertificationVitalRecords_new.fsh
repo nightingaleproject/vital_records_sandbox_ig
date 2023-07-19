@@ -8,7 +8,7 @@ Title: "Procedure - Death Certification Vital Records"
 Description: "This Procedure records the certification of death by the certifier. 
 This profile is designed to supplant the similar profiles in VRDR and MDI"
 * status 
-  * ^short = "Status of the manner of death determination"
+  * ^short = "Status of the death certification"
 * category 1..1 
 * category = $sct#103693007
 * code = $sct#308646001
