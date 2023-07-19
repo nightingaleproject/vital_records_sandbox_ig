@@ -1,3 +1,13 @@
+/*
+Differ in subject:
+- MDI - Patient
+- VRCL - Patient or Decedent
+- VRDR - Decedent
+
+VRDR has fixed status.
+
+VRDR has no MS flags. MDI and VRCL have the same MS flags.
+*/
 Profile: ObservationTobaccoUseContributedToDeathVitalRecordsNew
 Parent: Observation
 Id: Observation-tobacco-use-contributed-to-death-vr-new
@@ -15,5 +25,5 @@ This profile is designed to supplant the similar profiles in VRDR and MDI."
   * ^short = "subject"
 * value[x] 1..1 
 * value[x] only CodeableConcept
-* value[x] from ValueSetContributoryTobaccoUseVitalRecords (required) // need to consolidate on the right valueset.  this references the MDI valueset
+* value[x] from ValueSetContributoryTobaccoUseVitalRecordsNew (required) // created new valueset in common library
   * ^binding.description = "A set of codes that reflect the extent to which tobacco use contributed to the person's death."
