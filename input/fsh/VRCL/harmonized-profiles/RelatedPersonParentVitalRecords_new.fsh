@@ -20,6 +20,8 @@ VRCL RelatedPersonParent adds extensions for:
 Marks MS for a bunch of USCore stuff like race/ethnicity. 
 
 Except for MS (where policy should be standardized), I don't see any barrier to using RelatedPersonVitalRecords, and its Father and Mother subtypes for VRDR as well.
+VRCL also contains profiles for Natural Father and Gestational Mother - should VRDR use those? VRDR uses specific codes FTH and MTH, 
+whereas code for Natural Father is NFTH and Gestational Mother is GEST.
 */
 Profile: RelatedPersonParentVitalRecordsNew
 Parent: RelatedPerson
