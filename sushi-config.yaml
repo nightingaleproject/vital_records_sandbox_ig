@@ -180,11 +180,15 @@ groups:
     resources:
       - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemDeathPregnancyStatusVitalRecords
+      - CodeSystemLocationTypeVitalRecordsNew
       - FetalDeathCauseOrConditionCS
       - EditFlagsCS
       - BirthDeliveryOccurredCS
-      - CodeSystemLocationTypeVitalRecordsNew
+      - BirthAndFetalDeathFinancialClassCS
+      - CodeSystemMDI
 
+  PHINVADSValuesets:
+    name: New ValueSets from PHINVADS
     resources:
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetHistologicalPlacentalExamination
@@ -194,7 +198,8 @@ groups:
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetDeliveryRoutes
       - ValueSetFetalDeathTimePoints
-  
+      - ValueSetFetalPresentations
+
   VRCLValueSets:
     name: VRCL ValueSets
     resources:

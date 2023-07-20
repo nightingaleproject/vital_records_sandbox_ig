@@ -1,5 +1,9 @@
-/*Performer: In MDI, is Practitioner. In VRDR, is certifier. --> generalized to USCorePractitioner
-Using VRCL valueset for certifier types. 
+/*
+In VRCL, performer.actor is practitioner or certifier. In MDI, it is a practitioner. In VRDR, it is a certifier; ==> more general would be to create a Vital Records Practitioner modeled on VRDR Certifier, and use it everywhere.
+
+Each profile has different VS bindings for performer.function: VRDR has Certifier Types VS, MDI has ValueSet - Certifier Types, and VRCL has ValueSet - Manner of Death - Vital Records (all include the same codes from snomed)
+
+VRDR does not mark MS for any elements. Marked MS in MDI and VRCL: status, category, code, performer.function, performer.actor
 */
 Profile: ProcedureDeathCertificationVitalRecordsNew
 Parent: USCoreProcedureProfile
