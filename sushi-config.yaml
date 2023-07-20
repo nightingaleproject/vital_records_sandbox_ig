@@ -160,6 +160,7 @@ menu:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
+
 groups:
   VRCommonProfiles:
     name: VRCL New Common Profiles 
@@ -168,6 +169,7 @@ groups:
       - ObservationCauseOfDeathPart1VitalRecords-new
       - ObservationInjuryIncidentVitalRecordsNew
       - LocationInjuryVitalRecordsNew
+      - ObservationTobaccoUseContributedToDeathVitalRecordsNew
       - ObservationDecedentDispositionMethodVitalRecordsNew
       - ObservationMannerOfDeathVitalRecordsNew
       - ProcedureDeathCertificationVitalRecordsNew 
@@ -218,6 +220,7 @@ groups:
       - ValueSetCertifierTypes
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetFatherRelationshipVitalRecords
+      - ValueSetContributoryTobaccoUseVitalRecordsNew
       - ValueSetEducationLevelPersonVitalRecordsNew
       - ValueSetDeathPregnancyStatusVitalRecordsNew
 
