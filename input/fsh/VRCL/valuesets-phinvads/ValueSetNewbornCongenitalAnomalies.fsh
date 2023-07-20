@@ -1,7 +1,7 @@
 ValueSet: ValueSetNewbornCongenitalAnomalies
 Id: ValueSet-newborn-congenital-anomalies
 Title: "ValueSet - Newborn Congenital Anomalies"
-Description: "This value set contains codes to represent newborn congenital anomalies (based on PHVS_FetalDeathCauseOrCondition_NCHS)"
+Description: "The value set contains codes to represent newborn congenital anomalies. This valueset is based on [PHVS_NewbornCongenitalAnomalies_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51)"
 * ^experimental = false
 * insert SNOMEDCopyright
 * SNOMED_CT#89369001	"Anencephalus"
