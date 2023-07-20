@@ -160,30 +160,50 @@ menu:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
+
 groups:
   VRCommonProfiles:
     name: VRCL New Common Profiles 
-    resources: 
+    resources:
+      - ObservationCauseOfDeathPart2VitalRecords-new
+      - ObservationCauseOfDeathPart1VitalRecords-new
+      - ObservationInjuryIncidentVitalRecordsNew
+      - LocationInjuryVitalRecordsNew
+      - ObservationTobaccoUseContributedToDeathVitalRecordsNew
+      - ObservationDecedentDispositionMethodVitalRecordsNew
+      - ObservationMannerOfDeathVitalRecordsNew
+      - ProcedureDeathCertificationVitalRecordsNew 
+      - ObservationEducationLevelVitalRecordsNew
+      - ObservationDecedentPregnancyVitalRecordsNew
+      - ObservationDeathDateVitalRecordsNew  
       - RelatedPersonParentVitalRecordsNew
       - RelatedPersonMotherVitalRecordsNew
       - RelatedPersonFatherVitalRecordsNew
-  
-  PHINVADSValuesets:
-    name: New ValueSets from PHINVADS 
-    resources:
-      - ValueSetFetalDeathCauseOrCondition
-      - ValueSetHistologicalPlacentalExamination
-      - ValueSetObstetricProcedure
-      - ValueSetBirthAndFetalDeathFinancialClass
-      - ValueSetDeliveryRoutes
-      - ValueSetFetalDeathTimePoints
-
+      
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
       - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemDeathPregnancyStatusVitalRecords
+      - CodeSystemLocationTypeVitalRecordsNew
       - FetalDeathCauseOrConditionCS
+      - EditFlagsCS
+      - BirthDeliveryOccurredCS
+      - BirthAndFetalDeathFinancialClassCS
+      - CodeSystemMDI
+
+  PHINVADSValuesets:
+    name: New ValueSets from PHINVADS
+    resources:
+      - ValueSetFetalDeathCauseOrCondition
+      - ValueSetHistologicalPlacentalExamination
+      - ValueSetBirthDeliveryOccurred
+      - ValueSetNewbornCongenitalAnomalies
+      - ValueSetObstetricProcedure
+      - ValueSetBirthAndFetalDeathFinancialClass
+      - ValueSetDeliveryRoutes
+      - ValueSetFetalDeathTimePoints
+      - ValueSetFetalPresentations
 
   VRCLValueSets:
     name: VRCL ValueSets
@@ -203,6 +223,10 @@ groups:
       - ValueSetCertifierTypes
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetFatherRelationshipVitalRecords
+      - ValueSetContributoryTobaccoUseVitalRecordsNew
+      - ValueSetEducationLevelPersonVitalRecordsNew
+      - ValueSetDeathPregnancyStatusVitalRecordsNew
+
   BFDRValueSets:
     name: BFDR ValueSets
     description: BFDR ValueSets
@@ -235,49 +259,48 @@ groups:
       - OrganizationTypeCS
       - DocumentSectionCS
 
-    VRDRValueSets:
-      name: VRDR ValueSets
-      resources:    
-        - AdministrativeGenderVS
-        - SpouseAliveVS
-        - PlaceOfInjuryVS
-        - MannerOfDeathVS
-        - IntentionalRejectVS
-        - SystemRejectVS
-        - TransaxConversionVS
-        - ActivityAtTimeOfDeathVS
-        - ICD10CausesOfDeathVS
-        - PlaceOfDeathVS
-        - DateOfDeathDeterminationMethodsVS
-        - HispanicNoUnknownVS
-        - YesNoNotApplicableVS
-        - YesNoUnknownVS
-        - YesNoUnknownNotApplicableVS
-        - ResidenceCountryVS
-        - BirthplaceCountryVS
-        - EducationLevelVS
-        - PregnancyStatusVS
-        - FilingFormatVS
-        - MethodOfDispositionVS
-        - UnitsOfAgeVS
-        - USStatesAndTerritoriesVS
-        - StatesTerritoriesAndProvincesVS
-        - JurisdictionsProvincesVS
-        - CanadaProvincesVS
-        - JurisdictionVS
-        - HispanicOriginVS
-        - RaceCodeVS
-        - RaceRecode40VS
-        - ContributoryTobaccoUseVS
-        - CertifierTypesVS
-        - RaceMissingValueReasonVS
-        - MaritalStatusVS
-        - ReplaceStatusVS
-        - TransportationIncidentRoleVS
-        - EditBypass01VS
-        - EditBypass012VS
-        - EditBypass0124VS
-        - EditBypass01234VS      
+  VRDRValueSets:
+    name: VRDR ValueSets
+    resources:    
+      - AdministrativeGenderVS
+      - SpouseAliveVS
+      - PlaceOfInjuryVS
+      - MannerOfDeathVS
+      - IntentionalRejectVS
+      - SystemRejectVS
+      - TransaxConversionVS
+      - ActivityAtTimeOfDeathVS
+      - ICD10CausesOfDeathVS
+      - PlaceOfDeathVS
+      - DateOfDeathDeterminationMethodsVS
+      - HispanicNoUnknownVS
+      - YesNoUnknownVS
+      - YesNoUnknownNotApplicableVS
+      - ResidenceCountryVS
+      - BirthplaceCountryVS
+      - EducationLevelVS
+      - PregnancyStatusVS
+      - FilingFormatVS
+      - MethodOfDispositionVS
+      - UnitsOfAgeVS
+      - USStatesAndTerritoriesVS
+      - StatesTerritoriesAndProvincesVS
+      - JurisdictionsProvincesVS
+      - CanadaProvincesVS
+      - JurisdictionVS
+      - HispanicOriginVS
+      - RaceCodeVS
+      - RaceRecode40VS
+      - ContributoryTobaccoUseVS
+      - CertifierTypesVS
+      - RaceMissingValueReasonVS
+      - MaritalStatusVS
+      - ReplaceStatusVS
+      - TransportationIncidentRoleVS
+      - EditBypass01VS
+      - EditBypass012VS
+      - EditBypass0124VS
+      - EditBypass01234VS      
 
 #
 # The ImplementationGuide resource defines several other properties
