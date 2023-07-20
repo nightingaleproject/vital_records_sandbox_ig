@@ -1,6 +1,12 @@
-/* Subject: BFRD uses Decedent Fetus, VRDR uses Decedent --> generalized to USCorePatient
-Loosened restriction on status
-Bound value[x] to MethodOfDispositionVS, which includes the entombment code. BFDR was bound to another VS that does not include entombment code
+/* 
+VRDR includes status and performer (0..*).   (No real difference.  Just that status = final) --> Loosened restriction on status
+
+BFDR subject is Patient ("Patient - Decedent Fetus - Vital Records") 
+VRDR's subject is Decedent. ==> need to decide whether to consolidate. --> generalized to USCorePatient
+
+value is bound to different value sets in VRDR and BFDR.  VRDR includes an entombement code. --> bound to MethodOfDispositionVS in VRDR, which includes the entombment code.
+
+Marked MS in BFDR: code, subject, value[x] (disposition methods codeableConcept). No elements marked MS in VRDR.
 */
 
 Profile: ObservationDecedentDispositionMethodVitalRecordsNew

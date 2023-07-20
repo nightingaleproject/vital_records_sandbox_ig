@@ -174,16 +174,20 @@ groups:
       - ObservationMannerOfDeathVitalRecordsNew
       - ProcedureDeathCertificationVitalRecordsNew 
       - ObservationEducationLevelVitalRecordsNew
+      - ObservationDecedentPregnancyVitalRecordsNew
+      - ObservationDeathDateVitalRecordsNew  
       
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
       - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemDeathPregnancyStatusVitalRecords
+      - CodeSystemLocationTypeVitalRecordsNew
       - FetalDeathCauseOrConditionCS
       - EditFlagsCS
       - BirthDeliveryOccurredCS
-      - CodeSystemLocationTypeVitalRecordsNew
+      - BirthAndFetalDeathFinancialClassCS
+      - CodeSystemMDI
 
   PHINVADSValuesets:
     name: New ValueSets from PHINVADS
@@ -196,6 +200,7 @@ groups:
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetDeliveryRoutes
       - ValueSetFetalDeathTimePoints
+      - ValueSetFetalPresentations
 
   VRCLValueSets:
     name: VRCL ValueSets
@@ -217,6 +222,7 @@ groups:
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetContributoryTobaccoUseVitalRecordsNew
       - ValueSetEducationLevelPersonVitalRecordsNew
+      - ValueSetDeathPregnancyStatusVitalRecordsNew
 
   BFDRValueSets:
     name: BFDR ValueSets
