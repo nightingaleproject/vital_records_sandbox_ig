@@ -176,6 +176,9 @@ groups:
       - ObservationEducationLevelVitalRecordsNew
       - ObservationDecedentPregnancyVitalRecordsNew
       - ObservationDeathDateVitalRecordsNew  
+      - RelatedPersonParentVitalRecordsNew
+      - RelatedPersonMotherVitalRecordsNew
+      - RelatedPersonFatherVitalRecordsNew
       
   VRCLCodeSystems:
     name: VRCL CodeSystems
