@@ -55,14 +55,12 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+pages:
+  index.md:
+    title: Home
+  vrdr-content-transitions.md:
+    title: VRDR Content Transitions 
+
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -92,6 +90,7 @@ parameters:
 menu:
   Home: index.html
   Artifacts: artifacts.html
+  VRDR: vrdr-content-transitions.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -165,8 +164,8 @@ groups:
   VRCommonProfiles:
     name: VRCL New Common Profiles 
     resources:
-      - ObservationCauseOfDeathPart2VitalRecords-new
-      - ObservationCauseOfDeathPart1VitalRecords-new
+      - ObservationCauseOfDeathPart2VitalRecordsNew
+      - ObservationCauseOfDeathPart1VitalRecordsNew
       - ObservationInjuryIncidentVitalRecordsNew
       - LocationInjuryVitalRecordsNew
       - ObservationTobaccoUseContributedToDeathVitalRecordsNew

@@ -5,7 +5,7 @@ Performer in VRDR is certifier. US Core Practitioner in MDI; either in VRCL. Per
 
 component:interval has cardinality 0..1 in VRDR, 1..1 in MDI and VRCL.
 */
-Profile: ObservationCauseOfDeathPart1VitalRecords-new
+Profile: ObservationCauseOfDeathPart1VitalRecordsNew
 Parent: Observation
 Id: Observation-cause-of-death-part1-vr-new
 Title: "Cause Of Death Part 1"
