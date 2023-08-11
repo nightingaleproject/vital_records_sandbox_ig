@@ -168,6 +168,7 @@ groups:
       - ObservationCauseOfDeathPart1VitalRecordsNew
       - ObservationInjuryIncidentVitalRecordsNew
       - LocationInjuryVitalRecordsNew
+      - LocationDeathVitalRecordsNew
       - ObservationTobaccoUseContributedToDeathVitalRecordsNew
       - ObservationDecedentDispositionMethodVitalRecordsNew
       - ObservationMannerOfDeathVitalRecordsNew
