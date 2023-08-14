@@ -2,7 +2,7 @@
 
 
 
-| Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
+| Name of Profile  | Group | change  |  Current Profile   | New Profile  | Comment |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |Death Certificate |   -  |    -    | [DeathCertificate] |     -         |   -      |
 |Decedent |   DecedentDemographics  |    -    | [Decedent] |       -       |    -     |
@@ -43,6 +43,13 @@
 |RecordAxisCauseOfDeath |     CodedContent   |    -    | [RecordAxisCauseOfDeath] |       -       |    -     |
 |PlaceOfInjury |     CodedContent   |    -    | [PlaceOfInjury] |       -       |    -     |
 |CodingStatusValues |     CodedContent   |    -    | [CodingStatusValues] |       -       |    -     |
+{: .grid }
+
+
+| Name of Extension  | change  |  Current Extension   | New Extension  | Comment |
+| ------------------ | ------- | ------------------ | ------------ | ----- | 
+|Partial Date|   -  |    -    | [ParitalDate] |    [ExtensionPartialDateVitalRecords]         |   -      |
+|Parital Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]     -       |    -     |
 {: .grid }
 
 # Coded Cause of Death
