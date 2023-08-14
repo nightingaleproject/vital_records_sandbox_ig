@@ -1,6 +1,6 @@
 Profile: InputRaceAndEthnicityNew
 Parent: Observation
-Id: vrdr-input-race-and-ethnicity
+Id: vrdr-input-race-and-ethnicity-new
 Title: "Input Race and Ethnicity"
 Description: "Input (from EDRS or EBRS) Race and Ethnicity (Observation). This is information collected by jurisdictions and submitted to NCHS.
 
