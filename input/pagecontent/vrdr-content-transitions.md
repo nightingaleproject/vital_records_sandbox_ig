@@ -3,7 +3,7 @@
 
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
-| :-------------: | ----- | ------- | ------------------ | ------------ | :-----: | 
+| ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |Death Certificate |   -  |    -    | [DeathCertificate] |     -         |   -      |
 |Decedent |   DecedentDemographics  |    -    | [Decedent] |       -       |    -     |
 |Father |     DecedentDemographics    |    -    | [DecedentFather] |       -       |    -     |
@@ -11,7 +11,7 @@
 |Spouse |     DecedentDemographics    |    -    | [DecedentSpouse] |       -       |    -     |
 |Age at Death |     DecedentDemographics    |    -    | [DecedentAge] |       -       |    -     |
 |BirthRecord ID |     DecedentDemographics    |    -    | [BirthRecordIdentifier] |       -       |    -     |
-|Education Level |     DecedentDemographics    |    -    | [DecedentEducationLevel] |       -       |    -     |
+|Education Level |     DecedentDemographics    |    -    | [DecedentEducationLevel] |       [ObservationEducationLevelVitalRecordsNew]      |    -     |
 |Military Service |    DecedentDemographics    |    -    | [DecedentMilitaryService] |       -       |    -     |
 |Usual Work |     DecedentDemographics   |    -    | [DecedentUsualWork] |       -       |    -     |
 | Emerging Issues |     DecedentDemographics   |    -    | [EmergingIssues] |       -       |    -     |
@@ -27,7 +27,7 @@
 |Autopsy Performed Indicator|     DeathInvestigation   |    -    | [AutopsyPerformedIndicator] |       -       |    -     |
 |Death Date |     DeathInvestigation   |    -    | [DeathDate] |       -       |    -     |
 |Surgery Date |     DeathInvestigation   |    -    | [SurgeryDate] |       -       |    -     |
-|Certifier |     DeathCertification   |    -    | [Certifier] |       -       |    -     |
+|Certifier |     DeathCertification   |    -    | [Certifier] |       [PractitionerVitalRecordsNew]       |    -     |
 |Death Certification |     DeathCertification   |    -    | [DeathCertification] |       -       |    -     |
 |Manner Of Death |     DeathInvestigation   |    -    | [MannerOfDeath] |       -       |    -     |
 |Cause Of Death Part1 |     DeathInvestigation   |    -    | [CauseOfDeathPart1] |  [ObservationCauseOfDeathPart1VitalRecordsNew]            |    -     |
