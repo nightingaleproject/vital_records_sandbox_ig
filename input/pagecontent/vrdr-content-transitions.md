@@ -15,7 +15,7 @@
 |Military Service |    DecedentDemographics    |    -    | [DecedentMilitaryService] |       -       |    -     |
 |Usual Work |     DecedentDemographics   |    -    | [DecedentUsualWork] |       -       |    -     |
 | Emerging Issues |     DecedentDemographics   |    -    | [EmergingIssues] |       -       |    -     |
-| Input Race and Ethnicity |     DecedentDemographics    |    -    | [InputRaceAndEthnicity] |       -       |    -     |
+| Input Race and Ethnicity |     DecedentDemographics    |    -    | [InputRaceAndEthnicity] |       [InputRaceAndEthnicityNew]       |    -     |
 | Examiner Contacted |     DeathInvestigation    |    -    | [ExaminerContacted] |       -       |    -     |
 |Pregnancy Status |     DeathInvestigation    |    -    | [DecedentPregnancyStatus] |       -       |    -     |
 |Tobacco Use |     DeathInvestigation    |    -    | [TobaccoUseContributedToDeath] |       [ObservationTobaccoUseContributedToDeathVitalRecords]       |    -     |
@@ -32,14 +32,13 @@
 |Manner Of Death |     DeathInvestigation   |    -    | [MannerOfDeath] |       [ObservationMannerOfDeathVitalRecordsNew]       |    -     |
 |Cause Of Death Part1 |     DeathInvestigation   |    -    | [CauseOfDeathPart1] |  [ObservationCauseOfDeathPart1VitalRecordsNew]            |    -     |
 |Cause Of Death Part2 |     DeathInvestigation   |    -    | [CauseOfDeathPart2] |   [ObservationCauseOfDeathPart2VitalRecordsNew]           |    -     |
-|Decedent Disposition |     DecedentDisposition   |    -    | [DecedentDisposition] |       [ObservationMethodOfDispositionNew]       |    -     |
-|FuneralHome |     DecedentDisposition   |    -    | [FuneralHome] |       -       |    -     |
-|Disposition Method |     DecedentDisposition   |    -    | [DispositionMethod] |       -       |    -     |
+|Disposition Method |     DecedentDisposition   |    -    | [DecedentDisposition] |    [ObservationMethodOfDispositionNew]   |    -     |
+|FuneralHome |     DecedentDisposition   |    -    | [FuneralHome] |        -      |    -     |
 |Mortician |     DecedentDisposition   |    -    | [Mortician] |       -       |    -     |
 |ActivityAt Time Of Death|     CodedContent   |    -    | [ActivityAtTimeOfDeath] |       -       |    -     |
 |Automated Underlying Cause Of Death |     CodedContent   |    -    | [AutomatedUnderlyingCauseOfDeath] |       -       |    -     |
 |ManualUnderlyingCauseOfDeath |     CodedContent   |    -    | [ManualUnderlyingCauseOfDeath] |       -       |    -     |
-|CodedRaceAndEthnicity |     CodedContent   |    -    | [CodedRaceAndEthnicity] |       -       |    -     |
+|CodedRaceAndEthnicity |     CodedContent   |    -    | [CodedRaceAndEthnicity] |      [CodedRaceAndEthnicityNew]       |    -     |
 |EntityAxisCauseOfDeath |     CodedContent   |    -    | [EntityAxisCauseOfDeath] |       -       |    -     |
 |RecordAxisCauseOfDeath |     CodedContent   |    -    | [RecordAxisCauseOfDeath] |       -       |    -     |
 |PlaceOfInjury |     CodedContent   |    -    | [PlaceOfInjury] |       -       |    -     |
