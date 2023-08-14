@@ -48,8 +48,8 @@
 
 | Name of Extension  | change  |  Current Extension   | New Extension  | Comment |
 | ------------------ | ------- | ------------------ | ------------ | ----- | 
-|Partial Date|   -  |    -    | [ParitalDate] |    [ExtensionPartialDateVitalRecords]         |   -      |
-|Parital Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]     -       |    -     |
+|Partial Date|   -  |    -    | [ParitalDate] |    [ExtensionDateTimePartAbsentReasonVitalRecords]         |   -      |
+|Parital Date Time  |    -    | [PartialDateTime] | [ExtensionDatePartAbsentReasonVitalRecords]     -       |    -     |
 {: .grid }
 
 # Coded Cause of Death
