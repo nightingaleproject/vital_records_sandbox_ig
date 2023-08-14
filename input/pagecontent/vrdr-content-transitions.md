@@ -18,21 +18,21 @@
 | Input Race and Ethnicity |     DecedentDemographics    |    -    | [InputRaceAndEthnicity] |       -       |    -     |
 | Examiner Contacted |     DeathInvestigation    |    -    | [ExaminerContacted] |       -       |    -     |
 |Pregnancy Status |     DeathInvestigation    |    -    | [DecedentPregnancyStatus] |       -       |    -     |
-|Tobacco Use |     DeathInvestigation    |    -    | [TobaccoUseContributedToDeath] |       -       |    -     |
+|Tobacco Use |     DeathInvestigation    |    -    | [TobaccoUseContributedToDeath] |       [ObservationTobaccoUseContributedToDeathVitalRecords]       |    -     |
 |Military Service |     DeathInvestigation    |    -    | [DeathCertificate] |       -       |    -     |
 |Death Location |     DeathInvestigation   |    -    | [DeathLocation] |       -       |    -     |
-|Injury Location |     DeathInvestigation   |    -    | [InjuryLocation] |       -       |    -     |
-|Injury Incident |     DeathInvestigation   |    -    | [InjuryIncident] |       -       |    -     |
+|Injury Location |     DeathInvestigation   |    -    | [InjuryLocation] |       [LocationInjuryVitalRecordsNew]       |    -     |
+|Injury Incident |     DeathInvestigation   |    -    | [InjuryIncident] |       [ObservationInjuryIncidentVitalRecordsNew]       |    -     |
 |Place of Injury |     DeathInvestigation   |    -    | [PlaceOfInjury] |       -       |    -     |
 |Autopsy Performed Indicator|     DeathInvestigation   |    -    | [AutopsyPerformedIndicator] |       -       |    -     |
-|Death Date |     DeathInvestigation   |    -    | [DeathDate] |       -       |    -     |
+|Death Date |     DeathInvestigation   |    -    | [DeathDate] |       [ObservationDeathDateVitalRecordsNew]       |    -     |
 |Surgery Date |     DeathInvestigation   |    -    | [SurgeryDate] |       -       |    -     |
 |Certifier |     DeathCertification   |    -    | [Certifier] |       [PractitionerVitalRecordsNew]       |    -     |
-|Death Certification |     DeathCertification   |    -    | [DeathCertification] |       -       |    -     |
-|Manner Of Death |     DeathInvestigation   |    -    | [MannerOfDeath] |       -       |    -     |
+|Death Certification |     DeathCertification   |    -    | [DeathCertification] |       [ProcedureDeathCertificationVitalRecordsNew]       |    -     |
+|Manner Of Death |     DeathInvestigation   |    -    | [MannerOfDeath] |       [ObservationMannerOfDeathVitalRecordsNew]       |    -     |
 |Cause Of Death Part1 |     DeathInvestigation   |    -    | [CauseOfDeathPart1] |  [ObservationCauseOfDeathPart1VitalRecordsNew]            |    -     |
 |Cause Of Death Part2 |     DeathInvestigation   |    -    | [CauseOfDeathPart2] |   [ObservationCauseOfDeathPart2VitalRecordsNew]           |    -     |
-|Decedent Disposition |     DecedentDisposition   |    -    | [DecedentDisposition] |       -       |    -     |
+|Decedent Disposition |     DecedentDisposition   |    -    | [DecedentDisposition] |       [ObservationMethodOfDispositionNew]       |    -     |
 |FuneralHome |     DecedentDisposition   |    -    | [FuneralHome] |       -       |    -     |
 |Disposition Method |     DecedentDisposition   |    -    | [DispositionMethod] |       -       |    -     |
 |Mortician |     DecedentDisposition   |    -    | [Mortician] |       -       |    -     |
