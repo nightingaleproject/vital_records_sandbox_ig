@@ -1,27 +1,44 @@
 # MDI to EDRS
+<!-- |Document MDI to EDRS (Bundle) |   Bundle |    -    | [] |     -         |   -      |
+|MDI to EDRS (Composition)|   Composition  |    -    | [] |     -         |   -      | -->
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
-| :-------------: | ----- | ------- | ------------------ | ------------ | :-----: | 
-|Cause of Death Part 1 |  MDI Profiles  |  -  | [ObservationCauseOfDeathPart1] | [ObservationCauseOfDeathPart1VitalRecordsNew] |   -   |
-|Cause of Death Part 2 |   MDI Profiles  |    -    | [ObservationContributingCauseOfDeathPart2] | [ObservationCauseOfDeathPart2VitalRecordsNew] | - |
-|Death Date |  MDI Profiles  |    -    | [ObservationDeathDate] |  [ObservationDeathDateVitalRecordsNew]  |   -      |
-|How Death Injury Occurred | MDI Profiles |  -  | [ObservationHowDeathInjuryOccurred] | [ObservationInjuryIncidentVitalRecordsNew]  | - |
-|Manner of Death |  MDI Profiles  |    -    | [ObservationMannerOfDeath] | [ObservationMannerOfDeathVitalRecordsNew] |   -      |
-|Decedent Pregnancy |  MDI Profiles  |    -    | [ObservationDecedentPregnancy] | [ObservationDecedentPregnancyVitalRecordsNew] | - |
-|Tobacco Use Contributed to Death |  MDI Profiles  | - | [ObservationTobaccoUseContributedToDeath] |    [ObservationTobaccoUseContributedToDeathVitalRecordsNew] | - |
-|Autopsy Performed Indicator | MDI Profiles  |    -    | [ObservationAutopsyPerformedIndicator] |    -    |   -   |
-|Death Certification |  MDI Profiles  |    -    | [ProcedureDeathCertification] | [ProcedureDeathCertificationVitalRecordsNew] |  - |
-|Death Location |  MDI Profiles  |    -    | [LocationDeath] |  [LocationDeathVitalRecordsNew]  |   -      |
-|Injury Location |  MDI Profiles  |    -    | [LocationInjury] | [LocationInjuryVitalRecordsNew] |   -      |
+| :-------------: | ----- | ------- | ------------------ | ------------ | :-----: |
+|Decedent |  subject  |    -    | [USCorePatient] |  -  |   -      |
+|Medical Examiner/Coroner (Certifier) |  author, attester  |    -    | [USCorePractitioner] |  -  |   -      |
+|Death Location |  circumstances  |    -    | [LocationDeath] |  [LocationDeathVitalRecordsNew]  |   -      |
+|Tobacco Use Contributed to Death |  circumstances  | - | [ObservationTobaccoUseContributedToDeath] |    [ObservationTobaccoUseContributedToDeathVitalRecordsNew] | - |
+|Decedent Pregnancy |  circumstances  |    -    | [ObservationDecedentPregnancy] | [ObservationDecedentPregnancyVitalRecordsNew] | - |
+|Injury Location |  circumstances  |    -    | [LocationInjury] | [LocationInjuryVitalRecordsNew] |   -      |
+|Death Date |  jurisdiction  |    -    | [ObservationDeathDate] |  [ObservationDeathDateVitalRecordsNew]  |   -      |
+|Death Certification |  jurisdiction  |    -    | [ProcedureDeathCertification] | [ProcedureDeathCertificationVitalRecordsNew] |  - |
+|Cause of Death Part 1 |  cause-manner  |  -  | [ObservationCauseOfDeathPart1] | [ObservationCauseOfDeathPart1VitalRecordsNew] |   -   |
+|Cause of Death Part 2 |   cause-manner  |    -    | [ObservationContributingCauseOfDeathPart2] | [ObservationCauseOfDeathPart2VitalRecordsNew] | - |
+|Manner of Death |  cause-manner  |    -    | [ObservationMannerOfDeath] | [ObservationMannerOfDeathVitalRecordsNew] |   -      |
+|How Death Injury Occurred | cause-manner |  -  | [ObservationHowDeathInjuryOccurred] | [ObservationInjuryIncidentVitalRecordsNew]  | - |
+| history-condition | medical-history  |    -    | [USCoreConditionEncounterDiagnosis] or [USCoreConditionProblemsandHealthConcerns] |    -    |   -   |
+|Autopsy Performed Indicator | exam-autopsy  |    -    | [ObservationAutopsyPerformedIndicator] |    -    |   -   |
+|Autopsy Location | exam-autopsy  |    -    | [USCoreOrganization] or [USCoreLocation] |    -    |   -   |
 {: .grid }
 
 # Toxicology to MDI
+<!-- |Message Toxicology to MDI Bundle | Bundle |    -    | [] |     -         |   -      |
+|Toxicology to MDI MessageHeader | ToxtoMDIMessage |    -    | [] |     -         |   -      |
+|Toxicology Lab Result to MDI | DiagnosticReport |    -    | [] |     -         |   -      |  -->
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
 | :-------------: | ----- | ------- | ------------------ | ------------ | :-----: | 
-|Toxicology Lab Specimen |  Toxicology Profiles  |    -    | [SpecimenToxicologyLab] |     -         |   -      |
-|Toxicology Lab Result | Toxicology Profiles  |    -    | [ObservationToxicologyLabResult] |     -         |   -      |
+|Responsible Diagnostic Service |  performer  |  - | [USCorePractitioner] or [USCorePractitionerRole] |  [USCorePractitioner] |   -  |
+|Toxicology Lab Specimen |  specimen  |    -    | [SpecimenToxicologyLab] |     -         |   -      |
+|Toxicology Lab Result | result  |    -    | [ObservationToxicologyLabResult] |     -         |   -      |
 {: .grid }
 
+<!-- # Administrative / Other
+| Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
+| :-------------: | ----- | ------- | ------------------ | ------------ | :-----: | 
+|Document Reference: MDI Report | Administrative Profiles  |    -    | [] |     -         |   -      |
+|Document Reference: MDI Report | Capability Statements  |    -    | [MessageDefinition-toxicology-system] |     -         |   -      |
+{: .grid } -->
 
-{% include fsh-link-references.md %}
+
+{% include markdown-link-references.md %}
