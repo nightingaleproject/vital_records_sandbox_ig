@@ -23,21 +23,21 @@
 |Characteristics Labor Delivery |     medicalHealthInformation   |    -    | [ProcedureInductionOfLabor] [ProcedureAugmentationOfLabor] [ObservationSteroidsFetalLungMaturation] [ObservationAntibioticsAdministeredDuringLabor] [ConditionChorioamnionitis] [ProcedureEpiduralOrSpinalAnesthesia] [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery] |       -       |    -     |
 |Fetal Presentations |     medicalHealthInformation   |    -    | [ObservationFetalPresentation] |       -       |    -     |
 |Final Route Method Delivery|     medicalHealthInformation   |    -    | [ProcedureFinalRouteMethodDelivery] |       -       |    -     |
-|Maternal Morbidity |     medicalHealthInformation   |    -    |    -    |       -       |    -     |
+|Maternal Morbidity |     medicalHealthInformation   |    -    |[ProcedureBloodTransfusion] [ConditionPerinealLaceration] [ConditionRupturedUterus] [ProcedureUnplannedHysterectomy] [ObservationICUAdmission] [ObservationNoneOfSpecifiedMaternalMorbidities]|       -       |    -     |
 |Birth Weight |     newbornInformation   |    -    | [ObservationBirthWeightVitalRecords] |       -       |    -     |
 |Gestational Age at Delivery |     newbornInformation    |    -    | [ObservationGestationalAgeAtDeliveryVitalRecords] |       -       |    -     |
 |Apgar Score |     newbornInformation    |    -    | [ObservationApgarScoreVitalRecords] |       -       |    -     |
 |Number Live Births This Delivery |     newbornInformation   |    -    | [ObservationNumberLiveBirthsThisDeliveryVitalRecords] |       -       |    -     |
 |Abnormal Conditions Newborn |     newbornInformation    |    -    | [ProcedureAssisstedVentilationFollowingDelivery] [ProcedureAssisstedVentilationMoreThanSixHours] [ObservationICUAdmission] [ProcedureSurfactantReplacementTherapy] [ProcedureAntibioticSuspectedNeonatalSepsis] [ConditionSeizure] [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn]|    -    |    -     |
-|Congenital Anomalies Newborn |     newbornInformation    |    -    |    -    |    -    |    -     |
+|Congenital Anomalies Newborn |     newbornInformation    |    -    |    [ConditionCongenitalAnomalyOfNewborn]    |    -    |    -     |
 |Infant Living |     newbornInformation    |    -    | [ObservationInfantLivingVitalRecords] |       -       |    -     |
 |Infant Breastfed at Discharge|     newbornInformation    |    -    | [ObservationInfantBreastfedAtDischarge] |       -       |    -     |
 |Married During Pregnancy |     motherInformation   |    -    | [ObservationMotherMarriedDuringPregnancy] |       -       |    -     |
 |SSN Requested for Child |     motherInformation   |    -    | [ObservationSSNRequestedForChild] |       -       |    -     |
-|Mothers Education|     motherInformation   |    -    | [ObservationParentEducationLevelVitalRecords] |       -       |    -     |
+|Mothers Education|     motherInformation   |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |    -     |
 |Paternity Acknowledgement Signed |     fatherInformation   |    -    | [ObservationPaternityAcknowledgementSigned] |       -       |    -     |
-|Fathers Education|     fatherInformation  |    -    | [ObservationParentEducationLevelVitalRecords] |       -       |    -     |
-|Questionnaire-Mother's Worksheet for Child's Birth Certificate |     mothersQuestionnaireResponse   |    -    |    -    |       -       |    -     |
+|Fathers Education|     fatherInformation  |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |    -     |
+|Questionnaire-Mother's Worksheet for Child's Birth Certificate |     mothersQuestionnaireResponse   |    -    | [Questionnaire-mothers-live-birth] |       -       |    -     |
 {: .grid }
 
 # Provider Fetal Death
@@ -69,8 +69,8 @@
 |Autopsy or Histological Exam Used|     fetus     |    -    | [ObservationAutopsyHistologicalExamResultsUsed] |       -       |    -     |
 |Number Live Births This Delivery |     fetus    |    -    | [ObservationNumberLiveBirthsThisDeliveryVitalRecords] |       -       |    -     |
 |Number Fetal Deaths This Delivery |     fetus    |    -    | [ObservationNumberFetalDeathsThisDeliveryVitalRecords] |       -       |    -     |
-|Mothers Education|     motherInformation   |    -    | [ObservationParentEducationLevelVitalRecords] |       -       |    -     |
-|Patients Questionnaire Response |     patientsQuestionnaireResponse   |    -    |    -    |       -       |    -     |
+|Mothers Education|     motherInformation   |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |    -     |
+|Patients Questionnaire Response |     patientsQuestionnaireResponse   |    -    | [Questionnaire-patients-fetal-death] |       -       |    -     |
 {: .grid }
 
 # Jurisdiction Live Birth - same as above but with edit flags
