@@ -27,14 +27,14 @@
 |Autopsy Performed Indicator|     DeathInvestigation   |    -    | [AutopsyPerformedIndicator] |       -       |    -     |
 |Death Date |     DeathInvestigation   |    -    | [DeathDate] |       [ObservationDeathDateVitalRecordsNew]       |    -     |
 |Surgery Date |     DeathInvestigation   |    -    | [SurgeryDate] |       -       |    -     |
-|Certifier |     DeathCertification   |    -    | [Certifier] |       [PractitionerVitalRecordsNew]       |    -     |
+|Certifier |     DeathCertification   |    -    | [Certifier] |       [PractitionerVitalRecordsNew]      |    -     |
 |Death Certification |     DeathCertification   |    -    | [DeathCertification] |       [ProcedureDeathCertificationVitalRecordsNew]       |    -     |
 |Manner Of Death |     DeathInvestigation   |    -    | [MannerOfDeath] |       [ObservationMannerOfDeathVitalRecordsNew]       |    -     |
 |Cause Of Death Part1 |     DeathInvestigation   |    -    | [CauseOfDeathPart1] |  [ObservationCauseOfDeathPart1VitalRecordsNew]            |    -     |
 |Cause Of Death Part2 |     DeathInvestigation   |    -    | [CauseOfDeathPart2] |   [ObservationCauseOfDeathPart2VitalRecordsNew]           |    -     |
-|Disposition Method |     DecedentDisposition   |    -    | [DecedentDisposition] |    [ObservationMethodOfDispositionNew]   |    -     |
+|Disposition Method |     DecedentDisposition   |    -    | [DecedentDispositionMethod] |    [ObservationDecedentDispositionMethodVitalRecordsNew]   |    -     |
 |FuneralHome |     DecedentDisposition   |    -    | [FuneralHome] |        -      |    -     |
-|Mortician |     DecedentDisposition   |    -    | [Mortician] |       -       |    -     |
+|Mortician |     DecedentDisposition   |    -    | [USCorePractitioner] |       -       |    -     |
 |ActivityAt Time Of Death|     CodedContent   |    -    | [ActivityAtTimeOfDeath] |       -       |    -     |
 |Automated Underlying Cause Of Death |     CodedContent   |    -    | [AutomatedUnderlyingCauseOfDeath] |       -       |    -     |
 |ManualUnderlyingCauseOfDeath |     CodedContent   |    -    | [ManualUnderlyingCauseOfDeath] |       -       |    -     |
@@ -48,8 +48,8 @@
 
 | Name of Extension  | change  |  Current Extension   | New Extension  | Comment |
 | ------------------ | ------- | ------------------ | ------------ | ----- | 
-|Partial Date|   -  |    -    | [ParitalDate] |    [ExtensionDateTimePartAbsentReasonVitalRecords]         |   -      |
-|Parital Date Time  |    -    | [PartialDateTime] | [ExtensionDatePartAbsentReasonVitalRecords]     -       |    -     |
+|Partial Date|   -  |    -    | [PartialDate] |    [ExtensionDatePartAbsentReasonVitalRecords]         |   -      |
+|Parital Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]             |    -     |
 {: .grid }
 
 # Coded Cause of Death

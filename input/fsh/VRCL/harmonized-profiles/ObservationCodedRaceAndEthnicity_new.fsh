@@ -1,6 +1,6 @@
 Profile: CodedRaceAndEthnicityNew
 Parent: Observation
-Id: vrdr-coded-race-and-ethnicity-new
+Id: coded-race-and-ethnicity-vr-new
 Title: "Coded Race and Ethnicity"
 Description: "Coded (from NCHS) Race and Ethnicity (Observation). This is information that is coded by NCHS and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions.
 
