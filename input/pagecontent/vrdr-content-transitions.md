@@ -44,6 +44,7 @@
 {: .grid }
 
 # Coded Cause of Death
+
 | Name of Profile  | Group | change  |  Current Profile   | New Profile  | Comment |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |ActivityAt Time Of Death|     CodedContent   |    -    | [ActivityAtTimeOfDeath] |       -       |    -     |
@@ -62,12 +63,15 @@
 |Tobacco Use |     InputContent    |    -    | [TobaccoUseContributedToDeath] |       [ObservationTobaccoUseContributedToDeathVitalRecords]       |    -     |
 |Pregnancy Status |     InputContent    |    -    | [DecedentPregnancyStatus] |       [ObservationDecedentPregnancyVitalRecordsNew]       |    -     |
 |Surgery Date |     InputContent   |    -    | [SurgeryDate] |       -       |    -     |
+{: .grid }
 
 # Coded Race and Ethnicity
+
 | Name of Profile  | Group | change  |  Current Profile   | New Profile  | Comment |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 | CodedRaceAndEthnicity |     CodedContent   |    -    | [CodedRaceAndEthnicity] |      [CodedRaceAndEthnicityNew]       |    -     |
 | Input Race and Ethnicity |     InputContent    |    -    | [InputRaceAndEthnicity] |       [InputRaceAndEthnicityNew]       |    -     |
+{: .grid }
 
 
 {% include markdown-link-references.md %}
