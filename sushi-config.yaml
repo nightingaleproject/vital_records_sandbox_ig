@@ -233,6 +233,12 @@ groups:
     description: BFDR ValueSets
     resources:
       - CigaretteSmokingBeforeAndDuringPregnancy
+
+  BFDRProfiles:
+    name: BFDR Profiles
+    description: BFDR Profiles
+    resources:
+     - ObservationDrugUseDuringPregnancy
   
   VRDRCodeSystems:
     name: VRDR CodeSystems
