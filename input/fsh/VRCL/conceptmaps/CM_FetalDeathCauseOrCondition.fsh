@@ -16,11 +16,9 @@ Usage: #definition
 
 * insert AddGroup("IJE", $CodeSystem-vr-fetal-death-cause-or-condition)
 * insert MapConcept( #COD18a8,  "Initiating cause/condition - Maternal conditions/diseases literal", #maternalconditions, "Maternal Conditions/Diseases (Specify\)")
+// #COD18a6 and #COD18a8 go together.  One is a boolean that says that there is an other condition.  One is the literal for that condition.
 * insert MapConcept( #COD18a9,  "Initiating cause/condition - Other complications of placenta\, cord\, or membranes literal", #membranes, "Complications of Placenta\, Cord\, or Membranes: Other (Specify\)")
 * insert MapConcept( #COD18a10,  "Initiating cause/condition - Other obstetrical or pregnancy complications literal", #obstetricalcomplications, "Other Obstetrical or Pregnancy Complications (Specify\)")
 * insert MapConcept( #COD18a14,  "Initiating cause/condition - Other fetal conditions/disorders literal", #fetalconditions, "Other Fetal Conditions/Disorder (Specify\)" )
-
 * insert AddGroup("IJE", $v3-NullFlavor)
 * insert MapConcept( #COD18a7,  "Initiating cause/condition - Unknown", #UNK, "Unknown")
-
-* insert UnmatchedMapConcept( #COD18a6,  "Initiating cause/condition - Other complications of placenta\, cord\, or membranes", #NA, "None")

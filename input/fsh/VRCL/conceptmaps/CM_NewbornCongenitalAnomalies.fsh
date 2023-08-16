@@ -17,4 +17,5 @@ Usage: #definition
 * insert MapConcept( #DOWT,  "Congenital Anomalies of the Newborn--Down Syndrome", #70156005, "Down Syndrome")
 * insert MapConcept( #CDIT,  "Congenital Anomalies of the Newborn--Suspected Chromosomal disorder", #409709004, "Suspected chromosomal disorder")
 * insert MapConcept( #HYPO,  "Congenital Anomalies of the Newborn--Hypospadias", #416010008, "Hypospadias")
-* insert UnmatchedMapConcept( #NA,  "None - not in IJE", #260413007, "None")
+// There does not appear to be an IJE field that corresponds to the following value 
+//* insert MapConcept( #NA,  "None - not in IJE", #260413007, "None")
