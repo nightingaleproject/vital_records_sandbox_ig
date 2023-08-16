@@ -182,6 +182,8 @@ groups:
       - RelatedPersonParentVitalRecordsNew
       - RelatedPersonMotherVitalRecordsNew
       - RelatedPersonFatherVitalRecordsNew
+      - PractitionerVitalRecordsNew
+      - InputRaceAndEthnicityNew
       
   VRCLCodeSystems:
     name: VRCL CodeSystems
