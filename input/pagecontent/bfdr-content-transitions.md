@@ -1,7 +1,12 @@
 # Provider Live Birth
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
-| :-------------: | ----- | ------- | ------------------ | ------------ | :-----: | 
+| ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
+|Patient-Child |   subject  |    -    | [PatientChildVitalRecords] |     -         |   -      |
+|Encounter-Birth |   encounter  |    -    | [EncounterBirth] |     -         |   -      |
+|Encounter-Maternity (ext) |   encounter  |    -    | [EncounterMaternity] |     -         |   -      |
+|Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |   -      |
+|Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     -         |   -      |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
 |First Prenatal Care Visit |   motherPrenatal  |    -    | [ObservationDateOfFirstPrenatalCareVisit] |       -       |    -     |
 |Number Prenatal Care Visits|     motherPrenatal     |    -    | [ObservationNumberPrenatalVisitsVitalRecords] |       -       |    -     |
@@ -43,7 +48,11 @@
 # Provider Fetal Death
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
-| :-------------: | ----- | ------- | ------------------ | ------------ | :-----: | 
+| ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
+|Patient-Decedent Fetus |   subject  |    -    | [PatientDecedentFetusVitalRecords] |     -         |   -      |
+|Encounter-Maternity |   encounter  |    -    | [EncounterMaternity] |     -         |   -      |
+|Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |   -      |
+|Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     -         |   -      |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
 |First Prenatal Care Visit |   motherPrenatal  |    -    | [ObservationDateOfFirstPrenatalCareVisit] |       -       |    -     |
 |Date Last Normal Menses |     motherPrenatal     |    -    | [ObservationLastMenstrualPeriodVitalRecords] |       -       |    -     |
@@ -73,13 +82,13 @@
 |Patients Questionnaire Response |     patientsQuestionnaireResponse   |    -    | [Questionnaire-patients-fetal-death] |       -       |    -     |
 {: .grid }
 
-# Jurisdiction Live Birth - same as above but with edit flags
+<!-- # Jurisdiction Live Birth - same as above but with edit flags -->
 
-# Jurisdiction Fetal Death - same as above but with edit flags
+<!-- # Jurisdiction Fetal Death - same as above but with edit flags -->
 
-# Coded Race and Ethnicity - same as VRDR
+<!-- # Coded Race and Ethnicity - same as VRDR, ignore for now -->
 
-# Coded Cause of Fetal Death - needs review
+<!-- # Coded Cause of Fetal Death - needs review, ignore for now -->
 
 
 {% include markdown-link-references.md %}
