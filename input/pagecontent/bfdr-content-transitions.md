@@ -3,6 +3,8 @@
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |Patient-Child |   subject  |    -    | [PatientChildVitalRecords] |     -         |   moving from VRCL to BFDR   |
+| Mother's Race and Ethnicity| motherInfo |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
+| Father's Race and Ethnicity| motherInfo |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
 |Encounter-Birth |   encounter  |    -    | [EncounterBirth] |     -         |   -      |
 |Encounter-Maternity (ext) |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
 |Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |   -      |
@@ -67,7 +69,6 @@
 |Live Birth Certificate Number  |    -    | [ExtensionLiveBirthCertificateNumber] |     -       |   -      |
 |Live Birth Local File Number  |    -    | [ExtensionLiveBirthLocalFileNumber] |     -      |   -      |
 |Date Filed by Registrar |    -    | [ExtensionDateFiledByRegistrar] |     -         |   -      |
-<!--|Replacement Status |    -    | [ExtensionReplacementStatus] |    -       |   -      |-->
 |Partial Date  |    -    | [PartialDate] |    [ExtensionDatePartAbsentReasonVitalRecords]         |   -      |
 |Partial Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]             |    -     |
 {: .grid }
@@ -80,6 +81,7 @@
 |Encounter-Maternity |   encounter  |    -    | [EncounterMaternity] |     -         |   -      |
 |Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |   -      |
 |Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     -         |   moving from VRCL to BFDR    |
+| Mother's Race and Ethnicity| motherInfo |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
 |First Prenatal Care Visit |   motherPrenatal  |    -    | [ObservationDateOfFirstPrenatalCareVisit] |       -       |    -     |
 |Date Last Normal Menses |     motherPrenatal     |    -    | [ObservationLastMenstrualPeriodVitalRecords] |       -       |    moving from VRCL to BFDR    |
@@ -119,7 +121,6 @@
 |Fetal Death Report Number  |    -    | [ExtensionFetalDeathReportNumber] |     -       |   -      |
 |Fetal Death Local File Number  |    -    | [ExtensionFetalDeathLocalFileNumber] |     -      |   -      |
 |Date Received by Registrar |    -    | [ExtensionDatereceivedByRegistrar] |     -         |   -      |
-<!--|Replacement Status |    -    | [ExtensionReplacementStatus] |    -       |   -      | -->
 |Partial Date  |    -    | [PartialDate] |    [ExtensionDatePartAbsentReasonVitalRecords]         |   -      |
 |Partial Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]             |    -     |
 {: .grid }
