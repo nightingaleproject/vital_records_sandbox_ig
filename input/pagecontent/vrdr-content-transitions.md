@@ -19,7 +19,6 @@
 | Examiner Contacted |     DeathInvestigation    |    -    | [ExaminerContacted] |       -       |    -     |
 |Pregnancy Status |     DeathInvestigation    |    -    | [DecedentPregnancyStatus] |       [ObservationDecedentPregnancyVitalRecordsNew]       |    -     |
 |Tobacco Use |     DeathInvestigation    |    -    | [TobaccoUseContributedToDeath] |       [ObservationTobaccoUseContributedToDeathVitalRecords]       |    -     |
-|Military Service |     DeathInvestigation    |    -    | [DeathCertificate] |       -       |    -     |
 |Death Location |     DeathInvestigation   |    -    | [DeathLocation] |       -       |    -     |
 |Injury Location |     DeathInvestigation   |    -    | [InjuryLocation] |       [LocationInjuryVitalRecordsNew]       |    -     |
 |Injury Incident |     DeathInvestigation   |    -    | [InjuryIncident] |       [ObservationInjuryIncidentVitalRecordsNew]       |    -     |
@@ -32,6 +31,7 @@
 |Cause Of Death Part1 |     DeathInvestigation   |    -    | [CauseOfDeathPart1] |  [ObservationCauseOfDeathPart1VitalRecordsNew]            |    -     |
 |Cause Of Death Part2 |     DeathInvestigation   |    -    | [CauseOfDeathPart2] |   [ObservationCauseOfDeathPart2VitalRecordsNew]           |    -     |
 |Disposition Method |     DecedentDisposition   |    -    | [DecedentDispositionMethod] |    [ObservationDecedentDispositionMethodVitalRecordsNew]   |    -     |
+|Disposition Location |     DecedentDisposition   |    -    | [DispositionLocation] |       |   Base on Consolidated Vital Records Location (with death, injury)?     |
 |FuneralHome |     DecedentDisposition   |    -    | [FuneralHome] |        -      |    -     |
 |Mortician |     DecedentDisposition   |    -    | [USCorePractitioner] |       -       |    -     |
 {: .grid }
