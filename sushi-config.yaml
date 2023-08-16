@@ -60,8 +60,11 @@ pages:
     title: Home
   vrdr-content-transitions.md:
     title: VRDR Content Transitions 
+  bfdr-content-transitions.md:
+    title: BFDR Content Transitions 
   mdi-content-transitions.md:
     title: MDI Content Transitions 
+
 
 #
 #
@@ -93,6 +96,7 @@ menu:
   Home: index.html
   Artifacts: artifacts.html
   VRDR: vrdr-content-transitions.html
+  BFDR: bfdr-content-transitions.html
   MDI: mdi-content-transitions.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
