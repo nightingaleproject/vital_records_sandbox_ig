@@ -4,7 +4,7 @@
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |Patient-Child |   subject  |    -    | [PatientChildVitalRecords] |     -         |   -      |
 |Encounter-Birth |   encounter  |    -    | [EncounterBirth] |     -         |   -      |
-|Encounter-Maternity (ext) |   encounter  |    -    | [EncounterMaternity] |     -         |   -      |
+|Encounter-Maternity (ext) |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
 |Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |   -      |
 |Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     -         |   -      |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
