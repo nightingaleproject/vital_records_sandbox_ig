@@ -67,7 +67,7 @@
 |Live Birth Certificate Number  |    -    | [ExtensionLiveBirthCertificateNumber] |     -       |   -      |
 |Live Birth Local File Number  |    -    | [ExtensionLiveBirthLocalFileNumber] |     -      |   -      |
 |Date Filed by Registrar |    -    | [ExtensionDateFiledByRegistrar] |     -         |   -      |
-|Replacement Status |    -    | [ExtensionReplacementStatus] |    -       |   -      |
+<!--|Replacement Status |    -    | [ExtensionReplacementStatus] |    -       |   -      |-->
 |Partial Date  |    -    | [PartialDate] |    [ExtensionDatePartAbsentReasonVitalRecords]         |   -      |
 |Partial Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]             |    -     |
 {: .grid }
@@ -119,7 +119,7 @@
 |Fetal Death Report Number  |    -    | [ExtensionFetalDeathReportNumber] |     -       |   -      |
 |Fetal Death Local File Number  |    -    | [ExtensionFetalDeathLocalFileNumber] |     -      |   -      |
 |Date Received by Registrar |    -    | [ExtensionDatereceivedByRegistrar] |     -         |   -      |
-|Replacement Status |    -    | [ExtensionReplacementStatus] |    -       |   -      |
+<!--|Replacement Status |    -    | [ExtensionReplacementStatus] |    -       |   -      | -->
 |Partial Date  |    -    | [PartialDate] |    [ExtensionDatePartAbsentReasonVitalRecords]         |   -      |
 |Partial Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]             |    -     |
 {: .grid }
