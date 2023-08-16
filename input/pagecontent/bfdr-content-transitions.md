@@ -25,31 +25,31 @@
 |Number Previous Cesareans |     medicalHealthInformation     |    -    | [ObservationNumberPreviousCesareansVitalRecords] |       -       |    moving from VRCL to BFDR    |
 |Infections During Pregnancy |     medicalHealthInformation   |    -    | [ConditionInfectionPresentDuringPregnancy] |       -       |    -     |
 |Obstetric Procedures |     medicalHealthInformation    |    -    | [ProcedureObstetric] |       -       |    -     |
-|Induction of Labor (Procedure) |     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ProcedureInductionOfLabor] |       -       |    -     |
-|Augmentation of Labor (Procedure)|     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ProcedureAugmentationOfLabor] |       -       |    -     |
+|Induction of Labor |     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ProcedureInductionOfLabor] |       -       |    -     |
+|Augmentation of Labor |     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ProcedureAugmentationOfLabor] |       -       |    -     |
 |Steroids Fetal Lung Maturation |     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ObservationSteroidsFetalLungMaturation] |       -       |    -     |
 |Antibiotics Administered During Labor |     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ObservationAntibioticsAdministeredDuringLabor] |     -       |    -     |
-|Chorioamnionitis (Condition) |     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ConditionChorioamnionitis]  |       -       |    -     |
-|Epidural or Spinal Anesthesia (Procedure) |     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ProcedureEpiduralOrSpinalAnesthesia]  |       -       |    -     |
+|Chorioamnionitis |     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ConditionChorioamnionitis]  |       -       |    -     |
+|Epidural or Spinal Anesthesia |     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ProcedureEpiduralOrSpinalAnesthesia]  |       -       |    -     |
 |None of Specified Characteristics of Labor and Delivery |     medicalHealthInformation/Characteristics Labor Delivery    |    -    | [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery]  |       -       |    -     |
 |Fetal Presentations |     medicalHealthInformation   |    -    | [ObservationFetalPresentation] |       -       |    -     |
 |Final Route Method Delivery|     medicalHealthInformation   |    -    | [ProcedureFinalRouteMethodDelivery] |       -       |    -     |
-|Blood Transfusion (Procedure) |     medicalHealthInformation/Maternal Morbidity    |    -    | [ProcedureBloodTransfusion] |       -       |    -     |
-|Perineal Laceration (Condition) |     medicalHealthInformation/Maternal Morbidity    |    -    | [ConditionPerinealLaceration] |       -       |    -     |
-|Ruptured Uterus (Condition) |     medicalHealthInformation/Maternal Morbidity    |    -    | [ConditionRupturedUterus] |       -       |    -     |
-|Unplanned Hysterectomy (Procedure) |     medicalHealthInformation/Maternal Morbidity    |    -    | [ProcedureUnplannedHysterectomy] |       -       |    -     |
+|Blood Transfusion |     medicalHealthInformation/Maternal Morbidity    |    -    | [ProcedureBloodTransfusion] |       -       |    -     |
+|Perineal Laceration |     medicalHealthInformation/Maternal Morbidity    |    -    | [ConditionPerinealLaceration] |       -       |    -     |
+|Ruptured Uterus  |     medicalHealthInformation/Maternal Morbidity    |    -    | [ConditionRupturedUterus] |       -       |    -     |
+|Unplanned Hysterectomy |     medicalHealthInformation/Maternal Morbidity    |    -    | [ProcedureUnplannedHysterectomy] |       -       |    -     |
 |ICU Admission |     medicalHealthInformation/Maternal Morbidity    |    -    | [ObservationICUAdmission] |       -       |    -     |
 |None of Specified Maternal Morbidities |     medicalHealthInformation/Maternal Morbidity    |    -    | [ObservationNoneOfSpecifiedMaternalMorbidities] |       -       |    -     |
 |Birth Weight |     newbornInformation   |    -    | [ObservationBirthWeightVitalRecords] |       -       |    moving from VRCL to BFDR    |
 |Gestational Age at Delivery |     newbornInformation    |    -    | [ObservationGestationalAgeAtDeliveryVitalRecords] |       -       |    moving from VRCL to BFDR    |
 |Apgar Score |     newbornInformation    |    -    | [ObservationApgarScoreVitalRecords] |       -       |    moving from VRCL to BFDR    |
 |Number Live Births This Delivery |     newbornInformation   |    -    | [ObservationNumberLiveBirthsThisDeliveryVitalRecords] |       -       |    moving from VRCL to BFDR    |
-|Assisted Ventilation Following Delivery (Procedure) |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureAssisstedVentilationFollowingDelivery]  |       -       |    -     |
-|Assisted Ventilation More than Six Hours (Procedure) |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureAssisstedVentilationMoreThanSixHours]   |       -       |    -     |
+|Assisted Ventilation Following Delivery |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureAssisstedVentilationFollowingDelivery]  |       -       |    -     |
+|Assisted Ventilation More than Six Hours  |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureAssisstedVentilationMoreThanSixHours]   |       -       |    -     |
 |ICU Admission |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ObservationICUAdmission]   |       -       |    -     |
-|Surfactant Replacement Therapy (Procedure) |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureSurfactantReplacementTherapy]   |       -       |    -     |
-|Antibiotic Suspected Neonatal Sepsis (Procedure) |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureAntibioticSuspectedNeonatalSepsis]   |       -       |    -     |
-|Seizure (Condition) |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ConditionSeizure]   |       -       |    -     |
+|Surfactant Replacement Therapy |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureSurfactantReplacementTherapy]   |       -       |    -     |
+|Antibiotic Suspected Neonatal Sepsis |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureAntibioticSuspectedNeonatalSepsis]   |       -       |    -     |
+|Seizure|     newbornInformation/Abnormal Conditions Newborn  |    -    | [ConditionSeizure]   |       -       |    -     |
 |None of Specified Abnormal Conditions of Newborn |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn] |       -       |    -     |
 |Congenital Anomalies Newborn |     newbornInformation    |    -    |    [ConditionCongenitalAnomalyOfNewborn]    |    -    |    -     |
 |Infant Living |     newbornInformation    |    -    | [ObservationInfantLivingVitalRecords] |       -       |    moving from VRCL to BFDR    |
@@ -94,10 +94,10 @@
 |Number Previous Cesareans |     medicalHealthInformation     |    -    | [ObservationNumberPreviousCesareansVitalRecords] |       -       |    moving from VRCL to BFDR    |
 |Fetal Presentations |     medicalHealthInformation   |    -    | [ObservationFetalPresentation] |       -       |    -     |
 |Final Route Method Delivery|     medicalHealthInformation   |    -    | [ProcedureFinalRouteMethodDelivery] |       -       |    -     |
-|Blood Transfusion (Procedure)|     medicalHealthInformation/Maternal Morbidity   |    -    | [ProcedureBloodTransfusion] |       -       |    -     |
-|Perineal Laceration (Condition)|     medicalHealthInformation/Maternal Morbidity   |    -    | [ConditionPerinealLaceration] |       -       |    -     |
-|Ruptured Uterus (Condition)|     medicalHealthInformation/Maternal Morbidity   |    -    | [ConditionRupturedUterus] |       -       |    -     |
-|Unplanned Hysterectomy (Procedure)|     medicalHealthInformation/Maternal Morbidity   |    -    | [ProcedureUnplannedHysterectomy] |       -       |    -     |
+|Blood Transfusion |     medicalHealthInformation/Maternal Morbidity   |    -    | [ProcedureBloodTransfusion] |       -       |    -     |
+|Perineal Laceration |     medicalHealthInformation/Maternal Morbidity   |    -    | [ConditionPerinealLaceration] |       -       |    -     |
+|Ruptured Uterus |     medicalHealthInformation/Maternal Morbidity   |    -    | [ConditionRupturedUterus] |       -       |    -     |
+|Unplanned Hysterectomy |     medicalHealthInformation/Maternal Morbidity   |    -    | [ProcedureUnplannedHysterectomy] |       -       |    -     |
 |ICU Admission|     medicalHealthInformation/Maternal Morbidity   |    -    | [ObservationICUAdmission] |       -       |    -     |
 |None of Specified Maternal Morbidities|     medicalHealthInformation/Maternal Morbidity   |    -    | [ObservationNoneOfSpecifiedMaternalMorbidities] |       -       |    -     |
 |Delivery Weight |     fetus   |    -    | [ObservationBirthWeightVitalRecords] |       -       |    moving from VRCL to BFDR    |
