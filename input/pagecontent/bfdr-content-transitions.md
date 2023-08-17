@@ -3,8 +3,8 @@
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |Patient-Child |   subject  |    -    | [PatientChildVitalRecords] |     -         |   moving from VRCL to BFDR   |
-| Mother's Race and Ethnicity| motherInfo |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
-| Father's Race and Ethnicity| motherInfo |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
+| Mother's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
+| Father's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
 |Encounter-Birth |   encounter  |    -    | [EncounterBirth] |     -         |   -      |
 |Encounter-Maternity (ext) |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
 |Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |   -      |
@@ -78,10 +78,10 @@
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |Patient-Decedent Fetus |   subject  |    -    | [PatientDecedentFetusVitalRecords] |     -         |   moving from VRCL to BFDR   |
-|Encounter-Maternity |   encounter  |    -    | [EncounterMaternity] |     -         |   -      |
+|Encounter-Maternity |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
 |Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |   -      |
 |Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     -         |   moving from VRCL to BFDR    |
-| Mother's Race and Ethnicity| motherInfo |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
+| Mother's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
 |First Prenatal Care Visit |   motherPrenatal  |    -    | [ObservationDateOfFirstPrenatalCareVisit] |       -       |    -     |
 |Date Last Normal Menses |     motherPrenatal     |    -    | [ObservationLastMenstrualPeriodVitalRecords] |       -       |    moving from VRCL to BFDR    |
