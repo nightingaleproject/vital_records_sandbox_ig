@@ -9,7 +9,7 @@ Description: "Selected medical risk factors of the mother during the pregnancy."
 * subject only Reference(PatientMotherNew)
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from ValueSetPregancyRiskFactors (extensible)
+* value[x] from ValueSetPregnancyRiskFactors (extensible)
 //* value[x] from PHVS_PregnancyRiskFactors_NCHS (extensible)
   * ^short = "The value set contains the list of values used to indicate selected medical risk factors of the mother during this pregnancy."
   * ^binding.description = "Pregnancy Risk Factors (NCHS)"
