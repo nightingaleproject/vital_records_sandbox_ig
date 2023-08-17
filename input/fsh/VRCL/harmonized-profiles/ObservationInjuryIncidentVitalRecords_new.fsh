@@ -6,6 +6,7 @@ value:
    - MDI not bound to anything --literal
    - VR Common not bound -- literal
    - VRDR not bound -- literal
+   - value (literal) should be optional, not 1..1
 note:
      not MS in VRDR
 performer:
@@ -39,7 +40,8 @@ This profile is designed to supplant the similar profiles in VRDR and MDI"
 * performer only Reference(USCorePractitionerProfile) //generalized to Practitioner
   * ^short = "Certifier of the explanation."
   * ^definition = "Certifier of the explanation."
-* value[x] 1..1 
+// * value[x] 1..1 
+* value[x] 0..1 
 * value[x] only CodeableConcept
   * text 
     * ^short = "Description of how injured"

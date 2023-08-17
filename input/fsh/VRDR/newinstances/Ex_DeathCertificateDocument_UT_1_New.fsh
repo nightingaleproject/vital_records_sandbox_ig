@@ -62,7 +62,7 @@ Usage: #example
 * entry[=].resource = Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-16
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-1
-InstanceOf: DeathCertificate
+InstanceOf: DeathCertificateNew
 Usage: #inline
 * id = "2308e468-5086-46aa-b340-1819998e15de"
 * extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/FilingFormat"
@@ -124,13 +124,13 @@ Usage: #inline
 * name.suffix = "Jr"
 * gender = #male
 * birthDate = "2021-03-04"
-* birthDate.extension.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year"
+* birthDate.extension.extension[0].url = "year"
 * birthDate.extension.extension[=].valueUnsignedInt = 2021
-* birthDate.extension.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month"
+* birthDate.extension.extension[+].url = "month"
 * birthDate.extension.extension[=].valueUnsignedInt = 3
-* birthDate.extension.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day"
+* birthDate.extension.extension[+].url = "day"
 * birthDate.extension.extension[=].valueUnsignedInt = 4
-* birthDate.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate"
+* birthDate.extension.url = Canonical(ExtensionDatePartAbsentReasonVitalRecords)
 * address.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetNumber"
 * address.extension[=].valueString = "2722"
 * address.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/PreDirectional"
@@ -158,54 +158,34 @@ Usage: #inline
 * maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#S "Never Married"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-2
-InstanceOf: InputRaceAndEthnicity
+InstanceOf: InputRaceAndEthnicityNew
 Usage: #inline
 * id = "0a1ded2c-6140-4abc-9128-0af93e2f2ea5"
 * status = #final
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* component[0].code = ComponentCS#White
-* component[=].valueBoolean = true
-* component[+].code = ComponentCS#BlackOrAfricanAmerican
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#AmericanIndianOrAlaskanNative
-* component[=].valueBoolean = true
-* component[+].code = ComponentCS#FirstAmericanIndianOrAlaskanNativeLiteral
-* component[=].valueString = "Cheyenne"
-* component[+].code = ComponentCS#Chinese
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#Japanese
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#NativeHawaiian
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#Filipino
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#OtherAsian
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#AsianIndian
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#Korean
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#Samoan
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#Vietnamese
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#GuamanianOrChamorro
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#OtherPacificIslander
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#OtherRace
-* component[=].valueBoolean = false
-* component[+].code = ComponentCS#HispanicMexican
-* component[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
-* component[+].code = ComponentCS#HispanicCuban
-* component[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
-* component[+].code = ComponentCS#HispanicPuertoRican
-* component[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
-* component[+].code = ComponentCS#HispanicOther
-* component[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
+* component[White].valueBoolean = true
+* component[BlackOrAfricanAmerican].valueBoolean = false
+* component[AmericanIndianOrAlaskanNative].valueBoolean = true
+* component[FirstAmericanIndianOrAlaskanNativeLiteral].valueString = "Cheyenne"
+* component[Chinese].valueBoolean = false
+* component[Japanese].valueBoolean = false
+* component[NativeHawaiian].valueBoolean = false
+* component[Filipino].valueBoolean = false
+* component[OtherAsian].valueBoolean = false
+* component[AsianIndian].valueBoolean = false
+* component[Korean].valueBoolean = false
+* component[Samoan].valueBoolean = false
+* component[Vietnamese].valueBoolean = false
+* component[GuamanianOrChamorro].valueBoolean = false
+* component[OtherPacificIslander].valueBoolean = false
+* component[OtherRace].valueBoolean = false
+* component[HispanicMexican].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
+* component[HispanicCuban].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
+* component[HispanicPuertoRican].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
+* component[HispanicOther].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-3
-InstanceOf: Certifier
+InstanceOf: PractitionerVitalRecordsNew
 Usage: #inline
 * id = "01bbed3c-a3ed-4e07-8048-30fde65a8302"
 * identifier.value = "161632-1999"
@@ -231,9 +211,11 @@ Usage: #inline
 * component[birthJurisdiction].valueString = "CO"
 
 Instance: d96686b8-4d80-4436-b090-36a3fe7b8de1
-InstanceOf: DecedentEducationLevel
+InstanceOf: ObservationEducationLevelVitalRecordsNew
 Usage: #inline
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
+* status = #final
+* code = $loinc#80913-7 "Highest level of education [US Standard Certificate of Death]"
 * valueCodeableConcept.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
 * valueCodeableConcept.extension.valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
 * valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-EducationLevel#ELEM "Elementary School"
@@ -267,7 +249,7 @@ Usage: #inline
 * component[autopsyResultsAvailable].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK "Unknown"
 
 Instance: e48fce6f-bf4c-4c27-8fe9-d6a1e0c49094
-InstanceOf: CauseOfDeathPart1
+InstanceOf: ObservationCauseOfDeathPart1VitalRecordsNew
 Usage: #inline
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * performer = Reference(urn:uuid:01bbed3c-a3ed-4e07-8048-30fde65a8302)
@@ -277,20 +259,20 @@ Usage: #inline
 * status = #preliminary
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-5
-InstanceOf: DeathDate
+InstanceOf: ObservationDeathDateVitalRecordsNew
 Usage: #inline
 * id = "86ead912-393d-40b0-8ea0-6ec9dcfde385"
-* code = http://loinc.org#81956-5 "Date+time of death"
+* status = #final 
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * effectiveDateTime = "2022-01-17T20:23:00-05:00"
 * performer = Reference(urn:uuid:01bbed3c-a3ed-4e07-8048-30fde65a8302)
-* valueDateTime.extension.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year"
+* valueDateTime.extension.extension[0].url = "year"
 * valueDateTime.extension.extension[=].valueUnsignedInt = 2022
-* valueDateTime.extension.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month"
+* valueDateTime.extension.extension[+].url = "month"
 * valueDateTime.extension.extension[=].valueUnsignedInt = 1
-* valueDateTime.extension.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day"
+* valueDateTime.extension.extension[+].url = "day"
 * valueDateTime.extension.extension[=].valueUnsignedInt = 17
-* valueDateTime.extension.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Time"
+* valueDateTime.extension.extension[+].url = "time"
 * valueDateTime.extension.extension[=].valueTime = "18:23:00"
 * valueDateTime.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime"
 * component.code = http://loinc.org#58332-8 "Location of death"
@@ -316,8 +298,9 @@ Usage: #inline
 * valueQuantity = 10 'mo' "Months"
 
 Instance: a4599a98-7656-4974-8869-493d80326de3
-InstanceOf: DecedentDispositionMethod
+InstanceOf: ObservationDecedentDispositionMethodVitalRecordsNew
 Usage: #inline
+* status = #final 
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * valueCodeableConcept = http://snomed.info/sct#449971000124106 "Burial"
 
@@ -348,8 +331,9 @@ Usage: #inline
 * valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
 
 Instance: c9383d2d-33b6-44c9-a0ab-43707ded5efc
-InstanceOf: DecedentPregnancyStatus
+InstanceOf: ObservationDecedentPregnancyVitalRecordsNew
 Usage: #inline
+* status = #final 
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * valueCodeableConcept.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
 * valueCodeableConcept.extension[=].valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
@@ -376,15 +360,17 @@ Usage: #inline
 * address.country = "US"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-13
-InstanceOf: InjuryIncident
+InstanceOf: ObservationInjuryIncidentVitalRecordsNew
 Usage: #inline
 * id = "82c823f3-27b7-4255-a4ae-fefcd241951d"
+* status = #final 
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * component[workInjuryIndicator].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK "Unknown"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-14
-InstanceOf: MannerOfDeath
+InstanceOf: ObservationMannerOfDeathVitalRecordsNew
 Usage: #inline
+* status = #final 
 * id = "8741eb7f-8a04-4043-8768-4788fd8059dd"
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * performer = Reference(urn:uuid:01bbed3c-a3ed-4e07-8048-30fde65a8302)
