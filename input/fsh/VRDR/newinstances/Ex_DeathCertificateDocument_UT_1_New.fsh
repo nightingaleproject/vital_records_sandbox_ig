@@ -111,12 +111,13 @@ Usage: #inline
 Instance: f906300e-3622-459c-8201-af0d9b90fb75
 InstanceOf: Decedent
 Usage: #inline
-* extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/NVSS-SexAtDeath"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
-* extension[=].valueAddress.use = #old
-* extension[=].valueAddress.state = "CO"
-* extension[=].valueAddress.country = "US"
+* extension[NVSSSexAtDeath].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
+//* extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+//* extension[http://hl7.org/fhir/StructureDefinition/patient-birthPlace]
+* extension[Patient-BirthPlace]
+  * valueAddress.use = #old
+  * valueAddress.state = "CO"
+  * valueAddress.country = "US"
 * identifier[ssn].value = "429471420"
 * name.use = #official
 * name.family = "Lineberry"
@@ -124,23 +125,15 @@ Usage: #inline
 * name.suffix = "Jr"
 * gender = #male
 * birthDate = "2021-03-04"
-* birthDate.extension.extension[0].url = "year"
-* birthDate.extension.extension[=].valueUnsignedInt = 2021
-* birthDate.extension.extension[+].url = "month"
-* birthDate.extension.extension[=].valueUnsignedInt = 3
-* birthDate.extension.extension[+].url = "day"
-* birthDate.extension.extension[=].valueUnsignedInt = 4
-* birthDate.extension.url = Canonical(ExtensionDatePartAbsentReasonVitalRecords)
-* address.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetNumber"
-* address.extension[=].valueString = "2722"
-* address.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/PreDirectional"
-* address.extension[=].valueString = "N"
-* address.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetName"
-* address.extension[=].valueString = "Pin Oak"
-* address.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetDesignator"
-* address.extension[=].valueString = "Dr"
-* address.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/WithinCityLimitsIndicator"
-* address.extension[=].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0136#Y "Yes"
+* birthDate.extension[partialDate]
+  * extension[year].valueUnsignedInt = 2021
+  * extension[month].valueUnsignedInt = 3
+  * extension[day].valueUnsignedInt = 4
+* address.extension[stnum].valueString = "2722"
+* address.extension[predir].valueString = "N"
+* address.extension[stname].valueString = "Pin Oak"
+* address.extension[stdesig].valueString = "Dr"
+* address.extension[withinCityLimitsIndicator].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0136#Y "Yes"
 * address.line = "2722 N Pin Oak Dr"
 * address.city = "Laramie"
 * address.city.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/CityCode"
@@ -216,8 +209,8 @@ Usage: #inline
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * status = #final
 * code = $loinc#80913-7 "Highest level of education [US Standard Certificate of Death]"
-* valueCodeableConcept.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
-* valueCodeableConcept.extension.valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
+//* valueCodeableConcept.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
+* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
 * valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-EducationLevel#ELEM "Elementary School"
 
 Instance: ad87f0b9-b194-410b-b08f-1c543532a6fd
@@ -266,15 +259,12 @@ Usage: #inline
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * effectiveDateTime = "2022-01-17T20:23:00-05:00"
 * performer = Reference(urn:uuid:01bbed3c-a3ed-4e07-8048-30fde65a8302)
-* valueDateTime.extension.extension[0].url = "year"
-* valueDateTime.extension.extension[=].valueUnsignedInt = 2022
-* valueDateTime.extension.extension[+].url = "month"
-* valueDateTime.extension.extension[=].valueUnsignedInt = 1
-* valueDateTime.extension.extension[+].url = "day"
-* valueDateTime.extension.extension[=].valueUnsignedInt = 17
-* valueDateTime.extension.extension[+].url = "time"
-* valueDateTime.extension.extension[=].valueTime = "18:23:00"
-* valueDateTime.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime"
+* valueDateTime.extension[partialDateTime]
+  * extension[year].valueUnsignedInt = 2022
+  * extension[month].valueUnsignedInt = 1
+  * extension[day].valueUnsignedInt = 17
+  * extension[time].valueTime = "18:23:00"
+//* valueDateTime.extension.url = Canonical(ExtensionDateTimePartAbsentReasonVitalRecords)
 * component.code = http://loinc.org#58332-8 "Location of death"
 * component.valueCodeableConcept = http://snomed.info/sct#16983000 "Death in hospital"
 
@@ -293,8 +283,8 @@ InstanceOf: DecedentAge
 Usage: #inline
 * id = "7eda2a2c-f92d-4885-949f-34c500241300"
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* valueQuantity.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
-* valueQuantity.extension.valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
+//* valueQuantity.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
+* valueQuantity.extension[bypassEditFlag].valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
 * valueQuantity = 10 'mo' "Months"
 
 Instance: a4599a98-7656-4974-8869-493d80326de3
@@ -335,8 +325,8 @@ InstanceOf: ObservationDecedentPregnancyVitalRecordsNew
 Usage: #inline
 * status = #final 
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* valueCodeableConcept.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
-* valueCodeableConcept.extension[=].valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
+//* valueCodeableConcept.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
+* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
 * valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NA "Not applicable"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-11
