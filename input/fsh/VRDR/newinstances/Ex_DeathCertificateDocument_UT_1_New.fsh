@@ -65,10 +65,8 @@ Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-1
 InstanceOf: DeathCertificateNew
 Usage: #inline
 * id = "2308e468-5086-46aa-b340-1819998e15de"
-* extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/FilingFormat"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-filing-format-cs#electronic
-* extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/StateSpecificField"
-* extension[=].valueString = "20220101"
+* extension[FilingFormat].valueCodeableConcept = FilingFormatCS#electronic
+* extension[StateSpecificField].valueString = "20220101"
 * status = #final
 * title = "Death Certificate for Davis Lineberry Jr"
 * type = http://loinc.org#64297-5 "Death certificate"
