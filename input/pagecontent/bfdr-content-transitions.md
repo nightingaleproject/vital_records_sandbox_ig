@@ -7,7 +7,7 @@
 | Father's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
 |Encounter-Birth |   encounter  |    -    | [EncounterBirth] |     -         |   -      |
 |Encounter-Maternity (ext) |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
-|Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] | generalized profile that adds a further constraint to capture the title of the practitioner |
+|Practitioner |   author  |  generalized profile that adds a further constraint to capture the title of the practitioner  | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] | - |
 |Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     [PatientMotherNew]        |   moving from VRCL to BFDR   |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
 |First Prenatal Care Visit |   motherPrenatal  |    -    | [ObservationDateOfFirstPrenatalCareVisit] |       -       |    -     |
@@ -23,7 +23,7 @@
 |Mother's Prepregancy Weight|     motherPrenatal     |    -    | [ObservationMotherPrepregnancyWeightVitalRecords] |   [ObservationMotherPrepregnancyWeightNew]    |    moving from VRCL to BFDR    |
 |Mother Received WIC Food|     motherPrenatal     |    -    | [ObservationMotherReceivedWICFood] |       -       |    -     |
 |Cigarette Smoking Before During Pregnancy|     motherPrenatal     |    -    | [ObservationCigaretteSmokingBeforeDuringPregnancy] |       -       |    -     |
-|Pregnancy Risk Factors |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ObservationPregnancyRiskFactorNew]   |    moving from VRCL to BFDR    |
+|Pregnancy Risk Factors |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ObservationPregnancyRiskFactorNew]   |    moving from VRCL to BFDR, new valueSet from Phinvads    |
 |Number Previous Cesareans |     medicalHealthInformation     |    -    | [ObservationNumberPreviousCesareansVitalRecords] |  [ObservationNumberPreviousCesareansNew]   |    moving from VRCL to BFDR    |
 |Infections During Pregnancy |     medicalHealthInformation   |    -    | [ConditionInfectionPresentDuringPregnancy] |       -       |    -     |
 |Obstetric Procedures |     medicalHealthInformation    |    -    | [ProcedureObstetric] |       -       |    -     |
@@ -58,9 +58,9 @@
 |Infant Breastfed at Discharge|     newbornInformation    |    -    | [ObservationInfantBreastfedAtDischarge] |       -       |    -     |
 |Married During Pregnancy |     motherInformation   |    -    | [ObservationMotherMarriedDuringPregnancy] |       -       |    -     |
 |SSN Requested for Child |     motherInformation   |    -    | [ObservationSSNRequestedForChild] |       -       |    -     |
-|Mothers Education|     motherInformation   |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |   added Decedent education level code, removed MS flags |
+|Mothers Education|     motherInformation   |  added Decedent education level code, removed MS flags  | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |  - |
 |Paternity Acknowledgement Signed |     fatherInformation   |    -    | [ObservationPaternityAcknowledgementSigned] |       -       |    -     |
-|Fathers Education|     fatherInformation  |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |  added Decedent education level code, removed MS flags  |
+|Fathers Education|     fatherInformation  |   added Decedent education level code, removed MS flags   | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |  - |
 |Questionnaire-Mother's Worksheet for Child's Birth Certificate |     mothersQuestionnaireResponse   |    -    | [Questionnaire-mothers-live-birth] |       -       |    -     |
 {: .grid }
 
@@ -79,7 +79,7 @@
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |Patient-Decedent Fetus |   subject  |    -    | [PatientDecedentFetusVitalRecords] |  [PatientDecedentFetusNew]   |   moving from VRCL to BFDR   |
 |Encounter-Maternity |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
-|Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |  generalized profile that adds a further constraint to capture the title of the practitioner   |
+|Practitioner |   author  |    generalized profile that adds a further constraint to capture the title of the practitioner    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |  -  |
 |Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |   [PatientMotherNew]    |   moving from VRCL to BFDR    |
 | Mother's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
@@ -92,7 +92,7 @@
 |Mother's Prepregancy Weight|     motherPrenatal     |    -    | [ObservationMotherPrepregnancyWeightVitalRecords] |   [ObservationMotherPrepregnancyWeightNew]    |    moving from VRCL to BFDR    |
 |Mother Received WIC Food|     motherPrenatal     |    -    | [ObservationMotherReceivedWICFood] |       -       |    -     |
 |Cigarette Smoking Before During Pregnancy|     motherPrenatal     |    -    | [ObservationCigaretteSmokingBeforeDuringPregnancy] |       -       |    -     |
-|Pregnancy Risk Factors |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ObservationPregnancyRiskFactorNew]   |    moving from VRCL to BFDR    |
+|Pregnancy Risk Factors |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ObservationPregnancyRiskFactorNew]   |    moving from VRCL to BFDR, new valueSet from Phinvads    |
 |Number Previous Cesareans |     medicalHealthInformation     |    -    | [ObservationNumberPreviousCesareansVitalRecords] |  [ObservationNumberPreviousCesareansNew]   |    moving from VRCL to BFDR    |
 |Fetal Presentations |     medicalHealthInformation   |    -    | [ObservationFetalPresentation] |       -       |    -     |
 |Final Route Method Delivery|     medicalHealthInformation   |    -    | [ProcedureFinalRouteMethodDelivery] |       -       |    -     |
@@ -112,7 +112,7 @@
 |Autopsy or Histological Exam Used|     fetus     |    -    | [ObservationAutopsyHistologicalExamResultsUsed] |       -       |    -     |
 |Number Live Births This Delivery |     fetus    |    -    | [ObservationNumberLiveBirthsThisDeliveryVitalRecords] |  [ObservationNumberLiveBirthsThisDeliveryNew]  |    moving from VRCL to BFDR    |
 |Number Fetal Deaths This Delivery |     fetus    |    -    | [ObservationNumberFetalDeathsThisDeliveryVitalRecords] |  [ObservationNumberFetalDeathsThisDeliveryNew]   |    moving from VRCL to BFDR    |
-|Mothers Education|     motherInformation   |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |   added Decedent education level code, removed MS flags   |
+|Mothers Education|     motherInformation   |    added Decedent education level code, removed MS flags   | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |  -  |
 |Patients Questionnaire Response |     patientsQuestionnaireResponse   |    -    | [Questionnaire-patients-fetal-death] |       -       |    -     |
 {: .grid }
 
