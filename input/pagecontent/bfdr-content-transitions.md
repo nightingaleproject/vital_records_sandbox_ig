@@ -7,7 +7,7 @@
 | Father's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
 |Encounter-Birth |   encounter  |    -    | [EncounterBirth] |     -         |   -      |
 |Encounter-Maternity (ext) |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
-|Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |   -      |
+|Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] | generalized profile that adds a further constraint to capture the title of the practitioner |
 |Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     [PatientMotherNew]        |   moving from VRCL to BFDR   |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
 |First Prenatal Care Visit |   motherPrenatal  |    -    | [ObservationDateOfFirstPrenatalCareVisit] |       -       |    -     |
@@ -58,9 +58,9 @@
 |Infant Breastfed at Discharge|     newbornInformation    |    -    | [ObservationInfantBreastfedAtDischarge] |       -       |    -     |
 |Married During Pregnancy |     motherInformation   |    -    | [ObservationMotherMarriedDuringPregnancy] |       -       |    -     |
 |SSN Requested for Child |     motherInformation   |    -    | [ObservationSSNRequestedForChild] |       -       |    -     |
-|Mothers Education|     motherInformation   |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |    -     |
+|Mothers Education|     motherInformation   |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |   added Decedent education level code, removed MS flags |
 |Paternity Acknowledgement Signed |     fatherInformation   |    -    | [ObservationPaternityAcknowledgementSigned] |       -       |    -     |
-|Fathers Education|     fatherInformation  |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |    -     |
+|Fathers Education|     fatherInformation  |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |  added Decedent education level code, removed MS flags  |
 |Questionnaire-Mother's Worksheet for Child's Birth Certificate |     mothersQuestionnaireResponse   |    -    | [Questionnaire-mothers-live-birth] |       -       |    -     |
 {: .grid }
 
@@ -79,7 +79,7 @@
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |Patient-Decedent Fetus |   subject  |    -    | [PatientDecedentFetusVitalRecords] |  [PatientDecedentFetusNew]   |   moving from VRCL to BFDR   |
 |Encounter-Maternity |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
-|Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |   -      |
+|Practitioner |   author  |    -    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |  generalized profile that adds a further constraint to capture the title of the practitioner   |
 |Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |   [PatientMotherNew]    |   moving from VRCL to BFDR    |
 | Mother's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
@@ -112,7 +112,7 @@
 |Autopsy or Histological Exam Used|     fetus     |    -    | [ObservationAutopsyHistologicalExamResultsUsed] |       -       |    -     |
 |Number Live Births This Delivery |     fetus    |    -    | [ObservationNumberLiveBirthsThisDeliveryVitalRecords] |  [ObservationNumberLiveBirthsThisDeliveryNew]  |    moving from VRCL to BFDR    |
 |Number Fetal Deaths This Delivery |     fetus    |    -    | [ObservationNumberFetalDeathsThisDeliveryVitalRecords] |  [ObservationNumberFetalDeathsThisDeliveryNew]   |    moving from VRCL to BFDR    |
-|Mothers Education|     motherInformation   |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |    -     |
+|Mothers Education|     motherInformation   |    -    | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |   added Decedent education level code, removed MS flags   |
 |Patients Questionnaire Response |     patientsQuestionnaireResponse   |    -    | [Questionnaire-patients-fetal-death] |       -       |    -     |
 {: .grid }
 
