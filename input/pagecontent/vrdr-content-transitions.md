@@ -4,7 +4,7 @@
 
 | Name of Profile  | Group | change  |  Current Profile   | New Profile  | Comment |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
-|Death Certificate |   -  |    -    | [DeathCertificate] |     -         |   -      |
+|Death Certificate |   -  |    -    | [DeathCertificate] |     [DeathCertificateNew]         |   Updated to reference generalized profiles and valuesets in VRCL      |
 |Decedent |   DecedentDemographics  |    -    | [Decedent] |       -       |    -     |
 |Father |     DecedentDemographics    |    -    | [DecedentFather] |       -       |    -     |
 |Mother |     DecedentDemographics    |    -    | [DecedentMother] |       -       |    -     |

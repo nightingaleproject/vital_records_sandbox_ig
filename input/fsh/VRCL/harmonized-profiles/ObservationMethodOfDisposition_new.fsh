@@ -21,6 +21,8 @@ Description: "Decedent Disposition Method (Observation)"
 * subject only Reference(Patient) //generalized to Patient
 * performer ^short = "Mortician" //BFDR does not include performer
 * performer ^definition = "Mortician is optional, and is not referenced by the fetal death or mortality use cases"
+* performer only Reference(USCorePractitionerProfile)
 * value[x] 1..1
 * value[x] only CodeableConcept
 * value[x] from MethodOfDispositionVS (required) //BFDR uses a different vs that does not include the entombment code
+
