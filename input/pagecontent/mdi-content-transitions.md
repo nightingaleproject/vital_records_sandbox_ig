@@ -4,21 +4,21 @@
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
 | :-------------: | ----- | ------- | ------------------ | ------------ | :-----: |
-|Decedent |  subject  |    -    | [USCorePatient] |  -  |   -      |
-|Medical Examiner/Coroner (Certifier) |  author, attester  |    -    | [USCorePractitioner] |  -  |   -      |
-|Death Location |  circumstances  |    -    | [LocationDeath] |  [LocationDeathVitalRecordsNew]  |   -      |
+|Decedent |  subject  |    -    | [USCorePatient] |  -  |   not creating a new common profile   |
+|Medical Examiner/Coroner (Certifier) |  author, attester  |    -    | [USCorePractitioner] |  -  |   not creating a new common profile    |
+|Death Location |  circumstances  |    Removal of MS flags, inclusion of consolidated code system, inclusion of city and county extensions to accomodate VRDR, replacement of address text with state code     | [LocationDeath] |  [LocationDeathVitalRecordsNew]  |  -  |
 |Tobacco Use Contributed to Death |  circumstances  | - | [ObservationTobaccoUseContributedToDeath] |    [ObservationTobaccoUseContributedToDeathVitalRecordsNew] | - |
-|Decedent Pregnancy |  circumstances  |    -    | [ObservationDecedentPregnancy] | [ObservationDecedentPregnancyVitalRecordsNew] | - |
-|Injury Location |  circumstances  |    -    | [LocationInjury] | [LocationInjuryVitalRecordsNew] |   -      |
-|Death Date |  jurisdiction  |    -    | [ObservationDeathDate] |  [ObservationDeathDateVitalRecordsNew]  |   -      |
-|Death Certification |  jurisdiction  |    -    | [ProcedureDeathCertification] | [ProcedureDeathCertificationVitalRecordsNew] |  - |
-|Cause of Death Part 1 |  cause-manner  |  -  | [ObservationCauseOfDeathPart1] | [ObservationCauseOfDeathPart1VitalRecordsNew] |   -   |
-|Cause of Death Part 2 |   cause-manner  |    -    | [ObservationContributingCauseOfDeathPart2] | [ObservationCauseOfDeathPart2VitalRecordsNew] | - |
-|Manner of Death |  cause-manner  |    -    | [ObservationMannerOfDeath] | [ObservationMannerOfDeathVitalRecordsNew] |   -      |
-|How Death Injury Occurred | cause-manner |  -  | [ObservationHowDeathInjuryOccurred] | [ObservationInjuryIncidentVitalRecordsNew]  | - |
-| history-condition | medical-history  |    -    | [USCoreConditionEncounterDiagnosis] or [USCoreConditionProblemsandHealthConcerns] |    -    |   -   |
-|Autopsy Performed Indicator | exam-autopsy  |    -    | [ObservationAutopsyPerformedIndicator] |    -    |   -   |
-|Autopsy Location | exam-autopsy  |    -    | [USCoreOrganization] or [USCoreLocation] |    -    |   -   |
+|Decedent Pregnancy |  circumstances  |   Removal of MS flags, inclusion of consolidated value set to include missing value, inclusion of bypass edit flag extensions   | [ObservationDecedentPregnancy] | [ObservationDecedentPregnancyVitalRecordsNew] | - |
+|Injury Location |  circumstances  |    Removal of MS flags, inclusion of consolidated code system, inclusion of city and county extensions to accomodate VRDR, replacement of address text with state code    | [LocationInjury] | [LocationInjuryVitalRecordsNew] |  -  |
+|Death Date |  jurisdiction  |   Removal of MS flags, inclusion of consolidated partial date time extension, inclusion of consolidated value sets for place of death and date establishment approach, components for place and time of death are limited to one value  | [ObservationDeathDate] |  [ObservationDeathDateVitalRecordsNew]  |   -      |
+|Death Certification |  jurisdiction  |    Removal of MS flags, inclusion of consolidated value set for certifier types   | [ProcedureDeathCertification] | [ProcedureDeathCertificationVitalRecordsNew] |  - |
+|Cause of Death Part 1 |  cause-manner  |  Removal of MS flags, removed performer cardinality, Cause of Death Part 1, Line a,b,c,d text is no longer part of a slice definition (just codeable concept)  | [ObservationCauseOfDeathPart1] | [ObservationCauseOfDeathPart1VitalRecordsNew] |   performer cardinality in MDI is 1..1, removal of cardinality prompts inheritance of 0..1 from observation profile  |
+|Cause of Death Part 2 |   cause-manner  |   Removal of MS flags   | [ObservationContributingCauseOfDeathPart2] | [ObservationCauseOfDeathPart2VitalRecordsNew] | - |
+|Manner of Death |  cause-manner  |   Removal of MS flags, performer cardinality relaxed to 0..1 (observation default)   | [ObservationMannerOfDeath] | [ObservationMannerOfDeathVitalRecordsNew] |   -      |
+|How Death Injury Occurred | cause-manner |  Removal of MS flags, performer cardinality relaxed to 0..1 (observation default), inclusion of common partial date time extension, inclusion of common yes, no, unknown, not applicable value set for work injury indicator, inclusion of common transportation incident value set   | [ObservationHowDeathInjuryOccurred] | [ObservationInjuryIncidentVitalRecordsNew]  | - |
+| history-condition | medical-history  |    -    | [USCoreConditionEncounterDiagnosis] or [USCoreConditionProblemsandHealthConcerns] |    -    |   not creating a new common profile   |
+|Autopsy Performed Indicator | exam-autopsy  |    -    | [ObservationAutopsyPerformedIndicator] |    -    |   profile with same/similar name is dissimilar across other profiles   |
+|Autopsy Location | exam-autopsy  |    -    | [USCoreOrganization] or [USCoreLocation] |    -    |   not creating a new common profile   |
 {: .grid }
 
 # Toxicology to MDI
@@ -28,7 +28,7 @@
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
 | :-------------: | ----- | ------- | ------------------ | ------------ | :-----: | 
-|Responsible Diagnostic Service |  performer  |  - | [USCorePractitioner] or [USCorePractitionerRole] |  [USCorePractitioner] |   -  |
+|Responsible Diagnostic Service |  performer  |  - | [USCorePractitioner] or [USCorePractitionerRole] |  [USCorePractitioner] |   not creating a new common profile  |
 |Toxicology Lab Specimen |  specimen  |    -    | [SpecimenToxicologyLab] |     -         |   -      |
 |Toxicology Lab Result | result  |    -    | [ObservationToxicologyLabResult] |     -         |   -      |
 {: .grid }
