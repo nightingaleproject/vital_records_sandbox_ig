@@ -3,10 +3,8 @@ InstanceOf: DeathCertificateDocumentNew
 Description: "Example Record from UT"
 Usage: #example
 * timestamp = "2022-12-23T19:55:16.4587968+00:00"
-* identifier.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber"
-* identifier.extension[=].valueString = "000003"
-* identifier.extension[+].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier1"
-* identifier.extension[=].valueString = "2022000003"
+* identifier.extension[certificateNumber].valueString = "000003"
+* identifier.extension[auxiliaryStateIdentifier1].valueString = "2022000003"
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
 * identifier.value = "2022UT000003"
 * type = #document
@@ -69,42 +67,46 @@ Usage: #inline
 * extension[StateSpecificField].valueString = "20220101"
 * status = #final
 * title = "Death Certificate for Davis Lineberry Jr"
-* type = http://loinc.org#64297-5 "Death certificate"
+* type = $loinc#64297-5 "Death certificate"
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * date = "2022-12-01T02:46:13-05:00"
 * author = Reference(urn:uuid:01bbed3c-a3ed-4e07-8048-30fde65a8302)
 * attester.mode = #legal
 * attester.party = Reference(urn:uuid:01bbed3c-a3ed-4e07-8048-30fde65a8302)
-* event.code = http://snomed.info/sct#103693007 "Diagnostic procedure (procedure)"
+* event.code = $sct#103693007 "Diagnostic procedure (procedure)"
 * event.detail = Reference(urn:uuid:a7c4c06c-84fc-4262-a6e7-78546812aa0a)
-* section[0].code = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs#DecedentDemographics
-* section[=].entry[0] = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* section[=].entry[+] = Reference(urn:uuid:0a1ded2c-6140-4abc-9128-0af93e2f2ea5)
-* section[=].entry[+] = Reference(urn:uuid:b2b59a71-0a15-41dd-97ef-84b494bcd2c0)
-* section[=].entry[+] = Reference(urn:uuid:d96686b8-4d80-4436-b090-36a3fe7b8de1)
-* section[=].entry[+] = Reference(urn:uuid:ad87f0b9-b194-410b-b08f-1c543532a6fd)
-* section[=].entry[+] = Reference(urn:uuid:ecac4e1c-2a60-4903-9dce-1a009458cf63)
-* section[=].entry[+] = Reference(urn:uuid:7eda2a2c-f92d-4885-949f-34c500241300)
-* section[=].entry[+] = Reference(urn:uuid:0051e0b6-6990-4190-93a6-87442b4a50aa)
-* section[=].entry[+] = Reference(urn:uuid:60bb97be-43fd-4e36-bd0d-49a7efdcbcda)
-* section[=].entry[+] = Reference(urn:uuid:3a1d5d86-4399-48ad-9d55-a22ddd283bfa)
-* section[+].code = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs#DeathCertification
-* section[=].entry[0] = Reference(urn:uuid:01bbed3c-a3ed-4e07-8048-30fde65a8302)
-* section[=].entry[+] = Reference(urn:uuid:e48fce6f-bf4c-4c27-8fe9-d6a1e0c49094)
-* section[=].entry[+] = Reference(urn:uuid:8741eb7f-8a04-4043-8768-4788fd8059dd)
-* section[=].entry[+] = Reference(urn:uuid:a7c4c06c-84fc-4262-a6e7-78546812aa0a)
-* section[+].code = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs#DeathInvestigation
-* section[=].entry[0] = Reference(urn:uuid:95176132-1030-418d-b1a4-594872f6bec7)
-* section[=].entry[+] = Reference(urn:uuid:86ead912-393d-40b0-8ea0-6ec9dcfde385)
-* section[=].entry[+] = Reference(urn:uuid:0c452db5-161a-4ae9-a7c9-a1270ab2d809)
-* section[=].entry[+] = Reference(urn:uuid:c9383d2d-33b6-44c9-a0ab-43707ded5efc)
-* section[=].entry[+] = Reference(urn:uuid:8533c915-f47f-4479-8b5e-bdd02c0af28d)
-* section[=].entry[+] = Reference(urn:uuid:82c823f3-27b7-4255-a4ae-fefcd241951d)
-* section[=].entry[+] = Reference(urn:uuid:8942bdc4-b1dd-4458-aa6a-158e22ea3d24)
-* section[+].code = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs#DecedentDisposition
-* section[=].entry[0] = Reference(urn:uuid:a4599a98-7656-4974-8869-493d80326de3)
-* section[=].entry[+] = Reference(urn:uuid:8371fc22-95da-4f72-a4be-674fc267cb7a)
-* section[=].entry[+] = Reference(urn:uuid:8db9c84b-10be-4a10-80af-a24fa97083d3)
+* section[0]
+  * code =  DocumentSectionCS#DecedentDemographics
+  * entry[0] = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
+  * entry[+] = Reference(urn:uuid:0a1ded2c-6140-4abc-9128-0af93e2f2ea5)
+  * entry[+] = Reference(urn:uuid:b2b59a71-0a15-41dd-97ef-84b494bcd2c0)
+  * entry[+] = Reference(urn:uuid:d96686b8-4d80-4436-b090-36a3fe7b8de1)
+  * entry[+] = Reference(urn:uuid:ad87f0b9-b194-410b-b08f-1c543532a6fd)
+  * entry[+] = Reference(urn:uuid:ecac4e1c-2a60-4903-9dce-1a009458cf63)
+  * entry[+] = Reference(urn:uuid:7eda2a2c-f92d-4885-949f-34c500241300)
+  * entry[+] = Reference(urn:uuid:0051e0b6-6990-4190-93a6-87442b4a50aa)
+  * entry[+] = Reference(urn:uuid:60bb97be-43fd-4e36-bd0d-49a7efdcbcda)
+  * entry[+] = Reference(urn:uuid:3a1d5d86-4399-48ad-9d55-a22ddd283bfa)
+* section[+]
+  * code = DocumentSectionCS#DeathCertification
+  * entry[0] = Reference(urn:uuid:01bbed3c-a3ed-4e07-8048-30fde65a8302)
+  * entry[+] = Reference(urn:uuid:e48fce6f-bf4c-4c27-8fe9-d6a1e0c49094)
+  * entry[+] = Reference(urn:uuid:8741eb7f-8a04-4043-8768-4788fd8059dd)
+  * entry[+] = Reference(urn:uuid:a7c4c06c-84fc-4262-a6e7-78546812aa0a)
+* section[+]
+  * code = DocumentSectionCS#DeathInvestigation
+  * entry[0] = Reference(urn:uuid:95176132-1030-418d-b1a4-594872f6bec7)
+  * entry[+] = Reference(urn:uuid:86ead912-393d-40b0-8ea0-6ec9dcfde385)
+  * entry[+] = Reference(urn:uuid:0c452db5-161a-4ae9-a7c9-a1270ab2d809)
+  * entry[+] = Reference(urn:uuid:c9383d2d-33b6-44c9-a0ab-43707ded5efc)
+  * entry[+] = Reference(urn:uuid:8533c915-f47f-4479-8b5e-bdd02c0af28d)
+  * entry[+] = Reference(urn:uuid:82c823f3-27b7-4255-a4ae-fefcd241951d)
+  * entry[+] = Reference(urn:uuid:8942bdc4-b1dd-4458-aa6a-158e22ea3d24)
+* section[+]
+  * code = DocumentSectionCS#DecedentDisposition
+  * entry[0] = Reference(urn:uuid:a4599a98-7656-4974-8869-493d80326de3)
+  * entry[+] = Reference(urn:uuid:8371fc22-95da-4f72-a4be-674fc267cb7a)
+  * entry[+] = Reference(urn:uuid:8db9c84b-10be-4a10-80af-a24fa97083d3)
 
 Instance: f906300e-3622-459c-8201-af0d9b90fb75
 InstanceOf: Decedent
@@ -131,22 +133,17 @@ Usage: #inline
 * address.extension[predir].valueString = "N"
 * address.extension[stname].valueString = "Pin Oak"
 * address.extension[stdesig].valueString = "Dr"
-* address.extension[withinCityLimitsIndicator].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0136#Y "Yes"
+* address.extension[withinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
 * address.line = "2722 N Pin Oak Dr"
 * address.city = "Laramie"
-* address.city.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/CityCode"
-* address.city.extension.valuePositiveInt = 45050
+* address.city.extension[cityCode].valuePositiveInt = 45050
 * address.district = "Albany"
-* address.district.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/DistrictCode"
-* address.district.extension.valuePositiveInt = 1
+* address.district.extension[districtCode].valuePositiveInt = 1
 * address.state = "WY"
-* address.state.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/Location-Jurisdiction-Id"
-* address.state.extension.valueString = "WY"
 * address.postalCode = "82070"
 * address.country = "US"
-* maritalStatus.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
-* maritalStatus.extension.valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
-* maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#S "Never Married"
+* maritalStatus.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
+* maritalStatus = $v3-MaritalStatus#S "Never Married"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-2
 InstanceOf: InputRaceAndEthnicityNew
@@ -170,10 +167,10 @@ Usage: #inline
 * component[GuamanianOrChamorro].valueBoolean = false
 * component[OtherPacificIslander].valueBoolean = false
 * component[OtherRace].valueBoolean = false
-* component[HispanicMexican].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
-* component[HispanicCuban].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
-* component[HispanicPuertoRican].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
-* component[HispanicOther].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
+* component[HispanicMexican].valueCodeableConcept = $v2-0136#N "No"
+* component[HispanicCuban].valueCodeableConcept = $v2-0136#N "No"
+* component[HispanicPuertoRican].valueCodeableConcept = $v2-0136#N "No"
+* component[HispanicOther].valueCodeableConcept = $v2-0136#N "No"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-3
 InstanceOf: PractitionerVitalRecordsNew
@@ -207,15 +204,14 @@ Usage: #inline
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * status = #final
 * code = $loinc#80913-7 "Highest level of education [US Standard Certificate of Death]"
-//* valueCodeableConcept.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
-* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
-* valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-EducationLevel#ELEM "Elementary School"
+* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
+* valueCodeableConcept = $v3-EducationLevel#ELEM "Elementary School"
 
 Instance: ad87f0b9-b194-410b-b08f-1c543532a6fd
 InstanceOf: DecedentFather
 Usage: #inline
 * patient = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH "father"
 * name.use = #official
 * name.family = "Lineberry"
 * name.given[0] = "*"
@@ -225,7 +221,7 @@ Instance: ecac4e1c-2a60-4903-9dce-1a009458cf63
 InstanceOf: DecedentMother
 Usage: #inline
 * patient = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH "mother"
 * name.use = #official
 * name.family = "*"
 * name.given[0] = "*"
@@ -236,8 +232,8 @@ InstanceOf: AutopsyPerformedIndicator
 Usage: #inline
 * id = "95176132-1030-418d-b1a4-594872f6bec7"
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK "Unknown"
-* component[autopsyResultsAvailable].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK "Unknown"
+* valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
+* component[autopsyResultsAvailable].valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
 
 Instance: e48fce6f-bf4c-4c27-8fe9-d6a1e0c49094
 InstanceOf: ObservationCauseOfDeathPart1VitalRecordsNew
@@ -263,16 +259,15 @@ Usage: #inline
   * extension[day].valueUnsignedInt = 17
   * extension[time].valueTime = "18:23:00"
 //* valueDateTime.extension.url = Canonical(ExtensionDateTimePartAbsentReasonVitalRecords)
-* component.code = http://loinc.org#58332-8 "Location of death"
-* component.valueCodeableConcept = http://snomed.info/sct#16983000 "Death in hospital"
+* component.code = $loinc#58332-8 "Location of death"
+* component.valueCodeableConcept = $sct#16983000 "Death in hospital"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-6
-InstanceOf: DeathLocation
+InstanceOf: LocationDeathVitalRecordsNew
 Usage: #inline
 * id = "0c452db5-161a-4ae9-a7c9-a1270ab2d809"
 * name = "Salt Lake Regional Medical Cen"
 * description = "Facility"
-* type = LocationTypeCS#death
 * address.city = "Salt Lake City"
 * address.state = "UT"
 
@@ -282,7 +277,7 @@ Usage: #inline
 * id = "7eda2a2c-f92d-4885-949f-34c500241300"
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 //* valueQuantity.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
-* valueQuantity.extension[bypassEditFlag].valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
+* valueQuantity.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
 * valueQuantity = 10 'mo' "Months"
 
 Instance: a4599a98-7656-4974-8869-493d80326de3
@@ -290,7 +285,7 @@ InstanceOf: ObservationDecedentDispositionMethodVitalRecordsNew
 Usage: #inline
 * status = #final 
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* valueCodeableConcept = http://snomed.info/sct#449971000124106 "Burial"
+* valueCodeableConcept = $sct#449971000124106 "Burial"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-8
 InstanceOf: DispositionLocation
@@ -316,7 +311,7 @@ InstanceOf: DecedentMilitaryService
 Usage: #inline
 * id = "60bb97be-43fd-4e36-bd0d-49a7efdcbcda"
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
+* valueCodeableConcept = $v2-0136#N "No"
 
 Instance: c9383d2d-33b6-44c9-a0ab-43707ded5efc
 InstanceOf: ObservationDecedentPregnancyVitalRecordsNew
@@ -324,15 +319,15 @@ Usage: #inline
 * status = #final 
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 //* valueCodeableConcept.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
-* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs#0 "Edit Passed"
-* valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NA "Not applicable"
+* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
+* valueCodeableConcept = $v3-NullFlavor#NA "Not applicable"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-11
 InstanceOf: ExaminerContacted
 Usage: #inline
 * id = "8533c915-f47f-4479-8b5e-bdd02c0af28d"
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0136#N "No"
+* valueCodeableConcept = $v2-0136#N "No"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-12
 InstanceOf: FuneralHome
@@ -353,7 +348,7 @@ Usage: #inline
 * id = "82c823f3-27b7-4255-a4ae-fefcd241951d"
 * status = #final 
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* component[workInjuryIndicator].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK "Unknown"
+* component[workInjuryIndicator].valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-14
 InstanceOf: ObservationMannerOfDeathVitalRecordsNew
@@ -362,23 +357,24 @@ Usage: #inline
 * id = "8741eb7f-8a04-4043-8768-4788fd8059dd"
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
 * performer = Reference(urn:uuid:01bbed3c-a3ed-4e07-8048-30fde65a8302)
-* valueCodeableConcept = http://snomed.info/sct#185973002 "Patient awaiting investigation"
+* valueCodeableConcept = $sct#185973002 "Patient awaiting investigation"
 
 Instance: Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-15
 InstanceOf: TobaccoUseContributedToDeath
 Usage: #inline
 * id = "8942bdc4-b1dd-4458-aa6a-158e22ea3d24"
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* valueCodeableConcept = http://snomed.info/sct#373067005 "No"
+* valueCodeableConcept = $sct#373067005 "No"
 
 Instance: a7c4c06c-84fc-4262-a6e7-78546812aa0a
-InstanceOf: DeathCertification
+InstanceOf: ProcedureDeathCertificationVitalRecordsNew
 Usage: #inline
+* status = #final 
 * identifier.value = "161632-1999"
-* category = http://snomed.info/sct#103693007 "Diagnostic procedure"
-* code = http://snomed.info/sct#308646001 "Death certification"
+* category = $sct#103693007 "Diagnostic procedure"
+* code = $sct#308646001 "Death certification"
 * subject = Reference(urn:uuid:f906300e-3622-459c-8201-af0d9b90fb75)
-* performer.function = http://snomed.info/sct#434641000124105 "Death certification and verification by physician (procedure)"
+* performer.function = $sct#434641000124105 "Death certification and verification by physician (procedure)"
 * performer.actor = Reference(urn:uuid:01bbed3c-a3ed-4e07-8048-30fde65a8302)
 * performedDateTime = "2021-11-14T16:39:40-05:00"
 
