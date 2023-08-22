@@ -1,4 +1,4 @@
-Profile: BundleDocumentMDIToEDRS
+Profile: BundleDocumentMDIToEDRSNew
 Parent: Bundle
 Id: Bundle-document-mdi-to-edrs
 Title: "Bundle - Document MDI to EDRS"
@@ -8,15 +8,15 @@ Description: "This Bundle profile represents a Document Bundle exchanged between
 * ^version = "0.0.1"
 * ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
-* identifier 1.. MS
+* identifier 1.. 
   * ^short = "Persistent, unique identifier of each bundle instance"
 * type = #document (exactly)
-* type MS
-* entry MS
+* type 
+* entry 
   * ^slicing.discriminator.type = #profile
   * ^slicing.discriminator.path = "$this.resource"
   * ^slicing.rules = #open
-* entry contains MDItoEDRSComposition 1..1 MS
+* entry contains MDItoEDRSComposition 1..1 
 * entry[MDItoEDRSComposition] ^short = "The Composition of data sent from an MDI information management system to an EDRS"
-  * resource 1.. MS
+  * resource 1.. 
   * resource only CompositionMDIToEDRSNew

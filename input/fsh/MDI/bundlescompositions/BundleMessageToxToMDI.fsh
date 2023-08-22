@@ -8,10 +8,10 @@ Description: "This Bundle profile represents a Message Bundle from a forensic to
 * ^meta.versionId = "14"
 * ^meta.lastUpdated = "2023-06-28T21:46:13.212Z"
 * type = #message (exactly)
-* type MS
+* type 
 * entry ^slicing.discriminator.type = #profile
   * ^slicing.discriminator.path = "$this.resource"
   * ^slicing.rules = #open
-* entry contains ToxtoMDIMessage 1..1 MS
+* entry contains ToxtoMDIMessage 1..1 
 * entry[ToxtoMDIMessage].resource 1..
 * entry[ToxtoMDIMessage].resource only MessageHeaderToxicologyToMDI
