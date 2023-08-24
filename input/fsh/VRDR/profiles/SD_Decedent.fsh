@@ -36,9 +36,9 @@ Description: "Decedent (USCorePatient)"
 * birthDate ^short = "Date of Birth"
 * birthDate 0..1
 * birthDate.extension contains
-    PartialDate named partialDate 0..1
-* birthDate.extension[partialDate] ^short = "partialDate"
-* birthDate.extension[partialDate] ^definition = "Alternative component representation of date."
+    ExtensionDatePartAbsentReasonVitalRecords named partialDate 0..1
+* birthDate.extension[ExtensionDatePartAbsentReasonVitalRecords] ^short = "partialDate"
+* birthDate.extension[ExtensionDatePartAbsentReasonVitalRecords] ^definition = "Alternative component representation of date."
 * address 0..*
 * address ^short = "Decedent's Residence"
 * address.extension contains
