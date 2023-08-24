@@ -1,6 +1,6 @@
 Profile: BundleDocumentMDIToEDRSNew
 Parent: Bundle
-Id: Bundle-document-mdi-to-edrs
+Id: Bundle-document-mdi-to-edrs-new
 Title: "Bundle - Document MDI to EDRS"
 Description: "This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."
 * ^meta.versionId = "14"

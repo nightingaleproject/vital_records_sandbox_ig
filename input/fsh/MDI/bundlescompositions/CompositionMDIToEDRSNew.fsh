@@ -8,7 +8,7 @@
 
 Profile: CompositionMDIToEDRSNew
 Parent: Composition
-Id: Composition-mdi-to-edrs
+Id: Composition-mdi-to-edrs-new
 Title: "Composition - MDI to EDRS"
 Description: "This Composition profile represents data exchanged between an MDI CMS and an EDRS."
 * ^status = #active
