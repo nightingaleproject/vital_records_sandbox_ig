@@ -32,7 +32,7 @@ Description: "This profile communicates coded race and ethnicity information to 
   * code = $loinc#86805-9
     * ^short = "Race and ethnicity information Document"
   * focus 1.. 
-  * focus only Reference(PatientMotherNew or $RelatedPerson-father-natural-vr)
+  * focus only Reference(PatientMotherNew or RelatedPersonFatherNaturalVitalRecords)
     * ^short = "The focus of this section is the mother or father"
     * ^definition = "The subject of the composition as a whole is the newborn baby or decedent fetus. The focus of this section in the composition is the mother or father."
   * entry 
@@ -45,9 +45,9 @@ Description: "This profile communicates coded race and ethnicity information to 
   * entry contains
       race 1..1  and
       tabulatedEthnicity 1..1 
-  * entry[race] only Reference($Observation-race-vr)
+  * entry[race] only Reference(ObservationRaceVitalRecords)
     * ^short = "Bridged race"
     * ^definition = "The mother or father's bridged race"
-  * entry[tabulatedEthnicity] only Reference($Observation-tabulated-ethnicity-vr)
+  * entry[tabulatedEthnicity] only Reference(CodedRaceAndEthnicityNew)
     * ^short = "Tabulated ethnicity"
     * ^definition = "The mother or father's tabulated ethnicity"

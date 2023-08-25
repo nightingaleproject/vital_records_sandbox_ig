@@ -1,6 +1,6 @@
 Profile: CompositionCodedCauseOfFetalDeathNew
 Parent: Composition
-Id: Composition-coded-cause-of-fetal-death
+Id: Composition-coded-cause-of-fetal-death-new
 Title: "Composition - Coded Cause of Fetal Death"
 Description: "This profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices."
 * ^meta.versionId = "25"
@@ -19,7 +19,7 @@ Description: "This profile communicates coded cause of fetal death information t
   * ^short = "Cause of death classification and related information Document"
   * ^definition = "Cause of death classification and related information Document"
 * subject 1.. 
-* subject only Reference(PatientChildNew)
+* subject only Reference(PatientChildVitalRecords)
 * author ..1 
   * ^short = "The author is the NCHS."
   * ^definition = "The author is the NCHS."

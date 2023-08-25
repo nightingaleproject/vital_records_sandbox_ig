@@ -1,6 +1,6 @@
 Profile: BundleDocumentBFDRNew
 Parent: Bundle
-Id: Bundle-document-bfdr
+Id: Bundle-document-bfdr-new
 Title: "Bundle - Document Birth and Fetal Death"
 Description: "This Bundle profile represents a Birth and Fetal Death Document Bundle. It contains any one of the Birth and Fetal Death Compositions."
 * ^meta.versionId = "5"
