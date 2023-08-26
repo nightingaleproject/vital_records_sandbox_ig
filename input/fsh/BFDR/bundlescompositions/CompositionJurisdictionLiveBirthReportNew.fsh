@@ -160,8 +160,8 @@ Description: "This Composition profile contains information of a live birth and 
       obstetricProcedures 1..1  and
       fetalPresentation 0..1  and
       finalRouteMethodDelivery 0..1 
-    * entry[pregnancyRiskFactors] only Reference(ObservationPregnancyRiskFactorNew)
-//  * entry[pregnancyRiskFactors] only Reference($Condition-prepregnancy-diabetes-vr or $Condition-gestational-diabetes-vr or $Condition-prepregnancy-hypertension-vr or $Condition-gestational-hypertension-vr or $Condition-eclampsia-hypertension-vr or $Observation-previous-preterm-birth-vr or $Procedure-infertility-treatment-vr or $Procedure-artificial-insemination-vr or $Procedure-assissted-fertilization-vr or $Observation-previous-cesarean-vr or $Observation-none-of-specified-pregnancy-risk-factors-vr)
+    //* entry[pregnancyRiskFactors] only Reference(ObservationPregnancyRiskFactorNew)
+    * entry[pregnancyRiskFactors] only Reference($Condition-prepregnancy-diabetes-vr or $Condition-gestational-diabetes-vr or $Condition-prepregnancy-hypertension-vr or $Condition-gestational-hypertension-vr or $Condition-eclampsia-hypertension-vr or $Observation-previous-preterm-birth-vr or $Procedure-infertility-treatment-vr or $Procedure-artificial-insemination-vr or $Procedure-assissted-fertilization-vr or $Observation-previous-cesarean-vr or $Observation-none-of-specified-pregnancy-risk-factors-vr)
     * ^sliceName = "pregnancyRiskFactors"
     * ^short = "Risk factors in this pregnancy"
     * ^definition = "Selected medical risk factors of the mother during this pregnancy"
