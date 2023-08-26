@@ -7,6 +7,6 @@ Description: "The weight of the infant/fetus at birth/delivery. Migrated from VR
 * code = $loinc#8339-4
 * category[VSCat] = $observation-category#vital-signs
 * subject 1..
-* subject only Reference(PatientChildNew or PatientDecedentFetusNew)
+* subject only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
 * value[x] 1..
 * value[x] only Quantity

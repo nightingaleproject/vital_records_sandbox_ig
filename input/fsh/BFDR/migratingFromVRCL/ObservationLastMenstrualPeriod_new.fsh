@@ -8,7 +8,7 @@ Description: "This profile represents the date of the last menstrual period of t
 * code MS
   * ^short = "Last menstrual period start date"
 * subject 1.. MS
-* subject only Reference(PatientMotherNew)
+* subject only Reference(PatientMotherVitalRecords)
 * effective[x] only dateTime
 * effective[x] MS
   * ^short = "Observation date (date on which the observation was reported to the provider)."
