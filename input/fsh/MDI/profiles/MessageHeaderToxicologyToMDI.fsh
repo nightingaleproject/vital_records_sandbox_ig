@@ -2,10 +2,9 @@ Profile: MessageHeaderToxicologyToMDI
 Parent: MessageHeader
 Id: MessageHeader-toxicology-to-mdi
 Title: "MessageHeader - Toxicology to MDI"
-Description: "This MessageHeader identifies the DiagnosticReport being sent from a forensic toxicology laboratory information system to an MDI information management system."
-* ^meta.versionId = "20"
-* ^meta.lastUpdated = "2022-07-04T02:01:59.566+00:00"
-* ^meta.source = "#afI1BLHRFn7RCZJW"
+Description: "This MessageHeader identifies the DiagnosticReport being sent from a forensic toxicology LIMS to an MDI CMS."
+* ^meta.versionId = "21"
+* ^meta.lastUpdated = "2023-06-28T21:47:09.383Z"
 * ^status = #active
 * . ^short = "Identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."
   * ^definition = "Identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."
