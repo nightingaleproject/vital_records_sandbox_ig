@@ -1,5 +1,5 @@
 Instance: composition-provider-live-birth-babyg-quinn
-InstanceOf: CompositionProviderLiveBirthReport
+InstanceOf: CompositionProviderLiveBirthReportNew
 Title: "Composition - Provider Live Birth Report - BabyG Quinn"
 Description: "Composition - Provider Live Birth Report: BabyG Quinn example"
 Usage: #example

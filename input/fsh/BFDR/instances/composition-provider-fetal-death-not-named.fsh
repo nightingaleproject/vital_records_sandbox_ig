@@ -1,5 +1,5 @@
 Instance: composition-provider-fetal-death-not-named
-InstanceOf: CompositionProviderFetalDeathReport
+InstanceOf: CompositionProviderFetalDeathReportNew
 Title: "Composition - Provider Fetal Death Report - Fetus Not Named"
 Description: "Composition - Provider Fetal Death Report: Fetus Not Named"
 Usage: #example

@@ -46,8 +46,8 @@
 |Gestational Age at Delivery |     newbornInformation    |    -    | [ObservationGestationalAgeAtDeliveryVitalRecords] |  [ObservationGestationalAgeAtDeliveryNew]   |    moving from VRCL to BFDR    |
 |Apgar Score |     newbornInformation    |    -    | [ObservationApgarScoreVitalRecords] | [ObservationApgarScoreNew]  |    moving from VRCL to BFDR    |
 |Number Live Births This Delivery |     newbornInformation   |    -    | [ObservationNumberLiveBirthsThisDeliveryVitalRecords] |   [ObservationNumberLiveBirthsThisDeliveryNew]   |    moving from VRCL to BFDR    |
-|Assisted Ventilation Following Delivery |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureAssisstedVentilationFollowingDelivery]  |       -       |    -     |
-|Assisted Ventilation More than Six Hours  |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureAssisstedVentilationMoreThanSixHours]   |       -       |    -     |
+|Assisted Ventilation Following Delivery |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureassistedVentilationFollowingDelivery]  |       -       |    -     |
+|Assisted Ventilation More than Six Hours  |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureassistedVentilationMoreThanSixHours]   |       -       |    -     |
 |NICU Admission |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ObservationNICUAdmission]   |       -       |    -     |
 |Surfactant Replacement Therapy |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureSurfactantReplacementTherapy]   |       -       |    -     |
 |Antibiotic Suspected Neonatal Sepsis |     newbornInformation/Abnormal Conditions Newborn  |    -    | [ProcedureAntibioticSuspectedNeonatalSepsis]   |       -       |    -     |

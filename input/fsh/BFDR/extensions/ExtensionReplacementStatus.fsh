@@ -1,19 +1,18 @@
-Extension: ExtensionLiveBirthLocalFileNumber
-Id: Extension-live-birth-local-file-number
-Title: "Extension - Live Birth Local File Number"
-Description: "Live birth local file number - this represents \"Local File No.\" on the US Standard Certificate of Live Birth."
-* ^meta.versionId = "5"
-* ^meta.lastUpdated = "2023-04-25T06:01:08.856+00:00"
-* ^meta.source = "#dgI4l9aABGpOmwuS"
-* ^publisher = "Health Level Seven International"
+Extension: ExtensionReplacementStatus
+Id: Extension-replacement-status
+Title: "Extension - Replacement Status"
+Description: "This Extension profile represents the replacement status of a record."
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2023-06-21T23:24:23.601Z"
+* ^publisher = "HL7 International - Public Health Work Group"
 * ^contact.name = "HL7 International - Public Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/pher"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
-* ^jurisdiction.text = "US Realm"
+* ^jurisdiction.text = "United States of America"
 * ^context.type = #element
 * ^context.expression = "Composition"
-* value[x] 1..1
-* value[x] only Identifier
-  * type 1.. MS
-  * type = $v2-0203#BCFN
+* value[x] 1..
+* value[x] only CodeableConcept
+* value[x] from ValueSetReplacementStatus (required)
+  * ^short = "Replacement status of a record"

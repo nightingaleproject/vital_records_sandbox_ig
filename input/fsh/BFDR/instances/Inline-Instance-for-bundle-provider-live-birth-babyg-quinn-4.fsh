@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-4
-InstanceOf: EncounterMaternity
+InstanceOf: Encounter_Maternity
 Usage: #inline
 * id = "encounter-maternity-jada-ann-quinn"
 * identifier

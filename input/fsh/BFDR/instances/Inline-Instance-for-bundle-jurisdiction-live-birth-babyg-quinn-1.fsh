@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-1
-InstanceOf: CompositionJurisdictionLiveBirthReport
+InstanceOf: CompositionJurisdictionLiveBirthReportNew
 Usage: #inline
 * id = "composition-jurisdiction-live-birth-babyg-quinn"
 * extension[0]

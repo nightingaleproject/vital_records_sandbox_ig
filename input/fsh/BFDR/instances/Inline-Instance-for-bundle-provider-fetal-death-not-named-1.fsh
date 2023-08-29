@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-1
-InstanceOf: CompositionProviderFetalDeathReport
+InstanceOf: CompositionProviderFetalDeathReportNew
 Usage: #inline
 * id = "composition-provider-fetal-death-not-named"
 * extension[0]

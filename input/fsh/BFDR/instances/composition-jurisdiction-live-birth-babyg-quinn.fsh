@@ -1,5 +1,5 @@
 Instance: composition-jurisdiction-live-birth-babyg-quinn
-InstanceOf: CompositionJurisdictionLiveBirthReport
+InstanceOf: CompositionJurisdictionLiveBirthReportNew
 Title: "Composition - Jurisdiction Live Birth Report - BabyG Quinn"
 Description: "Composition - Jurisdiction Live Birth Report: BabyG Quinn example"
 Usage: #example

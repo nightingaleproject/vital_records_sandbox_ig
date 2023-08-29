@@ -1,5 +1,5 @@
 Instance: encounter-maternity-jada-ann-quinn
-InstanceOf: EncounterMaternity
+InstanceOf: Encounter_Maternity
 Title: "Encounter - Maternity - Jada Ann Quinn"
 Description: "Encounter - Maternity: Jada Ann Quinn example"
 Usage: #example

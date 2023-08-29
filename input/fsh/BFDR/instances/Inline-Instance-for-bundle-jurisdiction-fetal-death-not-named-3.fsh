@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-3
-InstanceOf: EncounterMaternity
+InstanceOf: Encounter_Maternity
 Usage: #inline
 * id = "encounter-maternity-carmen-teresa-lee"
 * identifier

@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-1
-InstanceOf: CompositionJurisdictionFetalDeathReport
+InstanceOf: CompositionJurisdictionFetalDeathReportNew
 Usage: #inline
 * id = "composition-jurisdiction-fetal-death-not-named"
 * extension[0]

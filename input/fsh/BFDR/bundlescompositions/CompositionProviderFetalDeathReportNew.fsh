@@ -1,5 +1,5 @@
 Profile: CompositionProviderFetalDeathReportNew
-Parent: Compositionctive
+Parent: Composition
 Id: Composition-provider-fetal-death-report-new
 Title: "Composition - Provider Fetal Death Report"
 Description: "This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office."
@@ -18,11 +18,11 @@ Description: "This Composition profile contains constraints to address the use c
     ExtensionFetalDeathReportNumber named fetalDeathReportNumber 0..1  and
     ExtensionFetalDeathLocalFileNumber named fetalDeathLocalFileNumber 0..1  and
     ExtensionDatereceivedByRegistrar named dateReceivedByRegistrar 1..1 and
-    ExtensionReplacementStatus named ReplaceStatus 0..1
+    ExtensionReplacementStatus named replacementStatus 0..1
 * extension[fetalDeathReportNumber] ^short = "State File Number"
 * extension[fetalDeathLocalFileNumber] ^short = "Local File No."
 // Status is deprecated (now flag in message header)
-* extension[ReplaceStatus] ^short = "Replace Status (deprecated)"
+* extension[replacementStatus] ^short = "Replace Status (deprecated)"
 * status 
   * ^short = "In the case of a fetal death sent in error, a status of 'entered-in-error' must be set."
   * ^definition = "In the case of a fetal death sent in error, a status of 'entered-in-error' must be set."
@@ -131,14 +131,16 @@ Description: "This Composition profile contains constraints to address the use c
     * ^short = "Entries that are contained in the medical and health information section"
     * ^definition = "Entries that are contained in the medical and health information section"
   * entry contains
+      pregnancyRiskFactors ..1 and
       numberPreviousCesareans 0..1  and
+      obstetricProcedures 1..1 and
       fetalPresentation 0..1  and
+      maternalMorbidity 0..* and
       finalRouteMethodDelivery 0..1 
-  * entry[pregnancyRiskFactors] only Reference(ObservationPregnancyRiskFactorNew)    
+  * entry[pregnancyRiskFactors] only Reference(Condition-prepregnancy-diabetes-vr or Condition-gestational-diabetes-vr or Condition-prepregnancy-hypertension-vr or Condition-gestational-hypertension-vr or Condition-eclampsia-hypertension-vr or Observation-previous-preterm-birth-vr or Procedure-infertility-treatment-vr or Procedure-artificial-insemination-vr or Procedure-assisted-fertilization-vr or Observation-previous-cesarean-vr or Observation-none-of-specified-pregnancy-risk-factors-vr)
     * ^sliceName = "pregnancyRiskFactors"
     * ^short = "Risk factors in this pregnancy"
     * ^definition = "Selected medical risk factors of the mother during this pregnancy"
-    * ^mustSupport = true
   * entry[numberPreviousCesareans] only Reference(ObservationNumberPreviousCesareansNew)    
     * ^short = "If mother had a previous cesarean delivery, how many"
     * ^definition = "Number of previous cesarean deliveries."
@@ -148,11 +150,10 @@ Description: "This Composition profile contains constraints to address the use c
   * entry[finalRouteMethodDelivery] only Reference(ProcedureFinalRouteMethodDelivery)
     * ^short = "Final route and method of delivery"
     * ^definition = "Final route and method of delivery"
-  * entry[maternalMorbidity] only Reference(ProcedureBloodTransfusion or ConditionPerinealLaceration or ConditionRupturedUterus or ProcedureUnplannedHysterectomy or ObservationICUAdmission or ProcedureEmergencyOperationFollowingDelivery or ObservationNoneOfSpecifiedMaternalMorbidities)
+  * entry[maternalMorbidity] only Reference(ProcedureBloodTransfusion or ConditionPerinealLaceration or ConditionRupturedUterus or ProcedureUnplannedHysterectomy or ObservationICUAdmission or ObservationNoneOfSpecifiedMaternalMorbidities)
     * ^sliceName = "maternalMorbidity"
     * ^short = "Maternal morbidity (complications associated with labor and delivery)"
     * ^definition = "Serious complications experienced by the mother associated with labor and delivery"
-    * ^mustSupport = true
 * section[fetus] 0..1
   * ^short = "fetus section on the Fetal Death Report"
   * ^definition = "This section contains items from the fetus section on the Fetal Death Report."
@@ -171,6 +172,7 @@ Description: "This Composition profile contains constraints to address the use c
       deliveryWeight 0..1  and
       gestationalAgeAtDelivery 0..1  and
       causeOfFetalDeath 0..1  and
+      otherCauseOfDeath 0..* and
       estimatedTimeFetalDeath 1..1  and
       autopsyPerformed 0..1  and
       histologicalExamPerformed 0..1  and
@@ -178,10 +180,10 @@ Description: "This Composition profile contains constraints to address the use c
       numberFetalDeathsThisDelivery 0..1 and
       numberLiveBirthsThisDelivery 0..1
       //plurality 0..1 
-  * entry[deliveryWeight] only Reference($Observation-birth-weight-vr)
+  * entry[deliveryWeight] only Reference(ObservationBirthWeightNew)
     * ^short = "Delivery weight"
     * ^definition = "The weight of the infant/fetus at birth/delivery"
-  * entry[gestationalAgeAtDelivery] only Reference($Observation-gestational-age-at-delivery-vr)
+  * entry[gestationalAgeAtDelivery] only Reference(ObservationGestationalAgeAtDeliveryNew)
     * ^short = "Obstetric estimate of gestation"
     * ^definition = "The obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam"
   * entry[causeOfFetalDeath] only Reference(ConditionFetalDeathCauseOrCondition)
@@ -191,11 +193,10 @@ Description: "This Composition profile contains constraints to address the use c
     * ^sliceName = "otherCauseOfDeath"
     * ^short = "Another significant cause or condition for the death of the fetus."
     * ^definition = "Another significant cause or condition for the death of the fetus."
-    * ^mustSupport = true
   * entry[estimatedTimeFetalDeath] only Reference(ObservationFetalDeathTimePoint)
     * ^short = "The estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery."
     * ^definition = "The estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery."
-  * entry[autopsyPerformed] only Reference($Observation-autopsy-performed-indicator-vr)
+  * entry[autopsyPerformed] only Reference(Observation-autopsy-performed-indicator-vr)
     * ^short = "An indication if an autopsy has been performed on the subject."
     * ^definition = "An indication if an autopsy has been performed on the subject."
   * entry[histologicalExamPerformed] only Reference(ObservationHistologicalPlacentalExamPerformed)
@@ -207,18 +208,18 @@ Description: "This Composition profile contains constraints to address the use c
   // * entry[plurality] only Reference(ObservationPluralityVitalRecords)
   //   * ^short = "Plurality - Single, Twin, Triplet, etc."
   //   * ^definition = "Plurality – The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.)"
-  * entry[numberLiveBirthsThisDelivery] only Reference($Observation-number-live-births-this-delivery-vr)
+  * entry[numberLiveBirthsThisDelivery] only Reference(ObservationNumberLiveBirthsThisDeliveryNew)
     * ^short = "Number of live births this delivery"
-  * entry[numberFetalDeathsThisDelivery] only Reference($Observation-number-fetal-deaths-this-delivery-vr)
+  * entry[numberFetalDeathsThisDelivery] only Reference(ObservationNumberFetalDeathsThisDeliveryNew)
     * ^short = "Number of fetal deaths this delivery" 
-* section[newbornInformation]
-  * entry contains
-      numberLiveBirthsThisDelivery 0..1  and
-      numberFetalDeathsThisDelivery 0..1 
-  * entry[numberLiveBirthsThisDelivery] only Reference($Observation-number-live-births-this-delivery-vr)
-    * ^short = "Number of live births this delivery"
-  * entry[numberFetalDeathsThisDelivery] only Reference($Observation-number-fetal-deaths-this-delivery-vr)
-    * ^short = "Number of fetal deaths this delivery"
+// * section[newbornInformation]
+//   * entry contains
+//       numberLiveBirthsThisDelivery 0..1  and
+//       numberFetalDeathsThisDelivery 0..1 
+//   * entry[numberLiveBirthsThisDelivery] only Reference($Observation-number-live-births-this-delivery-vr)
+//     * ^short = "Number of live births this delivery"
+//   * entry[numberFetalDeathsThisDelivery] only Reference($Observation-number-fetal-deaths-this-delivery-vr)
+//     * ^short = "Number of fetal deaths this delivery"
 * section[motherInformation] ^short = "Mother administrative section on the Fetal Death Report"
   * ^definition = "This section contains items from the Mother administrative section on the Fetal Death Report."
   * code 1.. 

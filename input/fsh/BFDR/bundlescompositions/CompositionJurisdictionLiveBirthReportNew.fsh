@@ -18,13 +18,13 @@ Description: "This Composition profile contains information of a live birth and 
 * extension contains
     ExtensionLiveBirthCertificateNumber named liveBirthCertificateNumber 1..1  and
     ExtensionLiveBirthLocalFileNumber named liveBirthLocalFileNumber 0..1  and
-    ExtensionDateFiledByRegistrar named dateFiledByRegistrar 1..1 
-    ExtensionReplacementStatus named ReplaceStatus 0..1
+    ExtensionDateFiledByRegistrar named dateFiledByRegistrar 1..1 and
+    ExtensionReplacementStatus named replacementStatus 0..1
 * extension[liveBirthCertificateNumber] ^short = "Birth Number"
 * extension[liveBirthLocalFileNumber] ^short = "Local File No."
 * extension[dateFiledByRegistrar] ^short = "Date filed by registrar"
 // Status is deprecated (now flag in message header)
-* extension[ReplaceStatus] ^short = "Replace Status (deprecated)"
+* extension[replacementStatus] ^short = "Replace Status (deprecated)"
 * status 
   * ^short = "In the case of a live birth sent in error, a status of 'entered-in-error' must be set."
   * ^definition = "In the case of a live birth sent in error, a status of 'entered-in-error' must be set."
@@ -41,7 +41,7 @@ Description: "This Composition profile contains information of a live birth and 
   * ^short = "The Encounter for the Composition is the newborn's birth encounter."
   * ^definition = "The Encounter for the Composition is the newborn's birth encounter. This Encounter links to the mother's encounter by the Encounter.partOf data element."
   * extension ..1
-  * extension only Reference(Encounter_Maternity)
+  * extension only ExtensionEncounterMaternityReference
   //* extension only $Extension-encounter-maternity-reference
 * author ..1 
 * author only Reference(USCoreOrganizationProfile)
@@ -156,16 +156,19 @@ Description: "This Composition profile contains information of a live birth and 
     * ^short = "Entries that are contained in the medical and health information section"
     * ^definition = "Entries that are contained in the medical and health information section"
   * entry contains
+      pregnancyRiskFactors 0..* and
       numberPreviousCesareans 0..1  and
+      infectionsDuringPregnancy 0..* and
       obstetricProcedures 1..1  and
+      characteristicsLaborDelivery and
       fetalPresentation 0..1  and
-      finalRouteMethodDelivery 0..1 
+      finalRouteMethodDelivery 0..1 and
+      maternalMorbidity 0..*
     //* entry[pregnancyRiskFactors] only Reference(ObservationPregnancyRiskFactorNew)
-    * entry[pregnancyRiskFactors] only Reference($Condition-prepregnancy-diabetes-vr or $Condition-gestational-diabetes-vr or $Condition-prepregnancy-hypertension-vr or $Condition-gestational-hypertension-vr or $Condition-eclampsia-hypertension-vr or $Observation-previous-preterm-birth-vr or $Procedure-infertility-treatment-vr or $Procedure-artificial-insemination-vr or $Procedure-assisted-fertilization-vr or $Observation-previous-cesarean-vr or $Observation-none-of-specified-pregnancy-risk-factors-vr)
+  * entry[pregnancyRiskFactors] only Reference(Condition-prepregnancy-diabetes-vr or Condition-gestational-diabetes-vr or Condition-prepregnancy-hypertension-vr or Condition-gestational-hypertension-vr or Condition-eclampsia-hypertension-vr or Observation-previous-preterm-birth-vr or Procedure-infertility-treatment-vr or Procedure-artificial-insemination-vr or Procedure-assisted-fertilization-vr or Observation-previous-cesarean-vr or Observation-none-of-specified-pregnancy-risk-factors-vr)
     * ^sliceName = "pregnancyRiskFactors"
     * ^short = "Risk factors in this pregnancy"
     * ^definition = "Selected medical risk factors of the mother during this pregnancy"
-    * ^mustSupport = true
   * entry[numberPreviousCesareans] only Reference(ObservationNumberPreviousCesareansNew)
     * ^short = "If mother had a previous cesarean delivery, how many"
     * ^definition = "Number of previous cesarean deliveries."
@@ -173,7 +176,6 @@ Description: "This Composition profile contains information of a live birth and 
     * ^sliceName = "infectionsDuringPregnancy"
     * ^short = "Infections present and/or treated during this pregnancy"
     * ^definition = "Selected infections that the mother had or was treated for during the course of this pregnancy"
-    * ^mustSupport = true
   * entry[obstetricProcedures] only Reference(ProcedureObstetric)
     * ^short = "Obstetric procedures"
     * ^definition = "Selected medical treatments or invasive/manipulative procedures performed during this pregnancy specifically for management of labor and delivery"
@@ -181,7 +183,6 @@ Description: "This Composition profile contains information of a live birth and 
     * ^sliceName = "characteristicsLaborDelivery"
     * ^short = "Characteristics of labor and delivery"
     * ^definition = "Information about the course of labor and delivery"
-    * ^mustSupport = true
   * entry[fetalPresentation] only Reference(ObservationFetalPresentation)
     * ^short = "Fetal presentation at birth"
     * ^definition = "Fetal presentation at birth"
@@ -192,7 +193,6 @@ Description: "This Composition profile contains information of a live birth and 
     * ^sliceName = "maternalMorbidity"
     * ^short = "Maternal morbidity (complications associated with labor and delivery)"
     * ^definition = "Serious complications experienced by the mother associated with labor and delivery"
-    * ^mustSupport = true
 * section[newbornInformation] ^short = "Newborn section on the Live Birth Certificate"
   * ^definition = "This section contains items from the newborn section on the Live Birth Certificate."
   * code 1.. 
@@ -212,6 +212,8 @@ Description: "This Composition profile contains information of a live birth and 
       APGARScore 0..2  and
       //plurality 0..1  and
       numberLiveBirthsThisDelivery 0..1  and
+      abnormalConditionsNewborn 0..* and
+      congenitalAnomaliesNewborn 0..* and
       infantLiving 0..1  and
       infantBreastfedAtDischarge 0..1 
   * entry[birthWeight] only Reference(ObservationBirthWeightNew)
@@ -228,16 +230,14 @@ Description: "This Composition profile contains information of a live birth and 
   //   * ^definition = "Plurality – The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.)"
   * entry[numberLiveBirthsThisDelivery] only Reference(ObservationNumberLiveBirthsThisDeliveryNew)
     * ^short = "Number of live births this delivery"
-  * entry[abnormalConditionsNewborn] only Reference(ProcedureassistedVentilationFollowingDelivery or ProcedureassistedVentilationMoreThanSixHours or ObservationNICUAdmission or ProcedureSurfactantReplacementTherapy or ProcedureAntibioticSuspectedNeonatalSepsis or ConditionSeizure or ConditionBirthInjury or ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn)
+  * entry[abnormalConditionsNewborn] only Reference(ProcedureAssistedVentilationFollowingDelivery or ProcedureAssistedVentilationMoreThanSixHours or ObservationNICUAdmission or ProcedureSurfactantReplacementTherapy or ProcedureAntibioticSuspectedNeonatalSepsis or ConditionSeizure or ConditionBirthInjury or ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn)
     * ^sliceName = "abnormalConditionsNewborn"
     * ^short = "Abnormal conditions of the newborn"
     * ^definition = "Disorders or significant morbidity experienced by the newborn infant"
-    * ^mustSupport = true
   * entry[congenitalAnomaliesNewborn] only Reference(ConditionCongenitalAnomalyOfNewborn)
     * ^sliceName = "congenitalAnomaliesNewborn"
     * ^short = "Congenital anomolies of the newborn"
     * ^definition = "Malformations of the newborn diagnosed prenatally or after delivery"
-    * ^mustSupport = true
   * entry[infantLiving] only Reference(ObservationInfantLivingNew)
     * ^short = "Is infant living at time of report?"
     * ^definition = "Information on the infant's survival"
@@ -297,7 +297,7 @@ Description: "This Composition profile contains information of a live birth and 
   * entry[paternityAcknowledgementSigned] only Reference(ObservationPaternityAcknowledgementSigned)
     * ^short = "Paternity acknowledgement signed by father"
     * ^definition = "Whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."
-  * entry[fathersEducation] only Reference($Observation-parent-education-level-vr)
+  * entry[fathersEducation] only Reference(Observation-parent-education-level-vr)
     * ^short = "Father's education"
     * ^definition = "Father's education"
 * section[EditFlags] ^short = "Edit Flags Section"

@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-1
-InstanceOf: CompositionProviderLiveBirthReport
+InstanceOf: CompositionProviderLiveBirthReportNew
 Usage: #inline
 * id = "composition-provider-live-birth-babyg-quinn"
 * extension[0]

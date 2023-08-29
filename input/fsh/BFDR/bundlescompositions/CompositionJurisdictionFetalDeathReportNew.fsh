@@ -17,12 +17,12 @@ Description: "This Composition profile contains information of a fetal death and
 * extension contains
     ExtensionFetalDeathReportNumber named fetalDeathReportNumber 1..1  and
     ExtensionFetalDeathLocalFileNumber named fetalDeathLocalFileNumber 0..1  and
-    ExtensionDatereceivedByRegistrar named dateReceivedByRegistrar 1..1 
-    ExtensionReplacementStatus named ReplaceStatus 0..1
+    ExtensionDatereceivedByRegistrar named dateReceivedByRegistrar 1..1 and
+    ExtensionReplacementStatus named replacementStatus 0..1
 * extension[fetalDeathReportNumber] ^short = "State File Number"
 * extension[fetalDeathLocalFileNumber] ^short = "Local File No."
 // Status is deprecated (now flag in message header)
-* extension[ReplaceStatus] ^short = "Replace Status (deprecated)"
+* extension[replacementStatus] ^short = "Replace Status (deprecated)"
 * status 
   * ^short = "In the case of a fetal death sent in error, a status of 'entered-in-error' must be set."
   * ^definition = "In the case of a fetal death sent in error, a status of 'entered-in-error' must be set."
@@ -133,15 +133,16 @@ Description: "This Composition profile contains information of a fetal death and
     * ^short = "Entries that are contained in the medical and health information section"
     * ^definition = "Entries that are contained in the medical and health information section"
   * entry contains
+      pregnancyRiskFactors 0..* and
       numberPreviousCesareans 0..1  and
       fetalPresentation 0..1  and
-      finalRouteMethodDelivery 0..1 
+      finalRouteMethodDelivery 0..1 and
+      maternalMorbidity 0..*
     //* entry[pregnancyRiskFactors] only Reference(ObservationPregnancyRiskFactorNew)
-    * entry[pregnancyRiskFactors] only Reference($Condition-prepregnancy-diabetes-vr or $Condition-gestational-diabetes-vr or $Condition-prepregnancy-hypertension-vr or $Condition-gestational-hypertension-vr or $Condition-eclampsia-hypertension-vr or $Observation-previous-preterm-birth-vr or $Procedure-infertility-treatment-vr or $Procedure-artificial-insemination-vr or $Procedure-assisted-fertilization-vr or $Observation-previous-cesarean-vr or $Observation-none-of-specified-pregnancy-risk-factors-vr)
+  * entry[pregnancyRiskFactors] only Reference(Condition-prepregnancy-diabetes-vr or Condition-gestational-diabetes-vr or Condition-prepregnancy-hypertension-vr or Condition-gestational-hypertension-vr or Condition-eclampsia-hypertension-vr or Observation-previous-preterm-birth-vr or Procedure-infertility-treatment-vr or Procedure-artificial-insemination-vr or Procedure-assisted-fertilization-vr or Observation-previous-cesarean-vr or Observation-none-of-specified-pregnancy-risk-factors-vr)
     * ^sliceName = "pregnancyRiskFactors"
     * ^short = "Risk factors in this pregnancy"
     * ^definition = "Selected medical risk factors of the mother during this pregnancy"
-    * ^mustSupport = true
   * entry[numberPreviousCesareans] only Reference(ObservationNumberPreviousCesareansNew)
     * ^short = "If mother had a previous cesarean delivery, how many"
     * ^definition = "Number of previous cesarean deliveries."
@@ -155,7 +156,6 @@ Description: "This Composition profile contains information of a fetal death and
     * ^sliceName = "maternalMorbidity"
     * ^short = "Maternal morbidity (complications associated with labor and delivery)"
     * ^definition = "Serious complications experienced by the mother associated with labor and delivery"
-    * ^mustSupport = true
 * section[fetus] ^short = "Fetus Section on the Fetal Death Report"
   * ^definition = "This section contains items from the fetus section on the Fetal Death Report."
   * code 1.. 
@@ -173,12 +173,15 @@ Description: "This Composition profile contains information of a fetal death and
       deliveryWeight 0..1  and
       gestationalAgeAtDelivery 0..1  and
       causeOfFetalDeath 0..1  and
+      otherCauseOfDeath 0..* and
       estimatedTimeFetalDeath 0..1  and
       autopsyPerformed 0..1  and
       histologicalExamPerformed 0..1  and
       autopsyOrHistologicalExamUsed 0..1  and
-      plurality 0..1 
-  * entry[birthWeight] only Reference(ObservationBirthWeightNew)
+      numberLiveBirthsThisDelivery 0..1 and
+      numberFetalDeathsThisDelivery 0..1
+      //plurality 0..1 
+  * entry[deliveryWeight] only Reference(ObservationBirthWeightNew)
     * ^short = "Delivery weight"
     * ^definition = "The weight of the infant/fetus at birth/delivery"
   * entry[gestationalAgeAtDelivery] only Reference(ObservationGestationalAgeAtDeliveryNew)
@@ -191,11 +194,10 @@ Description: "This Composition profile contains information of a fetal death and
     * ^sliceName = "otherCauseOfDeath"
     * ^short = "Another significant cause or condition for the death of the fetus."
     * ^definition = "Another significant cause or condition for the death of the fetus."
-    * ^mustSupport = true
   * entry[estimatedTimeFetalDeath] only Reference(ObservationFetalDeathTimePoint)
     * ^short = "The estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery."
     * ^definition = "The estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery."
-  * entry[autopsyPerformed] only Reference($Observation-autopsy-performed-indicator-vr)
+  * entry[autopsyPerformed] only Reference(Observation-autopsy-performed-indicator-vr)
     * ^short = "An indication if an autopsy has been performed on the subject."
     * ^definition = "An indication if an autopsy has been performed on the subject."
   * entry[histologicalExamPerformed] only Reference(ObservationHistologicalPlacentalExamPerformed)
@@ -204,9 +206,9 @@ Description: "This Composition profile contains information of a fetal death and
   * entry[autopsyOrHistologicalExamUsed] only Reference(ObservationAutopsyHistologicalExamResultsUsed)
     * ^short = "Whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."
     * ^definition = "Whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."
-  * entry[numberLiveBirthsThisDelivery] only Reference($Observation-number-live-births-this-delivery-vr)
+  * entry[numberLiveBirthsThisDelivery] only Reference(ObservationNumberLiveBirthsThisDeliveryNew)
     * ^short = "Number of live births this delivery"
-  * entry[numberFetalDeathsThisDelivery] only Reference($Observation-number-fetal-deaths-this-delivery-vr)
+  * entry[numberFetalDeathsThisDelivery] only Reference(ObservationNumberFetalDeathsThisDeliveryNew)
     * ^short = "Number of fetal deaths this delivery" 
   // * entry[plurality] only Reference($Observation-plurality-vr)
   //   * ^short = "Plurality - Single, Twin, Triplet, etc."
@@ -258,11 +260,3 @@ Description: "This Composition profile contains information of a fetal death and
   * entry[editFlagMothersPrepregnancyWeight] only Reference(ObservationEditFlagMothersPrepregnancyWeight)
   * entry[editFlagNumberPreviousCesareans] only Reference(ObservationEditFlagNumberPreviousCesareans)
   * entry[editFlagPlurality] only Reference(ObservationEditFlagPlurality)
-* section[newbornInformation]
-  * entry contains
-      numberLiveBirthsThisDelivery 0..1  and
-      numberFetalDeathsThisDelivery 0..1 
-  * entry[numberLiveBirthsThisDelivery] only Reference($Observation-number-live-births-this-delivery-vr)
-    * ^short = "Number of live births this delivery"
-  * entry[numberFetalDeathsThisDelivery] only Reference($Observation-number-fetal-deaths-this-delivery-vr)
-    * ^short = "Number of fetal deaths this delivery"
