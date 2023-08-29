@@ -130,7 +130,7 @@ Description: "This Composition profile contains constraints to address the use c
       numberPreviousCesareans 0..1 MS and
       fetalPresentation 0..1 MS and
       finalRouteMethodDelivery 0..1 MS
-  * entry[pregnancyRiskFactors] only Reference(ConditionPrepregnancyDiabetesVitalRecords or ConditionGestationalDiabetesVitalRecords or ConditionPrepregnancyHypertensionVitalRecords or ConditionGestationalHypertensionVitalRecords or ConditionEclampsiaHypertensionVitalRecords or ObservationPreviousPretermBirthVitalRecords or ProcedureInfertilityTreatmentVitalRecords or ProcedureArtificialInseminationVitalRecords or ProcedureAssisstedFertilizationVitalRecords or ObservationPreviousCesareanVitalRecords or ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords)
+  * entry[pregnancyRiskFactors] only Reference(ConditionPrepregnancyDiabetesVitalRecords or ConditionGestationalDiabetesVitalRecords or ConditionPrepregnancyHypertensionVitalRecords or ConditionGestationalHypertensionVitalRecords or ConditionEclampsiaHypertensionVitalRecords or ObservationPreviousPretermBirthVitalRecords or ProcedureInfertilityTreatmentVitalRecords or ProcedureArtificialInseminationVitalRecords or ProcedureassistedFertilizationVitalRecords or ObservationPreviousCesareanVitalRecords or ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords)
     * ^sliceName = "pregnancyRiskFactors"
     * ^short = "Risk factors in this pregnancy"
     * ^definition = "Selected medical risk factors of the mother during this pregnancy"

@@ -232,7 +232,7 @@ Description: "This Composition profile defines constraints to address the use ca
     * ^definition = "Plurality – The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.)"
   * entry[numberLiveBirthsThisDelivery] only Reference(ObservationNumberLiveBirthsThisDeliveryNew)
     * ^short = "Number of live births this delivery"
-  * entry[abnormalConditionsNewborn] only Reference(ProcedureAssisstedVentilationFollowingDelivery or ProcedureAssisstedVentilationMoreThanSixHours or ObservationNICUAdmission or ProcedureSurfactantReplacementTherapy or ProcedureAntibioticSuspectedNeonatalSepsis or ConditionSeizure or ConditionBirthInjury or ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn)
+  * entry[abnormalConditionsNewborn] only Reference(ProcedureassistedVentilationFollowingDelivery or ProcedureassistedVentilationMoreThanSixHours or ObservationNICUAdmission or ProcedureSurfactantReplacementTherapy or ProcedureAntibioticSuspectedNeonatalSepsis or ConditionSeizure or ConditionBirthInjury or ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn)
     * ^sliceName = "abnormalConditionsNewborn"
     * ^short = "Abnormal conditions of the newborn"
     * ^definition = "Disorders or significant morbidity experienced by the newborn infant"

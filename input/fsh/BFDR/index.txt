@@ -265,8 +265,8 @@ ObservationPlannedToDeliverAtHome                                  Profile    pr
 ObservationSSNRequestedForChild                                    Profile    profiles/ObservationSSNRequestedForChild.fsh
 ObservationSteroidsFetalLungMaturation                             Profile    profiles/ObservationSteroidsFetalLungMaturation.fsh
 ProcedureAntibioticSuspectedNeonatalSepsis                         Profile    profiles/ProcedureAntibioticSuspectedNeonatalSepsis.fsh
-ProcedureAssisstedVentilationFollowingDelivery                     Profile    profiles/ProcedureAssisstedVentilationFollowingDelivery.fsh
-ProcedureAssisstedVentilationMoreThanSixHours                      Profile    profiles/ProcedureAssisstedVentilationMoreThanSixHours.fsh
+ProcedureAssistedVentilationFollowingDelivery                      Profile    profiles/ProcedureAssistedVentilationFollowingDelivery.fsh
+ProcedureAssistedVentilationMoreThanSixHours                       Profile    profiles/ProcedureAssistedVentilationMoreThanSixHours.fsh
 ProcedureAugmentationOfLabor                                       Profile    profiles/ProcedureAugmentationOfLabor.fsh
 ProcedureBloodTransfusion                                          Profile    profiles/ProcedureBloodTransfusion.fsh
 ProcedureEmergencyOperationFollowingDelivery                       Profile    profiles/ProcedureEmergencyOperationFollowingDelivery.fsh

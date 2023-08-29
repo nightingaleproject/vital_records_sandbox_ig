@@ -1,7 +1,7 @@
 Instance: procedure-ventilation-following-babyg-quinn
 InstanceOf: ProcedureAssistedVentilationFollowingDelivery
-Title: "Procedure - Assissted Ventilation Following Delivery - BabyG Quinn"
-Description: "Procedure - Assissted Ventilation Following Delivery: BabyG Quinn example"
+Title: "Procedure - Assisted Ventilation Following Delivery - BabyG Quinn"
+Description: "Procedure - Assisted Ventilation Following Delivery: BabyG Quinn example"
 Usage: #example
 * meta
   * versionId = "1"

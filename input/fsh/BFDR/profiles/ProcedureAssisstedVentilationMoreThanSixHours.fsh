@@ -1,6 +1,6 @@
-Profile: ProcedureAssisstedVentilationMoreThanSixHours
+Profile: ProcedureAssistedVentilationMoreThanSixHours
 Parent: USCoreProcedureProfile
-Id: Procedure-assissted-ventilation-more-than-six-hours
+Id: Procedure-assisted-ventilation-more-than-six-hours
 Title: "Procedure - Assisted Ventilation More Than Six Hours"
 Description: "This profile represents an abnormal condition of the newborn of assisted ventilation for more than six hours."
 * ^meta.versionId = "2"
