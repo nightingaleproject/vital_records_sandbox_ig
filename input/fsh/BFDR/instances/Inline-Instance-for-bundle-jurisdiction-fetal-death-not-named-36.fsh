@@ -1,10 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-36
-InstanceOf: Observation
+InstanceOf: ObservationEditFlagMothersHeight
 Usage: #inline
-* id = "observation-mother-received-wic-food-carmen-teresa-lee"
+* id = "observation-edit-flag-mothers-height-not-named"
 * status = #final
-* code = $loinc#87303-4 "Mother WIC food recipient"
-  * text = "Did mother get WIC food for herself during this pregnancy?"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueCodeableConcept = $v2-0532#N "No"
+* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1485 "Mothers height Edit flag"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Decedent Fetus Not Named"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"

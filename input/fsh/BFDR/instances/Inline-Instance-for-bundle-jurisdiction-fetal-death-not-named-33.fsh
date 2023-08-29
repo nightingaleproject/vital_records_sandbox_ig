@@ -1,8 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-33
-InstanceOf: Observation
+InstanceOf: ObservationEditFlagEstimateOfGestation
 Usage: #inline
-* id = "observation-gestational-age-at-delivery-not-named"
+* id = "observation-edit-flag-est-gestation-not-named"
 * status = #final
-* code = $loinc#11884-4 "Gestational age Estimated"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* valueQuantity = 20 'wk'
+* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1481 "Gestation age Edit flag"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Decedent Fetus Not Named"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1380 "Off"

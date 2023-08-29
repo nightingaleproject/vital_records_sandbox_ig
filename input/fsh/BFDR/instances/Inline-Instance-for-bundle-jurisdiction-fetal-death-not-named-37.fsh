@@ -1,10 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-37
-InstanceOf: Observation
+InstanceOf: ObservationEditFlagMothersPrepregnancyWeight
 Usage: #inline
-* id = "observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"
+* id = "observation-edit-flag-mothers-prepreg-wgt-not-named"
 * status = #final
-* code = $loinc#69044-6 "Date first prenatal visit"
-  * text = "Date of first prenatal care visit"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueDateTime = "2018-05-18"
+* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1486 "Mothers Prepregnancy Weight Edit flag"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Decedent Fetus Not Named"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"

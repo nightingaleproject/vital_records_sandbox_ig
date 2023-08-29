@@ -1,12 +1,11 @@
 Instance: procedure-final-route-method-delivery-not-named
 InstanceOf: ProcedureFinalRouteMethodDelivery
-Title: "Procedure - Final Route / Method of Delivery example [Fetus Not Named]"
-Description: "Example of Procedure-final-route-method-delivery profile (Fetus Not Named)"
+Title: "Procedure - Final Route / Method of Delivery - Fetus Not Named"
+Description: "Procedure - Final Route / Method of Delivery: Fetus Not Named example"
 Usage: #example
 * meta
   * versionId = "4"
-  * lastUpdated = "2021-07-12T01:19:39.740+00:00"
-  * source = "#83aNtB2Jlq9P8jec"
+  * lastUpdated = "2021-07-12T05:19:39.740Z"
 * status = #completed
 * code = $sct#48782003 "Delivery normal (finding)"
   * text = "Spontaneous vaginal delivery"

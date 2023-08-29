@@ -1,10 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-10
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-pregnancy-risk-factor-carmen-teresa-lee-2"
+* id = "observation-number-births-now-dead-carmen-teresa-lee"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-dead-vr"
 * status = #final
-* code = $loinc#73775-9 "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-  * text = "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
+* code = $loinc#68496-9 "Previous live births now dead #"
+  * text = "Previous live births now dead #"
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueCodeableConcept = $sct#11687002 "Gestational diabetes mellitus (disorder)"
-  * text = "Gestational diabetes mellitus (disorder)"
+* valueInteger = 0

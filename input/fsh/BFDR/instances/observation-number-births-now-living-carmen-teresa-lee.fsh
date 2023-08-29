@@ -1,12 +1,12 @@
 Instance: observation-number-births-now-living-carmen-teresa-lee
-InstanceOf: ObservationNumberBirthsNowLivingVitalRecords
-Title: "Observation - Number of Births Now Living example [Carmen Teresa Lee]"
-Description: "Example of observation-number-births-now-living profile (Carmen Teresa Lee)"
+InstanceOf: Observation
+Title: "Observation - Number of Births Now Living - Carmen Teresa Lee"
+Description: "Observation - Number of Births Now Living: Carmen Teresa Lee example"
 Usage: #example
 * meta
   * versionId = "5"
-  * lastUpdated = "2023-04-05T20:30:36.324+00:00"
-  * source = "#ZC9URDT9GwfzwaP2"
+  * lastUpdated = "2023-04-06T00:30:36.324Z"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-living-vr"
 * status = #final
 * code = $loinc#11638-4 "[#] Births.still living"
   * text = "[#] Births.still living"

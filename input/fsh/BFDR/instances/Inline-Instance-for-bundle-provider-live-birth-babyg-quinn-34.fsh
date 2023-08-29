@@ -1,11 +1,10 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-34
-InstanceOf: Observation
+InstanceOf: ConditionRupturedUterus
 Usage: #inline
-* id = "observation-mother-prepregnancy-weight-jada-ann-quinn"
-* status = #final
-* category = $observation-category#vital-signs "Vital Signs"
-  * text = "Vital Signs"
-* code = $loinc#56077-1 "Body weight --pre current pregnancy"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* effectiveDateTime = "2019-06-20"
-* valueQuantity = 145 '[lb_av]'
+* id = "condition-ruptured-uterus-jada-ann-quinn"
+* category = $condition-category#problem-list-item "Problem List Item"
+* code = $sct#34430009 "Rupture of uterus (disorder)"
+  * text = "Rupture of uterus (disorder)"
+* subject
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"

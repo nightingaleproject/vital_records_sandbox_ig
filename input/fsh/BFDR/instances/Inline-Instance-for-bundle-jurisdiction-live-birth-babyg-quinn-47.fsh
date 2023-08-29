@@ -1,10 +1,14 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-47
-InstanceOf: Observation
+InstanceOf: ObservationPaternityAcknowledgementSigned
 Usage: #inline
-* id = "observation-mother-married-during-pregnancy-jada-ann-quinn"
+* id = "observation-paternity-acknowledgement-signed-james-quinn"
 * status = #final
-* code = $loinc#87301-8 "Mother was married at any time during pregnancy"
-  * text = "Was mother married at conception, at the time of birth, or at any time between conception and giving birth?"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* code = $loinc#87302-6 "Paternity acknowledgment form signed Father"
+  * text = "Paternity acknowledgment form signed Father"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "Patient - Child (Baby G Quinn)"
+* focus
+  * reference = "RelatedPerson/relatedperson-father-natural-james-brandon-quinn"
+  * display = "RelatedPerson - Father (James Brandon Quinn)"
 * valueCodeableConcept = $v2-0532#Y "Yes"

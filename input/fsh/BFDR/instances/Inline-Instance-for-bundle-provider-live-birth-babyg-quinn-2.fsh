@@ -2,6 +2,7 @@ Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-2
 InstanceOf: Patient
 Usage: #inline
 * id = "patient-child-babyg-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"
 * extension[0]
   * extension[0]
     * url = "ombCategory"
@@ -41,4 +42,3 @@ Usage: #inline
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
     * valueDateTime = "2019-02-12T13:00:00-07:00"
-* multipleBirthInteger = 1

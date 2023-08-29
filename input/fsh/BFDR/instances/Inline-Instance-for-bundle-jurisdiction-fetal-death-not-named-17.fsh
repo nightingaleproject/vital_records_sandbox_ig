@@ -1,8 +1,14 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-17
-InstanceOf: Observation
+InstanceOf: ObservationCigaretteSmokingBeforeDuringPregnancy
 Usage: #inline
-* id = "observation-fetal-presentation-not-named"
+* id = "observation-cig-smoking-pregnancy-3-carmen-teresa-lee"
 * status = #final
-* code = $loinc#73761-9 "Fetal presentation--at birth [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* valueCodeableConcept = $sct#6096002 "Breech presentation (finding)"
+* code = $loinc#87299-4 "Cigarettes smoked per day by Mother--2nd trimester"
+  * text = "Cigarettes smoked per day by Mother--2nd trimester"
+* subject
+  * reference = "Patient/patient-mother-carmen-teresa-lee"
+  * display = "Patient - Mother (Carmen Teresa Lee)"
+* focus
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* valueInteger = 1

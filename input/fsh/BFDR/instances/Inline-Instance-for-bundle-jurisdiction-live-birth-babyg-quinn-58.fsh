@@ -1,12 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-58
-InstanceOf: Practitioner
+InstanceOf: ObservationEditFlagNumberPrenatalCareVisits
 Usage: #inline
-* id = "practitioner-vital-records-avery-jones"
-* identifier
-  * system = "http://hl7.org/fhir/sid/us-npi"
-  * value = "112247003"
-* name
-  * family = "Jones"
-  * given = "Avery"
-  * suffix = "M.D."
-* qualification.code = $sct#112247003 "Medical doctor"
+* id = "observation-edit-flag-number-prenatal-care-visits-example"
+* status = #final
+* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1487 "Number of Prenatal Vitis Edit flag"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"

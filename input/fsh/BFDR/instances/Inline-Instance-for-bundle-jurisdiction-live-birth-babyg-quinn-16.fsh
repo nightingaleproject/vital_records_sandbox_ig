@@ -1,10 +1,15 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-16
-InstanceOf: Observation
+InstanceOf: CoveragePrincipalPayerDelivery
 Usage: #inline
-* id = "observation-parent-education-level-jada-ann-quinn"
-* status = #final
-* code = $loinc#57712-2 "Highest level of education Mother"
-* subject = Reference(patient-child-babyg-quinn)
-* focus = Reference(relatedperson-mother-jada-ann-quinn)
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1455 "Doctorate Degree or Professional Degree"
-  * text = "Doctorate Degree or Professional Degree"
+* id = "coverage-principal-payer-for-delivery-jada-ann-quinn"
+* status = #active
+* type = $sopt#5 "PRIVATE HEALTH INSURANCE"
+  * text = "Private Health Insurance"
+* beneficiary
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* payor
+  * extension
+    * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+    * valueCode = #not-asked
+  * display = "Not asked"

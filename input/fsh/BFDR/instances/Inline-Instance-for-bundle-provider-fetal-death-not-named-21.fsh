@@ -1,11 +1,13 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-21
-InstanceOf: Observation
+InstanceOf: ProcedureFinalRouteMethodDelivery
 Usage: #inline
-* id = "observation-mother-height-carmen-teresa-lee"
-* status = #final
-* category = $observation-category#vital-signs "Vital Signs"
-  * text = "Vital Signs"
-* code = $loinc#3137-7 "Body height Measured"
-* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* effectiveDateTime = "2019-01-10"
-* valueQuantity = 65 '[in_i]'
+* id = "procedure-final-route-method-delivery-not-named"
+* status = #completed
+* code = $sct#48782003 "Delivery normal (finding)"
+  * text = "Spontaneous vaginal delivery"
+* subject
+  * reference = "Patient/patient-mother-carmen-teresa-lee"
+  * display = "Patient - Mother (Carmen Teresa Lee)"
+* performedPeriod
+  * start = "2019-01-19T18:00:00-07:00"
+  * end = "2019-01-19T18:23:00-07:00"

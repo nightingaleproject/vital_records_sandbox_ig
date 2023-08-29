@@ -1,12 +1,12 @@
 Instance: patient-decedent-fetus-not-named
-InstanceOf: PatientDecedentFetusVitalRecords
-Title: "Patient - Decedent Fetus example [Fetus Not Named]"
-Description: "Example of patient-decedent-fetus (Fetus Not Named)"
+InstanceOf: Patient
+Title: "Patient - Decedent Fetus - Vital Records - Fetus Not Named"
+Description: "Patient - Decedent Fetus - Vital Records: Fetus Not Named example"
 Usage: #example
 * meta
-  * versionId = "10"
-  * lastUpdated = "2023-04-05T20:35:49.599+00:00"
-  * source = "#AtuauRRNRxInUuTL"
+  * versionId = "11"
+  * lastUpdated = "2023-06-23T03:47:32.863Z"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"
 * extension[0]
   * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
   * valueCode = #F
@@ -16,6 +16,9 @@ Usage: #example
     * city = "Ann Arbor"
     * state = "MI"
     * postalCode = "48103"
+* extension[+]
+  * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr"
+  * valueCoding = $sct#276507005 "Fetal death (event)"
 * identifier
   * use = #usual
   * type = $v2-0203#MR "Medical Record Number"

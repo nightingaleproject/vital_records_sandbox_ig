@@ -1,10 +1,10 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-9
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-cig-smoking-pregnancy-1-carmen-teresa-lee"
+* id = "observation-number-births-now-living-carmen-teresa-lee"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-living-vr"
 * status = #final
-* code = $loinc#64794-1 "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
-  * text = "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueInteger = 0
+* code = $loinc#11638-4 "[#] Births.still living"
+  * text = "[#] Births.still living"
+* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
+* valueInteger = 1

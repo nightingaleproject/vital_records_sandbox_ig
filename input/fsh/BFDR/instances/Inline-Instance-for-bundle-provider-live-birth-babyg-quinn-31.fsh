@@ -1,11 +1,12 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-31
-InstanceOf: Observation
+InstanceOf: ProcedureInductionOfLabor
 Usage: #inline
-* id = "observation-mother-height-jada-ann-quinn"
-* status = #final
-* category = $observation-category#vital-signs "Vital Signs"
-  * text = "Vital Signs"
-* code = $loinc#3137-7 "Body height Measured"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* effectiveDateTime = "2019-02-10"
-* valueQuantity = 67 '[in_i]'
+* id = "procedure-induction-of-labor-jada-ann-quinn"
+* status = #completed
+* code = $sct#236958009 "Induction of labor (procedure)"
+* subject
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* performedPeriod
+  * start = "2019-02-07T08:30:00-07:00"
+  * end = "2019-02-07T08:45:00-07:00"

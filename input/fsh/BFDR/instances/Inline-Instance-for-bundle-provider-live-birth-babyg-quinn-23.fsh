@@ -1,8 +1,14 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-23
-InstanceOf: Observation
+InstanceOf: ObservationCigaretteSmokingBeforeDuringPregnancy
 Usage: #inline
-* id = "observation-infant-living-babyg-quinn"
+* id = "observation-cig-smoking-pregnancy-3-jada-ann-quinn"
 * status = #final
-* code = $loinc#73757-7 "Infant living at time of report [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* valueBoolean = true
+* code = $loinc#87299-4 "Cigarettes smoked per day by Mother--2nd trimester"
+  * text = "Cigarettes smoked per day by Mother--2nd trimester"
+* subject
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* focus
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* valueInteger = 1

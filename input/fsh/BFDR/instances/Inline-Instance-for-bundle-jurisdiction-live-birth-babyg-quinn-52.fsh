@@ -1,10 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-52
-InstanceOf: Observation
+InstanceOf: ObservationEditFlagFathersEducation
 Usage: #inline
-* id = "observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn"
+* id = "observation-edit-flag-fathers-education-example"
 * status = #final
-* code = $loinc#68500-8 "Date last other pregnancy outcome"
-  * text = "Date of last other pregnancy outcome"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueDateTime = "2015-05"
+* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1480 "Fathers education Edit flag"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"

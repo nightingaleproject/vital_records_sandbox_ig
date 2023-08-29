@@ -1,12 +1,12 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-42
-InstanceOf: Procedure
+InstanceOf: ObservationInfantBreastfedAtDischarge
 Usage: #inline
-* id = "procedure-final-route-method-delivery-babyg-quinn"
-* status = #completed
-* code = $sct#11466000 "Cesarean section"
-  * text = "Cesarean section"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* performedPeriod
-  * start = "2019-02-12T12:45:00-07:00"
-  * end = "2019-02-12T13:15:00-07:00"
-* reasonReference = Reference(Observation/observation-labor-trial-attempted-babyg-quinn) "Labor trial attempted - true"
+* id = "observation-infant-breastfed-at-discharge-babyg-quinn"
+* status = #final
+* code = $loinc#73756-9 "Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"
+  * text = "Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* issued = "2019-02-15T09:45:00-07:00"
+* valueBoolean = true

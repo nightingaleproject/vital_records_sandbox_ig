@@ -1,10 +1,12 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-34
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-pregnancy-risk-factor-jada-ann-quinn-4"
+* id = "observation-birth-weight-babyg-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"
 * status = #final
-* code = $loinc#73775-9 "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-  * text = "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueCodeableConcept = $sct#200144004 "Deliveries by cesarean (finding)"
-  * text = "Deliveries by cesarean (finding)"
+* category = $observation-category#vital-signs "Vital Signs"
+  * text = "Vital Signs"
+* code = $loinc#8339-4 "Birth weight Measured"
+* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* effectiveDateTime = "2019-02-10"
+* valueQuantity = 2500 'g'

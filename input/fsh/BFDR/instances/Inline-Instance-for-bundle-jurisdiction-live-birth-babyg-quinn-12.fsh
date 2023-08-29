@@ -1,8 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-12
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-edit-flag-fathers-education-example"
+* id = "observation-number-births-now-dead-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-dead-vr"
 * status = #final
-* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1480 "Fathers education Edit flag"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"
+* code = $loinc#68496-9 "Previous live births now dead #"
+  * text = "Previous live births now dead #"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* valueInteger = 0

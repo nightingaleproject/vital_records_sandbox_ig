@@ -1,9 +1,14 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-45
-InstanceOf: Observation
+InstanceOf: ObservationSSNRequestedForChild
 Usage: #inline
-* id = "observation-apgar-score-babyg-quinn-1-min"
+* id = "observation-ssn-requested-for-child-babyg-quinn"
 * status = #final
-* code = $loinc#9272-6 "1 minute Apgar Score"
-  * text = "1 minute Apgar Score"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* valueInteger = 5
+* code = $loinc#87295-2 "Social Security Number was requested"
+  * text = "Social security number requested for child"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* focus
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* valueBoolean = true

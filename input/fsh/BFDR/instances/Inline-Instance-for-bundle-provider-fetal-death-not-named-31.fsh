@@ -1,10 +1,11 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-31
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-mother-received-wic-food-carmen-teresa-lee"
+* id = "observation-parent-education-level-carmen-teresa-lee"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"
 * status = #final
-* code = $loinc#87303-4 "Mother WIC food recipient"
-  * text = "Did mother get WIC food for herself during this pregnancy?"
+* code = $loinc#57712-2 "Highest level of education Mother"
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueCodeableConcept = $v2-0532#N "No"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1449 "9th through 12th grade; no diploma"
+  * text = "9th through 12th grade; no diploma"

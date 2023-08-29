@@ -1,12 +1,12 @@
 Instance: practitioner-vital-records-avery-jones
-InstanceOf: PractitionerVitalRecords
-Title: "Practitioner - Vital Records example [Avery Jones, MD]"
-Description: "Example of practitioner-vital-records profile (Avery Jones, MD)"
+InstanceOf: Practitioner
+Title: "Practitioner - Vital Records - Avery Jones, MD"
+Description: "Practitioner - Vital Records: Avery Jones, MD example"
 Usage: #example
 * meta
   * versionId = "2"
-  * lastUpdated = "2023-04-05T20:35:49.598+00:00"
-  * source = "#LYzk0kJjhDbhmhfd"
+  * lastUpdated = "2023-04-06T00:35:49.598Z"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"
 * identifier
   * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "112247003"

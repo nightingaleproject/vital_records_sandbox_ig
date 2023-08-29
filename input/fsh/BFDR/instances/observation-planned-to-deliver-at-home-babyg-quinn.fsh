@@ -1,12 +1,11 @@
 Instance: observation-planned-to-deliver-at-home-babyg-quinn
 InstanceOf: ObservationPlannedToDeliverAtHome
-Title: "Observation - Planned to Deliver at Home example [Baby G Quinn]"
-Description: "Example of Observation - Planned to Deliver at Home profile (Baby G Quinn)"
+Title: "Observation - Planned to Deliver at Home - Baby G Quinn"
+Description: "Observation - Planned to Deliver at Home: Baby G Quinn example"
 Usage: #example
 * meta
   * versionId = "3"
-  * lastUpdated = "2023-04-05T20:30:57.414+00:00"
-  * source = "#M2iXtZd25O6TAliK"
+  * lastUpdated = "2023-04-06T00:30:57.414Z"
 * status = #final
 * code = $loinc#73765-0 "Mother Planned to deliver at home [US Standard Certificate of Live Birth]"
   * text = "Planned to deliver at home?"

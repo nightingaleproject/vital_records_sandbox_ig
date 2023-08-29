@@ -1,10 +1,9 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-35
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-ssn-requested-for-child-babyg-quinn"
+* id = "observation-gestational-age-at-delivery-babyg-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"
 * status = #final
-* code = $loinc#87295-2 "Social Security Number was requested"
-  * text = "Social security number requested for child"
+* code = $loinc#11884-4 "Gestational age Estimated"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueBoolean = true
+* valueQuantity = 36 'wk'

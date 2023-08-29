@@ -1,9 +1,14 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-7
-InstanceOf: Observation
+InstanceOf: ObservationDateOfFirstPrenatalCareVisit
 Usage: #inline
-* id = "observation-number-births-now-dead-carmen-teresa-lee"
+* id = "observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"
 * status = #final
-* code = $loinc#68496-9 "Previous live births now dead #"
-  * text = "Previous live births now dead #"
-* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueInteger = 0
+* code = $loinc#69044-6 "Date first prenatal visit"
+  * text = "Date of first prenatal care visit"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* focus
+  * reference = "Patient/patient-mother-carmen-teresa-lee"
+  * display = "Patient - Mother (Carmen Teresa Lee)"
+* valueDateTime = "2018-05-18"

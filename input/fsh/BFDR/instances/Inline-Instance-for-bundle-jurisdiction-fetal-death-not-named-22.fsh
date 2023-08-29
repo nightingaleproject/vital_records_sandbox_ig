@@ -1,10 +1,11 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-22
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-planned-to-deliver-at-home-not-named"
+* id = "observation-birth-weight-not-named"
 * status = #final
-* code = $loinc#73765-0 "Mother Planned to deliver at home [US Standard Certificate of Live Birth]"
-  * text = "Planned to deliver at home?"
+* category = $observation-category#vital-signs "Vital Signs"
+  * text = "Vital Signs"
+* code = $loinc#8339-4 "Birth weight Measured"
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueBoolean = false
+* effectiveDateTime = "2019-02-10"
+* valueQuantity = 1530 'g'

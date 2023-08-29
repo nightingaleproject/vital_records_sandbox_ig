@@ -1,8 +1,12 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-17
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-edit-flag-mothers-date-of-birth-example"
+* id = "observation-mother-delivery-weight-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"
 * status = #final
-* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1482 "Mothers birthdate Edit flag"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"
+* category = $observation-category#vital-signs "Vital Signs"
+  * text = "Vital Signs"
+* code = $loinc#69461-2 "Mother's body weight --at delivery"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* effectiveDateTime = "2019-02-12"
+* valueQuantity = 175 '[lb_av]'

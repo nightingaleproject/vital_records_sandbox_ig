@@ -5,8 +5,7 @@ Description: "Procedure - Induction of Labor: Jada Ann Quinn example"
 Usage: #example
 * meta
   * versionId = "1"
-  * lastUpdated = "2023-04-25T01:53:41.404+00:00"
-  * source = "#MQxbeQAl109YrZYY"
+  * lastUpdated = "2023-04-25T05:53:41.404Z"
 * status = #completed
 * code = $sct#236958009 "Induction of labor (procedure)"
 * subject

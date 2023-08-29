@@ -1,10 +1,9 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-25
-InstanceOf: Observation
+InstanceOf: Condition
 Usage: #inline
-* id = "observation-mother-received-wic-food-jada-ann-quinn"
-* status = #final
-* code = $loinc#87303-4 "Mother WIC food recipient"
-  * text = "Did mother get WIC food for herself during this pregnancy?"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueCodeableConcept = $v2-0532#Y "Yes"
+* id = "condition-gestational-hypertension-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr"
+* category = $condition-category#problem-list-item
+* code = $sct#48194001 "Pregnancy-induced hypertension (disorder)"
+  * text = "Pregnancy-induced hypertension (disorder)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"

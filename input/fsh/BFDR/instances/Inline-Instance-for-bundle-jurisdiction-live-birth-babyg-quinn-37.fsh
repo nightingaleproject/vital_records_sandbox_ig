@@ -1,10 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-37
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-cig-smoking-pregnancy-3-jada-ann-quinn"
+* id = "observation-apgar-score-babyg-quinn-5-min"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"
 * status = #final
-* code = $loinc#87299-4 "Cigarettes smoked per day by Mother--2nd trimester"
-  * text = "Cigarettes smoked per day by Mother--2nd trimester"
+* code = $loinc#9274-2 "5 minute Apgar Score"
+  * text = "5 minute Apgar Score"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueInteger = 1
+* valueInteger = 7

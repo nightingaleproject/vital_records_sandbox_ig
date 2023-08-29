@@ -1,10 +1,16 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-32
-InstanceOf: Observation
+InstanceOf: ProcedureFinalRouteMethodDelivery
 Usage: #inline
-* id = "observation-pregnancy-risk-factor-jada-ann-quinn-2"
-* status = #final
-* code = $loinc#73775-9 "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-  * text = "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueCodeableConcept = $sct#445151000124101 "Fertility enhancing drug therapy"
-  * text = "Fertility enhancing drug therapy"
+* id = "procedure-final-route-method-delivery-babyg-quinn"
+* status = #completed
+* code = $sct#11466000 "Cesarean section"
+  * text = "Cesarean section"
+* subject
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* performedPeriod
+  * start = "2019-02-12T12:45:00-07:00"
+  * end = "2019-02-12T13:15:00-07:00"
+* reasonReference
+  * reference = "Observation/observation-labor-trial-attempted-babyg-quinn"
+  * display = "Labor trial attempted - true"

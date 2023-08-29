@@ -1,10 +1,10 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-25
-InstanceOf: Observation
+InstanceOf: Condition
 Usage: #inline
-* id = "observation-infant-breastfed-at-discharge-babyg-quinn"
-* status = #final
-* code = $loinc#73756-9 "Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"
-  * text = "Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* issued = "2019-02-15T09:45:00-07:00"
-* valueBoolean = true
+* id = "condition-prepregnancy-diabetes-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-diabetes-vr"
+* category = $condition-category#problem-list-item
+* code = $sct#73211009 "Diabetes mellitus (disorder)"
+  * text = "Diabetes mellitus (disorder)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* onsetDateTime = "2015-02-12"

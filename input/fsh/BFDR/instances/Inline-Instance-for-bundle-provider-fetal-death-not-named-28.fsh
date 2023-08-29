@@ -1,11 +1,10 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-28
-InstanceOf: Observation
+InstanceOf: ObservationHistologicalPlacentalExamPerformed
 Usage: #inline
-* id = "observation-birth-weight-not-named"
+* id = "observation-histological-placental-exam-performed-not-named"
 * status = #final
-* category = $observation-category#vital-signs "Vital Signs"
-  * text = "Vital Signs"
-* code = $loinc#8339-4 "Birth weight Measured"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* effectiveDateTime = "2019-02-10"
-* valueQuantity = 1530 'g'
+* code = $loinc#73767-6 "Histological placental examination was performed [US Standard Report of Fetal Death]"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* valueCodeableConcept = $sct#398166005 "Performed"

@@ -1,10 +1,12 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-42
-InstanceOf: Observation
+InstanceOf: ObservationInfantBreastfedAtDischarge
 Usage: #inline
-* id = "observation-date-of-first-prenatal-care-visit-jada-ann-quinn"
+* id = "observation-infant-breastfed-at-discharge-babyg-quinn"
 * status = #final
-* code = $loinc#69044-6 "Date first prenatal visit"
-  * text = "Date of first prenatal care visit"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueDateTime = "2018-07-20"
+* code = $loinc#73756-9 "Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"
+  * text = "Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* issued = "2019-02-15T09:45:00-07:00"
+* valueBoolean = true

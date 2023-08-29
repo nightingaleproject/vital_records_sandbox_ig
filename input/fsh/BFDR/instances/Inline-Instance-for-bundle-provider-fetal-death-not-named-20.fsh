@@ -1,8 +1,10 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-20
-InstanceOf: Observation
+InstanceOf: ObservationFetalPresentation
 Usage: #inline
-* id = "observation-fetal-death-time-point-not-named"
+* id = "observation-fetal-presentation-not-named"
 * status = #final
-* code = $loinc#73811-2 "Estimated timing of fetal death [US Standard Report of Fetal Death]"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* valueCodeableConcept = $sct#434631000124100 "Fetal intrapartum death after first assessment (event)"
+* code = $loinc#73761-9 "Fetal presentation--at birth [US Standard Certificate of Live Birth]"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* valueCodeableConcept = $sct#6096002 "Breech presentation (finding)"

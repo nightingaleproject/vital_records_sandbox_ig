@@ -1,8 +1,14 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-21
-InstanceOf: Observation
+InstanceOf: ObservationCigaretteSmokingBeforeDuringPregnancy
 Usage: #inline
-* id = "observation-edit-flag-estimate-of-gestation-example"
+* id = "observation-cig-smoking-pregnancy-1-jada-ann-quinn"
 * status = #final
-* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1481 "Gestation age Edit flag"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1380 "Off"
+* code = $loinc#64794-1 "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+  * text = "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+* subject
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* focus
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* valueInteger = 20

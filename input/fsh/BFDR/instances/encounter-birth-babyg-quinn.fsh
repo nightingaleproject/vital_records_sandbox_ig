@@ -1,12 +1,11 @@
 Instance: encounter-birth-babyg-quinn
 InstanceOf: EncounterBirth
-Title: "Encounter - Birth example [Baby G Quinn]"
-Description: "Example of Encounter-birth profile (Baby G Quinn)"
+Title: "Encounter - Birth - Baby G Quinn"
+Description: "Encounter - Birth: Baby G Quinn example"
 Usage: #example
 * meta
   * versionId = "12"
-  * lastUpdated = "2021-05-14T07:49:47.073+00:00"
-  * source = "#kaQTPqT0BJgTBXVK"
+  * lastUpdated = "2021-05-14T11:49:47.073Z"
 * identifier
   * system = "http://hospital.smarthealthit.org"
   * value = "9937012"

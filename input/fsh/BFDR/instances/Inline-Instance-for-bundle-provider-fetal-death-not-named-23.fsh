@@ -1,10 +1,9 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-23
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-planned-to-deliver-at-home-not-named"
+* id = "observation-gestational-age-at-delivery-not-named"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"
 * status = #final
-* code = $loinc#73765-0 "Mother Planned to deliver at home [US Standard Certificate of Live Birth]"
-  * text = "Planned to deliver at home?"
+* code = $loinc#11884-4 "Gestational age Estimated"
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueBoolean = false
+* valueQuantity = 20 'wk'

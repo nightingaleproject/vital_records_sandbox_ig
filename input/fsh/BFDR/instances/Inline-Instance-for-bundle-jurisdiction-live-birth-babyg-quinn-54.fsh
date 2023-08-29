@@ -1,8 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-54
-InstanceOf: Condition
+InstanceOf: ObservationEditFlagMothersDeliveryWeight
 Usage: #inline
-* id = "condition-congenital-anomaly-of-newborn-babyg-quinn"
-* category = $loinc#73780-9 "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
-* code = $sct#12770006 "Cyanotic congenital heart disease (disorder)"
-  * text = "Cyanotic congenital heart disease (disorder)"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* id = "observation-edit-flag-mothers-delivery-weight-example"
+* status = #final
+* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1483 "Mothers delivery weight Edit flag"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"

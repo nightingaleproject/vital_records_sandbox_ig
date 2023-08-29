@@ -1,9 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-55
-InstanceOf: Observation
+InstanceOf: ObservationEditFlagMothersEducation
 Usage: #inline
-* id = "observation-apgar-score-babyg-quinn-1-min"
+* id = "observation-edit-flag-mothers-education-example"
 * status = #final
-* code = $loinc#9272-6 "1 minute Apgar Score"
-  * text = "1 minute Apgar Score"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* valueInteger = 5
+* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1484 "Mothers education Edit flag"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"

@@ -1,11 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-57
-InstanceOf: Observation
+InstanceOf: ObservationEditFlagMothersPrepregnancyWeight
 Usage: #inline
-* id = "observation-labor-trial-attempted-babyg-quinn"
+* id = "observation-edit-flag-mothers-prepregnancy-weight-example"
 * status = #final
-* code = $loinc#73760-1 "If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]"
-  * text = "If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* issued = "2019-02-12T08:55:30-07:00"
-* valueBoolean = true
+* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1486 "Mothers Prepregnancy Weight Edit flag"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"

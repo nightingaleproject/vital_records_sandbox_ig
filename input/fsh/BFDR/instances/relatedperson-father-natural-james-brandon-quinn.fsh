@@ -1,15 +1,31 @@
 Instance: relatedperson-father-natural-james-brandon-quinn
-InstanceOf: RelatedPersonFatherNaturalVitalRecords
-Title: "RelatedPerson - Father Natural example [James Brandon Quinn]"
-Description: "Example of RelatedPerson-father-natural profile (James Brandon Quinn)"
+InstanceOf: RelatedPerson
+Title: "RelatedPerson - Father Natural - Vital Records - James Brandon Quinn"
+Description: "RelatedPerson - Father Natural - Vital Records: James Brandon Quinn example"
 Usage: #example
-* extension[race]
-  * extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
-  * extension[text].valueString = "White"
-* extension[ethnicity]
-  * extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
-  * extension[text].valueString = "Not Hispanic or Latino"
-* extension[birthPlace].valueAddress.state = "NY"
+* meta
+  * versionId = "8"
+  * lastUpdated = "2023-04-06T00:33:56.437Z"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"
+* extension[0]
+  * extension[0]
+    * url = "ombCategory"
+    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
+  * extension[+]
+    * url = "text"
+    * valueString = "White"
+  * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+* extension[+]
+  * extension[0]
+    * url = "ombCategory"
+    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
+  * extension[+]
+    * url = "text"
+    * valueString = "Not Hispanic or Latino"
+  * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+* extension[+]
+  * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"
+  * valueAddress.state = "NY"
 * identifier
   * type = $v2-0203#SS
   * system = "http://hl7.org/fhir/sid/us-ssn"

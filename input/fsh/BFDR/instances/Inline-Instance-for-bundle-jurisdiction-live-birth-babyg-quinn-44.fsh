@@ -1,10 +1,11 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-44
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-infant-breastfed-at-discharge-babyg-quinn"
+* id = "observation-parent-education-level-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"
 * status = #final
-* code = $loinc#73756-9 "Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"
-  * text = "Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* issued = "2019-02-15T09:45:00-07:00"
-* valueBoolean = true
+* code = $loinc#57712-2 "Highest level of education Mother"
+* subject = Reference(patient-child-babyg-quinn)
+* focus = Reference(patient-mother-jada-ann-quinn)
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1455 "Doctorate Degree or Professional Degree"
+  * text = "Doctorate Degree or Professional Degree"

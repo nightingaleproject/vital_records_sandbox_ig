@@ -1,7 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-28
-InstanceOf: Observation
+InstanceOf: ObservationHistologicalPlacentalExamPerformed
 Usage: #inline
-* id = "observation-edit-flag-number-previous-cesareans-example"
+* id = "observation-histological-placental-exam-performed-not-named"
 * status = #final
-* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1488 "Previous Cesarians Edit flag"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"
+* code = $loinc#73767-6 "Histological placental examination was performed [US Standard Report of Fetal Death]"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* valueCodeableConcept = $sct#398166005 "Performed"

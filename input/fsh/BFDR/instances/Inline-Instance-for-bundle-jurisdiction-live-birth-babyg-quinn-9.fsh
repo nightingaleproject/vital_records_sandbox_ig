@@ -1,8 +1,11 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-9
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-edit-flag-plurality-example"
+* id = "observation-number-prenatal-visits-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"
 * status = #final
-* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1489 "Plurality Edit flag"
+* code = $loinc#68493-6 "Prenatal visits for this pregnancy #"
+  * text = "Prenatal visits for this pregnancy #"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1494 "Queried, and Correct"
+* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* valueInteger = 8

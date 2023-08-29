@@ -1,8 +1,14 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-22
-InstanceOf: Observation
+InstanceOf: ObservationCigaretteSmokingBeforeDuringPregnancy
 Usage: #inline
-* id = "observation-edit-flag-mothers-delivery-weight-example"
+* id = "observation-cig-smoking-pregnancy-2-jada-ann-quinn"
 * status = #final
-* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1483 "Mothers delivery weight Edit flag"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"
+* code = $loinc#87298-6 "Cigarettes smoked per day by Mother--1st trimester"
+  * text = "Cigarettes smoked per day by Mother--1st trimester"
+* subject
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* focus
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* valueInteger = 3

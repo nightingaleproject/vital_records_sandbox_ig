@@ -1,12 +1,12 @@
 Instance: relatedperson-mother-carmen-teresa-lee
-InstanceOf: RelatedPersonMotherGestationalVitalRecords
-Title: "RelatedPerson - Mother Gestational example [Carmen Teresa Lee]"
-Description: "Example of Relatedperson-mother-gestational profile (Carmen Teresa Lee)"
+InstanceOf: RelatedPerson
+Title: "RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee"
+Description: "RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee example"
 Usage: #example
 * meta
   * versionId = "10"
-  * lastUpdated = "2023-04-05T20:33:56.436+00:00"
-  * source = "#1LGSGXAG3h9XCQqb"
+  * lastUpdated = "2023-04-06T00:33:56.436Z"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

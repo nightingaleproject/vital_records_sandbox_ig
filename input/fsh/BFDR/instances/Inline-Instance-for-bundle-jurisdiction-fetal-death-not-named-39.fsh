@@ -1,10 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-39
-InstanceOf: Observation
+InstanceOf: ObservationEditFlagPlurality
 Usage: #inline
-* id = "observation-date-of-last-live-birth-carmen-teresa-lee"
+* id = "observation-edit-flag-plurality-not-named"
 * status = #final
-* code = $loinc#68499-3 "Date last live birth"
-  * text = "Date of last live birth"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueDateTime = "2016-01-28"
+* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1489 "Plurality Edit flag"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Decedent Fetus Not Named"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1494 "Queried, and Correct"

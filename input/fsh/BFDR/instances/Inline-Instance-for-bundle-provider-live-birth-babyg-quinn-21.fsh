@@ -1,9 +1,14 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-21
-InstanceOf: Observation
+InstanceOf: ObservationCigaretteSmokingBeforeDuringPregnancy
 Usage: #inline
-* id = "observation-number-previous-cesareans-jada-ann-quinn"
+* id = "observation-cig-smoking-pregnancy-1-jada-ann-quinn"
 * status = #final
-* code = $loinc#68497-7 "Previous cesarean deliveries #"
-  * text = "Previous cesarean deliveries #"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueInteger = 1
+* code = $loinc#64794-1 "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+  * text = "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+* subject
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* focus
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* valueInteger = 20

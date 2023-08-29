@@ -1,8 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-32
-InstanceOf: Observation
+InstanceOf: ObservationEditFlagBirthweight
 Usage: #inline
-* id = "observation-histological-placental-exam-performed-not-named"
+* id = "observation-edit-flag-delivery-wgt-not-named"
 * status = #final
-* code = $loinc#73767-6 "Histological placental examination was performed [US Standard Report of Fetal Death]"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* valueCodeableConcept = $sct#398166005 "Performed"
+* code = urn:oid:2.16.840.1.114222.4.5.274#PCH1478 "Birth weight Edit flag"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Decedent Fetus Not Named"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1380 "Off"

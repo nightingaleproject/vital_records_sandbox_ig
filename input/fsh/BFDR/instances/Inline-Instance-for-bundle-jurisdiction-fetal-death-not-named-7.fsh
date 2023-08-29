@@ -1,10 +1,14 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-7
-InstanceOf: Observation
+InstanceOf: ObservationDateOfFirstPrenatalCareVisit
 Usage: #inline
-* id = "observation-cig-smoking-pregnancy-2-carmen-teresa-lee"
+* id = "observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"
 * status = #final
-* code = $loinc#87298-6 "Cigarettes smoked per day by Mother--1st trimester"
-  * text = "Cigarettes smoked per day by Mother--1st trimester"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueInteger = 0
+* code = $loinc#69044-6 "Date first prenatal visit"
+  * text = "Date of first prenatal care visit"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* focus
+  * reference = "Patient/patient-mother-carmen-teresa-lee"
+  * display = "Patient - Mother (Carmen Teresa Lee)"
+* valueDateTime = "2018-05-18"

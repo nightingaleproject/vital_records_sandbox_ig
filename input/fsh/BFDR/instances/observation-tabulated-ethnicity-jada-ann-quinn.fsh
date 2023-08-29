@@ -1,16 +1,15 @@
 Instance: observation-tabulated-ethnicity-jada-ann-quinn
-InstanceOf: ObservationTabulatedEthnicityVitalRecords
-Title: "Observation - Tabulated Ethnicity example [Jada Ann Quinn]"
-Description: "Example of Tabulated Ethnicity profile (Jada Ann Quinn)"
+InstanceOf: Observation
+Title: "Observation - Tabulated Ethnicity - Vital Records - Jada Ann Quinn"
+Description: "Observation - Tabulated Ethnicity - Vital Records: Jada Ann Quinn example"
 Usage: #example
 * meta
-  * versionId = "10"
-  * lastUpdated = "2023-04-05T20:31:29.506+00:00"
-  * source = "#RxNpdv6NaGT5VBJx"
+  * versionId = "11"
+  * lastUpdated = "2023-06-19T10:45:01.276Z"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"
 * status = #final
 * code = $loinc#80978-0 "Tabulated ethnicity [CDC]"
   * text = "Tabulated ethnicity [CDC]"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * valueCodeableConcept = $v3-Ethnicity#2151-9 "Chicano"
   * text = "Chicano"

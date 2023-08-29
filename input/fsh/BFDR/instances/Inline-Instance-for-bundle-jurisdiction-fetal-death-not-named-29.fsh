@@ -1,6 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-29
-InstanceOf: Organization
+InstanceOf: ObservationAutopsyHistologicalExamResultsUsed
 Usage: #inline
-* id = "organization-jurisdictional-vital-records-office"
-* active = true
-* name = "Jurisdictional Vital Records Office"
+* id = "observation-autopsy-histological-exam-results-used-not-named"
+* status = #final
+* code = $loinc#74498-7 "Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* valueBoolean = true

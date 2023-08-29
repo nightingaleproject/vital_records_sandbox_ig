@@ -1,10 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-8
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-cig-smoking-pregnancy-1-carmen-teresa-lee"
+* id = "observation-last-menstrual-period-carmen-teresa-lee"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"
 * status = #final
-* code = $loinc#64794-1 "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
-  * text = "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueInteger = 0
+* code = $loinc#8665-2 "Last menstrual period start date"
+  * text = "Last menstrual period start date"
+* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
+* valueDateTime = "2018-04-18"

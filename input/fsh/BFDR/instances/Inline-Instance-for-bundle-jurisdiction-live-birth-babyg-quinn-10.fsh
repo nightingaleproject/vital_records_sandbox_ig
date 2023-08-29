@@ -1,8 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-10
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-edit-flag-fathers-date-of-birth-example"
+* id = "observation-last-menstrual-period-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"
 * status = #final
-* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1479 "Fathers birthdate Edit flag"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC2143 "Data queried"
+* code = $loinc#8665-2 "Last menstrual period start date"
+  * text = "Last menstrual period start date"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* valueDateTime = "2018-06-05"

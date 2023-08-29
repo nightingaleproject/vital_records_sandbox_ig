@@ -1,7 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-26
-InstanceOf: Observation
+InstanceOf: ObservationFetalDeathTimePoint
 Usage: #inline
-* id = "observation-edit-birth-weight-babyg-quinn"
+* id = "observation-fetal-death-time-point-not-named"
 * status = #final
-* code = urn:oid:2.16.840.1.114222.4.5.274#PCH1478 "Birth weight Edit flag"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1380 "Off"
+* code = $loinc#73811-2 "Estimated timing of fetal death [US Standard Report of Fetal Death]"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* valueCodeableConcept = $sct#434631000124100 "Fetal intrapartum death after first assessment (event)"

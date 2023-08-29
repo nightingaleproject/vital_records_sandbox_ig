@@ -1,10 +1,12 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-17
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-cig-smoking-pregnancy-4-jada-ann-quinn"
+* id = "observation-mother-delivery-weight-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"
 * status = #final
-* code = $loinc#64795-8 "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"
-  * text = "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueInteger = 0
+* category = $observation-category#vital-signs "Vital Signs"
+  * text = "Vital Signs"
+* code = $loinc#69461-2 "Mother's body weight --at delivery"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* effectiveDateTime = "2019-02-12"
+* valueQuantity = 175 '[lb_av]'

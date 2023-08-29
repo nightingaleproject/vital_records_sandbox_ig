@@ -1,28 +1,11 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-24
-InstanceOf: Patient
+InstanceOf: ConditionFetalDeathCauseOrCondition
 Usage: #inline
-* id = "patient-decedent-fetus-not-named"
-* extension[0]
-  * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
-  * valueCode = #F
-* extension[+]
-  * url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
-  * valueAddress
-    * city = "Ann Arbor"
-    * state = "MI"
-    * postalCode = "48103"
-* identifier
-  * use = #usual
-  * type = $v2-0203#MR "Medical Record Number"
-  * system = "http://hospital.smarthealthit.org"
-  * value = "9932702"
-* name.family = "UNK"
-  * extension
-    * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-    * valueCode = #not-applicable
-* gender = #female
-* birthDate = "2019-01-09"
-  * extension
-    * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
-    * valueDateTime = "2019-01-09T18:23:00-07:00"
-* deceasedBoolean = true
+* id = "condition-fetal-death-cause-or-condition-not-named"
+* category[0] = $condition-category#encounter-diagnosis "Encounter Diagnosis"
+* category[+] = $loinc#76060-3 "Initiating cause or condition of fetal death [US Standard Report of Fetal Death]"
+* code = $sct#44223004 "Premature rupture of membranes (disorder)"
+  * text = "Premature rupture of membranes (disorder)"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"

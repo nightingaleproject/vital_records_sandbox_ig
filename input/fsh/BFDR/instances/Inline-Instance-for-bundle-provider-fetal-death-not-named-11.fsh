@@ -1,10 +1,14 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-11
-InstanceOf: Observation
+InstanceOf: ObservationDateOfLastLiveBirth
 Usage: #inline
-* id = "observation-pregnancy-risk-factor-carmen-teresa-lee-1"
+* id = "observation-date-of-last-live-birth-carmen-teresa-lee"
 * status = #final
-* code = $loinc#73775-9 "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-  * text = "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueCodeableConcept = $sct#38341003 "Hypertensive disorder, systemic arterial (disorder)"
-  * text = "Hypertensive disorder, systemic arterial (disorder)"
+* code = $loinc#68499-3 "Date last live birth"
+  * text = "Date of last live birth"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* focus
+  * reference = "Patient/patient-mother-carmen-teresa-lee"
+  * display = "Patient - Mother (Carmen Teresa Lee)"
+* valueDateTime = "2016-01-28"

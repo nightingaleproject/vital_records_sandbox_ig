@@ -1,8 +1,10 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-27
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-fetal-presentation-babyg-quinn"
+* id = "observation-number-previous-cesareans-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans-vr"
 * status = #final
-* code = $loinc#73761-9 "Fetal presentation--at birth [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
-* valueCodeableConcept = $sct#6096002 "Breech presentation (finding)"
+* code = $loinc#68497-7 "Previous cesarean deliveries #"
+  * text = "Previous cesarean deliveries #"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* valueInteger = 1

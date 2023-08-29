@@ -1,10 +1,14 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-8
-InstanceOf: Observation
+InstanceOf: ObservationDateOfFirstPrenatalCareVisit
 Usage: #inline
-* id = "observation-number-prenatal-visits-jada-ann-quinn"
+* id = "observation-date-of-first-prenatal-care-visit-jada-ann-quinn"
 * status = #final
-* code = $loinc#68493-6 "Prenatal visits for this pregnancy #"
-  * text = "Prenatal visits for this pregnancy #"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueInteger = 8
+* code = $loinc#69044-6 "Date first prenatal visit"
+  * text = "Date of first prenatal care visit"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* focus
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* valueDateTime = "2018-07-20"

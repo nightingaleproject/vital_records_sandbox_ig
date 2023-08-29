@@ -1,8 +1,14 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-43
-InstanceOf: Condition
+InstanceOf: ObservationMotherMarriedDuringPregnancy
 Usage: #inline
-* id = "condition-congenital-anomaly-of-newborn-babyg-quinn"
-* category = $loinc#73780-9 "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
-* code = $sct#12770006 "Cyanotic congenital heart disease (disorder)"
-  * text = "Cyanotic congenital heart disease (disorder)"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* id = "observation-mother-married-during-pregnancy-jada-ann-quinn"
+* status = #final
+* code = $loinc#87301-8 "Mother was married at any time during pregnancy"
+  * text = "Was mother married at conception, at the time of birth, or at any time between conception and giving birth?"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* focus
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* valueCodeableConcept = $v2-0532#Y "Yes"

@@ -1,7 +1,7 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-50
-InstanceOf: Location
+InstanceOf: USCoreLocation
 Usage: #inline
-* id = "location-south-hospital"
+* id = "location-east-hospital"
 * status = #active
-* name = "South Hospital"
+* name = "East Hospital"
 * type = $v3-RoleCode#HOSP "Hospital"

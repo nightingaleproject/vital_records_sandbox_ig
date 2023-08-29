@@ -1,10 +1,13 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-40
-InstanceOf: Observation
+InstanceOf: ConditionCongenitalAnomalyOfNewborn
 Usage: #inline
-* id = "observation-parent-education-level-jada-ann-quinn"
-* status = #final
-* code = $loinc#57712-2 "Highest level of education Mother"
-* subject = Reference(patient-child-babyg-quinn)
-* focus = Reference(relatedperson-mother-jada-ann-quinn)
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1455 "Doctorate Degree or Professional Degree"
-  * text = "Doctorate Degree or Professional Degree"
+* id = "condition-congenital-anomaly-of-newborn-babyg-quinn-2"
+* category[0] = $condition-category#problem-list-item "Problem List Item"
+* category[+] = $loinc#73780-9 "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
+* code = $sct#70156005 "Anomaly of chromosome pair 21 (disorder)"
+  * text = "Anomaly of chromosome pair 21 (disorder)"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "Patient - Child (Baby G Quinn)"
+* evidence.code = $sct#312948004 "Karyotype determination"
+  * text = "Karyotype determination pending"

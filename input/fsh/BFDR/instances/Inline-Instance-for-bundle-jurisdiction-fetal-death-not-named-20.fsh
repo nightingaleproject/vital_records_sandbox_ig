@@ -1,8 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-20
-InstanceOf: Condition
+InstanceOf: ObservationFetalPresentation
 Usage: #inline
-* id = "condition-fetal-death-cause-or-condition-not-named"
-* category = $loinc#76060-3 "Initiating cause or condition of fetal death [US Standard Report of Fetal Death]"
-* code = $sct#44223004 "Premature rupture of membranes (disorder)"
-  * text = "Premature rupture of membranes (disorder)"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
+* id = "observation-fetal-presentation-not-named"
+* status = #final
+* code = $loinc#73761-9 "Fetal presentation--at birth [US Standard Certificate of Live Birth]"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* valueCodeableConcept = $sct#6096002 "Breech presentation (finding)"

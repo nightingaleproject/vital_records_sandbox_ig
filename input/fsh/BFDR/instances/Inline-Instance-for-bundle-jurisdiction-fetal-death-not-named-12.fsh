@@ -1,9 +1,12 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-12
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-number-previous-cesareans-carmen-teresa-lee"
+* id = "observation-mother-height-carmen-teresa-lee"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height-vr"
 * status = #final
-* code = $loinc#68497-7 "Previous cesarean deliveries #"
-  * text = "Previous cesarean deliveries #"
+* category = $observation-category#vital-signs "Vital Signs"
+  * text = "Vital Signs"
+* code = $loinc#3137-7 "Body height Measured"
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueInteger = 1
+* effectiveDateTime = "2019-01-10"
+* valueQuantity = 65 '[in_i]'

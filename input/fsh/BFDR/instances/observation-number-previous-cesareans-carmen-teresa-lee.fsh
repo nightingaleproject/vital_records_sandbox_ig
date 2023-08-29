@@ -1,12 +1,12 @@
 Instance: observation-number-previous-cesareans-carmen-teresa-lee
-InstanceOf: ObservationNumberPreviousCesareansVitalRecords
-Title: "Observations - Number Previous Cesareans example [Carmen Teresa Lee]"
-Description: "Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"
+InstanceOf: Observation
+Title: "Observations - Number Previous Cesareans - Carmen Teresa Lee"
+Description: "Observations - Number Previous Cesareans: Carmen Teresa Lee example"
 Usage: #example
 * meta
   * versionId = "5"
-  * lastUpdated = "2023-04-05T20:30:46.635+00:00"
-  * source = "#ZeOFRfQaAZulOe6V"
+  * lastUpdated = "2023-04-06T00:30:46.635Z"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans-vr"
 * status = #final
 * code = $loinc#68497-7 "Previous cesarean deliveries #"
   * text = "Previous cesarean deliveries #"

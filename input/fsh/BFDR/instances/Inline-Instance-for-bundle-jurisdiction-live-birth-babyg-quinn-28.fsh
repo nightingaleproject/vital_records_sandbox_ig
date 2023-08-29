@@ -1,10 +1,15 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-28
-InstanceOf: Observation
+InstanceOf: ProcedureObstetric
 Usage: #inline
-* id = "observation-pregnancy-risk-factor-jada-ann-quinn-1"
-* status = #final
-* code = $loinc#73775-9 "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-  * text = "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueCodeableConcept = $sct#48194001 "Pregnancy-induced hypertension (disorder)"
-  * text = "Pregnancy-induced hypertension (disorder)"
+* id = "procedure-obstetric-procedure-jada-ann-quinn"
+* status = #completed
+* code = $sct#240278000 "External cephalic version (procedure)"
+  * text = "External cephalic version: Failed"
+* subject
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"
+* performedPeriod
+  * start = "2019-02-07T08:30:00-07:00"
+  * end = "2019-02-07T08:45:00-07:00"
+* outcome = $sct#385671000 "Unsuccessful"
+  * text = "External cephalic version: Unsuccessful"

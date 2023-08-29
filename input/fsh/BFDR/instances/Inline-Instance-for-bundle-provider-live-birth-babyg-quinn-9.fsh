@@ -1,10 +1,11 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-9
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-date-of-last-live-birth-jada-ann-quinn"
+* id = "observation-number-prenatal-visits-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"
 * status = #final
-* code = $loinc#68499-3 "Date last live birth"
-  * text = "Date of last live birth"
+* code = $loinc#68493-6 "Prenatal visits for this pregnancy #"
+  * text = "Prenatal visits for this pregnancy #"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueDateTime = "2014-11-20"
+* valueInteger = 8

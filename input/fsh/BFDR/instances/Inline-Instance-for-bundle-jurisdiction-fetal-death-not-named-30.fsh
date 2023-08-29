@@ -1,11 +1,9 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-30
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-birth-weight-not-named"
+* id = "observation-plurality-carmen-teresa-lee"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality-vr"
 * status = #final
-* category = $observation-category#vital-signs "Vital Signs"
-  * text = "Vital Signs"
-* code = $loinc#8339-4 "Birth weight Measured"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* effectiveDateTime = "2019-02-10"
-* valueQuantity = 1530 'g'
+* code = $loinc#57722-1 "Birth plurality of Pregnancy"
+* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
+* valueInteger = 1

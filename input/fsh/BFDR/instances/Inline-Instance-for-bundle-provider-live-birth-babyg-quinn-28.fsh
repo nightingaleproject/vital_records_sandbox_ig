@@ -1,11 +1,11 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-28
-InstanceOf: Observation
+InstanceOf: ConditionInfectionPresentDuringPregnancy
 Usage: #inline
-* id = "observation-mother-delivery-weight-jada-ann-quinn"
-* status = #final
-* category = $observation-category#vital-signs "Vital Signs"
-  * text = "Vital Signs"
-* code = $loinc#69461-2 "Mother's body weight --at delivery"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* effectiveDateTime = "2019-02-12"
-* valueQuantity = 175 '[lb_av]'
+* id = "condition-infection-present-during-pregnancy-jada-ann-quinn"
+* category[0] = $condition-category#problem-list-item "Problem List Item"
+* category[+] = $loinc#72519-2 "Infections present AndOr treated during this pregnancy for live birth [US Standard Certificate of Live Birth]"
+* code = $sct#105629000 "Chlamydial infection (disorder)"
+  * text = "Chlamydial infection (disorder)"
+* subject
+  * reference = "Patient/patient-mother-jada-ann-quinn"
+  * display = "Patient - Mother (Jada Ann Quinn)"

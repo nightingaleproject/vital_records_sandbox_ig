@@ -4,9 +4,8 @@ Title: "QuestionnaireResponse - Mother's Worksheet for Child's Birth Certificate
 Description: "Questionnaire - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn"
 Usage: #example
 * meta
-  * versionId = "10"
-  * lastUpdated = "2021-07-09T03:16:14.037+00:00"
-  * source = "#dijaEkhPzS4Eo0p1"
+  * versionId = "11"
+  * lastUpdated = "2023-06-21T21:34:58.869Z"
 * questionnaire = "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"
 * status = #completed
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
@@ -123,7 +122,7 @@ Usage: #example
   * item[+]
     * linkId = "mother-detailed-race"
     * text = "Extended race codes"
-    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#1004-1: "American Indian"
+    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#1004-1 "American Indian"
 * item[+]
   * linkId = "receive-wic"
   * text = "Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"

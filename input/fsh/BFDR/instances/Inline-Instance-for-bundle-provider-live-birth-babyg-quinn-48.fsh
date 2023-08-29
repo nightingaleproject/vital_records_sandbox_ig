@@ -1,26 +1,11 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-48
-InstanceOf: Encounter
+InstanceOf: Observation
 Usage: #inline
-* id = "encounter-maternity-jada-ann-quinn"
-* identifier
-  * system = "http://hospital.smarthealthit.org"
-  * value = "9937012"
-* status = #finished
-* class = $v3-ActCode#IMP "inpatient encounter"
-* type = $cpt#99234
-  * text = "Under Observation or Inpatient Care Services (Including Admission and Discharge Services)"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* participant
-  * type = $loinc#87286-1 "Birth attendant [Extended Identifier]"
-  * individual = Reference(practitioner-vital-records-avery-jones) "Practitioner - Vital Records (Avery Jones, MD)"
-* period
-  * start = "2019-02-11T10:00:00-07:00"
-  * end = "2019-02-15T10:00:00-07:00"
-* hospitalization
-  * origin = Reference(location-north-hospital) "Location - US Core Location (North Hospital)"
-  * admitSource = $admit-source#hosp-trans "Transferred from other hospital"
-    * text = "The Patient has been transferred from another hospital for this encounter."
-* location
-  * location = Reference(location-south-hospital) "Location - US Core Location (South Hospital)"
-  * physicalType = $sct#22232009 "Hospital"
-* serviceProvider = Reference(organization-south-hospital) "Organization - US Core Organization (South Hospital Organization)"
+* id = "observation-parent-education-level-james-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"
+* status = #final
+* code = $loinc#87300-0 "Highest level of education Father"
+* subject = Reference(patient-child-babyg-quinn)
+* focus = Reference(relatedperson-father-natural-james-brandon-quinn)
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1455 "Doctorate Degree or Professional Degree"
+  * text = "Doctorate Degree or Professional Degree"

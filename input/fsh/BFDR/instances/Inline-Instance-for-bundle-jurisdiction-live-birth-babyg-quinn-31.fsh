@@ -1,10 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-31
-InstanceOf: Observation
+InstanceOf: ObservationFetalPresentation
 Usage: #inline
-* id = "observation-date-of-last-live-birth-jada-ann-quinn"
+* id = "observation-fetal-presentation-babyg-quinn"
 * status = #final
-* code = $loinc#68499-3 "Date last live birth"
-  * text = "Date of last live birth"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueDateTime = "2014-11-20"
+* code = $loinc#73761-9 "Fetal presentation--at birth [US Standard Certificate of Live Birth]"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "Patient - Child (Baby G Quinn)"
+* valueCodeableConcept = $sct#6096002 "Breech presentation (finding)"

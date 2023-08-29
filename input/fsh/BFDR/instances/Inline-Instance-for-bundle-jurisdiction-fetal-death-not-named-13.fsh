@@ -1,11 +1,12 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-13
-InstanceOf: Procedure
+InstanceOf: Observation
 Usage: #inline
-* id = "procedure-final-route-method-delivery-not-named"
-* status = #completed
-* code = $sct#48782003 "Delivery normal (finding)"
-  * text = "Spontaneous vaginal delivery"
+* id = "observation-mother-prepregnancy-weight-carmen-teresa-lee"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight-vr"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+  * text = "Vital Signs"
+* code = $loinc#56077-1 "Body weight --pre current pregnancy"
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* performedPeriod
-  * start = "2019-01-19T18:00:00-07:00"
-  * end = "2019-01-19T18:23:00-07:00"
+* effectiveDateTime = "2019-05-20"
+* valueQuantity = 180 '[lb_av]'

@@ -1,22 +1,14 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-15
-InstanceOf: Encounter
+InstanceOf: ObservationCigaretteSmokingBeforeDuringPregnancy
 Usage: #inline
-* id = "encounter-maternity-carmen-teresa-lee"
-* identifier
-  * system = "http://hospital.smarthealthit.org"
-  * value = "8937015"
-* status = #finished
-* class = $v3-ActCode#IMP "inpatient encounter"
-* type = $cpt#99234
-  * text = "Under Observation or Inpatient Care Services (Including Admission and Discharge Services)"
-* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* participant
-  * type = $loinc#87286-1 "Birth attendant [Extended Identifier]"
-  * individual = Reference(practitioner-vital-records-janet-seito) "Practitioner - Vital Records (Janet Seito, MD)"
-* period
-  * start = "2019-01-08T10:00:00-07:00"
-  * end = "2019-01-09T17:00:00-07:00"
-* location
-  * location = Reference(location-south-hospital) "Location - US Core Location (South Hospital)"
-  * physicalType = $sct#22232009 "Hospital"
-* serviceProvider = Reference(organization-south-hospital) "Organization - US Core Organization (South Hospital Organization)"
+* id = "observation-cig-smoking-pregnancy-1-carmen-teresa-lee"
+* status = #final
+* code = $loinc#64794-1 "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+  * text = "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+* subject
+  * reference = "Patient/patient-mother-carmen-teresa-lee"
+  * display = "Patient - Mother (Carmen Teresa Lee)"
+* focus
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* valueInteger = 0

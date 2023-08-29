@@ -1,8 +1,12 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-19
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-edit-flag-number-prenatal-care-visits-example"
+* id = "observation-mother-prepregnancy-weight-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight-vr"
 * status = #final
-* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1487 "Number of Prenatal Vitis Edit flag"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"
+* category = $observation-category#vital-signs "Vital Signs"
+  * text = "Vital Signs"
+* code = $loinc#56077-1 "Body weight --pre current pregnancy"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* effectiveDateTime = "2019-06-20"
+* valueQuantity = 145 '[lb_av]'

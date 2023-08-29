@@ -1,9 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-26
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-number-other-pregnancy-outcomes-jada-ann-quinn"
+* id = "observation-number-previous-cesareans-jada-ann-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans-vr"
 * status = #final
-* code = $loinc#69043-8 "Other pregnancy outcomes #"
-  * text = "Other pregnancy outcomes #"
+* code = $loinc#68497-7 "Previous cesarean deliveries #"
+  * text = "Previous cesarean deliveries #"
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueInteger = 0
+* valueInteger = 1

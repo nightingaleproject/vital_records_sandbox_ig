@@ -1,9 +1,9 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-41
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-last-menstrual-period-jada-ann-quinn"
+* id = "observation-infant-living-babyg-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"
 * status = #final
-* code = $loinc#8665-2 "Last menstrual period start date"
-  * text = "Last menstrual period start date"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueDateTime = "2018-06-05"
+* code = $loinc#73757-7 "Infant living at time of report [US Standard Certificate of Live Birth]"
+* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* valueBoolean = true

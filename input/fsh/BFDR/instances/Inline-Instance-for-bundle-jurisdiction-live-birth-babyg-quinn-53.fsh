@@ -1,12 +1,10 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-53
-InstanceOf: Procedure
+InstanceOf: ObservationEditFlagMothersDateOfBirth
 Usage: #inline
-* id = "procedure-final-route-method-delivery-babyg-quinn"
-* status = #completed
-* code = $sct#11466000 "Cesarean section"
-  * text = "Cesarean section"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* performedPeriod
-  * start = "2019-02-12T12:45:00-07:00"
-  * end = "2019-02-12T13:15:00-07:00"
-* reasonReference = Reference(Observation/observation-labor-trial-attempted-babyg-quinn) "Labor trial attempted - true"
+* id = "observation-edit-flag-mothers-date-of-birth-example"
+* status = #final
+* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1482 "Mothers birthdate Edit flag"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1362 "Edit Passed"

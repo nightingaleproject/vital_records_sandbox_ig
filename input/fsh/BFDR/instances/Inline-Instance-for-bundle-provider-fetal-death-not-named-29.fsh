@@ -1,8 +1,10 @@
 Instance: Inline-Instance-for-bundle-provider-fetal-death-not-named-29
-InstanceOf: Observation
+InstanceOf: ObservationAutopsyHistologicalExamResultsUsed
 Usage: #inline
-* id = "observation-histological-placental-exam-performed-not-named"
+* id = "observation-autopsy-histological-exam-results-used-not-named"
 * status = #final
-* code = $loinc#73767-6 "Histological placental examination was performed [US Standard Report of Fetal Death]"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* valueCodeableConcept = $sct#398166005 "Performed"
+* code = $loinc#74498-7 "Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* valueBoolean = true

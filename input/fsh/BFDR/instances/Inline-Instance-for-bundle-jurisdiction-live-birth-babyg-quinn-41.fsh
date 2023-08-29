@@ -1,11 +1,9 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-41
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-birth-weight-babyg-quinn"
+* id = "observation-infant-living-babyg-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"
 * status = #final
-* category = $observation-category#vital-signs "Vital Signs"
-  * text = "Vital Signs"
-* code = $loinc#8339-4 "Birth weight Measured"
+* code = $loinc#73757-7 "Infant living at time of report [US Standard Certificate of Live Birth]"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* effectiveDateTime = "2019-02-10"
-* valueQuantity = 2500 'g'
+* valueBoolean = true

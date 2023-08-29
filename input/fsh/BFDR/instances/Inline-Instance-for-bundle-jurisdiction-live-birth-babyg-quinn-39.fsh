@@ -1,13 +1,11 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-39
-InstanceOf: Procedure
+InstanceOf: ConditionCongenitalAnomalyOfNewborn
 Usage: #inline
-* id = "procedure-obstetric-procedure-jada-ann-quinn"
-* status = #completed
-* code = $sct#240278000 "External cephalic version (procedure)"
-  * text = "External cephalic version: Failed"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* performedPeriod
-  * start = "2019-02-07T08:30:00-07:00"
-  * end = "2019-02-07T08:45:00-07:00"
-* outcome = $sct#385671000 "Unsuccessful"
-  * text = "External cephalic version: Unsuccessful"
+* id = "condition-congenital-anomaly-of-newborn-babyg-quinn"
+* category[0] = $condition-category#problem-list-item "Problem List Item"
+* category[+] = $loinc#73780-9 "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
+* code = $sct#12770006 "Cyanotic congenital heart disease (disorder)"
+  * text = "Cyanotic congenital heart disease (disorder)"
+* subject
+  * reference = "Patient/patient-child-babyg-quinn"
+  * display = "BabyG Quinn"

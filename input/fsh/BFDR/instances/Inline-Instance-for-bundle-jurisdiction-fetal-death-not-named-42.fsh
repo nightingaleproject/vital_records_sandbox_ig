@@ -3,7 +3,7 @@ InstanceOf: Organization
 Usage: #inline
 * id = "organization-south-hospital"
 * identifier
-  * system = "http://hl7.org.fhir/sid/us-npi"
+  * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "5555512"
 * active = true
 * type = $v3-RoleCode#HOSP "Hospital"

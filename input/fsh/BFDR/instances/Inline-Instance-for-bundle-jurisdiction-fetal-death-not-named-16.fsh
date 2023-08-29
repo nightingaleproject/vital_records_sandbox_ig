@@ -1,10 +1,14 @@
 Instance: Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-16
-InstanceOf: Observation
+InstanceOf: ObservationCigaretteSmokingBeforeDuringPregnancy
 Usage: #inline
-* id = "observation-parent-education-level-carmen-teresa-lee"
+* id = "observation-cig-smoking-pregnancy-2-carmen-teresa-lee"
 * status = #final
-* code = $loinc#57712-2 "Highest level of education Mother"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* focus = Reference(relatedperson-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1449 "9th through 12th grade; no diploma"
-  * text = "9th through 12th grade; no diploma"
+* code = $loinc#87298-6 "Cigarettes smoked per day by Mother--1st trimester"
+  * text = "Cigarettes smoked per day by Mother--1st trimester"
+* subject
+  * reference = "Patient/patient-mother-carmen-teresa-lee"
+  * display = "Patient - Mother (Carmen Teresa Lee)"
+* focus
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* valueInteger = 0

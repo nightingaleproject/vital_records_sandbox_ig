@@ -1,8 +1,9 @@
 Instance: Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-36
 InstanceOf: Observation
 Usage: #inline
-* id = "observation-plurality-jada-ann-quinn"
+* id = "observation-gestational-age-at-delivery-babyg-quinn"
+* meta.profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"
 * status = #final
-* code = $loinc#57722-1 "Birth plurality of Pregnancy"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueInteger = 1
+* code = $loinc#11884-4 "Gestational age Estimated"
+* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* valueQuantity = 36 'wk'
