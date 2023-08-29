@@ -1,41 +1,37 @@
-Instance: composition-jurisdiction-live-birth-babyg-quinn
-InstanceOf: CompositionJurisdictionLiveBirthReport
-Title: "Composition - Jurisdiction Live Birth Report - BabyG Quinn"
-Description: "Composition - Jurisdiction Live Birth Report: BabyG Quinn example"
+Instance: composition-provider-live-birth-babyg-quinn-new
+InstanceOf: CompositionProviderLiveBirthReportNew
+Title: "Composition - Provider Live Birth Report - BabyG Quinn"
+Description: "Composition - Provider Live Birth Report: BabyG Quinn example"
 Usage: #example
 * meta
-  * versionId = "36"
-  * lastUpdated = "2023-07-05T02:42:07.848Z"
-* extension[0]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number"
+  * versionId = "30"
+  * lastUpdated = "2023-07-05T02:42:08.163Z"
+* extension[Extension-live-birth-certificate-number]
   * valueIdentifier
     * type = $v2-0203#BCT
     * value = "15075"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-local-file-number"
+* extension[Extension-live-birth-local-file-number]
   * valueIdentifier
     * type = $v2-0203#BCFN
-    * value = "4444-55555"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-filed-by-registrar"
+    * value = "444455555"
+* extension[Extension-date-filed-by-registrar]
   * valueDateTime = "2019-02-12"
-* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27df"
+* identifier.value = "a03eab8c-11e8-4d0c-ad2a-b385395e27de"
 * status = #final
-* type = $loinc#92011-6 "Jurisdiction live birth report Document"
+* type = $loinc#68998-4 "U.S. standard certificate of live birth - 2003 revision"
 * subject
   * reference = "Patient/patient-child-babyg-quinn"
   * display = "Patient - Child (Baby G Quinn)"
 * encounter
-  * extension
-    * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"
+  * extension[Extension-encounter-maternity-reference]
     * valueReference.reference = "Encounter/encounter-maternity-jada-ann-quinn"
   * reference = "Encounter/encounter-birth-babyg-quinn"
   * display = "Encounter - Birth (Baby G Quinn)"
 * date = "2019-02-12"
 * author
-  * reference = "Organization/organization-jurisdictional-vital-records-office"
-  * display = "Jurisdictional Vital Records Office"
-* title = "Jurisdiction live birth report Document"
+  * reference = "Practitioner/practitioner-vital-records-avery-jones"
+  * display = "Practitioner - Vital Records (Dr. Avery Jones, MD)"
+* title = "Provider supplied live birth report Document"
 * section[0]
   * title = "Mother (prenatal) Section on the Live Birth Certificate"
   * code = $loinc#57073-9 "Prenatal records"
@@ -103,8 +99,11 @@ Usage: #example
     * reference = "Patient/patient-mother-jada-ann-quinn"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[0]
+    * reference = "Condition/condition-prepregnancy-diabetes-jada-ann-quinn"
+    * display = "Condition - Prepregnancy Diabetes - Jada Ann Quinn"
+  * entry[+]
     * reference = "Condition/condition-gestational-hypertension-jada-ann-quinn"
-    * display = "Condition - Gestational Hypertension (Jada Ann Quinn)"
+    * display = "Observation - Pregnancy Risk Factor (Jada Ann Quinn: Pregnancy-induced hypertension)"
   * entry[+]
     * reference = "Observation/observation-number-previous-cesareans-jada-ann-quinn"
     * display = "Observation - Number Previous Cesareans (Jada Ann Quinn)"
@@ -145,9 +144,6 @@ Usage: #example
     * reference = "Observation/observation-apgar-score-babyg-quinn-5-min"
     * display = "Observation - Apgar Score (BabyG Quinn: 5 min)"
   * entry[+]
-    * reference = "Observation/observation-plurality-jada-ann-quinn"
-    * display = "Observation - Plurality (Jada Ann Quinn)"
-  * entry[+]
     * reference = "Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"
     * display = "Condition - Congenital Anomaly of Newborn (BabyG Quinn) 1"
   * entry[+]
@@ -187,41 +183,11 @@ Usage: #example
     * reference = "Observation/observation-parent-education-level-james-quinn"
     * display = "Observation - Parent Education Level (James Brandon Quinn)"
 * section[+]
-  * title = "Edit Flags Section"
-  * code = $loinc#92012-4 "Edit flags section"
-  * entry[0]
-    * reference = "Observation/observation-edit-birth-weight-babyg-quinn"
-    * display = "Observation - Edit flag birthweight"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-estimate-of-gestation-example"
-    * display = "Observation - Edit flag estimate of gestation"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-fathers-date-of-birth-example"
-    * display = "Observation - Edit flag father's date of birth"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-fathers-education-example"
-    * display = "Observation - Edit flag father's education"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-mothers-date-of-birth-example"
-    * display = "Observation - Edit flag mother's date of birth"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-mothers-delivery-weight-example"
-    * display = "Observation - Edit flag mother's delivery weight"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-mothers-education-example"
-    * display = "Observation - Edit flag mother's education"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-mothers-height-example"
-    * display = "Observation - Edit flag mother's height"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-mothers-prepregnancy-weight-example"
-    * display = "Observation - Edit flag mother's prepregnancy weight"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-number-prenatal-care-visits-example"
-    * display = "Observation - Edit flag number prenatal care visits"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-number-previous-cesareans-example"
-    * display = "Observation - Edit flag number previous cesareans"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-plurality-example"
-    * display = "Observation - Edit flag plurality"
+  * title = "Mother's QuestionnaireResponse Section"
+  * code = $loinc#74465-6 "Questionnaire response Document"
+  * focus
+    * reference = "Patient/patient-mother-jada-ann-quinn"
+    * display = "Patient - Mother (Jada Ann Quinn)"
+  * entry
+    * reference = "QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn"
+    * display = "QuestionnaireResponse - Mother's Worksheet for Live Birth Certificate"

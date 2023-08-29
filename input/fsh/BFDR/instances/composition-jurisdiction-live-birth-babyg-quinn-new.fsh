@@ -1,23 +1,20 @@
-Instance: composition-jurisdiction-live-birth-babyg-quinn
-InstanceOf: CompositionJurisdictionLiveBirthReport
+Instance: composition-jurisdiction-live-birth-babyg-quinn-new
+InstanceOf: CompositionJurisdictionLiveBirthReportNew
 Title: "Composition - Jurisdiction Live Birth Report - BabyG Quinn"
 Description: "Composition - Jurisdiction Live Birth Report: BabyG Quinn example"
 Usage: #example
 * meta
   * versionId = "36"
   * lastUpdated = "2023-07-05T02:42:07.848Z"
-* extension[0]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number"
+* extension[Extension-live-birth-certificate-number]
   * valueIdentifier
     * type = $v2-0203#BCT
     * value = "15075"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-local-file-number"
+* extension[Extension-live-birth-local-file-number]
   * valueIdentifier
     * type = $v2-0203#BCFN
     * value = "4444-55555"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-filed-by-registrar"
+* extension[Extension-date-filed-by-registrar]
   * valueDateTime = "2019-02-12"
 * identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27df"
 * status = #final
@@ -26,8 +23,7 @@ Usage: #example
   * reference = "Patient/patient-child-babyg-quinn"
   * display = "Patient - Child (Baby G Quinn)"
 * encounter
-  * extension
-    * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"
+  * extension[Extension-encounter-maternity-reference]
     * valueReference.reference = "Encounter/encounter-maternity-jada-ann-quinn"
   * reference = "Encounter/encounter-birth-babyg-quinn"
   * display = "Encounter - Birth (Baby G Quinn)"
@@ -186,42 +182,42 @@ Usage: #example
   * entry[+]
     * reference = "Observation/observation-parent-education-level-james-quinn"
     * display = "Observation - Parent Education Level (James Brandon Quinn)"
-* section[+]
+* section[EditFlags]
   * title = "Edit Flags Section"
   * code = $loinc#92012-4 "Edit flags section"
-  * entry[0]
+  * entry[editFlagBirthweight]
     * reference = "Observation/observation-edit-birth-weight-babyg-quinn"
     * display = "Observation - Edit flag birthweight"
-  * entry[+]
+  * entry[editFlagEstimateOfGestation]
     * reference = "Observation/observation-edit-flag-estimate-of-gestation-example"
     * display = "Observation - Edit flag estimate of gestation"
-  * entry[+]
+  * entry[editFlagFathersDateOfBirth]
     * reference = "Observation/observation-edit-flag-fathers-date-of-birth-example"
     * display = "Observation - Edit flag father's date of birth"
-  * entry[+]
+  * entry[editFlagFathersEducation]
     * reference = "Observation/observation-edit-flag-fathers-education-example"
     * display = "Observation - Edit flag father's education"
-  * entry[+]
+  * entry[editFlagMothersDateOfBirth]
     * reference = "Observation/observation-edit-flag-mothers-date-of-birth-example"
     * display = "Observation - Edit flag mother's date of birth"
-  * entry[+]
+  * entry[editFlagMothersDeliveryWeight]
     * reference = "Observation/observation-edit-flag-mothers-delivery-weight-example"
     * display = "Observation - Edit flag mother's delivery weight"
-  * entry[+]
+  * entry[editFlagMothersEducation]
     * reference = "Observation/observation-edit-flag-mothers-education-example"
     * display = "Observation - Edit flag mother's education"
-  * entry[+]
+  * entry[editFlagMothersHeight]
     * reference = "Observation/observation-edit-flag-mothers-height-example"
     * display = "Observation - Edit flag mother's height"
-  * entry[+]
+  * entry[editFlagMothersPrepregnancyWeight]
     * reference = "Observation/observation-edit-flag-mothers-prepregnancy-weight-example"
     * display = "Observation - Edit flag mother's prepregnancy weight"
-  * entry[+]
+  * entry[editFlagNumberPrenatalCareVisits]
     * reference = "Observation/observation-edit-flag-number-prenatal-care-visits-example"
     * display = "Observation - Edit flag number prenatal care visits"
-  * entry[+]
+  * entry[editFlagNumberPreviousCesareans]
     * reference = "Observation/observation-edit-flag-number-previous-cesareans-example"
     * display = "Observation - Edit flag number previous cesareans"
-  * entry[+]
+  * entry[editFlagPlurality]
     * reference = "Observation/observation-edit-flag-plurality-example"
     * display = "Observation - Edit flag plurality"

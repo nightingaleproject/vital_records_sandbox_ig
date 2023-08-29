@@ -1,5 +1,5 @@
-Instance: bundle-provider-fetal-death-not-named
-InstanceOf: BundleDocumentBFDR
+Instance: bundle-provider-fetal-death-not-named-new
+InstanceOf: BundleDocumentBFDRNew
 Title: "Bundle - Provider Fetal Death Report - Fetus Not Named"
 Description: "Bundle - Provider Fetal Death Report: Fetus Not Named example"
 Usage: #example

@@ -1,13 +1,12 @@
-Instance: composition-coded-cause-of-fetal-death-not-named
-InstanceOf: CompositionCodedCauseOfFetalDeath
+Instance: composition-coded-cause-of-fetal-death-not-named-new
+InstanceOf: CompositionCodedCauseOfFetalDeathNew
 Title: "Composition - Coded Cause of Fetal Death - Fetus Not Named"
 Description: "Composition - Coded Cause of Fetal Death: Fetus Not Named example"
 Usage: #example
 * meta
   * versionId = "9"
   * lastUpdated = "2021-05-14T12:25:21.905Z"
-* extension
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
+* extension[Extension-fetal-death-report-number]
   * valueIdentifier
     * type = $v2-0203#FDR
     * value = "9876"

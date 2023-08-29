@@ -1,5 +1,5 @@
-Instance: bundle-provider-live-birth-babyg-quinn
-InstanceOf: BundleDocumentBFDR
+Instance: bundle-provider-live-birth-babyg-quinn-new
+InstanceOf: BundleDocumentBFDRNew
 Title: "Bundle - Provider Live Birth - Baby G Quinn"
 Description: "Bundle - Provider Live Birth: Baby G Quinn example"
 Usage: #example

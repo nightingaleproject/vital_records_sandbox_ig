@@ -160,7 +160,7 @@ Description: "This Composition profile contains information of a live birth and 
       numberPreviousCesareans 0..1  and
       infectionsDuringPregnancy 0..* and
       obstetricProcedures 1..1  and
-      characteristicsLaborDelivery and
+      characteristicsLaborDelivery 0..* and
       fetalPresentation 0..1  and
       finalRouteMethodDelivery 0..1 and
       maternalMorbidity 0..*

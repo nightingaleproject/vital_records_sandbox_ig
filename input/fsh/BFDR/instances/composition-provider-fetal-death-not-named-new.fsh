@@ -1,30 +1,24 @@
-Instance: composition-jurisdiction-fetal-death-not-named
-InstanceOf: CompositionJurisdictionFetalDeathReport
-Title: "Composition - Jurisdiction Fetal Death Report - Fetus Not Named"
-Description: "Composition Jurisdiction Fetal Death Report: Fetus Not Named example"
+Instance: composition-provider-fetal-death-not-named-new
+InstanceOf: CompositionProviderFetalDeathReportNew
+Title: "Composition - Provider Fetal Death Report - Fetus Not Named"
+Description: "Composition - Provider Fetal Death Report: Fetus Not Named"
 Usage: #example
 * meta
-  * versionId = "30"
-  * lastUpdated = "2023-06-23T04:55:55.993Z"
-* extension[0]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
+  * versionId = "16"
+  * lastUpdated = "2023-06-21T22:11:58.756Z"
+* extension[Extension-fetal-death-report-number]
   * valueIdentifier
     * type = $v2-0203#FDR
     * value = "9876"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-local-file-number"
+* extension[Extension-fetal-death-local-file-number]
   * valueIdentifier
     * type = $v2-0203#FDRFN
     * value = "11111-11111"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar"
+* extension[Extension-date-received-by-registrar]
   * valueDateTime = "2019-02-12"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-replacement-status"
-  * valueCodeableConcept = CodeSystemReplacement#original
-* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27da"
+* identifier.value = "z03eab8c-11e8-4d0c-ad2a-b385395e27da"
 * status = #final
-* type = $loinc#92010-8 "Jurisdiction fetal death report Document"
+* type = $loinc#69045-3 "U.S. standard report of fetal death - 2003 revision"
 * subject
   * reference = "Patient/patient-decedent-fetus-not-named"
   * display = "Patient - Decedent Fetus (Fetus Not Named)"
@@ -33,9 +27,9 @@ Usage: #example
   * display = "Encounter - Maternity (Carmen Teresa Lee)"
 * date = "2019-01-09"
 * author
-  * reference = "Organization/organization-jurisdictional-vital-records-office"
-  * display = "Jurisdictional Vital Records Office"
-* title = "Jurisdiction fetal death report Document"
+  * reference = "Practitioner/practitioner-vital-records-jessica-leung"
+  * display = "Practitioner - Vital Records (Jessica Leung)"
+* title = "Provider fetal death report Document"
 * section[0]
   * title = "Mother (prenatal) Section on the Fetal Death Report"
   * code = $loinc#57073-9 "Prenatal records"
@@ -136,29 +130,11 @@ Usage: #example
     * reference = "Observation/observation-parent-education-level-carmen-teresa-lee"
     * display = "Observation - Parent Education Level (Carmen Teresa Lee)"
 * section[+]
-  * title = "Edit Flags Section"
-  * code = $loinc#92012-4 "Edit flags section"
-  * entry[0]
-    * reference = "Observation/observation-edit-flag-delivery-wgt-not-named"
-    * display = "Observation - Edit flag birthweight"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-est-gestation-not-named"
-    * display = "Observation - Edit flag estimate of gestation"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-mothers-dob-not-named"
-    * display = "Observation - Edit flag mother's date of birth"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-mothers-education-not-named"
-    * display = "Observation - Edit flag mother's education"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-mothers-height-not-named"
-    * display = "Observation - Edit flag mother's height"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-mothers-prepreg-wgt-not-named"
-    * display = "Observation - Edit flag mother's prepregnancy weight"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-nbr-previous-cesareans-not-named"
-    * display = "Observation - Edit flag number previous cesareans"
-  * entry[+]
-    * reference = "Observation/observation-edit-flag-plurality-not-named"
-    * display = "Observation - Edit flag plurality"
+  * title = "Patient's QuestionnaireResponse Section"
+  * code = $loinc#74465-6 "Questionnaire response Document"
+  * focus
+    * reference = "Patient/patient-mother-carmen-teresa-lee"
+    * display = "Patient - Mother (Carmen Teresa Lee)"
+  * entry
+    * reference = "QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee"
+    * display = "QuestionnaireResponse - Patient's Worksheet for Fetal Death Report"

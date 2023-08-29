@@ -1,26 +1,26 @@
-Instance: composition-jurisdiction-fetal-death-not-named
-InstanceOf: CompositionJurisdictionFetalDeathReport
+Instance: composition-jurisdiction-fetal-death-not-named-new
+InstanceOf: CompositionJurisdictionFetalDeathReportNew
 Title: "Composition - Jurisdiction Fetal Death Report - Fetus Not Named"
 Description: "Composition Jurisdiction Fetal Death Report: Fetus Not Named example"
 Usage: #example
 * meta
   * versionId = "30"
   * lastUpdated = "2023-06-23T04:55:55.993Z"
-* extension[0]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
+* extension[Extension-fetal-death-report-number]
+  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
   * valueIdentifier
     * type = $v2-0203#FDR
     * value = "9876"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-local-file-number"
+* extension[Extension-fetal-death-local-file-number]
+  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-local-file-number"
   * valueIdentifier
     * type = $v2-0203#FDRFN
     * value = "11111-11111"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar"
+* extension[Extension-date-received-by-registrar]
+  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar"
   * valueDateTime = "2019-02-12"
-* extension[+]
-  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-replacement-status"
+* extension[Extension-replacement-status]
+  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-replacement-status"
   * valueCodeableConcept = CodeSystemReplacement#original
 * identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27da"
 * status = #final
@@ -135,30 +135,30 @@ Usage: #example
   * entry
     * reference = "Observation/observation-parent-education-level-carmen-teresa-lee"
     * display = "Observation - Parent Education Level (Carmen Teresa Lee)"
-* section[+]
+* section[editFlags]
   * title = "Edit Flags Section"
   * code = $loinc#92012-4 "Edit flags section"
-  * entry[0]
+  * entry[editFlagWeightOfFetus]
     * reference = "Observation/observation-edit-flag-delivery-wgt-not-named"
     * display = "Observation - Edit flag birthweight"
-  * entry[+]
+  * entry[editFlagEstimateOfGestation]
     * reference = "Observation/observation-edit-flag-est-gestation-not-named"
     * display = "Observation - Edit flag estimate of gestation"
-  * entry[+]
+  * entry[editFlagMothersDateOfBirth]
     * reference = "Observation/observation-edit-flag-mothers-dob-not-named"
     * display = "Observation - Edit flag mother's date of birth"
-  * entry[+]
+  * entry[editFlagMothersEducation]
     * reference = "Observation/observation-edit-flag-mothers-education-not-named"
     * display = "Observation - Edit flag mother's education"
-  * entry[+]
+  * entry[editFlagMothersHeight]
     * reference = "Observation/observation-edit-flag-mothers-height-not-named"
     * display = "Observation - Edit flag mother's height"
-  * entry[+]
+  * entry[editFlagMothersPrepregnancyWeight]
     * reference = "Observation/observation-edit-flag-mothers-prepreg-wgt-not-named"
     * display = "Observation - Edit flag mother's prepregnancy weight"
-  * entry[+]
+  * entry[editFlagNumberPreviousCesareans]
     * reference = "Observation/observation-edit-flag-nbr-previous-cesareans-not-named"
     * display = "Observation - Edit flag number previous cesareans"
-  * entry[+]
+  * entry[editFlagPlurality]
     * reference = "Observation/observation-edit-flag-plurality-not-named"
     * display = "Observation - Edit flag plurality"
