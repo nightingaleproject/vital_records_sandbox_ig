@@ -7,7 +7,7 @@ Usage: #example
   * versionId = "5"
   * lastUpdated = "2023-04-06T00:30:46.634Z"
   //TODO this will have to change
-  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"
+  //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"
 * status = #final
 * code = $loinc#68493-6 "Prenatal visits for this pregnancy #"
   * text = "Prenatal visits for this pregnancy #"

@@ -144,6 +144,9 @@ Usage: #example
     * reference = "Observation/observation-apgar-score-babyg-quinn-5-min-new"
     * display = "Observation - Apgar Score (BabyG Quinn: 5 min)"
   * entry[+]
+    * reference = "Observation/observation-number-live-births-this-delivery-jada-ann-quinn-new"
+    * display = "Observation - Number Live Births This Delivery - Jada Ann Quinn"
+  * entry[+]
     * reference = "Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"
     * display = "Condition - Congenital Anomaly of Newborn (BabyG Quinn) 1"
   * entry[+]

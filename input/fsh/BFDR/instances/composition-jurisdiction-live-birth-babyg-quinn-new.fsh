@@ -45,22 +45,22 @@ Usage: #example
     * reference = "Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"
     * display = "Observation - Date of First Prenantal Care Visit (Jada Ann Quinn)"
   * entry[+]
-    * reference = "Observation/observation-number-prenatal-visits-jada-ann-quinn"
+    * reference = "Observation/observation-number-prenatal-visits-jada-ann-quinn-new"
     * display = "Observation - Number Prenatal Visits (Jada Ann Quinn)"
   * entry[+]
-    * reference = "Observation/observation-last-menstrual-period-jada-ann-quinn"
+    * reference = "Observation/observation-last-menstrual-period-jada-ann-quinn-new"
     * display = "Observation - Last Menstrual Period (Jada Ann Quinn)"
   * entry[+]
-    * reference = "Observation/observation-number-births-now-living-jada-ann-quinn"
+    * reference = "Observation/observation-number-births-now-living-jada-ann-quinn-new"
     * display = "Observation - Number Births Now Living (Jada Ann Quinn)"
   * entry[+]
-    * reference = "Observation/observation-number-births-now-dead-jada-ann-quinn"
+    * reference = "Observation/observation-number-births-now-dead-jada-ann-quinn-new"
     * display = "Observation - Number Births Now Dead (Jada Ann Quinn)"
   * entry[+]
     * reference = "Observation/observation-date-of-last-live-birth-jada-ann-quinn"
     * display = "Observation - Date of Last Live Birth (Jada Ann Quinn)"
   * entry[+]
-    * reference = "Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn"
+    * reference = "Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn-new"
     * display = "Observation - Number Other Pregnancy Outcomes (Jada Ann Quinn)"
   * entry[+]
     * reference = "Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn"
@@ -69,13 +69,13 @@ Usage: #example
     * reference = "Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn"
     * display = "Coverage - Principal Payer for Delivery (Jada Ann Quinn)"
   * entry[+]
-    * reference = "Observation/observation-mother-delivery-weight-jada-ann-quinn"
+    * reference = "Observation/observation-mother-delivery-weight-jada-ann-quinn-new"
     * display = "Observation - Mother Delivery Weight (Jada Ann Quinn)"
   * entry[+]
-    * reference = "Observation/observation-mother-height-jada-ann-quinn"
+    * reference = "Observation/observation-mother-height-jada-ann-quinn-new"
     * display = "Observation - Observation - Mother Height (Jada Ann Quinn)"
   * entry[+]
-    * reference = "Observation/observation-mother-prepregnancy-weight-jada-ann-quinn"
+    * reference = "Observation/observation-mother-prepregnancy-weight-jada-ann-quinn-new"
     * display = "Observation - Mother Prepregnancy Weight (Jada Ann Quinn)"
   * entry[+]
     * reference = "Observation/observation-mother-received-wic-food-jada-ann-quinn"
@@ -102,7 +102,7 @@ Usage: #example
     * reference = "Condition/condition-gestational-hypertension-jada-ann-quinn"
     * display = "Condition - Gestational Hypertension (Jada Ann Quinn)"
   * entry[+]
-    * reference = "Observation/observation-number-previous-cesareans-jada-ann-quinn"
+    * reference = "Observation/observation-number-previous-cesareans-jada-ann-quinn-new"
     * display = "Observation - Number Previous Cesareans (Jada Ann Quinn)"
   * entry[+]
     * reference = "Condition/condition-infection-present-during-pregnancy-jada-ann-quinn"
@@ -129,20 +129,23 @@ Usage: #example
   * title = "Newborn section on the Live Birth Certificate"
   * code = $loinc#57075-4 "Newborn delivery information"
   * entry[0]
-    * reference = "Observation/observation-birth-weight-babyg-quinn"
+    * reference = "Observation/observation-birth-weight-babyg-quinn-new"
     * display = "Observation - Birth Weight (Baby G Quinn)"
   * entry[+]
-    * reference = "Observation/observation-gestational-age-at-delivery-babyg-quinn"
+    * reference = "Observation/observation-gestational-age-at-delivery-babyg-quinn-new"
     * display = "Observation - Gestational Age at Delivery (Baby G Quinn)"
   * entry[+]
-    * reference = "Observation/observation-apgar-score-babyg-quinn-1-min"
+    * reference = "Observation/observation-apgar-score-babyg-quinn-1-min-new"
     * display = "Observation - Apgar Score (BabyG Quinn: 1 min)"
   * entry[+]
-    * reference = "Observation/observation-apgar-score-babyg-quinn-5-min"
+    * reference = "Observation/observation-apgar-score-babyg-quinn-5-min-new"
     * display = "Observation - Apgar Score (BabyG Quinn: 5 min)"
   * entry[+]
-    * reference = "Observation/observation-plurality-jada-ann-quinn"
-    * display = "Observation - Plurality (Jada Ann Quinn)"
+    * reference = "Observation/observation-number-live-births-this-delivery-jada-ann-quinn-new"
+    * display = "Observation - Number Live Births This Delivery - Jada Ann Quinn"
+  // * entry[+]
+  //   * reference = "Observation/observation-plurality-jada-ann-quinn"
+  //   * display = "Observation - Plurality (Jada Ann Quinn)"
   * entry[+]
     * reference = "Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"
     * display = "Condition - Congenital Anomaly of Newborn (BabyG Quinn) 1"
@@ -150,7 +153,7 @@ Usage: #example
     * reference = "Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2"
     * display = "Condition - Congenital Anomaly of Newborn (Baby G Quinn) 2"
   * entry[+]
-    * reference = "Observation/observation-infant-living-babyg-quinn"
+    * reference = "Observation/observation-infant-living-babyg-quinn-new"
     * display = "Observation - Infant Living (Baby G Quinn)"
   * entry[+]
     * reference = "Observation/observation-infant-breastfed-at-discharge-babyg-quinn"

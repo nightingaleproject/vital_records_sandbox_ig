@@ -6,7 +6,7 @@ Usage: #example
 * meta
   * versionId = "6"
   * lastUpdated = "2023-04-06T00:30:46.633Z"
-  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes-vr"
+  //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes-vr"
 * status = #final
 * code = $loinc#69043-8 "Other pregnancy outcomes #"
   * text = "Other pregnancy outcomes #"

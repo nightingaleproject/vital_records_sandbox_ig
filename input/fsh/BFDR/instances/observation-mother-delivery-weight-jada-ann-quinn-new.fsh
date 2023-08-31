@@ -6,7 +6,7 @@ Usage: #example
 * meta
   * versionId = "7"
   * lastUpdated = "2023-04-06T00:30:15.640Z"
-  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"
+  //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
   * text = "Vital Signs"
