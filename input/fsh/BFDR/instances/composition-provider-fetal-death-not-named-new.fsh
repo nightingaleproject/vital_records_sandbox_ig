@@ -43,22 +43,22 @@ Usage: #example
     * reference = "Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"
     * display = "Observation - Date of First Prenatal Care Visit (Carmen Teresa Lee)"
   * entry[+]
-    * reference = "Observation/observation-last-menstrual-period-carmen-teresa-lee"
+    * reference = "Observation/observation-last-menstrual-period-carmen-teresa-lee-new"
     * display = "Observation - Last Menstrual Period (Carmen Teresa Lee)"
   * entry[+]
-    * reference = "Observation/observation-number-births-now-living-carmen-teresa-lee"
+    * reference = "Observation/observation-number-births-now-living-carmen-teresa-lee-new"
     * display = "Observation - Number Births Now Living (Carmen Teresa Lee)"
   * entry[+]
-    * reference = "Observation/observation-number-births-now-dead-carmen-teresa-lee"
+    * reference = "Observation/observation-number-births-now-dead-carmen-teresa-lee-new"
     * display = "Observation - Number Births Now Dead (Carmen Teresa Lee)"
   * entry[+]
     * reference = "Observation/observation-date-of-last-live-birth-carmen-teresa-lee"
     * display = "Observation - Date of Last Live Birth (Carmen Teresa Lee)"
   * entry[+]
-    * reference = "Observation/observation-mother-height-carmen-teresa-lee"
+    * reference = "Observation/observation-mother-height-carmen-teresa-lee-new"
     * display = "Observation - Mother Height (Carmen Teresa Lee)"
   * entry[+]
-    * reference = "Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"
+    * reference = "Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-new"
     * display = "Observation - Mother Prepregnancy Weight (Carmen Teresa Lee)"
   * entry[+]
     * reference = "Observation/observation-mother-received-wic-food-carmen-teresa-lee"
@@ -82,7 +82,7 @@ Usage: #example
     * reference = "Patient/patient-mother-carmen-teresa-lee"
     * display = "Patient - Mother (Carmen Teresa Lee)"
   * entry[0]
-    * reference = "Observation/observation-number-previous-cesareans-carmen-teresa-lee"
+    * reference = "Observation/observation-number-previous-cesareans-carmen-teresa-lee-new"
     * display = "Observation - Number Previous Cesareans (Carmen Teresa Lee)"
   * entry[+]
     * reference = "Observation/observation-fetal-presentation-not-named"
@@ -94,10 +94,10 @@ Usage: #example
   * title = "Fetal delivery information section on the Fetal Death Report"
   * code = $loinc#76400-1 "Fetal delivery information Document [US Standard Report of Fetal Death]"
   * entry[0]
-    * reference = "Observation/observation-birth-weight-not-named"
+    * reference = "Observation/observation-birth-weight-not-named-new"
     * display = "Observation - Birth Weight (Fetus Not Named)"
   * entry[+]
-    * reference = "Observation/observation-gestational-age-at-delivery-not-named"
+    * reference = "Observation/observation-gestational-age-at-delivery-not-named-new"
     * display = "Observation - Gestational Age at Delivery (Fetus Not Named)"
   * entry[+]
     * reference = "Condition/condition-fetal-death-cause-or-condition-not-named"
@@ -117,9 +117,13 @@ Usage: #example
   * entry[+]
     * reference = "Observation/observation-autopsy-histological-exam-results-used-not-named"
     * display = "Observation - Autopsy or Histological Exam Results Used"
+  // why plurality and not numberLiveBirthsThisDelivery / numberFetalDeathsThisDelivery? - updating
+  // * entry[+]
+  //   * reference = "Observation/observation-plurality-carmen-teresa-lee"
+  //   * display = "Observation - Plurality (Carmen Teresa Lee)"
   * entry[+]
-    * reference = "Observation/observation-plurality-carmen-teresa-lee"
-    * display = "Observation - Plurality (Carmen Teresa Lee)"
+    * reference = "Observation/observation-number-deaths-this-delivery-carmen-teresa-lee-new"
+    * display = "Observation - Number of Fetal Deaths This Delivery (Carmen Teresa Lee)"
 * section[+]
   * title = "Mother Administrative Section on the Fetal Death Report"
   * code = $loinc#92014-0 "Mother's administrative information"
