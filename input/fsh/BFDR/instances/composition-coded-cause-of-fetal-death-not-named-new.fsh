@@ -21,7 +21,7 @@ Usage: #example
   * reference = "Organization/organization-nchs"
   * display = "National Center for Health Statistics"
 * title = "Coded Cause of Fetal Death"
-* section
+* section[codedCauseOfFetalDeath]
   * title = "Coded Cause of Fetal Death"
   * code = $loinc#86804-2 "Cause of death classification and related information Document"
   * entry[0]

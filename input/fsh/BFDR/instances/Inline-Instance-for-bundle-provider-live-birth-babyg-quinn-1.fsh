@@ -22,8 +22,7 @@ Usage: #inline
   * reference = "Patient/patient-child-babyg-quinn"
   * display = "Patient - Child (Baby G Quinn)"
 * encounter
-  * extension
-    * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"
+  * extension[Extension-encounter-maternity-reference]
     * valueReference.reference = "Encounter/encounter-maternity-jada-ann-quinn"
   * reference = "Encounter/encounter-birth-babyg-quinn"
   * display = "Encounter - Birth (Baby G Quinn)"
