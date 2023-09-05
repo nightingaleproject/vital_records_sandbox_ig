@@ -122,10 +122,10 @@ IJE Natality Data Elements: AVEN1, AVEN6, NICU, SURF, ANTI, SEIZ, MCPH",Replace 
 4 = Other midwife
 5 = Other (specify)
 9 = Unknown",,,,,,,,,,,,
-790,Natality,326,2777,50,Attendant's Name,ATTEND_NAME,Free form literal ,,VRCPL,Practitioner-vr,name,HumanName,,,,,,Practitioner-vr,
+790,Natality,326,2777,50,Attendant's Name,ATTEND_NAME,Free form literal ,,VRCPL,Practitioner-vr,name.text,string,,,,,,Practitioner-vr,
 1157,Fetal Death,340,4814,50,Attendant's Name,ATTEND_NAME,Free form literal,,VRCPL,Practitioner-vr,name,,,,,,,Practitioner-vr,
 1667,Birth Infant Death,326,2777,50,Attendant's Name,ATTEND_NAME,Free form literal ,,,,,,,,,,,,
-791,Natality,327,2827,12,Attendant's NPI,ATTEND_NPI,National Provider Index (NPI) number of attendant at birth,,VRCPL,Practitioner-vr,id,string,,,,,,Practitioner-vr,
+791,Natality,327,2827,12,Attendant's NPI,ATTEND_NPI,National Provider Index (NPI) number of attendant at birth,,VRCPL,Practitioner-vr,identifier:NPI,string,,,,,,Practitioner-vr,
 1158,Fetal Death,341,4864,12,Attendant's NPI,ATTEND_NPI,National Provider Index (NPI) number of attendant at delivery,,VRCPL,Practitioner-vr,id,,,,,,,Practitioner-vr,
 1668,Birth Infant Death,327,2827,12,Attendant's NPI,ATTEND_NPI,National Provider Index (NPI) number of attendant at birth,,,,,,,,,,,,
 768,Natality,304,2384,20,"Attendant (""Other"" specified text)",ATTEND_OTH_TXT,"Alpha character string when ""Other"" text is specified",,VRCPL,Practitioner-vr,qualification.code.text,string,,,,,,Practitioner-vr,
@@ -473,9 +473,9 @@ U = Unknown",,,,,,,,,,,,
 5 = Other (specify) 
 6 = Hospital Admin
 9 = Unknown",,,,,string,,,,,,,
-792,Natality,328,2839,50,Certifier's Name,CERTIF_NAME,Free form literal ,,VRCPL,Practitioner-vr,name,string,,,,,,Practitioner-vr,
+792,Natality,328,2839,50,Certifier's Name,CERTIF_NAME,Free form literal ,,VRCPL,Practitioner-vr,name.text,string,,,,,,Practitioner-vr,
 1669,Birth Infant Death,328,2839,50,Certifier's Name,CERTIF_NAME,Free form literal ,,,,,string,,,,,,,
-793,Natality,329,2889,12,Certifier's NPI,CERTIF_NPI,National Provider Index (NPI) number of certifier of birth,,VRCPL,Practitioner-vr,id,identifier,,,,,,Practitioner-vr,
+793,Natality,329,2889,12,Certifier's NPI,CERTIF_NPI,National Provider Index (NPI) number of certifier of birth,,VRCPL,Practitioner-vr,identifier:NPI,identifier,,,,,,Practitioner-vr,
 1670,Birth Infant Death,329,2889,12,Certifier's NPI,CERTIF_NPI,National Provider Index (NPI) number of certifier of birth,,,,,,,,,,,,
 795,Natality,331,2902,20,"Certifier (""Other"" specified text)",CERTIF_OTH_TXT,"Alpha character string when ""Other"" text is specified",,VRCPL,Practitioner-vr,qualification.code.text,string,,,,,,Practitioner-vr,
 1672,Birth Infant Death,331,2902,20,"Certifier (""Other"" specified text)",CERTIF_OTH_TXT,"Alpha character string when ""Other"" text is specified",,,,,,,,,,,,
@@ -678,7 +678,7 @@ Blank for natural death.",i,VRDR,InjuryLocation,address.district.extension[ coun
 753,Natality,289,2131,3,Industry of Father (coded),DAD_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,,,,,not implemented,
 1093,Fetal Death,276,4170,3,Industry of Father (coded),DAD_IN_C,,,not implemented,not implemented,,,,,,,,not implemented,
 1630,Birth Infant Death,289,2131,3,Industry of Father (coded),DAD_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,,
-752,Natality,288,2106,25,Industry of Father,DAD_IN_T,Literal for father's corresponding industry,,ODH,odh-UsualWork,,,,,"Code used on 3 tabs: N, FD, & BID
+752,Natality,288,2106,25,Industry of Father,DAD_IN_T,Literal for father's corresponding industry,,ODH,odh-UsualWork,component [odh-UsualIndustry].value.text,string(40),,,"Code used on 3 tabs: N, FD, & BID
 NCHS does not use
 VRDR defines ""DecedentUsualWork"" profile. 
 Decision: BFDR should mimic VRDR",Needs work,FHIR-41389,odh-UsualWork,
@@ -690,7 +690,7 @@ Decision: BFDR should mimic VRDR",Needs work,FHIR-41389,odh-UsualWork,
 749,Natality,285,2075,3,Occupation of Father (coded),DAD_OC_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,,,,,not implemented,
 1089,Fetal Death,272,4114,3,Occupation of Father (coded),DAD_OC_C,,,not implemented,not implemented,,,,,,,,not implemented,
 1626,Birth Infant Death,285,2075,3,Occupation of Father (coded),DAD_OC_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,,
-748,Natality,284,2050,25,Occupation of Father,DAD_OC_T,Literal for father's usual occupation,,ODH,odh-UsualWork,,,,,"Code used on 3 tabs: N, FD, & BID
+748,Natality,284,2050,25,Occupation of Father,DAD_OC_T,Literal for father's usual occupation,,ODH,odh-UsualWork,value.text,string(40),,,"Code used on 3 tabs: N, FD, & BID
 NCHS does not use
 VRDR defines ""DecedentUsualWork"" profile. 
 Decision: BFDR should mimic VRDR",Needs work,FHIR-41389,odh-UsualWork,
@@ -1083,7 +1083,7 @@ For Canadian Provinces:
 1 = Edit Failed, Number Verified
 2 = Edit Failed, Number not Verified",,,,,,,,,,,,
 116,Mortality,106,715,160,Entity-axis codes,EAC,,,VRDR,EntityAxisCauseOfDeath,"Each entry is a 4-tuble (value, component[position], component[lineNumber], component[e-code-indicator]  ",codeable,[ICD10CausesOfDeathVS],,,,,EntityAxisCauseOfDeath,
-641,Natality,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,BFDR,Procedure-obstetric,"code=240278000, outcome= 385671000",codeable,[http://hl7.org/fhir/ValueSet/procedure-outcome],,,,,Procedure-obstetric,
+641,Natality,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,BFDR,Procedure-obstetric,"code=240278000, outcome=385671000",codeable,[http://hl7.org/fhir/ValueSet/procedure-outcome],,,,,Procedure-obstetric,
 1518,Birth Infant Death,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,,,,,,,,,,,
 640,Natality,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,BFDR,Procedure-obstetric,"code=240278000, outcome=385669000",codeable,[http://hl7.org/fhir/ValueSet/procedure-outcome],,,,,Procedure-obstetric,
 1517,Birth Infant Death,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,,,,,,,,,,,
@@ -1857,7 +1857,7 @@ U = Unknown",,,,,,,,,,,,
 1654,Birth Infant Death,313,2574,10,Mother's Mailing Address Post Directional,MAIL_POSTDIR,parsed mailing address,,,,,,,,,,,,
 774,Natality,310,2526,10,Mother's Mailing Address Pre Directional,MAIL_PREDIR,parsed mailing address,,VRCPL,Patient-mother-vr,address,,,,,,,Patient-mother-vr,
 1651,Birth Infant Death,310,2526,10,Mother's Mailing Address Pre Directional,MAIL_PREDIR,parsed mailing address,,,,,,,,,,,,
-783,Natality,319,2706,28,Mother's Mailing Address State (Literal),MAIL_STATETXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,VRCPL,Patient-mother-vr,address.state,string,,,,,,Patient-mother-vr,
+783,Natality,319,2706,28,Mother's Mailing Address State (Literal),MAIL_STATETXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,VRCPL,Patient-mother-vr,address.state,string,See [StateLiterals],,,,,Patient-mother-vr,
 1660,Birth Infant Death,319,2706,28,Mother's Mailing Address State (Literal),MAIL_STATETXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,,,,,,,,,,,
 776,Natality,312,2564,10,Mother's Mailing Address Street designator,MAIL_STDESIG,parsed mailing address,,VRCPL,Patient-mother-vr,address.line,string,,,,,,Patient-mother-vr,
 1653,Birth Infant Death,312,2564,10,Mother's Mailing Address Street designator,MAIL_STDESIG,parsed mailing address,,,,,,,,,,,,
@@ -1927,7 +1927,7 @@ U = Unknown",,,,,,,,,,,,
 770,Natality,306,2432,28,Mother's Country of Birth (Literal),MBPLACE_CNTRY_TXT,Valid text for country of birth,,FHIR,patient-birthPlace,extension[patient-birthPlace].value[x].country,string,,,,,,Patient-mother-vr,
 1097,Fetal Death,280,4205,28,Mother's Country of Birth (Literal),MBPLACE_CNTRY_TXT,"Valid country literal when foreign, otherwise U.S.",,FHIR,patient-birthPlace,extension:patient-birthPlace,,,,,,,Patient-mother-vr,
 1647,Birth Infant Death,306,2432,28,Mother's Country of Birth (Literal),MBPLACE_CNTRY_TXT,Valid text for country of birth,,,,,,,,,,,,
-769,Natality,305,2404,28,"State, U.S. Territory or Canadian Province of Birth (Mother) - literal",MBPLACE_ST_TER_TXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,FHIR,patient-birthPlace,extension[patient-birthPlace].value[x].state,string,,,,,,Patient-mother-vr,
+769,Natality,305,2404,28,"State, U.S. Territory or Canadian Province of Birth (Mother) - literal",MBPLACE_ST_TER_TXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,FHIR,patient-birthPlace,extension[patient-birthPlace].value[x].state,string,See [StateLiterals],,,,,Patient-mother-vr,
 1096,Fetal Death,279,4177,28,"State, U.S. Territory or Canadian Province of Birth (Mother) - literal",MBPLACE_ST_TER_TXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,FHIR,patient-birthPlace,extension:patient-birthPlace,,,,,,,Patient-mother-vr,
 1646,Birth Infant Death,305,2404,28,"State, U.S. Territory or Canadian Province of Birth (Mother) - literal",MBPLACE_ST_TER_TXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,,,,,,,,,,,
 710,Natality,246,952,49,Abnormal Conditions of the Newborn--Microcephaly,MCPH,"Y, N, U (For those jurisdictions reporting Microcephaly, the first character of the 49 allotted to this field will be allocated for the single code structure description, and the only acceptable values are Y=yes, N=no and U=unknown)",,not implemented,not implemented,,,,,"""MCPH"" listed in error on STU 1 Condition - Abnormal Condition of Newborn",,,not implemented,
@@ -2044,7 +2044,7 @@ U = Unknown",,,,,,,,,,,,
 751,Natality,287,2103,3,Industry of Mother (coded),MOM_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,,,,,not implemented,
 1091,Fetal Death,274,4142,3,Industry of Mother (coded),MOM_IN_C,,,not implemented,not implemented,,,,,,,,not implemented,
 1628,Birth Infant Death,287,2103,3,Industry of Mother (coded),MOM_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,,
-750,Natality,286,2078,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,ODH,odh-UsualWork,,,,,,Needs work,FHIR-41389,odh-UsualWork,
+750,Natality,286,2078,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,ODH,odh-UsualWork,component [odh-UsualIndustry].value.text,string(40),,,,Needs work,FHIR-41389,odh-UsualWork,
 1090,Fetal Death,273,4117,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,ODH,odh-UsualWork,,,,,,Needs work,FHIR-41389,odh-UsualWork,
 1627,Birth Infant Death,286,2078,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,,,,,,,,,,,
 797,Natality,333,2937,15,Mother's Medical Record Number,MOM_MED_REC_NUM, ,,VRCPL,Patient-mother-vr,identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”MR” ,string,,,,,,Patient-mother-vr,
@@ -2052,7 +2052,7 @@ U = Unknown",,,,,,,,,,,,
 747,Natality,283,2047,3,Occupation of Mother (coded),MOM_OC_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,,,,,not implemented,
 1087,Fetal Death,270,4086,3,Occupation of Mother (coded),MOM_OC_C,,,not implemented,not implemented,,,,,,,,not implemented,
 1624,Birth Infant Death,283,2047,3,Occupation of Mother (coded),MOM_OC_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,,
-746,Natality,282,2022,25,Occupation of Mother,MOM_OC_T,Literal for mother's usual occupation,,ODH,odh-UsualWork,,,,,"Code used on 3 tabs: N, FD, & BID
+746,Natality,282,2022,25,Occupation of Mother,MOM_OC_T,Literal for mother's usual occupation,,ODH,odh-UsualWork,value.text,string(40),,,"Code used on 3 tabs: N, FD, & BID
 NCHS does not use
 VRDR defines ""DecedentUsualWork"" profile. 
 Decision: BFDR should mimic VRDR",Needs work,FHIR-41389,odh-UsualWork,
@@ -2782,7 +2782,7 @@ Receiving state will recode",,not implemented,not implemented,,,-,,,,,not implem
 2 = Forceps
 3 = Vacuum
 4 = Cesarean
-9 = Unknown",,BFDR,Procedure-final-route-method-delivery,code,codeable,[PHVS_DeliveryRoutes_NCHS ] ,,,,,Procedure-final-route-method-delivery,
+9 = Unknown",,BFDR,Procedure-final-route-method-delivery,code,codeable,[PHVS_DeliveryRoutes_NCHS] ,,,,,Procedure-final-route-method-delivery,
 951,Fetal Death,134,515,1,Method of Delivery--Route and Method of Delivery,ROUT,"1 = Spontaneous
 2 = Forceps
 3 = Vacuum
@@ -2828,7 +2828,7 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 4 = other, specify
 9 = unknown",,not implemented,not implemented,,,,,,,,not implemented,
 1306,ITOP,124,1019,50,Site of follow-up visit if other specified,SITE_F2_LIT,Free form literal of specified other site of follow-up visit.,,not implemented,not implemented,,,,,,,,not implemented,
-672,Natality,208,879,2,Set Order,SORD,"01-12, 99",,VRCPL,Patient-child-vr,multipleBirth,integer,,,,,,Patient-child-vr,
+672,Natality,208,879,2,Set Order,SORD,"01-12, 99",,VRCPL,Patient-child-vr,multipleBirth[x].value,integer,,,,,,Patient-child-vr,
 969,Fetal Death,152,538,2,Set Order,SORD,"01-12, 99",,VRCPL,Patient-decedent-fetus-vr,multipleBirth,,,,,,,Patient-decedent-fetus-vr,
 1549,Birth Infant Death,208,879,2,Set Order,SORD,"01-12, 99",,,,,,,,,,,,
 368,Surveillance,97,1379,50,Spouse's First Name,SPOUSEF,"Free form literal; if unknown, leave blank",I,VRDR,DecedentSpouse,name.given,string,-,,,,,DecedentSpouse,
@@ -3106,7 +3106,7 @@ For Canadian Provinces:
 379,Surveillance,108,1619,28,Decedent's Residence - State name,STATETEXT_R ,Valid text for U.S. State or Territory or Canadian Province,,VRDR,Decedent,address.state (expanded from 2 letter code),string,See [StateLiterals],y,,,,Decedent,
 456,Mortality Roster,27,600,28,"State, U.S. Territory or Canadian Province of Decedent's Residence - literal",STATETEXT_R ,"valid state, U.S. territory or Canadian province literal, otherwise blank",,VRDR,Decedent,address.state (expanded from 2 letter code),string,See [StateLiterals],,,,,Decedent,
 167,Mortality,155,1625,28,Decedent's Residence - State name,STATETEXT_R ,Valid text for U.S. State or Territory or Canadian Province,,VRDR,Decedent,address.state (expanded from 2 letter code),string,See [StateLiterals],y,,,,Decedent,
-736,Natality,272,1787,28,"State, U.S. Territory or Canadian Province of Residence (Mother) - literal",STATETXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,VRCPL,Patient-mother-vr,address.state,string,,,,,,Patient-mother-vr,
+736,Natality,272,1787,28,"State, U.S. Territory or Canadian Province of Residence (Mother) - literal",STATETXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,VRCPL,Patient-mother-vr,address.state,string,See [StateLiterals],,,,,Patient-mother-vr,
 1206,ITOP,24,191,28,"State, U.S. Territory or Canadian Province of Residence (Patient) - literal",STATETXT,"valid state, U.S. territory or Canadian province literal, otherwise blank",,not implemented,not implemented,,,,,,,,not implemented,
 1074,Fetal Death,257,3789,28,"State, U.S. Territory or Canadian Province of Residence (Mother) - literal",STATETXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,VRCPL,Patient-mother-vr,address,,,,,,,Patient-mother-vr,
 1613,Birth Infant Death,272,1787,28,"State, U.S. Territory or Canadian Province of Residence (Mother) - literal",STATETXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,,,,,,,,,,,
@@ -3158,7 +3158,7 @@ IJE Natality Data Elements: AVEN1, AVEN6, NICU, SURF, ANTI, SEIZ, MCPH",Replace 
 939,Fetal Death,122,503,1,Infections Present--Syphilis(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),SYPH,"Y, N, U",,not implemented,not implemented,,,,,,,,not implemented,
 1510,Birth Infant Death,169,833,1,Infections Present--Syphilis,SYPH,"Y, N, U",,,,,,,,,,,,
 112,Mortality,102,703,1,Acme System Reject Codes,SYS_REJ,,,VRDR,CodingStatusValues,parameter[acmeSystemReject].value ,codeable,[ACMESystemRejectVS],,,,,CodingStatusValues,
-470,Natality,6,26,4,Time of Birth,TB,"0000-2359, 9999",,FHIR,patient-birthTime,birthDate.extension:patient-birthTime,,See [PartialDatesAndTimes],,,,,Patient-child-vr,
+470,Natality,6,26,4,Time of Birth,TB,"0000-2359, 9999",,FHIR,patient-birthTime,birthDate.extension[patient-birthTime],,See [PartialDatesAndTimes],,,,,Patient-child-vr,
 1347,Birth Infant Death,6,26,4,Time of Birth,TB,"0000-2359, 9999",,,,,,,,,,,,
 823,Fetal Death,6,26,4,Time of Delivery,TD,"Military Time 0000-2359, 9999",,FHIR,patient-birthTime,birthDate.extension:patient-birthTime,,,,,,,Patient-decedent-fetus-vr,
 1211,ITOP,29,254,3,Old NCHS termination city/county of occurrence combo code,TERMCON,See codes used before new 200x codes -- receiving state will recode,,not implemented,not implemented,,,,,,,,not implemented,
@@ -3262,7 +3262,7 @@ U = Unknown",,,,,,,,,,,,
 345,Surveillance,73,719,1,Injury at work,WORKINJ,Y = Yes N = No.  U = Unknown X = Not Applicable,,VRDR,InjuryIncident,component[InjuryAtWork].value,codeable,[YesNoUnknownNotApplicableVS],y,,,,InjuryIncident,
 128,Mortality,118,993,1,Injury at work,WORKINJ,Y = Yes N = No.  U = Unknown X = Not Applicable,,VRDR,InjuryIncident,component[InjuryAtWork].value,codeable,[YesNoUnknownNotApplicableVS],y,,,,InjuryIncident,
 610,Natality,146,793,4,Date of Last Live Birth--Year,YLLB,"4 digit year;(year of mother's birth + 10) through
-year of child's birth, 8888, 9999",,BFDR,Observation-date-of-last-live-birth,value,dateTime,,,,,,Observation-date-of-last-live-birth,
+year of child's birth, 8888, 9999",,BFDR,Observation-date-of-last-live-birth,value,dateTime,See [PartialDatesAndTimes],,,,,Observation-date-of-last-live-birth,
 917,Fetal Death,100,464,4,Date of Last Live Birth--Year,YLLB,"4 digit year;
 (year of mother's birth + 10) through
 year of delivery, 8888, 9999",,BFDR,Observation-date-of-last-live-birth,,,,,,,,Observation-date-of-last-live-birth,
