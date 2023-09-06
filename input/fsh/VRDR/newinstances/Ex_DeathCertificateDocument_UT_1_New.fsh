@@ -26,8 +26,8 @@ Usage: #example
 * insert addentry(Observation, TobaccoUseUT-Example1)
 * insert addentry(Observation, InjuryIncidentUT-Example1)
 * insert addentry(Observation, EmergingIssuesUT-Example1)
-* insert addentry(Location,DeathLocationUT-Example1)
-* insert addentry(Location,InjuryLocationUT-Example1)
+* insert addentry(Location, DeathLocationUT-Example1)
+* insert addentry(Location, DispositionLocationUT-Example1)
 
 Instance: DeathCertificateUT-Example1
 InstanceOf: DeathCertificateNew
@@ -43,7 +43,7 @@ Usage: #example
 * attester.mode = #legal
 * attester.party = Reference(PractitionerUT-Example1)
 * event.code = $sct#103693007 "Diagnostic procedure (procedure)"
-* event.detail = Reference(urn:uuid:ProcedureDeathCertificationUT-Example1)
+* event.detail = Reference(ProcedureDeathCertificationUT-Example1)
 * section[DecedentDemographics]
   * entry[0] = Reference(DecedentUT-Example1)
   * entry[+] = Reference(BirthRecordIdentifierUT-Example1)
@@ -57,9 +57,9 @@ Usage: #example
   * entry[+] = Reference(EmergingIssuesUT-Example1)
 * section[DeathCertification]
   * entry[0] = Reference(PractitionerUT-Example1)
-  * entry[+] = Reference(urn:uuid:e48fce6f-bf4c-4c27-8fe9-d6a1e0c49094)
-  * entry[+] = Reference(urn:uuid:8741eb7f-8a04-4043-8768-4788fd8059dd)
-  * entry[+] = Reference(urn:uuid:ProcedureDeathCertificationUT-Example1)
+  * entry[+] = Reference(InjuryIncidentUT-Example1)
+  * entry[+] = Reference(ProcedureDeathCertificationUT-Example1)
+  * entry[+] = Reference(DeathCertificationUT-Example1)
 * section[DeathInvestigation]
   * entry[0] = Reference(AutopsyPerformedIndicatorUT-Example1)
   * entry[+] = Reference(CauseOfDeathPart1UT-Example1 )
@@ -114,7 +114,7 @@ Usage: #example
 Instance: InputRaceAndEthnicityUT-Example1
 InstanceOf: InputRaceAndEthnicityNew
 Usage: #example
-* id = "0a1ded2c-6140-4abc-9128-0af93e2f2ea5"
+// * id = "0a1ded2c-6140-4abc-9128-0af93e2f2ea5"
 * status = #final
 * subject = Reference(DecedentUT-Example1)
 * component[White].valueBoolean = true
@@ -141,7 +141,7 @@ Usage: #example
 Instance: PractitionerUT-Example1
 InstanceOf: PractitionerVitalRecordsNew
 Usage: #example
-* id = "practitioner-ut-example1"
+// * id = "practitioner-ut-example1"
 * identifier.value = "161632-1999"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * name.use = #official
@@ -196,7 +196,7 @@ Usage: #example
 Instance: AutopsyPerformedIndicatorUT-Example1
 InstanceOf: AutopsyPerformedIndicator
 Usage: #example
-* id = "95176132-1030-418d-b1a4-594872f6bec7"
+// * id = "95176132-1030-418d-b1a4-594872f6bec7"
 * subject = Reference(DecedentUT-Example1)
 * valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
 * component[autopsyResultsAvailable].valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
@@ -238,7 +238,7 @@ Usage: #example
 Instance: AgeUT-Example1 
 InstanceOf: DecedentAge
 Usage: #example
-* id = "7eda2a2c-f92d-4885-949f-34c500241300"
+// * id = "7eda2a2c-f92d-4885-949f-34c500241300"
 * subject = Reference(DecedentUT-Example1)
 //* valueQuantity.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
 * valueQuantity.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
@@ -254,7 +254,7 @@ Usage: #example
 Instance: DispositionLocationUT-Example1
 InstanceOf: DispositionLocation
 Usage: #example
-* id = "8371fc22-95da-4f72-a4be-674fc267cb7a"
+// * id = "8371fc22-95da-4f72-a4be-674fc267cb7a"
 * name = "Salt Lake City Cemetery"
 * address.city = "Salt Lake City"
 * address.state = "UT"
@@ -263,7 +263,7 @@ Usage: #example
 Instance: UsualWorkUT-Example1
 InstanceOf: DecedentUsualWork
 Usage: #example
-* id = "0051e0b6-6990-4190-93a6-87442b4a50aa"
+// * id = "0051e0b6-6990-4190-93a6-87442b4a50aa"
 * status = #final
 * subject = Reference(DecedentUT-Example1)
 * valueCodeableConcept.text = "Infant"
@@ -273,7 +273,7 @@ Usage: #example
 Instance: MilitaryServiceUT-Example1
 InstanceOf: DecedentMilitaryService
 Usage: #example
-* id = "60bb97be-43fd-4e36-bd0d-49a7efdcbcda"
+// * id = "60bb97be-43fd-4e36-bd0d-49a7efdcbcda"
 * subject = Reference(DecedentUT-Example1)
 * valueCodeableConcept = $v2-0136#N "No"
 
@@ -322,14 +322,14 @@ Usage: #example
 Instance: TobaccoUseUT-Example1 
 InstanceOf: TobaccoUseContributedToDeath
 Usage: #example
-* id = "8942bdc4-b1dd-4458-aa6a-158e22ea3d24"
+//* id = "8942bdc4-b1dd-4458-aa6a-158e22ea3d24"
 * subject = Reference(DecedentUT-Example1)
 * valueCodeableConcept = $sct#373067005 "No"
 
 Instance: ProcedureDeathCertificationUT-Example1
 InstanceOf: ProcedureDeathCertificationVitalRecordsNew
 Usage: #example
-* id = procedure-death-certification-ut-example1 
+// * id = procedure-death-certification-ut-example1 
 * status = #final 
 * identifier.value = "161632-1999"
 * category = $sct#103693007 "Diagnostic procedure"
@@ -342,6 +342,6 @@ Usage: #example
 Instance: EmergingIssuesUT-Example1
 InstanceOf: EmergingIssues
 Usage: #example
-* id = "3a1d5d86-4399-48ad-9d55-a22ddd283bfa"
+// * id = "3a1d5d86-4399-48ad-9d55-a22ddd283bfa"
 * subject = Reference(DecedentUT-Example1)
 * component[EmergingIssue20].valueString = "043-A-110234"
