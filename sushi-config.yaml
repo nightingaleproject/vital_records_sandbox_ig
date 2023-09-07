@@ -64,6 +64,8 @@ pages:
     title: BFDR Content Transitions 
   mdi-content-transitions.md:
     title: MDI Content Transitions 
+  ije_mapping.md:
+    title: BFDR Data Dictionary
 
 
 #
@@ -98,6 +100,7 @@ menu:
   VRDR: vrdr-content-transitions.html
   BFDR: bfdr-content-transitions.html
   MDI: mdi-content-transitions.html
+  BFDR Data Dictionary: ije_mapping.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
