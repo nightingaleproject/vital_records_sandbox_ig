@@ -5,6 +5,7 @@ Title: "Patient - Vital Records"
 Description: "This abstract Patient profile includes common extensions and slicing used across vital records."
 * ^abstract = true 
 * extension contains $patient-birthPlace named birthPlace 0..1 MS
+* extension[birthPlace] ^short = "Place of Birth for the patient should include the state and/or country"
 * extension[birthPlace].valueAddress
   * country from BirthplaceCountryVS (required)    // BPLACE_CNT
   * state from StatesTerritoriesAndProvincesVS (required) // BPLACE_ST
@@ -30,6 +31,7 @@ Description: "This abstract Patient profile includes common extensions and slici
   * type = $v2-0203#MR
 * identifier[SSN] ^short = "SSN if available and appropriate to send"
   * type = $v2-0203#SS
+  * system = $ssn
 * name 
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "use"

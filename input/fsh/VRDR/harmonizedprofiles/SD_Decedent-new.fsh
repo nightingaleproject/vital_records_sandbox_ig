@@ -2,8 +2,8 @@ Profile: DecedentNew
 Parent: PatientVitalRecordsNew
 Id: vrdr-decedent-new
 Title: "Decedent"
-Description: "Decedent (USCorePatient)"
-* insert RequireMetaProfile(Decedent)
+Description: "Decedent (PatientVitalRecords)"
+* insert RequireMetaProfile(DecedentNew)
 * extension contains
     NVSSSexAtDeath named NVSS-SexAtDeath 0..1 and
     SpouseAlive named Spouse-Alive 0..1

@@ -75,20 +75,20 @@ Usage: #example
 
 
 Instance: DecedentUT-Example1 // f906300e-3622-459c-8201-af0d9b90fb75
-InstanceOf: Decedent
+InstanceOf: DecedentNew
 Usage: #example 
 * extension[NVSSSexAtDeath].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
 //* extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 //* extension[http://hl7.org/fhir/StructureDefinition/patient-birthPlace]
-* extension[Patient-BirthPlace]
+* extension[birthPlace]
   * valueAddress.use = #old
   * valueAddress.state = "CO"
   * valueAddress.country = "US"
-* identifier[ssn].value = "429471420"
-* name.use = #official
-* name.family = "Lineberry"
-* name.given = "Davis"
-* name.suffix = "Jr"
+* identifier[SSN].value = "429471420"
+* name[currentLegalName]
+  * family = "Lineberry"
+  * given = "Davis"
+  * suffix = "Jr"
 * gender = #male
 * birthDate = "2021-03-04"
 * birthDate.extension[partialDate]
@@ -332,8 +332,8 @@ Usage: #example
 // * id = procedure-death-certification-ut-example1 
 * status = #final 
 * identifier.value = "161632-1999"
-* category = $sct#103693007 "Diagnostic procedure"
-* code = $sct#308646001 "Death certification"
+// * category = $sct#103693007 "Diagnostic procedure"
+// * code = $sct#308646001 "Death certification"
 * subject = Reference(DecedentUT-Example1)
 * performer.function = $sct#434641000124105 "Death certification and verification by physician (procedure)"
 * performer.actor = Reference(PractitionerUT-Example1)
