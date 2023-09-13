@@ -1,7 +1,7 @@
-Profile: ProcedureAssisstedVentilationFollowingDelivery
+Profile: ProcedureAssistedVentilationFollowingDelivery
 Parent: USCoreProcedureProfile
-Id: Procedure-assissted-ventilation-following-delivery
-Title: "Procedure - Assissted Ventilation Following Delivery"
+Id: Procedure-assisted-ventilation-following-delivery
+Title: "Procedure - Assisted Ventilation Following Delivery"
 Description: "This profile represents an abnormal condition of the newborn of assisted ventilation immediately following delivery."
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-04-19T03:16:57.771+00:00"
