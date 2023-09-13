@@ -38,7 +38,7 @@ puts ARGV[0]
 vSpreadsheet = open_spreadsheet(ARGV[0])
 #vSpreadsheet.default_sheet = "Combined Tabs"#
 vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
-vOutputFilename = "/generated/BFDR/ije_mapping.md"
+vOutputFilename = "/generated/BFDR/bfdr_ije_mapping.md"
 puts vOutputFilename
 vOutputFile = File.open(Dir.pwd + vOutputFilename, "w")
 
@@ -78,13 +78,16 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
       # *TODO* this might need to be updated prior to publication - for some reason the jekyll variable doesn't work the same for current build IG
       # TODO add code to check whether the version is current or not
       #profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition-" + vProvOutputFilename + ")"
-      profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "StructureDefinition-" + vProvOutputFilename + ".html)"
+      profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition-" + vProvOutputFilename + ".html)"
+      #profile = "[" + vProvOutputFilename + "]" + "(StructureDefinition-" + vProvOutputFilename + ".html)"
     when "US CORE"
       profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhiruscore}}" + "/StructureDefinition-" + vProvOutputFilename + ".html)"
     when "FHIR"
       profile = "[" + vProvOutputFilename + "]" + "(http://hl7.org/fhir/extensions/StructureDefinition-" + vProvOutputFilename + ".html)"
     when "ODH"
       profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhirusodh}}" + "/StructureDefinition-" + vProvOutputFilename + ".html)"
+    when "VRDR"
+        profile = "[" + vProvOutputFilename + "]" + "(StructureDefinition-vrdr-" + vProvOutputFilename + ".html)"
     end
     
     fhirfield = row[IJE_FHIR_FIELD_COL].value.to_s if row[IJE_FHIR_FIELD_COL]
