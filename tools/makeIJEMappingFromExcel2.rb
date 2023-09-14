@@ -69,8 +69,8 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
     ijename = row[IJE_NAME_COL].value.to_s if row[IJE_NAME_COL]
     ijeonly = "x"  if row[IJE_ONLY_COL] && (row[IJE_ONLY_COL].to_s == "I" || row[IJE_ONLY_COL].to_s == "i")
     fhirig = row[IJE_FHIR_IG_COL].value.to_s if row[IJE_FHIR_IG_COL]
-    vProvOutputFilename = row[IJE_PROFILE_COL].value.to_s if row[IJE_PROFILE_COL]
-
+    #vProvOutputFilename = row[IJE_PROFILE_COL].value.to_s if row[IJE_PROFILE_COL]
+=begin
     case fhirig
     when "BFDR"
       profile = "[" + vProvOutputFilename + "]" + "(StructureDefinition-" + vProvOutputFilename + ".html)"
@@ -89,7 +89,8 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
     when "VRDR"
         profile = "[" + vProvOutputFilename + "]" + "(StructureDefinition-vrdr-" + vProvOutputFilename + ".html)"
     end
-    
+=end    
+    profile = "[" + row[IJE_PROFILE_COL].value.to_s + "]" if row[IJE_PROFILE_COL] 
     fhirfield = row[IJE_FHIR_FIELD_COL].value.to_s if row[IJE_FHIR_FIELD_COL]
     fhirtype = row[IJE_FHIR_TYPE_COL].value.to_s if row[IJE_FHIR_TYPE_COL]
     fhirencoding = row[IJE_FHIR_ENCODING_COL].value.to_s if row[IJE_FHIR_ENCODING_COL]   
