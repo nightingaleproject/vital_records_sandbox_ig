@@ -1,12 +1,11 @@
 //content from ObservationMotherHeightVitalRecords moving from VRCL to BFDR. Changed to reference PatientMother profile in BFDR.
 Profile: ObservationMotherHeightNew
 Parent: USCoreVitalSignsProfile
-Id: Observation-mother-height-new
 Title: "Observation - Mother Height"
 Description: "The height of the mother. Migrated from VRCL."
 * code = $loinc#3137-7
   * ^short = "Body height Measured"
 * subject 1..
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherNew)
 * value[x] 1..
 * value[x] only Quantity

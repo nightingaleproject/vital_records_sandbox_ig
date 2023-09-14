@@ -10,5 +10,5 @@ Usage: #example
 * status = #final
 * code = $loinc#68497-7 "Previous cesarean deliveries #"
   * text = "Previous cesarean deliveries #"
-* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
+* subject = Reference(patient-mother-carmen-teresa-lee-new) "Patient - Mother (Carmen Teresa Lee)"
 * valueInteger = 1

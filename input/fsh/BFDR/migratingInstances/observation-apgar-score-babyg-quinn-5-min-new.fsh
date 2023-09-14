@@ -10,5 +10,5 @@ Usage: #example
 * status = #final
 * code = $loinc#9274-2 "5 minute Apgar Score"
   * text = "5 minute Apgar Score"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* subject = Reference(patient-child-babyg-quinn-new) "BabyG Quinn"
 * valueInteger = 7

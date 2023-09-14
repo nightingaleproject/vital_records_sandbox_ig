@@ -1,6 +1,5 @@
 Profile: CompositionProviderFetalDeathReportNew
 Parent: Composition
-Id: Composition-provider-fetal-death-report-new
 Title: "Composition - Provider Fetal Death Report"
 Description: "This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office."
 * ^meta.versionId = "69"
@@ -133,7 +132,6 @@ Description: "This Composition profile contains constraints to address the use c
   * entry contains
       pregnancyRiskFactors ..1 and
       numberPreviousCesareans 0..1  and
-      obstetricProcedures 1..1 and
       fetalPresentation 0..1  and
       maternalMorbidity 0..* and
       finalRouteMethodDelivery 0..1 

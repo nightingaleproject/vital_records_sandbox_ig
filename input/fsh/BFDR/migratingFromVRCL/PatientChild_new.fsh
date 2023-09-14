@@ -1,7 +1,6 @@
 //content from PatientChildVitalRecords moving from VRCL to BFDR
 Profile: PatientChildNew
 Parent: USCorePatientProfile
-Id: Patient-child-new
 Title: "Patient - Child"
 Description: "The subject patient (newborn/infant/child) for whom clinical data is included in the report. Migrated from VRCL."
 * extension[race] MS

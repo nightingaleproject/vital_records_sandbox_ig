@@ -1,40 +1,46 @@
-Instance: composition-provider-fetal-death-not-named-new
-InstanceOf: CompositionProviderFetalDeathReportNew
-Title: "Composition - Provider Fetal Death Report - Fetus Not Named"
-Description: "Composition - Provider Fetal Death Report: Fetus Not Named"
+Instance: composition-jurisdiction-fetal-death-not-named-new
+InstanceOf: CompositionJurisdictionFetalDeathReportNew
+Title: "Composition - Jurisdiction Fetal Death Report - Fetus Not Named"
+Description: "Composition Jurisdiction Fetal Death Report: Fetus Not Named example"
 Usage: #example
 * meta
-  * versionId = "16"
-  * lastUpdated = "2023-06-21T22:11:58.756Z"
+  * versionId = "30"
+  * lastUpdated = "2023-06-23T04:55:55.993Z"
 * extension[Extension-fetal-death-report-number]
+  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
   * valueIdentifier
     * type = $v2-0203#FDR
     * value = "9876"
 * extension[Extension-fetal-death-local-file-number]
+  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-local-file-number"
   * valueIdentifier
     * type = $v2-0203#FDRFN
     * value = "11111-11111"
 * extension[Extension-date-received-by-registrar]
+  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar"
   * valueDateTime = "2019-02-12"
-* identifier.value = "z03eab8c-11e8-4d0c-ad2a-b385395e27da"
+* extension[Extension-replacement-status]
+  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-replacement-status"
+  * valueCodeableConcept = CodeSystemReplacement#original
+* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27da"
 * status = #final
-* type = $loinc#69045-3 "U.S. standard report of fetal death - 2003 revision"
+* type = $loinc#92010-8 "Jurisdiction fetal death report Document"
 * subject
-  * reference = "Patient/patient-decedent-fetus-not-named"
+  * reference = "Patient/patient-decedent-fetus-not-named-new"
   * display = "Patient - Decedent Fetus (Fetus Not Named)"
 * encounter
   * reference = "Encounter/encounter-maternity-carmen-teresa-lee"
   * display = "Encounter - Maternity (Carmen Teresa Lee)"
 * date = "2019-01-09"
 * author
-  * reference = "Practitioner/practitioner-vital-records-jessica-leung"
-  * display = "Practitioner - Vital Records (Jessica Leung)"
-* title = "Provider fetal death report Document"
+  * reference = "Organization/organization-jurisdictional-vital-records-office"
+  * display = "Jurisdictional Vital Records Office"
+* title = "Jurisdiction fetal death report Document"
 * section[motherPrenatal]
   // * title = "Mother (prenatal) Section on the Fetal Death Report"
   // * code = $loinc#57073-9 "Prenatal records"
   * focus
-    * reference = "Patient/patient-mother-carmen-teresa-lee"
+    * reference = "Patient/patient-mother-carmen-teresa-lee-new"
     * display = "Patient - Mother (Carmen Teresa Lee)"
   * entry[plannedToDeliverAtHome]
     * reference = "Observation/observation-planned-to-deliver-at-home-not-named"
@@ -79,7 +85,7 @@ Usage: #example
   // * title = "Medical and Health Information on the Fetal Death Report"
   // * code = $loinc#55752-0 "Clinical information"
   * focus
-    * reference = "Patient/patient-mother-carmen-teresa-lee"
+    * reference = "Patient/patient-mother-carmen-teresa-lee-new"
     * display = "Patient - Mother (Carmen Teresa Lee)"
   * entry[numberPreviousCesareans]
     * reference = "Observation/observation-number-previous-cesareans-carmen-teresa-lee-new"
@@ -90,6 +96,8 @@ Usage: #example
   * entry[finalRouteMethodDelivery]
     * reference = "Procedure/procedure-final-route-method-delivery-not-named"
     * display = "Procedure - Final Route and Method of Delivery (Fetus Not Named)"
+  // No maternal morbidity
+  // No pregnancy risk factors
 * section[fetus]
   // * title = "Fetal delivery information section on the Fetal Death Report"
   // * code = $loinc#76400-1 "Fetal delivery information Document [US Standard Report of Fetal Death]"
@@ -117,28 +125,45 @@ Usage: #example
   * entry[autopsyOrHistologicalExamUsed]
     * reference = "Observation/observation-autopsy-histological-exam-results-used-not-named"
     * display = "Observation - Autopsy or Histological Exam Results Used"
-  // why plurality and not numberLiveBirthsThisDelivery / numberFetalDeathsThisDelivery? - updating
   // * entry[+]
   //   * reference = "Observation/observation-plurality-carmen-teresa-lee"
-  //   * display = "Observation - Plurality (Carmen Teresa Lee)"
+  //   * display = "Observation - Plurality (Carmen Teresa Lee)" 
   * entry[numberFetalDeathsThisDelivery]
     * reference = "Observation/observation-number-deaths-this-delivery-carmen-teresa-lee-new"
-    * display = "Observation - Number of Fetal Deaths This Delivery (Carmen Teresa Lee)"
+    * display = "Observation - Number of Fetal Deaths This Delivery - Carmen Teresa Lee"
 * section[motherInformation]
   // * title = "Mother Administrative Section on the Fetal Death Report"
   // * code = $loinc#92014-0 "Mother's administrative information"
   * focus
-    * reference = "Patient/patient-mother-carmen-teresa-lee"
+    * reference = "Patient/patient-mother-carmen-teresa-lee-new"
     * display = "Patient - Mother (Carmen Teresa Lee)"
   * entry[mothersEducation]
     * reference = "Observation/observation-parent-education-level-carmen-teresa-lee"
     * display = "Observation - Parent Education Level (Carmen Teresa Lee)"
-* section[patientsQuestionnaireResponse]
-  // * title = "Patient's QuestionnaireResponse Section"
-  // * code = $loinc#74465-6 "Questionnaire response Document"
-  * focus
-    * reference = "Patient/patient-mother-carmen-teresa-lee"
-    * display = "Patient - Mother (Carmen Teresa Lee)"
-  * entry
-    * reference = "QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee"
-    * display = "QuestionnaireResponse - Patient's Worksheet for Fetal Death Report"
+* section[editFlags]
+  // * title = "Edit Flags Section"
+  // * code = $loinc#92012-4 "Edit flags section"
+  * entry[editFlagWeightOfFetus]
+    * reference = "Observation/observation-edit-flag-delivery-wgt-not-named"
+    * display = "Observation - Edit flag birthweight"
+  * entry[editFlagEstimateOfGestation]
+    * reference = "Observation/observation-edit-flag-est-gestation-not-named"
+    * display = "Observation - Edit flag estimate of gestation"
+  * entry[editFlagMothersDateOfBirth]
+    * reference = "Observation/observation-edit-flag-mothers-dob-not-named"
+    * display = "Observation - Edit flag mother's date of birth"
+  * entry[editFlagMothersEducation]
+    * reference = "Observation/observation-edit-flag-mothers-education-not-named"
+    * display = "Observation - Edit flag mother's education"
+  * entry[editFlagMothersHeight]
+    * reference = "Observation/observation-edit-flag-mothers-height-not-named"
+    * display = "Observation - Edit flag mother's height"
+  * entry[editFlagMothersPrepregnancyWeight]
+    * reference = "Observation/observation-edit-flag-mothers-prepreg-wgt-not-named"
+    * display = "Observation - Edit flag mother's prepregnancy weight"
+  * entry[editFlagNumberPreviousCesareans]
+    * reference = "Observation/observation-edit-flag-nbr-previous-cesareans-not-named"
+    * display = "Observation - Edit flag number previous cesareans"
+  * entry[editFlagPlurality]
+    * reference = "Observation/observation-edit-flag-plurality-not-named"
+    * display = "Observation - Edit flag plurality"

@@ -1,12 +1,11 @@
 //content from ObservationPregnancyRiskFactorVitalRecords moving from VRCL to BFDR. Changed to reference PatientMother profile in BFDR and ValueSetPregnancyRiskFactors instead of phinvads.
 Profile: ObservationPregnancyRiskFactorNew
 Parent: Observation
-Id: Observation-pregnancy-risk-factor-new
 Title: "Observation - Pregnancy Risk Factor Vital Records"
 Description: "Selected medical risk factors of the mother during the pregnancy."
 * code = $loinc#73775-9
 * subject 1..
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherNew)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from ValueSetPregnancyRiskFactors (extensible)

@@ -11,5 +11,5 @@ Usage: #example
 * status = #final
 * code = $loinc#8665-2 "Last menstrual period start date"
   * text = "Last menstrual period start date"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn-new) "Patient - Mother (Jada Ann Quinn)"
 * valueDateTime = "2018-06-05"

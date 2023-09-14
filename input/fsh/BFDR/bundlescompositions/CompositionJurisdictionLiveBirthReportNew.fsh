@@ -1,6 +1,5 @@
 Profile: CompositionJurisdictionLiveBirthReportNew
 Parent: Composition
-Id: Composition-jurisdiction-live-birth-report-new
 Title: "Composition - Jurisdiction Live Birth Report"
 Description: "This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to the national statistics agency."
 * ^meta.versionId = "109"

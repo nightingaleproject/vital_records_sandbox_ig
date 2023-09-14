@@ -1,7 +1,6 @@
 //content from PatientMotherVitalRecords moving from VRCL to BFDR
 Profile: PatientMotherNew
 Parent: USCorePatientProfile
-Id: Patient-mother-new
 Title: "Patient - Mother"
 Description: "This Patient profile represents the woman who gave birth to, or delivered the infant. Migrated from VRCL."
 * extension[race] 1..

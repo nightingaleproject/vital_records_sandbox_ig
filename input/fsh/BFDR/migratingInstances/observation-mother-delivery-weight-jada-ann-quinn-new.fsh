@@ -11,6 +11,6 @@ Usage: #example
 * category = $observation-category#vital-signs "Vital Signs"
   * text = "Vital Signs"
 * code = $loinc#69461-2 "Mother's body weight --at delivery"
-* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn-new) "Patient - Mother (Jada Ann Quinn)"
 * effectiveDateTime = "2019-02-12"
 * valueQuantity = 175 '[lb_av]'

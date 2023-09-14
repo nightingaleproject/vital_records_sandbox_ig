@@ -1,6 +1,5 @@
 Profile: CompositionCodedCauseOfFetalDeathNew
 Parent: Composition
-Id: Composition-coded-cause-of-fetal-death-new
 Title: "Composition - Coded Cause of Fetal Death"
 Description: "This profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices."
 * ^meta.versionId = "25"

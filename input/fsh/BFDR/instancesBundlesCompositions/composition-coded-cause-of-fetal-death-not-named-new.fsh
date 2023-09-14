@@ -14,7 +14,7 @@ Usage: #example
 * status = #final
 * type = $loinc#86804-2 "Cause of death classification and related information Document"
 * subject
-  * reference = "Patient/patient-decedent-fetus-not-named"
+  * reference = "Patient/patient-decedent-fetus-not-named-new"
   * display = "Patient - Decedent Fetus (Fetus Not Named)"
 * date = "2019-01-09"
 * author

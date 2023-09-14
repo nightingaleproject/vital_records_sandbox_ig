@@ -20,7 +20,7 @@ Usage: #example
 * status = #final
 * type = $loinc#68998-4 "U.S. standard certificate of live birth - 2003 revision"
 * subject
-  * reference = "Patient/patient-child-babyg-quinn"
+  * reference = "Patient/patient-child-babyg-quinn-new"
   * display = "Patient - Child (Baby G Quinn)"
 * encounter
   * extension[Extension-encounter-maternity-reference]
@@ -36,7 +36,7 @@ Usage: #example
   // * title = "Mother (prenatal) Section on the Live Birth Certificate"
   // * code = $loinc#57073-9 "Prenatal records"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn"
+    * reference = "Patient/patient-mother-jada-ann-quinn-new"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[plannedToDeliverAtHome]
     * reference = "Observation/observation-planned-to-deliver-at-home-babyg-quinn"
@@ -96,7 +96,7 @@ Usage: #example
   // * title = "Medical Health Information Section"
   // * code = $loinc#55752-0 "Clinical information"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn"
+    * reference = "Patient/patient-mother-jada-ann-quinn-new"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[pregnancyRiskFactors]
     * reference = "Condition/condition-prepregnancy-diabetes-jada-ann-quinn"
@@ -137,10 +137,10 @@ Usage: #example
   * entry[gestationalAgeAtDelivery]
     * reference = "Observation/observation-gestational-age-at-delivery-babyg-quinn-new"
     * display = "Observation - Gestational Age at Delivery (Baby G Quinn)"
-  * entry[ApgarScore]
+  * entry[APGARScore]
     * reference = "Observation/observation-apgar-score-babyg-quinn-1-min-new"
     * display = "Observation - Apgar Score (BabyG Quinn: 1 min)"
-  * entry[ApgarScore]
+  * entry[APGARScore]
     * reference = "Observation/observation-apgar-score-babyg-quinn-5-min-new"
     * display = "Observation - Apgar Score (BabyG Quinn: 5 min)"
   * entry[numberLiveBirthsThisDelivery]
@@ -189,7 +189,7 @@ Usage: #example
   // * title = "Mother's QuestionnaireResponse Section"
   // * code = $loinc#74465-6 "Questionnaire response Document"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn"
+    * reference = "Patient/patient-mother-jada-ann-quinn-new"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry
     * reference = "QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn"

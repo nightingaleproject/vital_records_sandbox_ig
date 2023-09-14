@@ -1,7 +1,6 @@
 //content from PatientDecedentFetusVitalRecords moving from VRCL to BFDR
 Profile: PatientDecedentFetusNew
 Parent: USCorePatientProfile
-Id: Patient-decedent-fetus-new
 Title: "Patient - Decedent Fetus"
 Description: "A stillborn for whom clinical data is included in the report. Migrated from VRCL."
 * extension contains $patient-birthPlace named birthPlace 0..1 MS

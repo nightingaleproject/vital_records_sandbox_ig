@@ -20,7 +20,7 @@ Usage: #example
 * status = #final
 * type = $loinc#92011-6 "Jurisdiction live birth report Document"
 * subject
-  * reference = "Patient/patient-child-babyg-quinn"
+  * reference = "Patient/patient-child-babyg-quinn-new"
   * display = "Patient - Child (Baby G Quinn)"
 * encounter
   * extension[Extension-encounter-maternity-reference]
@@ -36,7 +36,7 @@ Usage: #example
   // * title = "Mother (prenatal) Section on the Live Birth Certificate"
   // * code = $loinc#57073-9 "Prenatal records"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn"
+    * reference = "Patient/patient-mother-jada-ann-quinn-new"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[0]
     * reference = "Observation/observation-planned-to-deliver-at-home-babyg-quinn"
@@ -96,11 +96,18 @@ Usage: #example
   // * title = "Medical Health Information Section"
   // * code = $loinc#55752-0 "Clinical information"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn"
+    * reference = "Patient/patient-mother-jada-ann-quinn-new"
     * display = "Patient - Mother (Jada Ann Quinn)"
-  * entry[pregnancyRiskFactors]
-    * reference = "Condition/condition-gestational-hypertension-jada-ann-quinn"
-    * display = "Condition - Gestational Hypertension (Jada Ann Quinn)"
+  // removing because there is no pregnancy risk factor example for baby quinn 
+  // based on this profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Observation-pregnancy-risk-factor.html
+  //* entry[pregnancyRiskFactors]
+    // this example was previously unreferenced
+    //* reference = "Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4"
+    // this example does not exist in the published or unpublished version, but is referenced in the published version
+    // * reference : "Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"
+    // this is from the unpublished version
+    // * reference = "Condition/condition-gestational-hypertension-jada-ann-quinn"
+    //* display = "Condition - Gestational Hypertension (Jada Ann Quinn)"
   * entry[numberPreviousCesareans]
     * reference = "Observation/observation-number-previous-cesareans-jada-ann-quinn-new"
     * display = "Observation - Number Previous Cesareans (Jada Ann Quinn)"
@@ -134,10 +141,10 @@ Usage: #example
   * entry[gestationalAgeAtDelivery]
     * reference = "Observation/observation-gestational-age-at-delivery-babyg-quinn-new"
     * display = "Observation - Gestational Age at Delivery (Baby G Quinn)"
-  * entry[ApgarScore]
+  * entry[APGARScore]
     * reference = "Observation/observation-apgar-score-babyg-quinn-1-min-new"
     * display = "Observation - Apgar Score (BabyG Quinn: 1 min)"
-  * entry[ApgarScore]
+  * entry[APGARScore]
     * reference = "Observation/observation-apgar-score-babyg-quinn-5-min-new"
     * display = "Observation - Apgar Score (BabyG Quinn: 5 min)"
   * entry[numberLiveBirthsThisDelivery]
@@ -162,7 +169,7 @@ Usage: #example
   // * title = "Mother's Information Section"
   // * code = $loinc#92014-0 "Mother's administrative information"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn"
+    * reference = "Patient/patient-mother-jada-ann-quinn-new"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[marriedDuringPregnancy]
     * reference = "Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"

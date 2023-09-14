@@ -1,6 +1,5 @@
 Profile: CompositionProviderLiveBirthReportNew
 Parent: Composition
-Id: Composition-provider-live-birth-report-new
 Title: "Composition - Provider Live Birth Report"
 Description: "This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdictional Vital Records Office."
 * ^meta.versionId = "122"
