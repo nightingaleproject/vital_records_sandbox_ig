@@ -91,13 +91,13 @@ Description: "The body of the death certificate document (Composition)."
 //
 * insert BundleSectionSlice(DeathInvestigation, ExaminerContacted, 0, 1, ExaminerContacted, ExaminerContacted, ExaminerContacted)
 * insert BundleSectionSlice(DeathInvestigation, PregnancyStatus, 0, 1, DecedentPregnancyStatus, DecedentPregnancyStatus, ObservationDecedentPregnancyVitalRecordsNew)
-* insert BundleSectionSlice(DeathInvestigation, TobaccoUse,  0, 1, TobaccoUse, TobaccoUse, ObservationTobaccoUseContributedToDeathVitalRecords)
+* insert BundleSectionSlice(DeathInvestigation, TobaccoUse,  0, 1, TobaccoUse, TobaccoUse, TobaccoUseContributedToDeathNew)
 // * insert BundleSectionSlice(DeathInvestigation, DeathOrInjuryLocation,  0, 2, Death or Injury  Location, Death or Injury Location, Location)
 * insert BundleSectionSlice(DeathInvestigation, DeathLocation,  0, 1, Death Location, Death Location, DeathLocation)
-* insert BundleSectionSlice(DeathInvestigation, InjuryLocation,  0, 1, Injury  Location, Injury Location, LocationInjuryVitalRecordsNew)
+* insert BundleSectionSlice(DeathInvestigation, InjuryLocation,  0, 1, Injury  Location, Injury Location, InjuryLocation)
   // See https://jira.hl7.org/browse/FHIR-41807
   // * insert BundleSectionSlice(DeathInvestigation, PlaceOfInjury,  0, 1, PlaceOfInjury, PlaceOfInjury, PlaceOfInjury)
-* insert BundleSectionSlice(DeathInvestigation, InjuryIncident,  0, 1, InjuryIncident, InjuryIncident, ObservationInjuryIncidentVitalRecordsNew)
+* insert BundleSectionSlice(DeathInvestigation, InjuryIncident,  0, 1, InjuryIncident, InjuryIncident, InjuryIncident)
 * insert BundleSectionSlice(DeathInvestigation, Autopsy,  0, 1, AutopsyPerformedIndicator, AutopsyPerformedIndicator, AutopsyPerformedIndicator)
 //* insert BundleSectionSlice(DeathInvestigation, DeathLocation,  0, 1, DeathLocation, DeathLocation, DeathLocation)
 * insert BundleSectionSlice(DeathInvestigation, DeathDate,  0, 1, DeathDate, DeathDate, ObservationDeathDateVitalRecordsNew)
@@ -105,14 +105,14 @@ Description: "The body of the death certificate document (Composition)."
 //
 * insert BundleSectionSlice(DeathCertification, Certifier,  0, 1, Certifier, Certifier, PractitionerVitalRecordsNew)
 * insert BundleSectionSlice(DeathCertification, DeathCertification,  0, 1, DeathCertification, DeathCertification, ProcedureDeathCertificationVitalRecordsNew)
-* insert BundleSectionSlice(DeathCertification, MannerOfDeath,  0, 1, MannerOfDeath, MannerOfDeath, ObservationMannerOfDeathVitalRecordsNew)
-* insert BundleSectionSlice(DeathCertification, CauseOfDeathPart1,  0, 4, CauseOfDeathPart1, CauseOfDeathPart1, ObservationCauseOfDeathPart1VitalRecordsNew)
-* insert BundleSectionSlice(DeathCertification, CauseOfDeathPart2,  0, 1, CauseOfDeathPart2, CauseOfDeathPart2, ObservationCauseOfDeathPart2VitalRecordsNew)
+* insert BundleSectionSlice(DeathCertification, MannerOfDeath,  0, 1, MannerOfDeath, MannerOfDeath, MannerOfDeathNew)
+* insert BundleSectionSlice(DeathCertification, CauseOfDeathPart1,  0, 4, CauseOfDeathPart1, CauseOfDeathPart1, CauseOfDeathPart1New)
+* insert BundleSectionSlice(DeathCertification, CauseOfDeathPart2,  0, 1, CauseOfDeathPart2, CauseOfDeathPart2, CauseOfDeathPart2New)
 // * insert BundleSectionSlice(DeathCertification, CauseOfDeathPathway,  0, 1, CauseOfDeathPathway, CauseOfDeathPathway, CauseOfDeathPathway)
 //
 * insert BundleSectionSlice(DecedentDisposition, DispositionLocation,  0, 1, DispositionLocation, DispositionLocation, DispositionLocation)
 * insert BundleSectionSlice(DecedentDisposition, FuneralHome,  0, 1, FuneralHome, FuneralHome, FuneralHome)
-* insert BundleSectionSlice(DecedentDisposition, DispositionMethod,  0, 1, DispositionMethod, DispositionMethod, ObservationDecedentDispositionMethodVitalRecordsNew)
+* insert BundleSectionSlice(DecedentDisposition, DispositionMethod,  0, 1, DispositionMethod, DispositionMethod, DecedentDispositionMethodNew)
 * insert BundleSectionSlice(DecedentDisposition, Mortician,  0, 1, Mortician, Mortician, USCorePractitioner)
 //
 * insert BundleSectionSlice(CodedContent, ActivityAtTimeOfDeath,  0, 1,  ActivityAtTimeOfDeath,  ActivityAtTimeOfDeath,  ActivityAtTimeOfDeath)

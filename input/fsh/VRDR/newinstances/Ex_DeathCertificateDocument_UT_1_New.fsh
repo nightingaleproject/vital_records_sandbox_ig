@@ -202,7 +202,7 @@ Usage: #example
 * component[autopsyResultsAvailable].valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
 
 Instance: CauseOfDeathPart1UT-Example1 
-InstanceOf: ObservationCauseOfDeathPart1VitalRecordsNew
+InstanceOf: CauseOfDeathPart1New
 Usage: #example
 * subject = Reference(DecedentUT-Example1)
 * performer = Reference(PractitionerUT-Example1)
@@ -228,7 +228,7 @@ Usage: #example
 * component.valueCodeableConcept = $sct#16983000 "Death in hospital"
 
 Instance: DeathLocationUT-Example1 
-InstanceOf: LocationDeathVitalRecordsNew
+InstanceOf: DeathLocation
 Usage: #example
 * name = "Salt Lake Regional Medical Cen"
 * description = "Facility"
@@ -245,7 +245,7 @@ Usage: #example
 * valueQuantity = 10 'mo' "Months"
 
 Instance: DispositionMethodUT-Example1 
-InstanceOf: ObservationDecedentDispositionMethodVitalRecordsNew
+InstanceOf: DecedentDispositionMethodNew
 Usage: #example
 * status = #final 
 * subject = Reference(DecedentUT-Example1)
@@ -312,7 +312,7 @@ Usage: #example
 * component[workInjuryIndicator].valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
 
 Instance: MannerOfDeathUT-Example1 
-InstanceOf: ObservationMannerOfDeathVitalRecordsNew
+InstanceOf: MannerOfDeathNew
 Usage: #example
 * status = #final 
 * subject = Reference(DecedentUT-Example1)
@@ -320,7 +320,7 @@ Usage: #example
 * valueCodeableConcept = $sct#185973002 "Patient awaiting investigation"
 
 Instance: TobaccoUseUT-Example1 
-InstanceOf: TobaccoUseContributedToDeath
+InstanceOf: TobaccoUseContributedToDeathNew
 Usage: #example
 //* id = "8942bdc4-b1dd-4458-aa6a-158e22ea3d24"
 * subject = Reference(DecedentUT-Example1)
