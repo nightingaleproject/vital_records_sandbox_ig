@@ -41,7 +41,7 @@ Description: "The body of the death certificate document (Composition)."
 * extension[ReplaceStatus] ^short = "Replace Status (deprecated)"
 * extension[StateSpecificField] ^short = "State Specific Field"
 * subject 1..1
-* subject only Reference(Decedent)
+* subject only Reference(DecedentNew)
 // * date 1..1
 * date ^short = "Date of Registration"
 //* attester 1..1

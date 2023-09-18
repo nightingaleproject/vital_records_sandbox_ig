@@ -6,10 +6,11 @@ Description: "Decedent (PatientVitalRecords)"
 * insert RequireMetaProfile(DecedentNew)
 * extension contains
     NVSSSexAtDeath named NVSS-SexAtDeath 0..1 and
-    SpouseAlive named Spouse-Alive 0..1
+    SpouseAlive named Spouse-Alive 0..1 and
+    $patient-birthPlace named Patient-BirthPlace 0..1
 * extension[NVSS-SexAtDeath] ^short = "NVSS Sex at Death"
 * extension[Spouse-Alive] ^short = "Spouse Alive?"
-* extension[birthPlace] ^short = "Decedent birthplace"
+* extension[Patient-BirthPlace] ^short = "Decedent birthplace"
 * identifier 1..*
 * name 1..*
 * birthDate ^short = "Date of Birth"

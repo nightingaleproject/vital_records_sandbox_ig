@@ -4,7 +4,7 @@ Id: Patient-vr-new
 Title: "Patient - Vital Records"
 Description: "This abstract Patient profile includes common extensions and slicing used across vital records."
 * ^abstract = true 
-* extension contains $patient-birthPlace named birthPlace 0..1 MS
+* extension contains $patient-birthPlace named birthPlace 0..1 
 * extension[birthPlace] ^short = "Place of Birth for the patient should include the state and/or country"
 * extension[birthPlace].valueAddress
   * country from BirthplaceCountryVS (required)    // BPLACE_CNT
@@ -25,8 +25,8 @@ Description: "This abstract Patient profile includes common extensions and slici
   * ^slicing.ordered = false
   * ^slicing.rules = #open
 * identifier contains
-    MRN 0..* MS and
-    SSN 0..1 MS
+    MRN 0..*  and
+    SSN 0..1 
 * identifier[MRN] ^short = "Medical Record Number"
   * type = $v2-0203#MR
 * identifier[SSN] ^short = "SSN if available and appropriate to send"
@@ -37,8 +37,8 @@ Description: "This abstract Patient profile includes common extensions and slici
   * ^slicing.discriminator.path = "use"
   * ^slicing.rules = #open
 * name contains
-    currentLegalName 0..1 MS and
-    namePriorToFirstMarriage 0..1 MS
+    currentLegalName 0..1  and
+    namePriorToFirstMarriage 0..1 
 * name[currentLegalName] 
   * ^short = "Mother's current legal name"
   * use = #official (exactly)
