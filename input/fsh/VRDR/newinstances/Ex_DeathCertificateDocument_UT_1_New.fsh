@@ -212,7 +212,7 @@ Usage: #example
 * status = #preliminary
 
 Instance: DeathDateUT-Example1
-InstanceOf: ObservationDeathDateVitalRecordsNew
+InstanceOf: DeathDateNew
 Usage: #example
 * status = #final 
 * subject = Reference(DecedentUT-Example1)
@@ -305,7 +305,7 @@ Usage: #example
 * address.country = "US"
 
 Instance: InjuryIncidentUT-Example1 
-InstanceOf: ObservationInjuryIncidentVitalRecordsNew
+InstanceOf: InjuryIncidentNew
 Usage: #example
 * status = #final 
 * subject = Reference(DecedentUT-Example1)
@@ -327,7 +327,7 @@ Usage: #example
 * valueCodeableConcept = $sct#373067005 "No"
 
 Instance: ProcedureDeathCertificationUT-Example1
-InstanceOf: ProcedureDeathCertificationVitalRecordsNew
+InstanceOf: DeathCertificationNew
 Usage: #example
 // * id = procedure-death-certification-ut-example1 
 * status = #final 

@@ -171,14 +171,8 @@ groups:
   VRCommonProfiles:
     name: VRCL New Common Profiles 
     resources:
-      - ObservationCauseOfDeathPart2VitalRecordsNew
-      - ObservationCauseOfDeathPart1VitalRecordsNew
       - ObservationInjuryIncidentVitalRecordsNew
-      - LocationInjuryVitalRecordsNew
-      - LocationDeathVitalRecordsNew
-      - ObservationTobaccoUseContributedToDeathVitalRecordsNew
       - ObservationDecedentDispositionMethodVitalRecordsNew
-      - ObservationMannerOfDeathVitalRecordsNew
       - ProcedureDeathCertificationVitalRecordsNew 
       - ObservationEducationLevelVitalRecordsNew
       - ObservationDecedentPregnancyVitalRecordsNew
@@ -310,7 +304,24 @@ groups:
       - EditBypass01VS
       - EditBypass012VS
       - EditBypass0124VS
-      - EditBypass01234VS      
+      - EditBypass01234VS     
+
+VRDRProfilesNew:
+    name: New VRDR Profiles
+    resources:  
+      - DecedentNew 
+      - CauseOfDeathCodedContentBundleNew
+      - DemographicCodedContentBundleNew
+      - DeathCertificateNew
+      - DeathCertificateDocumentNew 
+      - CauseOfDeathPart1New
+      - CauseOfDeathPart2New
+      - DeathDateNew 
+      - InjuryIncidentNew 
+      - MannerOfDeathNew 
+      - TobaccoUseContributedToDeathNew 
+
+
 
 #
 # The ImplementationGuide resource defines several other properties
