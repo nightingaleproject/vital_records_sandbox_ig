@@ -26,7 +26,7 @@ Usage: #example
 * status = #final
 * type = $loinc#92010-8 "Jurisdiction fetal death report Document"
 * subject
-  * reference = "Patient/patient-decedent-fetus-not-named-new"
+  * reference = "Patient/patient-decedent-fetus-not-named-common"
   * display = "Patient - Decedent Fetus (Fetus Not Named)"
 * encounter
   * reference = "Encounter/encounter-maternity-carmen-teresa-lee"
@@ -40,7 +40,7 @@ Usage: #example
   // * title = "Mother (prenatal) Section on the Fetal Death Report"
   // * code = $loinc#57073-9 "Prenatal records"
   * focus
-    * reference = "Patient/patient-mother-carmen-teresa-lee-new"
+    * reference = "Patient/patient-mother-carmen-teresa-lee-common"
     * display = "Patient - Mother (Carmen Teresa Lee)"
   * entry[plannedToDeliverAtHome]
     * reference = "Observation/observation-planned-to-deliver-at-home-not-named"
@@ -85,7 +85,7 @@ Usage: #example
   // * title = "Medical and Health Information on the Fetal Death Report"
   // * code = $loinc#55752-0 "Clinical information"
   * focus
-    * reference = "Patient/patient-mother-carmen-teresa-lee-new"
+    * reference = "Patient/patient-mother-carmen-teresa-lee-common"
     * display = "Patient - Mother (Carmen Teresa Lee)"
   * entry[numberPreviousCesareans]
     * reference = "Observation/observation-number-previous-cesareans-carmen-teresa-lee-new"
@@ -135,7 +135,7 @@ Usage: #example
   // * title = "Mother Administrative Section on the Fetal Death Report"
   // * code = $loinc#92014-0 "Mother's administrative information"
   * focus
-    * reference = "Patient/patient-mother-carmen-teresa-lee-new"
+    * reference = "Patient/patient-mother-carmen-teresa-lee-common"
     * display = "Patient - Mother (Carmen Teresa Lee)"
   * entry[mothersEducation]
     * reference = "Observation/observation-parent-education-level-carmen-teresa-lee"

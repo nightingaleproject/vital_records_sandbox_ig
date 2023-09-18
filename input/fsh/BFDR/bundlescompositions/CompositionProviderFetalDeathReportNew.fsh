@@ -30,7 +30,7 @@ Description: "This Composition profile contains constraints to address the use c
   * ^short = "U.S. standard report of fetal death - 2003 revision"
   * ^definition = "U.S. standard report of fetal death - 2003 revision"
 * subject 1.. 
-* subject only Reference(PatientDecedentFetusNew)
+* subject only Reference(PatientDecedentFetusVitalRecords)
   * ^short = "The subject of the composition is the decedent fetus"
   * ^definition = "The subject of the composition as a whole is the decedent fetus. Different sections in the composition have different focus (e.g.: the mother)."
 * encounter only Reference(Encounter_Maternity)
@@ -52,6 +52,7 @@ Description: "This Composition profile contains constraints to address the use c
     medicalHealthInformation 0..1  and
     fetus 0..1  and
     motherInformation 0..1  and
+    fatherInformation 0..1  and
     mothersQuestionnaireResponse 0..1
 * section[motherPrenatal] ^short = "Mother (prenatal) section on the Fetal Death Report"
   * ^definition = "This section contains items from the Mother (prenatal) on theFetal Death Report."
@@ -239,6 +240,16 @@ Description: "This Composition profile contains constraints to address the use c
   * entry[mothersEducation] only Reference(ObservationEducationLevelVitalRecordsNew)
     * ^short = "Mother's education"
     * ^definition = "Mother's education"
+* section[fatherInformation] ^short = "Mother Administrative Section on the Fetal Death Report"
+  * ^definition = "This section contains items from the Father administrative section on the Fetal Death Report."
+  * code 1.. 
+  * code = $loinc#92013-2
+    * ^short = "Father's administrative information"
+    * ^definition = "Father's administrative information"
+  * focus 1.. 
+  * focus only Reference(RelatedPersonFatherNaturalVitalRecords)
+    * ^short = "The focus of this section is the father"
+    * ^definition = "The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father."
 * section[mothersQuestionnaireResponse] ^short = "Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"
   * code 1..
   * code = $loinc#74465-6

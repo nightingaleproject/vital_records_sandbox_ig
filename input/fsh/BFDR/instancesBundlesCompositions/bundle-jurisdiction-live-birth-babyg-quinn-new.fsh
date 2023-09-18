@@ -15,7 +15,8 @@ Usage: #example
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-jurisdiction-live-birth-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-1
-* insert addentry(PatientChildNew, patient-child-babyg-quinn-new)
+* insert addentry(PatientChildVitalRecords, patient-child-babyg-quinn-common)
+//* insert addentry(PatientChildNew, patient-child-babyg-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-child-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-2
@@ -31,7 +32,8 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Organization/organization-jurisdictional-vital-records-office"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-5
-* insert addentry(PatientMotherNew, patient-mother-jada-ann-quinn-new)
+* insert addentry(PatientMotherVitalRecords, patient-mother-carmen-teresa-lee-common)
+//* insert addentry(PatientMotherNew, patient-mother-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-6
@@ -159,7 +161,9 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-apgar-score-babyg-quinn-5-min"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-37
-* insert addentry(Observation, observation-plurality-jada-ann-quinn)
+
+// no plurality in STU1.1
+// * insert addentry(Observation, observation-plurality-jada-ann-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-plurality-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-38

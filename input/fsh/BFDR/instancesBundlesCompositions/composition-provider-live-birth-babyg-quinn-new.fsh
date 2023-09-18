@@ -20,7 +20,7 @@ Usage: #example
 * status = #final
 * type = $loinc#68998-4 "U.S. standard certificate of live birth - 2003 revision"
 * subject
-  * reference = "Patient/patient-child-babyg-quinn-new"
+  * reference = "Patient/patient-child-babyg-quinn-common"
   * display = "Patient - Child (Baby G Quinn)"
 * encounter
   * extension[Extension-encounter-maternity-reference]
@@ -36,7 +36,7 @@ Usage: #example
   // * title = "Mother (prenatal) Section on the Live Birth Certificate"
   // * code = $loinc#57073-9 "Prenatal records"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn-new"
+    * reference = "Patient/patient-mother-jada-ann-quinn-common"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[plannedToDeliverAtHome]
     * reference = "Observation/observation-planned-to-deliver-at-home-babyg-quinn"
@@ -96,7 +96,7 @@ Usage: #example
   // * title = "Medical Health Information Section"
   // * code = $loinc#55752-0 "Clinical information"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn-new"
+    * reference = "Patient/patient-mother-jada-ann-quinn-common"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[pregnancyRiskFactors]
     * reference = "Condition/condition-prepregnancy-diabetes-jada-ann-quinn"
@@ -162,7 +162,7 @@ Usage: #example
   // * title = "Mother's Information Section"
   // * code = $loinc#92014-0 "Mother's administrative information"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn"
+    * reference = "Patient/patient-mother-jada-ann-quinn-common"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[marriedDuringPregnancy]
     * reference = "Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"
@@ -189,7 +189,7 @@ Usage: #example
   // * title = "Mother's QuestionnaireResponse Section"
   // * code = $loinc#74465-6 "Questionnaire response Document"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn-new"
+    * reference = "Patient/patient-mother-jada-ann-quinn-common"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry
     * reference = "QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn"

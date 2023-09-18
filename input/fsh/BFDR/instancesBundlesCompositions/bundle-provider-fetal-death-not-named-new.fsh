@@ -15,7 +15,8 @@ Usage: #example
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-provider-fetal-death-not-named"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-1
-* insert addentry(PatientDecedentFetusNew, patient-decedent-fetus-not-named-new)
+* insert addentry(PatientDecedentFetusVitalRecords, patient-decedent-fetus-not-named-common)
+//* insert addentry(PatientDecedentFetusNew, patient-decedent-fetus-not-named-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-decedent-fetus-not-named"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-2
@@ -27,7 +28,8 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Practitioner/practitioner-vital-records-jessica-leung"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-4
-* insert addentry(PatientMotherNew, patient-mother-carmen-teresa-lee-new)
+* insert addentry(PatientMotherVitalRecords, patient-mother-carmen-teresa-lee-common)
+//* insert addentry(PatientMotherNew, patient-mother-carmen-teresa-lee-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-5
@@ -131,7 +133,7 @@ Usage: #example
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-29
 
 // possibly to be replaced by deaths @ birth
-* insert addentry(Observation, observation-plurality-carmen-teresa-lee)
+//* insert addentry(Observation, observation-plurality-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-plurality-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-30

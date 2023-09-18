@@ -15,7 +15,8 @@ Usage: #example
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-provider-live-birth-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-1
-* insert addentry(PatientChildNew, patient-child-babyg-quinn-new)
+* insert addentry(PatientChildVitalRecords, patient-child-babyg-quinn-common)
+// * insert addentry(PatientChildNew, patient-child-babyg-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-child-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-2
@@ -31,7 +32,8 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Practitioner/practitioner-vital-records-avery-jones"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-5
-* insert addentry(PatientMotherNew, patient-mother-jada-ann-quinn-new)
+* insert addentry(patient-mother-carmen-teresa-lee-common, patient-mother-jada-ann-quinn-common)
+// * insert addentry(PatientMotherNew, patient-mother-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-6

@@ -19,7 +19,8 @@ Usage: #example
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-jurisdiction-fetal-death-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-1
-* insert addentry(PatientDecedentFetusNew, patient-decedent-fetus-not-named-new)
+* insert addentry(PatientDecedentFetusVitalRecords, patient-decedent-fetus-not-named-common)
+//* insert addentry(PatientDecedentFetusNew, patient-decedent-fetus-not-named-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-decedent-fetus-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-2
@@ -31,7 +32,8 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Organization/organization-jurisdictional-vital-records-office"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-4
-* insert addentry(PatientMotherNew, patient-mother-carmen-teresa-lee-new)
+* insert addentry(PatientMotherVitalRecords, patient-mother-carmen-teresa-lee-common)
+//* insert addentry(PatientMotherNew, patient-mother-carmen-teresa-lee-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-5
@@ -134,8 +136,8 @@ Usage: #example
 //   * fullUrl = "http://example.org/fhir/Observation/observation-autopsy-histological-exam-results-used-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-29
 
-// possibly to be replaced by deaths @ birth
-* insert addentry(Observation, observation-plurality-carmen-teresa-lee)
+// no plurality in STU1.1 - could be replaced by numberFetalDeathsThisDelivery
+// * insert addentry(Observation, observation-plurality-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-plurality-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-30

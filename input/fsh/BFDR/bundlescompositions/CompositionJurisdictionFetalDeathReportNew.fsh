@@ -55,6 +55,7 @@ Description: "This Composition profile contains information of a fetal death and
     medicalHealthInformation 0..1  and
     fetus 0..1  and
     motherInformation 0..1  and
+    fatherInformation 0..1 and
     editFlags 1..1 
 * section[motherPrenatal] ^short = "Mother (prenatal) Section on the Fetal Death Report"
   * ^definition = "This section contains items from the Mother (prenatal) on the Fetal Death Report."
@@ -233,6 +234,16 @@ Description: "This Composition profile contains information of a fetal death and
   * entry[mothersEducation] only Reference(ObservationEducationLevelVitalRecordsNew)
     * ^short = "Mother's Education"
     * ^definition = "Mother's education"
+* section[fatherInformation] ^short = "Mother Administrative Section on the Fetal Death Report"
+  * ^definition = "This section contains items from the Father administrative section on the Fetal Death Report."
+  * code 1.. 
+  * code = $loinc#92013-2
+    * ^short = "Father's administrative information"
+    * ^definition = "Father's administrative information"
+  * focus 1.. 
+  * focus only Reference(RelatedPersonFatherNaturalVitalRecords)
+    * ^short = "The focus of this section is the father"
+    * ^definition = "The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father."
 * section[editFlags] ^short = "Edit Flags Section"
   * ^definition = "This section contains the edit flags that specify whether the originally provided data passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on edit criteria in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."
   * code 1.. 
