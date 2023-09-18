@@ -152,12 +152,12 @@ P = Planned",,VRCPL,ObservationAutopsyPerformedIndicatorVitalRecords,value,codea
 N = No
 X = Not Applicable",,BFDR,ObservationAutopsyHistologicalExamResultsUsed,value,codeable,"[ValueSetYesNoNotApplicable], sandbox uses boolean, BFDR IG uses codeable",,,,,Observation-autopsy-histological-exam-results-used,
 276,Surveillance,4,13,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,SurveillanceBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,y,,,,SurveillanceBundle,
-469,Natality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,CompositionProviderLiveBirthReport,extension[liveBirthLocalFileNumber].value,identifier,is this the right profile?,,,,,Extension-live-birth-local-file-number,
+469,Natality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,CompositionProviderLiveBirthReport,extension[liveBirthLocalFileNumber].value,identifier,Used for Jurisdiction Report also,,,,,Extension-live-birth-local-file-number,
 10,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,DeathCertificateDocument,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,y,,,,DeathCertificateDocument,
 11,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,CauseOfDeathCodedContentBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,y,,,,CauseOfDeathCodedContentBundle,
 12,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,DemographicCodedContentBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,y,,,,DemographicCodedContentBundle,
 1187,ITOP,5,14,12,Auxiliary State File Number,AUXNO,000000000001-999999999999; blank,,not implemented,not implemented,,,,,,,,not implemented,
-822,Fetal Death,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,CompositionProviderFetalDeathReport,extension[fetalDeathLocalFileNumber].value,identifier,Is this the right profile?,,,,,Extension-fetal-death-local-file-number,
+822,Fetal Death,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,CompositionProviderFetalDeathReport,extension[fetalDeathLocalFileNumber].value,identifier,Used for Jurisdiction Report also,,,,,Extension-fetal-death-local-file-number,
 1346,Birth Infant Death,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,,,,,,,,,,,
 347,Surveillance,75,750,12,Auxiliary State file number,AUXNO2,,,VRDR,DeathCertificateDocument,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,DeathCertificateDocument,
 131,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,DeathCertificateDocument,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,DeathCertificateDocument,
@@ -907,19 +907,19 @@ or (year of child's birth - 2), 9999",,,,,,,,,,,,
 1472,Birth Infant Death,131,765,4,Date of Last Prenatal Care Visit--Year,DOLP_YR,"4 digit year; year of child's birth or 
 (year of child's birth - 1), 8888=no care, 9999=unknown",,,,,,,,,,,,
 334,Surveillance,62,525,2,Date of Registration--Day,DOR_DY,"01-31 (based on month), Blank",,VRDR,SurveillanceBundle,date,dateTime,-,y,,,,SurveillanceBundle,
-709,Natality,245,950,2,Date of Registration--Day,DOR_DY,"01-31 (based on month), Blank",,BFDR,CompositionProviderLiveBirthReport,extension[dateFiledByRegistrar].value,dateTime,is this the right profile?,,,,,Extension-date-filed-by-registrar,
+709,Natality,245,950,2,Date of Registration--Day,DOR_DY,"01-31 (based on month), Blank",,BFDR,CompositionProviderLiveBirthReport,extension[dateFiledByRegistrar].value,dateTime,Used for Jurisdiction Report also,,,,,Extension-date-filed-by-registrar,
 106,Mortality,98,695,2,Date of Registration--Day,DOR_DY,"01-31 (based on month), Blank",,VRDR,DeathCertificate,date,dateTime,-,y,,,,DeathCertificate,
-995,Fetal Death,178,582,2,Date of Registration--Day,DOR_DY,"01-31 (based on month), Blank",,BFDR,CompositionProviderFetalDeathReport,extension[dateReceivedByRegistrar].value,dateTime,is this the right profile?,,,,,Extension-date-received-by-registrar,
+995,Fetal Death,178,582,2,Date of Registration--Day,DOR_DY,"01-31 (based on month), Blank",,BFDR,CompositionProviderFetalDeathReport,extension[dateReceivedByRegistrar].value,dateTime,Used for Jurisdiction Report also,,,,,Extension-date-received-by-registrar,
 1586,Birth Infant Death,245,950,2,Date of Registration--Day,DOR_DY,"01-31 (based on month), Blank",,,,,,,,,,,,
 333,Surveillance,61,523,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,VRDR,SurveillanceBundle,date,dateTime,-,y,,,,SurveillanceBundle,
-708,Natality,244,948,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,BFDR,CompositionProviderLiveBirthReport,extension[dateFiledByRegistrar].value,dateTime,is this the right profile?,,,,,Extension-date-filed-by-registrar,
+708,Natality,244,948,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,BFDR,CompositionProviderLiveBirthReport,extension[dateFiledByRegistrar].value,dateTime,Used for Jurisdiction Report also,,,,,Extension-date-filed-by-registrar,
 105,Mortality,97,693,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,VRDR,DeathCertificate,date,dateTime,-,y,,,,DeathCertificate,
-994,Fetal Death,177,580,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,BFDR,CompositionProviderFetalDeathReport,extension[dateReceivedByRegistrar].value,dateTime,is this the right profile?,,,,,Extension-date-received-by-registrar,
+994,Fetal Death,177,580,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,BFDR,CompositionProviderFetalDeathReport,extension[dateReceivedByRegistrar].value,dateTime,Used for Jurisdiction Report also,,,,,Extension-date-received-by-registrar,
 1585,Birth Infant Death,244,948,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,,,,,,,,,,,
 332,Surveillance,60,519,4,Date of Registration--Year,DOR_YR,"4 digit year; >=year of death, Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)",,VRDR,SurveillanceBundle,date,dateTime,-,y,,,,SurveillanceBundle,
-707,Natality,243,944,4,Date of Registration--Year,DOR_YR,"4 digit year; >=year of birth, Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)",,BFDR,CompositionProviderLiveBirthReport,extension[dateFiledByRegistrar].value,dateTime,is this the right profile?,,,,,Extension-date-filed-by-registrar,
+707,Natality,243,944,4,Date of Registration--Year,DOR_YR,"4 digit year; >=year of birth, Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)",,BFDR,CompositionProviderLiveBirthReport,extension[dateFiledByRegistrar].value,dateTime,Used for Jurisdiction Report also,,,,,Extension-date-filed-by-registrar,
 104,Mortality,96,689,4,Date of Registration--Year,DOR_YR,"4 digit year; >=year of death, Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)",,VRDR,DeathCertificate,date,dateTime,-,y,,,,DeathCertificate,
-993,Fetal Death,176,576,4,Date of Registration--Year,DOR_YR,"4 digit year; >=year of delivery, Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)",,BFDR,CompositionProviderFetalDeathReport,extension[dateReceivedByRegistrar].value,dateTime,is this the right profile?,,,,,Extension-date-received-by-registrar,
+993,Fetal Death,176,576,4,Date of Registration--Year,DOR_YR,"4 digit year; >=year of delivery, Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)",,BFDR,CompositionProviderFetalDeathReport,extension[dateReceivedByRegistrar].value,dateTime,Used for Jurisdiction Report also,,,,,Extension-date-received-by-registrar,
 1584,Birth Infant Death,243,944,4,Date of Registration--Year,DOR_YR,"4 digit year; >=year of birth, Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)",,,,,,,,,,,,
 1189,ITOP,7,28,2,Date of Termination - Day,DOT_DY,"01-31 (based on month), 99",,not implemented,not implemented,,,,,,,,not implemented,
 1188,ITOP,6,26,2,Date of Termination - Month,DOT_MO,"01-12, 99",,not implemented,not implemented,,,,,,,,not implemented,
@@ -1282,8 +1282,8 @@ For Canadian Provinces:
 1 = Edit Failed, Data Queried and Verified
 2 = Edit Failed, Data Queried, but not Verified",,,,,,,,,,,,
 1036,Fetal Death,219,2744,50,Fetus First Name,FETFNAME,Free form literal,,VRCPL,PatientDecedentFetusVitalRecords,"name.given, name.use = official",string,See [Note on Decedent Name],,,,,Patient-decedent-fetus-vr,
-764,Natality,300,2219,15,Father's Hispanic Origin - Specify,FETHNIC_T,"Text, comma delimit multiple entries",,VRCPL,Observation-tabulated-ethnicity-vr,,,,,,,,Observation-tabulated-ethnicity-vr,
-1154,Fetal Death,337,4699,15,Father's Hispanic Origin - Specify,FETHNIC_T,"Text, comma delimit multiple entries",,VRCPL,Observation-tabulated-ethnicity-vr,,,,,,,,Observation-tabulated-ethnicity-vr,
+764,Natality,300,2219,15,Father's Hispanic Origin - Specify,FETHNIC_T,"Text, comma delimit multiple entries",,VRCPL,Observation-tabulated-ethnicity-vr,,,Need to discuss - has this been deprecated? What is tabulated for? How to tell difference between ethnicC fields?,,,,,Observation-tabulated-ethnicity-vr,
+1154,Fetal Death,337,4699,15,Father's Hispanic Origin - Specify,FETHNIC_T,"Text, comma delimit multiple entries",,VRCPL,Observation-tabulated-ethnicity-vr,,,Need to discuss - has this been deprecated? What is tabulated for? How to tell difference between ethnicC fields?,,,,,Observation-tabulated-ethnicity-vr,
 1641,Birth Infant Death,300,2219,15,Father's Hispanic Origin - Specify,FETHNIC_T,"Text, comma delimit multiple entries",,,,,,,,,,,,
 544,Natality,80,424,1,Father of Hispanic Origin?--Mexican,FETHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
@@ -1334,13 +1334,13 @@ U = Unknown",,,,,,,,,,,,
 1037,Fetal Death,220,2794,50,Fetus Middle Name,FETMNAME,Free form literal,,VRCPL,PatientDecedentFetusVitalRecords,"name.given, name.use = official",string,See [Note on Decedent Name],,,,,Patient-decedent-fetus-vr,
 248,Mortality,236,4262,8,Date Filed,FILEDATE,Date Filed by Registrar in mmddyyyy format,,not implemented,not implemented,,,-,,,,,not implemented,
 275,Surveillance,3,7,6,Certificate Number,FILENO,Left 0 filled; 000001-999999,,VRDR,SurveillanceBundle,identifier.extension[ certificateNumber].value,string(6),-,y,,,,SurveillanceBundle,
-467,Natality,3,7,6,Certificate Number,FILENO,left 0 filled; 000001-999999,,BFDR,CompositionProviderLiveBirthReport,extension[liveBirthCertificateNumber].value,identifier,multiple profiles?,,,,,Extension-live-birth-certificate-number,
+467,Natality,3,7,6,Certificate Number,FILENO,left 0 filled; 000001-999999,,BFDR,CompositionProviderLiveBirthReport,extension[liveBirthCertificateNumber].value,identifier,Used for Jurisdiction Report and Coded Race and Ethnicity Compositions also,,,,,Extension-live-birth-certificate-number,
 444,Mortality Roster,15,212,6,State File Number,FILENO,Left 0 filled; 000001-999999,,VRDR,MortalityRosterBundle,identifier.extension[ certificateNumber].value,string(6),-,,,,,MortalityRosterBundle,
 6,Mortality,3,7,6,Certificate Number,FILENO,Left 0 filled; 000001-999999,,VRDR,DeathCertificateDocument,identifier.extension[ certificateNumber].value,string(6),-,y,,,,DeathCertificateDocument,
 7,Mortality,3,7,6,Certificate Number,FILENO,Left 0 filled; 000001-999999,,VRDR,CauseOfDeathCodedContentBundle,identifier.extension[ certificateNumber].value,string(6),-,y,,,,CauseOfDeathCodedContentBundle,
 8,Mortality,3,7,6,Certificate Number,FILENO,Left 0 filled; 000001-999999,,VRDR,DemographicCodedContentBundle,identifier.extension[ certificateNumber].value,string(6),-,y,,,,DemographicCodedContentBundle,
 1185,ITOP,3,7,6,Certificate Number ,FILENO,left 0 filled; 000001-999999,,not implemented,not implemented,,,,,,,,not implemented,
-820,Fetal Death,3,7,6,Certificate Number,FILENO,Left 0 filled; 000001-999999,,BFDR,CompositionProviderFetalDeathReport,extension[fetalDeathReportNumber].value,identifier,,,,,,Extension-fetal-death-report-number,
+820,Fetal Death,3,7,6,Certificate Number,FILENO,Left 0 filled; 000001-999999,,BFDR,CompositionProviderFetalDeathReport,extension[fetalDeathReportNumber].value,identifier,"Used for Jurisdiction Report, Coded Cause of Fetal Death, and Coded Race and Ethnicity Compositions also",,,,,Extension-fetal-death-report-number,
 1344,Birth Infant Death,3,7,6,Certificate Number,FILENO,left 0 filled; 000001-999999,,,,,,,,,,,,
 652,Natality,188,852,1,Characteristics of Labor & Delivery--Fetal Intolerance(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),FINT,"Y, N, U",,not implemented,not implemented,,,,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
@@ -1353,8 +1353,8 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN
 1196,ITOP,14,52,12,Facility ID (NPI),FNPI, ,,not implemented,not implemented,,,,,,,,not implemented,
 829,Fetal Death,12,39,12,Facility ID (NPI) - If available,FNPI,,,BFDR,Encounter_Maternity,location.location.id,string,,,,,,Encounter-maternity,
 1353,Birth Infant Death,12,39,12,Facility ID (NPI) - if available,FNPI,,,,,,,,,,,,,
-765,Natality,301,2234,50,Father's Race - Specify,FRACE_T,"Text, comma delimit multiple entries",,VRCPL,Observation-race-vr,,,,,,,,Observation-race-vr,
-1155,Fetal Death,338,4714,50,Father's Race - Specify,FRACE_T,"Text, comma delimit multiple entries",,VRCPL,Observation-race-vr,,,,,,,,Observation-race-vr,
+765,Natality,301,2234,50,Father's Race - Specify,FRACE_T,"Text, comma delimit multiple entries",,VRCPL,Observation-race-vr,,,Need to discuss - has this been deprecated? What is tabulated for? How to tell difference between RaceC fields?,,,,,Observation-race-vr,
+1155,Fetal Death,338,4714,50,Father's Race - Specify,FRACE_T,"Text, comma delimit multiple entries",,VRCPL,Observation-race-vr,,,Need to discuss - has this been deprecated? What is tabulated for? How to tell difference between RaceC fields?,,,,,Observation-race-vr,
 1642,Birth Infant Death,301,2234,50,Father's Race - Specify,FRACE_T,"Text, comma delimit multiple entries",,,,,,,,,,,,
 549,Natality,85,448,1,Father's Race--White,FRACE1,"Y = Yes, box for race checked
 N = No, box for race not checked",,VRDR,InputRaceAndEthnicity,"component[ White].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]",boolean,,,,,,RelatedPerson-father-natural-vr,
@@ -1496,7 +1496,7 @@ N = No, box for race not checked",,,,,,,,,,,,
 21 = Bridged White
 22 = Bridged Black
 23 = Bridged American Indian/Alaskan Native
-24 = Bridged Asian & Pacific Islander",,VRCPL,Observation-race-vr,,,,,,,,Observation-race-vr,
+24 = Bridged Asian & Pacific Islander",,VRCPL,Observation-race-vr,,,Need to discuss,,,,,Observation-race-vr,
 1151,Fetal Death,334,4632,2,Father's Bridged Race - NCHS Code,FRACEBG_C,"01 = White
 02 = Black
 03 = American Indian/Alaskan Native
@@ -1515,7 +1515,7 @@ N = No, box for race not checked",,,,,,,,,,,,
 21 = Bridged White
 22 = Bridged Black
 23 = Bridged American Indian/Alaskan Native
-24 = Bridged Asian & Pacific Islander",,VRCPL,Observation-race-vr,,,,,,,,Observation-race-vr,
+24 = Bridged Asian & Pacific Islander",,VRCPL,Observation-race-vr,,,Need to discuss,,,,,Observation-race-vr,
 1638,Birth Infant Death,297,2152,2,Father's Bridged Race - NCHS Code,FRACEBG_C,"01 = White
 02 = Black
 03 = American Indian/Alaskan Native
@@ -1981,8 +1981,8 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN
 1374,Birth Infant Death,33,94,1,Mother's Education--Edit Flag,MEDUC_BYPASS,"0 = Edit Passed
 1 = Edit Failed, Data Queried and Verified
 2 = Edit Failed, Data Queried, but not Verified",,,,,,,,,,,,
-762,Natality,298,2154,15,Mother's Hispanic Origin - Specify,METHNIC_T,"Text, comma delimit multiple entries",,VRCPL,Observation-tabulated-ethnicity-vr,,,,,,,,Observation-tabulated-ethnicity-vr,
-1152,Fetal Death,335,4634,15,Mother's Hispanic Origin - Specify,METHNIC_T,"Text, comma delimit multiple entries",,VRCPL,Observation-tabulated-ethnicity-vr,,,,,,,,Observation-tabulated-ethnicity-vr,
+762,Natality,298,2154,15,Mother's Hispanic Origin - Specify,METHNIC_T,"Text, comma delimit multiple entries",,VRCPL,Observation-tabulated-ethnicity-vr,,,"Need to discuss, similar to FETHNIC_T",,,,,Observation-tabulated-ethnicity-vr,
+1152,Fetal Death,335,4634,15,Mother's Hispanic Origin - Specify,METHNIC_T,"Text, comma delimit multiple entries",,VRCPL,Observation-tabulated-ethnicity-vr,,,"Need to discuss, similar to FETHNIC_T",,,,,Observation-tabulated-ethnicity-vr,
 1639,Birth Infant Death,298,2154,15,Mother's Hispanic Origin - Specify,METHNIC_T,"Text, comma delimit multiple entries",,,,,,,,,,,,
 498,Natality,34,95,1,Mother of Hispanic Origin?--Mexican,METHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
@@ -2097,8 +2097,8 @@ Decision: BFDR should mimic VRDR",Needs work,FHIR-41389,odh-UsualWork,
 1488,Birth Infant Death,147,797,2,Date of Last Other Pregnancy Outcome--Month,MOPO,"01-12, 88, 99",,,,,,,,,,,,
 419,Surveillance,148,3495,10,Mother's Suffix,MOTHERSSUFFIX,,i,VRDR,DecedentMother,"name.suffix , name.use = official",string,-,,,,,DecedentMother,
 212,Mortality,200,3495,10,Mother's Suffix,MOTHERSSUFFIX,,i,VRDR,DecedentMother,"name.suffix , name.use = official",string,-,,,,,DecedentMother,
-763,Natality,299,2169,50,Mother's Race - Specify,MRACE_T,"Text, comma delimit multiple entries",,VRCPL,Observation-race-vr,,,,,,,,Observation-race-vr,
-1153,Fetal Death,336,4649,50,Mother's Race - Specify,MRACE_T,"Text, comma delimit multiple entries",,VRCPL,Observation-race-vr,,,,,,,,Observation-race-vr,
+763,Natality,299,2169,50,Mother's Race - Specify,MRACE_T,"Text, comma delimit multiple entries",,VRCPL,Observation-race-vr,,,"Need to discuss, similar to FRACE_T",,,,,Observation-race-vr,
+1153,Fetal Death,336,4649,50,Mother's Race - Specify,MRACE_T,"Text, comma delimit multiple entries",,VRCPL,Observation-race-vr,,,"Need to discuss, similar to FRACE_T",,,,,Observation-race-vr,
 1640,Birth Infant Death,299,2169,50,Mother's Race - Specify,MRACE_T,"Text, comma delimit multiple entries",,,,,,,,,,,,
 503,Natality,39,119,1,Mother's Race--White,MRACE1,"Y = Yes, box for race checked
 N = No, box for race not checked",,VRDR,InputRaceAndEthnicity,"component[ White].valueBoolean, subject=Reference[ PatientMotherVitalRecords ]",boolean,,,,,,Patient-mother-vr,
@@ -2242,7 +2242,7 @@ N = No, box for race not checked",,,,,,,,,,,,
 21 = Bridged White
 22 = Bridged Black
 23 = Bridged American Indian/Alaskan Native
-24 = Bridged Asian & Pacific Islander",,VRCPL,Observation-race-vr,,,,,,,,Observation-race-vr,
+24 = Bridged Asian & Pacific Islander",,VRCPL,Observation-race-vr,,,Need to discuss,,,,,Observation-race-vr,
 1148,Fetal Death,331,4624,2,Mother's Bridged Race - NCHS Code,MRACEBG_C,"01 = White
 02 = Black
 03 = American Indian/Alaskan Native
@@ -2261,7 +2261,7 @@ N = No, box for race not checked",,,,,,,,,,,,
 21 = Bridged White
 22 = Bridged Black
 23 = Bridged American Indian/Alaskan Native
-24 = Bridged Asian & Pacific Islander",,VRCPL,Observation-race-vr,,,,,,,,Observation-race-vr,
+24 = Bridged Asian & Pacific Islander",,VRCPL,Observation-race-vr,,,Need to discuss,,,,,Observation-race-vr,
 1635,Birth Infant Death,294,2144,2,Mother's Bridged Race - NCHS Code,MRACEBG_C,"01 = White
 02 = Black
 03 = American Indian/Alaskan Native
