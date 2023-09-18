@@ -97,7 +97,7 @@ Description: "The body of the death certificate document (Composition)."
 * insert BundleSectionSlice(DeathInvestigation, InjuryLocation,  0, 1, Injury  Location, Injury Location, InjuryLocation)
   // See https://jira.hl7.org/browse/FHIR-41807
   // * insert BundleSectionSlice(DeathInvestigation, PlaceOfInjury,  0, 1, PlaceOfInjury, PlaceOfInjury, PlaceOfInjury)
-* insert BundleSectionSlice(DeathInvestigation, InjuryIncident,  0, 1, InjuryIncident, InjuryIncident, InjuryIncident)
+* insert BundleSectionSlice(DeathInvestigation, InjuryIncident,  0, 1, InjuryIncident, InjuryIncident, InjuryIncidentNew)
 * insert BundleSectionSlice(DeathInvestigation, Autopsy,  0, 1, AutopsyPerformedIndicator, AutopsyPerformedIndicator, AutopsyPerformedIndicator)
 //* insert BundleSectionSlice(DeathInvestigation, DeathLocation,  0, 1, DeathLocation, DeathLocation, DeathLocation)
 * insert BundleSectionSlice(DeathInvestigation, DeathDate,  0, 1, DeathDate, DeathDate, ObservationDeathDateVitalRecordsNew)
