@@ -58,16 +58,16 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
   pOutputFile.puts pHeading
   pOutputFile.puts ""
 
-  pOutputFile.puts "| **#** |  **Description**   |  **IJE Name**  | **Profile**  | **IJE only** |  **Field**  |  **Type**  | **Value Set**  |"
-  pOutputFile.puts "| :---------: | --------------- | ------------ | ------------- | :------------: | ---------- | ---------- | -------------- |"
+  pOutputFile.puts "| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |"
+  pOutputFile.puts "| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |"
 
   pSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-    next if row[IJE_USECASE_COL].value.to_s != pRowFilter || row[IJE_PROFILE_COL].value.to_s == "not implemented"
+    next if row[IJE_USECASE_COL].value.to_s != pRowFilter #|| row[IJE_PROFILE_COL].value.to_s == "not implemented"
     
-    field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = ijeonly = fhirig = ""
+    field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = fhirig = ""
     field = row[IJE_FIELD_COL].value.to_s if row[IJE_FIELD_COL]
     ijename = row[IJE_NAME_COL].value.to_s if row[IJE_NAME_COL]
-    ijeonly = "x"  if row[IJE_ONLY_COL] && (row[IJE_ONLY_COL].to_s == "I" || row[IJE_ONLY_COL].to_s == "i")
+    #ijeonly = "x"  if row[IJE_ONLY_COL] && (row[IJE_ONLY_COL].to_s == "I" || row[IJE_ONLY_COL].to_s == "i")
     fhirig = row[IJE_FHIR_IG_COL].value.to_s if row[IJE_FHIR_IG_COL]
     #vProvOutputFilename = row[IJE_PROFILE_COL].value.to_s if row[IJE_PROFILE_COL]
 =begin
@@ -96,7 +96,7 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
     fhirencoding = row[IJE_FHIR_ENCODING_COL].value.to_s if row[IJE_FHIR_ENCODING_COL]   
     description = row[IJE_DESC_COL].value.to_s if row[IJE_DESC_COL]
     
-    pOutputFile.puts "| " + field.chomp + " | " + description.chomp + " | " + ijename + "| " + profile + "| " + ijeonly + "|" + fhirfield + " | " + fhirtype + " | " + fhirencoding + " | "
+    pOutputFile.puts "| " + field.chomp + " | " + description.chomp + " | " + ijename + "| " + profile + "|" + fhirfield + " | " + fhirtype + " | " + fhirencoding + " | "
   end
   pOutputFile.puts "{: .grid }"
   pOutputFile.puts "{% include markdown-link-references.md %}"
