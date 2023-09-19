@@ -3,13 +3,6 @@ Parent: USCorePatientProfile
 Id: Patient-mother-vr
 Title: "Patient - Mother Vital Records"
 Description: "This Patient profile represents the woman who gave birth to, or delivered the infant."
-* ^meta.versionId = "5"
-* ^meta.lastUpdated = "2022-10-13T01:57:07.271+00:00"
-* ^meta.source = "#sM53ivdnfx3VKegK"
-* ^contact.name = "HL7 International - Public Health"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://www.hl7.org/Special/committees/pher"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * extension[race] 1..
   * ^short = "If race is unknown, use UNK from the bound value set."
 * extension[ethnicity] 1..

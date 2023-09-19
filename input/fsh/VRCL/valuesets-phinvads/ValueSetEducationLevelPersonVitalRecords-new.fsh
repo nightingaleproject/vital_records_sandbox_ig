@@ -7,4 +7,4 @@ Description: "This value set contains codes that represent persons for whom educ
 * ^experimental = false
 * $loinc#87300-0 "Highest level of education Father"
 * $loinc#57712-2 "Highest level of education Mother"
-* $loinc#80913-7 "Highest level of education" //for decedent
+* $loinc#80913-7 "Highest level of education [US Standard Certificate of Death]"
