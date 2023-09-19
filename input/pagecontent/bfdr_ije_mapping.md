@@ -34,7 +34,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 218 | Abnormal Conditions of the Newborn--Birth Injury(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | BINJ| [not implemented]| |  |  | 
 | 251 | County of Birth (Literal) | BIRTH_CO| [PatientChildVitalRecords]|extension[patient-birthPlace].value[x].district | string |  | 
 | 352 | Blank for Future Expansion | BLANK| [not implemented]| |  |  | 
-| 353 | Blank for Jurisdictional Use Only | BLANK2| [not implemented]| |  |  | 
+| 353 | Blank for Jurisdictional Use Only | BLANK2| [not implemented]| |  | See [Note on Decedent Name] | 
 | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE| [EncounterBirth]|location.physicalType | codeable | [ValueSetBirthDeliveryOccurred] | 
 | 19 | Birthplace of Mother--Country | BPLACEC_CNT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].country  | string | [ResidenceCountryVS] | 
 | 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].state | string | [StatesTerritoriesAndProvincesVS] | 

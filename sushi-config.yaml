@@ -68,10 +68,8 @@ pages:
     title: MDI Content Transitions 
   bfdr_ije_mapping.md:
     title: BFDR Data Dictionary
-  DeathRecordDataDictionary.md:
-    title: Death Record Data Dictionary
-  MortalityRosterDataDictionary.md:
-    title: Mortality Roster Data Dictionary
+  vrdr_ije_mapping.md:
+    title: VRDR Data Dictionary
 
 
 #
@@ -106,8 +104,7 @@ menu:
     Usage: usage.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
-    Death Record Data Dictionary: DeathRecordDataDictionary.html
-    Mortality Roster Data Dictionary: MortalityRosterDataDictionary.html
+    VRDR Data Dictionary: vrdr_ije_mapping.html
     BFDR Data Dictionary: bfdr_ije_mapping.html
   VRDR: vrdr-content-transitions.html
   BFDR: bfdr-content-transitions.html
