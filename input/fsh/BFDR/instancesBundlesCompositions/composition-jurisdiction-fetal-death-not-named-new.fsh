@@ -3,9 +3,6 @@ InstanceOf: CompositionJurisdictionFetalDeathReportNew
 Title: "Composition - Jurisdiction Fetal Death Report - Fetus Not Named"
 Description: "Composition Jurisdiction Fetal Death Report: Fetus Not Named example"
 Usage: #example
-* meta
-  * versionId = "30"
-  * lastUpdated = "2023-06-23T04:55:55.993Z"
 * extension[Extension-fetal-death-report-number]
   //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
   * valueIdentifier

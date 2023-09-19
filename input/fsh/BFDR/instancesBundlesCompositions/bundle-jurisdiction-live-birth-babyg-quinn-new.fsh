@@ -3,9 +3,6 @@ InstanceOf: BundleDocumentBFDRNew
 Title: "Bundle - Jurisdiction Live Birth Report - Baby G Quinn"
 Description: "Bundle - Jurisdiction Live Birth Report: Baby G Quinn example"
 Usage: #example
-* meta
-  * versionId = "6"
-  * lastUpdated = "2023-07-07T02:39:34.819Z"
 * identifier
   * system = "urn:ietf:rfc:3986"
   * value = "urn:uuid:101bec42-b799-4f3d-9188-b9cb376cc094"

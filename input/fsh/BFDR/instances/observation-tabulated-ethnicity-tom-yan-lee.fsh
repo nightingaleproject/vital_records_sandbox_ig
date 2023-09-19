@@ -4,8 +4,6 @@ Title: "Observation - Tabulated Ethnicity - Vital Records - Tom Yan Lee"
 Description: "Observation - Tabulated Ethnicity - Vital Records: Tom Yan Lee example"
 Usage: #example
 * meta
-  * versionId = "2"
-  * lastUpdated = "2023-04-06T00:31:29.516Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"
 * status = #final
 * code = $loinc#80978-0 "Tabulated ethnicity [CDC]"

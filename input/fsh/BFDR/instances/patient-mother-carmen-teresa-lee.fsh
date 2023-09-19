@@ -4,8 +4,6 @@ Title: "Patient - Mother - Vital Records - Carmen Teresa Lee"
 Description: "Patient - Mother - Vital Records: Carmen Teresa Lee example"
 Usage: #example
 * meta
-  * versionId = "13"
-  * lastUpdated = "2023-07-07T02:36:09.888Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"
 * extension[0]
   * extension[0]

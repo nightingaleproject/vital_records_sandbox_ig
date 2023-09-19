@@ -3,9 +3,6 @@ InstanceOf: CapabilityStatement
 Title: "CapabilityStatement - Birth and Fetal Death"
 Description: "This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents."
 Usage: #definition
-* meta
-  * versionId = "4"
-  * lastUpdated = "2021-04-21T03:55:32.892Z"
 * url = "http://hl7.org/fhir/us/bfdr/CapabilityStatement/CapabilityStatement-bfdr"
 * version = "1.0.0"
 * name = "CapabilityStatementBFDR"

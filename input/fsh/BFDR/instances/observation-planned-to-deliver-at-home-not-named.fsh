@@ -3,9 +3,6 @@ InstanceOf: ObservationPlannedToDeliverAtHome
 Title: "Observation - Planned to Delivery at Home - Fetus Not Named"
 Description: "Observation - Planned to Delivery at Home: Fetus Not Named example"
 Usage: #example
-* meta
-  * versionId = "3"
-  * lastUpdated = "2023-04-06T00:31:12.130Z"
 * status = #final
 * code = $loinc#73765-0 "Mother Planned to deliver at home [US Standard Certificate of Live Birth]"
   * text = "Planned to deliver at home?"

@@ -3,9 +3,6 @@ InstanceOf: Organization
 Title: "US Core Organization - South Hospital"
 Description: "US Core Organization: South Hospital example"
 Usage: #example
-* meta
-  * versionId = "4"
-  * lastUpdated = "2023-06-22T01:57:18.652Z"
 * identifier
   * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "5555512"

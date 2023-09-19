@@ -3,9 +3,6 @@ InstanceOf: ObservationNoneOfSpecifiedMaternalMorbidities
 Title: "Observation - None Of Specified Maternal Morbidities - Jada Ann Quinn"
 Description: "Observation - None Of Specified Maternal Morbidities: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2023-06-21T06:58:59.526Z"
 * status = #final
 * code = $loinc#73781-7 "Maternal morbidity [US Standard Certificate of Live Birth]"
   * text = "Maternal morbidity [US Standard Certificate of Live Birth]"

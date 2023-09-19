@@ -3,9 +3,6 @@ InstanceOf: ObservationEditFlagMothersPrepregnancyWeight
 Title: "Observation - Edit Flag Mother's Prepregnancy Weight - Decedent Not Named"
 Description: "Observation - Edit Flag Mother's Prepregnancy Weight: Fetus Not Named example"
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2023-06-23T04:08:59.910Z"
 * status = #final
 * code = urn:oid:2.16.840.1.114222.4.5.274#PHC1486 "Mothers Prepregnancy Weight Edit flag"
 * subject

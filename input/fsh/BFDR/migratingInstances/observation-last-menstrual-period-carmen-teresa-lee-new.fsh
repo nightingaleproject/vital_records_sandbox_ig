@@ -3,9 +3,7 @@ InstanceOf: ObservationLastMenstrualPeriodNew
 Title: "Observation - Last Menstrual Period - Carmen Teresa Lee"
 Description: "Observation - Last Menstrual Period: Carmen Teresa Lee example"
 Usage: #example
-* meta
-  * versionId = "5"
-  * lastUpdated = "2023-04-06T00:30:04.904Z"
+// * meta
   //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"
 * status = #final
 * code = $loinc#8665-2 "Last menstrual period start date"

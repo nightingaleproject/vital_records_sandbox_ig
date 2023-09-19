@@ -3,9 +3,6 @@ InstanceOf: CompositionJurisdictionLiveBirthReportNew
 Title: "Composition - Jurisdiction Live Birth Report - BabyG Quinn"
 Description: "Composition - Jurisdiction Live Birth Report: BabyG Quinn example"
 Usage: #example
-* meta
-  * versionId = "36"
-  * lastUpdated = "2023-07-05T02:42:07.848Z"
 * extension[Extension-live-birth-certificate-number]
   * valueIdentifier
     * type = $v2-0203#BCT

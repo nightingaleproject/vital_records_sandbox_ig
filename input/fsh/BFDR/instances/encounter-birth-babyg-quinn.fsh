@@ -3,9 +3,6 @@ InstanceOf: EncounterBirth
 Title: "Encounter - Birth - Baby G Quinn"
 Description: "Encounter - Birth: Baby G Quinn example"
 Usage: #example
-* meta
-  * versionId = "12"
-  * lastUpdated = "2021-05-14T11:49:47.073Z"
 * identifier
   * system = "http://hospital.smarthealthit.org"
   * value = "9937012"

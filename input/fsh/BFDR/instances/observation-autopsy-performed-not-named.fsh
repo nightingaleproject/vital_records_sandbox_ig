@@ -4,8 +4,6 @@ Title: "Observation - Autopsy Performed - Fetus Not Named"
 Description: "Observation - Autopsy Performed: Fetus Not Named example"
 Usage: #example
 * meta
-  * versionId = "8"
-  * lastUpdated = "2023-06-21T10:11:10.739Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"
 * status = #final
 * code = $loinc#85699-7 "Autopsy was performed"

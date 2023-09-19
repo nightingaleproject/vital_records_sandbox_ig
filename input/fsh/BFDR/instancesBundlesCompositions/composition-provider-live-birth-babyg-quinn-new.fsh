@@ -3,9 +3,6 @@ InstanceOf: CompositionProviderLiveBirthReportNew
 Title: "Composition - Provider Live Birth Report - BabyG Quinn"
 Description: "Composition - Provider Live Birth Report: BabyG Quinn example"
 Usage: #example
-* meta
-  * versionId = "30"
-  * lastUpdated = "2023-07-05T02:42:08.163Z"
 * extension[Extension-live-birth-certificate-number]
   * valueIdentifier
     * type = $v2-0203#BCT

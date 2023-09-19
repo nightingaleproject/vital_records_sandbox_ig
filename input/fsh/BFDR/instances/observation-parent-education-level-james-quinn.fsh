@@ -4,8 +4,6 @@ Title: "Observation - Parent Education Level - James Quinn"
 Description: "Observation - Parent Education Level: James Quinn example"
 Usage: #example
 * meta
-  * versionId = "8"
-  * lastUpdated = "2023-04-06T00:30:57.414Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"
 * status = #final
 * code = $loinc#87300-0 "Highest level of education Father"

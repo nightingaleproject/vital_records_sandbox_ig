@@ -4,8 +4,6 @@ Title: "RelatedPerson - Father Natural - Vital Records - James Brandon Quinn"
 Description: "RelatedPerson - Father Natural - Vital Records: James Brandon Quinn example"
 Usage: #example
 * meta
-  * versionId = "8"
-  * lastUpdated = "2023-04-06T00:33:56.437Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"
 * extension[0]
   * extension[0]

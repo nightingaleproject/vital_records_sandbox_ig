@@ -3,9 +3,6 @@ InstanceOf: Questionnaire
 Title: "Questionnaire - Patient's Fetal Death Worksheet"
 Description: "This Questionnaire represents the [Patient's Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)."
 Usage: #example
-* meta
-  * versionId = "12"
-  * lastUpdated = "2021-07-09T07:23:29.708Z"
 * url = "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-patients-fetal-death"
 * version = "1.0.0"
 * name = "QuestionnairePatientsFetalDeathWorksheet"

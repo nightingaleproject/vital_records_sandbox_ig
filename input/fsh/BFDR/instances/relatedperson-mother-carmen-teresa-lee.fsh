@@ -4,8 +4,6 @@ Title: "RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee"
 Description: "RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee example"
 Usage: #example
 * meta
-  * versionId = "10"
-  * lastUpdated = "2023-04-06T00:33:56.436Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr"
 * extension[0]
   * extension[0]

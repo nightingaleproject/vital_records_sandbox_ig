@@ -4,8 +4,6 @@ Title: "RelatedPerson - Father Natural - Vital Records - Tom Yan Lee"
 Description: "RelatedPerson - Father Natural - Vital Records - Tom Yan Lee example"
 Usage: #example
 * meta
-  * versionId = "9"
-  * lastUpdated = "2023-04-06T00:33:56.435Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"
 * extension[0]
   * extension[0]

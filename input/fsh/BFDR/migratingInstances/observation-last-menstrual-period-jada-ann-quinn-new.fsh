@@ -3,9 +3,7 @@ InstanceOf: ObservationLastMenstrualPeriodNew
 Title: "Observation - Last Menstrual Period - Jada Ann Quinn"
 Description: "Observation - Last Menstrual Period: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "5"
-  * lastUpdated = "2023-04-06T00:30:04.911Z"
+// * meta
   //TODO this will have to change
   //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"
 * status = #final

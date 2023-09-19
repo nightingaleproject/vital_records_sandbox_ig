@@ -3,9 +3,6 @@ InstanceOf: BundleDocumentBFDRNew
 Title: "Bundle - Provider Live Birth - Baby G Quinn"
 Description: "Bundle - Provider Live Birth: Baby G Quinn example"
 Usage: #example
-* meta
-  * versionId = "4"
-  * lastUpdated = "2023-07-07T02:39:35.768Z"
 * identifier
   * system = "urn:ietf:rfc:3986"
   * value = "urn:uuid:18825bb1-1acb-48c4-9b45-baa612640ba5"

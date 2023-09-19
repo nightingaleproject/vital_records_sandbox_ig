@@ -3,9 +3,6 @@ InstanceOf: USCoreLocation
 Title: "US Core Location - South Hospital"
 Description: "US Core Location: South Hospital example"
 Usage: #example
-* meta
-  * versionId = "3"
-  * lastUpdated = "2023-07-04T09:56:47.907Z"
 * identifier
   * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "116441967701"

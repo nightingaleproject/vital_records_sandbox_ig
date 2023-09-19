@@ -3,9 +3,7 @@ InstanceOf: ObservationMotherHeightNew
 Title: "Observation - Mother Height - Carmen Teresa Lee"
 Description: "Observation - Mother Height: Carmen Teresa Lee example"
 Usage: #example
-* meta
-  * versionId = "6"
-  * lastUpdated = "2023-04-06T00:30:15.636Z"
+// * meta
   //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height-vr"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

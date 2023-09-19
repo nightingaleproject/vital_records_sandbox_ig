@@ -4,8 +4,6 @@ Title: "Patient - Child - Vital Records - Baby G Quinn"
 Description: "Patient - Child - Vital Records: BabyG Quinn example"
 Usage: #example
 * meta
-  * versionId = "15"
-  * lastUpdated = "2023-06-23T05:04:58.811Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"
 * extension[0]
   * extension[0]

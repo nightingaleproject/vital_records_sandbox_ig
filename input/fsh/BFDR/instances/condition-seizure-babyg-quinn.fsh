@@ -3,9 +3,6 @@ InstanceOf: ConditionSeizure
 Title: "Condition - Seizure - BabyG Quinn"
 Description: "Condition - Seizure: BabyG Quinn example"
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2023-06-21T07:30:58.314Z"
 * category = $condition-category#problem-list-item "Problem List Item"
 * code = $sct#91175000 "Seizure (finding)"
   * text = "Seizure (finding)"

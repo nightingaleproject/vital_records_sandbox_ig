@@ -3,9 +3,7 @@ InstanceOf: ObservationBirthWeightNew
 Title: "Observation - Birth Weight - Fetus Not Named"
 Description: "Observation - Birth Weight: Fetus Not Named example"
 Usage: #example
-* meta
-  * versionId = "8"
-  * lastUpdated = "2023-04-06T00:25:56.512Z"
+// * meta
   //should have a meta.profile
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

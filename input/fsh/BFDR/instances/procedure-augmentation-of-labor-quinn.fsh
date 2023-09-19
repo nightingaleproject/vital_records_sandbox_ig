@@ -3,9 +3,6 @@ InstanceOf: ProcedureAugmentationOfLabor
 Title: "Procedure - Augmentation of Labor - Jada Ann Quinn"
 Description: "Procedure - Augmentation of Labor: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "2"
-  * lastUpdated = "2023-06-21T09:34:27.183Z"
 * status = #completed
 * code = $sct#237001001 "Augmentation of labor (procedure)"
 * subject

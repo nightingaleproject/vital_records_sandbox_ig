@@ -3,9 +3,6 @@ InstanceOf: ProcedureFinalRouteMethodDelivery
 Title: "Procedure - Final Route and Method of Delivery - Baby G Quinn"
 Description: "Procedure - Final Route and Method of Delivery: Baby G Quinn example"
 Usage: #example
-* meta
-  * versionId = "3"
-  * lastUpdated = "2021-07-12T05:05:15.836Z"
 * status = #completed
 * code = $sct#11466000 "Cesarean section"
   * text = "Cesarean section"

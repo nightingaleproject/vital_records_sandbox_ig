@@ -3,9 +3,6 @@ InstanceOf: ProcedureAssistedVentilationMoreThanSixHours
 Title: "Procedure - Assisted Ventilation More Than Six Hours - BabyG Quinn"
 Description: "Procedure - Assisted Ventilation More Than Six Hours: BabyG Quinn example"
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2023-06-21T06:41:21.937Z"
 * status = #completed
 * code = urn:oid:2.16.840.1.114222.4.5.274#PHC1251 "Surfactant replacement therapy (procedure)"
 * subject

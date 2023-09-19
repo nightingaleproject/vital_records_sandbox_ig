@@ -4,8 +4,6 @@ Title: "Observation - Tabulated Ethnicity - Vital Records - Jada Ann Quinn"
 Description: "Observation - Tabulated Ethnicity - Vital Records: Jada Ann Quinn example"
 Usage: #example
 * meta
-  * versionId = "11"
-  * lastUpdated = "2023-06-19T10:45:01.276Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"
 * status = #final
 * code = $loinc#80978-0 "Tabulated ethnicity [CDC]"

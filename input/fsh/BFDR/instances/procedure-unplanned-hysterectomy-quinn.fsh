@@ -3,9 +3,6 @@ InstanceOf: ProcedureUnplannedHysterectomy
 Title: "Procedure Unplanned Hysterectomy - Jada Ann Quinn"
 Description: "Procedure Unplanned Hysterectomy: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "2"
-  * lastUpdated = "2023-06-21T09:34:26.767Z"
 * status = #completed
 * code = $sct#236987005 "Emergency cesarean hysterectomy (procedure)"
 * subject

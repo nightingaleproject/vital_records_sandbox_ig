@@ -3,9 +3,7 @@ InstanceOf: ObservationMotherHeightNew
 Title: "Observation - Mother Height - Jada Ann Quinn"
 Description: "Observation - Mother Height: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "8"
-  * lastUpdated = "2023-04-06T00:30:15.637Z"
+// * meta
   //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height-vr"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

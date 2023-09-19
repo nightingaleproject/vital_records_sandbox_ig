@@ -3,9 +3,6 @@ InstanceOf: QuestionnaireResponse
 Title: "QuestionnaireResponse - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn"
 Description: "Questionnaire - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn"
 Usage: #example
-* meta
-  * versionId = "11"
-  * lastUpdated = "2023-06-21T21:34:58.869Z"
 * questionnaire = "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"
 * status = #completed
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"

@@ -3,9 +3,7 @@ InstanceOf: ObservationMotherPrepregnancyWeightNew
 Title: "Observation - Mother Prepregnancy Weight - Carmen Teresa Lee"
 Description: "Observation - Mother Prepregnancy Weight: Carmen Teresa Lee example"
 Usage: #example
-* meta
-  * versionId = "6"
-  * lastUpdated = "2023-04-06T00:30:24.888Z"
+// * meta
   //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight-vr"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

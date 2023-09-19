@@ -3,9 +3,6 @@ InstanceOf: ObservationAntibioticsAdministeredDuringLabor
 Title: "Observation - Antibiotics Administered During Labor - Jada Ann Quinn"
 Description: "Observation - Antibiotics Administered During Labor: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "2"
-  * lastUpdated = "2023-06-21T10:13:02.267Z"
 * status = #final
 * code = $loinc#73813-8 "Characteristics of labor and delivery [US Standard Certificate of Live Birth]"
   * text = "Characteristics of labor and delivery"

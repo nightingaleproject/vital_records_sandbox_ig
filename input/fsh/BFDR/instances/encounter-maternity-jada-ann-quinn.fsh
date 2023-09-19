@@ -3,9 +3,6 @@ InstanceOf: Encounter_Maternity
 Title: "Encounter - Maternity - Jada Ann Quinn"
 Description: "Encounter - Maternity: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "14"
-  * lastUpdated = "2021-05-14T11:49:47.073Z"
 * identifier
   * system = "http://hospital.smarthealthit.org"
   * value = "9937012"

@@ -4,8 +4,6 @@ Title: "Patient - Decedent Fetus - Vital Records - Fetus Not Named"
 Description: "Patient - Decedent Fetus - Vital Records: Fetus Not Named example"
 Usage: #example
 * meta
-  * versionId = "11"
-  * lastUpdated = "2023-06-23T03:47:32.863Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"
 * extension[0]
   * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"

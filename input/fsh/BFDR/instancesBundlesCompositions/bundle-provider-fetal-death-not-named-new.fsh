@@ -3,9 +3,6 @@ InstanceOf: BundleDocumentBFDRNew
 Title: "Bundle - Provider Fetal Death Report - Fetus Not Named"
 Description: "Bundle - Provider Fetal Death Report: Fetus Not Named example"
 Usage: #example
-* meta
-  * versionId = "3"
-  * lastUpdated = "2023-07-07T02:39:35.171Z"
 * identifier
   * system = "urn:ietf:rfc:3986"
   * value = "urn:uuid:93bdc9cf-0d97-4b6f-9f11-876d8ea115eb"

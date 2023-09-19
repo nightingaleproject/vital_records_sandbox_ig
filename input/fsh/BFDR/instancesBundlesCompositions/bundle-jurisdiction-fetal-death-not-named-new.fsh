@@ -7,9 +7,6 @@ InstanceOf: BundleDocumentBFDRNew
 Title: "Bundle - Jurisdiction Fetal Death Report - Fetus Not Named"
 Description: "Bundle - Jurisdiction Fetal Death Report: Fetus Not Named example"
 Usage: #example
-* meta
-  * versionId = "48"
-  * lastUpdated = "2023-07-07T02:39:34.215Z"
 * identifier
   * system = "urn:ietf:rfc:3986"
   * value = "urn:uuid:9eeb1854-dee1-470a-9534-5cb25e18a323"

@@ -3,9 +3,6 @@ InstanceOf: ProcedureAssistedVentilationFollowingDelivery
 Title: "Procedure - Assisted Ventilation Following Delivery - BabyG Quinn"
 Description: "Procedure - Assisted Ventilation Following Delivery: BabyG Quinn example"
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2023-06-21T06:48:34.272Z"
 * status = #completed
 * code = urn:oid:2.16.840.1.114222.4.5.274#PHC1250 "Surfactant replacement therapy (procedure)"
 * subject

@@ -3,9 +3,6 @@ InstanceOf: ObservationMethodOfDisposition
 Title: "Observation - Method of Disposition - Fetus Not Named"
 Description: "Observation - Method of Disposition: Fetus Not Named example"
 Usage: #example
-* meta
-  * versionId = "3"
-  * lastUpdated = "2023-04-06T00:30:15.636Z"
 * status = #final
 * code = $loinc#88241-5 "Fetal remains disposition method"
 * subject

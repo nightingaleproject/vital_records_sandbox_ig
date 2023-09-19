@@ -4,8 +4,6 @@ Title: "Observation - Parent Education Level - Jada Ann Quinn"
 Description: "Observation - Parent Education Level: Jada Ann Quinn example"
 Usage: #example
 * meta
-  * versionId = "8"
-  * lastUpdated = "2023-07-07T01:18:09.890Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"
 * status = #final
 * code = $loinc#57712-2 "Highest level of education Mother"

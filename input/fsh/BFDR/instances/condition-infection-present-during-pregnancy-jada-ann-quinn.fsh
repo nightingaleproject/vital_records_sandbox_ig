@@ -3,9 +3,6 @@ InstanceOf: ConditionInfectionPresentDuringPregnancy
 Title: "Condition - Infection Present During Pregnancy - Jada Ann Quinn"
 Description: "Condition - Infection Present During Pregnancy: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "4"
-  * lastUpdated = "2023-04-18T10:29:15.476Z"
 * category[0] = $condition-category#problem-list-item "Problem List Item"
 * category[+] = $loinc#72519-2 "Infections present AndOr treated during this pregnancy for live birth [US Standard Certificate of Live Birth]"
 * code = $sct#105629000 "Chlamydial infection (disorder)"

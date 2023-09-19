@@ -3,9 +3,6 @@ InstanceOf: CompositionProviderFetalDeathReportNew
 Title: "Composition - Provider Fetal Death Report - Fetus Not Named"
 Description: "Composition - Provider Fetal Death Report: Fetus Not Named"
 Usage: #example
-* meta
-  * versionId = "16"
-  * lastUpdated = "2023-06-21T22:11:58.756Z"
 * extension[Extension-fetal-death-report-number]
   * valueIdentifier
     * type = $v2-0203#FDR

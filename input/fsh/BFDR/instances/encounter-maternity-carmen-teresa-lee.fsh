@@ -3,9 +3,6 @@ InstanceOf: Encounter_Maternity
 Title: "Encounter - Maternity - Carmen Teresa Lee"
 Description: "Encounter - Maternity: Carmen Teresa Lee example"
 Usage: #example
-* meta
-  * versionId = "7"
-  * lastUpdated = "2021-05-14T11:49:47.065Z"
 * identifier
   * system = "http://hospital.smarthealthit.org"
   * value = "8937015"

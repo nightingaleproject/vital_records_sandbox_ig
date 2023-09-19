@@ -3,9 +3,6 @@ InstanceOf: ProcedureObstetric
 Title: "Procedure - Obstetric Procedure - Jada Ann Quinn"
 Description: "Procedure - Obstetric Procedure: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "2"
-  * lastUpdated = "2020-08-21T02:21:10.455Z"
 * status = #completed
 * code = $sct#240278000 "External cephalic version (procedure)"
   * text = "External cephalic version: Failed"

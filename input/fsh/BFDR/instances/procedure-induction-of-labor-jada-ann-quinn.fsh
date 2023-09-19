@@ -3,9 +3,6 @@ InstanceOf: ProcedureInductionOfLabor
 Title: "Procedure - Induction of Labor - Jada Ann Quinn"
 Description: "Procedure - Induction of Labor: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2023-04-25T05:53:41.404Z"
 * status = #completed
 * code = $sct#236958009 "Induction of labor (procedure)"
 * subject

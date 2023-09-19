@@ -3,9 +3,6 @@ InstanceOf: ObservationLaborTrialAttempted
 Title: "Observation - Labor Trial Attempted - Baby G Quinn"
 Description: "Observation - Labor Trial Attempted: Baby G Quinn example"
 Usage: #example
-* meta
-  * versionId = "3"
-  * lastUpdated = "2023-04-06T00:30:04.883Z"
 * status = #final
 * code = $loinc#73760-1 "If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]"
   * text = "If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]"

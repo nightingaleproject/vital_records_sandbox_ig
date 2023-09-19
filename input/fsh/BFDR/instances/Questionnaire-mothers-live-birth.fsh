@@ -3,9 +3,6 @@ InstanceOf: Questionnaire
 Title: "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
 Description: "This Questionnaire represents the [Mother's Worksheet for Child's Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)."
 Usage: #example
-* meta
-  * versionId = "11"
-  * lastUpdated = "2023-04-06T00:35:49.604Z"
 * url = "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"
 * version = "1.0.0"
 * name = "QuestionnaireMothersWorksheetChildsBirthCertificate"

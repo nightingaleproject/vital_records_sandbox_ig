@@ -4,8 +4,6 @@ Title: "Observation - Pregnancy Risk Factor - Jada Ann Quinn: Deliveries by Cesa
 Description: "Observation - Pregnancy Risk Factor: Jada Ann Quinn: Deliveries by Cesarean example"
 Usage: #example
 * meta
-  * versionId = "9"
-  * lastUpdated = "2023-06-21T09:17:18.986Z"
   * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr"
 * status = #final
 * code = $loinc#73775-9 "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"

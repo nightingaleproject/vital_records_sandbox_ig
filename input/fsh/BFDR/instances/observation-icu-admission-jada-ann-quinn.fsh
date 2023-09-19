@@ -3,9 +3,6 @@ InstanceOf: ObservationICUAdmission
 Title: "Observation - ICU Admission - Jada Ann Quinn"
 Description: "Observation - ICU Admission: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2023-06-21T07:21:10.506Z"
 * status = #final
 * code = $loinc#73781-7 "Maternal morbidity [US Standard Certificate of Live Birth]"
   * text = "Maternal morbidity [US Standard Certificate of Live Birth]"
