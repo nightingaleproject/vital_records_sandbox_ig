@@ -77,7 +77,7 @@ Description: "The body of the death certificate document (Composition)."
 * insert CompositionSectionEntrySlicing(DecedentDisposition)
 * insert CompositionSectionEntrySlicing(CodedContent)
 //
-* insert BundleSectionSlice(DecedentDemographics, Decedent, 1, 1, Decedent, Decedent, Decedent)
+* insert BundleSectionSlice(DecedentDemographics, Decedent, 1, 1, Decedent, Decedent, DecedentNew)
 * insert BundleSectionSlice(DecedentDemographics, Father,  0, 1, DecedentFather, DecedentFather, DecedentFather)
 * insert BundleSectionSlice(DecedentDemographics, Mother,  0, 1, DecedentMother, DecedentMother, DecedentMother)
 * insert BundleSectionSlice(DecedentDemographics, Spouse,  0, 1, DecedentSpouse, DecedentSpouse, DecedentSpouse)
