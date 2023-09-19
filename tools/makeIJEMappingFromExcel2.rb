@@ -1,5 +1,5 @@
 # ruby tools/makeIJEMappingFromExcel2.rb input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx
-# output files: generated/bfdr/ije_mapping.md
+# output files: generated/dataDictionaries/bfdr_ije_mapping.md, generated/dataDictionaries/vrdr_ije_mapping.md
 
 require "json"
 require "pry"
@@ -36,9 +36,10 @@ IJE_FHIR_ENCODING_COL = 13
 puts ARGV[0]
 
 vSpreadsheet = open_spreadsheet(ARGV[0])
-#vSpreadsheet.default_sheet = "Combined Tabs"#
+
 vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
-vOutputFilename = "/generated/BFDR/bfdr_ije_mapping.md"
+
+vOutputFilename = "/generated/dataDictionaries/bfdr_ije_mapping.md"
 puts vOutputFilename
 vOutputFile = File.open(Dir.pwd + vOutputFilename, "w")
 
@@ -104,3 +105,10 @@ end
 
 createMappingTable( "Natality", "### Natality (Live Birth) IJE Mapping", vOutputFile, vSpreadsheet)
 createMappingTable( "Fetal Death", "### Fetal Death IJE Mapping", vOutputFile, vSpreadsheet)
+
+vOutputFilename2 = "/generated/dataDictionaries/vrdr_ije_mapping.md"
+puts vOutputFilename2
+vOutputFile2 = File.open(Dir.pwd + vOutputFilename2, "w")
+vOutputFile2.puts ""
+createMappingTable( "Mortality", "### Death Record IJE Mapping", vOutputFile2, vSpreadsheet)
+createMappingTable( "Mortality Roster", "### Mortality Roster IJE Mapping", vOutputFile2, vSpreadsheet)
