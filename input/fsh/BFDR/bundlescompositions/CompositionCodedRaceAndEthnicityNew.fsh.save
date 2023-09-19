@@ -3,13 +3,6 @@ Parent: Composition
 Id: Composition-coded-race-and-ethnicity
 Title: "Composition - Coded Race and Ethnicity"
 Description: "This profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office."
-* ^meta.versionId = "48"
-* ^meta.lastUpdated = "2023-04-25T05:58:07.505+00:00"
-* ^meta.source = "#2KWIwNYbZY7yxG9i"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * extension 1..
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "url"

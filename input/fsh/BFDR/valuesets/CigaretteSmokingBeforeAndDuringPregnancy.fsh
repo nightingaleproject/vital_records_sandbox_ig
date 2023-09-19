@@ -2,11 +2,6 @@ ValueSet: CigaretteSmokingBeforeAndDuringPregnancy
 Id: cigarette-smoking-before-during-pregnancy
 Title: "Cigarette Smoking Before and During Pregnancy"
 Description: "This value set contains codes to determine the number of cigarettes smoked in specific periods before and during pregnancy."
-* ^meta.versionId = "5"
-* ^meta.lastUpdated = "2023-02-16T15:18:01.777+00:00"
-* ^meta.source = "#Vu6DL6XmYYEjRayK"
-* ^status = #active
-* ^experimental = false
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 * $loinc#64794-1 "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
 * $loinc#87298-6 "Cigarettes smoked per day by Mother--1st trimester"

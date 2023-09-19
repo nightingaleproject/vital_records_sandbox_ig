@@ -3,12 +3,6 @@ Parent: Observation
 Id: Observation-edit-flag-estimate-of-gestation
 Title: "Observation - Edit Flag Estimate of Gestation"
 Description: "This profile indicates whether the original estimate of gestation data provided passed validation checks."
-* ^meta.versionId = "7"
-* ^meta.lastUpdated = "2023-04-25T05:50:00.555+00:00"
-* ^meta.source = "#k7FrfM4rvZjNgQDM"
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * code 1..1 MS
 * code = urn:oid:2.16.840.1.114222.4.5.274#PHC1481
   * ^short = "Estimate of Gestation edit flag"

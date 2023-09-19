@@ -2,13 +2,6 @@ Profile: CompositionJurisdictionFetalDeathReportNew
 Parent: Composition
 Title: "Composition - Jurisdiction Fetal Death Report"
 Description: "This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to the national statistics agency."
-* ^meta.versionId = "91"
-* ^meta.lastUpdated = "2023-04-25T05:58:08.478+00:00"
-* ^meta.source = "#j0OxusUqyrK7XV3P"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * extension 1.. 
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "url"

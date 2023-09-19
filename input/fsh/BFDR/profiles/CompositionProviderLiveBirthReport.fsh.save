@@ -3,13 +3,6 @@ Parent: Composition
 Id: Composition-provider-live-birth-report
 Title: "Composition - Provider Live Birth Report"
 Description: "This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdictional Vital Records Office."
-* ^meta.versionId = "122"
-* ^meta.lastUpdated = "2023-04-25T05:58:10.694+00:00"
-* ^meta.source = "#lJBfz5Hvg95xSLS7"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * . ^short = "Provider Live Birth Report"
 * extension MS
   * ^slicing.discriminator.type = #value
