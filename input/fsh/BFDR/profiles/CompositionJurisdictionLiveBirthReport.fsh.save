@@ -3,13 +3,6 @@ Parent: Composition
 Id: Composition-jurisdiction-live-birth-report
 Title: "Composition - Jurisdiction Live Birth Report"
 Description: "This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to the national statistics agency."
-* ^meta.versionId = "109"
-* ^meta.lastUpdated = "2023-04-25T05:58:09.079+00:00"
-* ^meta.source = "#POHh5pjMTdqg9crJ"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * . ^short = "Jurisdiction Live Birth Report"
 * extension 1.. MS
   * ^slicing.discriminator.type = #value
@@ -154,7 +147,7 @@ Description: "This Composition profile contains information of a live birth and 
       obstetricProcedures 1..1 MS and
       fetalPresentation 0..1 MS and
       finalRouteMethodDelivery 0..1 MS
-  * entry[pregnancyRiskFactors] only Reference(ConditionPrepregnancyDiabetesVitalRecords or ConditionGestationalDiabetesVitalRecords or ConditionPrepregnancyHypertensionVitalRecords or ConditionGestationalHypertensionVitalRecords or ConditionEclampsiaHypertensionVitalRecords or ObservationPreviousPretermBirthVitalRecords or ProcedureInfertilityTreatmentVitalRecords or ProcedureArtificialInseminationVitalRecords or ProcedureAssisstedFertilizationVitalRecords or ObservationPreviousCesareanVitalRecords or ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords)
+  * entry[pregnancyRiskFactors] only Reference(ConditionPrepregnancyDiabetesVitalRecords or ConditionGestationalDiabetesVitalRecords or ConditionPrepregnancyHypertensionVitalRecords or ConditionGestationalHypertensionVitalRecords or ConditionEclampsiaHypertensionVitalRecords or ObservationPreviousPretermBirthVitalRecords or ProcedureInfertilityTreatmentVitalRecords or ProcedureArtificialInseminationVitalRecords or ProcedureassistedFertilizationVitalRecords or ObservationPreviousCesareanVitalRecords or ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords)
     * ^sliceName = "pregnancyRiskFactors"
     * ^short = "Risk factors in this pregnancy"
     * ^definition = "Selected medical risk factors of the mother during this pregnancy"
@@ -221,7 +214,7 @@ Description: "This Composition profile contains information of a live birth and 
     * ^definition = "Plurality – The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.)"
   * entry[numberLiveBirthsThisDelivery] only Reference(ObservationNumberLiveBirthsThisDeliveryVitalRecords)
     * ^short = "Number of live births this delivery"
-  * entry[abnormalConditionsNewborn] only Reference(ProcedureAssisstedVentilationFollowingDelivery or ProcedureAssisstedVentilationMoreThanSixHours or ObservationNICUAdmission or ProcedureSurfactantReplacementTherapy or ProcedureAntibioticSuspectedNeonatalSepsis or ConditionSeizure or ConditionBirthInjury or ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn)
+  * entry[abnormalConditionsNewborn] only Reference(ProcedureassistedVentilationFollowingDelivery or ProcedureassistedVentilationMoreThanSixHours or ObservationNICUAdmission or ProcedureSurfactantReplacementTherapy or ProcedureAntibioticSuspectedNeonatalSepsis or ConditionSeizure or ConditionBirthInjury or ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn)
     * ^sliceName = "abnormalConditionsNewborn"
     * ^short = "Abnormal conditions of the newborn"
     * ^definition = "Disorders or significant morbidity experienced by the newborn infant"

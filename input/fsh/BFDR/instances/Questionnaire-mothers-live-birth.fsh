@@ -1,15 +1,8 @@
-RuleSet: definition(deffield, profile, field )
-* {deffield} = "{profile}#{field}"
-
 Instance: Questionnaire-mothers-live-birth
 InstanceOf: Questionnaire
 Title: "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
 Description: "This Questionnaire represents the [Mother's Worksheet for Child's Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)."
 Usage: #example
-* meta
-  * versionId = "11"
-  * lastUpdated = "2023-04-05T20:35:49.604+00:00"
-  * source = "#Ed1MWMM2dST0uSYm"
 * url = "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"
 * version = "1.0.0"
 * name = "QuestionnaireMothersWorksheetChildsBirthCertificate"
@@ -201,8 +194,7 @@ Usage: #example
     * type = #string
 * item[+]
   * linkId = "mother-education"
-  * insert definition(definition, Canonical(ObservationParentEducationLevelVitalRecords\), Observation.value)
-  //* definition = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr#Observation.value"
+  * definition = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr#Observation.value"
   * code = $loinc#57712-2 "Highest level of education Mother"
   * prefix = "8"
   * text = "What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received)."
@@ -251,8 +243,7 @@ Usage: #example
     * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/detailed-race"
 * item[+]
   * linkId = "receive-wic"
-  * insert definition(definition, Canonical(ObservationMotherReceivedWICFood\), Observation.code)
-  //* definition = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food#Observation.code"
+  * definition = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food#Observation.code"
   * prefix = "11"
   * text = "Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"
   * type = #choice

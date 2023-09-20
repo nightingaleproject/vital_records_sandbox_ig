@@ -3,13 +3,6 @@ Parent: Condition
 Id: Condition-coded-initiating-fetal-death-cause-or-condition
 Title: "Condition - Coded Initiating Fetal Death Cause or Condition"
 Description: "This profile represents the coded initiating cause/condition of fetal death."
-* ^meta.versionId = "12"
-* ^meta.lastUpdated = "2023-04-25T05:55:13.935+00:00"
-* ^meta.source = "#4eYiFNvWyC0wasdV"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * . ^short = "This profile represents the coded initiating cause/condition of fetal death."
 * category = $loinc#92022-3
   * ^short = "Coded initiating cause or condition of fetal death"

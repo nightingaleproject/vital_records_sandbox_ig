@@ -3,10 +3,6 @@ InstanceOf: ProcedureEpiduralOrSpinalAnesthesia
 Title: "Procedure - Epidural or Spinal Anesthesia - Jada Ann Quinn"
 Description: "Procedure - Epidural or Spinal Anesthesia: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2023-04-25T01:55:26.528+00:00"
-  * source = "#pHRp9EuxsLIdSUYI"
 * status = #completed
 * code = $sct#231064003 "Intrathecal injection of local anesthetic agent (procedure)"
 * subject

@@ -3,13 +3,6 @@ Parent: Condition
 Id: Condition-coded-other-fetal-death-cause-or-condition
 Title: "Condition - Coded Other Fetal Death Cause or Condition"
 Description: "This profile represents a coded other significant cause/condition of fetal death."
-* ^meta.versionId = "11"
-* ^meta.lastUpdated = "2023-04-25T05:55:16.457+00:00"
-* ^meta.source = "#Bq7HpA7uFFxFJ3z5"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * . ^short = "This profile represents a coded other significant cause/condition of fetal death."
 * category = $loinc#92023-1
   * ^short = "Coded other significant causes or conditions of fetal death"

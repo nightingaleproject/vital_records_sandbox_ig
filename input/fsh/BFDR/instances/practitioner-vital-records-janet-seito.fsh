@@ -1,12 +1,10 @@
 Instance: practitioner-vital-records-janet-seito
-InstanceOf: PractitionerVitalRecords
-Title: "Practitioner - Vital Records example [Janet Seito]"
-Description: "Example of practitioner-vital-records profile (Janet Seito)"
+InstanceOf: Practitioner
+Title: "Practitioner - Vital Records - Janet Seito"
+Description: "Practitioner - Vital Records: Janet Seito example"
 Usage: #example
 * meta
-  * versionId = "2"
-  * lastUpdated = "2023-04-05T20:35:49.593+00:00"
-  * source = "#wY9kAE13TIF3YrGr"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"
 * identifier
   * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "223347044"

@@ -1,12 +1,8 @@
 Instance: encounter-maternity-carmen-teresa-lee
 InstanceOf: Encounter_Maternity
-Title: "Encounter - Maternity example [Carmen Teresa Lee]"
-Description: "Example of Encounter-maternity profile (Carmen Teresa Lee)"
+Title: "Encounter - Maternity - Carmen Teresa Lee"
+Description: "Encounter - Maternity: Carmen Teresa Lee example"
 Usage: #example
-* meta
-  * versionId = "7"
-  * lastUpdated = "2021-05-14T07:49:47.065+00:00"
-  * source = "#s8t6iof4ed7wV5vD"
 * identifier
   * system = "http://hospital.smarthealthit.org"
   * value = "8937015"

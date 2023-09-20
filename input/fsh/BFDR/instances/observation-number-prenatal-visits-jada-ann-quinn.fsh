@@ -1,12 +1,10 @@
 Instance: observation-number-prenatal-visits-jada-ann-quinn
-InstanceOf: ObservationNumberPrenatalVisitsVitalRecords
-Title: "Observation - Number Prenatal Visits example [Jada Ann Quinn]"
-Description: "Example of Observation-number-prenatal-visits profile (BabyG Quinn/Jada Ann Quinn)"
+InstanceOf: Observation
+Title: "Observation - Number Prenatal Visits - Jada Ann Quinn"
+Description: "Observation - Number Prenatal Visits: Jada Ann Quinn example"
 Usage: #example
 * meta
-  * versionId = "5"
-  * lastUpdated = "2023-04-05T20:30:46.634+00:00"
-  * source = "#bLyqBT3Wq93l9UrV"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"
 * status = #final
 * code = $loinc#68493-6 "Prenatal visits for this pregnancy #"
   * text = "Prenatal visits for this pregnancy #"
