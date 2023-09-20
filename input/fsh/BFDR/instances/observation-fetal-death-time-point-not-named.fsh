@@ -1,12 +1,8 @@
 Instance: observation-fetal-death-time-point-not-named
 InstanceOf: ObservationFetalDeathTimePoint
-Title: "Observation - Observation Estimated Fetal Death Time Point example [Fetus Not Named]"
-Description: "Example of Observation-estimated-fetal-death-time-point profile (Fetus Not Named)"
+Title: "Observation - Observation Estimated Fetal Death Time Point - Fetus Not Named"
+Description: "Observation - Observation Estimated Fetal Death Time Point: Fetus Not Named example"
 Usage: #example
-* meta
-  * versionId = "3"
-  * lastUpdated = "2023-04-05T20:29:42.491+00:00"
-  * source = "#T6dG5eOTjNFLQNqv"
 * status = #final
 * code = $loinc#73811-2 "Estimated timing of fetal death [US Standard Report of Fetal Death]"
 * subject

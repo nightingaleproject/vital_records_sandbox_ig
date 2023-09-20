@@ -1,12 +1,10 @@
 Instance: relatedperson-mother-jada-ann-quinn
-InstanceOf: RelatedPersonMotherGestationalVitalRecords
-Title: "RelatedPerson - Mother Gestational example [Jada Ann Quinn]"
-Description: "Example of RelatedPerson-mother-gestational profile (Jada Ann Quinn)"
+InstanceOf: RelatedPerson
+Title: "RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn"
+Description: "RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn example"
 Usage: #example
 * meta
-  * versionId = "10"
-  * lastUpdated = "2023-04-05T20:33:56.435+00:00"
-  * source = "#OaZDQs0o1RZqH3Lu"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

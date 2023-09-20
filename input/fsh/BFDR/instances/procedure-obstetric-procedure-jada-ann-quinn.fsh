@@ -1,12 +1,8 @@
 Instance: procedure-obstetric-procedure-jada-ann-quinn
 InstanceOf: ProcedureObstetric
-Title: "Procedure - Obstetric Procedure example [Jada Ann Quinn]"
-Description: "Example of Procedure-obstetric profile (Jada Ann Quinn)"
+Title: "Procedure - Obstetric Procedure - Jada Ann Quinn"
+Description: "Procedure - Obstetric Procedure: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "2"
-  * lastUpdated = "2020-08-20T22:21:10.455+00:00"
-  * source = "#TiJn7TPVb9AjnRxL"
 * status = #completed
 * code = $sct#240278000 "External cephalic version (procedure)"
   * text = "External cephalic version: Failed"

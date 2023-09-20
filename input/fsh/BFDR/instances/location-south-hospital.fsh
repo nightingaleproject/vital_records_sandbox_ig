@@ -1,12 +1,18 @@
 Instance: location-south-hospital
 InstanceOf: USCoreLocation
-Title: "Location - US Core Location example [South Hospital]"
-Description: "Example of US Core Location (South Hospital)"
+Title: "US Core Location - South Hospital"
+Description: "US Core Location: South Hospital example"
 Usage: #example
-* meta
-  * versionId = "1"
-  * lastUpdated = "2020-08-07T03:08:16.180+00:00"
-  * source = "#b4SJQY6FL0L0RNZ0"
+* identifier
+  * system = "http://hl7.org/fhir/sid/us-npi"
+  * value = "116441967701"
 * status = #active
 * name = "South Hospital"
 * type = $v3-RoleCode#HOSP "Hospital"
+* address
+  * line = "2100 North Ave"
+  * city = "Salt Lake City"
+  * state = "UT"
+  * postalCode = "84116"
+  * country = "US"
+* managingOrganization = Reference(organization-south-hospital) "Organization - South Hospital"

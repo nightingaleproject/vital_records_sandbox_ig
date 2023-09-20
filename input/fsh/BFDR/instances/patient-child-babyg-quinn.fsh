@@ -1,12 +1,10 @@
 Instance: patient-child-babyg-quinn
-InstanceOf: PatientChildVitalRecords
-Title: "Patient - Child example [Baby G Quinn]"
-Description: "Example of Patient-child profile (Baby G Quinn)"
+InstanceOf: Patient
+Title: "Patient - Child - Vital Records - Baby G Quinn"
+Description: "Patient - Child - Vital Records: BabyG Quinn example"
 Usage: #example
 * meta
-  * versionId = "13"
-  * lastUpdated = "2023-04-05T20:35:49.599+00:00"
-  * source = "#n1ZESn3xvJuXUYGP"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"
 * extension[0]
   * extension[0]
     * url = "ombCategory"
@@ -46,4 +44,3 @@ Usage: #example
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
     * valueDateTime = "2019-02-12T13:00:00-07:00"
-* multipleBirthInteger = 1

@@ -1,12 +1,11 @@
 Instance: composition-coded-race-and-ethnicity-not-named
 InstanceOf: CompositionCodedRaceAndEthnicity
-Title: "Composition - Coded Race and Ethnicity example [Not Named]"
-Description: "Example of Coded Race and Ethnicity profile (Not Named)"
+Title: "Composition - Coded Race and Ethnicity - Fetus Not Named"
+Description: "Composition - Coded Race and Ethnicity: Fetus Not Named example"
 Usage: #example
 * meta
   * versionId = "9"
-  * lastUpdated = "2021-07-09T06:55:51.918+00:00"
-  * source = "#ytoL7MZ7aMnpb64i"
+  * lastUpdated = "2021-07-09T10:55:51.918Z"
 * extension
   * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
   * valueIdentifier

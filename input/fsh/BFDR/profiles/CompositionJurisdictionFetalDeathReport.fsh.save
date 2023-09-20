@@ -3,13 +3,6 @@ Parent: Composition
 Id: Composition-jurisdiction-fetal-death-report
 Title: "Composition - Jurisdiction Fetal Death Report"
 Description: "This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to the national statistics agency."
-* ^meta.versionId = "91"
-* ^meta.lastUpdated = "2023-04-25T05:58:08.478+00:00"
-* ^meta.source = "#j0OxusUqyrK7XV3P"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * extension 1.. MS
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "url"
@@ -133,7 +126,7 @@ Description: "This Composition profile contains information of a fetal death and
       numberPreviousCesareans 0..1 MS and
       fetalPresentation 0..1 MS and
       finalRouteMethodDelivery 0..1 MS
-  * entry[pregnancyRiskFactors] only Reference(ConditionPrepregnancyDiabetesVitalRecords or ConditionGestationalDiabetesVitalRecords or ConditionPrepregnancyHypertensionVitalRecords or ConditionGestationalHypertensionVitalRecords or ConditionEclampsiaHypertensionVitalRecords or ObservationPreviousPretermBirthVitalRecords or ProcedureInfertilityTreatmentVitalRecords or ProcedureArtificialInseminationVitalRecords or ProcedureAssisstedFertilizationVitalRecords or ObservationPreviousCesareanVitalRecords or ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords)
+  * entry[pregnancyRiskFactors] only Reference(ConditionPrepregnancyDiabetesVitalRecords or ConditionGestationalDiabetesVitalRecords or ConditionPrepregnancyHypertensionVitalRecords or ConditionGestationalHypertensionVitalRecords or ConditionEclampsiaHypertensionVitalRecords or ObservationPreviousPretermBirthVitalRecords or ProcedureInfertilityTreatmentVitalRecords or ProcedureArtificialInseminationVitalRecords or ProcedureassistedFertilizationVitalRecords or ObservationPreviousCesareanVitalRecords or ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords)
     * ^sliceName = "pregnancyRiskFactors"
     * ^short = "Risk factors in this pregnancy"
     * ^definition = "Selected medical risk factors of the mother during this pregnancy"
