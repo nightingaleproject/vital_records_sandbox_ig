@@ -71,10 +71,10 @@ Description: "This Composition profile represents data exchanged between an MDI 
   * emptyReason 0..1
     * ^short = "Why the section is empty"
     * ^definition = "Why the section is empty"
-* insert BundleSectionSlice(circumstances, death-location, 0, *, death-location, death-location, LocationDeathVitalRecordsNew)
+* insert BundleSectionSlice(circumstances, death-location, 0, *, death-location, death-location, LocationDeathVitalRecords)
 * insert BundleSectionSlice(circumstances, tobacco-use-contributed-to-death, 0, *, tobacco-use-contributed-to-death, tobacco-use-contributed-to-death, ObservationTobaccoUseContributedToDeathVitalRecordsNew)
 * insert BundleSectionSlice(circumstances, decedent-pregnancy, 0, *, decedent-pregnancy, decedent-pregnancy, ObservationDecedentPregnancyVitalRecordsNew)
-* insert BundleSectionSlice(circumstances, injury-location, 0, *, injury-location, injury-location, LocationInjuryVitalRecordsNew)
+* insert BundleSectionSlice(circumstances, injury-location, 0, *, injury-location, injury-location, LocationInjuryVitalRecords)
 * section[jurisdiction] ^label = "This slice contains jurisdictional information about the death."
   * ^short = "This slice contains jurisdictional information about the death."
   * ^definition = "This section contains jurisdictional information about the death."
