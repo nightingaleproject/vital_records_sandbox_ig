@@ -30,7 +30,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 5 | Auxiliary State file number | AUXNO| [CompositionProviderLiveBirthReport]|extension[liveBirthLocalFileNumber].value | identifier | Used for Jurisdiction Report also | 
 | 212 | Abnormal Conditions of the Newborn--Assisted Ventilation | AVEN1| [ProcedureAssistedVentilationFollowingDelivery]| | na | See [Note on missing data] | 
 | 213 | Abnormal Conditions of the Newborn--Assisted Ventilation > 6 hours | AVEN6| [ProcedureAssistedVentilationMoreThanSixHours]| | na | See [Note on missing data] | 
-| 233 | Is Infant Being Breastfed at discharge? (RECOMMENDED CHANGE EFFECTIVE 2004) | BFED| [ObservationInfantBreastfedAtDischarge]|value | boolean | Boolean does not capture Unknown | 
+| 233 | Is Infant Being Breastfed at discharge? (RECOMMENDED CHANGE EFFECTIVE 2004) | BFED| [ObservationInfantBreastfedAtDischarge]|value | boolean | Discussion needed: IJE values are Y, N, U. However, encoding with Boolean does not capture Unknown | 
 | 218 | Abnormal Conditions of the Newborn--Birth Injury(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | BINJ| [not implemented]| |  |  | 
 | 251 | County of Birth (Literal) | BIRTH_CO| [PatientChildVitalRecords]|extension[patient-birthPlace].value[x].district | string |  | 
 | 352 | Blank for Future Expansion | BLANK| [not implemented]| |  |  | 
@@ -159,7 +159,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 92 | Father's Race--Korean | FRACE8| [InputRaceAndEthnicity]|component[ Korean].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
 | 115 | Father's Race Tabulation Variable 8E | FRACE8E| [CodedRaceAndEthnicity]|component[EighthEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
 | 93 | Father's Race--Vietnamese | FRACE9| [InputRaceAndEthnicity]|component[ Vietnamese].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
-| 297 | Father's Bridged Race - NCHS Code | FRACEBG_C| [Observation-race-vr]| |  | Need to discuss | 
+| 297 | Father's Bridged Race - NCHS Code | FRACEBG_C| [Observation-race-vr]| |  | Need to discuss - what is bridged race code for? Is this deprecated? | 
 | 224 | Congenital Anomalies of the Newborn--Gastroschisis | GAST| [ConditionCongenitalAnomalyOfNewborn]|code=72951007 | na | See [Note on missing data] | 
 | 158 | Risk Factors--Gestational Diabetes | GDIAB| [ConditionGestationalDiabetesVitalRecords]| | na | See [Note on missing data] | 
 | 160 | Risk Factors--Hypertension Gestational   (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 924 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004) | GHYPE| [ConditionGestationalHypertensionVitalRecords]| | na | See [Note on missing data] | 
@@ -177,14 +177,14 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 9 | Date of Birth (Infant)--Day | IDOB_DY| [PatientChildVitalRecords]|birthDate | date |  | 
 | 8 | Date of Birth (Infant)--Month | IDOB_MO| [PatientChildVitalRecords]|birthDate | date |  | 
 | 1 | Date of Birth (Infant)--Year | IDOB_YR| [PatientChildVitalRecords]|birthDate | date |  | 
-| 232 | Is Infant Living at Time of Report? | ILIV| [ObservationInfantLivingVitalRecords]|value | boolean | Discussion needed: IJE values are Y, N, U. However, Boolean does not capture Unknown | 
+| 232 | Is Infant Living at Time of Report? | ILIV| [ObservationInfantLivingVitalRecords]|value | boolean | Discussion needed: IJE values are Y, N, U. However, encoding with Boolean does not capture Unknown | 
 | 181 | Characteristics of Labor & Delivery--Induction of Labor | INDL| [ProcedureInductionOfLabor]| | na | See [Note on missing data] | 
 | 332 | Infant's Medical Record Number | INF_MED_REC_NUM| [PatientChildVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”MR”  | string |  | 
 | 164 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926) | INFT| [ProcedureInfertilityTreatmentVitalRecords]| | na | See [Note on missing data] | 
 | 241 | Risk Factors--Infertility: Asst. Rep. Technology  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_ART| [ProcedureAssistedFertilizationVitalRecords]| | na | See [Note on missing data] | 
 | 240 | Risk Factors--Infertility: Fertility Enhancing Drugs  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_DRG| [ProcedureArtificialInseminationVitalRecords]| | na | See [Note on missing data] | 
 | 7 | Sex | ISEX| [PatientChildVitalRecords]|extension[us-core-birthsex].value | codeable | [http://hl7.org/fhir/us/core/ValueSet/birthsex] | 
-| 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN| [EncounterBirth]|hospitalization.dischargeDisposition="other-hcf" | codeable | [http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition], See [Note on missing data], clarity needed for other values | 
+| 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN| [EncounterBirth]|hospitalization.dischargeDisposition="other-hcf" | codeable | [http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition]. See [Note on missing data]. Need to discuss - clarity needed for values other than 'other-hcf' | 
 | 247 | Child's First Name | KIDFNAME| [PatientChildVitalRecords]|name.given, name.use = official | string |  | 
 | 249 | Child's Last Name | KIDLNAME| [PatientChildVitalRecords]|name.family, name.use = official | string |  | 
 | 248 | Child's Middle Name | KIDMNAME| [PatientChildVitalRecords]|name.given, name.use = official  | string |  | 
@@ -285,7 +285,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 46 | Mother's Race--Korean | MRACE8| [InputRaceAndEthnicity]|component[ Korean].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
 | 69 | Mother's Race Tabulation Variable 8E | MRACE8E| [CodedRaceAndEthnicity]|component[EighthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
 | 47 | Mother's Race--Vietnamese | MRACE9| [InputRaceAndEthnicity]|component[ Vietnamese].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
-| 294 | Mother's Bridged Race - NCHS Code | MRACEBG_C| [Observation-race-vr]| |  | Need to discuss | 
+| 294 | Mother's Bridged Race - NCHS Code | MRACEBG_C| [Observation-race-vr]| |  | Need to discuss - what is bridged race code for? Is this deprecated? | 
 | 195 | Maternal Morbidity--Maternal Transfusion | MTR| [ProcedureBloodTransfusion]| | na | See [Note on missing data] | 
 | 214 | Abnormal Conditions of the Newborn--Admission to NICU | NICU| [ObservationNICUAdmission]| | na | See [Note on missing data] | 
 | 166 | Risk Factors--Number Previous Cesareans | NPCES| [ObservationNumberPreviousCesareansVitalRecords]|value | integer |  | 
@@ -352,9 +352,9 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 215 | Abnormal Conditions of the Newborn--Surfactant Replacement | SURF| [ProcedureSurfactantReplacementTherapy]| | na | See [Note on missing data] | 
 | 169 | Infections Present--Syphilis | SYPH| [ConditionInfectionPresentDuringPregnancy]|code=76272004 | na | See [Note on missing data] | 
 | 6 | Time of Birth | TB| [PatientChildVitalRecords]|birthDate.extension[patient-birthTime] |  | See [PartialDatesAndTimes] | 
-| 194 | Method of Delivery--Trial of Labor Attempted | TLAB| [ObservationLaborTrialAttempted]|value | boolean | Boolean does not capture Unknown or NotApplicable | 
+| 194 | Method of Delivery--Trial of Labor Attempted | TLAB| [ObservationLaborTrialAttempted]|value | boolean | Discussion needed: IJE values are Y, N, U, and X (not applicable). However, encoding with Boolean does not capture Unknown or Not Applicable | 
 | 175 | Obstetric Procedures--Tocolysis(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | TOC| [not implemented]| |  |  | 
-| 125 | Mother Transferred? | TRAN| [Encounter_Maternity]|hospitalization.admitSource = "hosp-trans" | codeable | [http://hl7.org/fhir/ValueSet/encounter-admit-source], See [Note on missing data], clarity needed for other values | 
+| 125 | Mother Transferred? | TRAN| [Encounter_Maternity]|hospitalization.admitSource = "hosp-trans" | codeable | [http://hl7.org/fhir/ValueSet/encounter-admit-source], See [Note on missing data]. Need to discuss - clarity needed for values other than 'hosp-trans' | 
 | 198 | Maternal Morbidity--Unplanned Hysterectomy | UHYS| [ProcedureUnplannedHysterectomy]| | na | See [Note on missing data] | 
 | 267 | Residence Unit or Apartment Number | UNUM| [PatientMotherVitalRecords]|address.extension[unitnum] | string |  | 
 | 200 | Maternal Morbidity--Unplanned Operation(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | UOPR| [not implemented]| |  |  | 
@@ -437,7 +437,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 196 | Other significant causes or conditions  - Placental insufficiency | COD18b3| [ConditionFetalDeathOtherCauseOrCondition]|code=237292005 | na |  | 
 | 197 | Other significant causes or conditions - Prolapsed cord | COD18b4| [ConditionFetalDeathOtherCauseOrCondition]|code=270500004 | na |  | 
 | 198 | Other significant causes or conditions - Chorioamnionitis | COD18b5| [ConditionFetalDeathOtherCauseOrCondition]|code=11612004 | na |  | 
-| 199 | Other significant causes or conditions - Other complications of placenta, cord, or membranes | COD18b6| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1298 | na | need to check this one | 
+| 199 | Other significant causes or conditions - Other complications of placenta, cord, or membranes | COD18b6| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1298 | na | need to check this one - PHC1298 is 'Complications of Placenta, Cord, or Membranes: Other (Specify)' but IJE field is Y, N (not literal text) | 
 | 200 | Other significant causes or conditions - Unknown | COD18b7| [ConditionFetalDeathOtherCauseOrCondition]|code=UNK | na |  | 
 | 201 | Other significant causes or conditions - Maternal conditions/diseases literal | COD18b8| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1301, code.text | string |  | 
 | 202 | Other significant causes or conditions - Other complications of placenta, cord, or membranes literal | COD18b9| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1298, code.text | string |  | 
@@ -543,7 +543,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 297 | Father's Race--Korean | FRACE8| [InputRaceAndEthnicity]|component[ Korean].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
 | 320 | Father's Race Tabulation Variable 8E | FRACE8E| [CodedRaceAndEthnicity]|component[EighthEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
 | 298 | Father's Race--Vietnamese | FRACE9| [InputRaceAndEthnicity]|component[ Vietnamese].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
-| 334 | Father's Bridged Race - NCHS Code | FRACEBG_C| [Observation-race-vr]| |  | Need to discuss | 
+| 334 | Father's Bridged Race - NCHS Code | FRACEBG_C| [Observation-race-vr]| |  | Need to discuss - what is bridged race code for? Is this deprecated? | 
 | 7 | Sex | FSEX| [PatientDecedentFetusVitalRecords]|extension[us-core-birthsex].value | codeable | [http://hl7.org/fhir/us/core/ValueSet/birthsex] | 
 | 144 | Weight of Fetus--Edit Flag | FW_BYPASS| [ObservationEditFlagBirthweight]|value | codeable | [PHVS_BirthWeightEditFlags_NCHS], See [Handling of edit flags] | 
 | 143 | Weight of Fetus | FWG| [ObservationBirthWeightVitalRecords]|value | quantity |  | 
@@ -655,7 +655,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 46 | Mother's Race--Korean | MRACE8| [InputRaceAndEthnicity]|component[ Korean].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
 | 69 | Mother's Race Tabulation Variable 8E | MRACE8E| [CodedRaceAndEthnicity]|component[EighthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
 | 47 | Mother's Race--Vietnamese | MRACE9| [InputRaceAndEthnicity]|component[ Vietnamese].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
-| 331 | Mother's Bridged Race - NCHS Code | MRACEBG_C| [Observation-race-vr]| |  | Need to discuss | 
+| 331 | Mother's Bridged Race - NCHS Code | MRACEBG_C| [Observation-race-vr]| |  | Need to discuss - what is bridged race code for? Is this deprecated? | 
 | 137 | Maternal Morbidity--Maternal Transfusion(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MTR| [not implemented]| |  |  | 
 | 119 | Risk Factors--Number Previous Cesareans | NPCES| [ObservationNumberPreviousCesareansVitalRecords]|value | integer |  | 
 | 120 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS| [ObservationEditFlagNumberPreviousCesareans]|value | codeable | [PHVS_NumberOfPreviousCesareansEditFlags_NCHS], See [Handling of edit flags]  | 
@@ -723,7 +723,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 222 | Fetus Surname Suffix | SUFFIX| [PatientDecedentFetusVitalRecords]|name.suffix , name.use = official | string |  | 
 | 122 | Infections Present--Syphilis(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | SYPH| [not implemented]| |  |  | 
 | 6 | Time of Delivery | TD| [PatientDecedentFetusVitalRecords]|birthDate.extension[patient-birthTime] |  | See [PartialDatesAndTimes] | 
-| 135 | Method of Delivery--Trial of Labor Attempted | TLAB| [ObservationLaborTrialAttempted]|value | boolean | Boolean does not capture Unknown or NotApplicable | 
+| 135 | Method of Delivery--Trial of Labor Attempted | TLAB| [ObservationLaborTrialAttempted]|value | boolean | Discussion needed: IJE values are Y, N, U, and X (not applicable). However, encoding with Boolean does not capture Unknown or Not Applicable | 
 | 129 | Infections Present--Toxoplasmosis(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | TOXO| [not implemented]| |  |  | 
 | 79 | Mother Transferred?(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | TRAN| [not implemented]|Encounter-maternity.hospitalization.admitSource (Y if present, N if not present) |  |  | 
 | 140 | Maternal Morbidity--Unplanned Hysterectomy(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | UHYS| [not implemented]| |  |  | 

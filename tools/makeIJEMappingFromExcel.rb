@@ -1,5 +1,5 @@
 # ruby tools/makeIJEMappingFromExcel.rb input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx
-# output files: generated/bfdr/ije_mapping.md
+# output files: generated/dataDictionaries/bfdr_ije_mapping.md, generated/dataDictionaries/vrdr_ije_mapping.md
 
 require "json"
 require "pry"
@@ -36,10 +36,12 @@ IJE_FHIR_ENCODING_COL = 13
 puts ARGV[0]
 
 vSpreadsheet = open_spreadsheet(ARGV[0])
-vSpreadsheet.default_sheet = "Combined Tabs"
-vOutputFilename = "generated/BFDR/ije_mapping.md"
+
+vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
+
+vOutputFilename = "/generated/dataDictionaries/bfdr_ije_mapping.md"
 puts vOutputFilename
-vOutputFile = File.open(vOutputFilename, "w")
+vOutputFile = File.open(Dir.pwd + vOutputFilename, "w")
 
 vOutputFile.puts "Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdictional Exchange) data element names (codes). The IJE codes are used for data exchange among jurisdictions and with authorized data partners, such as National Vital Statistics System (NVSS). The National Center for Health Statistics (NCHS) has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG; however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS.
 
@@ -57,18 +59,19 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
   pOutputFile.puts pHeading
   pOutputFile.puts ""
 
-  pOutputFile.puts "| **IJE Field#** |  **Description**   |  **IJE Name**  | **Profile**  | **Location** |"
-  pOutputFile.puts "| -------------- | ------------------ | -------------- | ------------ | ------------ |"
+  pOutputFile.puts "| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |"
+  pOutputFile.puts "| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |"
 
   pSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-    next if row[IJE_USECASE_COL].value.to_s != pRowFilter || row[IJE_PROFILE_COL].value.to_s == "not implemented"
+    next if row[IJE_USECASE_COL].value.to_s != pRowFilter #|| row[IJE_PROFILE_COL].value.to_s == "not implemented"
     
-    field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = ijeonly = fhirig = ""
+    field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = fhirig = ""
     field = row[IJE_FIELD_COL].value.to_s if row[IJE_FIELD_COL]
     ijename = row[IJE_NAME_COL].value.to_s if row[IJE_NAME_COL]
+    #ijeonly = "x"  if row[IJE_ONLY_COL] && (row[IJE_ONLY_COL].to_s == "I" || row[IJE_ONLY_COL].to_s == "i")
     fhirig = row[IJE_FHIR_IG_COL].value.to_s if row[IJE_FHIR_IG_COL]
-    vProvOutputFilename = row[IJE_PROFILE_COL].value.to_s if row[IJE_PROFILE_COL]
-
+    #vProvOutputFilename = row[IJE_PROFILE_COL].value.to_s if row[IJE_PROFILE_COL]
+=begin
     case fhirig
     when "BFDR"
       profile = "[" + vProvOutputFilename + "]" + "(StructureDefinition-" + vProvOutputFilename + ".html)"
@@ -76,23 +79,36 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
       # *TODO* this might need to be updated prior to publication - for some reason the jekyll variable doesn't work the same for current build IG
       # TODO add code to check whether the version is current or not
       #profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition-" + vProvOutputFilename + ")"
-      profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "StructureDefinition-" + vProvOutputFilename + ".html)"
+      profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition-" + vProvOutputFilename + ".html)"
+      #profile = "[" + vProvOutputFilename + "]" + "(StructureDefinition-" + vProvOutputFilename + ".html)"
     when "US CORE"
       profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhiruscore}}" + "/StructureDefinition-" + vProvOutputFilename + ".html)"
     when "FHIR"
       profile = "[" + vProvOutputFilename + "]" + "(http://hl7.org/fhir/extensions/StructureDefinition-" + vProvOutputFilename + ".html)"
     when "ODH"
       profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhirusodh}}" + "/StructureDefinition-" + vProvOutputFilename + ".html)"
+    when "VRDR"
+        profile = "[" + vProvOutputFilename + "]" + "(StructureDefinition-vrdr-" + vProvOutputFilename + ".html)"
     end
-    
+=end    
+    profile = "[" + row[IJE_PROFILE_COL].value.to_s + "]" if row[IJE_PROFILE_COL] 
     fhirfield = row[IJE_FHIR_FIELD_COL].value.to_s if row[IJE_FHIR_FIELD_COL]
+    fhirtype = row[IJE_FHIR_TYPE_COL].value.to_s if row[IJE_FHIR_TYPE_COL]
+    fhirencoding = row[IJE_FHIR_ENCODING_COL].value.to_s if row[IJE_FHIR_ENCODING_COL]   
     description = row[IJE_DESC_COL].value.to_s if row[IJE_DESC_COL]
     
-    pOutputFile.puts "| " + field.chomp + " | " + description.chomp + " | " + ijename + " | " + profile + " | " + fhirig + " |"
+    pOutputFile.puts "| " + field.chomp + " | " + description.chomp + " | " + ijename + "| " + profile + "|" + fhirfield + " | " + fhirtype + " | " + fhirencoding + " | "
   end
-  
   pOutputFile.puts "{: .grid }"
+  pOutputFile.puts "{% include markdown-link-references.md %}"
 end
 
 createMappingTable( "Natality", "### Natality (Live Birth) IJE Mapping", vOutputFile, vSpreadsheet)
 createMappingTable( "Fetal Death", "### Fetal Death IJE Mapping", vOutputFile, vSpreadsheet)
+
+vOutputFilename2 = "/generated/dataDictionaries/vrdr_ije_mapping.md"
+puts vOutputFilename2
+vOutputFile2 = File.open(Dir.pwd + vOutputFilename2, "w")
+vOutputFile2.puts ""
+createMappingTable( "Mortality", "### Death Record IJE Mapping", vOutputFile2, vSpreadsheet)
+createMappingTable( "Mortality Roster", "### Mortality Roster IJE Mapping", vOutputFile2, vSpreadsheet)
