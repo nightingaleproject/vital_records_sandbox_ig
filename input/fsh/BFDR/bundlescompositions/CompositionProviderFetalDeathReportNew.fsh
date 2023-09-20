@@ -40,213 +40,52 @@ Description: "This Composition profile contains constraints to address the use c
   * ^slicing.rules = #open
   * ^short = "The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report."
   * ^definition = "The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report. The sections are Mother, Mother Prenatal,  Medical and Health, and fetus. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."
-* section contains
-    motherPrenatal 0..1  and
-    medicalHealthInformation 0..1  and
-    fetus 0..1  and
-    motherInformation 0..1  and
-    fatherInformation 0..1  and
-    mothersQuestionnaireResponse 0..1
-* section[motherPrenatal] ^short = "Mother (prenatal) section on the Fetal Death Report"
-  * ^definition = "This section contains items from the Mother (prenatal) on theFetal Death Report."
-  * code 1.. 
-  * code = $loinc#57073-9
-    * ^short = "Prenatal records"
-    * ^definition = "Prenatal records"
-  * focus 1.. 
-  * focus only Reference(PatientMotherVitalRecords)
-    * ^short = "The focus of this section is the mother"
-    * ^definition = "The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother."
-  * entry 
-    * ^slicing.discriminator.type = #profile
-    * ^slicing.discriminator.path = "$this.resolve()"
-    * ^slicing.ordered = false
-    * ^slicing.rules = #open
-    * ^short = "Entries that are contained in the Mother Prenatal section"
-    * ^definition = "Entries that are contained in the Mother Prenatal section"
-  * entry contains
-      plannedToDeliverAtHome 0..1  and
-      firstPrenatalCareVisit 0..1  and
-      dateLastNormalMenses 0..1  and
-      numberNowLiving 0..1  and
-      numberNowDead 0..1  and
-      dateLastLiveBirth 0..1  and
-      mothersHeight 0..1  and
-      mothersPrepregnancyWeight 0..1  and
-      motherReceivedWICFood 0..1  and
-      cigaretteSmokingBeforeDuringPregnancy 0..4 
-  * entry[plannedToDeliverAtHome] only Reference(ObservationPlannedToDeliverAtHome)
-    * ^short = "Planned to deliver at home"
-    * ^definition = "Planned to deliver at home"
-  * entry[firstPrenatalCareVisit] only Reference(ObservationDateOfFirstPrenatalCareVisit)
-    * ^short = "First prenatal care visit"
-    * ^definition = "Date that mother had her first prenatal care visit."
-  * entry[dateLastNormalMenses] only Reference(ObservationLastMenstrualPeriodNew)
-    * ^short = "Date last normal menses began"
-    * ^definition = "Date that the mother's last normal menses began. This item is used to compute the gestational age of the infant."
-  * entry[numberNowLiving] only Reference(ObservationNumberBirthsNowLivingNew)
-    * ^short = "Number of previous live births now living"
-    * ^definition = "The pregnancy history of the mother with respect to previous children born alive"
-  * entry[numberNowDead] only Reference(ObservationNumberBirthsNowDeadNew)
-    * ^short = "Number of previous live births now dead"
-    * ^definition = "The pregnancy history of the mother with respect to previous children born alive"
-  * entry[dateLastLiveBirth] only Reference(ObservationDateOfLastLiveBirth)
-    * ^short = "Date of last live birth"
-    * ^definition = "The pregnancy history of the mother with respect to previous children born alive"
-  * entry[mothersHeight] only Reference(ObservationMotherHeightNew)
-    * ^short = "Mother's height"
-    * ^definition = "The mother's height"
-  * entry[mothersPrepregnancyWeight] only Reference(ObservationMotherPrepregnancyWeightNew)
-    * ^short = "Mother's prepregnancy weight"
-    * ^definition = "The mother's prepregnancy weight"
-  * entry[motherReceivedWICFood] only Reference(ObservationMotherReceivedWICFood)
-    * ^short = "Use of the WIC nutritional program by the mother"
-    * ^definition = "Use of the Women, Infant's, and Children (WIC) nutritional program by the mother during the pregnancy."
-  * entry[cigaretteSmokingBeforeDuringPregnancy] only Reference(ObservationCigaretteSmokingBeforeDuringPregnancy)
-    * ^short = "Cigarettes smoked by the mother before and during the pregnancy"
-    * ^definition = "The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy"
-* section[medicalHealthInformation] 0..1
-  * ^short = "Medical and Health Information section on the Fetal Death Report"
-  * ^definition = "This section contains items from the Medical and Health Information section on the Fetal Death Report."
-  * code 1.. 
-  * code = $loinc#55752-0
-    * ^short = "Clinical information"
-    * ^definition = "Clinical information"
-  * focus 1.. 
-  * focus only Reference(PatientMotherVitalRecords)
-    * ^short = "The focus of this section is the mother"
-    * ^definition = "The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother."
-  * entry 
-    * ^slicing.discriminator.type = #profile
-    * ^slicing.discriminator.path = "$this.resolve()"
-    * ^slicing.ordered = false
-    * ^slicing.rules = #open
-    * ^short = "Entries that are contained in the medical and health information section"
-    * ^definition = "Entries that are contained in the medical and health information section"
-  * entry contains
-      pregnancyRiskFactors ..1 and
-      numberPreviousCesareans 0..1  and
-      fetalPresentation 0..1  and
-      maternalMorbidity 0..* and
-      finalRouteMethodDelivery 0..1 
-  * entry[pregnancyRiskFactors] only Reference(Condition-prepregnancy-diabetes-vr or Condition-gestational-diabetes-vr or Condition-prepregnancy-hypertension-vr or Condition-gestational-hypertension-vr or Condition-eclampsia-hypertension-vr or Observation-previous-preterm-birth-vr or Procedure-infertility-treatment-vr or Procedure-artificial-insemination-vr or Procedure-assisted-fertilization-vr or Observation-previous-cesarean-vr or Observation-none-of-specified-pregnancy-risk-factors-vr)
-    * ^sliceName = "pregnancyRiskFactors"
-    * ^short = "Risk factors in this pregnancy"
-    * ^definition = "Selected medical risk factors of the mother during this pregnancy"
-  * entry[numberPreviousCesareans] only Reference(ObservationNumberPreviousCesareansNew)    
-    * ^short = "If mother had a previous cesarean delivery, how many"
-    * ^definition = "Number of previous cesarean deliveries."
-  * entry[fetalPresentation] only Reference(ObservationFetalPresentation)
-    * ^short = "Fetal presentation at birth"
-    * ^definition = "Fetal presentation at birth"
-  * entry[finalRouteMethodDelivery] only Reference(ProcedureFinalRouteMethodDelivery)
-    * ^short = "Final route and method of delivery"
-    * ^definition = "Final route and method of delivery"
-  * entry[maternalMorbidity] only Reference(ProcedureBloodTransfusion or ConditionPerinealLaceration or ConditionRupturedUterus or ProcedureUnplannedHysterectomy or ObservationICUAdmission or ObservationNoneOfSpecifiedMaternalMorbidities)
-    * ^sliceName = "maternalMorbidity"
-    * ^short = "Maternal morbidity (complications associated with labor and delivery)"
-    * ^definition = "Serious complications experienced by the mother associated with labor and delivery"
-* section[fetus] 0..1
-  * ^short = "fetus section on the Fetal Death Report"
-  * ^definition = "This section contains items from the fetus section on the Fetal Death Report."
-  * code 1.. 
-  * code = $loinc#76400-1
-    * ^short = "Fetal delivery information Document [US Standard Report of Fetal Death]"
-    * ^definition = "Fetal delivery information Document [US Standard Report of Fetal Death]"
-  * entry 
-    * ^slicing.discriminator.type = #profile
-    * ^slicing.discriminator.path = "$this.resolve()"
-    * ^slicing.ordered = false
-    * ^slicing.rules = #open
-    * ^short = "Entries that are contained in the fetus section"
-    * ^definition = "Entries that are contained in the fetus section"
-  * entry contains
-      deliveryWeight 0..1  and
-      gestationalAgeAtDelivery 0..1  and
-      causeOfFetalDeath 0..1  and
-      otherCauseOfDeath 0..* and
-      estimatedTimeFetalDeath 1..1  and
-      autopsyPerformed 0..1  and
-      histologicalExamPerformed 0..1  and
-      autopsyOrHistologicalExamUsed 0..1  and
-      numberFetalDeathsThisDelivery 0..1 and
-      numberLiveBirthsThisDelivery 0..1
-      //plurality 0..1 
-  * entry[deliveryWeight] only Reference(ObservationBirthWeightNew)
-    * ^short = "Delivery weight"
-    * ^definition = "The weight of the infant/fetus at birth/delivery"
-  * entry[gestationalAgeAtDelivery] only Reference(ObservationGestationalAgeAtDeliveryNew)
-    * ^short = "Obstetric estimate of gestation"
-    * ^definition = "The obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam"
-  * entry[causeOfFetalDeath] only Reference(ConditionFetalDeathCauseOrCondition)
-    * ^short = "Initiating cause or condition of fetal death"
-    * ^definition = "Initiating cause or condition of fetal death"
-  * entry[otherCauseOfDeath] only Reference(ConditionFetalDeathOtherCauseOrCondition)
-    * ^sliceName = "otherCauseOfDeath"
-    * ^short = "Another significant cause or condition for the death of the fetus."
-    * ^definition = "Another significant cause or condition for the death of the fetus."
-  * entry[estimatedTimeFetalDeath] only Reference(ObservationFetalDeathTimePoint)
-    * ^short = "The estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery."
-    * ^definition = "The estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery."
-  * entry[autopsyPerformed] only Reference(Observation-autopsy-performed-indicator-vr)
-    * ^short = "An indication if an autopsy has been performed on the subject."
-    * ^definition = "An indication if an autopsy has been performed on the subject."
-  * entry[histologicalExamPerformed] only Reference(ObservationHistologicalPlacentalExamPerformed)
-    * ^short = "Whether or not a histological placental examination was performed."
-    * ^definition = "Whether or not a histological placental examination was performed."
-  * entry[autopsyOrHistologicalExamUsed] only Reference(ObservationAutopsyHistologicalExamResultsUsed)
-    * ^short = "Whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."
-    * ^definition = "Whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."
-  // * entry[plurality] only Reference(ObservationPluralityVitalRecords)
-  //   * ^short = "Plurality - Single, Twin, Triplet, etc."
-  //   * ^definition = "Plurality – The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.)"
-  * entry[numberLiveBirthsThisDelivery] only Reference(ObservationNumberLiveBirthsThisDeliveryNew)
-    * ^short = "Number of live births this delivery"
-  * entry[numberFetalDeathsThisDelivery] only Reference(ObservationNumberFetalDeathsThisDeliveryNew)
-    * ^short = "Number of fetal deaths this delivery" 
-// * section[newbornInformation]
-//   * entry contains
-//       numberLiveBirthsThisDelivery 0..1  and
-//       numberFetalDeathsThisDelivery 0..1 
-//   * entry[numberLiveBirthsThisDelivery] only Reference($Observation-number-live-births-this-delivery-vr)
-//     * ^short = "Number of live births this delivery"
-//   * entry[numberFetalDeathsThisDelivery] only Reference($Observation-number-fetal-deaths-this-delivery-vr)
-//     * ^short = "Number of fetal deaths this delivery"
-* section[motherInformation] ^short = "Mother administrative section on the Fetal Death Report"
-  * ^definition = "This section contains items from the Mother administrative section on the Fetal Death Report."
-  * code 1.. 
-  * code = $loinc#92014-0
-    * ^short = "Mother's administrative information"
-    * ^definition = "Mother's administrative information"
-  * focus 1.. 
-  * focus only Reference(PatientMotherVitalRecords)
-    * ^short = "The focus of this section is the mother"
-    * ^definition = "The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother."
-  * entry 
-    * ^slicing.discriminator.type = #profile
-    * ^slicing.discriminator.path = "$this.resolve()"
-    * ^slicing.ordered = false
-    * ^slicing.rules = #open
-    * ^short = "Entries that are contained in the motherInformation section"
-    * ^definition = "Entries that are contained in the motherInformation section"
-  * entry contains mothersEducation 0..1 
-  * entry[mothersEducation] only Reference(ObservationEducationLevelVitalRecordsNew)
-    * ^short = "Mother's education"
-    * ^definition = "Mother's education"
-* section[fatherInformation] ^short = "Mother Administrative Section on the Fetal Death Report"
+* insert BFDRCompositionSectionEntrySlicing(motherPrenatal, 0, 57073-9, Provider Fetal Death)
+* insert FocusRule(motherPrenatal, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
+* insert BFDRCompositionSectionSlice(motherPrenatal, plannedToDeliverAtHome, 0, 1, Planned to deliver at home, Planned to deliver at home, ObservationPlannedToDeliverAtHome)
+* insert BFDRCompositionSectionSlice(motherPrenatal, firstPrenatalCareVisit, 0, 1, First prenatal care visit, Date that mother had her first prenatal care visit, ObservationDateOfFirstPrenatalCareVisit)
+* insert BFDRCompositionSectionSlice(motherPrenatal, dateLastNormalMenses, 0, 1, Date last normal menses began, Date that the mother's last normal menses began. This item is used to compute the gestational age of the infant., ObservationLastMenstrualPeriodNew)
+* insert BFDRCompositionSectionSlice(motherPrenatal, numberNowLiving, 0, 1, Number of previous live births now living, The pregnancy history of the mother with respect to previous children born alive, ObservationNumberBirthsNowLivingNew) 
+* insert BFDRCompositionSectionSlice(motherPrenatal, numberNowDead, 0, 1, Number of previous live births now dead, The pregnancy history of the mother with respect to previous children born alive, ObservationNumberBirthsNowDeadNew) 
+* insert BFDRCompositionSectionSlice(motherPrenatal, dateLastLiveBirth, 0, 1, Date of last live birth, The pregnancy history of the mother with respect to previous children born alive, ObservationDateOfLastLiveBirth)
+* insert BFDRCompositionSectionSlice(motherPrenatal, mothersHeight, 0, 1, Mother's height, Mother's height, ObservationMotherHeightNew)
+* insert BFDRCompositionSectionSlice(motherPrenatal, mothersPrepregnancyWeight, 0, 1, Mother's prepregnancy weight, The mother's prepregnancy weight, ObservationMotherPrepregnancyWeightNew)
+* insert BFDRCompositionSectionSlice(motherPrenatal, motherReceivedWICFood, 0, 1, Use, Use of the Women\, Infant's\, and Children (WIC\) nutritional program by the mother during the pregnancy., ObservationMotherReceivedWICFood)
+* insert BFDRCompositionSectionSlice(motherPrenatal, cigaretteSmokingBeforeDuringPregnancy, 0, 4, Cigarettes smoked by the mother before and during the pregnancy, The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy, ObservationCigaretteSmokingBeforeDuringPregnancy)
+* insert BFDRCompositionSectionEntrySlicing(medicalHealthInformation, 0, 55752-0, Provider Fetal Death)
+* insert FocusRule(medicalHealthInformation, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
+* insert BFDRCompositionSectionSlice(medicalHealthInformation, pregnancyRiskFactors, 0, *, Risk factors in this pregnancy, Selected medical risk factors of the mother during this pregnancy, ConditionGestationalDiabetesVitalRecords or ConditionGestationalDiabetesVitalRecords or ConditionPrepregnancyHypertensionVitalRecords or ConditionGestationalHypertensionVitalRecords or ConditionEclampsiaHypertensionVitalRecords or ObservationPreviousPretermBirthVitalRecords or ProcedureInfertilityTreatmentVitalRecords or ProcedureArtificialInseminationVitalRecords or ProcedureassistedFertilizationVitalRecords or ObservationPreviousCesareanVitalRecords or ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords)
+* insert BFDRCompositionSectionSlice(medicalHealthInformation, numberPreviousCesareans, 0, 1, If mother had a previous cesarean delivery\, how many, Number of previous cesarean deliveries, ObservationNumberPreviousCesareansNew)
+* insert BFDRCompositionSectionSlice(medicalHealthInformation, fetalPresentation, 0, 1, Fetal presentation at birth, Fetal presentation at birth, ObservationFetalPresentation)
+* insert BFDRCompositionSectionSlice(medicalHealthInformation, finalRouteMethodDelivery, 0, 1, Final route and method of delivery, Final route and method of delivery, ProcedureFinalRouteMethodDelivery)
+* insert BFDRCompositionSectionSlice(medicalHealthInformation, maternalMorbidity, 0, *, Maternal morbidity - complications associated with labor and delivery, Serious complications experienced by the mother associated with labor and delivery, ProcedureBloodTransfusion or ConditionPerinealLaceration or ConditionRupturedUterus or ProcedureUnplannedHysterectomy or ObservationICUAdmission or ProcedureEmergencyOperationFollowingDelivery or ObservationNoneOfSpecifiedMaternalMorbidities)
+* insert BFDRCompositionSectionEntrySlicing(fetus, 0, 76400-1, Provider Fetal Death)
+* insert BFDRCompositionSectionSlice(fetus, deliveryWeight, 0, 1, Delivery weight, The weight of the infant/fetus at birth/delivery, ObservationBirthWeightNew)
+* insert BFDRCompositionSectionSlice(fetus, gestationalAgeAtDelivery, 0, 1, Obstetric estimate of gestation, The obstetric estimate of the infant's gestation in completed weeks based on the birth/delivery attendant's final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound\, but not the neonatal exam, ObservationGestationalAgeAtDeliveryNew)
+* insert BFDRCompositionSectionSlice(fetus, causeOfFetalDeath, 0, 1, Initiating cause or condition of fetal death, Initiating cause or condition of fetal death, ConditionFetalDeathCauseOrCondition) 
+* insert BFDRCompositionSectionSlice(fetus, otherCauseOfDeath, 0, *, Another significant cause or condition for the death of the fetus., Another significant cause or condition for the death of the fetus., ConditionFetalDeathOtherCauseOrCondition) 
+* insert BFDRCompositionSectionSlice(fetus, estimatedTimeFetalDeath, 1, 1, The estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery., The estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery., ObservationFetalDeathTimePoint) 
+* insert BFDRCompositionSectionSlice(fetus, autopsyPerformed, 0, 1, An indication if an autopsy has been performed on the subject., An indication if an autopsy has been performed on the subject., ObservationAutopsyPerformedIndicatorVitalRecords)   
+* insert BFDRCompositionSectionSlice(fetus, histologicalExamPerformed, 0, 1, Whether or not a histological placental examination was performed., Whether or not a histological placental examination was performed., ObservationHistologicalPlacentalExamPerformed)   
+* insert BFDRCompositionSectionSlice(fetus, autopsyOrHistologicalExamUsed, 0, 1, Whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death., Whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death., ObservationAutopsyHistologicalExamResultsUsed)   
+* insert BFDRCompositionSectionSlice(fetus, numberLiveBirthsThisDelivery, 0, 1, Number of live births this delivery, Number of live births this delivery, ObservationNumberLiveBirthsThisDeliveryNew)   
+* insert BFDRCompositionSectionSlice(fetus, numberFetalDeathsThisDelivery, 0, 1, Number of fetal deaths this delivery, Number of fetal deaths this delivery, ObservationNumberFetalDeathsThisDeliveryNew)   
+* insert BFDRCompositionSectionEntrySlicing(motherInformation, 0, 92014-0, Provider Fetal Death)
+* insert FocusRule(motherInformation, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
+* insert BFDRCompositionSectionSlice(motherInformation, mothersEducation, 0, 1, Mother's Education, Mother's Education, ObservationEducationLevelVitalRecordsNew)   
+* section contains fatherInformation 0..1
+* section[fatherInformation] ^short = "Father Administrative Section on the Fetal Death Report"
   * ^definition = "This section contains items from the Father administrative section on the Fetal Death Report."
   * code 1.. 
   * code = $loinc#92013-2
     * ^short = "Father's administrative information"
     * ^definition = "Father's administrative information"
-  * focus 1.. 
-  * focus only Reference(RelatedPersonFatherNaturalVitalRecords)
-    * ^short = "The focus of this section is the father"
-    * ^definition = "The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father."
-* section[mothersQuestionnaireResponse] ^short = "Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"
+* insert FocusRule(fatherInformation, The focus of this section is the father, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father., RelatedPersonFatherNaturalVitalRecords)
+* section contains patientsQuestionnaireResponse 0..1
+* section[patientsQuestionnaireResponse] ^short = "Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"
   * code 1..
   * code = $loinc#74465-6
     * ^short = "Questionnaire response Document"
   * entry 1..1
   * entry only Reference(QuestionnaireResponse)
-    * ^short = "QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"
+    * ^short = "QuestionnaireResponse with recorded answers to the Questionnaire - Patient's Worksheet for Fetal Death Report"

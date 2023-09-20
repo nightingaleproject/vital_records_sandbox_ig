@@ -12,4 +12,4 @@ Description: "This Bundle profile represents a Birth and Fetal Death Document Bu
   * ^slicing.rules = #open
 * entry contains BFDRComposition 1..1 
 * entry[BFDRComposition].resource 1.. 
-* entry[BFDRComposition].resource only Composition
+* entry[BFDRComposition].resource only CompositionProviderFetalDeathReportNew or CompositionProviderLiveBirthReportNew or CompositionJurisdictionLiveBirthReportNew or CompositionJurisdictionFetalDeathReportNew

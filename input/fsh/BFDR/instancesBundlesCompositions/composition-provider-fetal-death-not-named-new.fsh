@@ -130,7 +130,7 @@ Usage: #example
   * entry[mothersEducation]
     * reference = "Observation/observation-parent-education-level-carmen-teresa-lee"
     * display = "Observation - Parent Education Level (Carmen Teresa Lee)"
-* section[mothersQuestionnaireResponse]
+* section[patientsQuestionnaireResponse]
   // * title = "Patient's QuestionnaireResponse Section"
   // * code = $loinc#74465-6 "Questionnaire response Document"
   * focus

@@ -189,7 +189,7 @@ Usage: #example
   * entry[fathersEducation]
     * reference = "Observation/observation-parent-education-level-james-quinn"
     * display = "Observation - Parent Education Level (James Brandon Quinn)"
-* section[EditFlags]
+* section[editFlags]
   // * title = "Edit Flags Section"
   // * code = $loinc#92012-4 "Edit flags section"
   * entry[editFlagBirthweight]
