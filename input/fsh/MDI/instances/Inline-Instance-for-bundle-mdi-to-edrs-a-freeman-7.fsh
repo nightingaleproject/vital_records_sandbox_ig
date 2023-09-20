@@ -1,17 +1,11 @@
 Instance: Inline-Instance-for-bundle-mdi-to-edrs-a-freeman-7
-InstanceOf: LocationInjury
-Usage: #inline
+InstanceOf: InjuryLocation
 * id = "location-injury-atlanta-ga-a-freeman"
-* meta
-  * versionId = "1"
-  * lastUpdated = "2022-08-16T00:10:29.860+00:00"
-  * source = "#GeBcnhtxzxp98yjW"
 * identifier
   * system = "http://www.acme.org/location"
   * value = "29"
 * status = #active
 * name = "Atlanta GA Injury Location - Freeman"
-* type = CodeSystemMDI#injury
 * address
   * use = #home
   * type = #physical

@@ -1,12 +1,8 @@
 Instance: procedure-death-certification-a-freeman
-InstanceOf: ProcedureDeathCertification
+InstanceOf: DeathCertificationNew
 Title: "Procedure - Death Certification - Freeman"
 Description: "Procedure - Death Certification: Freeman example"
 Usage: #example
-* meta
-  * versionId = "2"
-  * lastUpdated = "2022-08-15T19:09:47.315+00:00"
-  * source = "#pCPGUVLOunGhVFh4"
 * identifier.value = "180"
 * status = #completed
 * category = $sct#103693007 "Diagnostic procedure"

@@ -1,12 +1,8 @@
-Instance: messageheader-mdi-tox-result-report-a-freeman
+Instance: messageheader-mdi-tox-result-report-a-freeman-1
 InstanceOf: MessageHeaderToxicologyToMDI
 Title: "MessageHeader - Toxicology to MDI - Freeman"
 Description: "MessageHeader - Toxicology to MDI: Freeman example"
 Usage: #example
-* meta
-  * versionId = "7"
-  * lastUpdated = "2022-08-16T00:57:53.718+00:00"
-  * source = "#dLluwYESni4SEDxi"
 * eventCoding = CodeSystemMDI#tox-result-report
 * source
   * name = "University of Florida Pathology Labs, Forensic Toxicology Laboratory"

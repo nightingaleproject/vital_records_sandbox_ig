@@ -1,6 +1,5 @@
 Instance: Inline-Instance-for-bundle-mdi-tox-report-message-a-freeman-1
 InstanceOf: MessageHeaderToxicologyToMDI
-Usage: #inline
 * id = "messageheader-mdi-tox-result-report-a-freeman"
 * eventCoding = CodeSystemMDI#tox-result-report
 * source

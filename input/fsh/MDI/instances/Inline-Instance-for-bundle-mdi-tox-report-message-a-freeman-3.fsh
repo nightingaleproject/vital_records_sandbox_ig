@@ -1,27 +1,17 @@
 Instance: Inline-Instance-for-bundle-mdi-tox-report-message-a-freeman-3
-InstanceOf: USCorePatientProfile
+InstanceOf: PatientVitalRecordsNew
 Usage: #inline
 * id = "us-core-patient-a-freeman"
-* meta
-  * versionId = "14"
-  * lastUpdated = "2022-08-16T00:48:48.046+00:00"
-  * source = "#411pKOLYB8aT0e2j"
-* extension[0]
-  * extension[0]
-    * url = "detailed"
+* extension[race]
+  * extension[detailed]
     * valueCoding = urn:oid:2.16.840.1.113883.6.238#2029-7 "Asian Indian"
-  * extension[+]
-    * url = "text"
+  * extension[text]
     * valueString = "Asian Indian"
-  * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-* extension[+]
-  * extension[0]
-    * url = "ombCategory"
+* extension[ethnicity]
+  * extension[ombCategory]
     * valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
-  * extension[+]
-    * url = "text"
+  * extension[text]
     * valueString = "Not Hispanic or Latino"
-  * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
 * identifier
   * use = #usual
   * type = $v2-0203#SS "Social Security number"
@@ -30,6 +20,7 @@ Usage: #inline
   * value = "987054321"
 * active = true
 * name
+  * use = #official 
   * family = "Freeman"
   * given[0] = "Alice"
   * given[+] = "J."

@@ -1,36 +1,20 @@
 Instance: Inline-Instance-for-bundle-mdi-to-edrs-a-freeman-10
-InstanceOf: ObservationDeathDate
-Usage: #inline
+InstanceOf: DeathDateNew
 * id = "observation-death-date-a-freeman"
-* meta
-  * versionId = "6"
-  * lastUpdated = "2022-08-14T21:13:53.809+00:00"
-  * source = "#kKOivSEMy8TzRUZt"
 * status = #final
 * code = $loinc#81956-5 "Date+time of death"
 * subject.reference = "Patient/us-core-patient-a-freeman"
 * effectiveDateTime = "2022-01-08T15:30:00-05:00"
 * performer.reference = "Practitioner/us-core-practitioner-s-jones"
-* valueDateTime.extension
-  * extension[0]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-day"
-    * valueUnsignedInt = 8
-  * extension[+]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-year"
-    * valueUnsignedInt = 2022
-  * extension[+]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-month"
-    * valueUnsignedInt = 1
-  * extension[+]
-    * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-time"
-    * valueTime.extension
-      * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-      * valueCode = #unknown
-  * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"
+* valueDateTime
+  * extension[partialDateTime]
+    * extension[day].valueUnsignedInt = 8
+    * extension[year].valueUnsignedInt = 2022
+    * extension[month].valueUnsignedInt = 1
+    * extension[time].valueTime
+      * extension[dataabsent].valueCode = #unknown
 * method = CodeSystemMDI#approximate "Approximate"
-* component[0]
-  * code = $loinc#80616-6 "Date and time pronounced dead [US Standard Certificate of Death]"
+* component[datetimePronouncedDead]
   * valueDateTime = "2022-01-08T15:30:00-05:00"
-* component[+]
-  * code = $loinc#58332-8
+* component[placeOfDeath]
   * valueCodeableConcept = $sct#63238001 "Dead on arrival at hospital"

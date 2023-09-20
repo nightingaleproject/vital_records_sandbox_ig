@@ -1,12 +1,8 @@
 Instance: bundle-mdi-to-edrs-a-freeman
-InstanceOf: BundleDocumentMDIToEDRS
+InstanceOf: BundleDocumentMDIToEDRSNew
 Title: "Bundle - MDI to EDRS - Freeman"
 Description: "Bundle - MDI to EDRS: Freeman example"
 Usage: #example
-* meta
-  * versionId = "20"
-  * lastUpdated = "2022-08-16T21:07:35.004+00:00"
-  * source = "#t2oB2VgDvzN0FOBU"
 * identifier
   * system = "urn:ietf:rfc:3986"
   * value = "urn:uuid:933dde44f7664b03a20b6324f23986c0"
@@ -28,10 +24,10 @@ Usage: #example
   * fullUrl = "https://www.state-edrs.org/Practitioner/us-core-practitioner-b-goldberger"
   * resource = Inline-Instance-for-bundle-mdi-to-edrs-a-freeman-5
 * entry[+]
-  * fullUrl = "https://www.state-edrs.org/Location/location-death-atlanta-ga-a-freeman"
-  * resource = location-death-atlanta-ga-a-freeman
+  * fullUrl = "https://www.state-edrs.org/Location/location-death-atlanta-ga-a-freeman-1"
+  * resource = location-death-atlanta-ga-a-freeman-1
 * entry[+]
-  * fullUrl = "https://www.state-edrs.org/Location/location-injury-atlanta-ga-a-freeman"
+  * fullUrl = "https://www.state-edrs.org/Location/location-injury-atlanta-ga-a-freeman-7"
   * resource = Inline-Instance-for-bundle-mdi-to-edrs-a-freeman-7
 * entry[+]
   * fullUrl = "https://www.state-edrs.org/Patient/us-core-patient-a-freeman"

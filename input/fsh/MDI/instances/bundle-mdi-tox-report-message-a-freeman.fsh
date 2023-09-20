@@ -1,12 +1,8 @@
 Instance: bundle-mdi-tox-report-message-a-freeman
-InstanceOf: BundleMessageToxToMDI
+InstanceOf: BundleMessageToxToMDINew
 Title: "Bundle - Message Toxicology to MDI - Freeman"
 Description: "Bundle - Message Toxicology to MDI:  Freeman example"
 Usage: #example
-* meta
-  * versionId = "25"
-  * lastUpdated = "2022-08-17T05:45:56.725+00:00"
-  * source = "#Rte6RDAv1IrlSbMQ"
 * identifier
   * system = "urn:ietf:rfc:3986"
   * value = "urn:uuid:683dde44f7664b03a20b6324f23986d9"

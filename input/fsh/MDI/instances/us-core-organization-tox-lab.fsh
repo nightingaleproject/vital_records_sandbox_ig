@@ -1,4 +1,4 @@
-Instance: us-core-organization-tox-lab
+Instance: us-core-organization-tox-lab-1
 InstanceOf: Organization
 Title: "US Core Organization - UF Health Pathology Labs, Forensic Toxicology Laboratory"
 Description: "Example of US Core Organization - UF Health Pathology Labs, Forensic Toxicology Laboratory"

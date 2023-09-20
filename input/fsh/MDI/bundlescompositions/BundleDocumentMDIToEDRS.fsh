@@ -1,14 +1,8 @@
-Profile: BundleDocumentMDIToEDRS
+Profile: BundleDocumentMDIToEDRSNew
 Parent: Bundle
 Id: Bundle-document-mdi-to-edrs
 Title: "Bundle - Document MDI to EDRS"
 Description: "This Bundle profile represents an MDI to EDRS Document Bundle. It contains a Composition - MDI to EDRS."
-* ^meta.versionId = "7"
-* ^meta.lastUpdated = "2022-08-19T13:01:42.361+00:00"
-* ^meta.source = "#1CMMFuF5uBRImMhz"
-* ^version = "0.0.1"
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
 * identifier 1.. MS
   * ^short = "MDI to EDRS Document Bundle identifier"
 * type = #document (exactly)
@@ -20,4 +14,4 @@ Description: "This Bundle profile represents an MDI to EDRS Document Bundle. It 
 * entry contains MDItoEDRSComposition 1..1 MS
 * entry[MDItoEDRSComposition] ^short = "The Composition of data sent from an MDI information management system to an EDRS"
   * resource 1.. MS
-  * resource only CompositionMDIToEDRS
+  * resource only CompositionMDIToEDRSNew
