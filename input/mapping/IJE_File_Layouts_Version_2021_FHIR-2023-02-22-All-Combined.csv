@@ -1081,9 +1081,9 @@ For Canadian Provinces:
 1 = Edit Failed, Number Verified
 2 = Edit Failed, Number not Verified",,,,,,,,,,,,
 108,Mortality,100,701,1,Manner of Death,MANNER,,,VRDR,MannerOfDeath,value,codeable,[MannerOfDeathVS],y,,,,MannerOfDeath,
-641,Natality,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000, outcome=385671000",codeable,"[http://hl7.org/fhir/ValueSet/procedure-outcome], need clarity",,,,,Procedure-obstetric,
+641,Natality,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000, outcome=385671000",codeable,"[ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. Discussion needed: Is ECVF always the complement of ECVS?   If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure?",,,,,Procedure-obstetric,
 1518,Birth Infant Death,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,,,,,,,,,,,
-640,Natality,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000, outcome=385669000",codeable,"[http://hl7.org/fhir/ValueSet/procedure-outcome], need clarity",,,,,Procedure-obstetric,
+640,Natality,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000, outcome=385669000",codeable,"[ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. Discussion needed: Is ECVF always the complement of ECVS?   If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure?",,,,,Procedure-obstetric,
 1517,Birth Infant Death,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,,,,,,,,,,,
 1215,ITOP,33,336,1,Education,EDUC,"1 = 8th grade or less
 2 = 9th through 12th grade; no diploma
@@ -1654,7 +1654,7 @@ U = Unknown",,not implemented,not implemented,,,,,,,,not implemented,
 1342,Birth Infant Death,1,1,4,Date of Birth (Infant)--Year,IDOB_YR,4 digit year,,,,,,,,,,,,
 696,Natality,232,910,1,Is Infant Living at Time of Report?,ILIV,"Y = Yes
 N = No
-U = Infant transferred, Status Unknown",,VRCPL,ObservationInfantLivingVitalRecords,value,boolean,Boolean does not capture Unknown,,,,,Observation-infant-living-vr,
+U = Infant transferred, Status Unknown",,VRCPL,ObservationInfantLivingVitalRecords,value,boolean,"Discussion needed: IJE values are Y, N, U. However, Boolean does not capture Unknown",,,,,Observation-infant-living-vr,
 1573,Birth Infant Death,232,910,1,Is Infant Living at Time of Report?,ILIV,"Y = Yes
 N = No
 U = Infant transferred, Status Unknown",,,,,,,,,,,,

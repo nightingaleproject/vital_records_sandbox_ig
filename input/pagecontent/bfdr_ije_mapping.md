@@ -92,8 +92,8 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 228 | Congenital Anomalies of the Newborn--Down Syndrome | DOWT| [ConditionCongenitalAnomalyOfNewborn]|code=70156005 | na | See [Note on missing data] | 
 | 139 | Mother's Weight at Delivery (in whole pounds) | DWGT| [ObservationMotherDeliveryWeightVitalRecords]|value | quantity |  | 
 | 140 | Mother's Weight at Delivery--Edit Flag | DWGT_BYPASS| [ObservationEditFlagMothersDeliveryWeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], See [Handling of edit flags] | 
-| 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF| [ProcedureObstetric]|code=240278000, outcome=385671000 | codeable | [http://hl7.org/fhir/ValueSet/procedure-outcome], need clarity | 
-| 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS| [ProcedureObstetric]|code=240278000, outcome=385669000 | codeable | [http://hl7.org/fhir/ValueSet/procedure-outcome], need clarity | 
+| 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF| [ProcedureObstetric]|code=240278000, outcome=385671000 | codeable | [ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. Discussion needed: Is ECVF always the complement of ECVS?   If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? | 
+| 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS| [ProcedureObstetric]|code=240278000, outcome=385669000 | codeable | [ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. Discussion needed: Is ECVF always the complement of ECVS?   If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? | 
 | 239 | Risk Factors--Hypertension Eclampsia   (RECOMMENDED ADDITION EFFECTIVE 2004) | EHYPE| [ConditionEclampsiaHypertensionVitalRecords]| | na | See [Note on missing data] | 
 | 189 | Characteristics of Labor & Delivery--Anesthesia | ESAN| [ProcedureEpiduralOrSpinalAnesthesia]| | na | See [Note on missing data] | 
 | 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [ObservationEditFlagFathersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], See [Handling of edit flags] | 
@@ -177,7 +177,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 9 | Date of Birth (Infant)--Day | IDOB_DY| [PatientChildVitalRecords]|birthDate | date |  | 
 | 8 | Date of Birth (Infant)--Month | IDOB_MO| [PatientChildVitalRecords]|birthDate | date |  | 
 | 1 | Date of Birth (Infant)--Year | IDOB_YR| [PatientChildVitalRecords]|birthDate | date |  | 
-| 232 | Is Infant Living at Time of Report? | ILIV| [ObservationInfantLivingVitalRecords]|value | boolean | Boolean does not capture Unknown | 
+| 232 | Is Infant Living at Time of Report? | ILIV| [ObservationInfantLivingVitalRecords]|value | boolean | Discussion needed: IJE values are Y, N, U. However, Boolean does not capture Unknown | 
 | 181 | Characteristics of Labor & Delivery--Induction of Labor | INDL| [ProcedureInductionOfLabor]| | na | See [Note on missing data] | 
 | 332 | Infant's Medical Record Number | INF_MED_REC_NUM| [PatientChildVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”MR”  | string |  | 
 | 164 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926) | INFT| [ProcedureInfertilityTreatmentVitalRecords]| | na | See [Note on missing data] | 
