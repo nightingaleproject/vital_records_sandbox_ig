@@ -1,5 +1,6 @@
 Instance: location-death-atlanta-ga-a-freeman-new
-InstanceOf: LocationDeathVitalRecordsNew
+//InstanceOf: LocationDeathVitalRecordsNew
+InstanceOf: LocationDeath
 Title: "Location - Death - Atlanta GA Freeman"
 Description: "Location - Death:  Atlanta GA Freeman example"
 Usage: #example

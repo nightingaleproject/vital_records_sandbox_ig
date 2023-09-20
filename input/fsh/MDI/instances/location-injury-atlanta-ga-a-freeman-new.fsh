@@ -1,5 +1,6 @@
 Instance: location-injury-atlanta-ga-a-freeman-new
-InstanceOf: LocationInjuryVitalRecordsNew
+// InstanceOf: LocationInjuryVitalRecordsNew
+InstanceOf: LocationInjury
 Title: "Location - Injury - Atlanta GA Freeman"
 Description: "Location - Injury:  Atlanta GA Freeman example"
 Usage: #example
