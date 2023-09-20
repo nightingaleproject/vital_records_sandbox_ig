@@ -1,5 +1,6 @@
 Instance: Inline-Instance-for-bundle-mdi-to-edrs-a-freeman-7-new
-InstanceOf: LocationInjuryVitalRecordsNew
+// InstanceOf: LocationInjuryVitalRecordsNew
+InstanceOf: LocationInjury
 Usage: #inline
 * id = "location-injury-atlanta-ga-a-freeman"
 * meta
