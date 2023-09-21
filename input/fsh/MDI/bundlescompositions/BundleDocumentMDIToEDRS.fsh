@@ -1,4 +1,4 @@
-Profile: BundleDocumentMDIToEDRSNew
+Profile: BundleDocumentMDIToEDRS
 Parent: Bundle
 Id: Bundle-document-mdi-to-edrs
 Title: "Bundle - Document MDI to EDRS"
