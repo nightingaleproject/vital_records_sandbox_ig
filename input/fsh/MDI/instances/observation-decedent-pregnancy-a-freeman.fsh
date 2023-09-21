@@ -1,4 +1,4 @@
-Instance: observation-decedent-pregnancy-a-freeman-1
+Instance: observation-decedent-pregnancy-a-freeman
 InstanceOf: DecedentPregnancyStatusNew
 Title: "Observation - Decedent Pregnancy - Freeman"
 Description: "Observation - Decedent Pregnancy: Freeman example"

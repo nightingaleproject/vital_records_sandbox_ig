@@ -9,19 +9,19 @@ Usage: #example
 * type = #message
 * entry[0]
   * fullUrl = "https://www.forensic-investigation-agency.org/MessageHeader/messageheader-mdi-tox-result-report-a-freeman"
-  * resource = Inline-Instance-for-bundle-mdi-tox-report-message-a-freeman-1
+  * resource = messageheader-mdi-tox-result-report-a-freeman
 * entry[+]
   * fullUrl = "https://www.forensic-investigation-agency.org/DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"
   * resource = diagnosticreport-mdi-toxicology-lab-a-freeman
 * entry[+]
   * fullUrl = "https://www.forensic-investigation-agency.org/Patient/us-core-patient-a-freeman"
-  * resource = Inline-Instance-for-bundle-mdi-tox-report-message-a-freeman-3
+  * resource = us-core-patient-a-freeman
 * entry[+]
   * fullUrl = "https://www.forensic-investigation-agency.org/Organization/us-core-organization-tox-lab"
-  * resource = Inline-Instance-for-bundle-mdi-tox-report-message-a-freeman-4
+  * resource = us-core-organization-tox-lab
 * entry[+]
   * fullUrl = "https://www.forensic-investigation-agency.org/Practitioner/us-core-practitioner-b-goldberger"
-  * resource = Inline-Instance-for-bundle-mdi-tox-report-message-a-freeman-5
+  * resource = us-core-practitioner-b-goldberger
 * entry[+]
   * fullUrl = "https://www.forensic-investigation-agency.org/Specimen/specimen-blood-toxicology-a-freeman"
   * resource = specimen-blood-toxicology-a-freeman

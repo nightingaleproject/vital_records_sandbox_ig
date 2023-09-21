@@ -1,4 +1,4 @@
-Instance: vital-records-practitioner-s-jones
+Instance: us-core-practitioner-s-jones
 InstanceOf: PractitionerVitalRecordsNew
 Title: "US Core Practitioner - Dr. Sam Jones"
 Description: "Example of US Core Practitioner - Dr. Sam Jones, death pronouncer"

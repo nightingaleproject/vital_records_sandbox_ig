@@ -1,4 +1,4 @@
-Instance: observation-tobacco-use-a-freeman-1
+Instance: observation-tobacco-use-a-freeman
 InstanceOf: TobaccoUseContributedToDeathNew
 Title: "Observation - Tobacco Use - Freeman"
 Description: "Observation - Tobacco Use: Freeman example"

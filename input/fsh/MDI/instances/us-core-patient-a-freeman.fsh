@@ -1,4 +1,4 @@
-Instance: vital-records-patient-a-freeman
+Instance: us-core-patient-a-freeman
 InstanceOf: PatientVitalRecordsNew
 Title: "US Core Patient - Alice J. Freeman"
 Description: "Example of US Core Patient - Alice J. Freeman, decedent"

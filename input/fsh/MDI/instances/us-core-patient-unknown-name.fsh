@@ -11,8 +11,7 @@ Usage: #example
   * value = "MR303303305"
 * active = true
 * name.family = "UNK"
-  * extension
-    * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+  * extension[dataAbsentReason]
     * valueCode = #unknown
 * name.use = #official 
 * gender = #unknown

@@ -1,4 +1,4 @@
-Instance: observation-cause-of-death-part1-a-freeman-1
+Instance: observation-cause-of-death-part1-a-freeman
 InstanceOf: CauseOfDeathPart1New
 Title: "Observation - Cause of Death Part 1 - Freeman"
 Description: "Observation - Cause of Death Part 1: Freeman example"

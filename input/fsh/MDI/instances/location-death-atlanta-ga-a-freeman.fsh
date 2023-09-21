@@ -1,4 +1,4 @@
-Instance: location-death-atlanta-ga-a-freeman-1
+Instance: location-death-atlanta-ga-a-freeman
 InstanceOf: DeathLocation
 Title: "Location - Death - Atlanta GA Freeman"
 Description: "Location - Death:  Atlanta GA Freeman example"

@@ -1,4 +1,4 @@
-Instance: messageheader-mdi-tox-result-report-a-freeman-1
+Instance: messageheader-mdi-tox-result-report-a-freeman
 InstanceOf: MessageHeaderToxicologyToMDI
 Title: "MessageHeader - Toxicology to MDI - Freeman"
 Description: "MessageHeader - Toxicology to MDI: Freeman example"

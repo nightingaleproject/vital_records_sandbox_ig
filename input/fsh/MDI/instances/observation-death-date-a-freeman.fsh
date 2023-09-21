@@ -1,4 +1,4 @@
-Instance: observation-death-date-a-freeman-1
+Instance: observation-death-date-a-freeman
 InstanceOf: DeathDateNew
 Title: "Observation - Death Date - Freeman"
 Description: "Observation - Death Date: Freeman death date, location, death pronouncer example"
