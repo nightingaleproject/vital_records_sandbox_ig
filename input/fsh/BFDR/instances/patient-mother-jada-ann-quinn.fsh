@@ -1,12 +1,10 @@
 Instance: patient-mother-jada-ann-quinn
-InstanceOf: PatientMotherVitalRecords
-Title: "Patient - Mother example [Eve Everywoman]"
-Description: "Example of Patient-mother profile (Eve Everywoman)"
+InstanceOf: Patient
+Title: "Patient - Mother - Vital Records - Jada Ann Quinn"
+Description: "Patient - Mother - Vital Records: Jada Ann Quinn example"
 Usage: #example
 * meta
-  * versionId = "15"
-  * lastUpdated = "2023-04-05T20:35:49.599+00:00"
-  * source = "#oz4DeDiHCrFfzaek"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"
 * extension[0]
   * extension[0]
     * url = "ombCategory"
@@ -62,7 +60,9 @@ Usage: #example
 * gender = #female
 * birthDate = "1985-01-15"
 * address[0]
-  * extension[withinCityLimitsIndicator].valueCoding = $v2-0532#Y "Yes"
+  * extension
+    * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr"
+    * valueCoding = $v2-0532#Y "Yes"
   * use = #home
   * line = "1875 West Morton Avenue"
   * city = "Salt Lake City"
@@ -77,3 +77,6 @@ Usage: #example
   * state = "UT"
   * postalCode = "84401"
   * country = "US"
+* link
+  * other = Reference(relatedperson-mother-jada-ann-quinn)
+  * type = #seealso

@@ -3,10 +3,6 @@ Parent: USCoreEncounterProfile
 Id: Encounter-maternity
 Title: "Encounter - Maternity"
 Description: "This Encounter profile represents the mother's maternity encounter."
-* ^meta.versionId = "27"
-* ^meta.lastUpdated = "2023-04-25T05:59:06.116+00:00"
-* ^meta.source = "#JnfEsLF3y2AQYxgw"
-* ^publisher = "HL7 Public Health Work Group"
 * identifier MS
 * status MS
 * class MS

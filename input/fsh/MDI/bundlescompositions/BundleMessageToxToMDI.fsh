@@ -1,3 +1,4 @@
+
 Profile: BundleMessageToxToMDINew
 Parent: Bundle
 Id: Bundle-message-tox-to-mdi-new
@@ -10,5 +11,6 @@ Description: "This Bundle profile represents a Message Bundle from a forensic to
   * ^slicing.discriminator.path = "$this.resource"
   * ^slicing.rules = #open
 * entry contains ToxtoMDIMessage 1..1 MS
+
 * entry[ToxtoMDIMessage].resource 1..
 * entry[ToxtoMDIMessage].resource only MessageHeaderToxicologyToMDI

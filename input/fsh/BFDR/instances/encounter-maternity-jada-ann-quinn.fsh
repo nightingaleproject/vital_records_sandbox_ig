@@ -1,12 +1,8 @@
 Instance: encounter-maternity-jada-ann-quinn
 InstanceOf: Encounter_Maternity
-Title: "Encounter - Maternity example [Jada Ann Quinn]"
-Description: "Example of Encounter-maternity profile (Jada Ann Quinn)"
+Title: "Encounter - Maternity - Jada Ann Quinn"
+Description: "Encounter - Maternity: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "14"
-  * lastUpdated = "2021-05-14T07:49:47.073+00:00"
-  * source = "#qLSI78dbcM4SstyH"
 * identifier
   * system = "http://hospital.smarthealthit.org"
   * value = "9937012"

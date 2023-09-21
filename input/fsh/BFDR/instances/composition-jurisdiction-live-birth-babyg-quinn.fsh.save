@@ -1,12 +1,11 @@
 Instance: composition-jurisdiction-live-birth-babyg-quinn
 InstanceOf: CompositionJurisdictionLiveBirthReport
-Title: "Composition - Jurisdiction Live Birth Report example [Baby G Quinn]"
-Description: "Example of composition-jurisdiction-live-birth profile (Baby G Quinn)"
+Title: "Composition - Jurisdiction Live Birth Report - BabyG Quinn"
+Description: "Composition - Jurisdiction Live Birth Report: BabyG Quinn example"
 Usage: #example
 * meta
-  * versionId = "28"
-  * lastUpdated = "2023-04-25T02:01:50.135+00:00"
-  * source = "#wOpzw17pnfEn7i4c"
+  * versionId = "36"
+  * lastUpdated = "2023-07-05T02:42:07.848Z"
 * extension[0]
   * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number"
   * valueIdentifier
@@ -27,6 +26,9 @@ Usage: #example
   * reference = "Patient/patient-child-babyg-quinn"
   * display = "Patient - Child (Baby G Quinn)"
 * encounter
+  * extension
+    * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"
+    * valueReference.reference = "Encounter/encounter-maternity-jada-ann-quinn"
   * reference = "Encounter/encounter-birth-babyg-quinn"
   * display = "Encounter - Birth (Baby G Quinn)"
 * date = "2019-02-12"
@@ -101,8 +103,8 @@ Usage: #example
     * reference = "Patient/patient-mother-jada-ann-quinn"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[0]
-    * reference = "Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"
-    * display = "Observation - Pregnancy Risk Factor (Jada Ann Quinn: Pregnancy-induced hypertension)"
+    * reference = "Condition/condition-gestational-hypertension-jada-ann-quinn"
+    * display = "Condition - Gestational Hypertension (Jada Ann Quinn)"
   * entry[+]
     * reference = "Observation/observation-number-previous-cesareans-jada-ann-quinn"
     * display = "Observation - Number Previous Cesareans (Jada Ann Quinn)"
@@ -118,9 +120,6 @@ Usage: #example
   * entry[+]
     * reference = "Procedure/procedure-induction-of-labor-jada-ann-quinn"
     * display = "Procedure - Characteristic of Labor and Delivery (Jada Ann Quinn: Induction of Labor)"
-  * entry[+]
-    * reference = "Observation/observation-non-vertex-presentation-jada-ann-quinn"
-    * display = "Observation - Characteristic of Labor and Delivery (Jada Ann Quinn: Non-Vertex Presentation)"
   * entry[+]
     * reference = "Observation/observation-fetal-presentation-babyg-quinn"
     * display = "Observation - Fetal Presentation (Baby G Quinn)"
@@ -141,16 +140,13 @@ Usage: #example
     * display = "Observation - Gestational Age at Delivery (Baby G Quinn)"
   * entry[+]
     * reference = "Observation/observation-apgar-score-babyg-quinn-1-min"
-    * display = "Observation - APGAR Score (BabyG Quinn: 1 min)"
+    * display = "Observation - Apgar Score (BabyG Quinn: 1 min)"
   * entry[+]
     * reference = "Observation/observation-apgar-score-babyg-quinn-5-min"
-    * display = "Observation - APGAR Score (BabyG Quinn: 5 min)"
+    * display = "Observation - Apgar Score (BabyG Quinn: 5 min)"
   * entry[+]
     * reference = "Observation/observation-plurality-jada-ann-quinn"
     * display = "Observation - Plurality (Jada Ann Quinn)"
-  * entry[+]
-    * reference = "Condition/condition-abnormal-condition-of-newborn-birth-injury-babyg-quinn"
-    * display = "Condition - Abnormal Condition of Newborn - Birth Injury (Baby G Quinn)"
   * entry[+]
     * reference = "Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"
     * display = "Condition - Congenital Anomaly of Newborn (BabyG Quinn) 1"

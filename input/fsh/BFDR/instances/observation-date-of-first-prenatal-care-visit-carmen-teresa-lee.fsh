@@ -1,9 +1,11 @@
 Instance: observation-date-of-first-prenatal-care-visit-carmen-teresa-lee
 InstanceOf: ObservationDateOfFirstPrenatalCareVisit
-Title: "Observation - Date of First Prenatal Care Visit example [Carmen Teresa Lee]"
-Description: "Example of Observation-date-of-first-prenatal-care-visit profile (Carmen Teresa Lee)"
+Title: "Observation - Date of First Prenatal Care Visit - Carmen Teresa Lee"
+Description: "Observation - Date of First Prenatal Care Visit: Carmen Teresa Lee example"
 Usage: #example
 * status = #final
+* code = $loinc#69044-6 "Date first prenatal visit"
+  * text = "Date of first prenatal care visit"
 * subject
   * reference = "Patient/patient-decedent-fetus-not-named"
   * display = "Patient - Decedent Fetus (Fetus Not Named)"

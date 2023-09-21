@@ -1,12 +1,8 @@
 Instance: procedure-final-route-method-delivery-babyg-quinn
 InstanceOf: ProcedureFinalRouteMethodDelivery
-Title: "Procedure - Final Route and Method of Delivery example [Baby G Quinn]"
-Description: "Example of procedure-final-route-method-delivery (Baby G Quinn)"
+Title: "Procedure - Final Route and Method of Delivery - Baby G Quinn"
+Description: "Procedure - Final Route and Method of Delivery: Baby G Quinn example"
 Usage: #example
-* meta
-  * versionId = "3"
-  * lastUpdated = "2021-07-12T01:05:15.836+00:00"
-  * source = "#Zm2GQ2FEgmvmmeSq"
 * status = #completed
 * code = $sct#11466000 "Cesarean section"
   * text = "Cesarean section"
