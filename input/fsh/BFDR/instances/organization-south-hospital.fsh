@@ -1,14 +1,10 @@
 Instance: organization-south-hospital
 InstanceOf: Organization
-Title: "Organization - US Core Organization example [South Hospital]"
-Description: "Example of us-core-organization profile (South Hospital)"
+Title: "US Core Organization - South Hospital"
+Description: "US Core Organization: South Hospital example"
 Usage: #example
-* meta
-  * versionId = "3"
-  * lastUpdated = "2020-12-02T00:09:30.883+00:00"
-  * source = "#NAhEFDcQF2EKYeAW"
 * identifier
-  * system = "http://hl7.org.fhir/sid/us-npi"
+  * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "5555512"
 * active = true
 * type = $v3-RoleCode#HOSP "Hospital"

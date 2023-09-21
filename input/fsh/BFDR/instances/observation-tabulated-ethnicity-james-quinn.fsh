@@ -1,12 +1,10 @@
 Instance: observation-tabulated-ethnicity-james-quinn
-InstanceOf: ObservationTabulatedEthnicityVitalRecords
-Title: "Observation - Tabulated Ethnicity - James Quinn"
-Description: "Observation - Tabulated Ethnicity: James Quinn example"
+InstanceOf: Observation
+Title: "Observation - Tabulated Ethnicity - Vital Records - James Quinn"
+Description: "Observation - Tabulated Ethnicity - Vital Records: James Quinn example"
 Usage: #example
 * meta
-  * versionId = "2"
-  * lastUpdated = "2023-04-05T20:31:29.518+00:00"
-  * source = "#lnOKgPCYj90yHcww"
+  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"
 * status = #final
 * code = $loinc#80978-0 "Tabulated ethnicity [CDC]"
   * text = "Tabulated ethnicity [CDC]"

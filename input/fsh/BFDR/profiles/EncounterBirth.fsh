@@ -3,11 +3,6 @@ Parent: USCoreEncounterProfile
 Id: Encounter-birth
 Title: "Encounter - Birth"
 Description: "This Encounter profile represents the child's birth encounter."
-* ^meta.versionId = "34"
-* ^meta.lastUpdated = "2023-04-25T05:59:09.339+00:00"
-* ^meta.source = "#YNa2tXOALAZtqbd7"
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * subject 1..1 MS
 * subject only Reference(PatientChildVitalRecords)
 * participant MS

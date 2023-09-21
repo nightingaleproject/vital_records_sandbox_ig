@@ -1,12 +1,8 @@
 Instance: coverage-principal-payer-for-delivery-jada-ann-quinn
 InstanceOf: CoveragePrincipalPayerDelivery
-Title: "Coverage - Principal Payer for Delivery example [Jada Ann Quinn]"
-Description: "Example of coverage-principal-payer-for-delivery profile (Jada Ann Quinn)"
+Title: "Coverage - Principal Payer for Delivery - Jada Ann Quinn"
+Description: "Coverage - Principal Payer for Delivery: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "7"
-  * lastUpdated = "2023-04-07T04:25:31.419+00:00"
-  * source = "#posDNbY5z3xvRKYC"
 * status = #active
 * type = $sopt#5 "PRIVATE HEALTH INSURANCE"
   * text = "Private Health Insurance"

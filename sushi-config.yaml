@@ -58,12 +58,18 @@ publisher:
 pages:
   index.md:
     title: Home
+  usage.md:
+    title: Usage
   vrdr-content-transitions.md:
     title: VRDR Content Transitions 
   bfdr-content-transitions.md:
     title: BFDR Content Transitions 
   mdi-content-transitions.md:
     title: MDI Content Transitions 
+  bfdr_ije_mapping.md:
+    title: BFDR Data Dictionary
+  vrdr_ije_mapping.md:
+    title: VRDR Data Dictionary
 
 
 #
@@ -93,11 +99,17 @@ parameters:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.html
-  Artifacts: artifacts.html
+  Home:
+    Home: index.html
+    Usage: usage.html
+  Artifacts:
+    All FHIR Artifacts: artifacts.html
+    VRDR Data Dictionary: vrdr_ije_mapping.html
+    BFDR Data Dictionary: bfdr_ije_mapping.html
   VRDR: vrdr-content-transitions.html
   BFDR: bfdr-content-transitions.html
   MDI: mdi-content-transitions.html
+
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

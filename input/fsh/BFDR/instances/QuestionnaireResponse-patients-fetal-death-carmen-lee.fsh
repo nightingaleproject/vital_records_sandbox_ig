@@ -3,10 +3,6 @@ InstanceOf: QuestionnaireResponse
 Title: "QuestionnaireResponse - Patient's Fetal Death Worksheet: Carmen Lee"
 Description: "QuestionnaireResponse - Patient's Fetal Death Worksheet: Carmen Lee"
 Usage: #example
-* meta
-  * versionId = "10"
-  * lastUpdated = "2021-07-09T03:16:14.037+00:00"
-  * source = "#VCyPJiBNgzmYZ0iz"
 * questionnaire = "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-patients-fetal-death"
 * status = #completed
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"

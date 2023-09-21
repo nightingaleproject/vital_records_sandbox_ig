@@ -3,13 +3,6 @@ Parent: Condition
 Id: Condition-fetal-death-cause-or-condition
 Title: "Condition - Fetal Death Cause or Condition"
 Description: "This Condition profile contains information provided by the clinician to indicate the cause or causes of the fetal death."
-* ^meta.versionId = "17"
-* ^meta.lastUpdated = "2023-04-25T05:55:21.494+00:00"
-* ^meta.source = "#5CwPHO2zktSPadCz"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "HL7 Public Health Work Group"
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * . ^short = "Information provided by the clinician to indicate the cause or causes of the fetal death."
 * category = $loinc#76060-3
   * ^short = "Initiating cause or condition of fetal death [US Standard Report of Fetal Death]"
