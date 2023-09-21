@@ -1,5 +1,5 @@
 Instance: composition-mdi-to-edrs-a-freeman
-InstanceOf: CompositionMDIToEDRS
+InstanceOf: CompositionMDIToEDRSNew
 Title: "MDI to EDRS Composition - Freeman"
 Description: "MDI to EDRS Composition: Freeman example"
 Usage: #example
@@ -7,8 +7,7 @@ Usage: #example
   * versionId = "19"
   * lastUpdated = "2022-08-15T23:49:50.478+00:00"
   * source = "#rrMJ4KdpMQ2Q66n0"
-* extension
-  * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"
+* extension[Extension-tracking-number]
   * valueIdentifier
     * type = $v2-0203#BCT
     * value = "ME21-113"

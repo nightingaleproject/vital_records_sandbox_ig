@@ -1,12 +1,8 @@
 Instance: observation-death-date-a-freeman
-InstanceOf: ObservationDeathDate
+InstanceOf: DeathDateNew
 Title: "Observation - Death Date - Freeman"
 Description: "Observation - Death Date: Freeman death date, location, death pronouncer example"
 Usage: #example
-* meta
-  * versionId = "7"
-  * lastUpdated = "2022-08-16T00:44:09.694+00:00"
-  * source = "#uVfl0AuS3c0qSrP5"
 * status = #final
 * code = $loinc#81956-5 "Date+time of death"
 * subject.reference = "Patient/us-core-patient-a-freeman"

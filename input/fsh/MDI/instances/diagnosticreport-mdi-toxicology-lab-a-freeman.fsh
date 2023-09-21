@@ -3,12 +3,7 @@ InstanceOf: DiagnosticReportToxicologyToMDI
 Title: "DiagnosticReport - Toxicology Lab Result to MDI - Freeman"
 Description: "DiagnosticReport - Toxicology Lab Result to MDI: Freeman example"
 Usage: #example
-* meta
-  * versionId = "13"
-  * lastUpdated = "2022-08-17T02:41:36.325+00:00"
-  * source = "#xtoIAiQNAmERJ3rp"
-* extension
-  * url = "http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"
+* extension[Extension-tracking-number]
   * valueIdentifier
     * system = "http://florida-investigation-agncy.org/fhir/agency-case-numbers"
     * value = "ME21-111"
@@ -18,7 +13,7 @@ Usage: #example
   * value = "R21-01578"
   * assigner.reference = "Organization/us-core-organization-tox-lab"
 * status = #final
-* category = $v2-0074#LAB "Laboratory"
+// * category = $v2-0074#LAB "Laboratory"
 * code = $loinc#81273-5 "fentaNYL and Norfentanyl panel - Specimen"
 * subject
   * reference = "Patient/us-core-patient-a-freeman"

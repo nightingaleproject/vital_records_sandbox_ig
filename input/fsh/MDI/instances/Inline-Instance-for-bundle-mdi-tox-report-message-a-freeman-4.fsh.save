@@ -1,11 +1,6 @@
 Instance: Inline-Instance-for-bundle-mdi-tox-report-message-a-freeman-4
 InstanceOf: USCoreOrganizationProfile
-Usage: #inline
 * id = "us-core-organization-tox-lab"
-* meta
-  * versionId = "4"
-  * lastUpdated = "2022-08-16T00:57:24.894+00:00"
-  * source = "#CWTtEHYIVTf46Q1i"
 * identifier
   * system = "http://hl7.org.fhir/sid/us-npi"
   * value = "111223333"
