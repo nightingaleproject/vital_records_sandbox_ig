@@ -243,6 +243,43 @@ groups:
       - ValueSetEducationLevelPersonVitalRecordsNew
       - ValueSetDeathPregnancyStatusVitalRecordsNew
 
+  BFDRCompositionBundleProfilesNew:
+    name: BFDR New Compositions and Bundles 
+    description: BFDR New Composition and Bundle Profiles
+    resources:
+      - CompositionCodedCauseOfFetalDeathNew
+      - CompositionCodedRaceAndEthnicityNew
+      - CompositionJurisdictionFetalDeathReportNew
+      - CompositionJurisdictionLiveBirthReportNew
+      - CompositionProviderFetalDeathReportNew
+      - CompositionProviderLiveBirthReportNew
+      - DemographicCodedContentBundleBFDR
+
+
+  BFDRProfilesfromVRCL:
+    name: BFDR New Profiles (from VRCL)
+    description: BFDR New Profiles (from VRCL)
+    resources:
+      - ObservationApgarScoreNew
+      - ObservationBirthWeightNew
+      - ObservationGestationalAgeAtDeliveryNew
+      - ObservationInfantLivingNew
+      - ObservationLastMenstrualPeriodNew
+      - ObservationMotherDeliveryWeightNew
+      - ObservationMotherHeightNew
+      - ObservationMotherPrepregnancyWeightNew
+      - ObservationNumberBirthsNowDeadNew
+      - ObservationNumberBirthsNowLivingNew
+      - ObservationNumberFetalDeathsThisDeliveryNew
+      - ObservationNumberLiveBirthsThisDeliveryNew
+      - ObservationNumberOtherPregnancyOutcomesNew
+      - ObservationNumberPrenatalVisitsNew
+      - ObservationNumberPreviousCesareansNew
+      - ObservationPregnancyRiskFactorNew
+      - PatientDecedentFetusNew
+      - PatientMotherNew
+
+
   BFDRValueSets:
     name: BFDR ValueSets
     description: BFDR ValueSets
@@ -318,7 +355,7 @@ groups:
       - EditBypass0124VS
       - EditBypass01234VS     
 
-VRDRProfilesNew:
+  VRDRProfilesNew:
     name: New VRDR Profiles
     resources:  
       - DecedentNew 
@@ -333,6 +370,20 @@ VRDRProfilesNew:
       - MannerOfDeathNew 
       - TobaccoUseContributedToDeathNew 
 
+  MDIProfilesNew:
+    name: New MDI Profiles
+    resources:  
+      - BundleDocumentMDIToEDRSNew 
+      - BundleMessageToxToMDINew
+      - CompositionMDIToEDRSNew
+    
+  MDIProfilesUnchanged:
+    name: Unchanged MDI Profiles
+    resources:  
+      - DiagnosticReportToxicologyToMDI 
+      - MessageHeaderToxicologyToMDI
+      - ObservationAutopsyPerformedIndicator
+      - ObservationToxicologyLabResult
 
 
 #
