@@ -7,6 +7,12 @@ RuleSet: CompositionSectionEntrySlicingMDI(section)
 * section[{section}].entry ^slicing.discriminator.path = "$this.resolve()"
 * section[{section}].entry ^slicing.rules = #open
 
+RuleSet: CompositionSectionEntryNoSlicingMDI(section)
+* section contains {section} 0..1
+* section[{section}].code = CodeSystemMDI#{section}
+* section[{section}] ^label = "{section}"
+* section[{section}] ^short = "{section}"
+
 
 Profile: CompositionMDIToEDRSNew
 Parent: Composition
@@ -47,29 +53,26 @@ Description: "This Composition profile represents data sent from an MDI informat
   * ^short = "The Composition is broken into sections that, where possible, align with the sections in the 'Common data elements working document'."
   * ^definition = "The Composition is broken into sections that, where possible, align with the sections in the 'Common data elements working document'."
   * code 1..1
-  * entry MS
-    * ^slicing.discriminator.type = #profile
-    * ^slicing.discriminator.path = "$this.resolve()"
-    * ^slicing.rules = #open
+
 * insert CompositionSectionEntrySlicingMDI(demographics)
 * insert CompositionSectionEntrySlicingMDI(circumstances)
 * insert CompositionSectionEntrySlicingMDI(jurisdiction)
 * insert CompositionSectionEntrySlicingMDI(cause-manner)
 * insert CompositionSectionEntrySlicingMDI(medical-history)
 * insert CompositionSectionEntrySlicingMDI(exam-autopsy)
-* insert CompositionSectionEntrySlicingMDI(narratives )
+* insert CompositionSectionEntryNoSlicingMDI(narratives )
 
 * section[demographics] ^label = "This slice contains demographic information about the decedent that is not represented in the decedent Patient profile."
   * ^short = "This slice contains demographic information about the decedent that is not represented in the decedent Patient profile."
   * ^definition = "This section contains demographic information about the decedent that is not represented in the decedent Patient profile."
-  * code // = CodeSystemMDI#demographics
+  * code  = CodeSystemMDI#demographics
     * ^definition = "Demographic information section"
     * text MS
   * text MS
 * section[circumstances] ^label = "This slice contains circumstances of the death."
   * ^short = "This slice contains circumstances of the death."
   * ^definition = "This section contains circumstances of the death."
-  * code // = CodeSystemMDI#circumstances
+  * code  = CodeSystemMDI#circumstances
     * ^definition = "Circumstances of the death section"
   * entry MS
     * ^short = "Entries that are contained in the Circumstances section"
@@ -112,20 +115,23 @@ Description: "This Composition profile represents data sent from an MDI informat
   * entry MS
     * ^short = "Entries that are contained in the Jurisdiction section"
     * ^definition = "Entries that are contained in the Jurisdiction section"
-  * entry contains
-     death-certification 0..1 MS and 
-     death-date 0..1 MS 
-  * entry[death-date] only Reference(DeathDateNew)
-    * ^sliceName = "death-date"
-    * ^label = "The estimated and pronounced date of death, also contains the death pronouncer practitioner"
-    * ^short = "The estimated and pronounced date of death, also contains the death pronouncer practitioner"
-    * ^definition = "The estimated and pronounced date of death, also contains the death pronouncer practitioner"
-    * ^mustSupport = true
-  * entry[death-certification] only Reference(DeathCertificationNew)
-    * ^label = "The procedure where the certification of death was performed by the certifier."
-    * ^short = "The procedure where the certification of death was performed by the certifier."
-    * ^definition = "The procedure where the certification of death was performed by the certifier."
   * emptyReason MS
+* insert BundleSectionSlice(jurisdiction, death-date, 0, 1,  [[The estimated and pronounced date of death, also contains the death pronouncer practitioner.]],  [[The estimated and pronounced date of death, also contains the death pronouncer practitioner.]], DeathDateNew )
+* insert BundleSectionSlice(jurisdiction, death-certification, 0, 1,  [[The procedure where the certification of death was performed by the certifier.]],  [[The procedure where the certification of death was performed by the certifier.]], DeathCertificationNew )
+// * entry contains
+//      death-certification 0..1 MS and 
+//      death-date 0..1 MS 
+//   * entry[death-date] only Reference(DeathDateNew)
+//     * ^sliceName = "death-date"
+//     * ^label = "The estimated and pronounced date of death, also contains the death pronouncer practitioner"
+//     * ^short = "The estimated and pronounced date of death, also contains the death pronouncer practitioner"
+//     * ^definition = "The estimated and pronounced date of death, also contains the death pronouncer practitioner"
+//     * ^mustSupport = true
+//   * entry[death-certification] only Reference(DeathCertificationNew)
+//     * ^label = "The procedure where the certification of death was performed by the certifier."
+//     * ^short = "The procedure where the certification of death was performed by the certifier."
+//     * ^definition = "The procedure where the certification of death was performed by the certifier."
+  
 * section[cause-manner] ^label = "This slice contains information about the cause and manner of death."
   * ^short = "This slice contains information about the cause and manner of death."
   * ^definition = "This section contains information about the cause and manner of death."
@@ -135,25 +141,31 @@ Description: "This Composition profile represents data sent from an MDI informat
   * entry MS
     * ^short = "Entries that are contained in the Cause-Manner section"
     * ^definition = "Entries that are contained in the Cause-Manner section"
-  * entry contains
-      cause 0..4 MS and
-      other-condition 0..1 MS and
-      manner 0..1 MS and
-      how-injury 0..1 MS
-  * entry[cause] only Reference(CauseOfDeathPart1New)
-    * ^label = "Up to 4 lines of cause of death."
-    * ^short = "Up to 4 lines of cause of death."
-    * ^definition = "Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death."
-  * entry[other-condition] only Reference(CauseOfDeathPart2New)
-    * ^short = "Other significant conditions contributing to death but not resulting in the underlying cause."
-    * ^definition = "Other significant conditions contributing to death but not resulting in the underlying cause."
-  * entry[manner] only Reference(MannerOfDeathNew)
-    * ^short = "Manner of death."
-    * ^definition = "The conclusion arrived at upon completion of death investigation regarding the manner of death."
-  * entry[how-injury] only Reference(InjuryIncidentNew)
-    * ^short = "Certified explanation of how injury occurred."
-    * ^definition = "Certified explanation of how injury occurred."
   * emptyReason MS
+* insert BundleSectionSlice(cause-manner, cause, 0, 1,  [[Up to 4 lines of cause of death.]],  [[Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death.]], CauseOfDeathPart1New )
+* insert BundleSectionSlice(cause-manner, other-condition, 0, 1,  [[Other significant conditions contributing to death but not resulting in the underlying cause..]],  [[Other significant conditions contributing to death but not resulting in the underlying cause..]], CauseOfDeathPart2New )
+* insert BundleSectionSlice(cause-manner, manner, 0, 1,  [[Manner of death]],  [[The conclusion arrived at upon completion of death investigation regarding the manner of death.]], MannerOfDeathNew )
+* insert BundleSectionSlice(cause-manner, how-injury, 0, 1,  [[Certified explanation of how injury occurred.]],  [[Certified explanation of how injury occurred.]], InjuryIncidentNew )
+
+  // * entry contains
+  //     cause 0..4 MS and
+  //     other-condition 0..1 MS and
+  //     manner 0..1 MS and
+  //     how-injury 0..1 MS
+  // * entry[cause] only Reference(CauseOfDeathPart1New)
+  //   * ^label = "Up to 4 lines of cause of death."
+  //   * ^short = "Up to 4 lines of cause of death."
+  //   * ^definition = "Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death."
+  // * entry[other-condition] only Reference(CauseOfDeathPart2New)
+  //   * ^short = "Other significant conditions contributing to death but not resulting in the underlying cause."
+  //   * ^definition = "Other significant conditions contributing to death but not resulting in the underlying cause."
+  // * entry[manner] only Reference(MannerOfDeathNew)
+  //   * ^short = "Manner of death."
+  //   * ^definition = "The conclusion arrived at upon completion of death investigation regarding the manner of death."
+  // * entry[how-injury] only Reference(InjuryIncidentNew)
+  //   * ^short = "Certified explanation of how injury occurred."
+  //   * ^definition = "Certified explanation of how injury occurred."
+
 * section[medical-history] ^label = "This slice contains relevant medical history about the decedent."
   * ^short = "This slice contains relevant medical history about the decedent."
   * ^definition = "This section contains relevant medical history about the decedent."
@@ -164,15 +176,16 @@ Description: "This Composition profile represents data sent from an MDI informat
     * ^short = "Narrative medical condition"
     * ^definition = "Narrative medical condition"
   * entry MS
-  * entry contains
-    history-condition 0..1 MS
-  * entry[history-condition] only Reference(USCoreConditionEncounterDiagnosisProfile or USCoreConditionProblemsHealthConcernsProfile)
-    * ^sliceName = "history-condition"
-    * ^label = "Coded medical conditions"
-    * ^short = "Coded medical conditions"
-    * ^definition = "Coded medical conditions"
-    * ^mustSupport = true
   * emptyReason MS
+* insert BundleSectionSlice(medical-history, history-condition, 0, 1,  [[Coded medical conditions.]],  [[Coded medical conditions.]], USCoreConditionEncounterDiagnosisProfile or USCoreConditionProblemsHealthConcernsProfile )
+  // * entry contains history-condition 0..1 MS
+  // * entry[history-condition] only Reference(USCoreConditionEncounterDiagnosisProfile or USCoreConditionProblemsHealthConcernsProfile)
+  //   * ^sliceName = "history-condition"
+  //   * ^label = "Coded medical conditions"
+  //   * ^short = "Coded medical conditions"
+  //   * ^definition = "Coded medical conditions"
+  //   * ^mustSupport = true
+
 * section[exam-autopsy] ^label = "This slice contains exam and autopsy information."
   * ^short = "This slice contains exam and autopsy information."
   * ^definition = "This section contains exam and autopsy information."
@@ -182,11 +195,14 @@ Description: "This Composition profile represents data sent from an MDI informat
     * ^label = "Description of autopsy findings"
     * ^short = "Description of autopsy findings"
     * ^definition = "Description of autopsy findings"
-  * entry contains autopsy-performed 0..* MS
-  * entry[autopsy-performed] only Reference(ObservationAutopsyPerformedIndicator)
-    * ^label = "If autopsy was performed, if autopsy findings are available, and the autopsy Performer"
-    * ^short = "If autopsy was performed, if autopsy findings are available, and the autopsy Performer"
-    * ^definition = "If autopsy was performed, if autopsy findings are available, and the autopsy Performer"
+//   * entry contains autopsy-performed 0..* MS
+//   * entry[autopsy-performed] only Reference(ObservationAutopsyPerformedIndicator)
+//     * ^label = "If autopsy was performed, if autopsy findings are available, and the autopsy Performer"
+//     * ^short = "If autopsy was performed, if autopsy findings are available, and the autopsy Performer"
+//     * ^definition = "If autopsy was performed, if autopsy findings are available, and the autopsy Performer"
+// * section[narratives] ^label = "This slice contains additional death investigation narrative descriptions."
+* insert BundleSectionSlice(exam-autopsy, autopsy-performed, 0, 1,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], ObservationAutopsyPerformedIndicator )
+
 * section[narratives] ^label = "This slice contains additional death investigation narrative descriptions."
   * ^short = "This slice contains additional death investigation narrative descriptions."
   * ^definition = "This slice contains additional death investigation narrative descriptions."
