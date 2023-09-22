@@ -3,8 +3,8 @@ InstanceOf: ConditionCodedInitiatingFetalDeathCauseOrCondition
 Title: "Condition - Coded Initiating Cause of Fetal Death"
 Description: "Condition - Coded Initiating Cause of Fetal Death example"
 Usage: #example
-//* category[0] = $condition-category#encounter-diagnosis "Encounter Diagnosis"
-* category[+] = $loinc#92022-3 "Coded initiating cause or condition of fetal death"
+* category[us-core] = $condition-category#encounter-diagnosis "Encounter Diagnosis"
+* category[codedInitiatingCauseOrCondition] = $loinc#92022-3 "Coded initiating cause or condition of fetal death"
 * code = $icd-10#P01.1 "Fetus and newborn affected by premature rupture of membranes"
   * text = "Fetus and newborn affected by premature rupture of membranes"
 * subject

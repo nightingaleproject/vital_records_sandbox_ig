@@ -1,10 +1,11 @@
 Profile: ConditionCodedInitiatingFetalDeathCauseOrCondition
-Parent: Condition
+Parent: USCoreConditionEncounterDiagnosisProfile
 Id: Condition-coded-initiating-fetal-death-cause-or-condition
 Title: "Condition - Coded Initiating Fetal Death Cause or Condition"
 Description: "This profile represents the coded initiating cause/condition of fetal death."
 * . ^short = "This profile represents the coded initiating cause/condition of fetal death."
-* category = $loinc#92022-3
+* category contains codedInitiatingCauseOrCondition	 1..1 MS
+* category[codedInitiatingCauseOrCondition] =  $loinc#92022-3
   * ^short = "Coded initiating cause or condition of fetal death"
 * code from $2.16.840.1.114222.4.11.7933 (required)
   * ^short = "This value set contains the ICD10 codes for causes of fetal death as defined by the ICD-10-Mortality Fetal Manual (2016)."

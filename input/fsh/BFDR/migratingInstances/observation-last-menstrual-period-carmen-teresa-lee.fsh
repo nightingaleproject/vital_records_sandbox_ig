@@ -1,4 +1,4 @@
-Instance: observation-last-menstrual-period-carmen-teresa-lee-new
+Instance: observation-last-menstrual-period-carmen-teresa-lee
 InstanceOf: ObservationLastMenstrualPeriodNew
 Title: "Observation - Last Menstrual Period - Carmen Teresa Lee"
 Description: "Observation - Last Menstrual Period: Carmen Teresa Lee example"

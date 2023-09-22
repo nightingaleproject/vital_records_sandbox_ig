@@ -14,4 +14,4 @@ Description: "This Bundle profile represents an MDI to EDRS Document Bundle. It 
 * entry contains MDItoEDRSComposition 1..1 MS
 * entry[MDItoEDRSComposition] ^short = "The Composition of data sent from an MDI information management system to an EDRS"
   * resource 1.. MS
-  * resource only CompositionMDIToEDRSNew
+  * resource only CompositionMDIToEDRS

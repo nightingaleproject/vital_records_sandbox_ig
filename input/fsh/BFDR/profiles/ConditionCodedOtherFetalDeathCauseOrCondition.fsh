@@ -1,10 +1,11 @@
 Profile: ConditionCodedOtherFetalDeathCauseOrCondition
-Parent: Condition
+Parent: USCoreConditionEncounterDiagnosisProfile
 Id: Condition-coded-other-fetal-death-cause-or-condition
 Title: "Condition - Coded Other Fetal Death Cause or Condition"
 Description: "This profile represents a coded other significant cause/condition of fetal death."
 * . ^short = "This profile represents a coded other significant cause/condition of fetal death."
-* category = $loinc#92023-1
+* category contains codedOtherCauseOrCondition	 1..1 MS
+* category[codedOtherCauseOrCondition] = $loinc#92023-1
   * ^short = "Coded other significant causes or conditions of fetal death"
 * code from $2.16.840.1.114222.4.11.7933 (required)
   * ^short = "This value set contains the ICD10 codes for causes of fetal death as defined by the ICD-10-Mortality Fetal Manual (2016)."
