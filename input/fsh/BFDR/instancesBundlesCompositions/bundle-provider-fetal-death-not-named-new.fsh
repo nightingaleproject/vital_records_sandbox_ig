@@ -13,7 +13,7 @@ Usage: #example
 //   * fullUrl = "http://example.org/fhir/Composition/composition-provider-fetal-death-not-named"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-1
 * insert addentry(PatientDecedentFetusVitalRecords, patient-decedent-fetus-not-named-common)
-//* insert addentry(PatientDecedentFetusNew, patient-decedent-fetus-not-named-new)
+//* insert addentry(PatientDecedentFetusNew, patient-decedent-fetus-not-named)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-decedent-fetus-not-named"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-2
@@ -26,7 +26,7 @@ Usage: #example
 //   * fullUrl = "http://example.org/fhir/Practitioner/practitioner-vital-records-jessica-leung"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-4
 * insert addentry(PatientMotherVitalRecords, patient-mother-carmen-teresa-lee-common)
-//* insert addentry(PatientMotherNew, patient-mother-carmen-teresa-lee-new)
+//* insert addentry(PatientMotherNew, patient-mother-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-5
@@ -38,15 +38,15 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-7
-* insert addentry(ObservationLastMenstrualPeriodNew, observation-last-menstrual-period-carmen-teresa-lee-new)
+* insert addentry(ObservationLastMenstrualPeriodNew, observation-last-menstrual-period-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-last-menstrual-period-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-8
-* insert addentry(ObservationNumberBirthsNowLivingNew, observation-number-births-now-living-carmen-teresa-lee-new)
+* insert addentry(ObservationNumberBirthsNowLivingNew, observation-number-births-now-living-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-births-now-living-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-9
-* insert addentry(ObservationNumberBirthsNowDeadNew, observation-number-births-now-dead-carmen-teresa-lee-new)
+* insert addentry(ObservationNumberBirthsNowDeadNew, observation-number-births-now-dead-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-births-now-dead-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-10
@@ -54,11 +54,11 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-date-of-last-live-birth-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-11
-* insert addentry(ObservationMotherHeightNew, observation-mother-height-carmen-teresa-lee-new)
+* insert addentry(ObservationMotherHeightNew, observation-mother-height-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-height-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-12
-* insert addentry(ObservationMotherPrepregnancyWeightNew, observation-mother-prepregnancy-weight-carmen-teresa-lee-new)
+* insert addentry(ObservationMotherPrepregnancyWeightNew, observation-mother-prepregnancy-weight-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-13
@@ -82,7 +82,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-18
-* insert addentry(ObservationNumberPreviousCesareansNew, observation-number-previous-cesareans-carmen-teresa-lee-new)
+* insert addentry(ObservationNumberPreviousCesareansNew, observation-number-previous-cesareans-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-previous-cesareans-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-19
@@ -94,11 +94,11 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Procedure/procedure-final-route-method-delivery-not-named"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-21
-* insert addentry(ObservationBirthWeightNew, observation-birth-weight-not-named-new)
+* insert addentry(ObservationBirthWeightNew, observation-birth-weight-not-named)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-birth-weight-not-named"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-22
-* insert addentry(ObservationGestationalAgeAtDeliveryNew, observation-gestational-age-at-delivery-not-named-new)
+* insert addentry(ObservationGestationalAgeAtDeliveryNew, observation-gestational-age-at-delivery-not-named)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-gestational-age-at-delivery-not-named"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-23
