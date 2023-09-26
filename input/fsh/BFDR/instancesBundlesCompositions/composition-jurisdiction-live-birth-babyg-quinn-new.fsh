@@ -54,7 +54,7 @@ Usage: #example
     * reference = "Observation/observation-number-births-now-dead-jada-ann-quinn-new"
     * display = "Observation - Number Births Now Dead (Jada Ann Quinn)"
   * entry[dateLastLiveBirth]
-    * reference = "Observation/observation-date-of-last-live-birth-jada-ann-quinn-new"
+    * reference = "Observation/observation-date-of-last-live-birth-jada-ann-quinn"
     * display = "Observation - Date of Last Live Birth (Jada Ann Quinn)"
   * entry[numberOtherOutcomes]
     * reference = "Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn-new"
