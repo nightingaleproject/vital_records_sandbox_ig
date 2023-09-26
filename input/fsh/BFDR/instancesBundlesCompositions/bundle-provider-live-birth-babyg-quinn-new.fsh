@@ -74,7 +74,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-16
-* insert addentry(ObservationMotherDeliveryWeightNew, observation-mother-delivery-weight-jada-ann-quinn)
+* insert addentry(ObservationMotherDeliveryWeightNew, observation-mother-delivery-weight-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-delivery-weight-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-17
@@ -82,7 +82,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-height-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-18
-* insert addentry(ObservationMotherPrepregnancyWeightNew, observation-mother-prepregnancy-weight-jada-ann-quinn)
+* insert addentry(ObservationMotherPrepregnancyWeightNew, observation-mother-prepregnancy-weight-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-prepregnancy-weight-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-19
@@ -146,7 +146,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Condition/condition-ruptured-uterus-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-34
-* insert addentry(ObservationBirthWeightNew, observation-birth-weight-babyg-quinn)
+* insert addentry(ObservationBirthWeightNew, observation-birth-weight-babyg-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-birth-weight-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-35
