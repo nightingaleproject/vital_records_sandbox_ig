@@ -45,10 +45,10 @@ Usage: #example
     * reference = "Observation/observation-number-prenatal-visits-jada-ann-quinn-new"
     * display = "Observation - Number Prenatal Visits (Jada Ann Quinn)"
   * entry[dateLastNormalMenses]
-    * reference = "Observation/observation-last-menstrual-period-jada-ann-quinn"
+    * reference = "Observation/observation-last-menstrual-period-jada-ann-quinn-new"
     * display = "Observation - Last Menstrual Period (Jada Ann Quinn)"
   * entry[numberNowLiving]
-    * reference = "Observation/observation-number-births-now-living-jada-ann-quinn"
+    * reference = "Observation/observation-number-births-now-living-jada-ann-quinn-new"
     * display = "Observation - Number Births Now Living (Jada Ann Quinn)"
   * entry[numberNowDead]
     * reference = "Observation/observation-number-births-now-dead-jada-ann-quinn-new"
@@ -69,7 +69,7 @@ Usage: #example
     * reference = "Observation/observation-mother-delivery-weight-jada-ann-quinn"
     * display = "Observation - Mother Delivery Weight (Jada Ann Quinn)"
   * entry[mothersHeight]
-    * reference = "Observation/observation-mother-height-jada-ann-quinn"
+    * reference = "Observation/observation-mother-height-jada-ann-quinn-new"
     * display = "Observation - Observation - Mother Height (Jada Ann Quinn)"
   * entry[mothersPrepregnancyWeight]
     * reference = "Observation/observation-mother-prepregnancy-weight-jada-ann-quinn"
@@ -102,7 +102,7 @@ Usage: #example
     * reference = "Condition/condition-gestational-hypertension-jada-ann-quinn"
     * display = "Observation - Pregnancy Risk Factor (Jada Ann Quinn: Pregnancy-induced hypertension)"
   * entry[numberPreviousCesareans]
-    * reference = "Observation/observation-number-previous-cesareans-jada-ann-quinn"
+    * reference = "Observation/observation-number-previous-cesareans-jada-ann-quinn-new"
     * display = "Observation - Number Previous Cesareans (Jada Ann Quinn)"
   * entry[infectionsDuringPregnancy]
     * reference = "Condition/condition-infection-present-during-pregnancy-jada-ann-quinn"
