@@ -46,15 +46,15 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-prenatal-visits-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-9
-* insert addentry(ObservationLastMenstrualPeriodNew, observation-last-menstrual-period-jada-ann-quinn)
+* insert addentry(ObservationLastMenstrualPeriodNew, observation-last-menstrual-period-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-last-menstrual-period-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-10
-* insert addentry(ObservationNumberBirthsNowLivingNew, observation-number-births-now-living-jada-ann-quinn)
+* insert addentry(ObservationNumberBirthsNowLivingNew, observation-number-births-now-living-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-births-now-living-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-11
-* insert addentry(ObservationNumberBirthsNowDeadNew, observation-number-births-now-dead-jada-ann-quinn)
+* insert addentry(ObservationNumberBirthsNowDeadNew, observation-number-births-now-dead-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-births-now-dead-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-12
@@ -78,7 +78,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-delivery-weight-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-17
-* insert addentry(ObservationMotherHeightNew, observation-mother-height-jada-ann-quinn)
+* insert addentry(ObservationMotherHeightNew, observation-mother-height-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-height-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-18
