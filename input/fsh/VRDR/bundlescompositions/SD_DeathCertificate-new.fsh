@@ -59,7 +59,7 @@ Description: "The body of the death certificate document (Composition)."
 * event.code only CodeableConcept
 * event.code = $sct#103693007 // "Diagnostic procedure (procedure)"
 * event.detail 1..1
-* event.detail only Reference(ProcedureDeathCertificationVitalRecordsNew)
+* event.detail only Reference(DeathCertificationNew)
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
@@ -104,7 +104,7 @@ Description: "The body of the death certificate document (Composition)."
 * insert BundleSectionSlice(DeathInvestigation, SurgeryDate,  0, 1, SurgeryDate, SurgeryDate, SurgeryDate)
 //
 * insert BundleSectionSlice(DeathCertification, Certifier,  0, 1, Certifier, Certifier, PractitionerVitalRecordsNew)
-* insert BundleSectionSlice(DeathCertification, DeathCertification,  0, 1, DeathCertification, DeathCertification, ProcedureDeathCertificationVitalRecordsNew)
+* insert BundleSectionSlice(DeathCertification, DeathCertification,  0, 1, DeathCertification, DeathCertification, DeathCertificationNew)
 * insert BundleSectionSlice(DeathCertification, MannerOfDeath,  0, 1, MannerOfDeath, MannerOfDeath, MannerOfDeathNew)
 * insert BundleSectionSlice(DeathCertification, CauseOfDeathPart1,  0, 4, CauseOfDeathPart1, CauseOfDeathPart1, CauseOfDeathPart1New)
 * insert BundleSectionSlice(DeathCertification, CauseOfDeathPart2,  0, 1, CauseOfDeathPart2, CauseOfDeathPart2, CauseOfDeathPart2New)

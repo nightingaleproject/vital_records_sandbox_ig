@@ -70,7 +70,7 @@ Description: "This abstract Patient profile includes common extensions and slici
 * address
   * country from ResidenceCountryVS (required)  // COUNTRYC
   * state from StatesTerritoriesAndProvincesVS (required)  // STATEC
-  * extension contains ExtensionWithinCityLimitsIndicatorVitalRecords named withinCityLimitsIndicator 0..1 MS
+  * extension contains WithinCityLimitsIndicator named withinCityLimitsIndicator 0..1 MS
   * extension[withinCityLimitsIndicator] ^short = "Used to indicate whether or not an address is within city limits."
   * extension[withinCityLimitsIndicator] ^definition = "Used to indicate whether or not an address is within city limits."
 * insert CityCode
