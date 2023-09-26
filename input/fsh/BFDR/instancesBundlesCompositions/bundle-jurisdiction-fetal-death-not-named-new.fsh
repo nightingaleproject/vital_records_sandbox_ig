@@ -62,7 +62,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-height-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-12
-* insert addentry(ObservationMotherPrepregnancyWeightNew, observation-mother-prepregnancy-weight-carmen-teresa-lee)
+* insert addentry(ObservationMotherPrepregnancyWeightNew, observation-mother-prepregnancy-weight-carmen-teresa-lee-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-13
@@ -98,11 +98,11 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Procedure/procedure-final-route-method-delivery-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-21
-* insert addentry(ObservationBirthWeightNew, observation-birth-weight-not-named)
+* insert addentry(ObservationBirthWeightNew, observation-birth-weight-not-named-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-birth-weight-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-22
-* insert addentry(ObservationGestationalAgeAtDeliveryNew, observation-gestational-age-at-delivery-not-named)
+* insert addentry(ObservationGestationalAgeAtDeliveryNew, observation-gestational-age-at-delivery-not-named-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-gestational-age-at-delivery-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-23
