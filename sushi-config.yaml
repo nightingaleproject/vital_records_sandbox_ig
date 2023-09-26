@@ -185,7 +185,7 @@ groups:
     resources:
       - ObservationInjuryIncidentVitalRecordsNew
       - ObservationDecedentDispositionMethodVitalRecordsNew
-      - ProcedureDeathCertificationVitalRecordsNew 
+      #- ProcedureDeathCertificationVitalRecordsNew 
       - ObservationEducationLevelVitalRecordsNew
       - ObservationDecedentPregnancyVitalRecordsNew
       - ObservationDeathDateVitalRecordsNew  
