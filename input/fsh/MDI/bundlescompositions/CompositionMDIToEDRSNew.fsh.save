@@ -144,7 +144,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
     * ^slicing.rules = #open
 * insert BundleSectionSlice(exam-autopsy, autopsy-performed, 0, *, autopsy-performed, autopsy-performed, ObservationAutopsyPerformedIndicator)
 * insert BundleSectionSlice(exam-autopsy, autopsy-location, 0, *, autopsy-location, autopsy-location, USCoreLocation or USCoreOrganizationProfile)
-* section[narratives] ^label = "This slice contains additional death investigation narrative descriptions."
+
   * ^short = "This slice contains additional death investigation narrative descriptions."
   * ^definition = "This slice contains additional death investigation narrative descriptions."
   * code = CodeSystemMDI#narratives

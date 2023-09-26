@@ -59,7 +59,7 @@ Usage: #example
   * entry[0] = Reference(PractitionerUT-Example1)
   * entry[+] = Reference(InjuryIncidentUT-Example1)
   * entry[+] = Reference(ProcedureDeathCertificationUT-Example1)
-  * entry[+] = Reference(DeathCertificationUT-Example1)
+//  * entry[+] = Reference(DeathCertificationUT-Example1)
 * section[DeathInvestigation]
   * entry[0] = Reference(AutopsyPerformedIndicatorUT-Example1)
   * entry[+] = Reference(CauseOfDeathPart1UT-Example1 )
