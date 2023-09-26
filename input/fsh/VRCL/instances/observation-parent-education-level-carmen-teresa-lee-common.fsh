@@ -11,5 +11,5 @@ Usage: #example
 * focus
   * reference = "RelatedPerson/relatedperson-mother-gestational-carmen-teresa-lee-common"
   * display = "Patient - Mother (Carmen Teresa Lee)"
-* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#PHC1449 "9th through 12th grade; no diploma"
+* valueCodeableConcept = CodeSystemEducationLevelVitalRecordsNew#9ththrough12th "9th through 12th grade; no diploma"
   * text = "9th through 12th grade; no diploma"
