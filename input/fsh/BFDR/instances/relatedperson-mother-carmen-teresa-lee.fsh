@@ -3,8 +3,6 @@ InstanceOf: RelatedPerson
 Title: "RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee"
 Description: "RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee example"
 Usage: #example
-* meta
-  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

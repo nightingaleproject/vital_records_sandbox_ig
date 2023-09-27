@@ -3,8 +3,6 @@ InstanceOf: RelatedPerson
 Title: "RelatedPerson - Father Natural - Vital Records - Tom Yan Lee"
 Description: "RelatedPerson - Father Natural - Vital Records - Tom Yan Lee example"
 Usage: #example
-* meta
-  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"
 * extension[0]
   * extension[0]
     * url = "ombCategory"

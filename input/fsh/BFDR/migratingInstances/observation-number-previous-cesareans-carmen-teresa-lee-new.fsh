@@ -1,4 +1,4 @@
-Instance: observation-number-previous-cesareans-carmen-teresa-lee-new
+Instance: observation-number-previous-cesareans-carmen-teresa-lee
 InstanceOf: ObservationNumberPreviousCesareansNew
 Title: "Observations - Number Previous Cesareans - Carmen Teresa Lee"
 Description: "Observations - Number Previous Cesareans: Carmen Teresa Lee example"
@@ -8,5 +8,5 @@ Usage: #example
 * status = #final
 * code = $loinc#68497-7 "Previous cesarean deliveries #"
   * text = "Previous cesarean deliveries #"
-* subject = Reference(patient-mother-carmen-teresa-lee-new) "Patient - Mother (Carmen Teresa Lee)"
+* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
 * valueInteger = 1

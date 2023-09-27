@@ -1,4 +1,4 @@
-Instance: observation-number-prenatal-visits-jada-ann-quinn-new
+Instance: observation-number-prenatal-visits-jada-ann-quinn
 InstanceOf: ObservationNumberPrenatalVisitsNew
 Title: "Observation - Number Prenatal Visits - Jada Ann Quinn"
 Description: "Observation - Number Prenatal Visits: Jada Ann Quinn example"
@@ -9,6 +9,6 @@ Usage: #example
 * status = #final
 * code = $loinc#68493-6 "Prenatal visits for this pregnancy #"
   * text = "Prenatal visits for this pregnancy #"
-* subject = Reference(patient-child-babyg-quinn-new) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn-new) "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * valueInteger = 8

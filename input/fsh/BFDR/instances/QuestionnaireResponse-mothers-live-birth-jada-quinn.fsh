@@ -101,7 +101,7 @@ Usage: #example
 * item[+]
   * linkId = "mother-education"
   * text = "What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received)."
-  * answer.valueCoding = $HL7_EducationLevelCS#POSTG "Doctorate Degree or Professional Degree"
+  * answer.valueCoding = $HL7_EducationLevelCS#POSTG "Doctoral or post graduate education"
 * item[+]
   * linkId = "mother-ethnicity"
   * text = "Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."
@@ -247,7 +247,11 @@ Usage: #example
 * item[+]
   * linkId = "father-education"
   * text = "What is the highest level of schooling that the father will have completed at the time of delivery? (Check the box that best describes his education. If he is currently enrolled, check the box that indicates the previous grade or highest degree received)."
+<<<<<<< HEAD
+  * answer.valueCoding = $HL7_EducationLevelCS#POSTG "Doctoral or post graduate education"
+=======
   * answer.valueCoding = $HL7_EducationLevelCS#POSTG "Doctorate Degree or Professional Degree"
+>>>>>>> main
 * item[+]
   * linkId = "father-ethnicity"
   * text = "Is the father Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."

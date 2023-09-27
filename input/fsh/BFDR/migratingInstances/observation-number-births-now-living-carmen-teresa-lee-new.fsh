@@ -1,4 +1,4 @@
-Instance: observation-number-births-now-living-carmen-teresa-lee-new
+Instance: observation-number-births-now-living-carmen-teresa-lee
 InstanceOf: ObservationNumberBirthsNowLivingNew
 Title: "Observation - Number of Births Now Living - Carmen Teresa Lee"
 Description: "Observation - Number of Births Now Living: Carmen Teresa Lee example"
@@ -8,5 +8,5 @@ Usage: #example
 * status = #final
 * code = $loinc#11638-4 "[#] Births.still living"
   * text = "[#] Births.still living"
-* subject = Reference(patient-mother-carmen-teresa-lee-new) "Patient - Mother (Carmen Teresa Lee)"
+* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
 * valueInteger = 1

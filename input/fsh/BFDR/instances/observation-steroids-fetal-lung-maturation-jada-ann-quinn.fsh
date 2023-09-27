@@ -3,9 +3,6 @@ InstanceOf: ObservationSteroidsFetalLungMaturation
 Title: "Observation - Administration of Steroids for Fetal Lung Maturation - Jada Ann Quinn"
 Description: "Observation - Administration of Steroids for Fetal Lung Maturation: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * versionId = "2"
-  * lastUpdated = "2023-06-19T10:45:02.317Z"
 * status = #final
 * code = $loinc#73813-8 "Characteristics of labor and delivery [US Standard Certificate of Live Birth]"
   * text = "Characteristics of labor and delivery"

@@ -1,4 +1,4 @@
-Instance: patient-mother-birth-date-part-absent-new
+Instance: patient-mother-birth-date-part-absent
 InstanceOf: PatientMotherNew
 Title: "Patient - Mother Date Part Absent"
 Description: "Example of Patient-mother-vr profile (Date Part Absent)"
