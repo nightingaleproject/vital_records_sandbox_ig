@@ -1,4 +1,4 @@
-Instance: observation-pregnancy-risk-factor-carmen-teresa-lee-1-new
+Instance: observation-pregnancy-risk-factor-carmen-teresa-lee-1
 InstanceOf: ObservationPregnancyRiskFactorNew
 Title: "Observation - Pregnancy Risk Factor example [Carmen Teresa Lee: Hypertensive disorder, systemic arterial]"
 Description: "Example of Observation-pregnancy-risk-factor-vr profile (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"

@@ -1,4 +1,4 @@
-Instance: patient-mother-carmen-teresa-lee-new
+Instance: patient-mother-carmen-teresa-lee
 InstanceOf: PatientMotherNew
 Title: "Patient - Mother example [Carmen Teresa Lee]"
 Description: "Example of Patient-mother-vr profile (Carmen Teresa Lee)"

@@ -1,4 +1,4 @@
-Instance: observation-number-births-now-dead-jada-ann-quinn-new
+Instance: observation-number-births-now-dead-jada-ann-quinn
 InstanceOf: ObservationNumberBirthsNowDeadNew
 Title: "Observation - Number Births Now Dead - Jada Ann Quinn"
 Description: "Observation - Number Births Now Dead: Jada Ann Quinn example"

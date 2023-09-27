@@ -1,4 +1,4 @@
-Instance: observation-infant-living-babyg-quinn-new
+Instance: observation-infant-living-babyg-quinn
 InstanceOf: ObservationInfantLivingNew
 Title: "Observation - Infant Living - Baby G Quinn"
 Description: "Observation - Infant Living: BabyG Quinn example"

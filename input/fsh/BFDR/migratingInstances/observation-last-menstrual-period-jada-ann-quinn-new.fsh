@@ -1,4 +1,4 @@
-Instance: observation-last-menstrual-period-jada-ann-quinn-new
+Instance: observation-last-menstrual-period-jada-ann-quinn
 InstanceOf: ObservationLastMenstrualPeriodNew
 Title: "Observation - Last Menstrual Period - Jada Ann Quinn"
 Description: "Observation - Last Menstrual Period: Jada Ann Quinn example"

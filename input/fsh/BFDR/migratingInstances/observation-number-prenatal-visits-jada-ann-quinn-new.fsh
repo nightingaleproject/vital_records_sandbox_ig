@@ -1,4 +1,4 @@
-Instance: observation-number-prenatal-visits-jada-ann-quinn-new
+Instance: observation-number-prenatal-visits-jada-ann-quinn
 InstanceOf: ObservationNumberPrenatalVisitsNew
 Title: "Observation - Number Prenatal Visits - Jada Ann Quinn"
 Description: "Observation - Number Prenatal Visits: Jada Ann Quinn example"

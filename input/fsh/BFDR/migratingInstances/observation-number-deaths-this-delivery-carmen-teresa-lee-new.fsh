@@ -1,4 +1,4 @@
-Instance: observation-number-deaths-this-delivery-carmen-teresa-lee-new
+Instance: observation-number-deaths-this-delivery-carmen-teresa-lee
 InstanceOf: ObservationNumberFetalDeathsThisDeliveryNew
 Title: "Observation - Number of Fetal Deaths This Delivery - Carmen Teresa Lee"
 Description: "Observation - Number of Fetal Deaths This Delivery: Carmen Teresa Lee example"

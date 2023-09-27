@@ -9,5 +9,5 @@ Usage: #example
 * code = $loinc#57712-2 "Highest level of education Mother"
 * subject = Reference(patient-child-babyg-quinn)
 * focus = Reference(patient-mother-jada-ann-quinn)
-* valueCodeableConcept = CodeSystemEducationLevelVitalRecordsNew#doctorate "Doctorate Degree or Professional Degree"
-  * text = "Doctorate Degree or Professional Degree"
+* valueCodeableConcept = $HL7_EducationLevelCS#POSTG "Doctoral or post graduate education"
+  * text = "Doctoral or post graduate education"

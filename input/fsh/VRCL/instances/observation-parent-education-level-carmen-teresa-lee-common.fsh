@@ -11,5 +11,5 @@ Usage: #example
 * focus
   * reference = "RelatedPerson/relatedperson-mother-gestational-carmen-teresa-lee-common"
   * display = "Patient - Mother (Carmen Teresa Lee)"
-* valueCodeableConcept = CodeSystemEducationLevelVitalRecordsNew#9ththrough12th "9th through 12th grade; no diploma"
-  * text = "9th through 12th grade; no diploma"
+* valueCodeableConcept = $HL7_EducationLevelCS#SEC "Some secondary or high school education"
+  * text = "Some secondary or high school education"

@@ -1,4 +1,4 @@
-Instance: observation-number-previous-cesareans-carmen-teresa-lee-new
+Instance: observation-number-previous-cesareans-carmen-teresa-lee
 InstanceOf: ObservationNumberPreviousCesareansNew
 Title: "Observations - Number Previous Cesareans - Carmen Teresa Lee"
 Description: "Observations - Number Previous Cesareans: Carmen Teresa Lee example"

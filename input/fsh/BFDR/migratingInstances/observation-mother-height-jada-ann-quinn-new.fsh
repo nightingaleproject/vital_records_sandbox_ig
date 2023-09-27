@@ -1,4 +1,4 @@
-Instance: observation-mother-height-jada-ann-quinn-new
+Instance: observation-mother-height-jada-ann-quinn
 InstanceOf: ObservationMotherHeightNew
 Title: "Observation - Mother Height - Jada Ann Quinn"
 Description: "Observation - Mother Height: Jada Ann Quinn example"

@@ -1,4 +1,4 @@
-Instance: observation-number-other-pregnancy-outcomes-jada-ann-quinn-new
+Instance: observation-number-other-pregnancy-outcomes-jada-ann-quinn
 InstanceOf: ObservationNumberOtherPregnancyOutcomesNew
 Title: "Observation - Number Other Pregnancy Outcomes - Jada Ann Quinn"
 Description: "Observation - Number Other Pregnancy Outcomes: Jada Ann Quinn example"

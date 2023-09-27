@@ -1,4 +1,4 @@
-Instance: observation-mother-height-carmen-teresa-lee-new
+Instance: observation-mother-height-carmen-teresa-lee
 InstanceOf: ObservationMotherHeightNew
 Title: "Observation - Mother Height - Carmen Teresa Lee"
 Description: "Observation - Mother Height: Carmen Teresa Lee example"

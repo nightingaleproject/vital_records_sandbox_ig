@@ -1,4 +1,4 @@
-Instance: observation-number-births-now-dead-carmen-teresa-lee-new
+Instance: observation-number-births-now-dead-carmen-teresa-lee
 InstanceOf: ObservationNumberBirthsNowDeadNew
 Title: "Observation - Number of Births Now Dead - Carmen Teresa Lee"
 Description: "Observation - Number of Births Now Dead: Carmen Teresa Lee example"

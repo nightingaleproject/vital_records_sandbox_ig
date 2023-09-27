@@ -10,7 +10,7 @@ Usage: #example
 * class = $v3-ActCode#IMP "inpatient encounter"
 * type = $cpt#99234
   * text = "Under Observation or Inpatient Care Services (Including Admission and Discharge Services)"
-* subject = Reference(patient-mother-jada-ann-quinn")
+* subject = Reference(patient-mother-jada-ann-quinn)
   * display = "Patient - Mother (Jada Ann Quinn)"
 * participant
   * type = $loinc#87286-1 "Birth attendant [Extended Identifier]"

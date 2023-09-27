@@ -1,4 +1,4 @@
-Instance: observation-apgar-score-babyg-quinn-5-min-new
+Instance: observation-apgar-score-babyg-quinn-5-min
 InstanceOf: ObservationApgarScoreNew
 Title: "Observation - Apgar Score - BabyG Quinn: 5 min"
 Description: "Observation - Apgar Score: BabyG Quinn: 5 min example"
