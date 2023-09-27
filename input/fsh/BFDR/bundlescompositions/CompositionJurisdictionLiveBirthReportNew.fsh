@@ -11,7 +11,7 @@ Description: "This Composition profile contains information of a live birth and 
     ExtensionLiveBirthCertificateNumber named liveBirthCertificateNumber 1..1  and
     ExtensionLiveBirthLocalFileNumber named liveBirthLocalFileNumber 0..1  and
     ExtensionDateFiledByRegistrar named dateFiledByRegistrar 1..1 and
-    ExtensionReplacementStatus named replacementStatus 0..1
+    ReplaceStatus named replacementStatus 0..1
 * extension[liveBirthCertificateNumber] ^short = "Birth Number"
 * extension[liveBirthLocalFileNumber] ^short = "Local File No."
 * extension[dateFiledByRegistrar] ^short = "Date filed by registrar"

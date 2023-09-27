@@ -11,7 +11,7 @@ Description: "This Composition profile defines constraints to address the use ca
     ExtensionLiveBirthCertificateNumber named liveBirthCertificateNumber 0..1  and
     ExtensionLiveBirthLocalFileNumber named liveBirthLocalFileNumber 0..1  and
     ExtensionDateFiledByRegistrar named dateFiledByRegistrar 1..1 and
-    ExtensionReplacementStatus named replacementStatus 0..1
+    ReplaceStatus named replacementStatus 0..1
 * extension[liveBirthCertificateNumber] ^short = "Birth Number"
 * extension[liveBirthLocalFileNumber] ^short = "Local File No."
 * extension[dateFiledByRegistrar] ^short = "Date filed by registrar"

@@ -16,9 +16,9 @@ Usage: #example
 * extension[Extension-date-received-by-registrar]
   //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar"
   * valueDateTime = "2019-02-12"
-* extension[Extension-replacement-status]
+* extension[replacementStatus]
   //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-replacement-status"
-  * valueCodeableConcept = CodeSystemReplacement#original
+  * valueCodeableConcept = ReplaceStatusCS#original
 * identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27da"
 * status = #final
 * type = $loinc#92010-8 "Jurisdiction fetal death report Document"
