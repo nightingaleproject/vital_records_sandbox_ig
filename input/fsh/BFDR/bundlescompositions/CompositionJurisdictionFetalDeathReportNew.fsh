@@ -10,7 +10,7 @@ Description: "This Composition profile contains information of a fetal death and
     ExtensionFetalDeathReportNumber named fetalDeathReportNumber 1..1  and
     ExtensionFetalDeathLocalFileNumber named fetalDeathLocalFileNumber 0..1  and
     ExtensionDatereceivedByRegistrar named dateReceivedByRegistrar 1..1 and
-    ExtensionReplacementStatus named replacementStatus 0..1
+    ReplaceStatus named replacementStatus 0..1
 * extension[fetalDeathReportNumber] ^short = "State File Number"
 * extension[fetalDeathLocalFileNumber] ^short = "Local File No."
 // Status is deprecated (now flag in message header)
