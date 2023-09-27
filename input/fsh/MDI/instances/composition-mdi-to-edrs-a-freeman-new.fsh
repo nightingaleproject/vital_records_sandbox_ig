@@ -30,10 +30,10 @@ Usage: #example
 * section[+]
   * title = "Circumstances Section"
   * code = CodeSystemMDI#circumstances
-  * entry[0] = Reference(location-death-atlanta-ga-a-freeman-new)
-  * entry[+] = Reference(observation-tobacco-use-a-freeman-new)
-  * entry[+] = Reference(observation-decedent-pregnancy-a-freeman-new)
-  * entry[+] = Reference(location-injury-atlanta-ga-a-freeman-new)
+  * entry[0] = Reference(location-death-atlanta-ga-a-freeman)
+  * entry[+] = Reference(observation-tobacco-use-a-freeman)
+  * entry[+] = Reference(observation-decedent-pregnancy-a-freeman)
+  * entry[+] = Reference(location-injury-atlanta-ga-a-freeman)
 * section[+]
   * title = "Jurisdiction Section"
   * code = CodeSystemMDI#jurisdiction
@@ -42,10 +42,10 @@ Usage: #example
 * section[+]
   * title = "Cause and Manner of Death Section"
   * code = CodeSystemMDI#cause-manner
-  * entry[0] = Reference(observation-cause-of-death-part1-a-freeman-new)
-  * entry[+] = Reference(observation-contributing-cause-of-death-part2-a-freeman-new)
-  * entry[+] = Reference(observation-manner-of-death-a-freeman-accidental-new)
-  * entry[+] = Reference(observation-how-death-injury-occurred-a-freeman-med-ingest-new)
+  * entry[0] = Reference(observation-cause-of-death-part1-a-freeman)
+  * entry[+] = Reference(observation-contributing-cause-of-death-part2-a-freeman)
+  * entry[+] = Reference(observation-manner-of-death-a-freeman-accidental)
+  * entry[+] = Reference(observation-how-death-injury-occurred-a-freeman-med-ingest)
 * section[+]
   * title = "Medical History Section"
   * code = CodeSystemMDI#medical-history
