@@ -28,6 +28,11 @@ Usage: #example
 * insert addentry(Observation, EmergingIssuesUT-Example1)
 * insert addentry(Location, DeathLocationUT-Example1)
 * insert addentry(Location, DispositionLocationUT-Example1)
+* insert addentry(Observation, MilitaryServiceUT-Example1)
+* insert addentry(Observation, AgeUT-Example1)
+* insert addentry(Observation, UsualWorkUT-Example1)
+* insert addentry(Observation, DispositionMethodUT-Example1)
+
 
 Instance: DeathCertificateUT-Example1
 InstanceOf: DeathCertificateNew
@@ -80,7 +85,7 @@ Usage: #example
 * extension[NVSSSexAtDeath].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
 //* extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 //* extension[http://hl7.org/fhir/StructureDefinition/patient-birthPlace]
-* extension[birthPlace]
+* extension[Patient-BirthPlace]
   * valueAddress.use = #old
   * valueAddress.state = "CO"
   * valueAddress.country = "US"
@@ -330,7 +335,7 @@ Instance: ProcedureDeathCertificationUT-Example1
 InstanceOf: DeathCertificationNew
 Usage: #example
 // * id = procedure-death-certification-ut-example1 
-* status = #final 
+* status = #completed
 * identifier.value = "161632-1999"
 // * category = $sct#103693007 "Diagnostic procedure"
 // * code = $sct#308646001 "Death certification"
