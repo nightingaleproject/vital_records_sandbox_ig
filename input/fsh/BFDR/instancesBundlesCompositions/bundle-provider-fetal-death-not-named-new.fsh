@@ -134,6 +134,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-plurality-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-30
+* insert addentry(ObservationNumberFetalDeathsThisDeliveryNew, observation-number-deaths-this-delivery-carmen-teresa-lee)
 * insert addentry(Observation, observation-parent-education-level-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee"

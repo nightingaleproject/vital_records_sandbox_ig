@@ -134,10 +134,11 @@ Usage: #example
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-29
 
 // no plurality in STU1.1 - could be replaced by numberFetalDeathsThisDelivery
-// * insert addentry(Observation, observation-plurality-carmen-teresa-lee)
+//* insert addentry(Observation, observation-plurality-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-plurality-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-30
+* insert addentry(ObservationNumberFetalDeathsThisDeliveryNew, observation-number-deaths-this-delivery-carmen-teresa-lee)
 * insert addentry(Observation, observation-parent-education-level-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee"
