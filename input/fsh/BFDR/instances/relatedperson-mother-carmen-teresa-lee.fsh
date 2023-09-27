@@ -1,5 +1,5 @@
 Instance: relatedperson-mother-carmen-teresa-lee
-InstanceOf: RelatedPerson
+InstanceOf: RelatedPersonMotherGestationalVitalRecords
 Title: "RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee"
 Description: "RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee example"
 Usage: #example
