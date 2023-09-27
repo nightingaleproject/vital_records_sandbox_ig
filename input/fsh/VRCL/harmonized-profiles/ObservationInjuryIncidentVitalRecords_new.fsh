@@ -30,14 +30,14 @@ This profile is designed to supplant the similar profiles in VRDR and MDI"
   * ^short = "Injury incident description Narrative"
   * ^definition = "Injury incident description Narrative"
 * subject 1..1 
-* subject only Reference(USCorePatientProfile) //generalized to Patient
+* subject only Reference(PatientVitalRecordsNew) //generalized to Patient
   * ^short = "The subject of this observation is the decedent."
   * ^definition = "The subject of this observation is the decedent."
 * effective[x] only dateTime
   * ^short = "Date/Time of Injury"
   * extension contains $Extension-partial-date-time named partialDateTime 0..1
 //* performer ..1 loosen this restriction bc vrdr doesn't require a performer
-* performer only Reference(USCorePractitionerProfile) //generalized to Practitioner
+* performer only Reference(PractitionerVitalRecordsNew) //generalized to Practitioner
   * ^short = "Certifier of the explanation."
   * ^definition = "Certifier of the explanation."
 // * value[x] 1..1 

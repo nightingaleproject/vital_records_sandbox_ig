@@ -12,7 +12,7 @@ Usage: #example
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-jurisdiction-live-birth-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-1
-* insert addentry(PatientChildVitalRecords, patient-child-babyg-quinn-common)
+* insert addentry(PatientChildVitalRecordsNew, patient-child-babyg-quinn)
 //* insert addentry(PatientChildNew, patient-child-babyg-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-child-babyg-quinn"
@@ -29,7 +29,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Organization/organization-jurisdictional-vital-records-office"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-5
-* insert addentry(PatientMotherVitalRecords, patient-mother-carmen-teresa-lee-common)
+* insert addentry(PatientMotherVitalRecordsNew, patient-mother-carmen-teresa-lee)
 //* insert addentry(PatientMotherNew, patient-mother-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-jada-ann-quinn"

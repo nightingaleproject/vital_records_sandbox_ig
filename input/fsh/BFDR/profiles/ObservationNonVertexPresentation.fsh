@@ -6,7 +6,7 @@ Description: "This Observation profile indicates a characteristic of labor of no
 * code = $loinc#73813-8
   * ^short = "Characteristics of labor and delivery [US Standard Certificate of Live Birth]"
 * subject 1..
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] = $sct#15028002

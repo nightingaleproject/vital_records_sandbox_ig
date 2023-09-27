@@ -6,4 +6,4 @@ Description: "This Condition profile indicates the newborn had an abnormal condi
 * . ^short = "This Condition profile indicates the newborn had an abnormal condition of birth injury."
 * code = $sct#56110009
   * ^short = "Birth trauma of fetus (disorder)"
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew)

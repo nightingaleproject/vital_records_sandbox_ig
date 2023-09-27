@@ -18,10 +18,10 @@ Description: "Decedent Disposition Method (Observation)"
 * status ^short = "Should this be 'final'?"
 * code = $loinc#80905-3 // "Body disposition method"
 * subject 1..1
-* subject only Reference(Patient) //generalized to Patient
+* subject only Reference(PatientVitalRecordsNew) //generalized to Patient
 * performer ^short = "Mortician" //BFDR does not include performer
 * performer ^definition = "Mortician is optional, and is not referenced by the fetal death or mortality use cases"
-* performer only Reference(USCorePractitionerProfile)
+* performer only Reference(PractitionerVitalRecordsNew)
 * value[x] 1..1
 * value[x] only CodeableConcept
 * value[x] from MethodOfDispositionVS (required) //BFDR uses a different vs that does not include the entombment code

@@ -1,5 +1,5 @@
 Instance: patient-child-babyg-quinn
-InstanceOf: PatientChildNew
+InstanceOf: PatientChildVitalRecordsNew
 Title: "Patient - Child example [Baby G Quinn]"
 Description: "Example of Patient-child-vr profile (Baby G Quinn)"
 Usage: #example
@@ -25,10 +25,10 @@ Usage: #example
   * type = $v2-0203#MR "Medical Record Number"
   * system = "http://hospital.smarthealthit.org"
   * value = "9932702"
-* name
-  * family = "Quinn"
-  * given[0] = "Baby"
-  * given[+] = "G"
+* name.use = #official
+* name.family = "Quinn"
+* name.given[0] = "Baby"
+* name.given[+] = "G"
 * gender = #female
 * birthDate = "2019-02-12"
   * extension

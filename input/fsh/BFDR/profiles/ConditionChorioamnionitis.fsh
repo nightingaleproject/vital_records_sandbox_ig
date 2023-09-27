@@ -6,4 +6,4 @@ Description: "This Condition profile indicates a labor and delivery characterist
 * . ^short = "This Condition profile indicates a labor and delivery characteristic of chorioamnionitis."
 * code = $sct#11612004
   * ^short = "Chorioamnionitis (disorder)"
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)

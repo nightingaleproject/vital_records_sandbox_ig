@@ -17,7 +17,7 @@ Usage: #example
 * status = #final
 * type = $loinc#92011-6 "Jurisdiction live birth report Document"
 * subject
-  * reference = "Patient/patient-child-babyg-quinn-common"
+  * reference = "Patient/patient-child-babyg-quinn"
   * display = "Patient - Child (Baby G Quinn)"
 * encounter
   * extension[Extension-encounter-maternity-reference]
@@ -33,7 +33,7 @@ Usage: #example
   // * title = "Mother (prenatal) Section on the Live Birth Certificate"
   // * code = $loinc#57073-9 "Prenatal records"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn-common"
+    * reference = "Patient/patient-mother-jada-ann-quinn"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[0]
     * reference = "Observation/observation-planned-to-deliver-at-home-babyg-quinn"
@@ -93,7 +93,7 @@ Usage: #example
   // * title = "Medical Health Information Section"
   // * code = $loinc#55752-0 "Clinical information"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn-common"
+    * reference = "Patient/patient-mother-jada-ann-quinn"
     * display = "Patient - Mother (Jada Ann Quinn)"
   // removing because there is no pregnancy risk factor example for baby quinn 
   // based on this profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Observation-pregnancy-risk-factor.html
@@ -166,7 +166,7 @@ Usage: #example
   // * title = "Mother's Information Section"
   // * code = $loinc#92014-0 "Mother's administrative information"
   * focus
-    * reference = "Patient/patient-mother-jada-ann-quinn-common"
+    * reference = "Patient/patient-mother-jada-ann-quinn"
     * display = "Patient - Mother (Jada Ann Quinn)"
   * entry[marriedDuringPregnancy]
     * reference = "Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"

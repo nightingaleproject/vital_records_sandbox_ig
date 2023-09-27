@@ -1,5 +1,5 @@
 Instance: patient-mother-carmen-teresa-lee
-InstanceOf: PatientMotherNew
+InstanceOf: PatientMotherVitalRecordsNew
 Title: "Patient - Mother example [Carmen Teresa Lee]"
 Description: "Example of Patient-mother-vr profile (Carmen Teresa Lee)"
 Usage: #example

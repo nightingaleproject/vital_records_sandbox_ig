@@ -7,7 +7,7 @@ Description: "This Observation profile represents whether or not a social securi
 * code = $loinc#87295-2
   * ^short = "Social Security Number was requested"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew)
 * effective[x] 0..1 MS
 * effective[x] only dateTime
   * ^short = "Date/time social security number requested"

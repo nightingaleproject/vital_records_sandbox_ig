@@ -23,7 +23,7 @@ This profile is designed to supplant similar profile in VRDR"
 * subject only Reference(Patient)  // Child, Fetus, or Decedent
   * ^short = "This is the subject of the report, not the parent"
 * focus 0..1 // not present if subject is Decedent
-* focus only Reference(PatientMotherVitalRecords or RelatedPersonParentVitalRecords) //not required, may be omitted if reporting education level of decedent, not parent. 
+* focus only Reference(PatientMotherVitalRecordsNew or RelatedPersonParentVitalRecords) //not required, may be omitted if reporting education level of decedent, not parent. 
   * ^short = "The RelatedPerson or Patient record for the parent"
 * value[x] 1..1
 * value[x] only CodeableConcept

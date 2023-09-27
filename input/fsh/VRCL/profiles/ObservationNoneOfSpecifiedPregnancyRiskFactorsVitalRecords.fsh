@@ -13,7 +13,7 @@ Description: "This profile indicates that none of the specified pregnancy risk f
 * code = $loinc#73775-9
   * ^short = "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
 * subject 1..
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] = $sct#260413007

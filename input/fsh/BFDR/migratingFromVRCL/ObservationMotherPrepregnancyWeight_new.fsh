@@ -5,6 +5,6 @@ Title: "Observation - Mother Prepregnancy Weight"
 Description: "The weight of the mother before becoming pregnant. Migrated from VRCL."
 * code = $loinc#56077-1
 * subject 1..
-* subject only Reference(PatientMotherNew)
+* subject only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..
 * value[x] only Quantity
