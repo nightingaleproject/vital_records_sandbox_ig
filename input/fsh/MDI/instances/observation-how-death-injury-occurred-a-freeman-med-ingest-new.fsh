@@ -1,4 +1,4 @@
-Instance: observation-how-death-injury-occurred-a-freeman-med-ingest-new
+Instance: observation-how-death-injury-occurred-a-freeman-med-ingest
 InstanceOf: ObservationInjuryIncidentVitalRecordsNew
 Title: "Observation - How Death Injury Occurred - Freeman - Medication ingestion"
 Description: "Observation - How Death Injury Occurred: Freeman - Medication ingestion (fentanyl) example"

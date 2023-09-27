@@ -185,7 +185,6 @@ groups:
     resources:
       - ObservationInjuryIncidentVitalRecordsNew
       - ObservationDecedentDispositionMethodVitalRecordsNew
-      #- ProcedureDeathCertificationVitalRecordsNew 
       - ObservationEducationLevelVitalRecordsNew
       - ObservationDecedentPregnancyVitalRecordsNew
       - ObservationDeathDateVitalRecordsNew  
@@ -194,7 +193,7 @@ groups:
       - RelatedPersonFatherVitalRecordsNew
       - PractitionerVitalRecordsNew
       - InputRaceAndEthnicityNew
-      
+  #       - ProcedureDeathCertificationVitalRecordsNew 
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:

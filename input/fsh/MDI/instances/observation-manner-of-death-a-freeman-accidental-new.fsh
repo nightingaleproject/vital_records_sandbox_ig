@@ -1,4 +1,4 @@
-Instance: observation-manner-of-death-a-freeman-accidental-new
+Instance: observation-manner-of-death-a-freeman-accidental
 InstanceOf: ObservationMannerOfDeathVitalRecordsNew
 Title: "Observation - Manner of Death - Freeman"
 Description: "Observation - Manner of Death: Freeman - accidental example"
