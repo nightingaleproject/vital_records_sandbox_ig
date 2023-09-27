@@ -12,8 +12,4 @@ Usage: #example
   * reference = "RelatedPerson/relatedperson-mother-gestational-carmen-teresa-lee-common"
   * display = "Patient - Mother (Carmen Teresa Lee)"
 * valueCodeableConcept = $HL7_EducationLevelCS#SEC "Some secondary or high school education"
-<<<<<<< HEAD
-  * text = "Some secondary or high school education"
-=======
   * text = "9th through 12th grade; no diploma"
->>>>>>> main
