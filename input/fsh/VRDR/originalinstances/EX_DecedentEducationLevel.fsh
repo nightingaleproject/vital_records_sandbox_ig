@@ -1,8 +1,7 @@
 Instance: DecedentEducationLevel-Example1
-InstanceOf: DecedentEducationLevel
+InstanceOf: DecedentEducationLevel    // SHould probably make a VRDR Education lEvel profile wiht this fixed
 Usage: #example
 Description: "DeathDate-Example1"
 * insert AddMetaProfile(DecedentEducationLevel)
 * subject = Reference(Decedent-Example1)
-* status = #final
-* valueCodeableConcept = $v3-EducationLevel#SEC "Some secondary or high school education"
+* valueCodeableConcept = $v3-EducationLevel#SEC "Some secondary or high school education" 

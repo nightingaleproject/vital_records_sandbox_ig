@@ -9,7 +9,7 @@ Description: "Decedent Military Service (Observation)"
 * status = #final (exactly)
 * code = $loinc#55280-2 // "Military service Narrative"
 * subject 1..1
-* subject only Reference(Decedent)
+* subject only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
 * value[x] 1..1
 * value[x] only CodeableConcept
 * value[x] from YesNoUnknownVS (required)

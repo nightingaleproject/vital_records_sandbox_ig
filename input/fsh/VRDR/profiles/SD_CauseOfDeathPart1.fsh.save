@@ -11,7 +11,7 @@ Description: "Cause of death Part 1 (Observation). Cause of death prior to submi
 * valueCodeableConcept.text ^short = "Cause of Death Part 1, Line a,b,c,d"
 * valueCodeableConcept.text ^maxLength = 120
 * subject 1..1
-* subject only Reference(Decedent)
+* subject only Reference(PatientVitalRecordsNew)
 * performer ^short = "Certifier"
 * performer only Reference(Certifier)
 * component ^slicing.discriminator.type = #value

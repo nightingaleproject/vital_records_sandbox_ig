@@ -11,7 +11,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
 * subject 1..1
 * status only code
 * status = #final (exactly)
-* subject only Reference(Decedent)
+* subject only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open

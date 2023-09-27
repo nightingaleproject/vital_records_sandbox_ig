@@ -7,5 +7,5 @@ Usage: #example
 * code = $loinc#57712-2 "Highest level of education Mother"
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueCodeableConcept = CodeSystemEducationLevelVitalRecordsNew#9ththrough12th "9th through 12th grade; no diploma"
+* valueCodeableConcept = $HL7_EducationLevelCS#SEC "Some secondary or high school education"
   * text = "9th through 12th grade; no diploma"

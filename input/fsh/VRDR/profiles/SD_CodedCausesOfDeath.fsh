@@ -23,7 +23,7 @@ Description: "Manual Underlying Cause Of Death (Observation)"
 * value[x] 1..1
 * value[x] only CodeableConcept // MAN_UC
 * value[x] from ICD10CausesOfDeathVS (required)
-* subject only Reference(Decedent)
+* subject only Reference(PatientVitalRecordsNew)
 * insert NCHSObservationCommon
 
 Profile: RecordAxisCauseOfDeath
@@ -36,7 +36,7 @@ Description: "Record Axis Cause Of Death (Observation): Up to 20 of instances of
 * value[x] only CodeableConcept // MAN_UC
 * value[x] from ICD10CausesOfDeathVS (required)
 * subject 1..1
-* subject only Reference(Decedent)
+* subject only Reference(PatientVitalRecordsNew)
 * insert NCHSObservationCommon
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
@@ -68,7 +68,7 @@ Description: "Entity Axis Cause Of Death (Observation):   Up to 20 of instances 
 * value[x] 1..1
 * value[x] only CodeableConcept // EAC
 * value[x] from ICD10CausesOfDeathVS (required)
-* subject only Reference(Decedent)
+* subject only Reference(PatientVitalRecordsNew)
 * insert NCHSObservationCommon
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"

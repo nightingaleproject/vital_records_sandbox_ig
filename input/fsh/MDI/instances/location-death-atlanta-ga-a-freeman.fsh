@@ -15,4 +15,4 @@ Usage: #example
   * city = "Atlanta"
   * district = "Fulton County"
   * state = "GA"
-  * country = "USA"
+  * country = "US"

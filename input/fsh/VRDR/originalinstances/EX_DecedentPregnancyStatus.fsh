@@ -1,8 +1,8 @@
 Instance: DecedentPregnancyStatus-Example1
-InstanceOf: DecedentPregnancyStatus
+InstanceOf: ObservationDecedentPregnancyVitalRecordsNew
 Usage: #example
 Description: "DecedentPregnancyStatus-Example1"
-* insert AddMetaProfile(DecedentPregnancyStatus)
+* insert AddMetaProfile(ObservationDecedentPregnancyVitalRecordsNew)
 * subject = Reference(Decedent-Example1)
 * status = #final
 * valueCodeableConcept = PregnancyStatusCS#2 "Pregnant at time of death"

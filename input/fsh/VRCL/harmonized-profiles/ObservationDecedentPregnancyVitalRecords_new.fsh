@@ -28,7 +28,7 @@ This profile is designed to supplant the similar profiles in VRDR and MDI"
   * ^short = "subject"
 * value[x] 1..1 
 * value[x] only CodeableConcept
-* value[x] from ValueSetDeathPregnancyStatusVitalRecordsNew (required) //MDI and VRCL valuesets are missing value 7 (included in VRDR). New VS generalized to include 7
+* value[x] from ValueSetDeathPregnancyStatusVitalRecords (required) //MDI and VRCL valuesets are missing value 7 (included in VRDR). New VS generalized to include 7
   * ^short = "Whether the decedent was pregnant at or around the time of death."
   * ^binding.description = "A set of codes that reflect whether the decedent was pregnant at or around the time of death."
 * value[x].extension contains

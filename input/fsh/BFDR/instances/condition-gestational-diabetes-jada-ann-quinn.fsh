@@ -3,8 +3,6 @@ InstanceOf: Condition
 Title: "Condition - Gestational Diabetes - Jada Ann Quinn"
 Description: "Condition - Gestational Diabetes: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"
 * category = $condition-category#problem-list-item
 * code = $sct#11687002 "Gestational diabetes mellitus (disorder)"
   * text = "Gestational diabetes mellitus (disorder)"

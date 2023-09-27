@@ -17,4 +17,4 @@ Usage: #example
   * city = "Gainesville"
   * state = "FL"
   * postalCode = "32608"
-  * country = "USA"
+  * country = "US"
