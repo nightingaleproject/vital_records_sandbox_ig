@@ -3,8 +3,6 @@ InstanceOf: ObservationMotherPrepregnancyWeightNew
 Title: "Observation - Mother Prepregnancy Weight - Jada Ann Quinn"
 Description: "Observation - Mother Prepregnancy Weight: Jada Ann Quinn example"
 Usage: #example
-* meta
-  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight-vr"
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"
   * text = "Vital Signs"

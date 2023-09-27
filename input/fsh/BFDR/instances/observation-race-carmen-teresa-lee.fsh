@@ -3,8 +3,6 @@ InstanceOf: Observation
 Title: "Observation - Race - Vital Records - Carmen Teresa Lee"
 Description: "Observation - Race - Vital Records: Carmen Teresa Lee example"
 Usage: #example
-* meta
-  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr"
 * status = #final
 * code = $loinc#80977-2 "Tabulated race [CDC]"
   * text = "Tabulated race [CDC]"

@@ -3,8 +3,6 @@ InstanceOf: Practitioner
 Title: "Practitioner - Vital Records - Janet Seito"
 Description: "Practitioner - Vital Records: Janet Seito example"
 Usage: #example
-* meta
-  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"
 * identifier
   * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "223347044"

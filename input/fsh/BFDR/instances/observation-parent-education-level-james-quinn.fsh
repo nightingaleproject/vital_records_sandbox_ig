@@ -3,8 +3,6 @@ InstanceOf: Observation
 Title: "Observation - Parent Education Level - James Quinn"
 Description: "Observation - Parent Education Level: James Quinn example"
 Usage: #example
-* meta
-  * profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"
 * status = #final
 * code = $loinc#87300-0 "Highest level of education Father"
 * subject = Reference(patient-child-babyg-quinn)
