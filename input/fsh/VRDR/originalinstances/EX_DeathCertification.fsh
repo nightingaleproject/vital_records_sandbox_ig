@@ -1,7 +1,7 @@
 
 
 Instance: DeathCertification-Example1
-InstanceOf: DeathCertification
+InstanceOf: DeathCertificationNew
 Usage: #example
 Description: "DeathCertification-Example1"
 * insert AddMetaProfile(DeathCertification)
@@ -17,7 +17,7 @@ Description: "DeathCertification-Example1"
 * performer.actor = Reference(Certifier-Example1)
 
 Instance: DeathCertification-Example2
-InstanceOf: DeathCertification
+InstanceOf: DeathCertificationNew
 Usage: #example
 Description: "DeathCertification-Example1"
 * insert AddMetaProfile(DeathCertification)

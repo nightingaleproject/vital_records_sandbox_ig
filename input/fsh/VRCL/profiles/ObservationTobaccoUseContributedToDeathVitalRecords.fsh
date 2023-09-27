@@ -15,7 +15,7 @@ Description: "This Observation provides the conclusion arrived at during death i
 * code MS
   * ^short = "Did tobacco use contribute to death"
 * subject 1..1 MS
-* subject only Reference(USCorePatientProfile or Decedent)
+* subject only Reference(PatientVitalRecordsNew)
   * ^short = "subject"
 * value[x] 1..1 MS
 * value[x] only CodeableConcept

@@ -1,8 +1,8 @@
 Instance: Decedent-Example3
-InstanceOf: Decedent
+InstanceOf: DecedentNew
 Usage: #example
 Description: "Decedent-Example3 - Stripped down for Mortality Roster"
-* insert AddMetaProfile(Decedent)
+* insert AddMetaProfile(DecedentNew)
 // * extension[Spouse-Alive].valueCodeableConcept = $v2-0136#Y
 * extension[NVSS-SexAtDeath].valueCodeableConcept = $admingender#unknown "Unknown"
 // * extension[$patient-birthPlace].valueAddress.city = "Brooklyn"
@@ -45,10 +45,10 @@ Description: "Decedent-Example3 - Stripped down for Mortality Roster"
 
 
 Instance: Decedent-Example2
-InstanceOf: Decedent
+InstanceOf: DecedentNew
 Usage: #example
 Description: "Decedent-Example2 - with birth jurisdiction"
-* insert AddMetaProfile(Decedent)
+* insert AddMetaProfile(DecedentNew)
 * extension[Spouse-Alive].valueCodeableConcept = $v2-0136#Y
 * extension[NVSS-SexAtDeath].valueCodeableConcept = $admingender#unknown "Unknown"
 * extension[$patient-birthPlace].valueAddress.city = "Brooklyn"
@@ -91,10 +91,10 @@ Description: "Decedent-Example2 - with birth jurisdiction"
 * contact.relationship = $v2-0131#U
 
 Instance: Decedent-Example1
-InstanceOf: Decedent
+InstanceOf: DecedentNew
 Usage: #example
 Description: "Decedent-Example1"
-* insert AddMetaProfile(Decedent)
+* insert AddMetaProfile(DecedentNew)
 * extension[Spouse-Alive].valueCodeableConcept = $v2-0136#Y
 * extension[NVSS-SexAtDeath].valueCodeableConcept = $admingender#unknown "Unknown"
 * extension[$patient-birthPlace].valueAddress.city = "Roanoke"

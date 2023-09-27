@@ -228,7 +228,6 @@ groups:
       - ValueSetEducationLevelPersonVitalRecords
       - ValueSetApgarTimingVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
-      - ValueSetDeathPregnancyStatusVitalRecords
       - ValueSetYesNoUnknownVitalRecords
       - ValueSetDateEstablishmentApproachVitalRecords
       - ValueSetPlaceOfDeathVitalRecords
@@ -240,7 +239,7 @@ groups:
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetContributoryTobaccoUseVitalRecordsNew
       - ValueSetEducationLevelPersonVitalRecordsNew
-      - ValueSetDeathPregnancyStatusVitalRecordsNew
+      - ValueSetDeathPregnancyStatusVitalRecords
 
   BFDRCompositionBundleProfilesNew:
     name: BFDR New Compositions and Bundles 
@@ -331,7 +330,6 @@ groups:
       - ResidenceCountryVS
       - BirthplaceCountryVS
       - EducationLevelVS
-      - PregnancyStatusVS
       - FilingFormatVS
       - MethodOfDispositionVS
       - UnitsOfAgeVS

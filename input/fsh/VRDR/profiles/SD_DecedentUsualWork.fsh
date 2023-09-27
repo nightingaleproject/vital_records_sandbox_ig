@@ -5,7 +5,7 @@ Title: "Decedent Usual Work"
 Description: "Decedent Usual Work (UsualWork)"
 * insert RequireMetaProfile(DecedentUsualWork)
 * subject 1..1
-* subject only Reference(Decedent)
+* subject only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
 * component[odh-UsualIndustry]
   * valueCodeableConcept.text ^short = "Industry - Literal"
   * valueCodeableConcept.coding[industryCDCCensus2018] ^short = "Industry Code"

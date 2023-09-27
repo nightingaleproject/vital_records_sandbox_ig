@@ -8,4 +8,4 @@ Usage: #example
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
 * valueCodeableConcept = $HL7_EducationLevelCS#SEC "Some secondary or high school education"
-  * text = "Some secondary or high school education"
+  * text = "9th through 12th grade; no diploma"

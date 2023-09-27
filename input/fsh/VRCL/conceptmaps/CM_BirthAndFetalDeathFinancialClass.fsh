@@ -1,9 +1,10 @@
 Instance: BirthAndFetalDeathFinancialClassCM
 InstanceOf: ConceptMap
 Usage: #definition
+// COnsider using codes from https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/ValueSet-InsuranceProductTypeVS.html
 * experimental = false
 * insert ConceptMapIntro(BirthAndFetalDeathFinancialClass, ValueSetBirthAndFetalDeathFinancialClass)
-* insert AddGroup("IJE", $CodeSystem-birth-and-fetal-death-financial-class)
+* insert AddGroup("IJE", [[Canonical(BirthAndFetalDeathFinancialClassCS)]])
 * insert MapConcept( #1,  "Medicaid", #medicaid, "MEDICAID")
 * insert MapConcept( #2,  "Private Insurance", #privateinsurance, "PRIVATE HEALTH INSURANCE")
 * insert MapConcept( #3,  "Self-pay", #selfpay, "Self-pay" )

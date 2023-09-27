@@ -19,7 +19,7 @@ Description: "This Observation records if an autopsy was performed, if autopsy f
 * code = $loinc#85699-7
 * code MS
 * subject 1.. MS
-* subject only Reference(USCorePatientProfile or Decedent)
+* subject only Reference(PatientVitalRecordsNew)
 * performer ..1
   * ^short = "Autopsy Performer using USCorePractioner"
 * value[x] 1.. MS

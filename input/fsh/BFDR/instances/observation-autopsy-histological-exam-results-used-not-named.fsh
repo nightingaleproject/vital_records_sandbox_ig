@@ -5,7 +5,5 @@ Description: "Observation - Autopsy or Histological Exam Results Used: Fetus Not
 Usage: #example
 * status = #final
 * code = $loinc#74498-7 "Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"
-* subject
-  * reference = "Patient/patient-decedent-fetus-not-named"
-  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * valueBoolean = true
