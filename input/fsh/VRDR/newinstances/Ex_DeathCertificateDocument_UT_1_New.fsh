@@ -85,7 +85,7 @@ Usage: #example
 * extension[NVSSSexAtDeath].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
 //* extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 //* extension[http://hl7.org/fhir/StructureDefinition/patient-birthPlace]
-* extension[Patient-BirthPlace]
+* extension[birthPlace]
   * valueAddress.use = #old
   * valueAddress.state = "CO"
   * valueAddress.country = "US"

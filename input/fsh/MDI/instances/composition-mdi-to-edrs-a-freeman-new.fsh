@@ -14,13 +14,13 @@ Usage: #example
 * identifier.value = "a03eab8c-11e8-4d0c-ad2a-b385395e27de"
 * status = #final
 * type = $loinc#86807-5 "Death administrative information Document"
-* subject.reference = "Patient/us-core-patient-a-freeman"
+* subject = Reference(us-core-patient-a-freeman)
 * date = "2022-02-20"
-* author.reference = "Practitioner/us-core-practitioner-b-goldberger"
+* author = Reference(us-core-practitioner-b-goldberger)
 * title = "MDI to EDRS Composition"
 * attester
   * mode = #professional
-  * party.reference = "Practitioner/us-core-practitioner-j-jones"
+  * party = Reference(us-core-practitioner-j-jones)
 * section[0]
   * title = "Additional Demographic Information Section"
   * code = CodeSystemMDI#demographics
@@ -30,22 +30,22 @@ Usage: #example
 * section[+]
   * title = "Circumstances Section"
   * code = CodeSystemMDI#circumstances
-  * entry[0].reference = "Location/location-death-atlanta-ga-a-freeman-new"
-  * entry[+].reference = "Observation/observation-tobacco-use-a-freeman-new"
-  * entry[+].reference = "Observation/observation-decedent-pregnancy-a-freeman-new"
-  * entry[+].reference = "Location/location-injury-atlanta-ga-a-freeman-new"
+  * entry[0] = Reference(location-death-atlanta-ga-a-freeman-new)
+  * entry[+] = Reference(observation-tobacco-use-a-freeman-new)
+  * entry[+] = Reference(observation-decedent-pregnancy-a-freeman-new)
+  * entry[+] = Reference(location-injury-atlanta-ga-a-freeman-new)
 * section[+]
   * title = "Jurisdiction Section"
   * code = CodeSystemMDI#jurisdiction
-  * entry[0].reference = "Observation/observation-death-date-a-freeman"
-  * entry[+].reference = "Procedure/procedure-death-certification-a-freeman"
+  * entry[0] = Reference(observation-death-date-a-freeman)
+  * entry[+] = Reference(Procedure/procedure-death-certification-a-freeman)
 * section[+]
   * title = "Cause and Manner of Death Section"
   * code = CodeSystemMDI#cause-manner
-  * entry[0].reference = "Observation/observation-cause-of-death-part1-a-freeman-new"
-  * entry[+].reference = "Observation/observation-contributing-cause-of-death-part2-a-freeman-new"
-  * entry[+].reference = "Observation/observation-manner-of-death-a-freeman-accidental-new"
-  * entry[+].reference = "Observation/observation-how-death-injury-occurred-a-freeman-med-ingest-new"
+  * entry[0] = Reference(observation-cause-of-death-part1-a-freeman-new)
+  * entry[+] = Reference(observation-contributing-cause-of-death-part2-a-freeman-new)
+  * entry[+] = Reference(observation-manner-of-death-a-freeman-accidental-new)
+  * entry[+] = Reference(observation-how-death-injury-occurred-a-freeman-med-ingest-new)
 * section[+]
   * title = "Medical History Section"
   * code = CodeSystemMDI#medical-history

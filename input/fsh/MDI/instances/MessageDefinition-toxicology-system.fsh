@@ -3,7 +3,6 @@ InstanceOf: MessageDefinition
 Title: "MessageDefinitionToxicologySystem"
 Description: "This resource defines the characteristics of a message that can be shared between a forensic toxicology system and a medical examiner/coroner system."
 Usage: #example
-* url = "http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"
 * name = "MessageDefinitionToxicologySystem"
 * title = "MessageDefinition - Toxicology System"
 * status = #active

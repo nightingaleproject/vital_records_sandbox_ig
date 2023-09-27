@@ -11,53 +11,41 @@ Usage: #example
   * type = CodeSystemMDI#tox-lab-case-number
   * system = "http://uf-path-labs.org/fhir/lab-cases"
   * value = "R21-01578"
-  * assigner.reference = "Organization/us-core-organization-tox-lab"
+  * assigner = Reference(us-core-organization-tox-lab)
 * status = #final
 // * category = $v2-0074#LAB "Laboratory"
 * code = $loinc#81273-5 "fentaNYL and Norfentanyl panel - Specimen"
-* subject
-  * reference = "Patient/us-core-patient-a-freeman"
+* subject = Reference(us-core-patient-a-freeman) 
   * display = "Alice J. Freeman"
 * effectiveDateTime = "2021-12-03T11:00:00Z"
 * issued = "2022-01-05T11:00:00Z"
-* performer.reference = "Practitioner/us-core-practitioner-b-goldberger"
-* specimen[0].reference = "Specimen/specimen-blood-toxicology-a-freeman"
-* specimen[+].reference = "Specimen/specimen-urine-toxicology-a-freeman"
-* specimen[+].reference = "Specimen/specimen-vitreous-humor-toxicology-a-freeman"
-* specimen[+].reference = "Specimen/specimen-bile-toxicology-a-freeman"
-* specimen[+].reference = "Specimen/specimen-liver-toxicology-a-freeman"
-* specimen[+].reference = "Specimen/specimen-stomach-contents-toxicology-a-freeman"
-* result[0]
-  * reference = "Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"
+* performer = Reference(us-core-practitioner-b-goldberger)
+* specimen[0] = Reference(specimen-blood-toxicology-a-freeman)
+* specimen[+] = Reference(specimen-urine-toxicology-a-freeman)
+* specimen[+] = Reference(specimen-vitreous-humor-toxicology-a-freeman)
+* specimen[+] = Reference(specimen-bile-toxicology-a-freeman)
+* specimen[+] = Reference(specimen-liver-toxicology-a-freeman)
+* specimen[+] = Reference(specimen-stomach-contents-toxicology-a-freeman)
+* result[0] = Reference(us-core-lab-result-etoh-gas-chromatography-blood-a-freeman)
   * display = "ETOH BLOOD: 0.145 g/dL"
-* result[+]
-  * reference = "Observation/us-core-lab-result-4-anpp-blood-a-freeman"
+* result[+] = Reference(us-core-lab-result-4-anpp-blood-a-freeman)
   * display = "4-ANPP: POSITIVE"
-* result[+]
-  * reference = "Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman"
+* result[+] = Reference(us-core-lab-result-acetylfentanyl-blood-a-freeman)
   * display = "ACETYLFENTANYL: 2 ng/mL"
-* result[+]
-  * reference = "Observation/us-core-lab-result-fentanyl-blood-a-freeman"
+* result[+] = Reference(us-core-lab-result-fentanyl-blood-a-freeman)
   * display = "FENTANYL: 23 ng/mL"
-* result[+]
-  * reference = "Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"
+* result[+] = Reference(us-core-lab-result-etoh-gas-chromatography-urine-a-freeman)
   * display = "ETOH URINE: 0.160 g/dL"
-* result[+]
-  * reference = "Observation/us-core-lab-result-4-anpp-urine-a-freeman"
+* result[+] = Reference(us-core-lab-result-4-anpp-urine-a-freeman)
   * display = "4-ANPP: POSITIVE"
-* result[+]
-  * reference = "Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman"
+* result[+] = Reference(us-core-lab-result-acetylfentanyl-urine-a-freeman)
   * display = "ACETYLFENTANYL: POSITIVE"
-* result[+]
-  * reference = "Observation/us-core-lab-result-fentanyl-urine-a-freeman"
+* result[+] = Reference(us-core-lab-result-fentanyl-urine-a-freeman)
   * display = "FENTANYL: POSITIVE"
-* result[+]
-  * reference = "Observation/us-core-lab-result-norfentanyl-urine-a-freeman"
+* result[+] = Reference(us-core-lab-result-norfentanyl-urine-a-freeman)
   * display = "NORFENTANYL: POSITIVE"
-* result[+]
-  * reference = "Observation/us-core-lab-result-xylazine-urine-a-freeman"
+* result[+] = Reference(us-core-lab-result-xylazine-urine-a-freeman)
   * display = "XYLAZINE: POSITIVE"
-* result[+]
-  * reference = "Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"
+* result[+] = Reference(us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman)
   * display = "ETOH VITREOUS HUMOR: 0.133 g/dL"
 * conclusion = "Samples of bile, liver, and stomach contents were contaminated and not analyzed."

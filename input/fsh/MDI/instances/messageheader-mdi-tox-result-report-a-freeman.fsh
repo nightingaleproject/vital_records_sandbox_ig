@@ -15,4 +15,4 @@ Usage: #example
 * response
   * identifier = "5015fe84-8e76-4526-89d8-44b322e8d4fb"
   * code = #ok
-* focus.reference = "DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"
+* focus = Reference(diagnosticreport-mdi-toxicology-lab-a-freeman)
