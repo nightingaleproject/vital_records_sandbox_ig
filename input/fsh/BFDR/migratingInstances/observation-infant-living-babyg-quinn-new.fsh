@@ -7,5 +7,5 @@ Usage: #example
   //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"
 * status = #final
 * code = $loinc#73757-7 "Infant living at time of report [US Standard Certificate of Live Birth]"
-* subject = Reference(patient-child-babyg-quinn-new) "BabyG Quinn"
+* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * valueBoolean = true

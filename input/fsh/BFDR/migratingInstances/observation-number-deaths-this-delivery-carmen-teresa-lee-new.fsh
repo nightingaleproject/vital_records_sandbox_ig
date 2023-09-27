@@ -8,6 +8,6 @@ Usage: #example
 * status = #final
 * code = $loinc#73772-6 "Number of fetal deaths delivered"
   * text = "Number of fetal deaths delivered"
-* subject = Reference(patient-mother-carmen-teresa-lee-new) "Patient - Mother (Carmen Teresa Lee)"
-* focus = Reference(patient-decedent-fetus-not-named-new) "Patient - Decedent Fetus (Fetus Not Named)"
+* subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
+* focus = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * valueInteger = 1

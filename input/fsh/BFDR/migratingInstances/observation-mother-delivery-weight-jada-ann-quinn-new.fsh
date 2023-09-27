@@ -6,6 +6,6 @@ Usage: #example
 // * meta
   //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"
 * status = #final
-* subject = Reference(patient-mother-jada-ann-quinn-new) "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * effectiveDateTime = "2019-02-12"
 * valueQuantity = 175 '[lb_av]'

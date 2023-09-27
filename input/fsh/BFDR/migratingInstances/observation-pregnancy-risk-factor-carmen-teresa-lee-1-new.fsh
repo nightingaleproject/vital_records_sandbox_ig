@@ -5,7 +5,7 @@ Description: "Example of Observation-pregnancy-risk-factor-vr profile (Carmen Te
 Usage: #example
 * status = #final
 * subject
-  * reference = "Patient/patient-mother-carmen-teresa-lee-new"
+  * reference = "Patient/patient-mother-carmen-teresa-lee"
   * display = "Patient - Mother (Carmen Teresa Lee)"
 * valueCodeableConcept = $sct#38341003 "Hypertensive disorder, systemic arterial (disorder)"
   * text = "Hypertensive disorder, systemic arterial (disorder)"
