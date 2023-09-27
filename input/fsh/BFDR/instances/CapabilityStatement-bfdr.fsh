@@ -17,19 +17,19 @@ Usage: #definition
 * format[+] = #json
 * document[0]
   * mode = #producer
-  * profile = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"
+  * profile = Canonical(CompositionJurisdictionLiveBirthReportNew)
 * document[+]
   * mode = #producer
-  * profile = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"
+  * profile = Canonical(CompositionProviderFetalDeathReportNew)
 * document[+]
   * mode = #producer
-  * profile = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"
+  * profile = Canonical(CompositionJurisdictionLiveBirthReportNew)
 * document[+]
   * mode = #producer
-  * profile = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"
+  * profile = Canonical(CompositionJurisdictionFetalDeathReportNew)
 * document[+]
   * mode = #producer
-  * profile = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"
+  * profile = Canonical(CompositionCodedCauseOfFetalDeathNew)
 * document[+]
   * mode = #producer
-  * profile = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"
+  * profile = Canonical(CompositionCodedRaceAndEthnicityNew)
