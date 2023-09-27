@@ -42,19 +42,19 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-8
-* insert addentry(ObservationNumberPrenatalVisitsNew, observation-number-prenatal-visits-jada-ann-quinn)
+* insert addentry(ObservationNumberPrenatalVisitsNew, observation-number-prenatal-visits-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-prenatal-visits-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-9
-* insert addentry(ObservationLastMenstrualPeriodNew, observation-last-menstrual-period-jada-ann-quinn)
+* insert addentry(ObservationLastMenstrualPeriodNew, observation-last-menstrual-period-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-last-menstrual-period-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-10
-* insert addentry(ObservationNumberBirthsNowLivingNew, observation-number-births-now-living-jada-ann-quinn)
+* insert addentry(ObservationNumberBirthsNowLivingNew, observation-number-births-now-living-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-births-now-living-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-11
-* insert addentry(ObservationNumberBirthsNowDeadNew, observation-number-births-now-dead-jada-ann-quinn)
+* insert addentry(ObservationNumberBirthsNowDeadNew, observation-number-births-now-dead-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-births-now-dead-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-12
@@ -62,7 +62,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-date-of-last-live-birth-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-13
-* insert addentry(ObservationNumberOtherPregnancyOutcomesNew, observation-number-other-pregnancy-outcomes-jada-ann-quinn)
+* insert addentry(ObservationNumberOtherPregnancyOutcomesNew, observation-number-other-pregnancy-outcomes-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-14
@@ -74,15 +74,15 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-16
-* insert addentry(ObservationMotherDeliveryWeightNew, observation-mother-delivery-weight-jada-ann-quinn)
+* insert addentry(ObservationMotherDeliveryWeightNew, observation-mother-delivery-weight-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-delivery-weight-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-17
-* insert addentry(ObservationMotherHeightNew, observation-mother-height-jada-ann-quinn)
+* insert addentry(ObservationMotherHeightNew, observation-mother-height-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-height-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-18
-* insert addentry(ObservationMotherPrepregnancyWeightNew, observation-mother-prepregnancy-weight-jada-ann-quinn)
+* insert addentry(ObservationMotherPrepregnancyWeightNew, observation-mother-prepregnancy-weight-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-prepregnancy-weight-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-19
@@ -114,7 +114,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Condition/condition-gestational-hypertension-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-26
-* insert addentry(ObservationNumberPreviousCesareansNew, observation-number-previous-cesareans-jada-ann-quinn)
+* insert addentry(ObservationNumberPreviousCesareansNew, observation-number-previous-cesareans-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-previous-cesareans-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-27
@@ -146,19 +146,19 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Condition/condition-ruptured-uterus-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-34
-* insert addentry(ObservationBirthWeightNew, observation-birth-weight-babyg-quinn)
+* insert addentry(ObservationBirthWeightNew, observation-birth-weight-babyg-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-birth-weight-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-35
-* insert addentry(ObservationGestationalAgeAtDeliveryNew, observation-gestational-age-at-delivery-babyg-quinn)
+* insert addentry(ObservationGestationalAgeAtDeliveryNew, observation-gestational-age-at-delivery-babyg-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-gestational-age-at-delivery-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-36
-* insert addentry(ObservationApgarScoreNew, observation-apgar-score-babyg-quinn-1-min)
+* insert addentry(ObservationApgarScoreNew, observation-apgar-score-babyg-quinn-1-min-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-apgar-score-babyg-quinn-1-min"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-37
-* insert addentry(ObservationApgarScoreNew, observation-apgar-score-babyg-quinn-5-min)
+* insert addentry(ObservationApgarScoreNew, observation-apgar-score-babyg-quinn-5-min-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-apgar-score-babyg-quinn-5-min"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-38
@@ -170,7 +170,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-40
-* insert addentry(ObservationInfantLivingNew, observation-infant-living-babyg-quinn)
+* insert addentry(ObservationInfantLivingNew, observation-infant-living-babyg-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-infant-living-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-41

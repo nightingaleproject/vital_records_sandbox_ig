@@ -1,4 +1,4 @@
-Instance: observation-birth-weight-babyg-quinn
+Instance: observation-birth-weight-babyg-quinn-new
 InstanceOf: ObservationBirthWeightNew
 Title: "Observation - Birth Weight - Baby G Quinn"
 Description: "Observation - Birth Weight: Baby G Quinn example"
