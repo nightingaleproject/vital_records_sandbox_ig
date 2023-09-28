@@ -7,6 +7,4 @@ Usage: #example
 * category[codedOtherCauseOrCondition] = $loinc#92023-1 "Coded other significant causes or conditions of fetal death"
 * code = $icd-10#P02.1 "Fetus and newborn affected by other forms of placental separation and haemorrhage"
   * text = "Fetus and newborn affected by other forms of placental separation and haemorrhage"
-* subject
-  * reference = "Patient/patient-decedent-fetus-not-named"
-  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
