@@ -8,9 +8,7 @@ Usage: #example
 
 * code = $loinc#73938-3 "fentaNYL [Mass/volume] in Blood by Confirmatory method"
   * text = "fentaNYL [Mass/volume] in Blood by Confirmatory method"
-* subject
-  * reference = "Patient/us-core-patient-a-freeman"
-  * display = "Alice J. Freeman"
+* subject = Reference(us-core-patient-a-freeman) "Alice J. Freeman"
 * effectiveDateTime = "2021-12-03"
 * valueString = "23 ng/mL"
 * specimen.reference = "Specimen/specimen-blood-toxicology-a-freeman"

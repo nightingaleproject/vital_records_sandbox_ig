@@ -6,9 +6,7 @@ Usage: #example
 * status = #final
 * code = $loinc#11072-6 "Despropionylfentanyl [Mass/volume] in Serum or Plasma"
   * text = "Despropionylfentanyl [Mass/volume] in Serum or Plasma"
-* subject
-  * reference = "Patient/us-core-patient-a-freeman"
-  * display = "Alice J. Freeman"
+* subject = Reference(us-core-patient-a-freeman) "Alice J. Freeman"
 * effectiveDateTime = "2021-12-03"
 * valueString = "true"
 * specimen.reference = "Specimen/specimen-blood-toxicology-a-freeman"
