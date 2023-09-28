@@ -15,13 +15,8 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #xml
 * format[+] = #json
+  // These are produced by  the source of the reports and sent to a Jurisdiction VRO or to NCHS
 * document[0]
-  * mode = #producer
-  * profile = Canonical(CompositionJurisdictionLiveBirthReportNew)
-* document[+]
-  * mode = #producer
-  * profile = Canonical(CompositionProviderFetalDeathReportNew)
-* document[+]
   * mode = #producer
   * profile = Canonical(CompositionJurisdictionLiveBirthReportNew)
 * document[+]
@@ -29,7 +24,14 @@ Usage: #definition
   * profile = Canonical(CompositionJurisdictionFetalDeathReportNew)
 * document[+]
   * mode = #producer
-  * profile = Canonical(CompositionCodedCauseOfFetalDeathNew)
+  * profile = Canonical(CompositionProviderLiveBirthReportNew)
 * document[+]
   * mode = #producer
+  * profile = Canonical(CompositionProviderFetalDeathReportNew)
+  // These are produced by NCHS and consumed by the source of the reports
+* document[+]
+  * mode = #consumer
+  * profile = Canonical(CompositionCodedCauseOfFetalDeathNew)
+* document[+]
+  * mode = #consumer
   * profile = Canonical(CompositionCodedRaceAndEthnicityNew)
