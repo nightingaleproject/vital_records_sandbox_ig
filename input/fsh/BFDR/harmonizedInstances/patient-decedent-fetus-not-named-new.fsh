@@ -3,7 +3,7 @@ InstanceOf: PatientDecedentFetusVitalRecordsNew
 Title: "Patient - Decedent Fetus example [Fetus Not Named]"
 Description: "Example of Patient-decedent-fetus-vr (Fetus Not Named)"
 Usage: #example
-* extension[USCoreBirthSexExtension]
+* extension[birthsex]
   * valueCode = #F
 * extension[birthPlace]
   * valueAddress

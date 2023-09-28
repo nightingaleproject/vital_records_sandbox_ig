@@ -3,19 +3,19 @@ InstanceOf: PatientMotherVitalRecordsNew
 Title: "Patient - Mother Jada Ann Quinn"
 Description: "Example of Patient-mother-vr profile (Jada Ann Quinn)"
 Usage: #example
-* extension[USCoreRaceExtension]
+* extension[race]
   * extension[ombCategory]
     * valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
   * extension[ombCategory]
     * valueCoding = urn:oid:2.16.840.1.113883.6.238#1002-5 "American Indian or Alaska Native"
   * extension[text]
     * valueString = "White, American Indian or Alaska Native"
-* extension[USCoreEthnicityExtension]
+* extension[ethnicity]
   * extension[ombCategory]
     * valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
   * extension[text]
     * valueString = "Not Hispanic or Latino"
-* extension[USCoreBirthSexExtension]
+* extension[birthsex]
   * valueCode = #F
 * extension[birthPlace]
   * valueAddress.state = "UT"

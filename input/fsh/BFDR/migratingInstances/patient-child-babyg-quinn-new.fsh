@@ -3,17 +3,17 @@ InstanceOf: PatientChildVitalRecordsNew
 Title: "Patient - Child example [Baby G Quinn]"
 Description: "Example of Patient-child-vr profile (Baby G Quinn)"
 Usage: #example
-* extension[USCoreRaceExtension]
+* extension[race]
   * extension[ombCategory]
     * valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
   * extension[text]
     * valueString = "White"
-* extension[USCoreEthnicityExtension]
+* extension[ethnicity]
   * extension[ombCategory]
     * valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
   * extension[text]
     * valueString = "Not Hispanic or Latino"
-* extension[USCoreBirthSexExtension]
+* extension[birthsex]
   * valueCode = #F
 * extension[birthPlace]
   * valueAddress
