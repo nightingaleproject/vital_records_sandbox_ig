@@ -17,7 +17,7 @@ Usage: #example
   * use = #usual
   * type = $v2-0203#SS "Social Security number"
     * text = "Social Security number"
-  * system = "http://hospital.smarthealthit.org"
+  * system = "http://hl7.org/fhir/sid/us-ssn"
   * value = "987054321"
 * active = true
 * name
