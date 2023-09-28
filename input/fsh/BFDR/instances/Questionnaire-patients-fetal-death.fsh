@@ -198,7 +198,7 @@ Usage: #example
   * text = "What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received)."
   * type = #choice
   * repeats = false
-  * answerValueSet = "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7582"
+  * answerValueSet = Canonical(EducationLevelVS)
 * item[+]
   * linkId = "mother-ethnicity"
   * prefix = "9"
