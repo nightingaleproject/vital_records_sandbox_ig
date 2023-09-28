@@ -5,6 +5,6 @@ Title: "Observation - Infant Living"
 Description: "An indication of whether the infant is living at the time the report is being submitted. Migrated from VRCL."
 * code = $loinc#73757-7
 * subject 1..
-* subject only Reference(PatientChildNew)
+* subject only Reference(PatientChildVitalRecordsNew)
 * value[x] 1..
 * value[x] only boolean

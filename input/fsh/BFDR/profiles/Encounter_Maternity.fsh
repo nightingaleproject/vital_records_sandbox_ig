@@ -7,7 +7,7 @@ Description: "This Encounter profile represents the mother's maternity encounter
 * status MS
 * class MS
 * subject 1..1 MS
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)
 * participant MS
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "type"
@@ -22,7 +22,7 @@ Description: "This Encounter profile represents the mother's maternity encounter
     * ^short = "Birth attendant [Extended Identifier]"
     * ^definition = "Birth attendant [Extended Identifier]"
   * individual 1.. MS
-  * individual only Reference(PractitionerVitalRecords)
+  * individual only Reference(PractitionerVitalRecordsNew)
 * participant[certifier] ^short = "The individual who certifies to the fact that the birth occurred."
   * ^definition = "The individual who certifies to the fact that the birth occurred. May be, but need not be, the same as the attendant at birth."
   * type 1.. MS
@@ -33,7 +33,7 @@ Description: "This Encounter profile represents the mother's maternity encounter
     * ^short = "Date certified"
     * ^definition = "Date certified."
   * individual 1.. MS
-  * individual only Reference(PractitionerVitalRecords)
+  * individual only Reference(PractitionerVitalRecordsNew)
 * period MS
 * hospitalization MS
   * origin only Reference(USCoreLocation)

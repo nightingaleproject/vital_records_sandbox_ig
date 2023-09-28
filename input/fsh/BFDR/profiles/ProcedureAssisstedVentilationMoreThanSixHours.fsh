@@ -6,4 +6,4 @@ Description: "This profile represents an abnormal condition of the newborn of as
 * code = urn:oid:2.16.840.1.114222.4.5.274#PHC1251
 * code MS
   * ^short = "Assisted ventilation required for more than six hours"
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew)

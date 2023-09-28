@@ -1,5 +1,5 @@
 Instance: patient-mother-birth-date-part-absent
-InstanceOf: PatientMotherNew
+InstanceOf: PatientMotherVitalRecordsNew
 Title: "Patient - Mother Date Part Absent"
 Description: "Example of Patient-mother-vr profile (Date Part Absent)"
 Usage: #example
@@ -15,7 +15,7 @@ Usage: #example
     * valueCoding = urn:oid:2.16.840.1.113883.6.238#2135-2 "Hispanic or Latino"
   * extension[text]
     * valueString = "Hispanic or Latino"
-* extension[USCoreBirthSexExtension]
+* extension[birthsex]
   * valueCode = #F
 * extension[birthPlace]
   * valueAddress.state = "PR"

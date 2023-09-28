@@ -12,7 +12,7 @@ Usage: #example
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-provider-fetal-death-not-named"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-1
-* insert addentry(PatientDecedentFetusVitalRecords, patient-decedent-fetus-not-named-common)
+* insert addentry(PatientDecedentFetusVitalRecordsNew, patient-decedent-fetus-not-named)
 //* insert addentry(PatientDecedentFetusNew, patient-decedent-fetus-not-named)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-decedent-fetus-not-named"
@@ -25,7 +25,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Practitioner/practitioner-vital-records-jessica-leung"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-4
-* insert addentry(PatientMotherVitalRecords, patient-mother-carmen-teresa-lee-common)
+* insert addentry(PatientMotherVitalRecordsNew, patient-mother-carmen-teresa-lee)
 //* insert addentry(PatientMotherNew, patient-mother-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-carmen-teresa-lee"
@@ -155,7 +155,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Organization/organization-south-hospital"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-35
-* insert addentry(RelatedPerson, relatedperson-mother-carmen-teresa-lee)
+* insert addentry(RelatedPersonMotherVitalRecordsNew, relatedperson-mother-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-mother-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-36

@@ -6,7 +6,7 @@ Description: "This profile indicates that none of the specified maternal morbidi
 * code = $loinc#73781-7
   * ^short = "Maternal morbidity [US Standard Certificate of Live Birth]"
 * subject 1..
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] = $sct#260413007

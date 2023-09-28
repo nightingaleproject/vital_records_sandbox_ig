@@ -4,7 +4,7 @@ Id: Encounter-birth
 Title: "Encounter - Birth"
 Description: "This Encounter profile represents the child's birth encounter."
 * subject 1..1 MS
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew)
 * participant MS
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "type"
@@ -19,7 +19,7 @@ Description: "This Encounter profile represents the child's birth encounter."
     * ^short = "Birth attendant [Extended Identifier]"
     * ^definition = "Birth attendant [Extended Identifier]"
   * individual 1.. MS
-  * individual only Reference(PractitionerVitalRecords)
+  * individual only Reference(PractitionerVitalRecordsNew)
 * participant[certifier] ^short = "The individual who certifies to the fact that the birth occurred."
   * ^definition = "The individual who certifies to the fact that the birth occurred. May be, but need not be, the same as the attendant at birth."
   * type 1.. MS
@@ -30,7 +30,7 @@ Description: "This Encounter profile represents the child's birth encounter."
     * ^short = "Date certified"
     * ^definition = "Date certified."
   * individual 1.. MS
-  * individual only Reference(PractitionerVitalRecords)
+  * individual only Reference(PractitionerVitalRecordsNew)
 * hospitalization MS
   * destination only Reference(USCoreLocation)
   * destination MS

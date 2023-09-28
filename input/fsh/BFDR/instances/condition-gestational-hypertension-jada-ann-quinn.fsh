@@ -1,5 +1,5 @@
 Instance: condition-gestational-hypertension-jada-ann-quinn
-InstanceOf: Condition
+InstanceOf: ConditionGestationalHypertensionVitalRecords
 Title: "Condition - Gestational Hypertension - Jada Ann Quinn"
 Description: "Condition - Gestational Hypertension: Jada Ann Quinn example"
 Usage: #example

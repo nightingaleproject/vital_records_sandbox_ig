@@ -25,7 +25,7 @@ Description: "This Composition profile defines constraints to address the use ca
   * ^short = "U.S. standard certificate of live birth - 2003 revision"
   * ^definition = "U.S. standard certificate of live birth - 2003 revision"
 * subject 1.. 
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew)
   * ^short = "The subject of the composition is the newborn baby"
   * ^definition = "The subject of the composition as a whole is the newborn baby. Different sections in the composition have different focus (e.g.: the mother)."
 * encounter only Reference(EncounterBirth)

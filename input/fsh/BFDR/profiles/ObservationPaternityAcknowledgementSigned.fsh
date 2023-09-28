@@ -7,7 +7,7 @@ Description: "This Observation represents whether or not a paternity acknowledge
 * code = $loinc#87302-6
   * ^short = "Paternity acknowledgment form signed Father"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew)
 * focus 1..1 MS
 * focus only Reference(RelatedPersonFatherNaturalVitalRecords)
 * value[x] 1..1 MS

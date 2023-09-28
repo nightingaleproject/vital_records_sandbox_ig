@@ -1,9 +1,9 @@
 Instance: patient-decedent-fetus-not-named
-InstanceOf: PatientDecedentFetusNew
+InstanceOf: PatientDecedentFetusVitalRecordsNew
 Title: "Patient - Decedent Fetus example [Fetus Not Named]"
 Description: "Example of Patient-decedent-fetus-vr (Fetus Not Named)"
 Usage: #example
-* extension[USCoreBirthSexExtension]
+* extension[birthsex]
   * valueCode = #F
 * extension[birthPlace]
   * valueAddress
@@ -15,10 +15,14 @@ Usage: #example
   * type = $v2-0203#MR "Medical Record Number"
   * system = "http://hospital.smarthealthit.org"
   * value = "9932702"
+// NOTE TODO: name.use is a required element and the child is unnamed
+// want to confirm this is the appropriate code
+* name.use = #usual
+// profile indicates that 'When child not named use code "unknown"'
 * name.family = "UNK"
-  * extension
-    * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-    * valueCode = #not-applicable
+  * extension[dataAbsentReason].valueCode = #not-applicable
+    // * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+    // * valueCode = #not-applicable
 * gender = #female
 * birthDate = "2019-01-09"
   * extension

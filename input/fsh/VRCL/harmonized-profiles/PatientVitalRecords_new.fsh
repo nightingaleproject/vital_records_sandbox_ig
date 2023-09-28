@@ -40,7 +40,7 @@ Description: "This abstract Patient profile includes common extensions and slici
     currentLegalName 0..1  and
     namePriorToFirstMarriage 0..1 
 * name[currentLegalName] 
-  * ^short = "Mother's current legal name"
+  * ^short = "current legal name"
   * use = #official (exactly)
 * name[namePriorToFirstMarriage]
   * use = #maiden (exactly)

@@ -6,4 +6,4 @@ Description: "This Condition profile indicates a maternal morbidity of perineal 
 * . ^short = "This Condition profile indicates a maternal morbidity of perineal laceration."
 * code = $sct#398019008
   * ^short = "Perineal laceration during delivery (disorder)"
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)

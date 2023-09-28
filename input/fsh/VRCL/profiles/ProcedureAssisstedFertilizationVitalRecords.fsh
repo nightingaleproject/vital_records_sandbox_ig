@@ -16,4 +16,4 @@ Description: "This Procedure profile records that a pregnancy risk factor of ass
 * code = $sct#63487001
 * code MS
   * ^short = "Assisted fertilization (procedure)"
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)

@@ -19,11 +19,11 @@ Description: "The Observation - Cause of Death Part 1 profile reflects the order
 * valueCodeableConcept.text ^short = "Cause of Death Part 1, Line a,b,c,d"
 * valueCodeableConcept.text ^maxLength = 120
 * subject 1..1
-* subject only Reference(USCorePatientProfile)
+* subject only Reference(PatientVitalRecordsNew)
   * ^label = "The decedent"
   * ^short = "The decedent"
 * performer ^short = "Certifier"
-* performer only Reference(USCorePractitioner)
+* performer only Reference(PractitionerVitalRecordsNew)
   * ^label = "Cause of death certifier (coroner or medical examiner)"
   * ^short = "Cause of death certifier (coroner or medical examiner)"
 * component ^slicing.discriminator.type = #value

@@ -7,9 +7,9 @@ Description: "This profile represents the date of the first prenatal care visit 
 * code = $loinc#69044-6
   * ^short = "Date of first prenatal care visit"
 * subject 1..1 MS
-* subject only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
 * focus 1..1 MS
-* focus only Reference(PatientMotherVitalRecords)
+* focus only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..1 MS
 * value[x] only dateTime
   * ^short = "Date of first prenatal care visit"

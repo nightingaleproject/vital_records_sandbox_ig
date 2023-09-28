@@ -8,11 +8,11 @@ Usage: #example
   * value = "urn:uuid:101bec42-b799-4f3d-9188-b9cb376cc094"
 * type = #document
 * timestamp = "2019-02-13T02:06:15.234Z"
-* insert addentry(CompositionJurisdictionLiveBirthReportNew, composition-jurisdiction-live-birth-babyg-quinn-new)
+* insert addentry(CompositionJurisdictionLiveBirthReportNew, composition-jurisdiction-live-birth-babyg-quinn)
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-jurisdiction-live-birth-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-1
-* insert addentry(PatientChildVitalRecords, patient-child-babyg-quinn-common)
+* insert addentry(PatientChildVitalRecordsNew, patient-child-babyg-quinn)
 //* insert addentry(PatientChildNew, patient-child-babyg-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-child-babyg-quinn"
@@ -29,7 +29,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Organization/organization-jurisdictional-vital-records-office"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-5
-* insert addentry(PatientMotherVitalRecords, patient-mother-carmen-teresa-lee-common)
+* insert addentry(PatientMotherVitalRecordsNew, patient-mother-jada-ann-quinn)
 //* insert addentry(PatientMotherNew, patient-mother-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-jada-ann-quinn"
@@ -106,7 +106,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-24
-* insert addentry(Condition, condition-gestational-hypertension-jada-ann-quinn)
+* insert addentry(ConditionGestationalHypertensionVitalRecords, condition-gestational-hypertension-jada-ann-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Condition/condition-gestational-hypertension-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-25
@@ -158,7 +158,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-apgar-score-babyg-quinn-5-min"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-37
-
+* insert addentry(ObservationNumberLiveBirthsThisDeliveryNew, observation-number-live-births-this-delivery-jada-ann-quinn)
 // no plurality in STU1.1
 // * insert addentry(Observation, observation-plurality-jada-ann-quinn)
 // * entry[+]
@@ -192,7 +192,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-ssn-requested-for-child-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-45
-* insert addentry(RelatedPerson, relatedperson-father-natural-james-brandon-quinn)
+* insert addentry(RelatedPersonFatherNaturalVitalRecords, relatedperson-father-natural-james-brandon-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-father-natural-james-brandon-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-46
@@ -200,7 +200,8 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-paternity-acknowledgement-signed-james-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-47
-* insert addentry(Observation, observation-parent-education-level-james-quinn)
+* insert addentry(ObservationEducationLevelVitalRecordsNew, observation-parent-education-level-james-quinn)
+// * insert addentry(Observation, observation-parent-education-level-james-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-james-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-48
@@ -244,7 +245,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-number-prenatal-care-visits-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-58
-* insert addentry(ObservationEditFlagNumberPreviousCesareans, observation-edit-flag-number-prenatal-care-visits-example)
+* insert addentry(ObservationEditFlagNumberPreviousCesareans, observation-edit-flag-number-previous-cesareans-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-number-previous-cesareans-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-59
@@ -276,7 +277,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-66
-* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
+* insert addentry(RelatedPersonMotherVitalRecordsNew, relatedperson-mother-jada-ann-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-mother-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-67

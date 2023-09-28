@@ -7,7 +7,7 @@ Description: "This profile represents whether or not the infant was being breast
 * code = $loinc#73756-9
   * ^short = "Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew)
 * value[x] 1..1 MS
 * value[x] only boolean
   * ^short = "Is the infant being breastfed at discharge?"
