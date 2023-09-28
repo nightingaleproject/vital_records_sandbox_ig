@@ -6,10 +6,6 @@ Usage: #example
 * status = #final
 * code = $loinc#87298-6 "Cigarettes smoked per day by Mother--1st trimester"
   * text = "Cigarettes smoked per day by Mother--1st trimester"
-* subject
-  * reference = "Patient/patient-mother-jada-ann-quinn"
-  * display = "Patient - Mother (Jada Ann Quinn)"
-* focus
-  * reference = "Patient/patient-child-babyg-quinn"
-  * display = "BabyG Quinn"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* focus = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * valueInteger = 3

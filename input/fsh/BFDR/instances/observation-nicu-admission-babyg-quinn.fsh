@@ -6,9 +6,7 @@ Usage: #example
 * status = #final
 * code = $loinc#73812-0 "Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"
   * text = "Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"
-* subject
-  * reference = "Patient/patient-child-babyg-quinn"
-  * display = "BabyG Quinn"
+* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * effectiveDateTime = "2019-12-02"
 * valueCodeableConcept = $sct#405269005 "Neonatal intensive care unit (environment)"
   * text = "Neonatal intensive care unit (environment)"

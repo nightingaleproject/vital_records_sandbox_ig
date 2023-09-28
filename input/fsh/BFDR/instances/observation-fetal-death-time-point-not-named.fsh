@@ -5,7 +5,5 @@ Description: "Observation - Observation Estimated Fetal Death Time Point: Fetus 
 Usage: #example
 * status = #final
 * code = $loinc#73811-2 "Estimated timing of fetal death [US Standard Report of Fetal Death]"
-* subject
-  * reference = "Patient/patient-decedent-fetus-not-named"
-  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * valueCodeableConcept = $sct#434631000124100 "Fetal intrapartum death after first assessment (event)"
