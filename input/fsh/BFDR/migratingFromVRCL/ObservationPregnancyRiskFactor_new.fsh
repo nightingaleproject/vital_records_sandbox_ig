@@ -5,7 +5,7 @@ Title: "Observation - Pregnancy Risk Factor Vital Records"
 Description: "Selected medical risk factors of the mother during the pregnancy."
 * code = $loinc#73775-9
 * subject 1..
-* subject only Reference(PatientMotherNew)
+* subject only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from ValueSetPregnancyRiskFactors (extensible)

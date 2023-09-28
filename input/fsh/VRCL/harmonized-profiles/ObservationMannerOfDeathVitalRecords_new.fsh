@@ -18,11 +18,11 @@ This profile is designed to supplant the similar profiles in VRDR and MDI"
 * code = $loinc#69449-7
   * ^short = "Manner of death"
 * subject 1..1 
-* subject only Reference(USCorePatientProfile) //generalized to Patient
+* subject only Reference(PatientVitalRecordsNew) //generalized to Patient
   * ^label = "The decedent"
   * ^short = "The decedent"
 //* performer 1..1 loosen this restriction since VRDR doesn't require a performer
-* performer only Reference(USCorePractitionerProfile) //generalized to Practitioner
+* performer only Reference(PractitionerVitalRecordsNew) //generalized to Practitioner
   * ^label = "Manner of death certifier"
   * ^short = "Manner of death certifier"
   * ^definition = "Manner of death certifier"

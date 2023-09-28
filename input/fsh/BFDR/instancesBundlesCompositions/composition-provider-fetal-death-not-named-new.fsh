@@ -16,7 +16,7 @@ Usage: #example
 * identifier.value = "z03eab8c-11e8-4d0c-ad2a-b385395e27da"
 * status = #final
 * type = $loinc#69045-3 "U.S. standard report of fetal death - 2003 revision"
-* subject = Reference(patient-decedent-fetus-not-named-common) "Patient - Decedent Fetus (Fetus Not Named)"
+* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * encounter = Reference(encounter-maternity-carmen-teresa-lee) "Encounter - Maternity (Carmen Teresa Lee)"
 * date = "2019-01-09"
 * author = Reference(practitioner-vital-records-jessica-leung) "Practitioner - Vital Records (Jessica Leung)"
@@ -24,7 +24,7 @@ Usage: #example
 * section[motherPrenatal]
   // * title = "Mother (prenatal) Section on the Fetal Death Report"
   // * code = $loinc#57073-9 "Prenatal records"
-  * focus = Reference(patient-mother-carmen-teresa-lee-common) "Patient - Mother (Carmen Teresa Lee)" 
+  * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)" 
   * entry[plannedToDeliverAtHome] = Reference(observation-planned-to-deliver-at-home-not-named) "Observation - Planned to Deliver at Home (Carmen Teresa Lee)"
   * entry[firstPrenatalCareVisit] = Reference(observation-date-of-first-prenatal-care-visit-carmen-teresa-lee) "Observation - Date of First Prenatal Care Visit (Carmen Teresa Lee)"
   * entry[dateLastNormalMenses] = Reference(observation-last-menstrual-period-carmen-teresa-lee) "Observation - Last Menstrual Period (Carmen Teresa Lee)"
@@ -41,7 +41,7 @@ Usage: #example
 * section[medicalHealthInformation]
   // * title = "Medical and Health Information on the Fetal Death Report"
   // * code = $loinc#55752-0 "Clinical information"
-  * focus = Reference(patient-mother-carmen-teresa-lee-common) "Patient - Mother (Carmen Teresa Lee)"
+  * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
   * entry[numberPreviousCesareans] = Reference(observation-number-previous-cesareans-carmen-teresa-lee) "Observation - Number Previous Cesareans (Carmen Teresa Lee)"
   * entry[fetalPresentation] = Reference(observation-fetal-presentation-not-named) "Observation - Fetal Presentation (Fetus Not Named)"
   * entry[finalRouteMethodDelivery] = Reference(procedure-final-route-method-delivery-not-named) "Procedure - Final Route and Method of Delivery (Fetus Not Named)"
@@ -64,10 +64,10 @@ Usage: #example
 * section[motherInformation]
   // * title = "Mother Administrative Section on the Fetal Death Report"
   // * code = $loinc#92014-0 "Mother's administrative information"
-  * focus = Reference(patient-mother-carmen-teresa-lee-common) "Patient - Mother (Carmen Teresa Lee)"
+  * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
   * entry[mothersEducation] = Reference(observation-parent-education-level-carmen-teresa-lee) "Observation - Parent Education Level (Carmen Teresa Lee)"
 * section[patientsQuestionnaireResponse]
   // * title = "Patient's QuestionnaireResponse Section"
   // * code = $loinc#74465-6 "Questionnaire response Document"
-  * focus = Reference(patient-mother-carmen-teresa-lee-common) "Patient - Mother (Carmen Teresa Lee)"
+  * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
   * entry = Reference(QuestionnaireResponse-patients-fetal-death-carmen-lee) "QuestionnaireResponse - Patient's Worksheet for Fetal Death Report"

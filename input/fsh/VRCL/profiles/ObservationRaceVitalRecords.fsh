@@ -11,9 +11,9 @@ Description: "This profile represents a single race code assigned to the person.
 * code = $loinc#80977-2
   * ^short = "Tabulated race [CDC]"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
 * focus 1..1
-* focus only Reference(PatientMotherVitalRecords or RelatedPersonMotherGestationalVitalRecords or RelatedPersonFatherNaturalVitalRecords)
+* focus only Reference(PatientMotherVitalRecordsNew or RelatedPersonMotherGestationalVitalRecords or RelatedPersonFatherNaturalVitalRecords)
 * value[x] 0..1 MS
 * value[x] only CodeableConcept
 * value[x] from PHVS_Race_NCHS (required)

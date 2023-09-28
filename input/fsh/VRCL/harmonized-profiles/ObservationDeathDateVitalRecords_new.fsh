@@ -18,11 +18,11 @@ This profile is designed to supplant the similar profiles in VRDR and MDI."
 //* code MS
   * ^short = "Date+time of death"
 * subject 1..1 
-* subject only Reference(USCorePatientProfile) //generalized to patient
+* subject only Reference(PatientVitalRecordsNew) //generalized to patient
   * ^label = "The decedent"
   * ^short = "The decedent"
 * performer 0..1 
-* performer only Reference(USCorePractitionerProfile)
+* performer only Reference(PractitionerVitalRecordsNew)
   * ^label = "Death Pronouncement Performer"
   * ^short = "Death Pronouncement Performer"
 * value[x] only dateTime

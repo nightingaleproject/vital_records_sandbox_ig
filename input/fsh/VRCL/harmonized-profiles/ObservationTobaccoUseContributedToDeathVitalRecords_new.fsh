@@ -21,7 +21,7 @@ This profile is designed to supplant the similar profiles in VRDR and MDI."
 //* code MS
   * ^short = "Did tobacco use contribute to death"
 * subject 1..1 
-* subject only Reference(USCorePatientProfile) //generalized to Patient
+* subject only Reference(PatientVitalRecordsNew) //generalized to Patient
   * ^short = "subject"
 * value[x] 1..1 
 * value[x] only CodeableConcept

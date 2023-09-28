@@ -27,5 +27,5 @@ Description: "This Procedure records the certification of death by the certifier
 * performer
   * function 1.. MS
   * function from $ValueSet-certifier-types (required)
-  * actor only Reference(USCorePractitionerProfile)
+  * actor only Reference(PractitionerVitalRecordsNew)
   * actor MS

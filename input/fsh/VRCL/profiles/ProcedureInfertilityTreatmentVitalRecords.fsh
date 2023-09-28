@@ -16,4 +16,4 @@ Description: "This Procedure profile records that a pregnancy risk factor of inf
 * code = $sct#445151000124101
 * code MS
   * ^short = "Fertility enhancing drug therapy (procedure)"
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)

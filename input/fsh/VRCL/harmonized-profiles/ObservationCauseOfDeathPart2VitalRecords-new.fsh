@@ -22,9 +22,9 @@ Description: "The Observation - Contributing Cause of Death Part 2 profile is us
 * valueCodeableConcept.text ^short = "Cause of Death Part 2"
 * valueCodeableConcept.text ^maxLength = 240
 * subject 1..1
-* subject only Reference(Patient)
+* subject only Reference(PatientVitalRecordsNew)
   * ^label = "The decedent"
   * ^short = "The decedent"
-* performer only Reference(USCorePractitionerProfile)
+* performer only Reference(PractitionerVitalRecordsNew)
   * ^label = "Certifier, investigating coroner or medical examiner"
   * ^short = "Certifier, investigating coroner or medical examiner"

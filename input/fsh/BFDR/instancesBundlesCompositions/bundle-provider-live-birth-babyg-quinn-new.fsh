@@ -12,7 +12,7 @@ Usage: #example
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-provider-live-birth-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-1
-* insert addentry(PatientChildVitalRecords, patient-child-babyg-quinn-common)
+* insert addentry(PatientChildVitalRecordsNew, patient-child-babyg-quinn)
 // * insert addentry(PatientChildNew, patient-child-babyg-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-child-babyg-quinn"
@@ -29,7 +29,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Practitioner/practitioner-vital-records-avery-jones"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-5
-* insert addentry(patient-mother-carmen-teresa-lee-common, patient-mother-jada-ann-quinn-common)
+* insert addentry(PatientMotherVitalRecordsNew, patient-mother-jada-ann-quinn)
 // * insert addentry(PatientMotherNew, patient-mother-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-jada-ann-quinn"
@@ -162,6 +162,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-apgar-score-babyg-quinn-5-min"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-38
+* insert addentry(ObservationNumberLiveBirthsThisDeliveryNew, observation-number-live-births-this-delivery-jada-ann-quinn)
 * insert addentry(ConditionCongenitalAnomalyOfNewborn, condition-congenital-anomaly-of-newborn-babyg-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"
@@ -190,7 +191,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-ssn-requested-for-child-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-45
-* insert addentry(RelatedPerson, relatedperson-father-natural-james-brandon-quinn)
+* insert addentry(RelatedPersonFatherNaturalVitalRecords, relatedperson-father-natural-james-brandon-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-father-natural-james-brandon-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-46
@@ -226,7 +227,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-54
-* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
+* insert addentry(RelatedPersonMotherVitalRecordsNew, relatedperson-mother-jada-ann-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-mother-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-55

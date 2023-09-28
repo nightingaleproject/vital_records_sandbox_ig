@@ -12,7 +12,7 @@ Description: "Selected medical risk factors of the mother during the pregnancy."
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * code = $loinc#73775-9
 * subject 1..
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from PHVS_PregnancyRiskFactors_NCHS (extensible)

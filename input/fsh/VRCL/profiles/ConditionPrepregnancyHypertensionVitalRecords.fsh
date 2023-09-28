@@ -19,4 +19,4 @@ Description: "This Condition profile indicates that the mother had a pregnancy r
 * category = $condition-category#problem-list-item
 * code = $sct#38341003
   * ^short = "Hypertensive disorder, systemic arterial (disorder)"
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)

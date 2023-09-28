@@ -7,9 +7,9 @@ Description: "This profile represents the date of the mother's last other pregna
 * code = $loinc#68500-8
   * ^short = "Date last other pregnancy outcome"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew)
 * focus 1..1 MS
-* focus only Reference(PatientMotherVitalRecords)
+* focus only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..1 MS
 * value[x] only dateTime
   * ^short = "Date of last other pregnancy outcome"

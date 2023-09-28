@@ -12,6 +12,6 @@ Description: "The total number of prior cesarean deliveries for the mother."
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * code = $loinc#68497-7
 * subject 1..
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..
 * value[x] only integer

@@ -558,4 +558,5 @@ Usage: #example
   * text = "What is your relationship to the baby's mother?"
   * type = #open-choice
   * repeats = false
-  * answerValueSet = "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7580"
+  * answerValueSet = $ValueSet-informant-relationship-to-mother
+  // * answerValueSet = "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7580"

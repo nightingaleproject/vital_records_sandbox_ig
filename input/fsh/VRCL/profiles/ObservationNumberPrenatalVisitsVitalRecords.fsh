@@ -13,7 +13,7 @@ Description: "The total number of prenatal visits for the mother. The dates of t
 * code = $loinc#68493-6
 * code MS
 * subject 1.. MS
-* subject only Reference(PatientMotherVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew)
 * effective[x] only Period
 * effective[x] MS
 * value[x] 1.. MS

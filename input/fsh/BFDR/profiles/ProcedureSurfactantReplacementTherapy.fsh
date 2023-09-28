@@ -6,4 +6,4 @@ Description: "This profile represents an abnormal condition of the newborn of su
 * code = $sct#434701000124101
 * code MS
   * ^short = "Surfactant replacement therapy (procedure)"
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew)

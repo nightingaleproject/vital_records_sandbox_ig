@@ -7,7 +7,7 @@ Description: "The highest degree or level of schooling completed by the parent."
   * ^short = "Persons for whom education level can be reported."
   * ^binding.description = "EducationLevelPerson"
 * subject 1..
-* subject only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
   * ^short = "This is the subject of the report, not the parent"
 * focus 1..1
 * focus only Reference(RelatedPersonMotherVitalRecords or RelatedPersonFatherVitalRecords)

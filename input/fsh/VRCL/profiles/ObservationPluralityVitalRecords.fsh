@@ -13,6 +13,6 @@ Description: "The number of fetuses delivered live or dead at any time in the pr
 * code = $loinc#57722-1
 * code MS
 * subject 1.. MS
-* subject only Reference(PatientMotherVitalRecords or PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientMotherVitalRecordsNew or PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
 * value[x] 1.. MS
 * value[x] only integer

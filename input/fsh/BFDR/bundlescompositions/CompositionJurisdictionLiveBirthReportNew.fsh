@@ -25,7 +25,7 @@ Description: "This Composition profile contains information of a live birth and 
   * ^short = "Jurisdiction live birth report Document"
   * ^definition = "Jurisdiction live birth report Document"
 * subject 1.. 
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientChildVitalRecordsNew)
   * ^short = "The subject of the composition is the newborn baby"
   * ^definition = "The subject of the composition as a whole is the newborn baby. Different sections in the composition have different focus (e.g.: the mother)."
 * encounter only Reference(EncounterBirth)

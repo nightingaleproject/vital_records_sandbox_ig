@@ -20,7 +20,7 @@ Description: "The RelatedPerson profile contains constraints common to the Mothe
 * identifier[SSN] ^short = "SSN if available and appropriate to send"
   * type 1.. MS
   * type = $v2-0203#SS
-* patient only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* patient only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
 * patient MS
 * relationship 1.. MS
 * name 1.. MS
