@@ -6,9 +6,7 @@ Usage: #example
 * status = #final
 * code = $loinc#56478-1 "Ethanol [Mass/volume] in Blood by Gas chromatography"
   * text = "Ethanol [Mass/volume] in Blood by Gas chromatography"
-* subject
-  * reference = "Patient/us-core-patient-a-freeman"
-  * display = "Alice J. Freeman"
+* subject = Reference(us-core-patient-a-freeman) "Alice J. Freeman"
 * effectiveDateTime = "2021-12-03"
 * valueString = "0.145 g/dL"
 * specimen.reference = "Specimen/specimen-blood-toxicology-a-freeman"

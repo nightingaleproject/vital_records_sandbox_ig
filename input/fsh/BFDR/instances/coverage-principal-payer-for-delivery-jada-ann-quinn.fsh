@@ -6,9 +6,7 @@ Usage: #example
 * status = #active
 * type = $sopt#5 "PRIVATE HEALTH INSURANCE"
   * text = "Private Health Insurance"
-* beneficiary
-  * reference = "Patient/patient-mother-jada-ann-quinn"
-  * display = "Patient - Mother (Jada Ann Quinn)"
+* beneficiary = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * payor
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"

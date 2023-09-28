@@ -8,9 +8,7 @@ Usage: #example
 
 * code = $loinc#12327-3 "Ketamine [Presence] in Urine"
   * text = "Ketamine [Presence] in Urine"
-* subject
-  * reference = "Patient/us-core-patient-a-freeman"
-  * display = "Alice J. Freeman"
+* subject = Reference(us-core-patient-a-freeman) "Alice J. Freeman"
 * effectiveDateTime = "2021-12-03"
 * valueString = "true"
 * specimen.reference = "Specimen/specimen-urine-toxicology-a-freeman"

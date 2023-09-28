@@ -8,8 +8,6 @@ Usage: #example
   * lastUpdated = "2023-06-21T09:50:31.689Z"
 * status = #final
 * code = $loinc#73812-0 "Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"
-* subject
-  * reference = "Patient/patient-child-babyg-quinn"
-  * display = "Patient - Child (Baby G Quinn)"
+* subject = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
 * valueCodeableConcept = $sct#260413007 "None"
   * text = "None of the specified abnormal conditions of the newborn"

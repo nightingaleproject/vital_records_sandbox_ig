@@ -6,6 +6,4 @@ Usage: #example
 * category = $condition-category#problem-list-item "Problem List Item"
 * code = $sct#34430009 "Rupture of uterus (disorder)"
   * text = "Rupture of uterus (disorder)"
-* subject
-  * reference = "Patient/patient-mother-jada-ann-quinn"
-  * display = "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"

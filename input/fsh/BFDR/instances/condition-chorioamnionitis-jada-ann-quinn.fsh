@@ -5,6 +5,4 @@ Description: "Condition - Chorioamnionitis: Jada Ann Quinn example"
 Usage: #example
 * category[us-core] = $condition-category#problem-list-item
 * code = $sct#11612004 "Chorioamnionitis (disorder)"
-* subject
-  * reference = "Patient/patient-mother-jada-ann-quinn"
-  * display = "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"

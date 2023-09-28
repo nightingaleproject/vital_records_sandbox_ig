@@ -6,9 +6,7 @@ Usage: #example
 * status = #final
 * code = $loinc#74810-3 "Acetyl fentanyl [Presence] in Urine by Confirmatory method"
   * text = "Acetyl fentanyl [Presence] in Urine by Confirmatory method"
-* subject
-  * reference = "Patient/us-core-patient-a-freeman"
-  * display = "Alice J. Freeman"
+* subject = Reference(us-core-patient-a-freeman) "Alice J. Freeman"
 * effectiveDateTime = "2021-12-03"
 * valueString = "true"
 * specimen.reference = "Specimen/specimen-urine-toxicology-a-freeman"

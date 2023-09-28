@@ -6,8 +6,6 @@ Usage: #example
 * status = #final
 * code = $loinc#73781-7 "Maternal morbidity [US Standard Certificate of Live Birth]"
   * text = "Maternal morbidity [US Standard Certificate of Live Birth]"
-* subject
-  * reference = "Patient/patient-mother-jada-ann-quinn"
-  * display = "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * valueCodeableConcept = $sct#260413007 "None"
   * text = "None of the specified maternal morbidities"

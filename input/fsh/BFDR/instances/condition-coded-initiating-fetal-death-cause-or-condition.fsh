@@ -7,6 +7,4 @@ Usage: #example
 * category[codedInitiatingCauseOrCondition] = $loinc#92022-3 "Coded initiating cause or condition of fetal death"
 * code = $icd-10#P01.1 "Fetus and newborn affected by premature rupture of membranes"
   * text = "Fetus and newborn affected by premature rupture of membranes"
-* subject
-  * reference = "Patient/patient-decedent-fetus-not-named"
-  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"

@@ -35,10 +35,14 @@ Usage: #example
 * gender = #female
 * birthDate = "1986-02-15"
 * address
-  * extension[withinCityLimitsIndicator].valueCoding = $v2-0532#N "No"
+  //* extension[withinCityLimitsIndicator].valueCoding = $v2-0532#N "No" 
+  * extension[withinCityLimitsIndicator].valueCoding = $v2-0136#N "No"
   * use = #home
   * line = "3670 Miller Road"
   * city = "Ann Arbor"
   * state = "MI"
   * postalCode = "48103"
   * country = "US"
+* link
+  * other = Reference(relatedperson-mother-carmen-teresa-lee)
+  * type = #seealso

@@ -39,7 +39,8 @@ Usage: #example
   * extension[datePartAbsentReason].extension[year].valueUnsignedInt = 1986
   * extension[datePartAbsentReason].extension[month].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#asked-unknown
 * address
-  * extension[withinCityLimitsIndicator].valueCoding = $v2-0532#N "No"
+  //* extension[withinCityLimitsIndicator].valueCoding = $v2-0532#N "No"
+  * extension[withinCityLimitsIndicator].valueCoding = $v2-0136#N "No"
   * use = #home
   * line = "3670 Miller Road"
   * city = "Ann Arbor"

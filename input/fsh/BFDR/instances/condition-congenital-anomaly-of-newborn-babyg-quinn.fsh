@@ -7,6 +7,4 @@ Usage: #example
 * category[congenitalAnomolyNewborn] = $loinc#73780-9 "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
 * code = $sct#12770006 "Cyanotic congenital heart disease (disorder)"
   * text = "Cyanotic congenital heart disease (disorder)"
-* subject
-  * reference = "Patient/patient-child-babyg-quinn"
-  * display = "BabyG Quinn"
+* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"

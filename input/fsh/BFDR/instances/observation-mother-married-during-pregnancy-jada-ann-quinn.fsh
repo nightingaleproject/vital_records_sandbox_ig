@@ -6,10 +6,6 @@ Usage: #example
 * status = #final
 * code = $loinc#87301-8 "Mother was married at any time during pregnancy"
   * text = "Was mother married at conception, at the time of birth, or at any time between conception and giving birth?"
-* subject
-  * reference = "Patient/patient-child-babyg-quinn"
-  * display = "BabyG Quinn"
-* focus
-  * reference = "Patient/patient-mother-jada-ann-quinn"
-  * display = "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * valueCodeableConcept = $v2-0532#Y "Yes"
