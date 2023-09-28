@@ -155,7 +155,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Organization/organization-south-hospital"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-35
-* insert addentry(RelatedPerson, relatedperson-mother-carmen-teresa-lee)
+* insert addentry(RelatedPersonMotherVitalRecordsNew, relatedperson-mother-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-mother-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-36
