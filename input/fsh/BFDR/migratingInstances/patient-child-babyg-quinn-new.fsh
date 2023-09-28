@@ -25,7 +25,8 @@ Usage: #example
   * type = $v2-0203#MR "Medical Record Number"
   * system = "http://hospital.smarthealthit.org"
   * value = "9932702"
-* name.use = #official
+// NOTE TODO: this was marked usual, but could be marked official?
+* name.use = #usual
 * name.family = "Quinn"
 * name.given[0] = "Baby"
 * name.given[+] = "G"

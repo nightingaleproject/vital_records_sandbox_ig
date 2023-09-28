@@ -15,7 +15,9 @@ Usage: #example
   * type = $v2-0203#MR "Medical Record Number"
   * system = "http://hospital.smarthealthit.org"
   * value = "9932702"
-* name.use = #official
+// NOTE TODO: name.use is a required element and the child is unnamed
+// want to confirm this is the appropriate code
+* name.use = #usual
 * name.family = "UNK"
   * extension[dataAbsentReason].valueCode = #unknown
     // * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
