@@ -291,7 +291,6 @@ groups:
       - SystemRejectCS
       - BypassEditFlagCS
       - ActivityAtTimeOfDeathCS
-      - PregnancyStatusCS
       - CountryCodeCS
       - ReplaceStatusCS
       - LocationTypeCS
