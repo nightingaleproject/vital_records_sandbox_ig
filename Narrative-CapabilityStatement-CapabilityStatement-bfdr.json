@@ -1,0 +1,71 @@
+{
+    "id": "CapabilityStatement-bfdr",
+    "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2 id=\"title\">CapabilityStatement - Birth and Fetal Death</h2><ul><li><b>Official URL:</b><code>http://hl7.org/fhir/us/vrsandbox/CapabilityStatement/CapabilityStatement-bfdr</code></li><li><b>Implementation Guide Version:</b> 0.1.0</li><li><b>FHIR Version:</b> 4.0.1</li><li><b>Intended Use:</b> Requirements</li><li><b>Supported Formats: </b>XML, JSON</li><li><b>Published:</b> 2020-11-01</li><li><b>Published by:</b> Example Publisher</li><li><b>Status:</b> Active</li></ul><p>This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents.</p></div>",
+        "status": "generated"
+    },
+    "contact": [
+        {
+            "name": "Example Publisher",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://example.org/example-publisher"
+                }
+            ]
+        }
+    ],
+    "date": "2020-11-01",
+    "description": "This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents.",
+    "document": [
+        {
+            "mode": "producer",
+            "profile": "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/CompositionJurisdictionLiveBirthReportNew"
+        },
+        {
+            "mode": "producer",
+            "profile": "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/CompositionJurisdictionFetalDeathReportNew"
+        },
+        {
+            "mode": "producer",
+            "profile": "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/CompositionProviderLiveBirthReportNew"
+        },
+        {
+            "mode": "producer",
+            "profile": "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/CompositionProviderFetalDeathReportNew"
+        },
+        {
+            "mode": "consumer",
+            "profile": "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/CompositionCodedCauseOfFetalDeathNew"
+        },
+        {
+            "mode": "consumer",
+            "profile": "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/Composition-coded-race-and-ethnicity"
+        }
+    ],
+    "experimental": false,
+    "fhirVersion": "4.0.1",
+    "format": [
+        "xml",
+        "json"
+    ],
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "code": "US",
+                    "display": "United States of America",
+                    "system": "urn:iso:std:iso:3166"
+                }
+            ]
+        }
+    ],
+    "kind": "requirements",
+    "name": "CapabilityStatementBFDR",
+    "publisher": "Example Publisher",
+    "status": "active",
+    "title": "CapabilityStatement - Birth and Fetal Death",
+    "url": "http://hl7.org/fhir/us/vrsandbox/CapabilityStatement/CapabilityStatement-bfdr",
+    "version": "0.1.0",
+    "resourceType": "CapabilityStatement"
+}
