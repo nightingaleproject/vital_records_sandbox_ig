@@ -283,7 +283,7 @@ Usage: #example
 * valueCodeableConcept = $v2-0136#N "No"
 
 Instance: PregnancyUT-Example1 
-InstanceOf: ObservationDecedentPregnancyVitalRecordsNew
+InstanceOf: DecedentPregnancyStatusNew
 Usage: #example
 * status = #final 
 * subject = Reference(DecedentUT-Example1)

@@ -1,5 +1,5 @@
 Instance: DecedentPregnancyStatus-Example1
-InstanceOf: ObservationDecedentPregnancyVitalRecordsNew
+InstanceOf: DecedentPregnancyStatusNew
 Usage: #example
 Description: "DecedentPregnancyStatus-Example1"
 * insert AddMetaProfile(ObservationDecedentPregnancyVitalRecordsNew)

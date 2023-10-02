@@ -183,10 +183,10 @@ groups:
   VRCommonProfiles:
     name: VRCL New Common Profiles 
     resources:
-      - ObservationInjuryIncidentVitalRecordsNew
-      - ObservationDecedentDispositionMethodVitalRecordsNew
+      # - ObservationInjuryIncidentVitalRecordsNew
+      # - ObservationDecedentDispositionMethodVitalRecordsNew
       - ObservationEducationLevelVitalRecordsNew
-      - ObservationDecedentPregnancyVitalRecordsNew
+      # - ObservationDecedentPregnancyVitalRecordsNew
       - ObservationDeathDateVitalRecordsNew  
       - RelatedPersonParentVitalRecordsNew
       - RelatedPersonMotherVitalRecordsNew
