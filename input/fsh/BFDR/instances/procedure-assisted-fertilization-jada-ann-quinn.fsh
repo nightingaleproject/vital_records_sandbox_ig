@@ -1,5 +1,5 @@
 Instance: procedure-assisted-fertilization-jada-ann-quinn
-InstanceOf: Procedure
+InstanceOf: ProcedureAssistedFertilizationVitalRecords
 Title: "Procedure - Assisted Fertilization - Jada Ann Quinn"
 Description: "Procedure - Assisted Fertilization: Jada Ann Quinn example"
 Usage: #example
