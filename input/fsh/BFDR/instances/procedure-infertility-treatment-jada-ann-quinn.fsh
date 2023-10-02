@@ -1,5 +1,5 @@
 Instance: procedure-infertility-treatment-jada-ann-quinn
-InstanceOf: Procedure
+InstanceOf: ProcedureInfertilityTreatmentVitalRecords
 Title: "Procedure - Infertility Treatment - Jada Ann Quinn"
 Description: "Procedure - Infertility Treatment: Jada Ann Quinn example"
 Usage: #example

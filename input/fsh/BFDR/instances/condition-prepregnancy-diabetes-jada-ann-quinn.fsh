@@ -1,5 +1,5 @@
 Instance: condition-prepregnancy-diabetes-jada-ann-quinn
-InstanceOf: Condition
+InstanceOf: ConditionPrepregnancyDiabetesVitalRecords
 Title: "Condition - Prepregnancy Diabetes - Jada Ann Quinn"
 Description: "Condition - Prepregnancy Diabetes: Jada Ann Quinn example"
 Usage: #example

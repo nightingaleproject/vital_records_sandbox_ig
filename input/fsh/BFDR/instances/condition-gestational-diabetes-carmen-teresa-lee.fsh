@@ -1,5 +1,5 @@
 Instance: condition-gestational-diabetes-carmen-teresa-lee
-InstanceOf: Condition
+InstanceOf: ConditionGestationalDiabetesVitalRecords
 Title: "Condition - Gestational Diabetes - Carmen Teresa Lee"
 Description: "Condition - Gestational Diabetes: Carmen Teresa Lee example"
 Usage: #example

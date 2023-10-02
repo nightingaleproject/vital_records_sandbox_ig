@@ -1,5 +1,5 @@
 Instance: condition-prepregnancy-hypertension-carmen-teresa-lee
-InstanceOf: Condition
+InstanceOf: ConditionPrepregnancyHypertensionVitalRecords
 Title: "Condition - Prepregnancy Hypertension - Carmen Teresa Lee"
 Description: "Condition - Prepregnancy Hypertension: Carmen Teresa Lee example"
 Usage: #example
