@@ -1,5 +1,5 @@
 Profile: RelatedPersonFatherNaturalVitalRecords
-Parent: RelatedPersonFatherVitalRecords
+Parent: RelatedPersonFatherVitalRecordsNew
 Id: RelatedPerson-father-natural-vr
 Title: "RelatedPerson - Father Natural Vital Records"
 Description: "The biological (natural) father of the newborn or fetus."

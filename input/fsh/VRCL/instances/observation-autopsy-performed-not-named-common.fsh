@@ -5,5 +5,5 @@ Description: "Example of Observation-autopsy-performed-vr profile (Fetus Not Nam
 Usage: #example
 * status = #final
 //* code = $loinc#73768-4 "Autopsy was performed [US Standard Report of Fetal Death]"
-* subject = Reference(patient-decedent-fetus-not-named-common)
+* subject = Reference(patient-decedent-fetus-not-named)
 * valueCodeableConcept = $v2-0136#N "No" // $sct#719828003 "Autopsy not done"

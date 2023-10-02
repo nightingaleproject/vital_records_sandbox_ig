@@ -1,5 +1,5 @@
 Instance: relatedperson-parent-stepmother
-InstanceOf: RelatedPersonParentVitalRecords
+InstanceOf: RelatedPersonParentVitalRecordsNew
 Title: "RelatedPerson - Stepmother"
 Description: "Example of RelatedPerson-parent-vr profile (stepmother)"
 Usage: #example
@@ -20,9 +20,7 @@ Usage: #example
     * valueString = "Hispanic or Latino"
   * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
 * active = true
-* patient
-  * reference = "Patient/patient-child-babyg-quinn-common"
-  * display = "Patient - Child (Baby G Quinn)"
+* patient = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
 * relationship = $v3-RoleCode#STPMTH "stepmother"
   * text = "Stepmother"
 * name

@@ -1,5 +1,5 @@
 Instance: relatedperson-father-tony-lewis-common
-InstanceOf: RelatedPersonFatherVitalRecords
+InstanceOf: RelatedPersonFatherVitalRecordsNew
 Title: "RelatedPerson - Adoptive Father"
 Description: "Example of RelatedPerson-father-vr profile (adoptive father)"
 Usage: #example
@@ -11,9 +11,7 @@ Usage: #example
   * extension[text].valueString = "Not Hispanic or Latino"
 * extension[birthPlace].valueAddress.state = "VT"
 * active = true
-* patient
-  * reference = "Patient/patient-child-babyg-quinn-common"
-  * display = "Patient - Child (Baby G Quinn)"
+* patient = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
 * relationship = $v3-RoleCode#ADOPTF "adoptive father"
   * text = "Adoptive Father"
 * name

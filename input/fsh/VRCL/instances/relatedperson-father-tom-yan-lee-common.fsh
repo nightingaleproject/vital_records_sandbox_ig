@@ -1,5 +1,5 @@
 Instance: relatedperson-father-tom-yan-lee-common
-InstanceOf: RelatedPersonFatherVitalRecords
+InstanceOf: RelatedPersonFatherVitalRecordsNew
 Title: "RelatedPerson - Father example [Tom Yan Lee]"
 Description: "Example of Relatedperson-father-vr (Tom Yan Lee)"
 Usage: #example
@@ -11,9 +11,7 @@ Usage: #example
   * extension[text].valueString = "Not Hispanic or Latino"
 * extension[birthPlace].valueAddress.state = "NY"
 * active = true
-* patient
-  * reference = "Patient/patient-decedent-fetus-not-named-common"
-  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* patient = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * relationship = $v3-RoleCode#NFTH "natural father"
   * text = "Natural Father"
 * name

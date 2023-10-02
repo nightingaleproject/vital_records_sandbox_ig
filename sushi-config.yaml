@@ -283,8 +283,8 @@ groups:
       - ObservationNumberPrenatalVisitsNew
       - ObservationNumberPreviousCesareansNew
       - ObservationPregnancyRiskFactorNew
-      - PatientDecedentFetusNew
-      - PatientMotherNew
+      #- PatientDecedentFetusNew
+      #- PatientMotherNew
 
 
   BFDRValueSets:
