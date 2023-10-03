@@ -10,7 +10,7 @@ Description: "The highest degree or level of schooling completed by the parent."
 * subject only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
   * ^short = "This is the subject of the report, not the parent"
 * focus 1..1
-* focus only Reference(RelatedPersonMotherVitalRecords or RelatedPersonFatherVitalRecords)
+* focus only Reference(RelatedPersonMotherVitalRecordsNew or RelatedPersonFatherVitalRecordsNew)
   * ^short = "The RelatedPerson record for the parent"
 * value[x] 1..
 * value[x] only CodeableConcept

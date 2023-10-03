@@ -20,9 +20,7 @@ Usage: #example
     * valueString = "Hispanic or Latino"
   * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
 * active = true
-* patient
-  * reference = "Patient/patient-decedent-fetus-not-named-common"
-  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* patient = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * relationship = $v3-RoleCode#GESTM "gestational mother"
   * text = "gestational Mother"
 * name

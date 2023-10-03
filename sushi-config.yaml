@@ -183,42 +183,53 @@ groups:
   VRCommonProfiles:
     name: VRCL New Common Profiles 
     resources:
+      - CodedRaceAndEthnicityNew
+      - ObservationEducationLevelVitalRecordsNew
+      - InputRaceAndEthnicityNew 
+      - PatientChildVitalRecordsNew
+      - PatientDecedentFetusVitalRecordsNew
+      - PatientMotherVitalRecordsNew
+      - PatientVitalRecordsNew
+      - PractitionerVitalRecordsNew
+      - RelatedPersonFatherVitalRecordsNew
+      - RelatedPersonMotherVitalRecordsNew
+      - RelatedPersonParentVitalRecordsNew
       # - ObservationInjuryIncidentVitalRecordsNew
       # - ObservationDecedentDispositionMethodVitalRecordsNew
-      - ObservationEducationLevelVitalRecordsNew
       # - ObservationDecedentPregnancyVitalRecordsNew
-      - ObservationDeathDateVitalRecordsNew  
-      - RelatedPersonParentVitalRecordsNew
-      - RelatedPersonMotherVitalRecordsNew
-      - RelatedPersonFatherVitalRecordsNew
-      - PractitionerVitalRecordsNew
-      - InputRaceAndEthnicityNew
-  #       - ProcedureDeathCertificationVitalRecordsNew 
+      # - ObservationDeathDateVitalRecordsNew 
+      # - ProcedureDeathCertificationVitalRecordsNew 
+  
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
-      - CodeSystemLocalComponentCodesVitalRecords
-      - CodeSystemDeathPregnancyStatusVitalRecords
-      - CodeSystemLocationTypeVitalRecordsNew
-      - FetalDeathCauseOrConditionCS
-      - EditFlagsCS
-      - BirthDeliveryOccurredCS
       - BirthAndFetalDeathFinancialClassCS
+      - BirthDeliveryOccurredCS
+      - CodeSystemDeathPregnancyStatusVitalRecords
+      - EditFlagsCS
+      - FetalDeathCauseOrConditionCS
+      - CodeSystemInformantRelationshipToMotherNew
+      - CodeSystemLocalComponentCodesVitalRecords
+      - CodeSystemLocationTypeVitalRecordsNew
       - CodeSystemMDI
 
   PHINVADSValuesets:
     name: New ValueSets from PHINVADS
     resources:
-      - ValueSetFetalDeathCauseOrCondition
-      - ValueSetHistologicalPlacentalExamination
+      - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetBirthDeliveryOccurred
+      - ValueSetContributoryTobaccoUseVitalRecordsNew
+      - ValueSetDeliveryRoutes
+      - ValueSetEducationLevelPersonVitalRecordsNew
+      - ValueSetFetalDeathCauseOrCondition
+      - ValueSetFetalDeathTimePoints
+      - ValueSetFetalPresentations
+      - ValueSetHistologicalPlacentalExamination
+      - ValueSetInfectionsDuringPregnancyLiveBirth
+      - ValueSetInformantRelationshipToMother
       - ValueSetNewbornCongenitalAnomalies
       - ValueSetObstetricProcedure
-      - ValueSetBirthAndFetalDeathFinancialClass
-      - ValueSetDeliveryRoutes
-      - ValueSetFetalDeathTimePoints
-      - ValueSetInfectionsDuringPregnancyLiveBirth
-      - ValueSetFetalPresentations
+      - ValueSetPregnancyRiskFactors
 
   VRCLValueSets:
     name: VRCL ValueSets
@@ -237,8 +248,6 @@ groups:
       - ValueSetCertifierTypes
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetFatherRelationshipVitalRecords
-      - ValueSetContributoryTobaccoUseVitalRecordsNew
-      - ValueSetEducationLevelPersonVitalRecordsNew
       - ValueSetDeathPregnancyStatusVitalRecords
 
   BFDRCompositionBundleProfilesNew:
@@ -274,8 +283,8 @@ groups:
       - ObservationNumberPrenatalVisitsNew
       - ObservationNumberPreviousCesareansNew
       - ObservationPregnancyRiskFactorNew
-      - PatientDecedentFetusNew
-      - PatientMotherNew
+      #- PatientDecedentFetusNew
+      #- PatientMotherNew
 
 
   BFDRValueSets:

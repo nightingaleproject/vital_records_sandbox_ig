@@ -23,7 +23,7 @@
 |Injury Location |     DeathInvestigation   |    -    | [InjuryLocation] |       [LocationInjuryVitalRecordsNew]       |    -     |
 |Injury Incident |     DeathInvestigation   |    -    | [InjuryIncident] |       [ObservationInjuryIncidentVitalRecordsNew]       |    -     |
 |Autopsy Performed Indicator|     DeathInvestigation   |    -    | [AutopsyPerformedIndicator] |       -       |    -     |
-|Death Date |     DeathInvestigation   |    -    | [DeathDate] |       [ObservationDeathDateVitalRecordsNew]       |    -     |
+|Death Date |     DeathInvestigation   |    -    | [DeathDate] |       [DeathDateNew]       |    -     |
 |Surgery Date |     DeathInvestigation   |    -    | [SurgeryDate] |       -       |    -     |
 |Certifier |     DeathCertification   |    -    | [Certifier] |       [PractitionerVitalRecordsNew]      |    -     |
 |Death Certification |     DeathCertification   |    -    | [DeathCertification] |       [ProcedureDeathCertificationVitalRecordsNew]       |    -     |
