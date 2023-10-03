@@ -6,4 +6,4 @@ Usage: #example
 * status = #final
 * code = $loinc#74498-7 "Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* valueBoolean = true
+* valueCodeableConcept = $v2-0136#Y "Yes"

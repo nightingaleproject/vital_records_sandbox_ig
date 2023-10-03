@@ -11,7 +11,7 @@ Description: "This Condition profile represents information on whether the infan
   * ^short = "The value set contain the list of values use to specify malformations of the newborn diagnosed prenatally or after delivery."
   * ^binding.description = "Newborn Congenital Anomalies (NCHS)"
 * subject only Reference(PatientChildVitalRecordsNew)
-* evidence ..1 MS
+* evidence ..2 MS
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "code"
   * ^slicing.rules = #open
