@@ -29,3 +29,4 @@ Usage: #example
     * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
     * valueDateTime = "2019-01-09T18:23:00-07:00"
 * deceasedBoolean = true
+* multipleBirthInteger = 3

@@ -7,7 +7,12 @@ Usage: #example
   * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "223347044"
 * name
-  * family = "Jones"
-  * given = "Avery"
-  * suffix = "M.D."
-* qualification.code = $sct#112247003 "Medical doctor"
+  * family = "Janet"
+  * given = "Seito"
+  * suffix = "D.O."
+// This seems like a mistake (not by us)
+// * name
+//   * family = "Jones"
+//   * given = "Avery"
+//   * suffix = "M.D."
+* qualification.code = $sct#76231001 "Osteopath (occupation)"

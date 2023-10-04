@@ -8,4 +8,6 @@ Usage: #example
   * text = "Social security number requested for child"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* effectiveDateTime = "2019-12-02"
+* performer.reference = "Patient/patient-mother-jada-ann-quinn"
 * valueBoolean = true
