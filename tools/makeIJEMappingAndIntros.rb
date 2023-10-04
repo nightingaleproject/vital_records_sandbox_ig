@@ -34,12 +34,14 @@ IJE_FHIR_ENCODING_COL = 13
 IJE_MAPPING_PROFILE_COL = 18
 
 # BFDR_Profile_Intros.xlsx columns
-INTRO_PROFILE_NAME_CONDENSED_COL = 0
-INTRO_PROFILE_NAME_COL = 1
-INTRO_PROFILE_USAGE_COL = 2
-INTRO_FORM_MAPPING_COL = 3
-INTRO_IJE_MAPPING_COL = 4
-INTRO_PROFILE_LOCATION_COL = 5
+INTRO_ORDER_COL = 0
+INTRO_HEADING_COL = 1 
+INTRO_PROFILE_NAME_CONDENSED_COL = 2
+INTRO_PROFILE_NAME_COL = 3
+INTRO_PROFILE_USAGE_COL = 4
+INTRO_FORM_MAPPING_COL = 5
+INTRO_IJE_MAPPING_COL = 6
+INTRO_PROFILE_LOCATION_COL = 7
 
 # BFDR_Forms_mapping.xlsx columns
 FORMS_ORDER_COL = 0
@@ -56,7 +58,7 @@ FORMS_CONTEXT_COL = 8
 
 # ARGV[0] input/mapping/BFDR_Profile_Intros.xlsx
 vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
-vProfileIntrosSpreadsheet.default_sheet = "Sheet1"
+vProfileIntrosSpreadsheet.default_sheet = "BFDR"
 
 # ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 
 vSpreadsheet = open_spreadsheet(ARGV[1])
@@ -127,15 +129,25 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
 #createSDIntros("BFDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet)
 #createSDIntros("VRCPL", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet)
 
+def printHeader(hHeading, pOutputFile)
+    pOutputFile.puts "{: .grid }"
+    pOutputFile.puts hHeading
+    pOutputFile.puts ""
+    pOutputFile.puts "| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |"
+    pOutputFile.puts "| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |"
+    return true
+end 
+
 def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSpreadsheet, pSpreadsheet)
     profiles = []
     profileName = ""
+    pIntroSpreadsheet.default_sheet = pRowFilterIG
     pIntroSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-        next if row[INTRO_PROFILE_LOCATION_COL].value.to_s != pRowFilterIG
+        #next if row[INTRO_PROFILE_LOCATION_COL].value.to_s != pRowFilterIG
         profileName = row[INTRO_PROFILE_NAME_CONDENSED_COL].value.to_s if row[INTRO_PROFILE_NAME_CONDENSED_COL] 
-        profiles.append(profileName)
+        profileHeading = row[INTRO_HEADING_COL].value.to_s if row[INTRO_HEADING_COL]
+        profiles.append([profileName, profileHeading])
     end
-    puts profiles
 
     pOutputFile.puts pHeading
     pOutputFile.puts ""
@@ -143,9 +155,17 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
     pOutputFile.puts "| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |"
     pOutputFile.puts "| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |"
 
-    profiles.each do |value| 
+    codedHeader = false
+    notImplementedHeader = false
+    profiles.each do |(x, y)| 
         pSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-            next if row[IJE_USECASE_COL].value.to_s != pRowFilter || row[IJE_PROFILE_COL].value.to_s != value #|| row[IJE_PROFILE_COL].value.to_s == "not implemented"
+            next if row[IJE_USECASE_COL].value.to_s != pRowFilter || row[IJE_PROFILE_COL].value.to_s != x #|| row[IJE_PROFILE_COL].value.to_s == "not implemented"
+            if codedHeader == false && y.to_s == "Coding"
+                codedHeader = printHeader("## Coded Content", pOutputFile)
+            end
+            if notImplementedHeader == false && y.to_s == "Not Implemented"
+                notImplementedHeader = printHeader("## Not Implemented Content", pOutputFile)
+            end
             field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = fhirig = ""
             field = row[IJE_FIELD_COL].value.to_s if row[IJE_FIELD_COL]
             ijename = row[IJE_NAME_COL].value.to_s if row[IJE_NAME_COL]
@@ -177,15 +197,15 @@ The following IJE mappings to locations in FHIR specifications are for informati
 
 vOutputFile.puts ""
 createMappingTable("BFDR", "Natality", "### Natality (Live Birth) IJE Mapping", vOutputFile, vProfileIntrosSpreadsheet, vSpreadsheet)
-createMappingTable( "BFDR", "Fetal Death", "### Fetal Death IJE Mapping", vOutputFile, vProfileIntrosSpreadsheet, vSpreadsheet)
+createMappingTable("BFDR", "Fetal Death", "### Fetal Death IJE Mapping", vOutputFile, vProfileIntrosSpreadsheet, vSpreadsheet)
 
 #create VRDR data dictionary
-#vOutputFilename2 = "/generated/dataDictionaries/vrdr_ije_mapping.md"
-#puts vOutputFilename2
-#vOutputFile2 = File.open(Dir.pwd + vOutputFilename2, "w")
-#vOutputFile2.puts ""
-#createMappingTable("VRDR", "Mortality", "### Death Record IJE Mapping", vOutputFile2,vProfileIntrosSpreadsheet, vSpreadsheet)
-#createMappingTable("VRDR", "Mortality Roster", "### Mortality Roster IJE Mapping", vOutputFile2, vProfileIntrosSpreadsheet, vSpreadsheet)
+vOutputFilename2 = "/generated/dataDictionaries/vrdr_ije_mapping.md"
+puts vOutputFilename2
+vOutputFile2 = File.open(Dir.pwd + vOutputFilename2, "w")
+vOutputFile2.puts ""
+createMappingTable("VRDR", "Mortality", "### Death Record IJE Mapping", vOutputFile2,vProfileIntrosSpreadsheet, vSpreadsheet)
+createMappingTable("VRDR", "Mortality Roster", "### Mortality Roster IJE Mapping", vOutputFile2, vProfileIntrosSpreadsheet, vSpreadsheet)
 
 
 
@@ -194,16 +214,32 @@ createMappingTable( "BFDR", "Fetal Death", "### Fetal Death IJE Mapping", vOutpu
 
 
 #create array of profile names and field # for sorting
-#profileArray = []
-#vSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-#    field = profile = ""
-#    profile = row[IJE_PROFILE_COL].value.to_s if row[IJE_PROFILE_COL] 
-#    field = row[IJE_FIELD_COL].value.to_s if row[IJE_FIELD_COL]  
-#    entry = [profile, field]
-#    profileArray << entry
-#end
-#profileArray = profileArray.sort
-#puts profileArray
+=begin
+profileArray = []
+vSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+    next if row[IJE_USECASE_COL].value.to_s != "Natality" && row[IJE_USECASE_COL].value.to_s != "Fetal Death"
+    #field = profile = ""
+    profile = row[IJE_PROFILE_COL].value.to_s if row[IJE_PROFILE_COL] 
+    #field = row[IJE_FIELD_COL].value.to_s if row[IJE_FIELD_COL]  
+    if not profileArray.include?(profile)
+        profileArray << profile
+    end
+end
+=end
+=begin
+profileArray = []
+vProfileIntrosSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+    next if row[INTRO_PROFILE_LOCATION_COL].value.to_s != "BFDR" && row[INTRO_PROFILE_LOCATION_COL].value.to_s != "VRCPL"
+    #field = profile = ""
+    profile = row[INTRO_PROFILE_NAME_CONDENSED_COL].value.to_s if row[INTRO_PROFILE_NAME_CONDENSED_COL] 
+    #field = row[IJE_FIELD_COL].value.to_s if row[IJE_FIELD_COL]  
+    if not profileArray.include?(profile)
+        profileArray << profile
+    end
+end
+profileArray = profileArray.sort
+puts profileArray
+=end
 
 #def createSortedArray(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
 #profiles = Hash.new
