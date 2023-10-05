@@ -7,7 +7,9 @@ Description: "The total number of prenatal visits for the mother. The dates of t
 * code MS
 * subject 1.. MS
 * subject only Reference(PatientMotherVitalRecordsNew)
-* effective[x] only Period
+* effective[x] only dateTime
+// updated to accommodate effective date time inserted everywhere instances
+// * effective[x] only Period
 * effective[x] MS
 * value[x] 1.. MS
 * value[x] only integer
