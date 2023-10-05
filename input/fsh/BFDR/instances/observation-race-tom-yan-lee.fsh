@@ -9,8 +9,6 @@ Usage: #example
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * focus = Reference(relatedperson-father-natural-tom-yan-lee) "RelatedPerson - Father (Tom Yan Lee)"
 * effectiveDateTime = "2019-12-02"
-performer = Reference(patient-mother-carmen-teresa-lee)
-// seems like a typo (not from us)
-// * performer = Reference(patient-mother-jada-ann-quinn)
+* performer = Reference(patient-mother-carmen-teresa-lee)
 * valueCodeableConcept = urn:oid:2.16.840.1.113883.6.238#2054-5 "Black or African American"
   * text = "Black or African American"

@@ -10,5 +10,6 @@ Usage: #example
   * text = "Vital Signs"
 * code = $loinc#56077-1 "Body weight --pre current pregnancy"
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* effectiveDateTime = "2019-05-20"
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueQuantity = 180 '[lb_av]'

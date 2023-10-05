@@ -4,6 +4,8 @@ Title: "Condition - Prepregnancy Hypertension - Carmen Teresa Lee"
 Description: "Condition - Prepregnancy Hypertension: Carmen Teresa Lee example"
 Usage: #example
 * category = $condition-category#problem-list-item
+* clinicalStatus = $condition-clinical#active "Active"
+  * text = "Active"
 * code = $sct#38341003 "Hypertensive disorder, systemic arterial (disorder)"
   * text = "Hypertensive disorder, systemic arterial (disorder)"
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"

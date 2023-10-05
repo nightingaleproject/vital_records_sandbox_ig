@@ -7,6 +7,8 @@ Description: "This Observation profile represents whether, in the case of a cesa
 * code = $loinc#73760-1
   * ^short = "If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecordsNew)
+* focus 1.. MS
+* focus only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
 * value[x] 1..1
 * value[x] only boolean

@@ -8,5 +8,6 @@ Usage: #example
   * text = "Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * effectiveDateTime = "2019-12-02"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueCodeableConcept = $sct#405269005 "Neonatal intensive care unit (environment)"
   * text = "Neonatal intensive care unit (environment)"

@@ -9,4 +9,6 @@ Usage: #example
 * code = $loinc#73773-4 "Number of infants in this delivery delivered alive"
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * focus = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueInteger = 2

@@ -3,6 +3,8 @@ InstanceOf: ConditionGestationalDiabetesVitalRecords
 Title: "Condition - Gestational Diabetes - Carmen Teresa Lee"
 Description: "Condition - Gestational Diabetes: Carmen Teresa Lee example"
 Usage: #example
+* clinicalStatus = $condition-clinical#active "Active"
+  * text = "Active"
 * category = $condition-category#problem-list-item
 * code = $sct#11687002 "Gestational diabetes mellitus (disorder)"
   * text = "Gestational diabetes mellitus (disorder)"

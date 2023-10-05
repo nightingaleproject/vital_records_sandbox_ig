@@ -11,4 +11,5 @@ Usage: #example
 * code = $loinc#3137-7 "Body height Measured"
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * effectiveDateTime = "2019-02-10"
+* performer = Reference(patient-mother-jada-ann-quinn)
 * valueQuantity = 67 '[in_i]'

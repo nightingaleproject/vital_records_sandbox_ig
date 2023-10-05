@@ -9,4 +9,6 @@ Usage: #example
 * code = $loinc#11638-4 "[#] Births.still living"
   * text = "[#] Births.still living"
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueInteger = 1

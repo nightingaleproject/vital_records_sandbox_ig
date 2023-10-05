@@ -9,6 +9,8 @@ Usage: #example
 * status = #final
 * code = $loinc#68493-6 "Prenatal visits for this pregnancy #"
   * text = "Prenatal visits for this pregnancy #"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)" 
+* focus = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueInteger = 8

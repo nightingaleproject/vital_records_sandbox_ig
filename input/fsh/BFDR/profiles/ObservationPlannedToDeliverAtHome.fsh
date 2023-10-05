@@ -7,7 +7,9 @@ Description: "This Observation profile represents whether or not a home birth wa
 * code = $loinc#73765-0
   * ^short = "Mother Planned to deliver at home [US Standard Certificate of Live Birth]"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecordsNew)
+* focus 1..1 MS
+* focus only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
 * value[x] 1..1 MS
 * value[x] only boolean
   * ^short = "Planned to deliver at home?"

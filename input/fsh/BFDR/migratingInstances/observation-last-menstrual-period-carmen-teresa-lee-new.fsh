@@ -9,4 +9,6 @@ Usage: #example
 * code = $loinc#8665-2 "Last menstrual period start date"
   * text = "Last menstrual period start date"
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueDateTime = "2018-04-18"

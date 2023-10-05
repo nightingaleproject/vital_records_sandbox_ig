@@ -7,5 +7,7 @@ Usage: #example
 * code = $loinc#57712-2 "Highest level of education Mother"
 * subject = Reference(patient-child-babyg-quinn)
 * focus = Reference(patient-mother-jada-ann-quinn)
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(patient-mother-jada-ann-quinn)
 * valueCodeableConcept = $HL7_EducationLevelCS#POSTG "Doctoral or post graduate education"
   * text = "Doctoral or post graduate education"

@@ -7,9 +7,9 @@ Description: "This profile represents whether or not the mother made use of the 
 * code = $loinc#87303-4
   * ^short = "Mother WIC food recipient"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecordsNew) 
 * focus 1..1 MS
-* focus only Reference(PatientMotherVitalRecordsNew)
+* focus only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 * value[x] from PHVS_YesNoUnknown_CDC (required)

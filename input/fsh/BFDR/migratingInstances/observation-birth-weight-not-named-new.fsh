@@ -8,4 +8,5 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * effectiveDateTime = "2019-02-10"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueQuantity = 1530 'g'

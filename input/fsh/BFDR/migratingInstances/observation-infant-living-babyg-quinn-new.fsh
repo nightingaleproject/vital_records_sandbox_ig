@@ -8,4 +8,6 @@ Usage: #example
 * status = #final
 * code = $loinc#73757-7 "Infant living at time of report [US Standard Certificate of Live Birth]"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueBoolean = true
