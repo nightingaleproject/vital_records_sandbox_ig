@@ -8,4 +8,4 @@ Usage: #example
   * text = "Paternity acknowledgment form signed Father"
 * subject = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
 * focus  = Reference(relatedperson-father-natural-james-brandon-quinn) "RelatedPerson - Father (James Brandon Quinn)"
-* valueCodeableConcept = $v2-0532#Y "Yes"
+* valueCodeableConcept = $v2-0136#Y "Yes"

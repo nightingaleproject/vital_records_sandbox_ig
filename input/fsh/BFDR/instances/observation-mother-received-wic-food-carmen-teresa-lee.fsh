@@ -8,4 +8,4 @@ Usage: #example
   * text = "Did mother get WIC food for herself during this pregnancy?"
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
-* valueCodeableConcept = $v2-0532#N "No"
+* valueCodeableConcept = $v2-0136#N "No"

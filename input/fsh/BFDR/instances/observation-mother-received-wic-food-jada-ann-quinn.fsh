@@ -11,4 +11,4 @@ Usage: #example
   * text = "Did mother get WIC food for herself during this pregnancy?"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
-* valueCodeableConcept = $v2-0532#Y "Yes"
+* valueCodeableConcept = $v2-0136#Y "Yes"
