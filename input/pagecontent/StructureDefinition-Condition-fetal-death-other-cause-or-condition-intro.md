@@ -1,0 +1,26 @@
+The type of cause or condition (code.coding) should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text (code.text) to fully record the provider's view of the cause.
+
+### Form Mapping
+This profile is mapped to:
+ * Item **18b. Other Significant Causes or Conditions** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
+ * Item **27. Other Significant Causes or Conditions** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
+
+### IJE Mapping
+
+| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
+| Fetal Death | 194 | Other significant causes or conditions - Rupture of membranes prior to onset of labor | COD18b1 | code=44223004 |na | |
+| Fetal Death | 195 | Other significant causes or conditions - Abruptio placenta | COD18b2 | code=415105001 |na | |
+| Fetal Death | 196 | Other significant causes or conditions  - Placental insufficiency | COD18b3 | code=237292005 |na | |
+| Fetal Death | 197 | Other significant causes or conditions - Prolapsed cord | COD18b4 | code=270500004 |na | |
+| Fetal Death | 198 | Other significant causes or conditions - Chorioamnionitis | COD18b5 | code=11612004 |na | |
+| Fetal Death | 199 | Other significant causes or conditions - Other complications of placenta, cord, or membranes | COD18b6 | code=PHC1298 |na |need to check this one - PHC1298 is 'Complications of Placenta, Cord, or Membranes: Other (Specify)' but IJE field is Y, N (not literal text) |
+| Fetal Death | 200 | Other significant causes or conditions - Unknown | COD18b7 | code=UNK |na | |
+| Fetal Death | 201 | Other significant causes or conditions - Maternal conditions/diseases literal | COD18b8 | code=PHC1301, code.text |string | |
+| Fetal Death | 202 | Other significant causes or conditions - Other complications of placenta, cord, or membranes literal | COD18b9 | code=PHC1298, code.text |string | |
+| Fetal Death | 203 | Other significant causes or conditions - Other obstetrical or pregnancy complications literal | COD18b10 | code=PHC1299, code.text |string | |
+| Fetal Death | 204 | Other significant causes or conditions - Fetal anomaly literal | COD18b11 | code=702709008, code.text |string | |
+| Fetal Death | 205 | Other significant causes or conditions - Fetal injury literal | COD18b12 | code=277489001, code.text |string | |
+| Fetal Death | 206 | Other significant causes or conditions - Fetal infection literal | COD18b13 | code=128270001, code.text |string | |
+| Fetal Death | 207 | Other significant causes or conditions - Other fetal conditions/disorders literal | COD18b14 | code=PHC1300, code.text |string | |
+{: .grid }

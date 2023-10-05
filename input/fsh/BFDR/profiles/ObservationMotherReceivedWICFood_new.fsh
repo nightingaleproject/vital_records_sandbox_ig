@@ -1,3 +1,4 @@
+//changed to reference VRCL VS not phinvads VS
 Profile: ObservationMotherReceivedWICFood
 Parent: Observation
 Id: Observation-mother-received-wic-food
@@ -12,6 +13,6 @@ Description: "This profile represents whether or not the mother made use of the 
 * focus only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
-* value[x] from PHVS_YesNoUnknown_CDC (required)
+* value[x] from $ValueSet-yes-no-unknown (required)
   * ^short = "Did mother get WIC food for herself during this pregnancy?"
   * ^binding.description = "Yes No Unknown (YNU)"

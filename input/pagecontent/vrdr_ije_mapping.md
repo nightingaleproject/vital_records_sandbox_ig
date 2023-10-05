@@ -74,6 +74,7 @@
 | 9 | Decedent's Legal Name--Last | LNAME| [Decedent]|name.family , name.use = official. (absence is equivalent to 'UNKNOWN'.) | string | - | 
 | 10 | Decedent's Legal Name--Suffix | SUFF| [Decedent]|name.suffix , name.use = official | string | - | 
 | 13 | Sex | SEX| [Decedent]|extension[NVSS-SexAtDeath]  | codeable | [AdministrativeGenderVS] | 
+| NA | Gender | *NO IJE MAPPING*| [Decedent]|gender | codeable | [AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] | 
 | 15 | Social Security Number | SSN| [Decedent]|identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code="SB" | string | - | 
 | 19 | Date of Birth--Year | DOB_YR| [Decedent]|birthDate | dateTime | See [PartialDatesAndTimes] | 
 | 20 | Date of Birth--Month | DOB_MO| [Decedent]|birthDate | dateTime | See [PartialDatesAndTimes] | 
@@ -107,7 +108,6 @@
 | 201 | Informant's Relationship | INFORMRELATE| [Decedent]|contact.type.text  | string (30 characters) | - | 
 | 238 | State, U.S. Territory or Canadian Province of Birth - literal | STATEBTH| [Decedent]|extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code) | string | See [StateLiterals] | 
 | 246 | Marital Descriptor | MARITAL_DESCRIP| [Decedent]|maritalStatus.text  | string | - | 
-| NA | Gender | *NO IJE MAPPING*| [Decedent]|gender | codeable | [AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] | 
 | 16 | Decedent's Age--Type | AGETYPE| [DecedentAge]|valueQuantity.code | codeable | [UnitsOfAgeVS] | 
 | 17 | Decedent's Age--Units | AGE | [DecedentAge]|valueQuantity.value | decimal | - | 
 | 18 | Decedent's Age--Edit Flag | AGE_BYPASS| [DecedentAge]|value.extension[ BypassEditFlag ].value | codeable | See [Note on Decedent Name] | 
@@ -137,6 +137,16 @@
 | 203 | Disposition State or Territory - Literal | DISPSTATE| [DispositionLocation]|address.state (expanded from 2 letter code) | string | See [StateLiterals] | 
 | 204 | Disposition City - Code | DISPCITYCODE| [DispositionLocation]|address.city.extension[ cityCode].value | integer | see [CityCodes] | 
 | 205 | Disposition City - Literal | DISPCITY| [DispositionLocation]|address.city | string | - | 
+| 248 | Blank for One-Byte Field 1 | PLACE1_1| [EmergingIssues]|component[EmergingIssue1_1].value | string(1) | - | 
+| 249 | Blank for One-Byte Field 2 | PLACE1_2| [EmergingIssues]|component[EmergingIssue1_2].value | string(1) | - | 
+| 250 | Blank for One-Byte Field 3 | PLACE1_3| [EmergingIssues]|component[EmergingIssue1_3].value | string(1) | - | 
+| 251 | Blank for One-Byte Field 4 | PLACE1_4| [EmergingIssues]|component[EmergingIssue1_4].value | string(1) | - | 
+| 252 | Blank for One-Byte Field 5 | PLACE1_5| [EmergingIssues]|component[EmergingIssue1_5].value | string(1) | - | 
+| 253 | Blank for One-Byte Field 6 | PLACE1_6| [EmergingIssues]|component[EmergingIssue1_6].value | string(1) | - | 
+| 254 | Blank for Eight-Byte Field 1 | PLACE8_1| [EmergingIssues]|component[EmergingIssue8_1].value | string(8) | - | 
+| 255 | Blank for Eight-Byte Field 2 | PLACE8_2| [EmergingIssues]|component[EmergingIssue8_2].value | string(8) | - | 
+| 256 | Blank for Eight-Byte Field 3 | PLACE8_3| [EmergingIssues]|component[EmergingIssue8_3].value | string(8) | - | 
+| 257 | Blank for Twenty-Byte Field | PLACE20| [EmergingIssues]|component[EmergingIssue20].value | string(20) | - | 
 | 172 | Was case Referred to Medical Examiner/Coroner? | REFERRED| [ExaminerContacted]|value | codeable | [YesNoUnknownVS] | 
 | 206 | Funeral Facility Name | FUNFACNAME| [FuneralHome]|name | string | - | 
 | 207 | Funeral Facility - Street number | FUNFACSTNUM| [FuneralHome]|address.extension[stnum] | string | - | 
@@ -197,25 +207,15 @@
 | 66 | Decedent's Race--Second Other Literal | RACE23| [InputRaceAndEthnicity]|component[ SecondOtherRaceLiteral].valueString | string | - | 
 | 83 | Decedent's Race--Missing | RACE_MVR| [InputRaceAndEthnicity]|component[ MissingValueReason].valueCoding | codeable | [RaceMissingValueReasonVS]  | 
 | 100 | Manner of Death | MANNER| [MannerOfDeath]|value | codeable | [MannerOfDeathVS] | 
-{: .grid }
-## Coded Content
-
-| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| 248 | Blank for One-Byte Field 1 | PLACE1_1| [EmergingIssues]|component[EmergingIssue1_1].value | string(1) | - | 
-| 249 | Blank for One-Byte Field 2 | PLACE1_2| [EmergingIssues]|component[EmergingIssue1_2].value | string(1) | - | 
-| 250 | Blank for One-Byte Field 3 | PLACE1_3| [EmergingIssues]|component[EmergingIssue1_3].value | string(1) | - | 
-| 251 | Blank for One-Byte Field 4 | PLACE1_4| [EmergingIssues]|component[EmergingIssue1_4].value | string(1) | - | 
-| 252 | Blank for One-Byte Field 5 | PLACE1_5| [EmergingIssues]|component[EmergingIssue1_5].value | string(1) | - | 
-| 253 | Blank for One-Byte Field 6 | PLACE1_6| [EmergingIssues]|component[EmergingIssue1_6].value | string(1) | - | 
-| 254 | Blank for Eight-Byte Field 1 | PLACE8_1| [EmergingIssues]|component[EmergingIssue8_1].value | string(8) | - | 
-| 255 | Blank for Eight-Byte Field 2 | PLACE8_2| [EmergingIssues]|component[EmergingIssue8_2].value | string(8) | - | 
-| 256 | Blank for Eight-Byte Field 3 | PLACE8_3| [EmergingIssues]|component[EmergingIssue8_3].value | string(8) | - | 
-| 257 | Blank for Twenty-Byte Field | PLACE20| [EmergingIssues]|component[EmergingIssue20].value | string(20) | - | 
 | 123 | Surgery Date--month | SUR_MO| [SurgeryDate]|value | dateTime | See [PartialDatesAndTimes] | 
 | 124 | Surgery Date--day | SUR_DY| [SurgeryDate]|value | dateTime | See [PartialDatesAndTimes] | 
 | 125 | Surgery Date--year | SUR_YR| [SurgeryDate]|value | dateTime | See [PartialDatesAndTimes] | 
 | 111 | Did Tobacco Use Contribute to Death? | TOBAC| [TobaccoUseContributedToDeath]|value | codeable | [ContributoryTobaccoUseVS] | 
+{: .grid }
+#### Coded Content
+
+| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
+| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | 120 | Activity at time of death (computer generated) | INACT| [ActivityAtTimeOfDeath]|value | codeable | [ActivityAtTimeOfDeathVS] | 
 | 105 | ACME Underlying Cause | ACME_UC| [AutomatedUnderlyingCauseOfDeath]|value | codeable | [ICD10CausesOfDeathVS] | 
 | 104 | Manual Underlying Cause  | MAN_UC| [ManualUnderlyingCauseOfDeath]|value | codeable | [ICD10CausesOfDeathVS] | 
@@ -258,6 +258,34 @@
 | 121 | Auxiliary State file number | AUXNO2| [DemographicCodedContentBundle]|identifier.extension[ auxiliaryStateIdentifier2 ].value | string(12) | - | 
 | NA | Death Record Identifier | *NO IJE MAPPING*| [DemographicCodedContentBundle]|identifier.value | string(12) | YYYYJJNNNNNN,  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number | 
 {: .grid }
+#### Not Implemented Content
+
+| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
+| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
+| 4 | Void flag | VOID| [not implemented]| |  | - | 
+| 11 | Alias Record Flag | ALIAS| [not implemented]| |  | - | 
+| 14 | Sex--Edit Flag | SEX_BYPASS| [not implemented]| |  | - | 
+| 85 | Occupation -- Code  | OCCUPC| [not implemented]| |  | - | 
+| 87 | Industry -- Code  | INDUSTC| [not implemented]| |  | - | 
+| 99 | FILLER 2 for expansion | | [not implemented]| |  | - | 
+| 127 | For possible future change in transax | BLANK1| [not implemented]| |  | - | 
+| 158 | Old NCHS residence state code | RESSTATE| [not implemented]| |  | - | 
+| 159 | Old NCHS residence city/county combo code | RESCON| [not implemented]| |  | - | 
+| 161 | Bridged Race | NCHSBRIDGE| [not implemented]| |  | - | 
+| 162 | Hispanic - old NCHS single ethnicity codes | HISPOLDC| [not implemented]| |  | - | 
+| 163 | Race - old NCHS single race codes | RACEOLDC| [not implemented]| |  | - | 
+| 164 | Hispanic Origin - Specify  | HISPSTSP| [not implemented]| |  | - | 
+| 165 | Race - Specify | RACESTSP| [not implemented]| |  | - | 
+| 183 | Old NCHS education code if collected - receiving state will recode as they prefer | OLDEDUC| [not implemented]| |  | - | 
+| 236 | Date Filed | FILEDATE| [not implemented]| |  | - | 
+| 241 | SSA State Source of Death | SSADTHCODE| [not implemented]| |  | - | 
+| 242 | SSA Foreign Country Indicator | SSAFOREIGN| [not implemented]| |  | - | 
+| 243 | SSA EDR Verify Code | SSAVERIFY| [not implemented]| |  | - | 
+| 244 | SSA Date of SSN Verification | SSADATEVER| [not implemented]| |  | - | 
+| 245 | SSA Date of State Transmission | SSADATETRANS| [not implemented]| |  | - | 
+| 258 | Blank for future expansion | BLANK2| [not implemented]| |  | - | 
+| 259 | Blank for Jurisdictional Use Only | BLANK3| [not implemented]| |  | - | 
+{: .grid }
 {% include markdown-link-references.md %}
 ### Mortality Roster IJE Mapping
 
@@ -278,6 +306,7 @@
 | 12 | Date of Birth--Day | DOB_DY| [Decedent]|birthDate | dateTime | See [PartialDatesAndTimes] | 
 | 13 | Date of Birth--Year | DOB_YR| [Decedent]|birthDate | dateTime | See [PartialDatesAndTimes] | 
 | 14 | Sex | SEX| [Decedent]|extension[NVSS-SexAtDeath]  | codeable | [AdministrativeGenderVS] | 
+| NA | Gender | *NO IJE MAPPING*| [Decedent]|gender | codeable | [AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] | 
 | 22 | Decedent's Suffix | SUFF| [Decedent]|name.suffix , name.use = official | string | - | 
 | 26 | Decedent's Maiden Name | DMAIDEN| [Decedent]|name.text , name.use=maiden | string |  | 
 | 27 | State, U.S. Territory or Canadian Province of Decedent's Residence - literal | STATETEXT_R | [Decedent]|address.state (expanded from 2 letter code) | string | See [StateLiterals] | 
@@ -285,7 +314,6 @@
 | 29 | Birthplace Country - Code | BPLACE_CT| [Decedent]|extension[patient-birthPlace].value[x].country  | string | [BirthplaceCountryVS]. | 
 | 31 | Decedent's Residence Country - Code | COUNTRYC| [Decedent]|address.country | string | [ResidenceCountryVS] | 
 | 32 | Decedent's SSN (may be used by some jurisdictions when allowed by law, to match with the SSN contained with the birth record) | SSN| [Decedent]|identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code="SB" | string | - | 
-| NA | Gender | *NO IJE MAPPING*| [Decedent]|gender | codeable | [AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] | 
 | 16 | Father's First Name | DADFNAME| [DecedentFather]|name.given , name.use = official | string | - | 
 | 17 | Father's Middle Name | DADMIDNAME| [DecedentFather]|name.given , name.use = official | string | - | 
 | 18 | Father's Surname | DADLNAME| [DecedentFather]|name.family | string | - | 
@@ -294,5 +322,12 @@
 | 20 | Mother's Middle Name | MOMMIDNAME| [DecedentMother]|name.given , name.use = official | string | - | 
 | 21 | Mother's Maiden Surname | MOMMAIDNAME| [DecedentMother]|name.family , name.type=maiden | string  | - | 
 | 24 | Mother's Suffix | MOMSUFF| [DecedentMother]|name.suffix , name.use = official | string | - | 
+{: .grid }
+#### Not Implemented Content
+
+| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
+| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
+| 25 | Filler | BLANK1| [not implemented]| |  |  | 
+| 35 | Blank for Future Expansion | BLANK2| [not implemented]| |  |  | 
 {: .grid }
 {% include markdown-link-references.md %}

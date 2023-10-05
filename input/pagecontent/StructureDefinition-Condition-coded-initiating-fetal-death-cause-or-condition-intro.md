@@ -1,0 +1,6 @@
+### IJE Mapping
+
+| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
+| Fetal Death | 208 | Coded initiating cause/condition | ICOD | code |codeable |[https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] |
+{: .grid }

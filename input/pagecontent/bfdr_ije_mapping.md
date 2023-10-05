@@ -43,17 +43,73 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 197 | Maternal Morbidity--Ruptured Uterus | RUT| [ConditionRupturedUterus]| | na | See [Note on missing data] | 
 | 217 | Abnormal Conditions of the Newborn--Seizures | SEIZ| [ConditionSeizure]| | na | See [Note on missing data] | 
 | 153 | Principal source of Payment for this delivery | PAY| [CoveragePrincipalPayerDelivery]|type | codeable | [ValueSetBirthAndFetalDeathFinancialClass]  | 
-| 125 | Mother Transferred? | TRAN| [Encounter_Maternity]|hospitalization.admitSource = "hosp-trans" | codeable | [http://hl7.org/fhir/ValueSet/encounter-admit-source], See [Note on missing data]. Need to discuss - clarity needed for values other than 'hosp-trans' | 
+| 125 | Mother Transferred? | TRAN| [Encounter_Maternity]|hospitalization.admitSource = "hosp-trans" | codeable | [HL7EncounterAdmitSourceVS](http://hl7.org/fhir/ValueSet/encounter-admit-source), See [Note on missing data]. Need to discuss - clarity needed for values other than 'hosp-trans' | 
 | 302 | Facility Mother Moved From (if transferred) | HOSPFROM| [Encounter_Maternity]|hospitalization.origin.name | string |  | 
 | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE| [EncounterBirth]|location.physicalType | codeable | [ValueSetBirthDeliveryOccurred] | 
 | 12 | Facility ID (NPI) - if available | FNPI| [EncounterBirth]|location.location.id | string |  | 
 | 13 | Facility ID (State-Assigned) | SFN| [EncounterBirth]|location.location.identifier | Identifier |  | 
-| 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN| [EncounterBirth]|hospitalization.dischargeDisposition="other-hcf" | codeable | [http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition]. See [Note on missing data]. Need to discuss - clarity needed for values other than 'other-hcf' | 
+| 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN| [EncounterBirth]|hospitalization.dischargeDisposition="other-hcf" | codeable | [USCoreDischargeDispositionVS](http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition). See [Note on missing data]. Need to discuss - clarity needed for values other than 'other-hcf' | 
 | 253 | Name of Facility of Birth | HOSP| [EncounterBirth]|location.location.name | string |  | 
 | 303 | Facility Infant Transferred To (if transferred w/in 24 hours) | HOSPTO| [EncounterBirth]|hospitalization.destination.name | string |  | 
 | 334 | Date Signed by Certifier--Year | CERTIFIED_YR| [EncounterBirth]|participant:certifier.period.start | dateTime | See [PartialDatesAndTimes] | 
 | 335 | Date Signed by Certifier--Month | CERTIFIED_MO| [EncounterBirth]|participant:certifier.period.start | dateTime | See [PartialDatesAndTimes] | 
 | 336 | Date Signed by Certifier--Day | CERTIFIED_DY| [EncounterBirth]|participant:certifier.period.start | dateTime | See [PartialDatesAndTimes] | 
+| 34 | Mother of Hispanic Origin?--Mexican | METHNIC1| [InputRaceAndEthnicity]|component[ HispanicMexican].valueCoding, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2| [InputRaceAndEthnicity]|component[ HispanicPuertoRican].valueCoding, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 36 | Mother of Hispanic Origin?--Cuban | METHNIC3| [InputRaceAndEthnicity]|component[ HispanicCuban ].valueCoding, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 37 | Mother of Hispanic Origin?--Other | METHNIC4| [InputRaceAndEthnicity]|component[ HispanicOther ].valueCoding, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5| [InputRaceAndEthnicity]|component[ HispanicLiteral ].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 39 | Mother's Race--White | MRACE1| [InputRaceAndEthnicity]|component[ White].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 40 | Mother's Race--Black or African American | MRACE2| [InputRaceAndEthnicity]|component[ BlackOrAfricanAmerican].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 41 | Mother's Race--American Indian or Alaska Native | MRACE3| [InputRaceAndEthnicity]|component[ AmericanIndianOrAlaskanNative].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 42 | Mother's Race--Asian Indian | MRACE4| [InputRaceAndEthnicity]|component[ AsianIndian].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 43 | Mother's Race--Chinese | MRACE5| [InputRaceAndEthnicity]|component[ Chinese].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 44 | Mother's Race--Filipino | MRACE6| [InputRaceAndEthnicity]|component[ Filipino].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 45 | Mother's Race--Japanese | MRACE7| [InputRaceAndEthnicity]|component[ Japanese].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 46 | Mother's Race--Korean | MRACE8| [InputRaceAndEthnicity]|component[ Korean].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 47 | Mother's Race--Vietnamese | MRACE9| [InputRaceAndEthnicity]|component[ Vietnamese].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 48 | Mother's Race--Other Asian | MRACE10| [InputRaceAndEthnicity]|component[ OtherAsian].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 49 | Mother's Race--Native Hawaiian | MRACE11| [InputRaceAndEthnicity]|component[ NativeHawaiian].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 50 | Mother's Race--Guamanian or Chamorro | MRACE12| [InputRaceAndEthnicity]|component[ GuamanianOrChamorro].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 51 | Mother's Race--Samoan | MRACE13| [InputRaceAndEthnicity]|component[ Samoan].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 52 | Mother's Race--Other Pacific Islander | MRACE14| [InputRaceAndEthnicity]|component[ OtherPacificIslander].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 53 | Mother's Race--Other | MRACE15| [InputRaceAndEthnicity]|component[ OtherRace].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 54 | Mother's Race--First American Indian or Alaska Native Literal | MRACE16| [InputRaceAndEthnicity]|component[ AmericanIndianorAlaskanNativeLiteral1].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 55 | Mother's Race--Second American Indian or Alaska Native Literal | MRACE17| [InputRaceAndEthnicity]|component[ AmericanIndianorAlaskanNativeLiteral2].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 56 | Mother's Race--First Other Asian Literal | MRACE18| [InputRaceAndEthnicity]|component[ OtherAsianLiteral1].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 57 | Mother's Race--Second Other Asian Literal | MRACE19| [InputRaceAndEthnicity]|component[ OtherAsianLiteral2].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 58 | Mother's Race--First Other Pacific Islander Literal | MRACE20| [InputRaceAndEthnicity]|component[ OtherPacificIslandLiteral1].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21| [InputRaceAndEthnicity]|component[ OtherPacificIslandLiteral2].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 60 | Mother's Race--First Other Literal | MRACE22| [InputRaceAndEthnicity]|component[ OtherRaceLiteral1].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 61 | Mother's Race--Second Other Literal | MRACE23| [InputRaceAndEthnicity]|component[ OtherRaceLiteral2].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 80 | Father of Hispanic Origin?--Mexican | FETHNIC1| [InputRaceAndEthnicity]|component[ HispanicMexican].valueCoding, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 81 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2| [InputRaceAndEthnicity]|component[ HispanicPuertoRican].valueCoding, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 82 | Father of Hispanic Origin?--Cuban | FETHNIC3| [InputRaceAndEthnicity]|component[ HispanicCuban ].valueCoding, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 83 | Father of Hispanic Origin?--Other | FETHNIC4| [InputRaceAndEthnicity]|component[ HispanicOther ].valueCoding, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 84 | Father of Hispanic Origin?--Other Literal | FETHNIC5| [InputRaceAndEthnicity]|component[ HispanicLiteral ].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 85 | Father's Race--White | FRACE1| [InputRaceAndEthnicity]|component[ White].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 86 | Father's Race--Black or African American | FRACE2| [InputRaceAndEthnicity]|component[ BlackOrAfricanAmerican].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 87 | Father's Race--American Indian or Alaska Native | FRACE3| [InputRaceAndEthnicity]|component[ AmericanIndianOrAlaskanNative].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 88 | Father's Race--Asian Indian | FRACE4| [InputRaceAndEthnicity]|component[ AsianIndian].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 89 | Father's Race--Chinese | FRACE5| [InputRaceAndEthnicity]|component[ Chinese].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 90 | Father's Race--Filipino | FRACE6| [InputRaceAndEthnicity]|component[ Filipino].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 91 | Father's Race--Japanese | FRACE7| [InputRaceAndEthnicity]|component[ Japanese].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 92 | Father's Race--Korean | FRACE8| [InputRaceAndEthnicity]|component[ Korean].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 93 | Father's Race--Vietnamese | FRACE9| [InputRaceAndEthnicity]|component[ Vietnamese].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 94 | Father's Race--Other Asian | FRACE10| [InputRaceAndEthnicity]|component[ OtherAsian].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 95 | Father's Race--Native Hawaiian | FRACE11| [InputRaceAndEthnicity]|component[ NativeHawaiian].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 96 | Father's Race--Guamanian or Chamorro | FRACE12| [InputRaceAndEthnicity]|component[ GuamanianOrChamorro].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 97 | Father's Race--Samoan | FRACE13| [InputRaceAndEthnicity]|component[ Samoan].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 98 | Father's Race--Other Pacific Islander | FRACE14| [InputRaceAndEthnicity]|component[ OtherPacificIslander].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 99 | Father's Race--Other | FRACE15| [InputRaceAndEthnicity]|component[ OtherRace].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 100 | Father's Race--First American Indian or Alaska Native Literal | FRACE16| [InputRaceAndEthnicity]|component[ AmericanIndianorAlaskanNativeLiteral1].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 101 | Father's Race--Second American Indian or Alaska Native Literal | FRACE17| [InputRaceAndEthnicity]|component[ AmericanIndianorAlaskanNativeLiteral2].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 102 | Father's Race--First Other Asian Literal | FRACE18| [InputRaceAndEthnicity]|component[ OtherAsianLiteral1].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 103 | Father's Race--Second Other Asian Literal | FRACE19| [InputRaceAndEthnicity]|component[ OtherAsianLiteral2].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 104 | Father's Race--First Other Pacific Islander Literal | FRACE20| [InputRaceAndEthnicity]|component[ OtherPacificIslandLiteral1].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 105 | Father's Race--Second Other Pacific Islander Literal | FRACE21| [InputRaceAndEthnicity]|component[ OtherPacificIslandLiteral2].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 106 | Father's Race--First Other Literal | FRACE22| [InputRaceAndEthnicity]|component[ OtherRaceLiteral1].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 107 | Father's Race--Second Other Literal | FRACE23| [InputRaceAndEthnicity]|component[ OtherRaceLiteral2].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
 | 185 | Characteristics of Labor & Delivery--Antibiotics | ANTB| [ObservationAntibioticsAdministeredDuringLabor]| | na | See [Note on missing data] | 
 | 205 | Apgar Score at 5 Minutes | APGAR5| [ObservationApgarScoreVitalRecords]|value, code = 9274-2 | integer | [ValueSetApgarTimingVitalRecords] | 
 | 206 | Apgar Score at 10 Minutes | APGAR10| [ObservationApgarScoreVitalRecords]|value, code = 9271-8 | integer | [ValueSetApgarTimingVitalRecords] | 
@@ -93,9 +149,9 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 139 | Mother's Weight at Delivery (in whole pounds) | DWGT| [ObservationMotherDeliveryWeightVitalRecords]|value | quantity |  | 
 | 134 | Mother's Height--Feet | HFT| [ObservationMotherHeightVitalRecords]|value | quantity |  | 
 | 135 | Mother's Height--Inches | HIN| [ObservationMotherHeightVitalRecords]|value | quantity |  | 
-| 30 | Mother Married?-- At Conception, at Birth or any Time in Between | MARN| [ObservationMotherMarriedDuringPregnancy]|value | codeable | [PHVS_YesNoUnknown_CDC] | 
+| 30 | Mother Married?-- At Conception, at Birth or any Time in Between | MARN| [ObservationMotherMarriedDuringPregnancy]|value | codeable | [ValueSetYesNoUnknownVitalRecords] | 
 | 137 | Mother's Prepregnancy Weight (in whole pounds) | PWGT| [ObservationMotherPrepregnancyWeightVitalRecords]|value | quantity |  | 
-| 141 | Did Mother get WIC Food for Herself? | WIC| [ObservationMotherReceivedWICFood]|value | codeable | [PHVS_YesNoUnknown_CDC] | 
+| 141 | Did Mother get WIC Food for Herself? | WIC| [ObservationMotherReceivedWICFood]|value | codeable | [ValueSetYesNoUnknownVitalRecords] | 
 | 214 | Abnormal Conditions of the Newborn--Admission to NICU | NICU| [ObservationNICUAdmission]| | na | See [Note on missing data] | 
 | 143 | Previous Live Births Now Dead | PLBD| [ObservationNumberBirthsNowDeadVitalRecords]|value | integer |  | 
 | 142 | Previous Live Births Now Living | PLBL| [ObservationNumberBirthsNowLivingVitalRecords]|value | integer |  | 
@@ -105,7 +161,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 166 | Risk Factors--Number Previous Cesareans | NPCES| [ObservationNumberPreviousCesareansVitalRecords]|value | integer |  | 
 | 32 | Mother's Education | MEDUC| [ObservationParentEducationLevelVitalRecords]|value, focus[ PatientMotherVitalRecords ] | codeable | [EducationLevelVS] | 
 | 78 | Father's Education | FEDUC| [ObservationParentEducationLevelVitalRecords]|value, focus[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [EducationLevelVS] | 
-| 31 | Mother Married?--Acknowledgement of Paternity Signed | ACKN| [ObservationPaternityAcknowledgementSigned]|value | codeable | [PHVS_YesNoNotApplicable_NCHS] | 
+| 31 | Mother Married?--Acknowledgement of Paternity Signed | ACKN| [ObservationPaternityAcknowledgementSigned]|value | codeable | [ValueSetYesNoNotApplicableVitalRecords] | 
 | 165 | Risk Factors--Previous Cesarean | PCES| [ObservationPreviousCesareanVitalRecords]| | na | See [Note on missing data] | 
 | 161 | Risk Factors--Previous Preterm Births | PPB| [ObservationPreviousPretermBirthVitalRecords]| | na | See [Note on missing data] | 
 | 321 | Social Security Number Requested for Child? | SSN_REQ| [ObservationSSNRequestedForChild]|value | boolean |  | 
@@ -120,7 +176,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 1 | Date of Birth (Infant)--Year | IDOB_YR| [PatientChildVitalRecords]|birthDate | date |  | 
 | 2 | State, U.S. Territory or Canadian Province of Birth (Infant) - code | BSTATE| [PatientChildVitalRecords]|extension[patient-birthPlace].value[x].state | string | [StatesTerritoriesAndProvincesVS] | 
 | 6 | Time of Birth | TB| [PatientChildVitalRecords]|birthDate.extension[patient-birthTime] |  | See [PartialDatesAndTimes] | 
-| 7 | Sex | ISEX| [PatientChildVitalRecords]|extension[us-core-birthsex].value | codeable | [http://hl7.org/fhir/us/core/ValueSet/birthsex] | 
+| 7 | Sex | ISEX| [PatientChildVitalRecords]|extension[us-core-birthsex].value | codeable | [USCoreBirthSexVS](http://hl7.org/fhir/us/core/ValueSet/birthsex) | 
 | 8 | Date of Birth (Infant)--Month | IDOB_MO| [PatientChildVitalRecords]|birthDate | date |  | 
 | 9 | Date of Birth (Infant)--Day | IDOB_DY| [PatientChildVitalRecords]|birthDate | date |  | 
 | 10 | County of Birth | CNTYO| [PatientChildVitalRecords]|extension[patient-birthplace].value[x].district.extension[countyCode] | integer | See [CountyCodes] | 
@@ -144,7 +200,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 21 | Residence of Mother--County | COUNTYC| [PatientMotherVitalRecords]|address.district.extension[countyCode] | integer | See [CountyCodes] | 
 | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC| [PatientMotherVitalRecords]|address.state | string | [StatesTerritoriesAndProvincesVS] | 
 | 23 | Residence of Mother--Country | COUNTRYC| [PatientMotherVitalRecords]|address.country | string | [ResidenceCountryVS] | 
-| 24 | Residence of Mother--Inside City Limits | LIMITS| [PatientMotherVitalRecords]|address.extension[ withinCityLimitsIndicator ].value | codeable | [PHVS_YesNoUnknown_CDC] | 
+| 24 | Residence of Mother--Inside City Limits | LIMITS| [PatientMotherVitalRecords]|address.extension[ withinCityLimitsIndicator ].value | codeable | [ValueSetYesNoUnknownVitalRecords] | 
 | 254 | Mother's First Name | MOMFNAME| [PatientMotherVitalRecords]|name.given, name.use = official | string |  | 
 | 255 | Mother's Middle Name | MOMMIDDL| [PatientMotherVitalRecords]|name.given, name.use = official  | string |  | 
 | 256 | Mother's Last Name | MOMLNAME| [PatientMotherVitalRecords]|name.family, name.use = official | string |  | 
@@ -206,7 +262,48 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 215 | Abnormal Conditions of the Newborn--Surfactant Replacement | SURF| [ProcedureSurfactantReplacementTherapy]| | na | See [Note on missing data] | 
 | 198 | Maternal Morbidity--Unplanned Hysterectomy | UHYS| [ProcedureUnplannedHysterectomy]| | na | See [Note on missing data] | 
 {: .grid }
-## Not Implemented Content
+#### Coded Content
+
+| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
+| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
+| 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [CodedRaceAndEthnicity]|component[FirstEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [CodedRaceAndEthnicity]|component[SecondEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [CodedRaceAndEthnicity]|component[ThirdEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [CodedRaceAndEthnicity]|component[FourthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 66 | Mother's Race Tabulation Variable 5E | MRACE5E| [CodedRaceAndEthnicity]|component[FifthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 67 | Mother's Race Tabulation Variable 6E | MRACE6E| [CodedRaceAndEthnicity]|component[SixthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 68 | Mother's Race Tabulation Variable 7E | MRACE7E| [CodedRaceAndEthnicity]|component[SeventhEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 69 | Mother's Race Tabulation Variable 8E | MRACE8E| [CodedRaceAndEthnicity]|component[EighthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 70 | Mother's Race Tabulation Variable 16C | MRACE16C| [CodedRaceAndEthnicity]|component[FirstAmericanIndianCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 71 | Mother's Race Tabulation Variable 17C | MRACE17C| [CodedRaceAndEthnicity]|component[SecondAmericanIndianCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 72 | Mother's Race Tabulation Variable 18C | MRACE18C| [CodedRaceAndEthnicity]|component[FirstOtherAsianCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 73 | Mother's Race Tabulation Variable 19C | MRACE19C| [CodedRaceAndEthnicity]|component[SecondOtherAsianCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 74 | Mother's Race Tabulation Variable 20C | MRACE20C| [CodedRaceAndEthnicity]|component[FirstOtherPacificIslanderCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 75 | Mother's Race Tabulation Variable 21C | MRACE21C| [CodedRaceAndEthnicity]|component[SecondOtherPacificIslanderCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 76 | Mother's Race Tabulation Variable 22C | MRACE22C| [CodedRaceAndEthnicity]|component[FirstOtherRaceCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 77 | Mother's Race Tabulation Variable 23C | MRACE23C| [CodedRaceAndEthnicity]|component[SecondOtherRaceCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 108 | Father's Race Tabulation Variable 1E | FRACE1E| [CodedRaceAndEthnicity]|component[FirstEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 109 | Father's Race Tabulation Variable 2E | FRACE2E| [CodedRaceAndEthnicity]|component[SecondEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 110 | Father's Race Tabulation Variable 3E | FRACE3E| [CodedRaceAndEthnicity]|component[ThirdEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 111 | Father's Race Tabulation Variable 4E | FRACE4E| [CodedRaceAndEthnicity]|component[FourthEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 112 | Father's Race Tabulation Variable 5E | FRACE5E| [CodedRaceAndEthnicity]|component[FifthEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 113 | Father's Race Tabulation Variable 6E | FRACE6E| [CodedRaceAndEthnicity]|component[SixthEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 114 | Father's Race Tabulation Variable 7E | FRACE7E| [CodedRaceAndEthnicity]|component[SeventhEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 115 | Father's Race Tabulation Variable 8E | FRACE8E| [CodedRaceAndEthnicity]|component[EighthEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 116 | Father's Race Tabulation Variable 16C | FRACE16C| [CodedRaceAndEthnicity]|component[FirstAmericanIndianCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 117 | Father's Race Tabulation Variable 17C | FRACE17C| [CodedRaceAndEthnicity]|component[SecondAmericanIndianCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 118 | Father's Race Tabulation Variable 18C | FRACE18C| [CodedRaceAndEthnicity]|component[FirstOtherAsianCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 119 | Father's Race Tabulation Variable 19C | FRACE19C| [CodedRaceAndEthnicity]|component[SecondOtherAsianCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 120 | Father's Race Tabulation Variable 20C | FRACE20C| [CodedRaceAndEthnicity]|component[FirstOtherPacificIslanderCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 121 | Father's Race Tabulation Variable 21C | FRACE21C| [CodedRaceAndEthnicity]|component[SecondOtherPacificIslanderCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 122 | Father's Race Tabulation Variable 22C | FRACE22C| [CodedRaceAndEthnicity]|component[FirstOtherRaceCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 123 | Father's Race Tabulation Variable 23C | FRACE23C| [CodedRaceAndEthnicity]|component[SecondOtherRaceCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 292 | Mother's Hispanic Code for Literal | METHNIC5C| [CodedRaceAndEthnicity]|component[HispanicCodeForLiteral].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicOriginVS] | 
+| 293 | Mother's Edited Hispanic Origin Code | METHNICE| [CodedRaceAndEthnicity]|component[HispanicCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicOriginVS] | 
+| 295 | Father's Hispanic Code for Literal | FETHNIC5C| [CodedRaceAndEthnicity]|component[HispanicCodeForLiteral].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicOriginVS] | 
+| 296 | Father's Edited Hispanic Origin Code | FETHNICE| [CodedRaceAndEthnicity]|component[HispanicCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicOriginVS] | 
+{: .grid }
+#### Not Implemented Content
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
@@ -325,8 +422,64 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 347 | Date Signed by Certifier--Year | CERTIFIED_YR| [Encounter_Maternity]|participant:certifier.period.start | dateTime | See [PartialDatesAndTimes] | 
 | 348 | Date Signed by Certifier--Month | CERTIFIED_MO| [Encounter_Maternity]|participant:certifier.period.start | dateTime | See [PartialDatesAndTimes] | 
 | 349 | Date Signed by Certifier--Day | CERTIFIED_DY| [Encounter_Maternity]|participant:certifier.period.start | dateTime | See [PartialDatesAndTimes] | 
+| 34 | Mother of Hispanic Origin?--Mexican | METHNIC1| [InputRaceAndEthnicity]|component[ HispanicMexican].valueCoding, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2| [InputRaceAndEthnicity]|component[ HispanicPuertoRican].valueCoding, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 36 | Mother of Hispanic Origin?--Cuban | METHNIC3| [InputRaceAndEthnicity]|component[ HispanicCuban ].valueCoding, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 37 | Mother of Hispanic Origin?--Other | METHNIC4| [InputRaceAndEthnicity]|component[ HispanicOther ].valueCoding, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5| [InputRaceAndEthnicity]|component[ HispanicLiteral ].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 39 | Mother's Race--White | MRACE1| [InputRaceAndEthnicity]|component[ White].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 40 | Mother's Race--Black or African American | MRACE2| [InputRaceAndEthnicity]|component[ BlackOrAfricanAmerican].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 41 | Mother's Race--American Indian or Alaska Native | MRACE3| [InputRaceAndEthnicity]|component[ AmericanIndianOrAlaskanNative].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 42 | Mother's Race--Asian Indian | MRACE4| [InputRaceAndEthnicity]|component[ AsianIndian].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 43 | Mother's Race--Chinese | MRACE5| [InputRaceAndEthnicity]|component[ Chinese].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 44 | Mother's Race--Filipino | MRACE6| [InputRaceAndEthnicity]|component[ Filipino].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 45 | Mother's Race--Japanese | MRACE7| [InputRaceAndEthnicity]|component[ Japanese].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 46 | Mother's Race--Korean | MRACE8| [InputRaceAndEthnicity]|component[ Korean].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 47 | Mother's Race--Vietnamese | MRACE9| [InputRaceAndEthnicity]|component[ Vietnamese].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 48 | Mother's Race--Other Asian | MRACE10| [InputRaceAndEthnicity]|component[ OtherAsian].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 49 | Mother's Race--Native Hawaiian | MRACE11| [InputRaceAndEthnicity]|component[ NativeHawaiian].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 50 | Mother's Race--Guamanian or Chamorro | MRACE12| [InputRaceAndEthnicity]|component[ GuamanianOrChamorro].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 51 | Mother's Race--Samoan | MRACE13| [InputRaceAndEthnicity]|component[ Samoan].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 52 | Mother's Race--Other Pacific Islander | MRACE14| [InputRaceAndEthnicity]|component[ OtherPacificIslander].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 53 | Mother's Race--Other | MRACE15| [InputRaceAndEthnicity]|component[ OtherRace].valueBoolean, subject=Reference[ PatientMotherVitalRecords ] | boolean |  | 
+| 54 | Mother's Race--First American Indian or Alaska Native Literal | MRACE16| [InputRaceAndEthnicity]|component[ AmericanIndianorAlaskanNativeLiteral1].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 55 | Mother's Race--Second American Indian or Alaska Native Literal | MRACE17| [InputRaceAndEthnicity]|component[ AmericanIndianorAlaskanNativeLiteral2].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 56 | Mother's Race--First Other Asian Literal | MRACE18| [InputRaceAndEthnicity]|component[ OtherAsianLiteral1].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 57 | Mother's Race--Second Other Asian Literal | MRACE19| [InputRaceAndEthnicity]|component[ OtherAsianLiteral2].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 58 | Mother's Race--First Other Pacific Islander Literal | MRACE20| [InputRaceAndEthnicity]|component[ OtherPacificIslandLiteral1].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21| [InputRaceAndEthnicity]|component[ OtherPacificIslandLiteral2].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 60 | Mother's Race--First Other Literal | MRACE22| [InputRaceAndEthnicity]|component[ OtherRaceLiteral1].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 61 | Mother's Race--Second Other Literal | MRACE23| [InputRaceAndEthnicity]|component[ OtherRaceLiteral2].valueString, subject=Reference[ PatientMotherVitalRecords ] | string |  | 
+| 285 | Father of Hispanic Origin?--Mexican | FETHNIC1| [InputRaceAndEthnicity]|component[ HispanicMexican].valueCoding, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 286 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2| [InputRaceAndEthnicity]|component[ HispanicPuertoRican].valueCoding, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 287 | Father of Hispanic Origin?--Cuban | FETHNIC3| [InputRaceAndEthnicity]|component[ HispanicCuban ].valueCoding, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 288 | Father of Hispanic Origin?--Other | FETHNIC4| [InputRaceAndEthnicity]|component[ HispanicOther ].valueCoding, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicNoUnknownVS] | 
+| 289 | Father of Hispanic Origin?--Other Literal | FETHNIC5| [InputRaceAndEthnicity]|component[ HispanicLiteral ].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 290 | Father's Race--White | FRACE1| [InputRaceAndEthnicity]|component[ White].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 291 | Father's Race--Black or African American | FRACE2| [InputRaceAndEthnicity]|component[ BlackOrAfricanAmerican].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 292 | Father's Race--American Indian or Alaska Native | FRACE3| [InputRaceAndEthnicity]|component[ AmericanIndianOrAlaskanNative].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 293 | Father's Race--Asian Indian | FRACE4| [InputRaceAndEthnicity]|component[ AsianIndian].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 294 | Father's Race--Chinese | FRACE5| [InputRaceAndEthnicity]|component[ Chinese].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 295 | Father's Race--Filipino | FRACE6| [InputRaceAndEthnicity]|component[ Filipino].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 296 | Father's Race--Japanese | FRACE7| [InputRaceAndEthnicity]|component[ Japanese].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 297 | Father's Race--Korean | FRACE8| [InputRaceAndEthnicity]|component[ Korean].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 298 | Father's Race--Vietnamese | FRACE9| [InputRaceAndEthnicity]|component[ Vietnamese].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 299 | Father's Race--Other Asian | FRACE10| [InputRaceAndEthnicity]|component[ OtherAsian].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 300 | Father's Race--Native Hawaiian | FRACE11| [InputRaceAndEthnicity]|component[ NativeHawaiian].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 301 | Father's Race--Guamanian or Chamorro | FRACE12| [InputRaceAndEthnicity]|component[ GuamanianOrChamorro].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 302 | Father's Race--Samoan | FRACE13| [InputRaceAndEthnicity]|component[ Samoan].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 303 | Father's Race--Other Pacific Islander | FRACE14| [InputRaceAndEthnicity]|component[ OtherPacificIslander].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 304 | Father's Race--Other | FRACE15| [InputRaceAndEthnicity]|component[ OtherRace].valueBoolean, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | boolean |  | 
+| 305 | Father's Race--First American Indian or Alaska Native Literal | FRACE16| [InputRaceAndEthnicity]|component[ AmericanIndianorAlaskanNativeLiteral1].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 306 | Father's Race--Second American Indian or Alaska Native Literal | FRACE17| [InputRaceAndEthnicity]|component[ AmericanIndianorAlaskanNativeLiteral2].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 307 | Father's Race--First Other Asian Literal | FRACE18| [InputRaceAndEthnicity]|component[ OtherAsianLiteral1].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 308 | Father's Race--Second Other Asian Literal | FRACE19| [InputRaceAndEthnicity]|component[ OtherAsianLiteral2].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 309 | Father's Race--First Other Pacific Islander Literal | FRACE20| [InputRaceAndEthnicity]|component[ OtherPacificIslandLiteral1].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 310 | Father's Race--Second Other Pacific Islander Literal | FRACE21| [InputRaceAndEthnicity]|component[ OtherPacificIslandLiteral2].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 311 | Father's Race--First Other Literal | FRACE22| [InputRaceAndEthnicity]|component[ OtherRaceLiteral1].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
+| 312 | Father's Race--Second Other Literal | FRACE23| [InputRaceAndEthnicity]|component[ OtherRaceLiteral2].valueString, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
 | 150 | Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death? | AUTOPF| [ObservationAutopsyHistologicalExamResultsUsed]|value | codeable | [ValueSetYesNoNotApplicable], sandbox uses boolean, BFDR IG uses codeable | 
-| 148 | Was an Autopsy Performed? | AUTOP| [ObservationAutopsyPerformedIndicatorVitalRecords]|value | codeable | [PHVS_AutopsyExamination_NCHS] | 
+| 148 | Was an Autopsy Performed? | AUTOP| [ObservationAutopsyPerformedIndicatorVitalRecords]|value | codeable | [ValueSetYesNoUnknownNotApplicableVitalRecords] | 
 | 143 | Weight of Fetus | FWG| [ObservationBirthWeightVitalRecords]|value | quantity |  | 
 | 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, code=64794-1 | integer |  | 
 | 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, code=87298-6 | integer |  | 
@@ -359,7 +512,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 88 | Mother's Height--Feet | HFT| [ObservationMotherHeightVitalRecords]|value | quantity |  | 
 | 89 | Mother's Height--Inches | HIN| [ObservationMotherHeightVitalRecords]|value | quantity |  | 
 | 91 | Mother's Prepregnancy Weight | PWGT| [ObservationMotherPrepregnancyWeightVitalRecords]|value | quantity |  | 
-| 95 | Did Mother get WIC Food for Herself? | WIC| [ObservationMotherReceivedWICFood]|value | codeable | [PHVS_YesNoUnknown_CDC] | 
+| 95 | Did Mother get WIC Food for Herself? | WIC| [ObservationMotherReceivedWICFood]|value | codeable | [ValueSetYesNoUnknownVitalRecords] | 
 | 97 | Previous Live Births Now Dead | PLBD| [ObservationNumberBirthsNowDeadVitalRecords]|value | integer |  | 
 | 96 | Previous Live Births Now Living | PLBL| [ObservationNumberBirthsNowLivingVitalRecords]|value | integer |  | 
 | 153 | Number of Fetal Deaths | FDTH| [ObservationNumberFetalDeathsThisDeliveryVitalRecords]|value | integer |  | 
@@ -379,7 +532,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 1 | Date of Delivery (Fetus)--Year | FDOD_YR| [PatientDecedentFetusVitalRecords]|birthDate |  |  | 
 | 2 | State, U.S. Territory or Canadian Province of Place of Delivery - code | DSTATE| [PatientDecedentFetusVitalRecords]|extension[patient-birthPlace].value[x].state | codeable | [StatesTerritoriesAndProvincesVS]  | 
 | 6 | Time of Delivery | TD| [PatientDecedentFetusVitalRecords]|birthDate.extension[patient-birthTime] |  | See [PartialDatesAndTimes] | 
-| 7 | Sex | FSEX| [PatientDecedentFetusVitalRecords]|extension[us-core-birthsex].value | codeable | [http://hl7.org/fhir/us/core/ValueSet/birthsex] | 
+| 7 | Sex | FSEX| [PatientDecedentFetusVitalRecords]|extension[us-core-birthsex].value | codeable | [USCoreBirthSexVS](http://hl7.org/fhir/us/core/ValueSet/birthsex) | 
 | 8 | Date of Delivery (Fetus)--Month | FDOD_MO| [PatientDecedentFetusVitalRecords]|birthDate |  |  | 
 | 9 | Date of Delivery (Fetus)--Day | FDOD_DY| [PatientDecedentFetusVitalRecords]|birthDate |  |  | 
 | 152 | Set Order | SORD| [PatientDecedentFetusVitalRecords]|multipleBirth[x] | integer |  | 
@@ -397,7 +550,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 21 | Residence of Mother--County | COUNTYC| [PatientMotherVitalRecords]|address.district.extension[countyCode] | integer | See [CountyCodes] | 
 | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC| [PatientMotherVitalRecords]|address.state | string | [StatesTerritoriesAndProvincesVS] | 
 | 23 | Residence of Mother--Country | COUNTRYC| [PatientMotherVitalRecords]|address.country | string | [ResidenceCountryVS] | 
-| 24 | Residence of Mother--Inside City/Town Limits | LIMITS| [PatientMotherVitalRecords]|address.extension[ withinCityLimitsIndicator ].value | codeable | [PHVS_YesNoUnknown_CDC] | 
+| 24 | Residence of Mother--Inside City/Town Limits | LIMITS| [PatientMotherVitalRecords]|address.extension[ withinCityLimitsIndicator ].value | codeable | [ValueSetYesNoUnknownVitalRecords] | 
 | 239 | Mother's Legal First Name | MOMFNAME| [PatientMotherVitalRecords]|name.given, name.use = official | string |  | 
 | 240 | Mother's Legal Middle Name | MOMMNAME| [PatientMotherVitalRecords]|name.given, name.use = official  | string |  | 
 | 241 | Mother's Legal Last Name | MOMLNAME| [PatientMotherVitalRecords]|name.family, name.use = official | string |  | 
@@ -430,10 +583,46 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [ValueSetDeliveryRoutes] | 
 | 117 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575) | INFT| [ProcedureInfertilityTreatmentVitalRecords]| | na | See [Note on missing data] | 
 {: .grid }
-## Coded Content
+#### Coded Content
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
+| 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [CodedRaceAndEthnicity]|component[FirstEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [CodedRaceAndEthnicity]|component[SecondEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [CodedRaceAndEthnicity]|component[ThirdEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [CodedRaceAndEthnicity]|component[FourthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 66 | Mother's Race Tabulation Variable 5E | MRACE5E| [CodedRaceAndEthnicity]|component[FifthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 67 | Mother's Race Tabulation Variable 6E | MRACE6E| [CodedRaceAndEthnicity]|component[SixthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 68 | Mother's Race Tabulation Variable 7E | MRACE7E| [CodedRaceAndEthnicity]|component[SeventhEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 69 | Mother's Race Tabulation Variable 8E | MRACE8E| [CodedRaceAndEthnicity]|component[EighthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 70 | Mother's Race Tabulation Variable 16C | MRACE16C| [CodedRaceAndEthnicity]|component[FirstAmericanIndianCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 71 | Mother's Race Tabulation Variable 17C | MRACE17C| [CodedRaceAndEthnicity]|component[SecondAmericanIndianCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 72 | Mother's Race Tabulation Variable 18C | MRACE18C| [CodedRaceAndEthnicity]|component[FirstOtherAsianCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 73 | Mother's Race Tabulation Variable 19C | MRACE19C| [CodedRaceAndEthnicity]|component[SecondOtherAsianCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 74 | Mother's Race Tabulation Variable 20C | MRACE20C| [CodedRaceAndEthnicity]|component[FirstOtherPacificIslanderCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 75 | Mother's Race Tabulation Variable 21C | MRACE21C| [CodedRaceAndEthnicity]|component[SecondOtherPacificIslanderCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 76 | Mother's Race Tabulation Variable 22C | MRACE22C| [CodedRaceAndEthnicity]|component[FirstOtherRaceCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 77 | Mother's Race Tabulation Variable 23C | MRACE23C| [CodedRaceAndEthnicity]|component[SecondOtherRaceCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 313 | Father's Race Tabulation Variable 1E | FRACE1E| [CodedRaceAndEthnicity]|component[FirstEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 314 | Father's Race Tabulation Variable 2E | FRACE2E| [CodedRaceAndEthnicity]|component[SecondEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 315 | Father's Race Tabulation Variable 3E | FRACE3E| [CodedRaceAndEthnicity]|component[ThirdEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 316 | Father's Race Tabulation Variable 4E | FRACE4E| [CodedRaceAndEthnicity]|component[FourthEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 317 | Father's Race Tabulation Variable 5E | FRACE5E| [CodedRaceAndEthnicity]|component[FifthEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 318 | Father's Race Tabulation Variable 6E | FRACE6E| [CodedRaceAndEthnicity]|component[SixthEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 319 | Father's Race Tabulation Variable 7E | FRACE7E| [CodedRaceAndEthnicity]|component[SeventhEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 320 | Father's Race Tabulation Variable 8E | FRACE8E| [CodedRaceAndEthnicity]|component[EighthEditedCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 321 | Father's Race Tabulation Variable 16C | FRACE16C| [CodedRaceAndEthnicity]|component[FirstAmericanIndianCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 322 | Father's Race Tabulation Variable 17C | FRACE17C| [CodedRaceAndEthnicity]|component[SecondAmericanIndianCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 323 | Father's Race Tabulation Variable 18C | FRACE18C| [CodedRaceAndEthnicity]|component[FirstOtherAsianCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 324 | Father's Race Tabulation Variable 19C | FRACE19C| [CodedRaceAndEthnicity]|component[SecondOtherAsianCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 325 | Father's Race Tabulation Variable 20C | FRACE20C| [CodedRaceAndEthnicity]|component[FirstOtherPacificIslanderCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 326 | Father's Race Tabulation Variable 21C | FRACE21C| [CodedRaceAndEthnicity]|component[SecondOtherPacificIslanderCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 327 | Father's Race Tabulation Variable 22C | FRACE22C| [CodedRaceAndEthnicity]|component[FirstOtherRaceCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 328 | Father's Race Tabulation Variable 23C | FRACE23C| [CodedRaceAndEthnicity]|component[SecondOtherRaceCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | 
+| 329 | Mother's Hispanic Code for Literal | METHNIC5C| [CodedRaceAndEthnicity]|component[HispanicCodeForLiteral].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicOriginVS] | 
+| 330 | Mother's Edited Hispanic Origin Code | METHNICE| [CodedRaceAndEthnicity]|component[HispanicCode].value, subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicOriginVS] | 
+| 332 | Father's Hispanic Code for Literal | FETHNIC5C| [CodedRaceAndEthnicity]|component[HispanicCodeForLiteral].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicOriginVS] | 
+| 333 | Father's Edited Hispanic Origin Code | FETHNICE| [CodedRaceAndEthnicity]|component[HispanicCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicOriginVS] | 
 | 208 | Coded initiating cause/condition | ICOD| [ConditionCodedInitiatingFetalDeathCauseOrCondition]|code | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | 
 | 209 | Coded other significant causes or conditions- first mentioned | OCOD1| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | 
 | 210 | Coded other significant causes or conditions- second mentioned | OCOD2| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | 
@@ -443,7 +632,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 214 | Coded other significant causes or conditions- sixth mentioned | OCOD6| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | 
 | 215 | Coded other significant causes or conditions- seventh mentioned | OCOD7| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | 
 {: .grid }
-## Not Implemented Content
+#### Not Implemented Content
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |

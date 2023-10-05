@@ -1,3 +1,4 @@
+//changed to reference VRCL VS not phinvads VS
 Profile: ObservationPaternityAcknowledgementSigned
 Parent: Observation
 Id: Observation-paternity-acknowledgement-signed
@@ -12,5 +13,5 @@ Description: "This Observation represents whether or not a paternity acknowledge
 * focus only Reference(RelatedPersonFatherNaturalVitalRecords)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
-* value[x] from PHVS_YesNoNotApplicable_NCHS (required)
+* value[x] from ValueSetYesNoNotApplicableVitalRecords (required)
   * ^short = "Whether or not a paternity acknowledgement was signed by the father"
