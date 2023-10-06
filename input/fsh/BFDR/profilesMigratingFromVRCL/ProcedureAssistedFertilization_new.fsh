@@ -1,5 +1,6 @@
-Profile: ProcedureassistedFertilizationNew
+Profile: ProcedureAssistedFertilizationNew
 Parent: USCoreProcedureProfile
+Id: Procedure-assisted-fertilization
 Title: "Procedure - assisted Fertilization Vital Records"
 Description: "This Procedure profile records that a pregnancy risk factor of assisted fertilization was provided to the mother."
 // * ^meta.versionId = "1"

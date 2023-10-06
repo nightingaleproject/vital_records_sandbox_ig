@@ -267,6 +267,11 @@ groups:
     name: BFDR New Profiles (from VRCL)
     description: BFDR New Profiles (from VRCL)
     resources:
+      - ConditionPrepregnancyHypertensionNew
+      - ConditionEclampsiaHypertensionNew
+      - ConditionGestationalDiabetesNew
+      - ConditionGestationalHypertensionNew
+      - ConditionPrepregnancyDiabetesNew
       - ObservationApgarScoreNew
       - ObservationBirthWeightNew
       - ObservationGestationalAgeAtDeliveryNew
@@ -275,6 +280,7 @@ groups:
       - ObservationMotherDeliveryWeightNew
       - ObservationMotherHeightNew
       - ObservationMotherPrepregnancyWeightNew
+      - ObservationNoneOfSpecifiedPregnancyRiskFactorsNew
       - ObservationNumberBirthsNowDeadNew
       - ObservationNumberBirthsNowLivingNew
       - ObservationNumberFetalDeathsThisDeliveryNew
@@ -282,6 +288,10 @@ groups:
       - ObservationNumberOtherPregnancyOutcomesNew
       - ObservationNumberPrenatalVisitsNew
       - ObservationNumberPreviousCesareansNew
+      - ObservationPreviousPretermBirthNew
+      - ProcedureInfertilityTreatmentNew
+      - ProcedureArtificialInseminationNew
+      - ProcedureAssistedFertilizationNew
       #- ObservationPregnancyRiskFactorNew
       #- PatientDecedentFetusNew
       #- PatientMotherNew

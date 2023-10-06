@@ -33,7 +33,7 @@ The main change was that a subset of profiles/instances were moved between VRCL 
 - observationNumberPreviousCesareans_new
 - observationPreviousCesarean_new
 - procedureArtificialInsemination_new
-- procedureAssisstedFertilization_new
+- procedureAssistedFertilization_new
 - procedureInfertilityTreatment_new
 
 #### **Profiles Moving to VRCL (Superseded)**
