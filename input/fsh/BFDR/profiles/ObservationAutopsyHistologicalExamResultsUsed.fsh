@@ -1,6 +1,5 @@
 Profile: ObservationAutopsyHistologicalExamResultsUsed
 Parent: Observation
-Id: Observation-autopsy-histological-exam-results-used
 Title: "Observation - Autopsy or Histological Exam Results Used"
 Description: "This profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."
 * code 1..1 MS

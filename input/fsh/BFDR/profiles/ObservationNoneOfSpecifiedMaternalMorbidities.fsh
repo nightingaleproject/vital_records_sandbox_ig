@@ -1,6 +1,5 @@
 Profile: ObservationNoneOfSpecifiedMaternalMorbidities
 Parent: Observation
-Id: Observation-none-of-specified-maternal-morbidities
 Title: "Observation - None Of Specified Maternal Morbidities"
 Description: "This profile indicates that none of the specified maternal morbidities were present."
 * code = $loinc#73781-7

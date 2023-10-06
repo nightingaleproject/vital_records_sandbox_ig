@@ -1,5 +1,6 @@
 Instance: observation-race-james-quinn
-InstanceOf: Observation
+InstanceOf: ObservationRaceVitalRecords
+// InstanceOf: Observation
 Title: "Observation - Race - Vital Records - James Quinn"
 Description: "Observation - Race - Vital Records: James Quinn example"
 Usage: #example

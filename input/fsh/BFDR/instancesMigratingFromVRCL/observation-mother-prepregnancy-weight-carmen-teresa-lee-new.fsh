@@ -7,7 +7,6 @@ Usage: #example
   //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight-vr"
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"
-  * text = "Vital Signs"
 * code = $loinc#56077-1 "Body weight --pre current pregnancy"
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
 * effectiveDateTime = "2019-12-02"

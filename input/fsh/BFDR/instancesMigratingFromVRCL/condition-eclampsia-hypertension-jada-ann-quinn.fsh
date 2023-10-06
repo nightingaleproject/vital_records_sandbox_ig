@@ -1,5 +1,5 @@
-Instance: condition-eclampsia-hypertension-jada-ann-quinn-common
-InstanceOf: ConditionEclampsiaHypertensionVitalRecords
+Instance: condition-eclampsia-hypertension-jada-ann-quinn
+InstanceOf: ConditionEclampsiaHypertensionNew
 Title: "Condition - Eclampsia Hypertension - Jada Ann Quinn"
 Description: "Condition - Eclampsia Hypertension: Jada Ann Quinn example"
 Usage: #example
@@ -11,7 +11,5 @@ Usage: #example
 * category = $condition-category#problem-list-item
 * code = $sct#15938005 "Eclampsia (disorder)"
   * text = "Eclampsia (disorder)"
-* subject
-  * reference = "Patient/patient-mother-jada-ann-quinn-common"
-  * display = "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * onsetDateTime = "2018-12-12"

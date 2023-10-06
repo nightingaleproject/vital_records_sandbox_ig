@@ -1,6 +1,5 @@
 Profile: ConditionPrepregnancyHypertensionNew
 Parent: USCoreConditionProblemsHealthConcernsProfile
-Id: Condition-prepregnancy-hypertension-vr
 Title: "Condition - Prepregnancy Hypertension Vital Records"
 Description: "This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy hypertension."
 * ^meta.versionId = "2"

@@ -1,5 +1,5 @@
-Instance: observation-previous-cesarean-jada-ann-quinn
-InstanceOf: ObservationPreviousCesareanNew
+Instance: observation-previous-cesarean-jada-ann-quinn-common
+InstanceOf: ObservationPreviousCesareanVitalRecords
 Title: "Observation - Previous Cesarean - Jada Ann Quinn"
 Description: "Observation - Previous Cesarean: Jada Ann Quinn example"
 Usage: #example

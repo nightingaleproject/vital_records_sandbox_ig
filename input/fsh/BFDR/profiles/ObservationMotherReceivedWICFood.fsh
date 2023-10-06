@@ -1,6 +1,5 @@
 Profile: ObservationMotherReceivedWICFood
 Parent: Observation
-Id: Observation-mother-received-wic-food
 Title: "Observation - Mother Recieved WIC Food"
 Description: "This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."
 * code 1..1 MS

@@ -1,6 +1,5 @@
 Profile: ObservationHistologicalPlacentalExamPerformed
 Parent: Observation
-Id: Observation-histological-placental-exam-performed
 Title: "Observation - Histological Placental Exam Performed"
 Description: "This profile represents whether or not a histological placental examination was performed."
 * code 1..1 MS

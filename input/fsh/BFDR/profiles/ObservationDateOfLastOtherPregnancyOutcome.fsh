@@ -1,6 +1,5 @@
 Profile: ObservationDateOfLastOtherPregnancyOutcome
 Parent: Observation
-Id: Observation-date-of-last-other-pregnancy-outcome
 Title: "Observation - Date of Last Other Pregnancy Outcome"
 Description: "This profile represents the date of the mother's last other pregnancy outcome (includes pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies) (do not include this birth)."
 * code 1..1 MS

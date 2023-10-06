@@ -1,6 +1,5 @@
 Profile: ObservationEditFlagPlurality
 Parent: Observation
-Id: Observation-edit-flag-plurality
 Title: "Observation - Edit Flag Plurality"
 Description: "This profile indicates whether the original plurality data provided passed validation checks."
 * code 1..1 MS

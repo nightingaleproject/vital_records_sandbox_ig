@@ -1,6 +1,5 @@
 Profile: ProcedureFinalRouteMethodDelivery
 Parent: USCoreProcedureProfile
-Id: Procedure-final-route-method-delivery
 Title: "Procedure - Final Route and Method of Delivery"
 Description: "This profile represents the final route and method of delivery."
 * code from PHVS_DeliveryRoutes_NCHS (required)
