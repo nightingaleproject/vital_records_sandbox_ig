@@ -282,7 +282,7 @@ groups:
       - ObservationNumberOtherPregnancyOutcomesNew
       - ObservationNumberPrenatalVisitsNew
       - ObservationNumberPreviousCesareansNew
-      - ObservationPregnancyRiskFactorNew
+      #- ObservationPregnancyRiskFactorNew
       #- PatientDecedentFetusNew
       #- PatientMotherNew
 
