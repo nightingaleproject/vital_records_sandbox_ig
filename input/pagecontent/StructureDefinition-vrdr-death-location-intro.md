@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 2 | State, U.S. Territory or Canadian Province of Death - code | DSTATE | address.state or address.state.extension[nationalReportingJurisdictionId ] |codeable |[StatesTerritoriesAndProvincesVS] in state field or [JurisdictionVS] in extension |
 | Mortality | 32 | County of Death Occurrence | COD | address.district.extension[ districtCode ] |integer |see [CountyCodes] |

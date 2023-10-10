@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 176 | County of Injury - literal | COUNTYTEXT_I | address.district |string |- |
 | Mortality | 177 | County of Injury code | COUNTYCODE_I | address.district.extension[ districtCode].value |integer |see [CountyCodes] |

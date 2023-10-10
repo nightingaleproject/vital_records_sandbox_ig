@@ -12,7 +12,7 @@ includes the values used by MDI, but is bound [extensibly](http://hl7.org/fhir/R
 while remaining in full conformance with the VRDR IG.
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 1 | Date of Death--Year | DOD_YR | value |dateTime |Required for processing |
 | Mortality | 31 | Place of Death | DPLACE | component[placeOfDeath].value |codeable |[PlaceOfDeathVS] |

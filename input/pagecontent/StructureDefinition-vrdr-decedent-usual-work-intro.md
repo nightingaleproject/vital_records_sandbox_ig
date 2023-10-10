@@ -8,7 +8,7 @@ Implementors are free to use the coded fields with the defined valuesets for int
   references in this IG.  For NCHS provided coded values the specific vocabulary used will depend on the death year.
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 84 | Occupation -- Literal  | OCCUP | value.text |string(40) |- |
 | Mortality | 86 | Industry -- Literal  | INDUST | component [ odh-UsualIndustry	].value.text |string(40) |- |

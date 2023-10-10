@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 206 | Funeral Facility Name | FUNFACNAME | name |string |- |
 | Mortality | 207 | Funeral Facility - Street number | FUNFACSTNUM | address.extension[stnum] |string |- |

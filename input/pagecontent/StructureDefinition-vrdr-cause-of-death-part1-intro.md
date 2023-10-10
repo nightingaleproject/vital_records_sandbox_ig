@@ -1,7 +1,7 @@
 The [Certifier] is optionally referenced from this profile (performer).
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 185 | Cause of Death Part I Line a | COD1A | value.text,   component[lineNumber] = 1 |string(120) |- |
 | Mortality | 186 | Cause of Death Part I Interval, Line a | INTERVAL1A | component[interval].value, component[lineNumber] = 1 |string(20) |- |

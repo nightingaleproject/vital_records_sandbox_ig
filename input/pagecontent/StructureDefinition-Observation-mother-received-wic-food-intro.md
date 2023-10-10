@@ -7,8 +7,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 141 | Did Mother get WIC Food for Herself? | WIC | value |codeable |[PHVS_YesNoUnknown_CDC] |
-| Fetal Death | 95 | Did Mother get WIC Food for Herself? | WIC | value |codeable |[PHVS_YesNoUnknown_CDC] |
+| Natality | 141 | Did Mother get WIC Food for Herself? | WIC | value |codeable |[ValueSetYesNoUnknownVitalRecords] |
+| Fetal Death | 95 | Did Mother get WIC Food for Herself? | WIC | value |codeable |[ValueSetYesNoUnknownVitalRecords] |
 {: .grid }

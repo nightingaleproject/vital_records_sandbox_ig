@@ -7,14 +7,14 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 149 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN | value, code=64794-1 |integer | |
-| Natality | 150 | Number of Cigarettes Smoked in 1st 3 months | CIGFN | value, code=87298-6 |integer | |
-| Natality | 151 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN | value, code=87299-4 |integer | |
-| Natality | 152 | Number of Cigarettes Smoked in  third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN | value, code=64795-8 |integer | |
-| Fetal Death | 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN | value, code=64794-1 |integer | |
-| Fetal Death | 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN | value, code=87298-6 |integer | |
-| Fetal Death | 105 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN | value, code=87299-4 |integer | |
-| Fetal Death | 106 | Number of Cigarettes Smoked in third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN | value, code=64795-8 |integer | |
+| Natality | 149 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN | value, code=64794-1 (In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day) |integer | |
+| Natality | 150 | Number of Cigarettes Smoked in 1st 3 months | CIGFN | value, code=87298-6 (Cigarettes smoked per day by Mother--1st trimester) |integer | |
+| Natality | 151 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN | value, code=87299-4 (Cigarettes smoked per day by Mother--2nd trimester) |integer | |
+| Natality | 152 | Number of Cigarettes Smoked in  third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN | value, code=64795-8 (In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day) |integer | |
+| Fetal Death | 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN | value, code=64794-1 (In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day) |integer | |
+| Fetal Death | 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN | value, code=87298-6 (Cigarettes smoked per day by Mother--1st trimester) |integer | |
+| Fetal Death | 105 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN | value, code=87299-4 (Cigarettes smoked per day by Mother--2nd trimester) |integer | |
+| Fetal Death | 106 | Number of Cigarettes Smoked in third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN | value, code=64795-8 (In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day) |integer | |
 {: .grid }

@@ -8,7 +8,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 143 | Previous Live Births Now Dead | PLBD | value |integer | |
 | Fetal Death | 97 | Previous Live Births Now Dead | PLBD | value |integer | |

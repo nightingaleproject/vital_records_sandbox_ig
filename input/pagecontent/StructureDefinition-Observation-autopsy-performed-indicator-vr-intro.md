@@ -5,7 +5,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Fetal Death | 148 | Was an Autopsy Performed? | AUTOP | value |codeable |[PHVS_AutopsyExamination_NCHS] |
+| Fetal Death | 148 | Was an Autopsy Performed? | AUTOP | value |codeable |[ValueSetYesNoUnknownNotApplicableVitalRecords] |
 {: .grid }

@@ -20,7 +20,7 @@ The DecedentAge profile of Observation records the decedents age at time of deat
   The Decedent Age profile includes:
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 16 | Decedent's Age--Type | AGETYPE | valueQuantity.code |codeable |[UnitsOfAgeVS] |
 | Mortality | 17 | Decedent's Age--Units | AGE  | valueQuantity.value |decimal |- |

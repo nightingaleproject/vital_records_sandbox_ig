@@ -7,7 +7,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 165 | Risk Factors--Previous Cesarean | PCES |  |na |See [Note on missing data] |
 | Fetal Death | 118 | Risk Factors--Previous Cesarean | PCES |  |na |See [Note on missing data] |

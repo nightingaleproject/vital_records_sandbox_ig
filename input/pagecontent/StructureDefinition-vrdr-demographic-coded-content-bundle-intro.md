@@ -7,7 +7,7 @@
     * Input Race and Ethnicity - [InputRaceAndEthnicity]
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 3 | Certificate Number | FILENO | identifier.extension[ certificateNumber].value |string(6) |- |
 | Mortality | 5 | Auxiliary State file number | AUXNO | identifier.extension[ auxiliaryStateIdentifier1 ].value |string(12) |- |

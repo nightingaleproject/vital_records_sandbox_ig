@@ -9,10 +9,12 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 32 | Mother's Education | MEDUC | value, focus[ PatientMotherVitalRecords ] |codeable |[EducationLevelVS] |
+| Natality | 32 | Mother's Education | MEDUC | value,  
+focus[ PatientMotherVitalRecords ] |codeable |[EducationLevelVS] |
 | Natality | 78 | Father's Education | FEDUC | value, focus[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[EducationLevelVS] |
-| Fetal Death | 32 | Mother's Education | MEDUC | value, focus[ PatientMotherVitalRecords ] |codeable |[EducationLevelVS] |
+| Fetal Death | 32 | Mother's Education | MEDUC | value, 
+focus[ PatientMotherVitalRecords ] |codeable |[EducationLevelVS] |
 | Fetal Death | 283 | Father's Education | FEDUC | value, focus[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[EducationLevelVS] |
 {: .grid }

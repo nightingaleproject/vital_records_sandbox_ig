@@ -8,8 +8,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 205 | Apgar Score at 5 Minutes | APGAR5 | value, code = 9274-2 |integer |[ValueSetApgarTimingVitalRecords] |
-| Natality | 206 | Apgar Score at 10 Minutes | APGAR10 | value, code = 9271-8 |integer |[ValueSetApgarTimingVitalRecords] |
+| Natality | 205 | Apgar Score at 5 Minutes | APGAR5 | value, code = 9274-2 (5 minute Apgar Score) |integer |[ValueSetApgarTimingVitalRecords] |
+| Natality | 206 | Apgar Score at 10 Minutes | APGAR10 | value, code = 9271-8 (10 minute Apgar Score) |integer |[ValueSetApgarTimingVitalRecords] |
 {: .grid }

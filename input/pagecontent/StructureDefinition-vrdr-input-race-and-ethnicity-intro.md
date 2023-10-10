@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | component[ HispanicMexican].valueCoding, subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
 | Natality | 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2 | component[ HispanicPuertoRican].valueCoding, subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |

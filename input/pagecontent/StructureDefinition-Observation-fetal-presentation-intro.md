@@ -8,7 +8,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 192 | Method of Delivery--Fetal Presentation | PRES | value |codeable |[ValueSetFetalPresentations] |
 | Fetal Death | 133 | Method of Delivery--Fetal Presentation | PRES | value |codeable |[ValueSetFetalPresentations] |

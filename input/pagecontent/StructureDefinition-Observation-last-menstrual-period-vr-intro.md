@@ -7,7 +7,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 154 | Date Last Normal Menses Began--Year | DLMP_YR | value |dateTime |See [PartialDatesAndTimes] |
 | Natality | 155 | Date Last Normal Menses Began--Month | DLMP_MO | value |dateTime |See [PartialDatesAndTimes] |

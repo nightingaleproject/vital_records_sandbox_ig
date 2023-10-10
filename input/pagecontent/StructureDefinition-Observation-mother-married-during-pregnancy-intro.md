@@ -6,7 +6,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 30 | Mother Married?-- At Conception, at Birth or any Time in Between | MARN | value |codeable |[PHVS_YesNoUnknown_CDC] |
+| Natality | 30 | Mother Married?-- At Conception, at Birth or any Time in Between | MARN | value |codeable |[ValueSetYesNoUnknownVitalRecords] |
 {: .grid }

@@ -14,9 +14,9 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 125 | Mother Transferred? | TRAN | hospitalization.admitSource = "hosp-trans" |codeable |[http://hl7.org/fhir/ValueSet/encounter-admit-source], See [Note on missing data]. Need to discuss - clarity needed for values other than 'hosp-trans' |
+| Natality | 125 | Mother Transferred? | TRAN | hospitalization.admitSource = "hosp-trans" |codeable |[HL7EncounterAdmitSourceVS](http://hl7.org/fhir/ValueSet/encounter-admit-source), See [Note on missing data]. Need to discuss - clarity needed for values other than 'hosp-trans' |
 | Natality | 302 | Facility Mother Moved From (if transferred) | HOSPFROM | hospitalization.origin.name |string | |
 | Fetal Death | 10 | County of Delivery | CNTYO | location.location.address.district.extension[countyCode] |integer |See [CountyCodes] |
 | Fetal Death | 11 | Place Where Delivery Occurred | DPLACE | location.physicalType |codeable |[ValueSetBirthDeliveryOccurred] |

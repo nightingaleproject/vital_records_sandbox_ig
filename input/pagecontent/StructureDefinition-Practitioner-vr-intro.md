@@ -23,7 +23,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 124 | Attendant Title | ATTEND | qualification.code |codeable |[PHVS_BirthAttendantTitles_NCHS] |
 | Natality | 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | qualification.code.text |string | |
@@ -36,5 +36,5 @@ This profile is mapped to:
 | Fetal Death | 78 | Attendant | ATTEND | qualification.code |codeable |[PHVS_BirthAttendantTitles_NCHS] |
 | Fetal Death | 340 | Attendant's Name | ATTEND_NAME | name.text |string | |
 | Fetal Death | 341 | Attendant's NPI | ATTEND_NPI | identifier:NPI |string | |
-| Fetal Death | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | qualification.code.text |string | |
+| Fetal Death | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | qualification.code.text |string |.text should contain description |
 {: .grid }

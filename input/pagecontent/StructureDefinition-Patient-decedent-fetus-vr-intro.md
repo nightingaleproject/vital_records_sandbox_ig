@@ -19,12 +19,12 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Fetal Death | 1 | Date of Delivery (Fetus)--Year | FDOD_YR | birthDate | | |
 | Fetal Death | 2 | State, U.S. Territory or Canadian Province of Place of Delivery - code | DSTATE | extension[patient-birthPlace].value[x].state |codeable |[StatesTerritoriesAndProvincesVS]  |
 | Fetal Death | 6 | Time of Delivery | TD | birthDate.extension[patient-birthTime] | |See [PartialDatesAndTimes] |
-| Fetal Death | 7 | Sex | FSEX | extension[us-core-birthsex].value |codeable |[http://hl7.org/fhir/us/core/ValueSet/birthsex] |
+| Fetal Death | 7 | Sex | FSEX | extension[us-core-birthsex].value |codeable |[USCoreBirthSexVS](http://hl7.org/fhir/us/core/ValueSet/birthsex) |
 | Fetal Death | 8 | Date of Delivery (Fetus)--Month | FDOD_MO | birthDate | | |
 | Fetal Death | 9 | Date of Delivery (Fetus)--Day | FDOD_DY | birthDate | | |
 | Fetal Death | 152 | Set Order | SORD | multipleBirth[x] |integer | |

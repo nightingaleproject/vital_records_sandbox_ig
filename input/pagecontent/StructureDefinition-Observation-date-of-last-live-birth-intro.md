@@ -6,7 +6,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 145 | Date of Last Live Birth--Month | MLLB | value |dateTime |See [PartialDatesAndTimes] |
 | Natality | 146 | Date of Last Live Birth--Year | YLLB | value |dateTime |See [PartialDatesAndTimes] |

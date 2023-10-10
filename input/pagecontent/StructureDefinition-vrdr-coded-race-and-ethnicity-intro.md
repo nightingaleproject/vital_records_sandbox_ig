@@ -1,8 +1,8 @@
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 62 | Mother's Race Tabulation Variable 1E | MRACE1E | component[FirstEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable | |
+| Natality | 62 | Mother's Race Tabulation Variable 1E | MRACE1E | component[FirstEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable |[RaceCodeVS] |
 | Natality | 63 | Mother's Race Tabulation Variable 2E | MRACE2E | component[SecondEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable |[RaceCodeVS] |
 | Natality | 64 | Mother's Race Tabulation Variable 3E | MRACE3E | component[ThirdEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable |[RaceCodeVS] |
 | Natality | 65 | Mother's Race Tabulation Variable 4E | MRACE4E | component[FourthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable |[RaceCodeVS] |
@@ -38,7 +38,7 @@
 | Natality | 293 | Mother's Edited Hispanic Origin Code | METHNICE | component[HispanicCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicOriginVS] |
 | Natality | 295 | Father's Hispanic Code for Literal | FETHNIC5C | component[HispanicCodeForLiteral].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[HispanicOriginVS] |
 | Natality | 296 | Father's Edited Hispanic Origin Code | FETHNICE | component[HispanicCode].value, subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[HispanicOriginVS] |
-| Fetal Death | 62 | Mother's Race Tabulation Variable 1E | MRACE1E | component[FirstEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable | |
+| Fetal Death | 62 | Mother's Race Tabulation Variable 1E | MRACE1E | component[FirstEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable |[RaceCodeVS] |
 | Fetal Death | 63 | Mother's Race Tabulation Variable 2E | MRACE2E | component[SecondEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable |[RaceCodeVS] |
 | Fetal Death | 64 | Mother's Race Tabulation Variable 3E | MRACE3E | component[ThirdEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable |[RaceCodeVS] |
 | Fetal Death | 65 | Mother's Race Tabulation Variable 4E | MRACE4E | component[FourthEditedCode].value, subject=Reference[ PatientMotherVitalRecords ] |codeable |[RaceCodeVS] |

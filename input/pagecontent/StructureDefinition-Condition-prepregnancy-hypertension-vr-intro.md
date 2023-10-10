@@ -7,7 +7,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 159 | Risk Factors--Prepregnancy Hypertension  | PHYPE |  |na |See [Note on missing data] |
 | Fetal Death | 112 | Risk Factors--Hypertension Prepregnancy | PHYPE |  |na |See [Note on missing data] |

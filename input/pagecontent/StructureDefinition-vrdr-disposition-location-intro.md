@@ -1,7 +1,7 @@
 Implementors are free to use the name field for the name of the disposition location.
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 202 | State, U.S. Territory or Canadian Province of Disposition - code | DISPSTATECD | address.state |string |[StatesTerritoriesAndProvincesVS] |
 | Mortality | 203 | Disposition State or Territory - Literal | DISPSTATE | address.state (expanded from 2 letter code) |string |See [StateLiterals] |

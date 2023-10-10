@@ -8,7 +8,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 197 | Maternal Morbidity--Ruptured Uterus | RUT |  |na |See [Note on missing data] |
 | Fetal Death | 139 | Maternal Morbidity--Ruptured Uterus | RUT |  |na |See [Note on missing data] |

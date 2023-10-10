@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 91 | Receipt date -- Year | R_YR | parameter[receiptDate].value |date |See [PartialDatesAndTimes] |
 | Mortality | 92 | Receipt date -- Month | R_MO | parameter[receiptDate].value |date |See [PartialDatesAndTimes] |

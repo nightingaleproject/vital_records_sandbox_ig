@@ -3,7 +3,7 @@ The death record submission process does not require an identifier.  As a result
 an identifier.
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 220 | Certifier's First Name | CERTFIRST | name.given , name.use = official |string |- |
 | Mortality | 221 | Certifier's Middle Name | CERTMIDDLE | name.given , name.use = official |string |- |

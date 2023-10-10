@@ -8,7 +8,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 199 | Maternal Morbidity--Admit to Intensive Care | AINT |  |na |See [Note on missing data] |
 | Fetal Death | 141 | Maternal Morbidity--Admit to Intensive Care | AINT |  |na |See [Note on missing data] |

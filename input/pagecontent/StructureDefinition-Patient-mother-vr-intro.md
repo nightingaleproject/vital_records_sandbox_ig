@@ -58,7 +58,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 14 | Date of Birth (Mother)--Year | MDOB_YR | birthDate |date |See [PartialDatesAndTimes] |
 | Natality | 15 | Date of Birth (Mother)--Month | MDOB_MO | birthDate |date |See [PartialDatesAndTimes] |
@@ -69,7 +69,7 @@ This profile is mapped to:
 | Natality | 21 | Residence of Mother--County | COUNTYC | address.district.extension[countyCode] |integer |See [CountyCodes] |
 | Natality | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | address.state |string |[StatesTerritoriesAndProvincesVS] |
 | Natality | 23 | Residence of Mother--Country | COUNTRYC | address.country |string |[ResidenceCountryVS] |
-| Natality | 24 | Residence of Mother--Inside City Limits | LIMITS | address.extension[ withinCityLimitsIndicator ].value |codeable |[PHVS_YesNoUnknown_CDC] |
+| Natality | 24 | Residence of Mother--Inside City Limits | LIMITS | address.extension[ withinCityLimitsIndicator ].value |codeable |[ValueSetYesNoUnknownVitalRecords] |
 | Natality | 254 | Mother's First Name | MOMFNAME | name.given, name.use = official |string | |
 | Natality | 255 | Mother's Middle Name | MOMMIDDL | name.given, name.use = official  |string | |
 | Natality | 256 | Mother's Last Name | MOMLNAME | name.family, name.use = official |string | |
@@ -116,7 +116,7 @@ This profile is mapped to:
 | Fetal Death | 21 | Residence of Mother--County | COUNTYC | address.district.extension[countyCode] |integer |See [CountyCodes] |
 | Fetal Death | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | address.state |string |[StatesTerritoriesAndProvincesVS] |
 | Fetal Death | 23 | Residence of Mother--Country | COUNTRYC | address.country |string |[ResidenceCountryVS] |
-| Fetal Death | 24 | Residence of Mother--Inside City/Town Limits | LIMITS | address.extension[ withinCityLimitsIndicator ].value |codeable |[PHVS_YesNoUnknown_CDC] |
+| Fetal Death | 24 | Residence of Mother--Inside City/Town Limits | LIMITS | address.extension[ withinCityLimitsIndicator ].value |codeable |[ValueSetYesNoUnknownVitalRecords] |
 | Fetal Death | 239 | Mother's Legal First Name | MOMFNAME | name.given, name.use = official |string | |
 | Fetal Death | 240 | Mother's Legal Middle Name | MOMMNAME | name.given, name.use = official  |string | |
 | Fetal Death | 241 | Mother's Legal Last Name | MOMLNAME | name.family, name.use = official |string | |

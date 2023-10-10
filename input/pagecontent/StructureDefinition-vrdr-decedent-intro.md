@@ -5,7 +5,7 @@ The Decedent profile contains basic information about the decedent, including da
   due to lack of a value for gender.
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 7 | Decedent's Legal Name--Given  | GNAME | name.given , name.use = official |string |- |
 | Mortality | 8 | Decedent's Legal Name--Middle | MNAME | name.given , name.use = official (first letter) |string |- |

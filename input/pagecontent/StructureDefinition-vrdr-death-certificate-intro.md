@@ -60,7 +60,7 @@ The replacement status of a submission is now specified as a message parameter a
 The profile includes:
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 6 | Source flag: paper/electronic | MFILED | extension[ filingFormat]  |codeable | [FilingFormatVS] |
 | Mortality | 96 | Date of Registration--Year | DOR_YR | date |dateTime |- |

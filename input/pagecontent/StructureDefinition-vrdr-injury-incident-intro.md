@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 114 | Date of injury--month | DOI_MO | effective |dateTime |See [PartialDatesAndTimes] |
 | Mortality | 115 | Date of injury--day | DOI_DY | effective |dateTime |See [PartialDatesAndTimes] |

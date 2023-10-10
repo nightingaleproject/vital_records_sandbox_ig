@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 144 | Spouse's First Name | SPOUSEF | name.given |string |- |
 | Mortality | 145 | Husband's Surname/Wife's Maiden Last Name | SPOUSEL  | name.family, name.use = 'maiden |string |- |
