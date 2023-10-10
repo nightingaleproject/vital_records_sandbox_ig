@@ -65,7 +65,7 @@ This profile is designed to supplant the similar profiles in VRDR and MDI"
   * value[x] 1..1
     * ^short = "Injury at Work?"
   * value[x] only CodeableConcept
-  * value[x] from $ValueSet-yes-no-unknown-not-applicable (required) //need to consolidate, this uses the VRCL valueset
+  * value[x] from ValueSetYesNoUnknownNotApplicableVitalRecords (required) //need to consolidate, this uses the VRCL valueset
 * component[transportationRole]
   * code = $loinc#69451-3
   * value[x] 1..1

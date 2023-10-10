@@ -37,7 +37,7 @@ Description: "This Observation provides the certified explanation of how the inj
 * component[workInjuryIndicator] ^short = "Injury at Work?"
   * code = $loinc#69444-8
   * value[x] only CodeableConcept
-  * value[x] from $ValueSet-yes-no-unknown-not-applicable (required)
+  * value[x] from ValueSetYesNoUnknownNotApplicableVitalRecords (required)
     * ^short = "Injury at Work?"
 * component[transportationRole]
   * code = $loinc#69451-3
