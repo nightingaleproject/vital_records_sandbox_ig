@@ -10,4 +10,4 @@ Usage: #example
 * focus  = Reference(relatedperson-father-natural-james-brandon-quinn) "RelatedPerson - Father (James Brandon Quinn)"
 * effectiveDateTime = "2019-12-02"
 * performer = Reference(patient-mother-jada-ann-quinn)
-* valueCodeableConcept = $v2-0532#Y "Yes"
+* valueCodeableConcept = $v2-0136#Y "Yes"

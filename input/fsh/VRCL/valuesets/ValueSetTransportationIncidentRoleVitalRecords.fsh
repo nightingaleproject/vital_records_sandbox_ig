@@ -3,7 +3,6 @@ Id: ValueSet-transportation-incident-role-vr
 Title: "ValueSet - Transportation Incident Role Vital Records"
 Description: "Role of the decedent in a transportation incident resulting in a death-related injury."
 * ^experimental = false
-* ^experimental = false
 * insert SNOMEDCopyright
 * SNOMED_CT#236320001 "Vehicle driver"
 * SNOMED_CT#257500003 "Passenger"
