@@ -5,6 +5,10 @@ Description: "This code system contains codes to represent all edit flags"
 * ^caseSensitive = true
 * ^content = #complete
 * ^experimental = false
+* #off "Off"
+* #correctOutOfRange "Queried data correct, out of range"
+* #failedBirthWeightGestationEdit "Queried, failed birthweight/gestation edit"
+
 * #editBypass0 "Edit Passed" 
 * #editBypass1 "Edit Failed, Data Queried, and Verified" 
 * #editBypass2 "Edit Failed, Data Queried, but not Verified" 

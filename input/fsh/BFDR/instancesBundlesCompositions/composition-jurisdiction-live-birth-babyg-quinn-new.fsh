@@ -73,7 +73,7 @@ Usage: #example
 * section[newbornInformation]
   // * title = "Newborn section on the Live Birth Certificate"
   // * code = $loinc#57075-4 "Newborn delivery information"
-  * entry[birthWeight] = Reference(observation-birth-weight-babyg-quinn) "Observation - Birth Weight (Baby G Quinn)"
+  * entry[birthWeight] = Reference(observation-birth-weight-babyg-quinn-w-edit) "Observation - Birth Weight (Baby G Quinn)"
   * entry[gestationalAgeAtDelivery] = Reference(observation-gestational-age-at-delivery-babyg-quinn) "Observation - Gestational Age at Delivery (Baby G Quinn)"
   * entry[APGARScore] = Reference(observation-apgar-score-babyg-quinn-1-min) "Observation - Apgar Score (BabyG Quinn: 1 min)"
   * entry[APGARScore] = Reference(observation-apgar-score-babyg-quinn-5-min) "Observation - Apgar Score (BabyG Quinn: 5 min)"
@@ -101,7 +101,7 @@ Usage: #example
 * section[editFlags]
   // * title = "Edit Flags Section"
   // * code = $loinc#92012-4 "Edit flags section"
-  * entry[editFlagBirthweight] = Reference(observation-edit-birth-weight-babyg-quinn) "Observation - Edit flag birthweight"
+  // * entry[editFlagBirthweight] = Reference(observation-edit-birth-weight-babyg-quinn) "Observation - Edit flag birthweight"
   * entry[editFlagEstimateOfGestation] = Reference(observation-edit-flag-estimate-of-gestation-example) "Observation - Edit flag estimate of gestation"
   * entry[editFlagFathersDateOfBirth] = Reference(observation-edit-flag-fathers-date-of-birth-example) "Observation - Edit flag father's date of birth"
   * entry[editFlagFathersEducation] = Reference(observation-edit-flag-fathers-education-example) "Observation - Edit flag father's education"

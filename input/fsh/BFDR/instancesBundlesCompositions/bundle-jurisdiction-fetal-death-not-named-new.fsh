@@ -98,7 +98,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Procedure/procedure-final-route-method-delivery-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-21
-* insert addentry(ObservationBirthWeightNew, observation-birth-weight-not-named)
+* insert addentry(ObservationBirthWeightNew, observation-birth-weight-not-named-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-birth-weight-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-22
@@ -143,7 +143,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-31
-* insert addentry(ObservationEditFlagBirthweight, observation-edit-flag-delivery-wgt-not-named)
+// * insert addentry(ObservationEditFlagBirthweight, observation-edit-flag-delivery-wgt-not-named)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-delivery-wgt-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-32

@@ -142,7 +142,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Condition/condition-ruptured-uterus-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-33
-* insert addentry(ObservationBirthWeightNew, observation-birth-weight-babyg-quinn)
+* insert addentry(ObservationBirthWeightNew, observation-birth-weight-babyg-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-birth-weight-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-34
@@ -205,7 +205,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-james-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-48
-* insert addentry(ObservationEditFlagBirthweight, observation-edit-birth-weight-babyg-quinn)
+// * insert addentry(ObservationEditFlagBirthweight, observation-edit-birth-weight-babyg-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-birth-weight-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-49

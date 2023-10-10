@@ -56,7 +56,7 @@ Usage: #example
 * section[fetus]
   // * title = "Fetal delivery information section on the Fetal Death Report"
   // * code = $loinc#76400-1 "Fetal delivery information Document [US Standard Report of Fetal Death]"
-  * entry[deliveryWeight] = Reference(observation-birth-weight-not-named) "Observation - Birth Weight (Fetus Not Named)"
+  * entry[deliveryWeight] = Reference(observation-birth-weight-not-named-edit) "Observation - Birth Weight (Fetus Not Named)"
   * entry[gestationalAgeAtDelivery] = Reference(observation-gestational-age-at-delivery-not-named) "Observation - Gestational Age at Delivery (Fetus Not Named)"
   * entry[causeOfFetalDeath] = Reference(condition-fetal-death-cause-or-condition-not-named) "Condition - Fetal Death Cause or Condition (Fetus Not Named)"
   * entry[otherCauseOfDeath] = Reference(condition-fetal-death-other-significant-cause-not-named) "Example of Condition-fetal-death-other-significant-cause profile (Fetus Not Named)"
@@ -76,7 +76,7 @@ Usage: #example
 * section[editFlags]
   // * title = "Edit Flags Section"
   // * code = $loinc#92012-4 "Edit flags section"
-  * entry[editFlagWeightOfFetus] = Reference(observation-edit-flag-delivery-wgt-not-named) "Observation - Edit flag birthweight"
+  // * entry[editFlagWeightOfFetus] = Reference(observation-edit-flag-delivery-wgt-not-named) "Observation - Edit flag birthweight"
   * entry[editFlagEstimateOfGestation] = Reference(observation-edit-flag-est-gestation-not-named) "Observation - Edit flag estimate of gestation"
   * entry[editFlagMothersDateOfBirth] = Reference(observation-edit-flag-mothers-dob-not-named) "Observation - Edit flag mother's date of birth"
   * entry[editFlagMothersEducation] = Reference(observation-edit-flag-mothers-education-not-named) "Observation - Edit flag mother's education"
