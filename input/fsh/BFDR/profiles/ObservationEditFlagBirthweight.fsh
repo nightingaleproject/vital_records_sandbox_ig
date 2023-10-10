@@ -1,6 +1,5 @@
 Profile: ObservationEditFlagBirthweight
 Parent: Observation
-Id: Observation-edit-flag-birthweight
 Title: "Observation - Edit Flag Birthweight"
 Description: "This profile indicates whether the original birthweight data provided passed validation checks."
 * code 1..1 MS

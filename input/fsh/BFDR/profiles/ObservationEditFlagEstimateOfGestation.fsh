@@ -1,6 +1,5 @@
 Profile: ObservationEditFlagEstimateOfGestation
 Parent: Observation
-Id: Observation-edit-flag-estimate-of-gestation
 Title: "Observation - Edit Flag Estimate of Gestation"
 Description: "This profile indicates whether the original estimate of gestation data provided passed validation checks."
 * code 1..1 MS

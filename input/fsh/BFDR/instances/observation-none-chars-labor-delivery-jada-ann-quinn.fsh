@@ -8,6 +8,7 @@ Usage: #example
   * text = "Characteristics of labor and delivery"
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * focus = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* issued = "2019-02-12T09:34:30-07:00"
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueCodeableConcept = $sct#260413007 "None"
   * text = "None"

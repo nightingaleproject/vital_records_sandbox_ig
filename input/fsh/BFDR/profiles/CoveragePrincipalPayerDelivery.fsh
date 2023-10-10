@@ -1,6 +1,5 @@
 Profile: CoveragePrincipalPayerDelivery
 Parent: Coverage
-Id: Coverage-principal-payer-for-delivery
 Title: "Coverage - Principal Payer for Delivery"
 Description: "This Coverage profile represents the principal payer for this delivery."
 * type 1.. MS

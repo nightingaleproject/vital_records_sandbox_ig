@@ -1,6 +1,5 @@
 Profile: ObservationFetalPresentation
 Parent: Observation
-Id: Observation-fetal-presentation
 Title: "Observation - Fetal Presentation at Birth/Delivery"
 Description: "This Observation profile represents the fetal presentation (orientation within the mother's womb) of a fetus prior to delivery/birth."
 * code 1..1 MS

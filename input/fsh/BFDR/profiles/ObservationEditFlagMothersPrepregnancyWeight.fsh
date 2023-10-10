@@ -1,6 +1,5 @@
 Profile: ObservationEditFlagMothersPrepregnancyWeight
 Parent: Observation
-Id: Observation-edit-flag-mothers-prepregnancy-weight
 Title: "Observation - Edit Flag Mother's Prepregnancy Weight"
 Description: "This profile indicates whether the original mother's prepregnancy weight data provided passed validation checks."
 * code 1..1 MS

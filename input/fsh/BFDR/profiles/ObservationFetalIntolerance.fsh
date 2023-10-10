@@ -1,6 +1,5 @@
 Profile: ObservationFetalIntolerance
 Parent: Observation
-Id: Observation-fetal-intolerance
 Title: "Observation - Fetal Intolerance"
 Description: "This Observation profile indicates a characteristic of labor of fetal intolerance."
 * code = $loinc#73813-8

@@ -1,6 +1,5 @@
 Profile: ObservationICUAdmission
 Parent: Observation
-Id: Observation-icu-admission
 Title: "Observation - ICU Admission"
 Description: "This profile indicates that the maternal morbidity of an admission to the ICU was present. NOTE: this may be better modeled as an Encounter."
 * code = $loinc#73781-7

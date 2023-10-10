@@ -9,6 +9,8 @@ Usage: #example
 * status = #final
 * code = $loinc#87303-4 "Mother WIC food recipient"
   * text = "Did mother get WIC food for herself during this pregnancy?"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* focus = Reference(patient-child-babyg-quinn) "BabyG Quinn" 
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueCodeableConcept = $v2-0532#Y "Yes"

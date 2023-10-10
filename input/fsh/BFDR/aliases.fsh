@@ -12,6 +12,7 @@ Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
 Alias: $sopt = https://nahdo.org/sopt
+Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $v2-0136 = http://terminology.hl7.org/CodeSystem/v2-0136
 Alias: $v2-0005 =  urn:oid:2.16.840.1.113883.6.238  //RaceAndEthnicityCDC was http://terminology.hl7.org/CodeSystem/v2-0005
 Alias: $v3-Ethnicity = http://terminology.hl7.org/CodeSystem/v3-Ethnicity

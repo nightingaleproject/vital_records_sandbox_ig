@@ -1,6 +1,5 @@
 Profile: ObservationInfantBreastfedAtDischarge
 Parent: Observation
-Id: Observation-infant-breastfed-at-discharge
 Title: "Observation - Infant Breastfed at Discharge"
 Description: "This profile represents whether or not the infant was being breastfed at discharge."
 * code 1..1 MS

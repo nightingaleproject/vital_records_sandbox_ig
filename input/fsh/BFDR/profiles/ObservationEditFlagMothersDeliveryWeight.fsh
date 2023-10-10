@@ -1,6 +1,5 @@
 Profile: ObservationEditFlagMothersDeliveryWeight
 Parent: Observation
-Id: Observation-edit-flag-mothers-delivery-weight
 Title: "Observation - Edit Flag Mother's Delivery Weight"
 Description: "This profile indicates whether the original mother's delivery weight data provided passed validation checks."
 * code 1..1 MS

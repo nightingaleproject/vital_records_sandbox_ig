@@ -56,10 +56,6 @@ Usage: #example
   * entry[autopsyPerformed] = Reference(observation-autopsy-performed-not-named) "Example of Observation-autopsy-performed profile (Fetus Not Named)"
   * entry[histologicalExamPerformed] = Reference(observation-histological-placental-exam-performed-not-named) "Observation - Histological Placental Exam Performed (Fetus Not Named)"
   * entry[autopsyOrHistologicalExamUsed] = Reference(observation-autopsy-histological-exam-results-used-not-named) "Observation - Autopsy or Histological Exam Results Used"
-  // why plurality and not numberLiveBirthsThisDelivery / numberFetalDeathsThisDelivery? - updating
-  // * entry[+]
-  //   * reference = "Observation/observation-plurality-carmen-teresa-lee"
-  //   * display = "Observation - Plurality (Carmen Teresa Lee)"
   * entry[numberFetalDeathsThisDelivery] = Reference(observation-number-deaths-this-delivery-carmen-teresa-lee) "Observation - Number of Fetal Deaths This Delivery (Carmen Teresa Lee)"
 * section[motherInformation]
   // * title = "Mother Administrative Section on the Fetal Death Report"
@@ -67,7 +63,7 @@ Usage: #example
   * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
   * entry[mothersEducation] = Reference(observation-parent-education-level-carmen-teresa-lee) "Observation - Parent Education Level (Carmen Teresa Lee)"
 * section[patientsQuestionnaireResponse]
-  // * title = "Patient's QuestionnaireResponse Section"
+  * title = "Patient's QuestionnaireResponse Section"
   // * code = $loinc#74465-6 "Questionnaire response Document"
   * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
   * entry = Reference(QuestionnaireResponse-patients-fetal-death-carmen-lee) "QuestionnaireResponse - Patient's Worksheet for Fetal Death Report"
