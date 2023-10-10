@@ -100,7 +100,7 @@ Usage: #example
   * prefix = "4"
   * text = "Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?"
   * type = #choice
-  * answerValueSet = "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+  * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)  //"http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
 * item[+]
   * linkId = "mother-mail"
   * prefix = "5"
@@ -291,7 +291,7 @@ Usage: #example
   * text = "Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"
   * type = #choice
   * repeats = false
-  * answerValueSet = "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+  * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)  //"http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
 * item[+]
   * linkId = "mothers-height"
   * prefix = "15"
