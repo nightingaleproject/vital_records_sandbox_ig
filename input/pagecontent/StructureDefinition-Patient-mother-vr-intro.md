@@ -70,14 +70,14 @@ This profile is mapped to:
 | Natality | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | address.state |string |[StatesTerritoriesAndProvincesVS] |
 | Natality | 23 | Residence of Mother--Country | COUNTRYC | address.country |string |[ResidenceCountryVS] |
 | Natality | 24 | Residence of Mother--Inside City Limits | LIMITS | address.extension[ withinCityLimitsIndicator ].value |codeable |[ValueSetYesNoUnknownVitalRecords] |
-| Natality | 254 | Mother's First Name | MOMFNAME | name.given, name.use = official |string | |
-| Natality | 255 | Mother's Middle Name | MOMMIDDL | name.given, name.use = official  |string | |
-| Natality | 256 | Mother's Last Name | MOMLNAME | name.family, name.use = official |string | |
-| Natality | 257 | Mother's Surname Suffix  | MOMSUFFX | name.suffix, name.use = official  |string | |
-| Natality | 258 | Mother's First Maiden Name | MOMFMNME | name.given, name.use = maiden |string | |
-| Natality | 259 | Mother's Middle Maiden Name | MOMMMID | name.given, name.use = maiden |string | |
-| Natality | 260 | Mother's Maiden Surname | MOMMAIDN | name.family, name.use = maiden |string | |
-| Natality | 261 | Mother's Maiden Surname Suffix | MOMMSUFX | name.suffix, name.use = maiden |string | |
+| Natality | 254 | Mother's First Name | MOMFNAME | name.given, <br />name.use = official |string | |
+| Natality | 255 | Mother's Middle Name | MOMMIDDL | name.given, <br />name.use = official  |string | |
+| Natality | 256 | Mother's Last Name | MOMLNAME | name.family, <br />name.use = official |string | |
+| Natality | 257 | Mother's Surname Suffix  | MOMSUFFX | name.suffix, <br />name.use = official  |string | |
+| Natality | 258 | Mother's First Maiden Name | MOMFMNME | name.given, <br />name.use = maiden |string | |
+| Natality | 259 | Mother's Middle Maiden Name | MOMMMID | name.given, <br />name.use = maiden |string | |
+| Natality | 260 | Mother's Maiden Surname | MOMMAIDN | name.family, <br />name.use = maiden |string | |
+| Natality | 261 | Mother's Maiden Surname Suffix | MOMMSUFX | name.suffix, <br />name.use = maiden |string | |
 | Natality | 262 | Residence Street Number | STNUM | address.extension[stnum] |string | |
 | Natality | 263 | Residence Pre Directional | PREDIR | address.extension[predir] |string | |
 | Natality | 264 | Residence Street name | STNAME | address.extension[stname] |string | |
@@ -117,14 +117,14 @@ This profile is mapped to:
 | Fetal Death | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | address.state |string |[StatesTerritoriesAndProvincesVS] |
 | Fetal Death | 23 | Residence of Mother--Country | COUNTRYC | address.country |string |[ResidenceCountryVS] |
 | Fetal Death | 24 | Residence of Mother--Inside City/Town Limits | LIMITS | address.extension[ withinCityLimitsIndicator ].value |codeable |[ValueSetYesNoUnknownVitalRecords] |
-| Fetal Death | 239 | Mother's Legal First Name | MOMFNAME | name.given, name.use = official |string | |
-| Fetal Death | 240 | Mother's Legal Middle Name | MOMMNAME | name.given, name.use = official  |string | |
-| Fetal Death | 241 | Mother's Legal Last Name | MOMLNAME | name.family, name.use = official |string | |
-| Fetal Death | 242 | Mother's Legal Surname Suffix | MOMSUFFIX | name.suffix, name.use = official  |string | |
-| Fetal Death | 243 | Mother's First Maiden Name | MOMFMNME | name.given, name.use = maiden |string | |
-| Fetal Death | 244 | Mother's Middle Maiden Name | MOMMMID | name.given, name.use = maiden |string | |
-| Fetal Death | 245 | Mother's Last Maiden Name | MOMMAIDN | name.family, name.use = maiden |string | |
-| Fetal Death | 246 | Mother's Maiden Surname Suffix | MOMMSUFFIX | name.suffix, name.use = maiden |string | |
+| Fetal Death | 239 | Mother's Legal First Name | MOMFNAME | name.given, <br />name.use = official |string | |
+| Fetal Death | 240 | Mother's Legal Middle Name | MOMMNAME | name.given, <br />name.use = official  |string | |
+| Fetal Death | 241 | Mother's Legal Last Name | MOMLNAME | name.family, <br />name.use = official |string | |
+| Fetal Death | 242 | Mother's Legal Surname Suffix | MOMSUFFIX | name.suffix, <br />name.use = official  |string | |
+| Fetal Death | 243 | Mother's First Maiden Name | MOMFMNME | name.given, <br />name.use = maiden |string | |
+| Fetal Death | 244 | Mother's Middle Maiden Name | MOMMMID | name.given, <br />name.use = maiden |string | |
+| Fetal Death | 245 | Mother's Last Maiden Name | MOMMAIDN | name.family, <br />name.use = maiden |string | |
+| Fetal Death | 246 | Mother's Maiden Surname Suffix | MOMMSUFFIX | name.suffix, <br />name.use = maiden |string | |
 | Fetal Death | 247 | Mother's Residence Street number | STNUM | address.extension[stnum] |string | |
 | Fetal Death | 248 | Mother's Residence Pre Directional | PREDIR | address.extension[predir] |string | |
 | Fetal Death | 249 | Mother's Residence Street name | STNAME | address.extension[stname] |string | |

@@ -9,6 +9,6 @@ Description: "This profile represents whether or not a histological placental ex
 * subject only Reference(PatientDecedentFetusVitalRecordsNew)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
-* value[x] from PHVS_HistologicalPlacentalExamination_NCHS (required)
+* value[x] from ValueSetHistologicalPlacentalExamination (required)
   * ^short = "The value set contains the list of values used to indicate whether or not a histological placental examination was performed."
   * ^binding.description = "Histological Placental Examination (NCHS)"

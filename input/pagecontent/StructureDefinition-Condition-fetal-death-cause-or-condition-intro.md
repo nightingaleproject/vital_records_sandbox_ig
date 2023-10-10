@@ -19,8 +19,8 @@ This profile is mapped to:
 | Fetal Death | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8 | code=PHC1301, code.text |string |.text should contain description |
 | Fetal Death | 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9 | code=PHC1298, code.text |string |.text should contain description |
 | Fetal Death | 189 | Initiating cause/condition - Other obstetrical or pregnancy complications literal | COD18a10 | code=PHC1299, code.text |string |.text should contain description |
-| Fetal Death | 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11 | code=702709008 (Fetal Anomaly (Specify)), code.text |string |.text should contain description |
-| Fetal Death | 191 | Initiating cause/condition - Fetal injury literal | COD18a12 | code=277489001 (Fetal trauma (disorder)), code.text |string | |
-| Fetal Death | 192 | Initiating cause/condition - Fetal infection literal | COD18a13 | code=128270001 (Infectious disorder of the fetus (disorder)), code.text |string | |
-| Fetal Death | 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14 | code=PHC1300, code.text |string | |
+| Fetal Death | 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11 | code=702709008 (Fetal Anomaly (Specify)), <br />code.text |string |.text should contain description |
+| Fetal Death | 191 | Initiating cause/condition - Fetal injury literal | COD18a12 | code=277489001 (Fetal trauma (disorder)), <br />code.text |string | |
+| Fetal Death | 192 | Initiating cause/condition - Fetal infection literal | COD18a13 | code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text |string | |
+| Fetal Death | 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14 | code=PHC1300, <br />code.text |string | |
 {: .grid }

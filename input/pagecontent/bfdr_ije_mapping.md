@@ -43,12 +43,12 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 197 | Maternal Morbidity--Ruptured Uterus | RUT| [ConditionRupturedUterus]| | na | See [Note on missing data] | 
 | 217 | Abnormal Conditions of the Newborn--Seizures | SEIZ| [ConditionSeizure]| | na | See [Note on missing data] | 
 | 153 | Principal source of Payment for this delivery | PAY| [CoveragePrincipalPayerDelivery]|type | codeable | [ValueSetBirthAndFetalDeathFinancialClass]  | 
-| 125 | Mother Transferred? | TRAN| [Encounter_Maternity]|hospitalization.admitSource = "hosp-trans" | codeable | [HL7EncounterAdmitSourceVS](http://hl7.org/fhir/ValueSet/encounter-admit-source), See [Note on missing data]. Need to discuss - clarity needed for values other than 'hosp-trans' | 
+| 125 | Mother Transferred? | TRAN| [Encounter_Maternity]|hospitalization.admitSource = "hosp-trans" | codeable | [HL7EncounterAdmitSourceVS](http://hl7.org/fhir/ValueSet/encounter-admit-source), <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'hosp-trans' | 
 | 302 | Facility Mother Moved From (if transferred) | HOSPFROM| [Encounter_Maternity]|hospitalization.origin.name | string |  | 
 | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE| [EncounterBirth]|location.physicalType | codeable | [ValueSetBirthDeliveryOccurred] | 
 | 12 | Facility ID (NPI) - if available | FNPI| [EncounterBirth]|location.location.id | string |  | 
 | 13 | Facility ID (State-Assigned) | SFN| [EncounterBirth]|location.location.identifier | Identifier |  | 
-| 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN| [EncounterBirth]|hospitalization.dischargeDisposition="other-hcf" | codeable | [USCoreDischargeDispositionVS](http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition). See [Note on missing data]. Need to discuss - clarity needed for values other than 'other-hcf' | 
+| 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN| [EncounterBirth]|hospitalization.dischargeDisposition="other-hcf" | codeable | [USCoreDischargeDispositionVS](http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition). <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'other-hcf' | 
 | 253 | Name of Facility of Birth | HOSP| [EncounterBirth]|location.location.name | string |  | 
 | 303 | Facility Infant Transferred To (if transferred w/in 24 hours) | HOSPTO| [EncounterBirth]|hospitalization.destination.name | string |  | 
 | 334 | Date Signed by Certifier--Year | CERTIFIED_YR| [EncounterBirth]|participant:certifier.period.start | dateTime | See [PartialDatesAndTimes] | 
@@ -125,18 +125,18 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 146 | Date of Last Live Birth--Year | YLLB| [ObservationDateOfLastLiveBirth]|value | dateTime | See [PartialDatesAndTimes] | 
 | 147 | Date of Last Other Pregnancy Outcome--Month | MOPO| [ObservationDateOfLastOtherPregnancyOutcome]|value | dateTime | See [PartialDatesAndTimes] | 
 | 148 | Date of Last Other Pregnancy Outcome--Year | YOPO| [ObservationDateOfLastOtherPregnancyOutcome]|value | dateTime | See [PartialDatesAndTimes] | 
-| 202 | Birthweight--Edit Flag | BW_BYPASS| [ObservationEditFlagBirthweight]|value | codeable | [PHVS_BirthWeightEditFlags_NCHS], See [Handling of edit flags] | 
-| 204 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [ObservationEditFlagEstimateOfGestation]|value | codeable | [http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7567], See [Handling of edit flags]  | 
-| 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [ObservationEditFlagFathersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], See [Handling of edit flags] | 
-| 79 | Father's Education--Edit Flag | FEDUC_BYPASS| [ObservationEditFlagFathersEducation]|value | codeable | [PHVS_EducationLevelEditFlags_NCHS], See [Handling of edit flags] | 
-| 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS| [ObservationEditFlagMothersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], See [Handling of edit flags] | 
-| 140 | Mother's Weight at Delivery--Edit Flag | DWGT_BYPASS| [ObservationEditFlagMothersDeliveryWeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], See [Handling of edit flags] | 
-| 33 | Mother's Education--Edit Flag | MEDUC_BYPASS| [ObservationEditFlagMothersEducation]|value | codeable | [PHVS_EditFlags_NCHS], why does this not use same edit flag as father's education [PHVS_EducationLevelEditFlags_NCHS]?  See [Handling of edit flags] | 
-| 136 | Mother's Height--Edit Flag | HGT_BYPASS| [ObservationEditFlagMothersHeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], See [Handling of edit flags]  | 
-| 138 | Mother's Prepregnancy Weight--Edit Flag | PWGT_BYPASS| [ObservationEditFlagMothersPrepregnancyWeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], See [Handling of edit flags] | 
-| 133 | Total Number of Prenatal Care Visits--Edit Flag | NPREV_BYPASS| [ObservationEditFlagNumberPrenatalCareVisits]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], See [Handling of edit flags]  | 
-| 167 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS| [ObservationEditFlagNumberPreviousCesareans]|value | codeable | [PHVS_NumberOfPreviousCesareansEditFlags_NCHS], See [Handling of edit flags]  | 
-| 211 | Plurality--Edit Flag | PLUR_BYPASS| [ObservationEditFlagPlurality]|value | codeable | [PHVS_PluralityEditFlags_NCHS], See [Handling of edit flags] | 
+| 202 | Birthweight--Edit Flag | BW_BYPASS| [ObservationEditFlagBirthweight]|value | codeable | [PHVS_BirthWeightEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 204 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [ObservationEditFlagEstimateOfGestation]|value | codeable | [http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7567], <br />See [Handling of edit flags]  | 
+| 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [ObservationEditFlagFathersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 79 | Father's Education--Edit Flag | FEDUC_BYPASS| [ObservationEditFlagFathersEducation]|value | codeable | [PHVS_EducationLevelEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS| [ObservationEditFlagMothersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 140 | Mother's Weight at Delivery--Edit Flag | DWGT_BYPASS| [ObservationEditFlagMothersDeliveryWeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 33 | Mother's Education--Edit Flag | MEDUC_BYPASS| [ObservationEditFlagMothersEducation]|value | codeable | [PHVS_EditFlags_NCHS], <br />why does this not use same edit flag as father's education [PHVS_EducationLevelEditFlags_NCHS]?  <br />See [Handling of edit flags] | 
+| 136 | Mother's Height--Edit Flag | HGT_BYPASS| [ObservationEditFlagMothersHeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags]  | 
+| 138 | Mother's Prepregnancy Weight--Edit Flag | PWGT_BYPASS| [ObservationEditFlagMothersPrepregnancyWeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 133 | Total Number of Prenatal Care Visits--Edit Flag | NPREV_BYPASS| [ObservationEditFlagNumberPrenatalCareVisits]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags]  | 
+| 167 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS| [ObservationEditFlagNumberPreviousCesareans]|value | codeable | [PHVS_NumberOfPreviousCesareansEditFlags_NCHS], <br />See [Handling of edit flags]  | 
+| 211 | Plurality--Edit Flag | PLUR_BYPASS| [ObservationEditFlagPlurality]|value | codeable | [PHVS_PluralityEditFlags_NCHS], <br />See [Handling of edit flags] | 
 | 192 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [ValueSetFetalPresentations] | 
 | 203 | Obstetric Estimation of Gestation | OWGEST| [ObservationGestationalAgeAtDeliveryVitalRecords]|value | quantity |  | 
 | 199 | Maternal Morbidity--Admit to Intensive Care | AINT| [ObservationICUAdmission]| | na | See [Note on missing data] | 
@@ -257,8 +257,8 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 193 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [ValueSetDeliveryRoutes] | 
 | 181 | Characteristics of Labor & Delivery--Induction of Labor | INDL| [ProcedureInductionOfLabor]| | na | See [Note on missing data] | 
 | 164 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926) | INFT| [ProcedureInfertilityTreatmentVitalRecords]| | na | See [Note on missing data] | 
-| 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS| [ProcedureObstetric]|code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value)) | codeable | [ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. Discussion needed: Is ECVF always the complement of ECVS?   If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? | 
-| 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF| [ProcedureObstetric]|code=240278000 (External cephalic version (procedure)), <br />outcome=385671000 (Unsuccessful (qualifier value)) | codeable | [ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. Discussion needed: Is ECVF always the complement of ECVS?   If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? | 
+| 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS| [ProcedureObstetric]|code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value)) | codeable | [ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? | 
+| 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF| [ProcedureObstetric]|code=240278000 (External cephalic version (procedure)), <br />outcome=385671000 (Unsuccessful (qualifier value)) | codeable | [ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? | 
 | 215 | Abnormal Conditions of the Newborn--Surfactant Replacement | SURF| [ProcedureSurfactantReplacementTherapy]| | na | See [Note on missing data] | 
 | 198 | Maternal Morbidity--Unplanned Hysterectomy | UHYS| [ProcedureUnplannedHysterectomy]| | na | See [Note on missing data] | 
 {: .grid }
@@ -478,7 +478,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 310 | Father's Race--Second Other Pacific Islander Literal | FRACE21| [InputRaceAndEthnicity]|component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
 | 311 | Father's Race--First Other Literal | FRACE22| [InputRaceAndEthnicity]|component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
 | 312 | Father's Race--Second Other Literal | FRACE23| [InputRaceAndEthnicity]|component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
-| 150 | Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death? | AUTOPF| [ObservationAutopsyHistologicalExamResultsUsed]|value | codeable | [ValueSetYesNoNotApplicable], sandbox uses boolean, BFDR IG uses codeable | 
+| 150 | Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death? | AUTOPF| [ObservationAutopsyHistologicalExamResultsUsed]|value | codeable | [ValueSetYesNoNotApplicable], <br />sandbox uses boolean, BFDR IG uses codeable | 
 | 148 | Was an Autopsy Performed? | AUTOP| [ObservationAutopsyPerformedIndicatorVitalRecords]|value | codeable | [ValueSetYesNoUnknownNotApplicableVitalRecords] | 
 | 143 | Weight of Fetus | FWG| [ObservationBirthWeightVitalRecords]|value | quantity |  | 
 | 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=64794-1 (In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day) | integer |  | 
@@ -490,16 +490,16 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 82 | Date of First Prenatal Care Visit--Year | DOFP_YR| [ObservationDateOfFirstPrenatalCareVisit]|value | dateTime | See [PartialDatesAndTimes] | 
 | 99 | Date of Last Live Birth--Month | MLLB| [ObservationDateOfLastLiveBirth]|value | dateTime | See [PartialDatesAndTimes] | 
 | 100 | Date of Last Live Birth--Year | YLLB| [ObservationDateOfLastLiveBirth]|value | dateTime | See [PartialDatesAndTimes] | 
-| 144 | Weight of Fetus--Edit Flag | FW_BYPASS| [ObservationEditFlagBirthweight]|value | codeable | [PHVS_BirthWeightEditFlags_NCHS], See [Handling of edit flags] | 
-| 146 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [ObservationEditFlagEstimateOfGestation]|value | codeable | [http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7567], See [Handling of edit flags]  | 
-| 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [ObservationEditFlagFathersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], See [Handling of edit flags] | 
-| 284 | Father's Education--Edit Flag | FEDUC_BYPASS| [ObservationEditFlagFathersEducation]|value | codeable | [PHVS_EducationLevelEditFlags_NCHS], See [Handling of edit flags] | 
-| 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS| [ObservationEditFlagMothersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], See [Handling of edit flags] | 
-| 33 | Mother's Education--Edit Flag | MEDUC_BYPASS| [ObservationEditFlagMothersEducation]|value | codeable | [PHVS_EditFlags_NCHS], why does this not use same edit flag as father's education [PHVS_EducationLevelEditFlags_NCHS]?  See [Handling of edit flags] | 
-| 90 | Mother's Height--Edit Flag | HGT_BYPASS| [ObservationEditFlagMothersHeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], See [Handling of edit flags]  | 
-| 92 | Mother's Prepregnancy Weight--Edit Flag | PWGT_BYPASS| [ObservationEditFlagMothersPrepregnancyWeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], See [Handling of edit flags] | 
-| 120 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS| [ObservationEditFlagNumberPreviousCesareans]|value | codeable | [PHVS_NumberOfPreviousCesareansEditFlags_NCHS], See [Handling of edit flags]  | 
-| 155 | Plurality--Edit Flag | PLUR_BYPASS| [ObservationEditFlagPlurality]|value | codeable | [PHVS_PluralityEditFlags_NCHS], See [Handling of edit flags] | 
+| 144 | Weight of Fetus--Edit Flag | FW_BYPASS| [ObservationEditFlagBirthweight]|value | codeable | [PHVS_BirthWeightEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 146 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [ObservationEditFlagEstimateOfGestation]|value | codeable | [http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7567], <br />See [Handling of edit flags]  | 
+| 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [ObservationEditFlagFathersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 284 | Father's Education--Edit Flag | FEDUC_BYPASS| [ObservationEditFlagFathersEducation]|value | codeable | [PHVS_EducationLevelEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS| [ObservationEditFlagMothersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 33 | Mother's Education--Edit Flag | MEDUC_BYPASS| [ObservationEditFlagMothersEducation]|value | codeable | [PHVS_EditFlags_NCHS], <br />why does this not use same edit flag as father's education [PHVS_EducationLevelEditFlags_NCHS]?  <br />See [Handling of edit flags] | 
+| 90 | Mother's Height--Edit Flag | HGT_BYPASS| [ObservationEditFlagMothersHeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags]  | 
+| 92 | Mother's Prepregnancy Weight--Edit Flag | PWGT_BYPASS| [ObservationEditFlagMothersPrepregnancyWeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags] | 
+| 120 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS| [ObservationEditFlagNumberPreviousCesareans]|value | codeable | [PHVS_NumberOfPreviousCesareansEditFlags_NCHS], <br />See [Handling of edit flags]  | 
+| 155 | Plurality--Edit Flag | PLUR_BYPASS| [ObservationEditFlagPlurality]|value | codeable | [PHVS_PluralityEditFlags_NCHS], <br />See [Handling of edit flags] | 
 | 147 | Estimated time of fetal death | ETIME| [ObservationFetalDeathTimePoint]|value | codeable | [ValueSetFetalDeathTimePoints] | 
 | 133 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [ValueSetFetalPresentations] | 
 | 145 | Obstetric Estimation of Gestation | OWGEST| [ObservationGestationalAgeAtDeliveryVitalRecords]|value | quantity |  | 

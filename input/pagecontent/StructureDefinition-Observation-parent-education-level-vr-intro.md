@@ -11,10 +11,8 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 32 | Mother's Education | MEDUC | value,  
-focus[ PatientMotherVitalRecords ] |codeable |[EducationLevelVS] |
+| Natality | 32 | Mother's Education | MEDUC | value,  <br />focus[ PatientMotherVitalRecords ] |codeable |[EducationLevelVS] |
 | Natality | 78 | Father's Education | FEDUC | value, focus[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[EducationLevelVS] |
-| Fetal Death | 32 | Mother's Education | MEDUC | value, 
-focus[ PatientMotherVitalRecords ] |codeable |[EducationLevelVS] |
-| Fetal Death | 283 | Father's Education | FEDUC | value, focus[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[EducationLevelVS] |
+| Fetal Death | 32 | Mother's Education | MEDUC | value, <br />focus[ PatientMotherVitalRecords ] |codeable |[EducationLevelVS] |
+| Fetal Death | 283 | Father's Education | FEDUC | value, <br />focus[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[EducationLevelVS] |
 {: .grid }

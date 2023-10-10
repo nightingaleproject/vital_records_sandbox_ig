@@ -1,6 +1,0 @@
-### IJE Mapping
-
-| **Use Case** |  **IJE Field#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Mortality | 106 | Entity-axis codes | EAC | Each entry is a 4-tuble (value, component[position], component[lineNumber], component[e-code-indicator]   |codeable |[ICD10CausesOfDeathVS] |
-{: .grid }

@@ -3,6 +3,6 @@ These validation checks are done at the jurisdiction prior to sending to the Nat
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 202 | Birthweight--Edit Flag | BW_BYPASS | value |codeable |[PHVS_BirthWeightEditFlags_NCHS], See [Handling of edit flags] |
-| Fetal Death | 144 | Weight of Fetus--Edit Flag | FW_BYPASS | value |codeable |[PHVS_BirthWeightEditFlags_NCHS], See [Handling of edit flags] |
+| Natality | 202 | Birthweight--Edit Flag | BW_BYPASS | value |codeable |[PHVS_BirthWeightEditFlags_NCHS], <br />See [Handling of edit flags] |
+| Fetal Death | 144 | Weight of Fetus--Edit Flag | FW_BYPASS | value |codeable |[PHVS_BirthWeightEditFlags_NCHS], <br />See [Handling of edit flags] |
 {: .grid }
