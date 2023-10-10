@@ -63,7 +63,7 @@ Usage: #example
 * item[+]
   * linkId = "inside-city-limits"
   * text = "Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?"
-  * answer.valueCoding = $v2-0532#Y "Yes"
+  * answer.valueCoding = $v2-0136#Y "Yes"
 * item[+]
   * linkId = "mother-mail"
   * text = "What is your mailing address"
@@ -123,7 +123,7 @@ Usage: #example
 * item[+]
   * linkId = "receive-wic"
   * text = "Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"
-  * answer.valueCoding = $v2-0532#Y "Yes"
+  * answer.valueCoding = $v2-0136#Y "Yes"
 * item[+]
   * linkId = "infertility-treatment"
   * text = "Did this pregnancy result from infertility treatment? (If yes, please answer 12a and 12b)"

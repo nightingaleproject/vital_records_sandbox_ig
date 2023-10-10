@@ -3,17 +3,11 @@ InstanceOf: Questionnaire
 Title: "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
 Description: "This Questionnaire represents the [Mother's Worksheet for Child's Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)."
 Usage: #example
-* url = "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"
-* version = "1.0.0"
 * name = "QuestionnaireMothersWorksheetChildsBirthCertificate"
 * title = "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
 * status = #draft
 * experimental = false
 * subjectType = #Patient
-* publisher = "HL7 Public Health Work Group"
-* description = "This Questionnaire represents the [Mother's Worksheet for Child's Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)."
-* jurisdiction = urn:iso:std:iso:3166#US "United States of America"
-  * text = "United States of America"
 * purpose = "Purpose"
 * item[0]
   * linkId = "intro"
@@ -101,7 +95,7 @@ Usage: #example
   * prefix = "4"
   * text = "Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?"
   * type = #choice
-  * answerValueSet = "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+  * answerValueSet =   Canonical(ValueSetYesNoUnknownVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
 * item[+]
   * linkId = "mother-mail"
   * prefix = "5"
@@ -194,7 +188,7 @@ Usage: #example
     * type = #string
 * item[+]
   * linkId = "mother-education"
-  * definition = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr#Observation.value"
+  * definition = Canonical(ObservationEducationLevelVitalRecordsNew)#Observation.value //#"http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr#Observation.value"
   * code = $loinc#57712-2 "Highest level of education Mother"
   * prefix = "8"
   * text = "What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received)."
@@ -243,12 +237,12 @@ Usage: #example
     * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/detailed-race"
 * item[+]
   * linkId = "receive-wic"
-  * definition = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food#Observation.code"
+  * definition = Canonical(ObservationMotherReceivedWICFood)#Observation.code // "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"
   * prefix = "11"
   * text = "Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"
   * type = #choice
   * repeats = false
-  * answerValueSet = "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+  * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)  //"http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
 * item[+]
   * linkId = "infertility-treatment"
   * prefix = "12"
@@ -558,5 +552,5 @@ Usage: #example
   * text = "What is your relationship to the baby's mother?"
   * type = #open-choice
   * repeats = false
-  * answerValueSet = $ValueSet-informant-relationship-to-mother
+  * answerValueSet = Canonical(ValueSetInformantRelationshipToMother)
   // * answerValueSet = "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7580"
