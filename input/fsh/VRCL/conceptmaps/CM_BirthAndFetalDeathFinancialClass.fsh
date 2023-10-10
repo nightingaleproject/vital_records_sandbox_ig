@@ -12,4 +12,4 @@ Usage: #definition
 * insert MapConcept( #5,  "CHAMPUS/TRICARE", #tricare, "TRICARE (CHAMPUS\)")
 * insert MapConcept( #6,  "Other Government (Fed\, State\, Local\)", #othergov, "Other Government (Federal\, State\, Local not specified\)" )
 * insert MapConcept( #8,  "Other", #nosource, "No Typology Code available for payment source")
-* insert MapConcept( #9,  "Unknown", #unkown, "Unavailable / Unknown" //9999" )
+* insert MapConcept( #9,  "Unknown", #unknown, "Unavailable / Unknown" //9999" )
