@@ -1,6 +1,5 @@
 Profile: ObservationEditFlagMothersDateOfBirth
 Parent: Observation
-Id: Observation-edit-flag-mothers-date-of-birth
 Title: "Observation - Edit Flag Mother's Date of Birth"
 Description: "This profile indicates whether the original mother's date of birth data provided passed validation checks."
 * code 1..1 MS

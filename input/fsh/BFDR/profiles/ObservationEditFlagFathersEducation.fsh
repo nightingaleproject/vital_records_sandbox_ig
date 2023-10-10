@@ -1,6 +1,5 @@
 Profile: ObservationEditFlagFathersEducation
 Parent: Observation
-Id: Observation-edit-flag-fathers-education
 Title: "Observation - Edit Flag Father's Education"
 Description: "This profile indicates whether the original father's education data provided passed validation checks."
 * code 1..1 MS

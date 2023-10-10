@@ -1,6 +1,5 @@
 Profile: ConditionInfectionPresentDuringPregnancy
 Parent: USCoreConditionProblemsHealthConcernsProfile
-Id: Condition-infection-present-during-pregnancy
 Title: "Condition - Infection Present During Pregnancy"
 Description: "This Condition profile represents infections present and/or treated during the pregnancy."
 * . ^short = "Information on infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record."

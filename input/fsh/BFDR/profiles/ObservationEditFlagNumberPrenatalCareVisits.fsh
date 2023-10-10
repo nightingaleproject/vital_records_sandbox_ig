@@ -1,6 +1,5 @@
 Profile: ObservationEditFlagNumberPrenatalCareVisits
 Parent: Observation
-Id: Observation-edit-flag-number-prenatal-care-visits
 Title: "Observation - Edit Flag Number Prenatal Care Visits"
 Description: "This profile indicates whether the original number of prenatal care visits data provided passed validation checks."
 * code 1..1 MS

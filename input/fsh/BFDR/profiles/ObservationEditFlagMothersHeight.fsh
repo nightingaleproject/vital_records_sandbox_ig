@@ -1,6 +1,5 @@
 Profile: ObservationEditFlagMothersHeight
 Parent: Observation
-Id: Observation-edit-flag-mothers-height
 Title: "Observation - Edit Flag Mother's Height"
 Description: "This profile indicates whether the original mother's height data provided passed validation checks."
 * code 1..1 MS

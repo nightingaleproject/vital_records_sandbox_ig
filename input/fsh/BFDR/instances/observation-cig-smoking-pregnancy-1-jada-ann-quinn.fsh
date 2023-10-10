@@ -8,4 +8,6 @@ Usage: #example
   * text = "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * focus = Reference(patient-child-babyg-quinn) "BabyG Quinn"
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(patient-mother-jada-ann-quinn)
 * valueInteger = 20

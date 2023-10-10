@@ -6,6 +6,7 @@ Usage: #example
 * status = #final
 * code = $loinc#68500-8 "Date last other pregnancy outcome"
   * text = "Date of last other pregnancy outcome"
-* subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+* effectiveDateTime = "2019-12-02"
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueDateTime = "2015-05"
