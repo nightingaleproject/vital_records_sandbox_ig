@@ -52,9 +52,12 @@ This profile is designed to supplant the similar profile in VRDR"
 * name 1.. 
 //* telecom MS - remove MS, doesn't appear in differential for either VRDR or VRCL so seems ok to remove without adding a ^short
 * birthDate 
-  * extension contains ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..* MS
-  * extension[datePartAbsentReason] ^short = "Indicates reason for missing birthDate data."
+  * extension contains ExtensionPartialDateVitalRecords named partialDate 0..* MS
+  * extension[partialDate] ^short = "Provides values of a partial date"
     * ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
+  // * extension contains ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..* MS
+  // * extension[datePartAbsentReason] ^short = "Indicates reason for missing birthDate data."
+  //   * ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
 //* address MS - remove MS, and adding ^short so it will appear in differential. In VRDR, address cardinality is constrained to 0..1 instead of 0..*
 * address 
   * ^short = "Address where the related person can be contacted or visited"
