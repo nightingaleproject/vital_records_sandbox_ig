@@ -12,19 +12,22 @@ RuleSet: ConceptMapIntro(name, vsname)
 * targetCanonical = Canonical({vsname})
 
 RuleSet: MapConcept(code, display, targetcode, targetdisplay)
-* group[=].element[+].code = {code}
-* group[=].element[=].display = {display}
-* group[=].element[=].target.code = {targetcode}
-* group[=].element[=].target.display = {targetdisplay}
-* group[=].element[=].target.equivalence = #equivalent
+* group[=].element[+]
+  * code = {code}
+  * display = {display}
+  * target
+    * code = {targetcode}
+    * display = {targetdisplay}
+    * equivalence = #equivalent
 
 RuleSet: AddGroup(source, target)
 * group[+].target = {target}
 * group[=].source = {source}
 
 RuleSet: UnmatchedMapConcept(code, display, targetcode, targetdisplay)
-* group[=].element[+].display = {display}
-* group[=].element[=].target.code = {targetcode}
-* group[=].element[=].target.display = {targetdisplay}
-* group[=].element[=].target.equivalence = #unmatched
-* group[=].element[=].target.comment = {code}
+* group[=].element[+]
+  * code = {code}
+  * display = {display}
+  * target
+    * equivalence = #unmatched
+    * comment = {code}

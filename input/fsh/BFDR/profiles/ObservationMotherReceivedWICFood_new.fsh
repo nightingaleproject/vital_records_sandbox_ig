@@ -12,6 +12,6 @@ Description: "This profile represents whether or not the mother made use of the 
 * focus only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
-* value[x] from $ValueSet-yes-no-unknown (required)
+* value[x] from ValueSetYesNoUnknownVitalRecords (required)
   * ^short = "Did mother get WIC food for herself during this pregnancy?"
   * ^binding.description = "Yes No Unknown (YNU)"

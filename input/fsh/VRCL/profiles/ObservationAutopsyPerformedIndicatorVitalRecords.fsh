@@ -24,7 +24,7 @@ Description: "This Observation records if an autopsy was performed, if autopsy f
   * ^short = "Autopsy Performer using USCorePractioner"
 * value[x] 1.. MS
 * value[x] only CodeableConcept
-* value[x] from $ValueSet-yes-no-unknown (required)
+* value[x] from ValueSetYesNoUnknownVitalRecords (required)
 * valueCodeableConcept 1..1
   * ^short = "Autopsy was performed?"
 * component ^slicing.discriminator.type = #value
@@ -35,4 +35,4 @@ Description: "This Observation records if an autopsy was performed, if autopsy f
   * code = $loinc#69436-4
   * value[x] 1..
   * value[x] only CodeableConcept
-  * value[x] from $ValueSet-yes-no-unknown-not-applicable (required)
+  * value[x] from ValueSetYesNoUnknownVitalRecords (required)
