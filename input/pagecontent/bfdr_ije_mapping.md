@@ -238,13 +238,13 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 320 | Mother's Mailing Address Country (Literal) | MAIL_CNTRYTXT| [PatientMotherVitalRecords]|address.country (expanded from 2 letter code) | string | See [CountryLiterals] | 
 | 333 | Mother's Medical Record Number | MOM_MED_REC_NUM| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”MR”  | string |  | 
 | 340 | For use of jurisdictions with domestic partnerships, othertypes of relationships. | MARITAL_DESCRIP| [PatientMotherVitalRecords]|maritalStatus.text | string | codeable.text should show up in differential with description from col F | 
-| 124 | Attendant Title | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [PHVS_BirthAttendantTitles_NCHS] | 
+| 124 | Attendant Title | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | 
 | 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string |  | 
 | 326 | Attendant's Name | ATTEND_NAME| [PractitionerVitalRecords]|name.text | string |  | 
 | 327 | Attendant's NPI | ATTEND_NPI| [PractitionerVitalRecords]|identifier:NPI | string |  | 
 | 328 | Certifier's Name | CERTIF_NAME| [PractitionerVitalRecords]|name.text | string |  | 
 | 329 | Certifier's NPI | CERTIF_NPI| [PractitionerVitalRecords]|identifier:NPI | identifier |  | 
-| 330 | Certifier Title | CERTIF| [PractitionerVitalRecords]|qualification.code | codeable | [PHVS_BirthAttendantTitles_NCHS] | 
+| 330 | Certifier Title | CERTIF| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | 
 | 331 | Certifier ("Other" specified text) | CERTIF_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string |  | 
 | 216 | Abnormal Conditions of the Newborn--Antibiotics | ANTI| [ProcedureAntibioticSuspectedNeonatalSepsis]| | na | See [Note on missing data] | 
 | 240 | Risk Factors--Infertility: Fertility Enhancing Drugs  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_DRG| [ProcedureArtificialInseminationVitalRecords]| | na | See [Note on missing data] | 
@@ -373,7 +373,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 182 | Initiating cause/condition - Placental insufficiency | COD18a3| [ConditionFetalDeathCauseOrCondition]|code=237292005 (Placental insufficiency (disorder)) | na |  | 
 | 183 | Initiating cause/condition - Prolapsed cord | COD18a4| [ConditionFetalDeathCauseOrCondition]|code=270500004 (Prolapsed cord (disorder)) | na |  | 
 | 184 | Initiating cause/condition - Chorioamnionitis | COD18a5| [ConditionFetalDeathCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | 
-| 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6| [ConditionFetalDeathCauseOrCondition]|code=PHC1298, code.text | string |  | 
+| 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6| [ConditionFetalDeathCauseOrCondition]|code=PHC1298, code.text | string | need to check this one - PHC1298 is ‘Complications of Placenta, Cord, or Membranes: Other (Specify)’ but IJE field is Y, N (not literal text) | 
 | 186 | Initiating cause/condition - Unknown | COD18a7| [ConditionFetalDeathCauseOrCondition]|code=UNK | na |  | 
 | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8| [ConditionFetalDeathCauseOrCondition]|code=PHC1301, code.text | string | .text should contain description | 
 | 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9| [ConditionFetalDeathCauseOrCondition]|code=PHC1298, code.text | string | .text should contain description | 
@@ -381,7 +381,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11| [ConditionFetalDeathCauseOrCondition]|code=702709008 (Fetal Anomaly (Specify)), <br />code.text | string | .text should contain description | 
 | 191 | Initiating cause/condition - Fetal injury literal | COD18a12| [ConditionFetalDeathCauseOrCondition]|code=277489001 (Fetal trauma (disorder)), <br />code.text | string |  | 
 | 192 | Initiating cause/condition - Fetal infection literal | COD18a13| [ConditionFetalDeathCauseOrCondition]|code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text | string |  | 
-| 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14| [ConditionFetalDeathCauseOrCondition]|code=PHC1300, <br />code.text | string |  | 
+| 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14| [ConditionFetalDeathCauseOrCondition]|code=PHC1300, <br />code.text | string | .text should contain description | 
 | 194 | Other significant causes or conditions - Rupture of membranes prior to onset of labor | COD18b1| [ConditionFetalDeathOtherCauseOrCondition]|code=44223004 (Premature rupture of membranes (disorder)) | na |  | 
 | 195 | Other significant causes or conditions - Abruptio placenta | COD18b2| [ConditionFetalDeathOtherCauseOrCondition]|code=415105001 (Placental abruption (disorder)) | na |  | 
 | 196 | Other significant causes or conditions  - Placental insufficiency | COD18b3| [ConditionFetalDeathOtherCauseOrCondition]|code=237292005 (Placental insufficiency (disorder)) | na |  | 
@@ -395,7 +395,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 204 | Other significant causes or conditions - Fetal anomaly literal | COD18b11| [ConditionFetalDeathOtherCauseOrCondition]|code=702709008 (Fetal Anomaly (Specify)), <br />code.text | string | .text should contain description | 
 | 205 | Other significant causes or conditions - Fetal injury literal | COD18b12| [ConditionFetalDeathOtherCauseOrCondition]|code=277489001 (Fetal trauma (disorder)), <br />code.text | string |  | 
 | 206 | Other significant causes or conditions - Fetal infection literal | COD18b13| [ConditionFetalDeathOtherCauseOrCondition]|code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text | string |  | 
-| 207 | Other significant causes or conditions - Other fetal conditions/disorders literal | COD18b14| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1300, <br />code.text | string |  | 
+| 207 | Other significant causes or conditions - Other fetal conditions/disorders literal | COD18b14| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1300, <br />code.text | string | .text should contain description | 
 | 111 | Risk Factors--Gestational Diabetes | GDIAB| [ConditionGestationalDiabetesVitalRecords]| | na | See [Note on missing data] | 
 | 113 | Risk Factors--Hypertension Gestational  (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 573 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004) | GHYPE| [ConditionGestationalHypertensionVitalRecords]| | na | See [Note on missing data] | 
 | 110 | Risk Factors--Prepregnancy Diabetes  (NOTE: SEE INSERTED NOTES FOR RISK FACTOR LOCATIONS 490-501 AND 573-575 TO REFLECT 2004 CHANGES) | PDIAB| [ConditionPrepregnancyDiabetesVitalRecords]| | na | See [Note on missing data] | 
@@ -574,7 +574,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 265 | Mother's Social Security Number | MOM_SSN| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”SS”  | string |  | 
 | 279 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].state | string | See [StateLiterals] | 
 | 280 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].country (expanded from 2 letter code) | string | See [CountryLiterals] | 
-| 78 | Attendant | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [PHVS_BirthAttendantTitles_NCHS] | 
+| 78 | Attendant | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | 
 | 340 | Attendant's Name | ATTEND_NAME| [PractitionerVitalRecords]|name.text | string |  | 
 | 341 | Attendant's NPI | ATTEND_NPI| [PractitionerVitalRecords]|identifier:NPI | string |  | 
 | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string | .text should contain description | 
