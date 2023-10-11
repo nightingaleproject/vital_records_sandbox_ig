@@ -5,7 +5,7 @@ Description: "Condition - Prepregnancy Diabetes: Jada Ann Quinn example"
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
   * text = "Active"
-* category = $condition-category#problem-list-item
+* category[us-core] = $condition-category#problem-list-item
 * code = $sct#73211009 "Diabetes mellitus (disorder)"
   * text = "Diabetes mellitus (disorder)"
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
