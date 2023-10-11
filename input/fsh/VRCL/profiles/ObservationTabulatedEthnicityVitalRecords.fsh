@@ -2,6 +2,7 @@ Profile: ObservationTabulatedEthnicityVitalRecords
 Parent: Observation
 Id: Observation-tabulated-ethnicity-vr
 Title: "Observation - Tabulated Ethnicity Vital Records"
+// may need description update
 Description: "This profile records a code representing the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form.  If the value is unknown, set dataAbsentReason to \"unknown\"."
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-12T22:13:36.031+00:00"
