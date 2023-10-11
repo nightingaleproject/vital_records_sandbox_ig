@@ -16,6 +16,6 @@ Description: "Used to indicate whether or not an address is within city limits. 
 * ^context.expression = "Address"
 * value[x] 1..1
 * value[x] only Coding
-* value[x] from $ValueSet-yes-no-unknown (required)
+* value[x] from ValueSetYesNoUnknownVitalRecords (required)
   * ^short = "Value set used to respond to any question that can be answered Yes, No, or Unknown."
   * ^binding.description = "Yes No Unknown (YNU)"
