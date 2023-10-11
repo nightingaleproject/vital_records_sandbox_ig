@@ -6,8 +6,6 @@ Usage: #example
 //* meta
   //* profile = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"
 * status = #final
-* category = $observation-category#survey "Survey"
-  * text = "Survey"
 * code = $loinc#9274-2 "5 minute Apgar Score"
   * text = "5 minute Apgar Score"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
