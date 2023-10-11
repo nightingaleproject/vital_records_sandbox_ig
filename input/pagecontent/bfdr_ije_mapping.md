@@ -114,7 +114,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 205 | Apgar Score at 5 Minutes | APGAR5| [ObservationApgarScoreVitalRecords]|value, <br />code = 9274-2 (5 minute Apgar Score) | integer | [ValueSetApgarTimingVitalRecords] | 
 | 206 | Apgar Score at 10 Minutes | APGAR10| [ObservationApgarScoreVitalRecords]|value, <br />code = 9271-8 (10 minute Apgar Score) | integer | [ValueSetApgarTimingVitalRecords] | 
 | 201 | Birthweight in grams | BWG| [ObservationBirthWeightVitalRecords]|value | quantity |  | 
-| 149 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=64794-1 (In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day) | integer |  | 
+| 149 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=64794-1 (In the 3 months before you got pregnant, <br />how many cigarettes did you smoke on an average day) | integer |  | 
 | 150 | Number of Cigarettes Smoked in 1st 3 months | CIGFN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=87298-6 (Cigarettes smoked per day by Mother--1st trimester) | integer |  | 
 | 151 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=87299-4 (Cigarettes smoked per day by Mother--2nd trimester) | integer |  | 
 | 152 | Number of Cigarettes Smoked in  third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=64795-8 (In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day) | integer |  | 
@@ -126,7 +126,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 147 | Date of Last Other Pregnancy Outcome--Month | MOPO| [ObservationDateOfLastOtherPregnancyOutcome]|value | dateTime | See [PartialDatesAndTimes] | 
 | 148 | Date of Last Other Pregnancy Outcome--Year | YOPO| [ObservationDateOfLastOtherPregnancyOutcome]|value | dateTime | See [PartialDatesAndTimes] | 
 | 202 | Birthweight--Edit Flag | BW_BYPASS| [ObservationEditFlagBirthweight]|value | codeable | [PHVS_BirthWeightEditFlags_NCHS], <br />See [Handling of edit flags] | 
-| 204 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [ObservationEditFlagEstimateOfGestation]|value | codeable | [http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7567], <br />See [Handling of edit flags]  | 
+| 204 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [ObservationEditFlagEstimateOfGestation]|value | codeable | [PHVS_EstimateOf GestationEditFlags_NCHS], <br />See [Handling of edit flags]  | 
 | 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [ObservationEditFlagFathersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], <br />See [Handling of edit flags] | 
 | 79 | Father's Education--Edit Flag | FEDUC_BYPASS| [ObservationEditFlagFathersEducation]|value | codeable | [PHVS_EducationLevelEditFlags_NCHS], <br />See [Handling of edit flags] | 
 | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS| [ObservationEditFlagMothersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], <br />See [Handling of edit flags] | 
@@ -182,15 +182,15 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 10 | County of Birth | CNTYO| [PatientChildVitalRecords]|extension[patient-birthplace].value[x].district.extension[countyCode] | integer | See [CountyCodes] | 
 | 207 | Plurality | PLUR| [PatientChildVitalRecords]|extension[patient-multipleBirthTotal].valuePositiveInt | integer |  | 
 | 208 | Set Order | SORD| [PatientChildVitalRecords]|multipleBirth[x] | integer |  | 
-| 237 | Mother's Reported Age | MAGER| [PatientChildVitalRecords]|extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=Reference[ PatientMotherVitalRecords ] | quantity |  | 
-| 238 | Father's Reported Age | FAGER| [PatientChildVitalRecords]|extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=Reference[ RelatedPersonFatherNaturalVitalRecords ] | quantity |  | 
+| 237 | Mother's Reported Age | MAGER| [PatientChildVitalRecords]|extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ] | quantity |  | 
+| 238 | Father's Reported Age | FAGER| [PatientChildVitalRecords]|extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ] | quantity |  | 
 | 247 | Child's First Name | KIDFNAME| [PatientChildVitalRecords]|name.given, <br />name.use = official | string |  | 
 | 248 | Child's Middle Name | KIDMNAME| [PatientChildVitalRecords]|name.given, <br />name.use = official  | string |  | 
 | 249 | Child's Last Name | KIDLNAME| [PatientChildVitalRecords]|name.family, <br />name.use = official | string |  | 
 | 250 | Child's Surname Suffix (moved from end) | KIDSUFFX| [PatientChildVitalRecords]|name.suffix, <br />name.use = official | string |  | 
 | 251 | County of Birth (Literal) | BIRTH_CO| [PatientChildVitalRecords]|extension[patient-birthPlace].value[x].district | string |  | 
 | 252 | City/town/place of birth (Literal) | BRTHCITY| [PatientChildVitalRecords]|extension[patient-birthPlace].value[x].city | string |  | 
-| 332 | Infant's Medical Record Number | INF_MED_REC_NUM| [PatientChildVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”MR”  | string |  | 
+| 332 | Infant's Medical Record Number | INF_MED_REC_NUM| [PatientChildVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR”  | string |  | 
 | 14 | Date of Birth (Mother)--Year | MDOB_YR| [PatientMotherVitalRecords]|birthDate | date | See [PartialDatesAndTimes] | 
 | 15 | Date of Birth (Mother)--Month | MDOB_MO| [PatientMotherVitalRecords]|birthDate | date | See [PartialDatesAndTimes] | 
 | 16 | Date of Birth (Mother)--Day | MDOB_DY| [PatientMotherVitalRecords]|birthDate | date | See [PartialDatesAndTimes] | 
@@ -221,7 +221,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 271 | Mother's Residence City/Town (Literal) | CITYTEXT| [PatientMotherVitalRecords]|address.city | string |  | 
 | 272 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT| [PatientMotherVitalRecords]|address.state (expanded from 2 letter code) | string | See [StateLiterals] | 
 | 273 | Mother's Residence Country (Literal) | CNTRYTXT| [PatientMotherVitalRecords]|address.country (expanded from 2 letter code) | string | See [CountryLiterals] | 
-| 278 | Mother's Social Security Number | MOM_SSN| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”SS”  | string |  | 
+| 278 | Mother's Social Security Number | MOM_SSN| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”  | string |  | 
 | 305 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].state | string | See [StateLiterals] | 
 | 306 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].country (expanded from 2 letter code) | string | See [CountryLiterals] | 
 | 309 | Mother's Mailing Address Street number | MAIL_STNUM| [PatientMotherVitalRecords]|address.extension[stnum] | string |  | 
@@ -236,7 +236,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 318 | Mother's Mailing Address City/Town (Literal) | MAIL_CITYTEXT| [PatientMotherVitalRecords]|address.city | string |  | 
 | 319 | Mother's Mailing Address State (Literal) | MAIL_STATETXT| [PatientMotherVitalRecords]|address.state (expanded from 2 letter code) | string | See [StateLiterals] | 
 | 320 | Mother's Mailing Address Country (Literal) | MAIL_CNTRYTXT| [PatientMotherVitalRecords]|address.country (expanded from 2 letter code) | string | See [CountryLiterals] | 
-| 333 | Mother's Medical Record Number | MOM_MED_REC_NUM| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”MR”  | string |  | 
+| 333 | Mother's Medical Record Number | MOM_MED_REC_NUM| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR”  | string |  | 
 | 340 | For use of jurisdictions with domestic partnerships, othertypes of relationships. | MARITAL_DESCRIP| [PatientMotherVitalRecords]|maritalStatus.text | string | codeable.text should show up in differential with description from col F | 
 | 124 | Attendant Title | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | 
 | 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string |  | 
@@ -373,29 +373,29 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 182 | Initiating cause/condition - Placental insufficiency | COD18a3| [ConditionFetalDeathCauseOrCondition]|code=237292005 (Placental insufficiency (disorder)) | na |  | 
 | 183 | Initiating cause/condition - Prolapsed cord | COD18a4| [ConditionFetalDeathCauseOrCondition]|code=270500004 (Prolapsed cord (disorder)) | na |  | 
 | 184 | Initiating cause/condition - Chorioamnionitis | COD18a5| [ConditionFetalDeathCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | 
-| 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6| [ConditionFetalDeathCauseOrCondition]|code=PHC1298, code.text | string | need to check this one - PHC1298 is ‘Complications of Placenta, Cord, or Membranes: Other (Specify)’ but IJE field is Y, N (not literal text) | 
+| 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes, code.text | string | need to check this one - PHC1298 is ‘Complications of Placenta, Cord, or Membranes: Other (Specify)’ but IJE field is Y, N (not literal text) | 
 | 186 | Initiating cause/condition - Unknown | COD18a7| [ConditionFetalDeathCauseOrCondition]|code=UNK | na |  | 
-| 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8| [ConditionFetalDeathCauseOrCondition]|code=PHC1301, code.text | string | .text should contain description | 
-| 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9| [ConditionFetalDeathCauseOrCondition]|code=PHC1298, code.text | string | .text should contain description | 
-| 189 | Initiating cause/condition - Other obstetrical or pregnancy complications literal | COD18a10| [ConditionFetalDeathCauseOrCondition]|code=PHC1299, code.text | string | .text should contain description | 
-| 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11| [ConditionFetalDeathCauseOrCondition]|code=702709008 (Fetal Anomaly (Specify)), <br />code.text | string | .text should contain description | 
-| 191 | Initiating cause/condition - Fetal injury literal | COD18a12| [ConditionFetalDeathCauseOrCondition]|code=277489001 (Fetal trauma (disorder)), <br />code.text | string |  | 
-| 192 | Initiating cause/condition - Fetal infection literal | COD18a13| [ConditionFetalDeathCauseOrCondition]|code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text | string |  | 
-| 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14| [ConditionFetalDeathCauseOrCondition]|code=PHC1300, <br />code.text | string | .text should contain description | 
+| 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#maternalconditions, code.text | string | code.text should contain description | 
+| 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes, code.text | string | code.text should contain description | 
+| 189 | Initiating cause/condition - Other obstetrical or pregnancy complications literal | COD18a10| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#obstetricalcomplications, code.text | string | code.text should contain description | 
+| 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11| [ConditionFetalDeathCauseOrCondition]|code=702709008 (Fetal Anomaly (Specify)), <br />code.text | string | code.text should contain description | 
+| 191 | Initiating cause/condition - Fetal injury literal | COD18a12| [ConditionFetalDeathCauseOrCondition]|code=277489001 (Fetal trauma (disorder)), <br />code.text | string | specific description of fetal trauma should be provided in the code.text field | 
+| 192 | Initiating cause/condition - Fetal infection literal | COD18a13| [ConditionFetalDeathCauseOrCondition]|code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text | string | specific description of fetal infection should be provided in the code.text field | 
+| 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#fetalconditions, <br />code.text | string | code.text should contain description | 
 | 194 | Other significant causes or conditions - Rupture of membranes prior to onset of labor | COD18b1| [ConditionFetalDeathOtherCauseOrCondition]|code=44223004 (Premature rupture of membranes (disorder)) | na |  | 
 | 195 | Other significant causes or conditions - Abruptio placenta | COD18b2| [ConditionFetalDeathOtherCauseOrCondition]|code=415105001 (Placental abruption (disorder)) | na |  | 
 | 196 | Other significant causes or conditions  - Placental insufficiency | COD18b3| [ConditionFetalDeathOtherCauseOrCondition]|code=237292005 (Placental insufficiency (disorder)) | na |  | 
 | 197 | Other significant causes or conditions - Prolapsed cord | COD18b4| [ConditionFetalDeathOtherCauseOrCondition]|code=270500004 (Prolapsed cord (disorder)) | na |  | 
 | 198 | Other significant causes or conditions - Chorioamnionitis | COD18b5| [ConditionFetalDeathOtherCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | 
-| 199 | Other significant causes or conditions - Other complications of placenta, cord, or membranes | COD18b6| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1298 | na | need to check this one - PHC1298 is 'Complications of Placenta, Cord, or Membranes: Other (Specify)' but IJE field is Y, N (not literal text) | 
+| 199 | Other significant causes or conditions - Other complications of placenta, cord, or membranes | COD18b6| [ConditionFetalDeathOtherCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes | na | need to check this one - PHC1298 is 'Complications of Placenta, Cord, or Membranes: Other (Specify)' but IJE field is Y, N (not literal text) | 
 | 200 | Other significant causes or conditions - Unknown | COD18b7| [ConditionFetalDeathOtherCauseOrCondition]|code=UNK | na |  | 
-| 201 | Other significant causes or conditions - Maternal conditions/diseases literal | COD18b8| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1301, <br />code.text | string | .text should contain description | 
-| 202 | Other significant causes or conditions - Other complications of placenta, cord, or membranes literal | COD18b9| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1298, <br />code.text | string | .text should contain description | 
-| 203 | Other significant causes or conditions - Other obstetrical or pregnancy complications literal | COD18b10| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1299, <br />code.text | string | .text should contain description | 
-| 204 | Other significant causes or conditions - Fetal anomaly literal | COD18b11| [ConditionFetalDeathOtherCauseOrCondition]|code=702709008 (Fetal Anomaly (Specify)), <br />code.text | string | .text should contain description | 
-| 205 | Other significant causes or conditions - Fetal injury literal | COD18b12| [ConditionFetalDeathOtherCauseOrCondition]|code=277489001 (Fetal trauma (disorder)), <br />code.text | string |  | 
-| 206 | Other significant causes or conditions - Fetal infection literal | COD18b13| [ConditionFetalDeathOtherCauseOrCondition]|code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text | string |  | 
-| 207 | Other significant causes or conditions - Other fetal conditions/disorders literal | COD18b14| [ConditionFetalDeathOtherCauseOrCondition]|code=PHC1300, <br />code.text | string | .text should contain description | 
+| 201 | Other significant causes or conditions - Maternal conditions/diseases literal | COD18b8| [ConditionFetalDeathOtherCauseOrCondition]|code=FetalDeathCauseOrConditionCS#maternalconditions, <br />code.text | string | code.text should contain description | 
+| 202 | Other significant causes or conditions - Other complications of placenta, cord, or membranes literal | COD18b9| [ConditionFetalDeathOtherCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes, <br />code.text | string | code.text should contain description | 
+| 203 | Other significant causes or conditions - Other obstetrical or pregnancy complications literal | COD18b10| [ConditionFetalDeathOtherCauseOrCondition]|code=FetalDeathCauseOrConditionCS#obstetricalcomplications, <br />code.text | string | code.text should contain description | 
+| 204 | Other significant causes or conditions - Fetal anomaly literal | COD18b11| [ConditionFetalDeathOtherCauseOrCondition]|code=702709008 (Fetal Anomaly (Specify)), <br />code.text | string | code.text should contain description | 
+| 205 | Other significant causes or conditions - Fetal injury literal | COD18b12| [ConditionFetalDeathOtherCauseOrCondition]|code=277489001 (Fetal trauma (disorder)), <br />code.text | string | specific description of fetal trauma should be provided in the code.text field | 
+| 206 | Other significant causes or conditions - Fetal infection literal | COD18b13| [ConditionFetalDeathOtherCauseOrCondition]|code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text | string | specific description of fetal infection should be provided in the code.text field | 
+| 207 | Other significant causes or conditions - Other fetal conditions/disorders literal | COD18b14| [ConditionFetalDeathOtherCauseOrCondition]|code=FetalDeathCauseOrConditionCS#fetalconditions, <br />code.text | string | code.text should contain description | 
 | 111 | Risk Factors--Gestational Diabetes | GDIAB| [ConditionGestationalDiabetesVitalRecords]| | na | See [Note on missing data] | 
 | 113 | Risk Factors--Hypertension Gestational  (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 573 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004) | GHYPE| [ConditionGestationalHypertensionVitalRecords]| | na | See [Note on missing data] | 
 | 110 | Risk Factors--Prepregnancy Diabetes  (NOTE: SEE INSERTED NOTES FOR RISK FACTOR LOCATIONS 490-501 AND 573-575 TO REFLECT 2004 CHANGES) | PDIAB| [ConditionPrepregnancyDiabetesVitalRecords]| | na | See [Note on missing data] | 
@@ -481,7 +481,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 150 | Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death? | AUTOPF| [ObservationAutopsyHistologicalExamResultsUsed]|value | codeable | [ValueSetYesNoNotApplicable], <br />sandbox uses boolean, BFDR IG uses codeable | 
 | 148 | Was an Autopsy Performed? | AUTOP| [ObservationAutopsyPerformedIndicatorVitalRecords]|value | codeable | [ValueSetYesNoUnknownNotApplicableVitalRecords] | 
 | 143 | Weight of Fetus | FWG| [ObservationBirthWeightVitalRecords]|value | quantity |  | 
-| 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=64794-1 (In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day) | integer |  | 
+| 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=64794-1 (In the 3 months before you got pregnant, <br />how many cigarettes did you smoke on an average day) | integer |  | 
 | 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=87298-6 (Cigarettes smoked per day by Mother--1st trimester) | integer |  | 
 | 105 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=87299-4 (Cigarettes smoked per day by Mother--2nd trimester) | integer |  | 
 | 106 | Number of Cigarettes Smoked in third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=64795-8 (In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day) | integer |  | 
@@ -491,7 +491,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 99 | Date of Last Live Birth--Month | MLLB| [ObservationDateOfLastLiveBirth]|value | dateTime | See [PartialDatesAndTimes] | 
 | 100 | Date of Last Live Birth--Year | YLLB| [ObservationDateOfLastLiveBirth]|value | dateTime | See [PartialDatesAndTimes] | 
 | 144 | Weight of Fetus--Edit Flag | FW_BYPASS| [ObservationEditFlagBirthweight]|value | codeable | [PHVS_BirthWeightEditFlags_NCHS], <br />See [Handling of edit flags] | 
-| 146 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [ObservationEditFlagEstimateOfGestation]|value | codeable | [http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7567], <br />See [Handling of edit flags]  | 
+| 146 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [ObservationEditFlagEstimateOfGestation]|value | codeable | [PHVS_EstimateOf GestationEditFlags_NCHS], <br />See [Handling of edit flags]  | 
 | 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [ObservationEditFlagFathersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], <br />See [Handling of edit flags] | 
 | 284 | Father's Education--Edit Flag | FEDUC_BYPASS| [ObservationEditFlagFathersEducation]|value | codeable | [PHVS_EducationLevelEditFlags_NCHS], <br />See [Handling of edit flags] | 
 | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS| [ObservationEditFlagMothersDateOfBirth]|value | codeable | [PHVS_BirthdateEditFlags_NCHS], <br />See [Handling of edit flags] | 
@@ -528,7 +528,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 169 | NCHS USE ONLY: Receipt date -- Month | R_MO| [ParametersCodingStatusValuesVitalRecords]|parameter[receiptDate].value | date |  | 
 | 170 | NCHS USE ONLY: Receipt date -- Day | R_DY| [ParametersCodingStatusValuesVitalRecords]|parameter[receiptDate].value | date |  | 
 | 151 | Plurality | PLUR| [PatientChildVitalRecords]|extension[patient-multipleBirthTotal].valuePositiveInt | integer |  | 
-| 171 | Mother's Reported Age | MAGER| [PatientChildVitalRecords]|extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=Reference[ PatientMotherVitalRecords ] | quantity |  | 
+| 171 | Mother's Reported Age | MAGER| [PatientChildVitalRecords]|extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ] | quantity |  | 
 | 1 | Date of Delivery (Fetus)--Year | FDOD_YR| [PatientDecedentFetusVitalRecords]|birthDate |  |  | 
 | 2 | State, U.S. Territory or Canadian Province of Place of Delivery - code | DSTATE| [PatientDecedentFetusVitalRecords]|extension[patient-birthPlace].value[x].state | codeable | [StatesTerritoriesAndProvincesVS]  | 
 | 6 | Time of Delivery | TD| [PatientDecedentFetusVitalRecords]|birthDate.extension[patient-birthTime] |  | See [PartialDatesAndTimes] | 
@@ -536,7 +536,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 8 | Date of Delivery (Fetus)--Month | FDOD_MO| [PatientDecedentFetusVitalRecords]|birthDate |  |  | 
 | 9 | Date of Delivery (Fetus)--Day | FDOD_DY| [PatientDecedentFetusVitalRecords]|birthDate |  |  | 
 | 152 | Set Order | SORD| [PatientDecedentFetusVitalRecords]|multipleBirth[x] | integer |  | 
-| 172 | Father's Reported Age | FAGER| [PatientDecedentFetusVitalRecords]|extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=Reference[ RelatedPersonFatherNaturalVitalRecords ] | quantity |  | 
+| 172 | Father's Reported Age | FAGER| [PatientDecedentFetusVitalRecords]|extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ] | quantity |  | 
 | 219 | Fetus First Name | FETFNAME| [PatientDecedentFetusVitalRecords]|name.given, <br />name.use = official | string | See [Note on Decedent Name] | 
 | 220 | Fetus Middle Name | FETMNAME| [PatientDecedentFetusVitalRecords]|name.given, <br />name.use = official | string | See [Note on Decedent Name] | 
 | 221 | Fetus Last Name | FETLNAME| [PatientDecedentFetusVitalRecords]|name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.) | string  | See [Note on Decedent Name] | 
@@ -571,13 +571,13 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 256 | Mother's Residence City/Town/Place (literal)  | CITYTXT| [PatientMotherVitalRecords]|address.city | string |  | 
 | 257 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT| [PatientMotherVitalRecords]|address.state (expanded from 2 letter code) | string | See [StateLiterals] | 
 | 258 | Mother's Residence Country (literal) | CNTRYTXT| [PatientMotherVitalRecords]|address.country (expanded from 2 letter code) | string | See [CountryLiterals] | 
-| 265 | Mother's Social Security Number | MOM_SSN| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”SS”  | string |  | 
+| 265 | Mother's Social Security Number | MOM_SSN| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”  | string |  | 
 | 279 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].state | string | See [StateLiterals] | 
 | 280 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].country (expanded from 2 letter code) | string | See [CountryLiterals] | 
 | 78 | Attendant | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | 
 | 340 | Attendant's Name | ATTEND_NAME| [PractitionerVitalRecords]|name.text | string |  | 
 | 341 | Attendant's NPI | ATTEND_NPI| [PractitionerVitalRecords]|identifier:NPI | string |  | 
-| 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string | .text should contain description | 
+| 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string | code.text should contain description | 
 | 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG| [ProcedureArtificialInseminationVitalRecords]| | na | See [Note on missing data] | 
 | 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART| [ProcedureAssistedFertilizationVitalRecords]| | na | See [Note on missing data] | 
 | 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [ValueSetDeliveryRoutes] | 

@@ -3,6 +3,6 @@ These validation checks are done at the jurisdiction prior to sending to the Nat
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 204 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS | value |codeable |[http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7567], <br />See [Handling of edit flags]  |
-| Fetal Death | 146 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS | value |codeable |[http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7567], <br />See [Handling of edit flags]  |
+| Natality | 204 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS | value |codeable |[PHVS_EstimateOf GestationEditFlags_NCHS], <br />See [Handling of edit flags]  |
+| Fetal Death | 146 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS | value |codeable |[PHVS_EstimateOf GestationEditFlags_NCHS], <br />See [Handling of edit flags]  |
 {: .grid }

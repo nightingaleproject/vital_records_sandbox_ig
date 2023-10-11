@@ -90,7 +90,7 @@ This profile is mapped to:
 | Natality | 271 | Mother's Residence City/Town (Literal) | CITYTEXT | address.city |string | |
 | Natality | 272 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
 | Natality | 273 | Mother's Residence Country (Literal) | CNTRYTXT | address.country (expanded from 2 letter code) |string |See [CountryLiterals] |
-| Natality | 278 | Mother's Social Security Number | MOM_SSN | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”SS”  |string | |
+| Natality | 278 | Mother's Social Security Number | MOM_SSN | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”  |string | |
 | Natality | 305 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT | extension[patient-birthPlace].value[x].state |string |See [StateLiterals] |
 | Natality | 306 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT | extension[patient-birthPlace].value[x].country (expanded from 2 letter code) |string |See [CountryLiterals] |
 | Natality | 309 | Mother's Mailing Address Street number | MAIL_STNUM | address.extension[stnum] |string | |
@@ -105,7 +105,7 @@ This profile is mapped to:
 | Natality | 318 | Mother's Mailing Address City/Town (Literal) | MAIL_CITYTEXT | address.city |string | |
 | Natality | 319 | Mother's Mailing Address State (Literal) | MAIL_STATETXT | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
 | Natality | 320 | Mother's Mailing Address Country (Literal) | MAIL_CNTRYTXT | address.country (expanded from 2 letter code) |string |See [CountryLiterals] |
-| Natality | 333 | Mother's Medical Record Number | MOM_MED_REC_NUM | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”MR”  |string | |
+| Natality | 333 | Mother's Medical Record Number | MOM_MED_REC_NUM | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR”  |string | |
 | Natality | 340 | For use of jurisdictions with domestic partnerships, othertypes of relationships. | MARITAL_DESCRIP | maritalStatus.text |string |codeable.text should show up in differential with description from col F |
 | Fetal Death | 14 | Date of Birth (Mother)--Year | MDOB_YR | birthDate |date |See [PartialDatesAndTimes] |
 | Fetal Death | 15 | Date of Birth (Mother)--Month | MDOB_MO | birthDate |date |See [PartialDatesAndTimes] |
@@ -137,7 +137,7 @@ This profile is mapped to:
 | Fetal Death | 256 | Mother's Residence City/Town/Place (literal)  | CITYTXT | address.city |string | |
 | Fetal Death | 257 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
 | Fetal Death | 258 | Mother's Residence Country (literal) | CNTRYTXT | address.country (expanded from 2 letter code) |string |See [CountryLiterals] |
-| Fetal Death | 265 | Mother's Social Security Number | MOM_SSN | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”SS”  |string | |
+| Fetal Death | 265 | Mother's Social Security Number | MOM_SSN | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”  |string | |
 | Fetal Death | 279 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT | extension[patient-birthPlace].value[x].state |string |See [StateLiterals] |
 | Fetal Death | 280 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT | extension[patient-birthPlace].value[x].country (expanded from 2 letter code) |string |See [CountryLiterals] |
 {: .grid }
