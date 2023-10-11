@@ -207,15 +207,15 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-49
-* insert addentry(USCoreLocation, location-east-hospital)
+* insert addentry(Location, location-east-hospital)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Location/location-east-hospital"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-50
-* insert addentry(USCoreLocation, location-south-hospital)
+* insert addentry(Location, location-south-hospital)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Location/location-south-hospital"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-51
-* insert addentry(USCoreLocation, location-north-hospital)
+* insert addentry(Location, location-north-hospital)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Location/location-north-hospital"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-52

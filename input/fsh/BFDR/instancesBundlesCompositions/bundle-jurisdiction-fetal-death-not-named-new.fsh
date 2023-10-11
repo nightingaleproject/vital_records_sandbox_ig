@@ -179,7 +179,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Practitioner/practitioner-vital-records-janet-seito"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-40
-* insert addentry(USCoreLocation, location-south-hospital)
+* insert addentry(Location, location-south-hospital)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Location/location-south-hospital"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-41

@@ -257,15 +257,15 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Practitioner/practitioner-vital-records-avery-jones"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-61
-* insert addentry(USCoreLocation, location-east-hospital)
+* insert addentry(Location, location-east-hospital)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Location/location-east-hospital"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-62
-* insert addentry(USCoreLocation, location-south-hospital)
+* insert addentry(Location, location-south-hospital)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Location/location-south-hospital"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-63
-* insert addentry(USCoreLocation, location-north-hospital)
+* insert addentry(Location, location-north-hospital)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Location/location-north-hospital"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-64
