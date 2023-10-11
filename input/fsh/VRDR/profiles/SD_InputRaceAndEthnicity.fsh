@@ -38,7 +38,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
 * insert primobscodecomponent(SecondOtherPacificIslanderLiteral,string)
 * insert primobscodecomponent(FirstOtherRaceLiteral,string)
 * insert primobscodecomponent(SecondOtherRaceLiteral,string)
-* insert obscodecomponent(RACEMVR,$raceMissingValueReason)
+* insert obscodecomponent(RACEMVR,RaceMissingValueReasonVS)
 * insert obscodecomponent(HispanicMexican,HispanicNoUnknownVS)
 * insert obscodecomponent(HispanicPuertoRican,HispanicNoUnknownVS)
 * insert obscodecomponent(HispanicCuban,HispanicNoUnknownVS)
