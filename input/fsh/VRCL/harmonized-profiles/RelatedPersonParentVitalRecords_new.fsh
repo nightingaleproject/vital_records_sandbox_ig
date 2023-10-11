@@ -51,7 +51,7 @@ This profile is designed to supplant the similar profile in VRDR"
 * relationship 1.. 
 * name 1.. 
 //* telecom MS - remove MS, doesn't appear in differential for either VRDR or VRCL so seems ok to remove without adding a ^short
-* birthDate 
+* birthDate MS
   * extension contains ExtensionPartialDateVitalRecords named partialDate 0..* MS
   * extension[partialDate] ^short = "Provides values of a partial date"
     * ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
