@@ -45,15 +45,15 @@ This profile is mapped to:
 | Natality | 10 | County of Birth | CNTYO | extension[patient-birthplace].value[x].district.extension[countyCode] |integer |See [CountyCodes] |
 | Natality | 207 | Plurality | PLUR | extension[patient-multipleBirthTotal].valuePositiveInt |integer | |
 | Natality | 208 | Set Order | SORD | multipleBirth[x] |integer | |
-| Natality | 237 | Mother's Reported Age | MAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=Reference[ PatientMotherVitalRecords ] |quantity | |
-| Natality | 238 | Father's Reported Age | FAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=Reference[ RelatedPersonFatherNaturalVitalRecords ] |quantity | |
-| Natality | 247 | Child's First Name | KIDFNAME | name.given, name.use = official |string | |
-| Natality | 248 | Child's Middle Name | KIDMNAME | name.given, name.use = official  |string | |
-| Natality | 249 | Child's Last Name | KIDLNAME | name.family, name.use = official |string | |
-| Natality | 250 | Child's Surname Suffix (moved from end) | KIDSUFFX | name.suffix, name.use = official |string | |
+| Natality | 237 | Mother's Reported Age | MAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ] |quantity | |
+| Natality | 238 | Father's Reported Age | FAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ] |quantity | |
+| Natality | 247 | Child's First Name | KIDFNAME | name.given, <br />name.use = official |string | |
+| Natality | 248 | Child's Middle Name | KIDMNAME | name.given, <br />name.use = official  |string | |
+| Natality | 249 | Child's Last Name | KIDLNAME | name.family, <br />name.use = official |string | |
+| Natality | 250 | Child's Surname Suffix (moved from end) | KIDSUFFX | name.suffix, <br />name.use = official |string | |
 | Natality | 251 | County of Birth (Literal) | BIRTH_CO | extension[patient-birthPlace].value[x].district |string | |
 | Natality | 252 | City/town/place of birth (Literal) | BRTHCITY | extension[patient-birthPlace].value[x].city |string | |
-| Natality | 332 | Infant's Medical Record Number | INF_MED_REC_NUM | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' and type.coding.code=”MR”  |string | |
+| Natality | 332 | Infant's Medical Record Number | INF_MED_REC_NUM | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR”  |string | |
 | Fetal Death | 151 | Plurality | PLUR | extension[patient-multipleBirthTotal].valuePositiveInt |integer | |
-| Fetal Death | 171 | Mother's Reported Age | MAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=Reference[ PatientMotherVitalRecords ] |quantity | |
+| Fetal Death | 171 | Mother's Reported Age | MAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ] |quantity | |
 {: .grid }

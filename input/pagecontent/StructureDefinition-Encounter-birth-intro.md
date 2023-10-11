@@ -21,7 +21,7 @@ This profile is mapped to:
 | Natality | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE | location.physicalType |codeable |[ValueSetBirthDeliveryOccurred] |
 | Natality | 12 | Facility ID (NPI) - if available | FNPI | location.location.id |string | |
 | Natality | 13 | Facility ID (State-Assigned) | SFN | location.location.identifier |Identifier | |
-| Natality | 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN | hospitalization.dischargeDisposition="other-hcf" |codeable |[USCoreDischargeDispositionVS](http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition). See [Note on missing data]. Need to discuss - clarity needed for values other than 'other-hcf' |
+| Natality | 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN | hospitalization.dischargeDisposition="other-hcf" |codeable |[USCoreDischargeDispositionVS](http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition). <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'other-hcf' |
 | Natality | 253 | Name of Facility of Birth | HOSP | location.location.name |string | |
 | Natality | 303 | Facility Infant Transferred To (if transferred w/in 24 hours) | HOSPTO | hospitalization.destination.name |string | |
 | Natality | 334 | Date Signed by Certifier--Year | CERTIFIED_YR | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |

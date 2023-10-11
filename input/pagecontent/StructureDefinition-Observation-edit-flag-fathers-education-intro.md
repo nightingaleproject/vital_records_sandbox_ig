@@ -3,6 +3,6 @@ These validation checks are done at the jurisdiction prior to sending to the Nat
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 79 | Father's Education--Edit Flag | FEDUC_BYPASS | value |codeable |[PHVS_EducationLevelEditFlags_NCHS], See [Handling of edit flags] |
-| Fetal Death | 284 | Father's Education--Edit Flag | FEDUC_BYPASS | value |codeable |[PHVS_EducationLevelEditFlags_NCHS], See [Handling of edit flags] |
+| Natality | 79 | Father's Education--Edit Flag | FEDUC_BYPASS | value |codeable |[PHVS_EducationLevelEditFlags_NCHS], <br />See [Handling of edit flags] |
+| Fetal Death | 284 | Father's Education--Edit Flag | FEDUC_BYPASS | value |codeable |[PHVS_EducationLevelEditFlags_NCHS], <br />See [Handling of edit flags] |
 {: .grid }

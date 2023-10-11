@@ -6,7 +6,7 @@ Description: "This Condition profile represents information on whether the infan
 * category contains congenitalAnomolyNewborn 1..1 MS
 * category[congenitalAnomolyNewborn] = $loinc#73780-9
   * ^short = "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
-* code from PHVS_NewbornCongenitalAnomalies_NCHS (required)
+* code from ValueSetNewbornCongenitalAnomalies (required)
   * ^short = "The value set contain the list of values use to specify malformations of the newborn diagnosed prenatally or after delivery."
   * ^binding.description = "Newborn Congenital Anomalies (NCHS)"
 * subject only Reference(PatientChildVitalRecordsNew)

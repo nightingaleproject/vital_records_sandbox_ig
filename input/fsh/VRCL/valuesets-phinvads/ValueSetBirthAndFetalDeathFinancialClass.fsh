@@ -11,4 +11,4 @@ Description: "This value set contains codes to represent birth and fetal death f
 * BirthAndFetalDeathFinancialClassCS#privateinsurance "PRIVATE HEALTH INSURANCE" //5
 * BirthAndFetalDeathFinancialClassCS#selfpay "Self-pay" //81
 * BirthAndFetalDeathFinancialClassCS#tricare "TRICARE (CHAMPUS)" //311
-* BirthAndFetalDeathFinancialClassCS#unkown "Unavailable / Unknown" //9999
+* BirthAndFetalDeathFinancialClassCS#unknown "Unavailable / Unknown" //9999

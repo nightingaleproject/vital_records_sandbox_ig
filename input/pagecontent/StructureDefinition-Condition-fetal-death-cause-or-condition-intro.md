@@ -14,13 +14,13 @@ This profile is mapped to:
 | Fetal Death | 182 | Initiating cause/condition - Placental insufficiency | COD18a3 | code=237292005 (Placental insufficiency (disorder)) |na | |
 | Fetal Death | 183 | Initiating cause/condition - Prolapsed cord | COD18a4 | code=270500004 (Prolapsed cord (disorder)) |na | |
 | Fetal Death | 184 | Initiating cause/condition - Chorioamnionitis | COD18a5 | code=11612004 (Chorioamnionitis (disorder)) |na | |
-| Fetal Death | 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6 | code=PHC1298, code.text |string | |
+| Fetal Death | 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6 | code=FetalDeathCauseOrConditionCS#membranes, code.text |string |need to check this one - PHC1298 is ‘Complications of Placenta, Cord, or Membranes: Other (Specify)’ but IJE field is Y, N (not literal text) |
 | Fetal Death | 186 | Initiating cause/condition - Unknown | COD18a7 | code=UNK |na | |
-| Fetal Death | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8 | code=PHC1301, code.text |string |.text should contain description |
-| Fetal Death | 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9 | code=PHC1298, code.text |string |.text should contain description |
-| Fetal Death | 189 | Initiating cause/condition - Other obstetrical or pregnancy complications literal | COD18a10 | code=PHC1299, code.text |string |.text should contain description |
-| Fetal Death | 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11 | code=702709008 (Fetal Anomaly (Specify)), code.text |string |.text should contain description |
-| Fetal Death | 191 | Initiating cause/condition - Fetal injury literal | COD18a12 | code=277489001 (Fetal trauma (disorder)), code.text |string | |
-| Fetal Death | 192 | Initiating cause/condition - Fetal infection literal | COD18a13 | code=128270001 (Infectious disorder of the fetus (disorder)), code.text |string | |
-| Fetal Death | 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14 | code=PHC1300, code.text |string | |
+| Fetal Death | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8 | code=FetalDeathCauseOrConditionCS#maternalconditions, code.text |string |code.text should contain description |
+| Fetal Death | 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9 | code=FetalDeathCauseOrConditionCS#membranes, code.text |string |code.text should contain description |
+| Fetal Death | 189 | Initiating cause/condition - Other obstetrical or pregnancy complications literal | COD18a10 | code=FetalDeathCauseOrConditionCS#obstetricalcomplications, code.text |string |code.text should contain description |
+| Fetal Death | 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11 | code=702709008 (Fetal Anomaly (Specify)), <br />code.text |string |code.text should contain description |
+| Fetal Death | 191 | Initiating cause/condition - Fetal injury literal | COD18a12 | code=277489001 (Fetal trauma (disorder)), <br />code.text |string |specific description of fetal trauma should be provided in the code.text field |
+| Fetal Death | 192 | Initiating cause/condition - Fetal infection literal | COD18a13 | code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text |string |specific description of fetal infection should be provided in the code.text field |
+| Fetal Death | 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14 | code=FetalDeathCauseOrConditionCS#fetalconditions, <br />code.text |string |code.text should contain description |
 {: .grid }

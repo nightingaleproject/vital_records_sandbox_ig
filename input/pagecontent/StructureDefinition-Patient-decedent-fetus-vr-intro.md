@@ -28,9 +28,9 @@ This profile is mapped to:
 | Fetal Death | 8 | Date of Delivery (Fetus)--Month | FDOD_MO | birthDate | | |
 | Fetal Death | 9 | Date of Delivery (Fetus)--Day | FDOD_DY | birthDate | | |
 | Fetal Death | 152 | Set Order | SORD | multipleBirth[x] |integer | |
-| Fetal Death | 172 | Father's Reported Age | FAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=Reference[ RelatedPersonFatherNaturalVitalRecords ] |quantity | |
-| Fetal Death | 219 | Fetus First Name | FETFNAME | name.given, name.use = official |string |See [Note on Decedent Name] |
-| Fetal Death | 220 | Fetus Middle Name | FETMNAME | name.given, name.use = official |string |See [Note on Decedent Name] |
+| Fetal Death | 172 | Father's Reported Age | FAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ] |quantity | |
+| Fetal Death | 219 | Fetus First Name | FETFNAME | name.given, <br />name.use = official |string |See [Note on Decedent Name] |
+| Fetal Death | 220 | Fetus Middle Name | FETMNAME | name.given, <br />name.use = official |string |See [Note on Decedent Name] |
 | Fetal Death | 221 | Fetus Last Name | FETLNAME | name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.) |string  |See [Note on Decedent Name] |
-| Fetal Death | 222 | Fetus Surname Suffix | SUFFIX | name.suffix , name.use = official |string | |
+| Fetal Death | 222 | Fetus Surname Suffix | SUFFIX | name.suffix, <br />name.use = official |string | |
 {: .grid }

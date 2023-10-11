@@ -3,6 +3,6 @@ These validation checks are done at the jurisdiction prior to sending to the Nat
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 167 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS | value |codeable |[PHVS_NumberOfPreviousCesareansEditFlags_NCHS], See [Handling of edit flags]  |
-| Fetal Death | 120 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS | value |codeable |[PHVS_NumberOfPreviousCesareansEditFlags_NCHS], See [Handling of edit flags]  |
+| Natality | 167 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS | value |codeable |[PHVS_NumberOfPreviousCesareansEditFlags_NCHS], <br />See [Handling of edit flags]  |
+| Fetal Death | 120 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS | value |codeable |[PHVS_NumberOfPreviousCesareansEditFlags_NCHS], <br />See [Handling of edit flags]  |
 {: .grid }

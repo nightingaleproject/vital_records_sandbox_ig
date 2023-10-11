@@ -4,7 +4,7 @@ Title: "Procedure - Assisted Ventilation Following Delivery - BabyG Quinn"
 Description: "Procedure - Assisted Ventilation Following Delivery: BabyG Quinn example"
 Usage: #example
 * status = #completed
-* code = urn:oid:2.16.840.1.114222.4.5.274#PHC1250 "Surfactant replacement therapy (procedure)"
+* code = CodeSystemAbnormalConditionsNewborn#assistedventfollowingdelivery "Assisted ventilation required immediately following delivery" //PHC1250
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * performedPeriod
   * start = "2019-02-07T08:30:00-07:00"

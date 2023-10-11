@@ -213,11 +213,14 @@ groups:
       - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemLocationTypeVitalRecordsNew
       - CodeSystemMDI
+      - CodeSystemAbnormalConditionsNewborn
 
   PHINVADSValuesets:
     name: New ValueSets from PHINVADS
     resources:
+      - ValueSetAbnormalConditionsNewborn
       - ValueSetBirthAndFetalDeathFinancialClass
+      - ValueSetBirthAttendantTitles
       - ValueSetBirthDeliveryOccurred
       - ValueSetContributoryTobaccoUseVitalRecordsNew
       - ValueSetDeliveryRoutes
@@ -235,21 +238,21 @@ groups:
   VRCLValueSets:
     name: VRCL ValueSets
     resources:
+      - ValueSetApgarTimingVitalRecords    
+      - ValueSetCertifierTypes  
+      - ValueSetDateEstablishmentApproachVitalRecords
       - ValueSetDatePartVitalRecords
-      - ValueSetUnitsOfAgeVitalRecords
+      - ValueSetDeathPregnancyStatusVitalRecords
       - ValueSetEducationLevelPersonVitalRecords
-      - ValueSetApgarTimingVitalRecords
+      - ValueSetFatherRelationshipVitalRecords
+      - ValueSetMannerOfDeathVitalRecords
+      - ValueSetMotherRelationshipVitalRecords
+      - ValueSetPlaceOfDeathVitalRecords
+      - ValueSetTransportationIncidentRoleVitalRecords
+      - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
-      - ValueSetDateEstablishmentApproachVitalRecords
-      - ValueSetPlaceOfDeathVitalRecords
       - ValueSetYesNoUnknownNotApplicableVitalRecords
-      - ValueSetTransportationIncidentRoleVitalRecords
-      - ValueSetMannerOfDeathVitalRecords
-      - ValueSetCertifierTypes
-      - ValueSetMotherRelationshipVitalRecords
-      - ValueSetFatherRelationshipVitalRecords
-      - ValueSetDeathPregnancyStatusVitalRecords
 
   BFDRCompositionBundleProfilesNew:
     name: BFDR New Compositions and Bundles 
@@ -308,64 +311,64 @@ groups:
     name: VRDR CodeSystems
     description: VRDR CodeSystems 
     resources:
-      - SystemRejectCS
+      - ActivityAtTimeOfDeathCS    
       - BypassEditFlagCS
-      - ActivityAtTimeOfDeathCS
-      - CountryCodeCS
-      - ReplaceStatusCS
-      - LocationTypeCS
+      - CountryCodeCS  
+      - DateOfDeathDeterminationMethodsCS
+      - DocumentSectionCS
       - FilingFormatCS
       - HispanicOriginCS
-      - TransaxConversionCS
       - IntentionalRejectCS
-      - RaceCodeCS
       - JurisdictionsCS
-      - DateOfDeathDeterminationMethodsCS
+      - LocationTypeCS
       - MissingValueReasonCS
-      - CanadianProvincesCS
-      - RaceRecode40CS
       - ObservationsCS
+      - RaceCodeCS
+      - RaceRecode40CS
+      - ReplaceStatusCS
+      - SystemRejectCS
+      - TransaxConversionCS
+      - CanadianProvincesCS
       - ComponentCS
       - OrganizationTypeCS
-      - DocumentSectionCS
 
   VRDRValueSets:
     name: VRDR ValueSets
     resources:    
       - AdministrativeGenderVS
-      - SpouseAliveVS
-      - PlaceOfInjuryVS
+      - CertifierTypesVS
+      - ContributoryTobaccoUseVS
+      - DateOfDeathDeterminationMethodsVS
+      - EducationLevelVS
+      - FilingFormatVS
+      - HispanicNoUnknownVS
       - MannerOfDeathVS
+      - MaritalStatusVS
+      - MethodOfDispositionVS
+      - PlaceOfDeathVS
+      - PlaceOfInjuryVS
+      - RaceMissingValueReasonVS
+      - ReplaceStatusVS
+      - SpouseAliveVS
+      - StatesTerritoriesAndProvincesVS
+      - TransportationIncidentRoleVS
+      - UnitsOfAgeVS
+      - YesNoUnknownNotApplicableVS
       - IntentionalRejectVS
       - SystemRejectVS
       - TransaxConversionVS
       - ActivityAtTimeOfDeathVS
       - ICD10CausesOfDeathVS
-      - PlaceOfDeathVS
-      - DateOfDeathDeterminationMethodsVS
-      - HispanicNoUnknownVS
       - YesNoUnknownVS
-      - YesNoUnknownNotApplicableVS
       - ResidenceCountryVS
       - BirthplaceCountryVS
-      - EducationLevelVS
-      - FilingFormatVS
-      - MethodOfDispositionVS
-      - UnitsOfAgeVS
       - USStatesAndTerritoriesVS
-      - StatesTerritoriesAndProvincesVS
       - JurisdictionsProvincesVS
       - CanadaProvincesVS
       - JurisdictionVS
       - HispanicOriginVS
       - RaceCodeVS
       - RaceRecode40VS
-      - ContributoryTobaccoUseVS
-      - CertifierTypesVS
-      - RaceMissingValueReasonVS
-      - MaritalStatusVS
-      - ReplaceStatusVS
-      - TransportationIncidentRoleVS
       - EditBypass01VS
       - EditBypass012VS
       - EditBypass0124VS
