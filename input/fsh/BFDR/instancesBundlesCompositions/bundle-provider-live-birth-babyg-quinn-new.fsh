@@ -8,7 +8,7 @@ Usage: #example
   * value = "urn:uuid:18825bb1-1acb-48c4-9b45-baa612640ba5"
 * type = #document
 * timestamp = "2019-02-11T02:05:44.434Z"
-* insert addentry(CompositionJurisdictionLiveBirthReportNew, composition-provider-live-birth-babyg-quinn-new)
+* insert addentry(Composition, composition-provider-live-birth-babyg-quinn-new)
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-provider-live-birth-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-1
