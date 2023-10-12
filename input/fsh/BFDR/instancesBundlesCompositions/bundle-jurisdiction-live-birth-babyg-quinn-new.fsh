@@ -146,7 +146,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-birth-weight-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-34
-* insert addentry(Observation, observation-gestational-age-at-delivery-babyg-quinn)
+* insert addentry(Observation, observation-gestational-age-at-delivery-babyg-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-gestational-age-at-delivery-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-35
@@ -209,7 +209,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-birth-weight-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-49
-* insert addentry(Observation, observation-edit-flag-estimate-of-gestation-example)
+//* insert addentry(Observation, observation-edit-flag-estimate-of-gestation-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-estimate-of-gestation-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-50

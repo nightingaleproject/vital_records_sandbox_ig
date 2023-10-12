@@ -102,7 +102,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-birth-weight-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-22
-* insert addentry(Observation, observation-gestational-age-at-delivery-not-named)
+* insert addentry(Observation, observation-gestational-age-at-delivery-not-named-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-gestational-age-at-delivery-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-23
@@ -147,7 +147,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-delivery-wgt-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-32
-* insert addentry(Observation, observation-edit-flag-est-gestation-not-named)
+//* insert addentry(Observation, observation-edit-flag-est-gestation-not-named)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-est-gestation-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-33

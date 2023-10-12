@@ -95,7 +95,7 @@ Description: "This Composition profile contains information of a live birth and 
 * insert BFDRCompositionSectionEntrySlicing(editFlags, 1, 92012-4, Jurisdiction Live Birth)
 * section[editFlags].entry ..12
 //* insert BFDRCompositionSectionSlice(editFlags, editFlagBirthweight, 1, 1, Birth weight edit flag, Birth weight edit flag, ObservationEditFlagBirthweight)   
-* insert BFDRCompositionSectionSlice(editFlags, editFlagEstimateOfGestation, 1, 1, Estimate of gestation edit flag, Estimate of gestation edit flag, ObservationEditFlagEstimateOfGestation)   
+//* insert BFDRCompositionSectionSlice(editFlags, editFlagEstimateOfGestation, 1, 1, Estimate of gestation edit flag, Estimate of gestation edit flag, ObservationEditFlagEstimateOfGestation)   
 * insert BFDRCompositionSectionSlice(editFlags, editFlagFathersDateOfBirth, 1, 1, Father DOB edit flag, Father DOB edit flag, ObservationEditFlagFathersDateOfBirth)   
 * insert BFDRCompositionSectionSlice(editFlags, editFlagFathersEducation, 1, 1, Father education edit flag, Father education edit flag, ObservationEditFlagFathersEducation)   
 * insert BFDRCompositionSectionSlice(editFlags, editFlagMothersDateOfBirth, 1, 1, Mother DOB edit flag, Mother DOB edit flag, ObservationEditFlagMothersDateOfBirth)   
