@@ -5,8 +5,8 @@
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
 # This is not relevant for our application
-All observations should have a performer
-All observations should have an effectiveDateTime or an effectivePeriod
+Best Practice Recommendation: In general, all observations should have a performer
+Best Practice Recommendation: In general, all observations should have an effective[x] ()
 
 # tweak the  file
 This element does not match any known slice defined in the profile

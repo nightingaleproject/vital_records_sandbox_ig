@@ -8,7 +8,7 @@ Usage: #example
   * lastUpdated = "2023-06-13T23:01:43.965Z"
 * clinicalStatus = $condition-clinical#active "Active"
   * text = "Active"
-* category = $condition-category#problem-list-item
+* category[us-core] = $condition-category#problem-list-item
 * code = $sct#15938005 "Eclampsia (disorder)"
   * text = "Eclampsia (disorder)"
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"

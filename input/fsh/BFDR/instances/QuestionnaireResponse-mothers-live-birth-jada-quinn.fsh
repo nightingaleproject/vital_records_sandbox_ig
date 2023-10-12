@@ -3,7 +3,7 @@ InstanceOf: QuestionnaireResponse
 Title: "QuestionnaireResponse - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn"
 Description: "Questionnaire - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn"
 Usage: #example
-* questionnaire = "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"
+* questionnaire = Canonical(Questionnaire-mothers-live-birth)
 * status = #completed
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * source = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
