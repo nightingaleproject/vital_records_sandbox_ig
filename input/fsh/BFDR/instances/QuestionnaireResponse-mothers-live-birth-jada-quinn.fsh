@@ -3,7 +3,7 @@ InstanceOf: QuestionnaireResponse
 Title: "QuestionnaireResponse - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn"
 Description: "Questionnaire - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn"
 Usage: #example
-* questionnaire = "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"
+* questionnaire = Canonical(Questionnaire-mothers-live-birth)
 * status = #completed
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * source = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
@@ -63,7 +63,7 @@ Usage: #example
 * item[+]
   * linkId = "inside-city-limits"
   * text = "Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?"
-  * answer.valueCoding = $v2-0532#Y "Yes"
+  * answer.valueCoding = $v2-0136#Y "Yes"
 * item[+]
   * linkId = "mother-mail"
   * text = "What is your mailing address"
@@ -123,7 +123,7 @@ Usage: #example
 * item[+]
   * linkId = "receive-wic"
   * text = "Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"
-  * answer.valueCoding = $v2-0532#Y "Yes"
+  * answer.valueCoding = $v2-0136#Y "Yes"
 * item[+]
   * linkId = "infertility-treatment"
   * text = "Did this pregnancy result from infertility treatment? (If yes, please answer 12a and 12b)"

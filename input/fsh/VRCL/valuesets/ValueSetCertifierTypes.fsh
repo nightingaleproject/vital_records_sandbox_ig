@@ -3,21 +3,9 @@ Id: ValueSet-certifier-types-vr
 Title: "ValueSet - Certifier Types Vital Records"
 Description: """A set of codes indicating the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)
 The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."""
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-12-09T03:15:56.834+00:00"
-* ^meta.source = "#TqN8CjLk3EvflVFm"
-* ^version = "0.1"
 * ^status = #active
 * ^experimental = false
-* ^date = "2022-08-02T13:21:04+00:00"
-* ^publisher = "HL7 Public Health Working Group"
-* ^contact.name = "HL7 Public Health Working Group"
-* ^contact.telecom[0].system = #url
-* ^contact.telecom[=].value = "http://www.hl7.org/Special/committees/pher"
-* ^contact.telecom[+].system = #email
-* ^contact.telecom[=].value = "pher@lists.HL7.org"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* insert SNOMEDCopyright
 * SNOMED_CT#455381000124109 "Medical Examiner/Coroner-On the basis of examination, and/or investigation, in my opinion, death occurred at the time, date, and place, and due to the cause(s) and manner stated."
 * SNOMED_CT#434641000124105 "Pronouncing & Certifying physician-To the best of my knowledge, death occurred at the time, date, and place, and due to the cause(s) and manner stated."
 * SNOMED_CT#434651000124107 "Certifying physician-To the best of my knowledge, death occurred due to the cause(s) and manner stated."

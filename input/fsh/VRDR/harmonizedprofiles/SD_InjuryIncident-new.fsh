@@ -15,7 +15,7 @@ Description: "This Observation provides the certified explanation of how the inj
   * ^definition = "The subject of this observation is the decedent."
 * effective[x] only dateTime
   * ^short = "Date/Time of Injury"
-  * extension contains $Extension-partial-date-time named partialDateTime 0..1
+  * extension contains ExtensionPartialDateTimeVitalRecords named partialDateTime 0..1
 * performer only Reference(USCorePractitionerProfile)
   * ^short = "Certifier of the explanation."
   * ^definition = "Certifier of the explanation."
@@ -42,7 +42,7 @@ Description: "This Observation provides the certified explanation of how the inj
 * component[transportationRole]
   * code = $loinc#69451-3
   * value[x] only CodeableConcept
-  * value[x] from $ValueSet-transportation-incident-role (required)
+  * value[x] from ValueSetTransportationIncidentRoleVitalRecords (required)
     * ^short = "Transportation role of decedent"
   * valueCodeableConcept 1..1
     * text ^short = "Transportation role of decedent, if code = OTH"

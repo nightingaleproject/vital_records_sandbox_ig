@@ -14,6 +14,6 @@ Description: "The highest degree or level of schooling completed by the parent."
   * ^short = "The RelatedPerson record for the parent"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from PHVS_VitalRecordsEducationLevel_NCHS (required)
+* value[x] from EducationLevelVS (required)
   * ^short = "The collection of education levels used for vital records reporting."
   * ^binding.description = "Vital Records Education Level (NCHS)"

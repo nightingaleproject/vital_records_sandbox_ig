@@ -1,3 +1,4 @@
+//changed to reference VRCL VS not phinvads VS
 Profile: ObservationMotherMarriedDuringPregnancy
 Parent: Observation
 Title: "Observation - Mother Married During Pregnancy"
@@ -11,6 +12,6 @@ Description: "This profile represents whether or not the mother was married at c
 // * focus only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
-* value[x] from PHVS_YesNoUnknown_CDC (required)
+* value[x] from ValueSetYesNoUnknownVitalRecords (required)
   * ^short = "Was mother married at conception, at the time of birth, or at any time between conception and giving birth?"
   * ^binding.description = "Yes No Unknown (YNU)"

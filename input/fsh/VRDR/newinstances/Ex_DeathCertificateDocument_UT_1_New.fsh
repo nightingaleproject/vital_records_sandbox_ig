@@ -37,6 +37,7 @@ Usage: #example
 Instance: DeathCertificateUT-Example1
 InstanceOf: DeathCertificateNew
 Usage: #example
+Description: "DeathCertificateUT-Example1"
 * extension[FilingFormat].valueCodeableConcept = FilingFormatCS#electronic
 * extension[StateSpecificField].valueString = "20220101"
 * status = #final
@@ -82,6 +83,7 @@ Usage: #example
 Instance: DecedentUT-Example1 // f906300e-3622-459c-8201-af0d9b90fb75
 InstanceOf: DecedentNew
 Usage: #example 
+Description: "DecedentUT-Example1"
 * extension[NVSSSexAtDeath].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
 //* extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 //* extension[http://hl7.org/fhir/StructureDefinition/patient-birthPlace]
@@ -119,6 +121,7 @@ Usage: #example
 Instance: InputRaceAndEthnicityUT-Example1
 InstanceOf: InputRaceAndEthnicityNew
 Usage: #example
+Description: "InputRaceAndEthnicityUT-Example1"
 // * id = "0a1ded2c-6140-4abc-9128-0af93e2f2ea5"
 * status = #final
 * subject = Reference(DecedentUT-Example1)
@@ -146,6 +149,7 @@ Usage: #example
 Instance: PractitionerUT-Example1
 InstanceOf: PractitionerVitalRecordsNew
 Usage: #example
+Description: "PractitionerUT-Example1"
 // * id = "practitioner-ut-example1"
 * identifier.value = "161632-1999"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
@@ -164,6 +168,7 @@ Usage: #example
 Instance: BirthRecordIdentifierUT-Example1 //b2b59a71-0a15-41dd-97ef-84b494bcd2c0
 InstanceOf: BirthRecordIdentifier
 Usage: #example
+Description: "BirthRecordIdentifierUT-Example1"
 * subject = Reference(DecedentUT-Example1)
 * valueString = "001023"
 * component[birthYear].valueDateTime = "2021"
@@ -172,6 +177,7 @@ Usage: #example
 Instance: EducationUT-Example1
 InstanceOf: ObservationEducationLevelVitalRecordsNew
 Usage: #example
+Description: "EducationUT-Example1"
 * subject = Reference(DecedentUT-Example1)
 * status = #final
 * code = $loinc#80913-7 "Highest level of education [US Standard Certificate of Death]"
@@ -181,6 +187,7 @@ Usage: #example
 Instance: FatherUT-Example1
 InstanceOf: DecedentFather
 Usage: #example
+Description: "FatherUT-Example1"
 * patient = Reference(DecedentUT-Example1)
 * relationship = $v3-RoleCode#FTH "father"
 * name.use = #official
@@ -191,6 +198,7 @@ Usage: #example
 Instance: MotherUT-Example1
 InstanceOf: DecedentMother
 Usage: #example
+Description: "MotherUT-Example1"
 * patient = Reference(DecedentUT-Example1)
 * relationship = $v3-RoleCode#MTH "mother"
 * name.use = #official
@@ -201,6 +209,7 @@ Usage: #example
 Instance: AutopsyPerformedIndicatorUT-Example1
 InstanceOf: AutopsyPerformedIndicator
 Usage: #example
+Description: "AutopsyPerformedIndicatorUT-Example1"
 // * id = "95176132-1030-418d-b1a4-594872f6bec7"
 * subject = Reference(DecedentUT-Example1)
 * valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
@@ -209,6 +218,7 @@ Usage: #example
 Instance: CauseOfDeathPart1UT-Example1 
 InstanceOf: CauseOfDeathPart1New
 Usage: #example
+Description: "CauseOfDeathPart1UT-Example1 "
 * subject = Reference(DecedentUT-Example1)
 * performer = Reference(PractitionerUT-Example1)
 * valueCodeableConcept.text = "Pending"
@@ -219,6 +229,7 @@ Usage: #example
 Instance: DeathDateUT-Example1
 InstanceOf: DeathDateNew
 Usage: #example
+Description: "DeathDateUT-Example1"
 * status = #final 
 * subject = Reference(DecedentUT-Example1)
 * effectiveDateTime = "2022-01-17T20:23:00-05:00"
@@ -235,6 +246,7 @@ Usage: #example
 Instance: DeathLocationUT-Example1 
 InstanceOf: DeathLocation
 Usage: #example
+Description: "DeathLocationUT-Example1"
 * name = "Salt Lake Regional Medical Cen"
 * description = "Facility"
 * address.city = "Salt Lake City"
@@ -243,6 +255,7 @@ Usage: #example
 Instance: AgeUT-Example1 
 InstanceOf: DecedentAge
 Usage: #example
+Description: "AgeUT-Example1 "
 // * id = "7eda2a2c-f92d-4885-949f-34c500241300"
 * subject = Reference(DecedentUT-Example1)
 //* valueQuantity.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
@@ -252,6 +265,7 @@ Usage: #example
 Instance: DispositionMethodUT-Example1 
 InstanceOf: DecedentDispositionMethodNew
 Usage: #example
+Description: "DispositionMethodUT-Example1"
 * status = #final 
 * subject = Reference(DecedentUT-Example1)
 * valueCodeableConcept = $sct#449971000124106 "Burial"
@@ -259,6 +273,7 @@ Usage: #example
 Instance: DispositionLocationUT-Example1
 InstanceOf: DispositionLocation
 Usage: #example
+Description: "DispositionLocationUT-Example1"
 // * id = "8371fc22-95da-4f72-a4be-674fc267cb7a"
 * name = "Salt Lake City Cemetery"
 * address.city = "Salt Lake City"
@@ -268,6 +283,7 @@ Usage: #example
 Instance: UsualWorkUT-Example1
 InstanceOf: DecedentUsualWork
 Usage: #example
+Description: "UsualWorkUT-Example1"
 // * id = "0051e0b6-6990-4190-93a6-87442b4a50aa"
 * status = #final
 * subject = Reference(DecedentUT-Example1)
@@ -278,6 +294,7 @@ Usage: #example
 Instance: MilitaryServiceUT-Example1
 InstanceOf: DecedentMilitaryService
 Usage: #example
+Description: "MilitaryServiceUT-Example1"
 // * id = "60bb97be-43fd-4e36-bd0d-49a7efdcbcda"
 * subject = Reference(DecedentUT-Example1)
 * valueCodeableConcept = $v2-0136#N "No"
@@ -285,6 +302,7 @@ Usage: #example
 Instance: PregnancyUT-Example1 
 InstanceOf: DecedentPregnancyStatusNew
 Usage: #example
+Description: "PregnancyUT-Example1"
 * status = #final 
 * subject = Reference(DecedentUT-Example1)
 //* valueCodeableConcept.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
@@ -294,12 +312,14 @@ Usage: #example
 Instance: ExaminerContactedUT-Example1 
 InstanceOf: ExaminerContacted
 Usage: #example
+Description: "ExaminerContactedUT-Example1"
 * subject = Reference(DecedentUT-Example1)
 * valueCodeableConcept = $v2-0136#N "No"
 
 Instance: FuneralHomeUT-Example1
 InstanceOf: FuneralHome
 Usage: #example
+Description: "FuneralHomeUT-Example1"
 * active = true
 * name = "Colonial Memorial Mortuary"
 * address.line = "2128 South State"
@@ -312,6 +332,7 @@ Usage: #example
 Instance: InjuryIncidentUT-Example1 
 InstanceOf: InjuryIncidentNew
 Usage: #example
+Description: "InjuryIncidentUT-Example1"
 * status = #final 
 * subject = Reference(DecedentUT-Example1)
 * component[workInjuryIndicator].valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
@@ -319,6 +340,7 @@ Usage: #example
 Instance: MannerOfDeathUT-Example1 
 InstanceOf: MannerOfDeathNew
 Usage: #example
+Description: "MannerOfDeathUT-Example1"
 * status = #final 
 * subject = Reference(DecedentUT-Example1)
 * performer = Reference(PractitionerUT-Example1)
@@ -327,6 +349,7 @@ Usage: #example
 Instance: TobaccoUseUT-Example1 
 InstanceOf: TobaccoUseContributedToDeathNew
 Usage: #example
+Description: "TobaccoUseUT-Example1"
 //* id = "8942bdc4-b1dd-4458-aa6a-158e22ea3d24"
 * subject = Reference(DecedentUT-Example1)
 * valueCodeableConcept = $sct#373067005 "No"
@@ -334,6 +357,7 @@ Usage: #example
 Instance: ProcedureDeathCertificationUT-Example1
 InstanceOf: DeathCertificationNew
 Usage: #example
+Description: "ProcedureDeathCertificationUT-Example1"
 // * id = procedure-death-certification-ut-example1 
 * status = #completed
 * identifier.value = "161632-1999"
@@ -347,6 +371,7 @@ Usage: #example
 Instance: EmergingIssuesUT-Example1
 InstanceOf: EmergingIssues
 Usage: #example
+Description: "EmergingIssuesUT-Example1"
 // * id = "3a1d5d86-4399-48ad-9d55-a22ddd283bfa"
 * subject = Reference(DecedentUT-Example1)
 * component[EmergingIssue20].valueString = "043-A-110234"
