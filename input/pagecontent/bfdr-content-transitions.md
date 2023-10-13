@@ -2,13 +2,11 @@
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
-|Patient-Child |   subject  |    -    | [PatientChildVitalRecords] |     [PatientChildNew]       |   moving from VRCL to BFDR   |
-| Mother's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
-| Father's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
+|Patient-Child |   subject  |    -    |   [PatientChildVitalRecords] |     [PatientChildVitalRecordsNew]     |   staying in VRCL with updates   |
 |Encounter-Birth |   encounter  |    -    | [EncounterBirth] |     -         |   -      |
 |Encounter-Maternity (ext) |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
 |Practitioner |   author  |  generalized profile that adds a further constraint to capture the title of the practitioner  | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] | - |
-|Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     [PatientMotherNew]        |   moving from VRCL to BFDR   |
+|Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     [PatientMotherVitalRecordsNew]        |   staying in VRCL with updates   |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
 |First Prenatal Care Visit |   motherPrenatal  |    -    | [ObservationDateOfFirstPrenatalCareVisit] |       -       |    -     |
 |Number Prenatal Care Visits|     motherPrenatal     |    -    | [ObservationNumberPrenatalVisitsVitalRecords] |   [ObservationNumberPrenatalVisitsNew]    |    moving from VRCL to BFDR    |
@@ -23,7 +21,16 @@
 |Mother's Prepregancy Weight|     motherPrenatal     |    -    | [ObservationMotherPrepregnancyWeightVitalRecords] |   [ObservationMotherPrepregnancyWeightNew]    |    moving from VRCL to BFDR    |
 |Mother Received WIC Food|     motherPrenatal     |    -    | [ObservationMotherReceivedWICFood] |       -       |    -     |
 |Cigarette Smoking Before During Pregnancy|     motherPrenatal     |    -    | [ObservationCigaretteSmokingBeforeDuringPregnancy] |       -       |    -     |
-|Pregnancy Risk Factors |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ObservationPregnancyRiskFactorNew]   |    moving from VRCL to BFDR, new valueSet from Phinvads    |
+|Prepregnancy Diabetes |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ConditionPrepregnancyDiabetesNew]   |    Risk factors broken up into individual profiles    |
+|Gestational Diabetes |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ConditionGestationalDiabetesNew]   |    Risk factors broken up into individual profiles    |
+|Prepregnancy Hypertension |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ConditionPrepregnancyHypertensionNew]   |    Risk factors broken up into individual profiles    |
+|Gestational Hypertension |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ConditionGestationalHypertensionNew]   |    Risk factors broken up into individual profiles    |
+|Eclampsia Hypertension |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ConditionEclampsiaHypertensionNew]   |    Risk factors broken up into individual profiles    |
+|Infertility Treatment |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ProcedureInfertilityTreatmentNew]   |    Risk factors broken up into individual profiles    |
+|Artificial Insemination |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ProcedureArtificialInseminationNew]   |    Risk factors broken up into individual profiles    |
+|Assisted Fertilization |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ProcedureAssistedFertilizationNew]   |    Risk factors broken up into individual profiles    |
+|Previous Cesarean |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ObservationPreviousCesareanNew]   |    Risk factors broken up into individual profiles    |
+|None Of Specified Pregnancy Risk Factors |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew]   |    Risk factors broken up into individual profiles    |
 |Number Previous Cesareans |     medicalHealthInformation     |    -    | [ObservationNumberPreviousCesareansVitalRecords] |  [ObservationNumberPreviousCesareansNew]   |    moving from VRCL to BFDR    |
 |Infections During Pregnancy |     medicalHealthInformation   |    -    | [ConditionInfectionPresentDuringPregnancy] |       -       |    -     |
 |Obstetric Procedures |     medicalHealthInformation    |    -    | [ProcedureObstetric] |       -       |    -     |
@@ -61,7 +68,8 @@
 |Mothers Education|     motherInformation   |  added Decedent education level code, removed MS flags  | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |  - |
 |Paternity Acknowledgement Signed |     fatherInformation   |    -    | [ObservationPaternityAcknowledgementSigned] |       -       |    -     |
 |Fathers Education|     fatherInformation  |   added Decedent education level code, removed MS flags   | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |  - |
-|Questionnaire-Mother's Worksheet for Child's Birth Certificate |     mothersQuestionnaireResponse   |    -    | [Questionnaire-mothers-live-birth] |       -       |    -     |
+|Father Related Person|     fatherInformation  |   -  | [RelatedPersonFatherNaturalVitalRecords] | - |  - |
+<!-- |Questionnaire-Mother's Worksheet for Child's Birth Certificate |     mothersQuestionnaireResponse   |    -    | [Questionnaire-mothers-live-birth] |       -       |    Not a profile    | -->
 {: .grid }
 
 | Name of Extension  | change  |  Current Extension   | New Extension  | Comment |
@@ -69,19 +77,21 @@
 |Live Birth Certificate Number  |    -    | [ExtensionLiveBirthCertificateNumber] |     -       |   -      |
 |Live Birth Local File Number  |    -    | [ExtensionLiveBirthLocalFileNumber] |     -      |   -      |
 |Date Filed by Registrar |    -    | [ExtensionDateFiledByRegistrar] |     -         |   -      |
-|Partial Date  |    -    | [PartialDate] |    [ExtensionDatePartAbsentReasonVitalRecords]         |   -      |
-|Partial Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]             |    -     |
+|Replacement Status |    -    | [ReplaceStatus] |     -         |    The use of this extension has been deprecated and wil be ignored for NCHS submissions.  |
+|Encounter Maternity Reference |    -    | [ExtensionEncounterMaternityReference] |     -         |   -  |
+<!-- |Partial Date  |    -    | [PartialDate] |    [ExtensionDatePartAbsentReasonVitalRecords]         |   -      |
+|Partial Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]             |    -     | -->
 {: .grid }
 
 # Provider Fetal Death
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
-|Patient-Decedent Fetus |   subject  |    -    | [PatientDecedentFetusVitalRecords] |  [PatientDecedentFetusNew]   |   moving from VRCL to BFDR   |
+|Patient-Decedent Fetus |   subject  |    -    | [PatientDecedentFetusVitalRecords] |  [PatientDecedentFetusVitalRecordsNew]   |   staying in VRCL with updates   |
 |Encounter-Maternity |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
 |Practitioner |   author  |    generalized profile that adds a further constraint to capture the title of the practitioner    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |  -  |
-|Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |   [PatientMotherNew]    |   moving from VRCL to BFDR    |
-| Mother's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL |
+|Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |   [RelatedPersonMotherVitalRecordsNew]    |   staying in VRCL with updates    |
+<!-- | Mother's Race and Ethnicity| motherInfo |    -    |  <not included> | [InputRaceAndEthnicityNew] | moving from VRDR to VRCL | -->
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
 |First Prenatal Care Visit |   motherPrenatal  |    -    | [ObservationDateOfFirstPrenatalCareVisit] |       -       |    -     |
 |Date Last Normal Menses |     motherPrenatal     |    -    | [ObservationLastMenstrualPeriodVitalRecords] |   [ObservationLastMenstrualPeriodNew]   |    moving from VRCL to BFDR    |
@@ -92,7 +102,16 @@
 |Mother's Prepregancy Weight|     motherPrenatal     |    -    | [ObservationMotherPrepregnancyWeightVitalRecords] |   [ObservationMotherPrepregnancyWeightNew]    |    moving from VRCL to BFDR    |
 |Mother Received WIC Food|     motherPrenatal     |    -    | [ObservationMotherReceivedWICFood] |       -       |    -     |
 |Cigarette Smoking Before During Pregnancy|     motherPrenatal     |    -    | [ObservationCigaretteSmokingBeforeDuringPregnancy] |       -       |    -     |
-|Pregnancy Risk Factors |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ObservationPregnancyRiskFactorNew]   |    moving from VRCL to BFDR, new valueSet from Phinvads    |
+|Prepregnancy Diabetes |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ConditionPrepregnancyDiabetesNew]   |    Risk factors broken up into individual profiles    |
+|Gestational Diabetes |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ConditionGestationalDiabetesNew]   |    Risk factors broken up into individual profiles    |
+|Prepregnancy Hypertension |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ConditionPrepregnancyHypertensionNew]   |    Risk factors broken up into individual profiles    |
+|Gestational Hypertension |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ConditionGestationalHypertensionNew]   |    Risk factors broken up into individual profiles    |
+|Eclampsia Hypertension |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ConditionEclampsiaHypertensionNew]   |    Risk factors broken up into individual profiles    |
+|Infertility Treatment |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ProcedureInfertilityTreatmentNew]   |    Risk factors broken up into individual profiles    |
+|Artificial Insemination |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ProcedureArtificialInseminationNew]   |    Risk factors broken up into individual profiles    |
+|Assisted Fertilization |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ProcedureAssistedFertilizationNew]   |    Risk factors broken up into individual profiles    |
+|Previous Cesarean |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ObservationPreviousCesareanNew]   |    Risk factors broken up into individual profiles    |
+|None Of Specified Pregnancy Risk Factors |     medicalHealthInformation    |    -    | [ObservationPregnancyRiskFactorVitalRecords] |   [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew]   |    Risk factors broken up into individual profiles    |
 |Number Previous Cesareans |     medicalHealthInformation     |    -    | [ObservationNumberPreviousCesareansVitalRecords] |  [ObservationNumberPreviousCesareansNew]   |    moving from VRCL to BFDR    |
 |Fetal Presentations |     medicalHealthInformation   |    -    | [ObservationFetalPresentation] |       -       |    -     |
 |Final Route Method Delivery|     medicalHealthInformation   |    -    | [ProcedureFinalRouteMethodDelivery] |       -       |    -     |
@@ -113,7 +132,8 @@
 |Number Live Births This Delivery |     fetus    |    -    | [ObservationNumberLiveBirthsThisDeliveryVitalRecords] |  [ObservationNumberLiveBirthsThisDeliveryNew]  |    moving from VRCL to BFDR    |
 |Number Fetal Deaths This Delivery |     fetus    |    -    | [ObservationNumberFetalDeathsThisDeliveryVitalRecords] |  [ObservationNumberFetalDeathsThisDeliveryNew]   |    moving from VRCL to BFDR    |
 |Mothers Education|     motherInformation   |    added Decedent education level code, removed MS flags   | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |  -  |
-|Patients Questionnaire Response |     patientsQuestionnaireResponse   |    -    | [Questionnaire-patients-fetal-death] |       -       |    -     |
+|Father Related Person|     fatherInformation  |   -  | [RelatedPersonFatherNaturalVitalRecords] | - |  - |
+<!-- |Patients Questionnaire Response |     patientsQuestionnaireResponse   |    -    | [Questionnaire-patients-fetal-death] |       -       |    Not a profile    | -->
 {: .grid }
 
 | Name of Extension  | change  |  Current Extension   | New Extension  | Comment |
@@ -121,11 +141,13 @@
 |Fetal Death Report Number  |    -    | [ExtensionFetalDeathReportNumber] |     -       |   -      |
 |Fetal Death Local File Number  |    -    | [ExtensionFetalDeathLocalFileNumber] |     -      |   -      |
 |Date Received by Registrar |    -    | [ExtensionDatereceivedByRegistrar] |     -         |   -      |
-|Partial Date  |    -    | [PartialDate] |    [ExtensionDatePartAbsentReasonVitalRecords]         |   -      |
-|Partial Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]             |    -     |
+|Replacement Status |    -    | [ReplaceStatus] |     -         |    The use of this extension has been deprecated and wil be ignored for NCHS submissions.  |
+|Encounter Maternity Reference |    -    | [ExtensionEncounterMaternityReference] |     -         |   -  |
+<!-- |Partial Date  |    -    | [PartialDate] |    [ExtensionDatePartAbsentReasonVitalRecords]         |   -      |
+|Partial Date Time  |    -    | [PartialDateTime] | [ExtensionPartialDateTimeVitalRecords]             |    -     | -->
 {: .grid }
 
-# Coded Race and Ethnicity
+# Demographic Coded Content Bundle for BFDR
 
 | Name of Profile  | Group | change  |  Current Profile   | New Profile  | Comment |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
