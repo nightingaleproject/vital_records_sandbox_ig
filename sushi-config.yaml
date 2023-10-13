@@ -58,6 +58,10 @@ publisher:
 pages:
   index.md:
     title: Home
+  BFDR_index.md: 
+    title: Birth and Fetal Death Reporting
+  VRCL_index.md: 
+    title: Vital Records Common Library
   usage.md:
     title: Usage
   vrdr-content-transitions.md:
@@ -135,6 +139,8 @@ parameters:
 menu:
   Home:
     Home: index.html
+    BFDR: BFDR_index.html
+    VRCL: VRCL_index.html
     Usage: usage.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
@@ -251,6 +257,19 @@ groups:
       # - ObservationDecedentPregnancyVitalRecordsNew
       # - ObservationDeathDateVitalRecordsNew 
       # - ProcedureDeathCertificationVitalRecordsNew 
+
+  UnchangedVRCommonProfiles:
+    name: Unchanged VRCL Common Profiles 
+    # description: Unchanged VRCL Common Profiles 
+    resources:
+      - LocationDeathVitalRecords
+      - LocationInjuryVitalRecords
+      - ObservationAutopsyPerformedIndicatorVitalRecords
+      - ObservationParentEducationLevelVitalRecords
+      - ObservationRaceVitalRecords
+      - ObservationTabulatedEthnicityVitalRecords
+      - RelatedPersonFatherNaturalVitalRecords
+      - RelatedPersonMotherGestationalVitalRecords
   
   VRCLCodeSystems:
     name: VRCL CodeSystems
@@ -307,8 +326,9 @@ groups:
 
   BFDRCompositionBundleProfilesNew:
     name: BFDR New Compositions and Bundles 
-    description: BFDR New Composition and Bundle Profiles
+    # description: BFDR New Composition and Bundle Profiles
     resources:
+      - BundleDocumentBFDRNew
       - CompositionCodedCauseOfFetalDeathNew
       - CompositionCodedRaceAndEthnicityNew
       - CompositionJurisdictionFetalDeathReportNew
@@ -320,7 +340,7 @@ groups:
 
   BFDRProfilesfromVRCL:
     name: BFDR New Profiles (from VRCL)
-    description: BFDR New Profiles (from VRCL)
+    # description: BFDR New Profiles (from VRCL)
     resources:
       - ConditionPrepregnancyHypertensionNew
       - ConditionEclampsiaHypertensionNew
@@ -350,17 +370,87 @@ groups:
       #- ObservationPregnancyRiskFactorNew
       #- PatientDecedentFetusNew
       #- PatientMotherNew
+      - ObservationPreviousCesareanNew
+
+  UnchangedBFDRProfiles:
+    name: Unchanged BFDR Profiles
+    # description: Unchanged BFDR Profiles
+    resources: 
+      - ConditionChorioamnionitis
+      - ConditionCodedInitiatingFetalDeathCauseOrCondition
+      - ConditionCodedOtherFetalDeathCauseOrCondition
+      - ConditionCongenitalAnomalyOfNewborn
+      - ConditionFetalDeathCauseOrCondition
+      - ConditionFetalDeathOtherCauseOrCondition
+      - ConditionInfectionPresentDuringPregnancy
+      - ConditionPerinealLaceration
+      - ConditionRupturedUterus
+      - ConditionSeizure
+      - CoveragePrincipalPayerDelivery
+      - EncounterBirth
+      - Encounter_Maternity
+      - ObservationSteroidsFetalLungMaturation
+      - ObservationAntibioticsAdministeredDuringLabor
+      - ObservationAutopsyHistologicalExamResultsUsed
+      - ObservationCigaretteSmokingBeforeDuringPregnancy
+      - ObservationDateOfFirstPrenatalCareVisit
+      - ObservationDateOfLastLiveBirth
+      - ObservationDateOfLastOtherPregnancyOutcome
+      - ObservationFetalDeathTimePoint
+      - ObservationFetalPresentation
+      - ObservationHistologicalPlacentalExamPerformed
+      - ObservationICUAdmission
+      - ObservationInfantBreastfedAtDischarge
+      - ObservationLaborTrialAttempted
+      - ObservationMethodOfDisposition
+      - ObservationMotherMarriedDuringPregnancy
+      - ObservationMotherReceivedWICFood
+      - ObservationNICUAdmission
+      - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
+      - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
+      - ObservationNoneOfSpecifiedMaternalMorbidities
+      - ObservationPaternityAcknowledgementSigned
+      - ObservationPlannedToDeliverAtHome
+      - ObservationSSNRequestedForChild
+      - ProcedureAntibioticSuspectedNeonatalSepsis
+      - ProcedureAssistedVentilationFollowingDelivery
+      - ProcedureAssistedVentilationMoreThanSixHours
+      - ProcedureAugmentationOfLabor
+      - ProcedureBloodTransfusion
+      - ProcedureEpiduralOrSpinalAnesthesia
+      - ProcedureFinalRouteMethodDelivery
+      - ProcedureInductionOfLabor
+      - ProcedureObstetric
+      - ProcedureSurfactantReplacementTherapy
+      - ProcedureUnplannedHysterectomy
+
+  BirthEditFlags:
+    name: Birth Edit Flags
+    # description: Birth Edit Flags
+    resources:
+      - ObservationEditFlagBirthweight
+      - ObservationEditFlagEstimateOfGestation
+      - ObservationEditFlagFathersDateOfBirth
+      - ObservationEditFlagFathersEducation
+      - ObservationEditFlagMothersDateOfBirth
+      - ObservationEditFlagMothersDeliveryWeight
+      - ObservationEditFlagMothersEducation
+      - ObservationEditFlagMothersHeight
+      - ObservationEditFlagMothersPrepregnancyWeight
+      - ObservationEditFlagNumberPrenatalCareVisits
+      - ObservationEditFlagNumberPreviousCesareans
+      - ObservationEditFlagPlurality
 
 
   BFDRValueSets:
     name: BFDR ValueSets
-    description: BFDR ValueSets
+    # description: BFDR ValueSets
     resources:
       - CigaretteSmokingBeforeAndDuringPregnancy
   
   VRDRCodeSystems:
     name: VRDR CodeSystems
-    description: VRDR CodeSystems 
+    # description: VRDR CodeSystems 
     resources:
       - ActivityAtTimeOfDeathCS    
       - BypassEditFlagCS
@@ -425,10 +515,16 @@ groups:
       - EditBypass0124VS
       - EditBypass01234VS     
 
+  VRDRBundles:
+    name: VRDR Bundles
+    resources:
+      - MortalityRosterBundle
+
   VRDRProfilesNew:
     name: New VRDR Profiles
     resources:  
-      - DecedentNew 
+      - DecedentNew
+      - DeathCertificationNew 
       - CauseOfDeathCodedContentBundleNew
       - DemographicCodedContentBundleNew
       - DeathCertificateNew
@@ -439,6 +535,41 @@ groups:
       - InjuryIncidentNew 
       - MannerOfDeathNew 
       - TobaccoUseContributedToDeathNew 
+      - DecedentDispositionMethodNew
+      - DecedentEducationLevel
+      - DecedentPregnancyStatusNew
+
+  UnchangedVRDRProfiles:
+    name: Unchanged VRDR Profiles
+    resources:
+      - ActivityAtTimeOfDeath
+      - AutomatedUnderlyingCauseOfDeath
+      - AutopsyPerformedIndicator
+      - BirthRecordIdentifier
+      - Certifier
+      - CodedRaceAndEthnicity
+      - CodingStatusValues
+      - DeathLocation
+      - DecedentAge
+      #- DecedentDispositionMethod
+      - DecedentFather
+      - DecedentMilitaryService
+      - DecedentMother
+      - DecedentSpouse
+      - DecedentUsualWork
+      - DispositionLocation
+      - EmergingIssues
+      - EntityAxisCauseOfDeath
+      - ExaminerContacted
+      - FuneralHome
+      - InjuryLocation
+      - InputRaceAndEthnicity
+      - ManualUnderlyingCauseOfDeath
+      - PlaceOfInjury
+      - RecordAxisCauseOfDeath
+      - SurgeryDate
+      - TobaccoUseContributedToDeath
+      - DecedentDispositionMethod
 
   MDIProfilesNew:
     name: New MDI Profiles
@@ -454,6 +585,7 @@ groups:
       - MessageHeaderToxicologyToMDI
       - ObservationAutopsyPerformedIndicator
       - ObservationToxicologyLabResult
+      - SpecimenToxicologyLab
 
 
 #
