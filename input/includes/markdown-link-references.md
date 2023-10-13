@@ -17,6 +17,9 @@
 [Note on missing data]: usage.html#missing-data
 [Handling of edit flags]: usage.html#handling-of-edit-flags
 
+[Birth and Fetal Death Vital Reporting]: BFDR_index.html
+[Vital Records Common Library]: VRCL_index.html
+
 [PHVS_Occupation_CDC_Census2010VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186
 [PHVS_Industry_CDC_Census2010VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7187
 [PHVS_Occupation_CDC_Census2012VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8026
