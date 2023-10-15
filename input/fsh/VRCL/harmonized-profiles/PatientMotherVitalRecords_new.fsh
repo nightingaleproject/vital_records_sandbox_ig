@@ -14,7 +14,17 @@ Description: "This Patient profile represents the woman who gave birth to, or de
 * name[namePriorToFirstMarriage] MS 
 * name.family 1..
 * birthDate 1..
-  * extension[partialDate] MS 
+* birthDate.extension contains
+    PartialDate named partialDate 0..1 and
+    BypassEditFlag named bypassEditFlag 0..1
+    
+* birthDate.extension[bypassEditFlag]
+  * valueCodeableConcept from MothersDateOfBirthEditFlagsVS (required)
+  * value[x] only CodeableConcept
+  //* value[x] 
+    * ^short = "To reflect the relevant edit possibilities for mother's date of birth."
+    * ^binding.description = "Mother's Date of Birth Edit Flags (NCHS)"
+* birthDate.extension[partialDate] MS 
 // * birthDate 1..
 //   * extension contains ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..* MS
 //   * extension[datePartAbsentReason] ^short = "Indicates reason for missing data on either the birthDate or the birthTime."

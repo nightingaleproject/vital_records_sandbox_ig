@@ -88,7 +88,7 @@ Description: "This Composition profile contains information of a fetal death and
 * section[editFlags].entry ..8
 //* insert BFDRCompositionSectionSlice(editFlags, editFlagWeightOfFetus, 1, 1, Birth weight edit flag, Birth weight edit flag, ObservationEditFlagBirthweight)   
 //* insert BFDRCompositionSectionSlice(editFlags, editFlagEstimateOfGestation, 1, 1, Estimate of gestation edit flag, Estimate of gestation edit flag, ObservationEditFlagEstimateOfGestation)   
-* insert BFDRCompositionSectionSlice(editFlags, editFlagMothersDateOfBirth, 1, 1, Mother DOB edit flag, Mother DOB edit flag, ObservationEditFlagMothersDateOfBirth)   
+// * insert BFDRCompositionSectionSlice(editFlags, editFlagMothersDateOfBirth, 1, 1, Mother DOB edit flag, Mother DOB edit flag, ObservationEditFlagMothersDateOfBirth)   
 * insert BFDRCompositionSectionSlice(editFlags, editFlagMothersEducation, 1, 1, Mother education edit flag, Mother education edit flag, ObservationEditFlagMothersEducation)   
 * insert BFDRCompositionSectionSlice(editFlags, editFlagMothersHeight, 1, 1, Mother height edit flag, Mother height edit flag, ObservationEditFlagMothersHeight)   
 * insert BFDRCompositionSectionSlice(editFlags, editFlagMothersPrepregnancyWeight, 1, 1, Mother prepregnancy weight edit flag, Mother prepregnancy weight edit flag, ObservationEditFlagMothersPrepregnancyWeight)   

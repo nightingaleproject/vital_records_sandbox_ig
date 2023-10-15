@@ -47,7 +47,7 @@ Usage: #example
 * section[medicalHealthInformation] 
   // * title = "Medical and Health Information on the Fetal Death Report"
   // * code = $loinc#55752-0 "Clinical information"
-  * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
+  * focus = Reference(patient-mother-carmen-teresa-lee-w-edit) "Patient - Mother (Carmen Teresa Lee)"
   * entry[numberPreviousCesareans] = Reference(observation-number-previous-cesareans-carmen-teresa-lee) "Observation - Number Previous Cesareans (Carmen Teresa Lee)"
   * entry[fetalPresentation] = Reference(observation-fetal-presentation-not-named) "Observation - Fetal Presentation (Fetus Not Named)"
   * entry[finalRouteMethodDelivery] = Reference(procedure-final-route-method-delivery-not-named) "Procedure - Final Route and Method of Delivery (Fetus Not Named)"
@@ -78,7 +78,7 @@ Usage: #example
   // * code = $loinc#92012-4 "Edit flags section"
   // * entry[editFlagWeightOfFetus] = Reference(observation-edit-flag-delivery-wgt-not-named) "Observation - Edit flag birthweight"
   //* entry[editFlagEstimateOfGestation] = Reference(observation-edit-flag-est-gestation-not-named) "Observation - Edit flag estimate of gestation"
-  * entry[editFlagMothersDateOfBirth] = Reference(observation-edit-flag-mothers-dob-not-named) "Observation - Edit flag mother's date of birth"
+  // * entry[editFlagMothersDateOfBirth] = Reference(observation-edit-flag-mothers-dob-not-named) "Observation - Edit flag mother's date of birth"
   * entry[editFlagMothersEducation] = Reference(observation-edit-flag-mothers-education-not-named) "Observation - Edit flag mother's education"
   * entry[editFlagMothersHeight] = Reference(observation-edit-flag-mothers-height-not-named) "Observation - Edit flag mother's height"
   * entry[editFlagMothersPrepregnancyWeight] = Reference(observation-edit-flag-mothers-prepreg-wgt-not-named) "Observation - Edit flag mother's prepregnancy weight"

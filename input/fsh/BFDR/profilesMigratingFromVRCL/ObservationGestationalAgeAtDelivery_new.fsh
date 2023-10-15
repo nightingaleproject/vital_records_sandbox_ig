@@ -17,7 +17,7 @@ Description: "The obstetric estimate of the infant’s gestation in completed we
 * value[x].extension contains
     BypassEditFlag named bypassEditFlag 0..1
 * value[x].extension[bypassEditFlag]
-  * value[x] from EstimateOfGestationEditFlagsVSEditFlagsVS (required)
+  * value[x] from EstimateOfGestationEditFlagsVS (required)
   * value[x] only CodeableConcept
   * value[x] 
     * ^short = "To reflect the relevant edit possibilities for estimate of gestation."

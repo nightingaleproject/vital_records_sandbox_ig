@@ -25,7 +25,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Practitioner/practitioner-vital-records-jessica-leung"
 //   * resource = Inline-Instance-for-bundle-provider-fetal-death-not-named-4
-* insert addentry(Patient, patient-mother-carmen-teresa-lee)
+* insert addentry(PatientMotherVitalRecordsNew, patient-mother-carmen-teresa-lee-w-edit)
 //* insert addentry(PatientMotherNew, patient-mother-carmen-teresa-lee)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-carmen-teresa-lee"

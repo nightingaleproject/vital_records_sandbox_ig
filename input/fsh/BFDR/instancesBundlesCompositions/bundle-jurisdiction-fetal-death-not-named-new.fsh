@@ -29,7 +29,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Organization/organization-jurisdictional-vital-records-office"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-4
-* insert addentry(Patient, patient-mother-carmen-teresa-lee)
+* insert addentry(PatientMotherVitalRecordsNew, patient-mother-carmen-teresa-lee-w-edit)
 //* insert addentry(PatientMotherNew, patient-mother-carmen-teresa-lee-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-carmen-teresa-lee"
@@ -151,7 +151,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-est-gestation-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-33
-* insert addentry(Observation, observation-edit-flag-mothers-dob-not-named)
+// * insert addentry(Observation, observation-edit-flag-mothers-dob-not-named)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-dob-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-34

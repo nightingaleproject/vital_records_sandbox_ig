@@ -1,4 +1,4 @@
-Instance: patient-mother-carmen-teresa-lee
+Instance: patient-mother-carmen-teresa-lee-w-edit
 InstanceOf: PatientMotherVitalRecordsNew
 Title: "Patient - Mother example [Carmen Teresa Lee]"
 Description: "Example of Patient-mother-vr profile (Carmen Teresa Lee)"
@@ -34,6 +34,7 @@ Usage: #example
   * given[+] = "Teresa"
 * gender = #female
 * birthDate = "1986-02-15"
+* birthDate.extension[bypassEditFlag].valueCodeableConcept = EditFlagsCS#editBypass0 "Edit Passed"
 * address
   //* extension[withinCityLimitsIndicator].valueCoding = $v2-0532#N "No" 
   * extension[withinCityLimitsIndicator].valueCoding = $v2-0136#N "No"

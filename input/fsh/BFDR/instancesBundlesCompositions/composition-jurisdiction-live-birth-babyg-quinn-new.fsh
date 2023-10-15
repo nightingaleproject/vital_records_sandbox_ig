@@ -88,7 +88,7 @@ Usage: #example
 * section[motherInformation]
   // * title = "Mother's Information Section"
   // * code = $loinc#92014-0 "Mother's administrative information"
-  * focus = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
+  * focus = Reference(patient-mother-jada-ann-quinn-w-edit) "Patient - Mother (Jada Ann Quinn)"
   * entry[marriedDuringPregnancy] = Reference(observation-mother-married-during-pregnancy-jada-ann-quinn) "Observation - Mother Married During Pregnancy (Jada Ann Quinn)"
   * entry[mothersEducation] = Reference(observation-parent-education-level-jada-ann-quinn) "Observation - Parent Education Level (Jada Ann Quinn)"
   * entry[ssnRequestedForChild] = Reference(observation-ssn-requested-for-child-babyg-quinn) "Observation - SSN Requested for Child (Jada Ann Quinn)"
@@ -105,7 +105,7 @@ Usage: #example
   //* entry[editFlagEstimateOfGestation] = Reference(observation-edit-flag-estimate-of-gestation-example) "Observation - Edit flag estimate of gestation"
   * entry[editFlagFathersDateOfBirth] = Reference(observation-edit-flag-fathers-date-of-birth-example) "Observation - Edit flag father's date of birth"
   * entry[editFlagFathersEducation] = Reference(observation-edit-flag-fathers-education-example) "Observation - Edit flag father's education"
-  * entry[editFlagMothersDateOfBirth] = Reference(observation-edit-flag-mothers-date-of-birth-example) "Observation - Edit flag mother's date of birth"
+  // * entry[editFlagMothersDateOfBirth] = Reference(observation-edit-flag-mothers-date-of-birth-example) "Observation - Edit flag mother's date of birth"
   * entry[editFlagMothersDeliveryWeight] = Reference(observation-edit-flag-mothers-delivery-weight-example) "Observation - Edit flag mother's delivery weight"
   * entry[editFlagMothersEducation] = Reference(observation-edit-flag-mothers-education-example) "Observation - Edit flag mother's education"
   * entry[editFlagMothersHeight] = Reference(observation-edit-flag-mothers-height-example) "Observation - Edit flag mother's height"

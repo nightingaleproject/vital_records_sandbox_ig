@@ -1,4 +1,4 @@
-Instance: patient-mother-jada-ann-quinn
+Instance: patient-mother-jada-ann-quinn-w-edit
 InstanceOf: PatientMotherVitalRecordsNew
 Title: "Patient - Mother Jada Ann Quinn"
 Description: "Example of Patient-mother-vr profile (Jada Ann Quinn)"
@@ -48,6 +48,7 @@ Usage: #example
   * value = "jadaann.quinn@example.com"
 * gender = #female
 * birthDate = "1985-01-15"
+* birthDate.extension[bypassEditFlag].valueCodeableConcept = EditFlagsCS#editBypass0 "Edit Passed"
 * address[0]
   * extension[withinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
   // * extension[withinCityLimitsIndicator].valueCoding = $v2-0532#Y "Yes"
