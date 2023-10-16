@@ -1,6 +1,6 @@
 CodeSystem: EditFlagsCS
 Id: CodeSystem-vr-edit-flags
-Title: "CodeSystem - Birth and Death Financial Class"
+Title: "CodeSystem - Birth and Death Edit Flags"
 Description: "This code system contains codes to represent all edit flags"
 * ^caseSensitive = true
 * ^content = #complete
