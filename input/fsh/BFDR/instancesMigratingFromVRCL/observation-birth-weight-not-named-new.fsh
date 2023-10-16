@@ -7,6 +7,6 @@ Usage: #example
   //should have a meta.profile
 * status = #final
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
-* effectiveDateTime = "2019-02-10"
+* effectiveDateTime = "2019-01-10"
 * performer = Reference(practitioner-vital-records-janet-seito)
 * valueQuantity = 1530 'g'

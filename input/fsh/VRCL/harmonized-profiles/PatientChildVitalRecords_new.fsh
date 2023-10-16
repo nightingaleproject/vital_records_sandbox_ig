@@ -24,7 +24,8 @@ RuleSet: childName
 RuleSet: birthDateAndTime 
 * birthDate 1..
   * extension[birthTime] MS 
-  * extension[datePartAbsentReason] MS 
+  * extension[partialDate] MS 
+  // * extension[datePartAbsentReason] MS 
 
 RuleSet: multipleBirths
 * multipleBirth[x] MS

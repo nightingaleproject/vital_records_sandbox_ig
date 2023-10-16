@@ -15,7 +15,7 @@ Where number of packs per day are provided, calculate number of cigarettes per d
 * subject 1.. MS 
 * subject only Reference(PatientMotherVitalRecordsNew)
 * focus 1..1 MS
-* focus only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
+* focus only Reference(PatientVitalRecordsNew) /// (PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew) -- these are indistinguishable
 * value[x] 1..1 MS
 * value[x] only integer
   * ^short = "Average number of cigarettes smoked per day"

@@ -12,4 +12,4 @@ Description: "This code system contains codes local codes from PHINVADs Source o
 * #privateinsurance "PRIVATE HEALTH INSURANCE" //5
 * #selfpay "Self-pay" //81
 * #tricare "TRICARE (CHAMPUS)" //311
-* #unkown "Unavailable / Unknown" //9999
+* #unknown "Unavailable / Unknown" //9999
