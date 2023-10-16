@@ -139,7 +139,7 @@ Usage: #example
 //   * fullUrl = "http://example.org/fhir/Observation/observation-plurality-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-30
 * insert addentry(Observation, observation-number-deaths-this-delivery-carmen-teresa-lee)
-* insert addentry(Observation, observation-parent-education-level-carmen-teresa-lee)
+* insert addentry(Observation, observation-parent-education-level-carmen-teresa-lee-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-31
@@ -155,7 +155,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-dob-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-34
-* insert addentry(Observation, observation-edit-flag-mothers-education-not-named)
+//* insert addentry(Observation, observation-edit-flag-mothers-education-not-named)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-education-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-35

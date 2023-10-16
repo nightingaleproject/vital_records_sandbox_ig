@@ -5,7 +5,7 @@
 ### As of 5 October 2023
 
 #### **Summary**
-The main change was that a subset of profiles/instances were moved between VRCL and BFDR. Those moved to BFDR had archived copies put in a "superseded" folder in VRCL and those moved to VRCL had archived copies put in a "superceded" folder in BFDR. Old instances were deleted after harmonization and STU1.1 updates were incorporated to profiles. - compositions/- bundles (besides those - related to race/ethnicity and cause of death) were updated accordingly.
+The main change was that a subset of profiles/instances were moved between VRCL and BFDR. Those moved to BFDR had archived copies put in a "superseded" folder in VRCL and those moved to VRCL had archived copies put in a "superceded" folder in BFDR. Old instances were deleted after harmonization and STU1.1 updates were incorporated to profiles. - compositions/- bundles (besides those - related to race/ethnicity and cause of death) were updated accordingly. ObservationPluralityVitalRecords and associated instances removed and replaced by multipleBirths extension. 
 
 #### **Profiles Moving from VRCL (Superseded)**
 

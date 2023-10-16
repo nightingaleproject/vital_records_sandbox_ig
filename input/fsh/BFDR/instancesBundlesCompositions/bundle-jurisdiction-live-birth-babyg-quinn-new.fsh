@@ -184,7 +184,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-43
-* insert addentry(Observation, observation-parent-education-level-jada-ann-quinn)
+* insert addentry(Observation, observation-parent-education-level-jada-ann-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-44
@@ -200,7 +200,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-paternity-acknowledgement-signed-james-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-47
-* insert addentry(Observation, observation-parent-education-level-james-quinn)
+* insert addentry(Observation, observation-parent-education-level-james-quinn-w-edit)
 // * insert addentry(Observation, observation-parent-education-level-james-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-james-quinn"
@@ -217,7 +217,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-fathers-date-of-birth-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-51
-* insert addentry(Observation, observation-edit-flag-fathers-education-example)
+//* insert addentry(Observation, observation-edit-flag-fathers-education-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-fathers-education-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-52
@@ -229,7 +229,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-delivery-weight-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-54
-* insert addentry(Observation, observation-edit-flag-mothers-education-example)
+//* insert addentry(Observation, observation-edit-flag-mothers-education-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-education-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-55
