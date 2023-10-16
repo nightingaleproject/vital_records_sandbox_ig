@@ -457,7 +457,6 @@ instanceOptions:
   # if InstanceOf references a profile:
   #
   # setId: always # always | standalone-only
-
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
     valueCode: pher
