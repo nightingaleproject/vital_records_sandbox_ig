@@ -8,3 +8,12 @@ Description: "The total number of prior cesarean deliveries for the mother. Migr
 * subject only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..
 * value[x] only integer
+// Add Edit Flags, a la VRDR 
+* value[x].extension contains
+    BypassEditFlag named bypassEditFlag 0..1
+* value[x].extension[bypassEditFlag]
+  * value[x] from NumberPreviousCesareansEditFlagsVS (required)
+  * value[x] only CodeableConcept
+  * value[x] 
+    * ^short = "To reflect the relevant edit possibilities for number of previous cesareans."
+    * ^binding.description = "Number Of Previous Cesareans Edit Flags (NCHS)"

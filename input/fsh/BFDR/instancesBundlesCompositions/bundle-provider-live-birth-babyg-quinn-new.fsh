@@ -29,7 +29,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Practitioner/practitioner-vital-records-avery-jones"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-5
-* insert addentry(PatientMotherVitalRecordsNew, patient-mother-jada-ann-quinn-w-edit)
+* insert addentry(Patient, patient-mother-jada-ann-quinn)
 // * insert addentry(PatientMotherNew, patient-mother-jada-ann-quinn-new)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Patient/patient-mother-jada-ann-quinn"

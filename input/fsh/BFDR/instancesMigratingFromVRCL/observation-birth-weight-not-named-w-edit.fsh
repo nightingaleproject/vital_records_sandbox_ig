@@ -1,7 +1,7 @@
 Instance: observation-birth-weight-not-named-w-edit
 InstanceOf: ObservationBirthWeightNew
-Title: "Observation - Birth Weight - Fetus Not Named"
-Description: "Observation - Birth Weight: Fetus Not Named example"
+Title: "Observation - Birth Weight - Fetus Not Named, with Edit Flag"
+Description: "Observation - Birth Weight: Fetus Not Named example, with Edit Flag"
 Usage: #example
 
 * status = #final
