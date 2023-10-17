@@ -1,5 +1,6 @@
 Profile: ProcedureObstetric
 Parent: USCoreProcedureProfile
+Id: Procedure-obstetric
 Title: "Procedure - Obstetric"
 Description: "This profile represents information about a particular medical treatment or invasive/manipulative procedure that was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery."
 * code from ValueSetObstetricProcedure (required)

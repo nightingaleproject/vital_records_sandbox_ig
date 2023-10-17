@@ -1,5 +1,6 @@
 Profile: ProcedureInfertilityTreatmentNew
 Parent: USCoreProcedureProfile
+Id: Procedure-infertility-treatment
 Title: "Procedure - Infertility Treatment Vital Records"
 Description: "This Procedure profile records that a pregnancy risk factor of infertility treatment was provided to the mother."
 // * ^publisher = "HL7 Public Health Working Group"

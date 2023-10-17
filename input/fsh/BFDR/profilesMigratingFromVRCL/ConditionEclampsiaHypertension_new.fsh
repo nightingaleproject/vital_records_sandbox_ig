@@ -1,5 +1,6 @@
 Profile: ConditionEclampsiaHypertensionNew
 Parent: USCoreConditionProblemsHealthConcernsProfile
+Id: Condition-eclampsia-hypertension
 Title: "Condition - Eclampsia Hypertension Vital Records"
 Description: "This Condition profile indicates that the mother had a pregnancy risk factor of eclampsia hypertension."
 // * ^publisher = "HL7 Public Health Working Group"

@@ -1,5 +1,6 @@
 Profile: ObservationCigaretteSmokingBeforeDuringPregnancy
 Parent: Observation
+Id: Observation-cigarette-smoking-before-during-pregnancy
 Title: "Observation - Cigarette Smoking Before and During Pregnancy"
 Description: """This profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code:
 * Number of Cigarettes Smoked in 3 months prior to Pregnancy

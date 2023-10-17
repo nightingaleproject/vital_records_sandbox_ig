@@ -1,5 +1,6 @@
 Profile: ObservationSteroidsFetalLungMaturation
 Parent: Observation
+Id: Observation-steroids-fetal-lung-maturation
 Title: "Observation - Administration of Steroids for Fetal Lung Maturation"
 Description: "This Observation profile indicates a characteristic of labor of administration of steroids for fetal lung maturation."
 * code = $loinc#73813-8

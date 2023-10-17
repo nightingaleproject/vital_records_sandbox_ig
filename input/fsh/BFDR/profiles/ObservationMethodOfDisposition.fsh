@@ -1,5 +1,6 @@
 Profile: ObservationMethodOfDisposition
 Parent: Observation
+Id: Observation-method-of-disposition
 Title: "Observation - Method of Disposition"
 Description: "This Observation profile represents the method of disposition of the deceased fetus."
 * code 1..1 MS

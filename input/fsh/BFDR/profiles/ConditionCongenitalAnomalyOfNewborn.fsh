@@ -1,5 +1,6 @@
 Profile: ConditionCongenitalAnomalyOfNewborn
 Parent: USCoreConditionProblemsHealthConcernsProfile
+Id: Condition-congenital-anomaly-of-newborn
 Title: "Condition - Congenital Anomaly of Newborn"
 Description: "This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."
 * . ^short = "Information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."

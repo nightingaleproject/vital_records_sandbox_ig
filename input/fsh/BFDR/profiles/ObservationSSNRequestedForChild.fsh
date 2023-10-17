@@ -1,5 +1,6 @@
 Profile: ObservationSSNRequestedForChild
 Parent: Observation
+Id: Observation-ssn-requested-for-child
 Title: "Observation - Social Security Number Requested For Child"
 Description: "This Observation profile represents whether or not a social security number has been requested for the child. If a social security number was requested, set valueBoolean=true and enter the time requested in the effectiveDateTime data element."
 * code 1..1 MS

@@ -1,5 +1,6 @@
 Profile: ConditionCodedInitiatingFetalDeathCauseOrCondition
 Parent: USCoreConditionEncounterDiagnosisProfile
+Id: Condition-coded-initiating-fetal-death-cause-or-condition
 Title: "Condition - Coded Initiating Fetal Death Cause or Condition"
 Description: "This profile represents the coded initiating cause/condition of fetal death."
 * . ^short = "This profile represents the coded initiating cause/condition of fetal death."
