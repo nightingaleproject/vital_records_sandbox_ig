@@ -84,8 +84,8 @@ Description: "This Composition profile contains information of a fetal death and
     * ^short = "Father's administrative information"
     * ^definition = "Father's administrative information"
 * insert FocusRule(fatherInformation, The focus of this section is the father, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father., RelatedPersonFatherNaturalVitalRecords)
-* insert BFDRCompositionSectionEntrySlicing(editFlags, 1, 92012-4, Jurisdiction Fetal Death)
-* section[editFlags].entry ..8
+//* insert BFDRCompositionSectionEntrySlicing(editFlags, 1, 92012-4, Jurisdiction Fetal Death)
+//* section[editFlags].entry ..8
 //* insert BFDRCompositionSectionSlice(editFlags, editFlagWeightOfFetus, 1, 1, Birth weight edit flag, Birth weight edit flag, ObservationEditFlagBirthweight)   
 //* insert BFDRCompositionSectionSlice(editFlags, editFlagEstimateOfGestation, 1, 1, Estimate of gestation edit flag, Estimate of gestation edit flag, ObservationEditFlagEstimateOfGestation)   
 // * insert BFDRCompositionSectionSlice(editFlags, editFlagMothersDateOfBirth, 1, 1, Mother DOB edit flag, Mother DOB edit flag, ObservationEditFlagMothersDateOfBirth)   

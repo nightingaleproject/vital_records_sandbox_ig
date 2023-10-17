@@ -92,8 +92,8 @@ Description: "This Composition profile contains information of a live birth and 
 * insert FocusRule(fatherInformation, The focus of this section is the father, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father., RelatedPersonFatherNaturalVitalRecords)
 * insert BFDRCompositionSectionSlice(fatherInformation, paternityAcknowledgementSigned, 0, 1, Paternity acknowledgement signed by father, Whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception\, at the time of birth\, or at any time between conception and giving birth., ObservationPaternityAcknowledgementSigned)   
 * insert BFDRCompositionSectionSlice(fatherInformation, fathersEducation, 0, 1, Father's education, Father's education, ObservationEducationLevelVitalRecordsNew)     
-* insert BFDRCompositionSectionEntrySlicing(editFlags, 1, 92012-4, Jurisdiction Live Birth)
-* section[editFlags].entry ..12
+//* insert BFDRCompositionSectionEntrySlicing(editFlags, 1, 92012-4, Jurisdiction Live Birth)
+//* section[editFlags].entry ..12
 //* insert BFDRCompositionSectionSlice(editFlags, editFlagBirthweight, 1, 1, Birth weight edit flag, Birth weight edit flag, ObservationEditFlagBirthweight)   
 //* insert BFDRCompositionSectionSlice(editFlags, editFlagEstimateOfGestation, 1, 1, Estimate of gestation edit flag, Estimate of gestation edit flag, ObservationEditFlagEstimateOfGestation)   
 //* insert BFDRCompositionSectionSlice(editFlags, editFlagFathersDateOfBirth, 1, 1, Father DOB edit flag, Father DOB edit flag, ObservationEditFlagFathersDateOfBirth)   

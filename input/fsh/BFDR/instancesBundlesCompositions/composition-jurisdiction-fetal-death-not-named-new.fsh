@@ -73,7 +73,7 @@ Usage: #example
   // * code = $loinc#92014-0 "Mother's administrative information"
   * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
   * entry[mothersEducation] = Reference(observation-parent-education-level-carmen-teresa-lee-w-edit) "Observation - Parent Education Level (Carmen Teresa Lee)"
-* section[editFlags]
+//* section[editFlags]
   // * title = "Edit Flags Section"
   // * code = $loinc#92012-4 "Edit flags section"
   // * entry[editFlagWeightOfFetus] = Reference(observation-edit-flag-delivery-wgt-not-named) "Observation - Edit flag birthweight"

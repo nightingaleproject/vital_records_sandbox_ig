@@ -98,7 +98,7 @@ Usage: #example
   * focus = Reference(relatedperson-father-natural-james-brandon-quinn-w-edit) "RelatedPerson - Father (James Brandon Quinn)"
   * entry[paternityAcknowledgementSigned] = Reference(observation-paternity-acknowledgement-signed-james-quinn) "Observation - Paternity Acknowledgement Signed (James Brandon Quinn)"
   * entry[fathersEducation] = Reference(observation-parent-education-level-james-quinn-w-edit) "Observation - Parent Education Level (James Brandon Quinn)"
-* section[editFlags]
+//* section[editFlags]
   // * title = "Edit Flags Section"
   // * code = $loinc#92012-4 "Edit flags section"
   // * entry[editFlagBirthweight] = Reference(observation-edit-birth-weight-babyg-quinn) "Observation - Edit flag birthweight"
