@@ -1,5 +1,6 @@
 Profile: ObservationLaborTrialAttempted
 Parent: Observation
+Id: Observation-labor-trial-attempted
 Title: "Observation - Labor Trial Attempted"
 Description: "This Observation profile represents whether, in the case of a cesarean delivery, a trial of labor was attempted."
 * code 1..1 MS

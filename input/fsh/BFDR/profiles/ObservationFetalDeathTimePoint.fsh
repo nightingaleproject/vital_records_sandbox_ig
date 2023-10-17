@@ -1,5 +1,6 @@
 Profile: ObservationFetalDeathTimePoint
 Parent: Observation
+Id: Observation-fetal-death-time-point
 Title: "Observation - Fetal Death Time Point"
 Description: "This Observation profile represents the estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery."
 * code 1..1 MS

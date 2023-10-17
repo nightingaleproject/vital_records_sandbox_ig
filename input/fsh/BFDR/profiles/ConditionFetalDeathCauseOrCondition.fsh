@@ -1,5 +1,6 @@
 Profile: ConditionFetalDeathCauseOrCondition
 Parent: USCoreConditionEncounterDiagnosisProfile
+Id: Condition-fetal-death-cause-or-condition
 Title: "Condition - Fetal Death Cause or Condition"
 Description: "This Condition profile contains information provided by the clinician to indicate the cause or causes of the fetal death."
 * . ^short = "Information provided by the clinician to indicate the cause or causes of the fetal death."

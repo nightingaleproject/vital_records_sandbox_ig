@@ -1,5 +1,6 @@
 Profile: ObservationPreviousPretermBirthNew
 Parent: Observation
+Id: Observation-previous-preterm-birth
 Title: "Observation - Previous Preterm Birth Vital Records"
 Description: "This Observation profile indicates that the mother had a pregnancy risk factor of previous preterm birth."
 // * ^contact.name = "HL7 International - Public Health"

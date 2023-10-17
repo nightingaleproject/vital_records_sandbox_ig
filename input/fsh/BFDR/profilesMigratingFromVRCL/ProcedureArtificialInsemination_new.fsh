@@ -1,5 +1,6 @@
 Profile: ProcedureArtificialInseminationNew
 Parent: USCoreProcedureProfile
+Id: Procedure-artificial-insemination
 Title: "Procedure - Artificial Insemination Vital Records"
 Description: "This Procedure profile records that a pregnancy risk factor of artificial insemination was provided to the mother."
 // * ^meta.versionId = "1"

@@ -1,5 +1,6 @@
 Profile: ConditionCodedOtherFetalDeathCauseOrCondition
 Parent: USCoreConditionEncounterDiagnosisProfile
+Id: Condition-coded-other-fetal-death-cause-or-condition
 Title: "Condition - Coded Other Fetal Death Cause or Condition"
 Description: "This profile represents a coded other significant cause/condition of fetal death."
 * . ^short = "This profile represents a coded other significant cause/condition of fetal death."

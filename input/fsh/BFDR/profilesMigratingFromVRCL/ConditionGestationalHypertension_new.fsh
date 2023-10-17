@@ -1,5 +1,6 @@
 Profile: ConditionGestationalHypertensionNew
 Parent: USCoreConditionProblemsHealthConcernsProfile
+Id: Condition-gestational-hypertension
 Title: "Condition - Gestational Hypertension Vital Records"
 Description: "This Condition profile indicates that the mother had a pregnancy risk factor of gestational hypertension."
 // * ^contact.name = "HL7 Public Health Working Group"

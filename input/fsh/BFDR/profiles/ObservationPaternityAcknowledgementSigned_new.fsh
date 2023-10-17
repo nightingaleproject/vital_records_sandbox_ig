@@ -1,6 +1,7 @@
 //changed to reference VRCL VS not phinvads VS
 Profile: ObservationPaternityAcknowledgementSigned
 Parent: Observation
+Id: Observation-paternity-acknowledgement-signed
 Title: "Observation - Paternity Acknowledgement Signed"
 Description: "This Observation represents whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."
 * code 1..1 MS

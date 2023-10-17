@@ -1,6 +1,7 @@
 //content from ObservationMotherPrepregnancyWeightVitalRecords moving from VRCL to BFDR. Changed to reference PatientMother profile in BFDR.
 Profile: ObservationMotherPrepregnancyWeightNew
 Parent: USCoreVitalSignsProfile
+Id: Observation-mother-prepregnancy-weight
 Title: "Observation - Mother Prepregnancy Weight"
 Description: "The weight of the mother before becoming pregnant. Migrated from VRCL."
 * code = $loinc#56077-1

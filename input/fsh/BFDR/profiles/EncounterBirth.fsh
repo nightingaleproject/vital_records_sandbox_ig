@@ -1,5 +1,6 @@
 Profile: EncounterBirth
 Parent: USCoreEncounterProfile
+Id: Encounter-birth
 Title: "Encounter - Birth"
 Description: "This Encounter profile represents the child's birth encounter."
 * subject 1..1 MS

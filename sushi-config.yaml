@@ -70,6 +70,10 @@ pages:
     title: BFDR Data Dictionary
   vrdr_ije_mapping.md:
     title: VRDR Data Dictionary
+  bfdr_ije_mapping_new.md:
+    title: Updated BFDR Data Dictionary
+  vrdr_ije_mapping_new.md:
+    title: Updated VRDR Data Dictionary
   bfdr_appendices.md:
     title: BFDR Appendices
   bfdr_appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.md:
@@ -140,6 +144,8 @@ menu:
     All FHIR Artifacts: artifacts.html
     VRDR Data Dictionary: vrdr_ije_mapping.html
     BFDR Data Dictionary: bfdr_ije_mapping.html
+    Updated VRDR Data Dictionary: vrdr_ije_mapping_new.html
+    Updated BFDR Data Dictionary: bfdr_ije_mapping_new.html
   BFDR: 
     Home: bfdr_index.html
     UseCases: bfdr_use_cases.html
