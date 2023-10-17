@@ -10,5 +10,5 @@ Description: "This profile represents whether or not the results of a performed 
 * subject only Reference(PatientDecedentFetusVitalRecordsNew)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
-* value[x] from ValueSetYesNoNotApplicable (required)
+* value[x] from ValueSetYesNoNotApplicableVitalRecords (required)
   * ^short = "Were autopsy or histological placental examinations results used in determining the cause of fetal death?"

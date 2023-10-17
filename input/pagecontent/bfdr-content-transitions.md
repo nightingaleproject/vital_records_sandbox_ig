@@ -155,7 +155,7 @@
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |Encounter-Birth |   encounter  |    -    | [EncounterBirth] |     -         |   -      |
 |Patient-Child |   subject  |    -    |   [PatientChildVitalRecords] |     [PatientChildVitalRecordsNew]     |   staying in VRCL with updates   |
-|US Core Organization Profile |   Author  |    -    | [USCoreOrganizationProfile] |     -         |   -      |
+|US Core Organization Profile |   Author  |    -    | [USCoreOrganization] |     -         |   -      |
 |Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     [PatientMotherVitalRecordsNew]        |   staying in VRCL with updates   |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
 |Number Prenatal Care Visits|     motherPrenatal     |    -    | [ObservationNumberPrenatalVisitsVitalRecords] |   [ObservationNumberPrenatalVisitsNew]    |    moving from VRCL to BFDR    |
@@ -219,18 +219,18 @@
 |Father Related Person |     fatherInformation  |   -  | [RelatedPersonFatherNaturalVitalRecords] | - |  - |
 |Fathers Education |     fatherInformation  |   added Decedent education level code, removed MS flags   | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |  - |
 |Paternity Acknowledgement Signed |     fatherInformation   |    -    | [ObservationPaternityAcknowledgementSigned] |       -       |    -     |
-| Edit Flag Birthweight  |     editFlags  |    -    | [ObservationEditFlagBirthweight] |       -       |    -     |
-| Edit Flag Estimate of Gestation  |     editFlags  |    -    | [ObservationEditFlagEstimateOfGestation] |       -       |    -     |
-| Edit Flag Father's Date of Birth  |     editFlags  |    -    | [ObservationEditFlagFathersDateOfBirth] |       -       |    -     |
-| Edit Flag Father's Education  |     editFlags  |    -    | [ObservationEditFlagFathersEducation] |       -       |    -     |
-| Edit Flag Mother's Date of Birth  |     editFlags  |    -    | [ObservationEditFlagMothersDateOfBirth] |       -       |    -     |
-| Edit Flag Mother's Delivery Weight  |     editFlags  |    -    | [ObservationEditFlagMothersDeliveryWeight] |       -       |    -     |
-| Edit Flag Father's Education  |     editFlags  |    -    | [ObservationEditFlagMothersEducation] |       -       |    -     |
-| Edit Flag Mother's Height  |     editFlags  |    -    | [ObservationEditFlagMothersHeight] |       -       |    -     |
-| Edit Flag Mother's Prepregnancy Weight  |     editFlags  |    -    | [ObservationEditFlagMothersPrepregnancyWeight] |       -       |    -     |
-| Edit Flag Number Prenatal Care Visits  |     editFlags  |    -    | [ObservationEditFlagNumberPrenatalCareVisits] |       -       |    -     |
-| Edit Flag Number of Previous Cesareans  |     editFlags  |    -    | [ObservationEditFlagNumberPreviousCesareans] |       -       |    -     |
-| Edit Flag Plurality  |     editFlags  |    -    | [ObservationEditFlagPlurality] |       -       |    -     |
+| Edit Flag Birthweight  |     editFlags  |   deleted and replaced by extensions in related profiles  | [ObservationEditFlagBirthweight] |       -       |    -     |
+| Edit Flag Estimate of Gestation  |     editFlags  |   deleted and replaced by extensions in related profiles    | [ObservationEditFlagEstimateOfGestation] |       -       |    -     |
+| Edit Flag Father's Date of Birth  |     editFlags  |    deleted and replaced by extensions in related profiles   | [ObservationEditFlagFathersDateOfBirth] |       -       |    -     |
+| Edit Flag Father's Education  |     editFlags  |   deleted and replaced by extensions in related profiles    | [ObservationEditFlagFathersEducation] |       -       |    -     |
+| Edit Flag Mother's Date of Birth  |     editFlags  |    deleted and replaced by extensions in related profiles    | [ObservationEditFlagMothersDateOfBirth] |       -       |    -     |
+| Edit Flag Mother's Delivery Weight  |     editFlags  |    deleted and replaced by extensions in related profiles    | [ObservationEditFlagMothersDeliveryWeight] |       -       |    -     |
+| Edit Flag Father's Education  |     editFlags  |    deleted and replaced by extensions in related profiles   | [ObservationEditFlagMothersEducation] |       -       |    -     |
+| Edit Flag Mother's Height  |     editFlags  |   deleted and replaced by extensions in related profiles    | [ObservationEditFlagMothersHeight] |       -       |    -     |
+| Edit Flag Mother's Prepregnancy Weight  |     editFlags  |   deleted and replaced by extensions in related profiles   | [ObservationEditFlagMothersPrepregnancyWeight] |       -       |    -     |
+| Edit Flag Number Prenatal Care Visits  |     editFlags  |    deleted and replaced by extensions in related profiles   | [ObservationEditFlagNumberPrenatalCareVisits] |       -       |    -     |
+| Edit Flag Number of Previous Cesareans  |     editFlags  |   deleted and replaced by extensions in related profiles    | [ObservationEditFlagNumberPreviousCesareans] |       -       |    -     |
+| Edit Flag Plurality  |     editFlags  |   deleted and replaced by extensions in related profiles    | [ObservationEditFlagPlurality] |       -       |    -     |
 {: .grid }
 
 # Jurisdiction Fetal Death
@@ -239,7 +239,7 @@
 | ------------- | ----- | ------- | ------------------ | ------------ | ----- | 
 |Patient-Decedent Fetus |   subject  |    -    | [PatientDecedentFetusVitalRecords] |  [PatientDecedentFetusVitalRecordsNew]   |   staying in VRCL with updates   |
 |Encounter-Maternity |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
-|US Core Organization Profile |   Author  |    -    | [USCoreOrganizationProfile] |     -         |   -      |
+|US Core Organization Profile |   Author  |    -    | [USCoreOrganization] |     -         |   -      |
 |Patient-Mother |   focus  |    -    | [PatientMotherVitalRecords] |     [PatientMotherVitalRecordsNew]        |   staying in VRCL with updates   |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
 |Number Prenatal Care Visits|     motherPrenatal     |    -    | [ObservationNumberPrenatalVisitsVitalRecords] |   [ObservationNumberPrenatalVisitsNew]    |    moving from VRCL to BFDR    |
@@ -296,14 +296,14 @@
 |Number Fetal Deaths This Delivery |     fetus    |    -    | [ObservationNumberFetalDeathsThisDeliveryVitalRecords] |  [ObservationNumberFetalDeathsThisDeliveryNew]   |    moving from VRCL to BFDR    |
 |Father Related Person |     fatherInformation  |   -  | [RelatedPersonFatherNaturalVitalRecords] | - |  - |
 |Fathers Education |     fatherInformation  |   added Decedent education level code, removed MS flags   | [ObservationParentEducationLevelVitalRecords] | [ObservationEducationLevelVitalRecordsNew] |  - |
-| Edit Flag Weight of Fetus  |     editFlags  |    -    | [ObservationEditFlagBirthweight] |       -       |    -     |
-| Edit Flag Estimate of Gestation  |     editFlags  |    -    | [ObservationEditFlagEstimateOfGestation] |       -       |    -     |
-| Edit Flag Mother's Date of Birth  |     editFlags  |    -    | [ObservationEditFlagMothersDateOfBirth] |       -       |    -     |
-| Edit Flag Father's Education  |     editFlags  |    -    | [ObservationEditFlagMothersEducation] |       -       |    -     |
-| Edit Flag Mother's Height  |     editFlags  |    -    | [ObservationEditFlagMothersHeight] |       -       |    -     |
-| Edit Flag Mother's Prepregnancy Weight  |     editFlags  |    -    | [ObservationEditFlagMothersPrepregnancyWeight] |       -       |    -     |
-| Edit Flag Number of Previous Cesareans  |     editFlags  |    -    | [ObservationEditFlagNumberPreviousCesareans] |       -       |    -     |
-| Edit Flag Plurality  |     editFlags  |    -    | [ObservationEditFlagPlurality] |       -       |    -     |
+| Edit Flag Weight of Fetus  |     editFlags  |    deleted and replaced by extensions in related profiles    | [ObservationEditFlagBirthweight] |       -       |    -     |
+| Edit Flag Estimate of Gestation  |     editFlags  |    deleted and replaced by extensions in related profiles    | [ObservationEditFlagEstimateOfGestation] |       -       |    -     |
+| Edit Flag Mother's Date of Birth  |     editFlags  |    deleted and replaced by extensions in related profiles    | [ObservationEditFlagMothersDateOfBirth] |       -       |    -     |
+| Edit Flag Father's Education  |     editFlags  |    deleted and replaced by extensions in related profiles    | [ObservationEditFlagMothersEducation] |       -       |    -     |
+| Edit Flag Mother's Height  |     editFlags  |    deleted and replaced by extensions in related profiles   | [ObservationEditFlagMothersHeight] |       -       |    -     |
+| Edit Flag Mother's Prepregnancy Weight  |     editFlags  |    deleted and replaced by extensions in related profiles    | [ObservationEditFlagMothersPrepregnancyWeight] |       -       |    -     |
+| Edit Flag Number of Previous Cesareans  |     editFlags  |    deleted and replaced by extensions in related profiles    | [ObservationEditFlagNumberPreviousCesareans] |       -       |    -     |
+| Edit Flag Plurality  |     editFlags  |    deleted and replaced by extensions in related profiles    | [ObservationEditFlagPlurality] |       -       |    -     |
 {: .grid }
 
 # Demographic Coded Content Bundle for BFDR
@@ -313,10 +313,6 @@
 | Coded Race and Ethnicity |     CodedContent   |    -    |    -    |      [CodedRaceAndEthnicityNew]       |    -     |
 | Input Race and Ethnicity |     InputContent    |    -    |    -    |       [InputRaceAndEthnicityNew]       |    -     |
 {: .grid }
-
-<!-- # Jurisdiction Live Birth - same as above but with edit flags -->
-
-<!-- # Jurisdiction Fetal Death - same as above but with edit flags -->
 
 <!-- # Coded Race and Ethnicity - same as VRDR, ignore for now -->
 

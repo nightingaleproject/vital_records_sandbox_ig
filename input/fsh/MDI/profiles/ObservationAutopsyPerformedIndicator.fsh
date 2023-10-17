@@ -13,7 +13,7 @@ The MDI Observation - Autopsy Performed Indicator artifact overlaps with the VRD
   * ^short = "Autopsy Performer using USCorePractioner"
 * value[x] 1.. MS
 * value[x] only CodeableConcept
-* value[x] from ValueSetYesNoUnknown (required)
+* value[x] from ValueSetYesNoUnknownVitalRecords (required)
 * valueCodeableConcept 1..1
   * ^short = "Autopsy was performed?"
 * component ^slicing.discriminator.type = #value
@@ -24,4 +24,4 @@ The MDI Observation - Autopsy Performed Indicator artifact overlaps with the VRD
   * code = $loinc#69436-4
   * value[x] 1..
   * value[x] only CodeableConcept
-  * value[x] from ValueSetYesNoUnknownNotApplicable (required)
+  * value[x] from ValueSetYesNoUnknownNotApplicableVitalRecords (required)

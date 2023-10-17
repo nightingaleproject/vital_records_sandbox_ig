@@ -324,6 +324,15 @@ groups:
       - ValueSetYesNoUnknownVitalRecords
       - ValueSetYesNoUnknownNotApplicableVitalRecords
 
+  VRCLExtensions:
+    name: VRCL Extensions
+    resources:
+      - ExtensionRelatedpersonBirthplaceVitalRecords
+      - ExtensionRelatedPersonDeceasedVitalRecords
+      - ExtensionWithinCityLimitsIndicatorVitalRecords
+      - ExtensionDatePartAbsentReasonVitalRecords
+      - ExtensionPartialDateTimeVitalRecords
+
   BFDRCompositionBundleProfilesNew:
     name: BFDR New Compositions and Bundles 
     # description: BFDR New Composition and Bundle Profiles
@@ -424,22 +433,22 @@ groups:
       - ProcedureSurfactantReplacementTherapy
       - ProcedureUnplannedHysterectomy
 
-  BirthEditFlags:
-    name: Birth Edit Flags
-    # description: Birth Edit Flags
-    resources:
-      - ObservationEditFlagBirthweight
-      - ObservationEditFlagEstimateOfGestation
-      - ObservationEditFlagFathersDateOfBirth
-      - ObservationEditFlagFathersEducation
-      - ObservationEditFlagMothersDateOfBirth
-      - ObservationEditFlagMothersDeliveryWeight
-      - ObservationEditFlagMothersEducation
-      - ObservationEditFlagMothersHeight
-      - ObservationEditFlagMothersPrepregnancyWeight
-      - ObservationEditFlagNumberPrenatalCareVisits
-      - ObservationEditFlagNumberPreviousCesareans
-      - ObservationEditFlagPlurality
+  # BirthEditFlags:
+  #   name: Birth Edit Flags
+  #   # description: Birth Edit Flags
+  #   resources:
+  #     - ObservationEditFlagBirthweight
+  #     - ObservationEditFlagEstimateOfGestation
+  #     - ObservationEditFlagFathersDateOfBirth
+  #     - ObservationEditFlagFathersEducation
+  #     - ObservationEditFlagMothersDateOfBirth
+  #     - ObservationEditFlagMothersDeliveryWeight
+  #     - ObservationEditFlagMothersEducation
+  #     - ObservationEditFlagMothersHeight
+  #     - ObservationEditFlagMothersPrepregnancyWeight
+  #     - ObservationEditFlagNumberPrenatalCareVisits
+  #     - ObservationEditFlagNumberPreviousCesareans
+  #     - ObservationEditFlagPlurality
 
 
   BFDRValueSets:
@@ -447,6 +456,17 @@ groups:
     # description: BFDR ValueSets
     resources:
       - CigaretteSmokingBeforeAndDuringPregnancy
+
+  BFDRExtensions:
+    name: BFDR Extensions 
+    resources:
+      - ExtensionDateFiledByRegistrar
+      - ExtensionDatereceivedByRegistrar
+      - ExtensionEncounterMaternityReference
+      - ExtensionFetalDeathLocalFileNumber
+      - ExtensionFetalDeathReportNumber
+      - ExtensionLiveBirthCertificateNumber
+      - ExtensionLiveBirthLocalFileNumber
   
   VRDRCodeSystems:
     name: VRDR CodeSystems
@@ -571,6 +591,36 @@ groups:
       - TobaccoUseContributedToDeath
       - DecedentDispositionMethod
 
+  VRDRExtensions:
+    name: VRDR Extensions 
+    resources:
+      - AliasStatus
+      - AuxiliaryStateIdentifier1
+      - AuxiliaryStateIdentifier2
+      - BypassEditFlag
+      - CertificateNumber
+      - CityCode
+      - DateDay
+      - DateMonth
+      - DateTime
+      - DateYear
+      - DistrictCode
+      - FilingFormat
+      - LocationJurisdictionId
+      - NVSSSexAtDeath
+      - PartialDate
+      - PartialDateTime
+      - PostDirectional
+      - PreDirectional
+      - ReplaceStatus
+      - SpouseAlive
+      - StateSpecificField
+      - StreetDesignator
+      - StreetName
+      - StreetNumber
+      - UnitOrAptNumber
+      - WithinCityLimitsIndicator
+
   MDIProfilesNew:
     name: New MDI Profiles
     resources:  
@@ -586,6 +636,21 @@ groups:
       - ObservationAutopsyPerformedIndicator
       - ObservationToxicologyLabResult
       - SpecimenToxicologyLab
+
+  # MDIValueset:
+  #   name: MDI Value Set
+  #   resources:
+      # - ValueSetDateEstablishmentApproach
+
+  MDIExtensions:
+    name: MDI Extensions 
+    resources:
+      - ExtensionDateDay
+      - ExtensionDateMonth
+      - ExtensionDateTime
+      - ExtensionDateYear
+      - ExtensionPartialDateTime
+      - ExtensionTrackingNumber
 
 
 #
