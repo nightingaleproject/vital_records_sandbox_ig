@@ -66,8 +66,6 @@ pages:
     title: BFDR Content Transitions 
   mdi-content-transitions.md:
     title: MDI Content Transitions 
-  bfdr_ije_mapping.md:
-    title: BFDR Data Dictionary
   vrdr_ije_mapping.md:
     title: VRDR Data Dictionary
   bfdr_appendices.md:
@@ -139,20 +137,20 @@ menu:
   Artifacts:
     All FHIR Artifacts: artifacts.html
     VRDR Data Dictionary: vrdr_ije_mapping.html
-    BFDR Data Dictionary: bfdr_ije_mapping.html
   BFDR: 
     Home: bfdr_index.html
     UseCases: bfdr_use_cases.html
     ChangeLog: bfdr_change_log.html
     Content Transitions: bfdr-content-transitions.html
-    Appendices: 
-      A Live Birth Worksheet: bfdr_appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.html
-      B Live Birth Certificate: bfdr_appendix_b_-_example_live_birth_certificate.html
-      C Fetal Death Worksheet: bfdr_appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html
-      D Fetal Death Report: bfdr_appendix_d_-_example_fetal_death_report.html
     Specification: bfdr_the_specification.html
     Forms Mapping: bfdr_vital_records_form_mapping.html
     Terminology: bfdr_terminology.html
+  BFDR Appendices:
+    A Live Birth Worksheet: bfdr_appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.html
+    B Live Birth Certificate: bfdr_appendix_b_-_example_live_birth_certificate.html
+    C Fetal Death Worksheet: bfdr_appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html
+    D Fetal Death Report: bfdr_appendix_d_-_example_fetal_death_report.html
+
   VRCL: 
     Home: vrcl_index.html
     Terminology: vrcl_terminology.html
