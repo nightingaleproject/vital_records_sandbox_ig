@@ -32,10 +32,4 @@ This profile is designed to supplant the similar profile in VRDR"
   * ^binding.description = "FatherRelationship"
 
 // Add Edit Flags, a la VRDR 
-* birthDate.extension contains
-    BypassEditFlag named bypassEditFlag 0..1
-* birthDate.extension[bypassEditFlag]
-  * valueCodeableConcept from FathersDateOfBirthEditFlagsVS (required)
-  * value[x] only CodeableConcept
-    * ^short = "To reflect the relevant edit possibilities for birthdate."
-    * ^binding.description = "Birthdate Edit Flags (NCHS)"
+* birthDate.extension[bypassEditFlag] ^short = "To reflect the relevant edit possibilities for Father's date of birth."

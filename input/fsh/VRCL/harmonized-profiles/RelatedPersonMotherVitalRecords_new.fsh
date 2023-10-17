@@ -36,3 +36,4 @@ This profile is designed to supplant the similar profile in VRDR"
 //* communication MS - removing MS, but adding in ^short so it appears in differential
 * communication
   * ^short = "A language which may be used to communicate with about the patient's health"
+* birthDate.extension[bypassEditFlag] ^short = "To reflect the relevant edit possibilities for Mother's date of birth."
