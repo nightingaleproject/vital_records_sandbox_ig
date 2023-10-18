@@ -37,6 +37,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 171 | Infections Present--Chlamydia | CHAM| [ConditionInfectionPresentDuringPregnancy]|code=105629000 (Chlamydial infection (disorder)) | na | See [Note on missing data] | 
 | 172 | Infections Present--Hepatitis B | HEPB| [ConditionInfectionPresentDuringPregnancy]|code=66071002 (Viral hepatitis type B (disorder)) | na | See [Note on missing data] | 
 | 173 | Infections Present--Hepatitis C | HEPC| [ConditionInfectionPresentDuringPregnancy]|code=50711007 (Viral hepatitis type C (disorder)) | na | See [Note on missing data] | 
+| Not Mapped | Infections Present--Genital herpes simplex | Not Mapped| [ConditionInfectionPresentDuringPregnancy]|code=33839006 (Genital herpes simplex (disorder)) | na | Michigan state-specific requirement. | 
 | 196 | <nobr>Maternal Morbidity--Perineal Laceration</nobr> | PLAC| [ConditionPerinealLaceration]| | na | See [Note on missing data] | 
 | 157 | Risk Factors--Prepregnancy Diabetes | PDIAB| [ConditionPrepregnancyDiabetesVitalRecords]| | na | See [Note on missing data] | 
 | 159 | Risk Factors--Prepregnancy Hypertension  | PHYPE| [ConditionPrepregnancyHypertensionVitalRecords]| | na | See [Note on missing data] | 
