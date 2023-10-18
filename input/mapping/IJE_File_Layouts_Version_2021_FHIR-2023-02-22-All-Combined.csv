@@ -2215,7 +2215,7 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Ob
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680,Observation-antibiotics-during-labor,
 1526,Birth Infant Death,185,849,1,Characteristics of Labor & Delivery--Antibiotics,ANTB,"Y, N, U",,,,,,,,,,,,
-1002,Fetal Death,185,592,1,"Initiating cause/condition - Other complications of placenta, cord, or membranes",COD18a6,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,"code=FetalDeathCauseOrConditionCS#membranes, code.text",string,"need to check this one - PHC1298 is ‘Complications of Placenta, Cord, or Membranes: Other (Specify)’ but IJE field is Y, N (not literal text)",,,,,Condition-fetal-death-cause-or-condition,
+1002,Fetal Death,185,592,1,"Initiating cause/condition - Other complications of placenta, cord, or membranes",COD18a6,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,code=FetalDeathCauseOrConditionCS#membranes,na,,,,,,Condition-fetal-death-cause-or-condition,
 197,Mortality,185,2542,120,Cause of Death Part I Line a,COD1A,Literal information reported on Line a,,VRDR,CauseOfDeathPart1,"value.text,   component[lineNumber] = 1",string(120),-,y,,,,CauseOfDeathPart1,
 650,Natality,186,850,1,Characteristics of Labor & Delivery--Chorioamnionitis,CHOR,"Y, N, U",,BFDR,ConditionChorioamnionitis,,na,See [Note on missing data],,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
@@ -2296,7 +2296,7 @@ N = No
 U = Unknown",,,,,,,,,,,,
 207,Mortality,195,3392,5,Decedent's Birth Place City - Code,DBPLACECITYCODE,NCHS Instruction Manual: Part 8,i,VRDR,Decedent,extension[patient-birthPlace].value[x].city.extension[ cityCode],integer,see [CityCodes],,,,,Decedent,
 1013,Fetal Death,196,1016,1,Other significant causes or conditions  - Placental insufficiency,COD18b3,"Y, N",,BFDR,ConditionFetalDeathOtherCauseOrCondition,code=237292005 (Placental insufficiency (disorder)),na,,,,,,Condition-fetal-death-other-cause-or-condition,
-660,Natality,196,860,1,Maternal Morbidity--Perineal Laceration,PLAC,"Y, N, U",,BFDR,ConditionPerinealLaceration,,na,See [Note on missing data],,"Update maternal morbidity (old Condition-maternal-morbidity)
+660,Natality,196,860,1,<nobr>Maternal Morbidity--Perineal Laceration</nobr>,PLAC,"Y, N, U",,BFDR,ConditionPerinealLaceration,,na,See [Note on missing data],,"Update maternal morbidity (old Condition-maternal-morbidity)
 STU 1 listed:
 IJE Natality Data Elements: MTR, PLAC, RUT, UHYS, AINT
 IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,FHIR-40680,Condition-perineal-laceration,
@@ -2321,7 +2321,7 @@ STU 1 listed:
 IJE Natality Data Elements: MTR, PLAC, RUT, UHYS, AINT
 IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,FHIR-40680,Observation-icu-admission,
 1540,Birth Infant Death,199,863,1,Maternal Morbidity--Admit to Intensive Care,AINT,"Y, N, U",,,,,,,,,,,,
-1016,Fetal Death,199,1019,1,"Other significant causes or conditions - Other complications of placenta, cord, or membranes",COD18b6,"Y, N",,BFDR,ConditionFetalDeathOtherCauseOrCondition,code=FetalDeathCauseOrConditionCS#membranes,na,"need to check this one - PHC1298 is 'Complications of Placenta, Cord, or Membranes: Other (Specify)' but IJE field is Y, N (not literal text)",,,,,Condition-fetal-death-other-cause-or-condition,
+1016,Fetal Death,199,1019,1,"Other significant causes or conditions - Other complications of placenta, cord, or membranes",COD18b6,"Y, N",,BFDR,ConditionFetalDeathOtherCauseOrCondition,code=FetalDeathCauseOrConditionCS#membranes,na,,,,,,Condition-fetal-death-other-cause-or-condition,
 211,Mortality,199,3485,10,Father's Suffix,FATHERSUFFIX,,i,VRDR,DecedentFather,"name.suffix , name.use = official",string,-,,,,,DecedentFather,
 1017,Fetal Death,200,1020,1,Other significant causes or conditions - Unknown,COD18b7,"Y, N",,BFDR,ConditionFetalDeathOtherCauseOrCondition,code=UNK,na,,,,,,Condition-fetal-death-other-cause-or-condition,
 212,Mortality,200,3495,10,Mother's Suffix,MOTHERSSUFFIX,,i,VRDR,DecedentMother,"name.suffix , name.use = official",string,-,,,,,DecedentMother,

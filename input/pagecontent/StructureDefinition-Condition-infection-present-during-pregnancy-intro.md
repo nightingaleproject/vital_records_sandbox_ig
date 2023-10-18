@@ -14,4 +14,5 @@ This profile is mapped to:
 | Natality | 171 | Infections Present--Chlamydia | CHAM | code=105629000 (Chlamydial infection (disorder)) |na |See [Note on missing data] |
 | Natality | 172 | Infections Present--Hepatitis B | HEPB | code=66071002 (Viral hepatitis type B (disorder)) |na |See [Note on missing data] |
 | Natality | 173 | Infections Present--Hepatitis C | HEPC | code=50711007 (Viral hepatitis type C (disorder)) |na |See [Note on missing data] |
+| Natality | Not Mapped | Infections Present--Genital herpes simplex | Not Mapped | code=33839006 (Genital herpes simplex (disorder)) |na |Michigan state-specific requirement. |
 {: .grid }

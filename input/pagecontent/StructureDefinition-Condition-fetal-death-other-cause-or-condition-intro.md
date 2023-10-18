@@ -14,7 +14,7 @@ This profile is mapped to:
 | Fetal Death | 196 | Other significant causes or conditions  - Placental insufficiency | COD18b3 | code=237292005 (Placental insufficiency (disorder)) |na | |
 | Fetal Death | 197 | Other significant causes or conditions - Prolapsed cord | COD18b4 | code=270500004 (Prolapsed cord (disorder)) |na | |
 | Fetal Death | 198 | Other significant causes or conditions - Chorioamnionitis | COD18b5 | code=11612004 (Chorioamnionitis (disorder)) |na | |
-| Fetal Death | 199 | Other significant causes or conditions - Other complications of placenta, cord, or membranes | COD18b6 | code=FetalDeathCauseOrConditionCS#membranes |na |need to check this one - PHC1298 is 'Complications of Placenta, Cord, or Membranes: Other (Specify)' but IJE field is Y, N (not literal text) |
+| Fetal Death | 199 | Other significant causes or conditions - Other complications of placenta, cord, or membranes | COD18b6 | code=FetalDeathCauseOrConditionCS#membranes |na | |
 | Fetal Death | 200 | Other significant causes or conditions - Unknown | COD18b7 | code=UNK |na | |
 | Fetal Death | 201 | Other significant causes or conditions - Maternal conditions/diseases literal | COD18b8 | code=FetalDeathCauseOrConditionCS#maternalconditions, <br />code.text |string |code.text should contain description |
 | Fetal Death | 202 | Other significant causes or conditions - Other complications of placenta, cord, or membranes literal | COD18b9 | code=FetalDeathCauseOrConditionCS#membranes, <br />code.text |string |code.text should contain description |

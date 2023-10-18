@@ -37,7 +37,8 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 171 | Infections Present--Chlamydia | CHAM| [ConditionInfectionPresentDuringPregnancy]|code=105629000 (Chlamydial infection (disorder)) | na | See [Note on missing data] | 
 | 172 | Infections Present--Hepatitis B | HEPB| [ConditionInfectionPresentDuringPregnancy]|code=66071002 (Viral hepatitis type B (disorder)) | na | See [Note on missing data] | 
 | 173 | Infections Present--Hepatitis C | HEPC| [ConditionInfectionPresentDuringPregnancy]|code=50711007 (Viral hepatitis type C (disorder)) | na | See [Note on missing data] | 
-| 196 | Maternal Morbidity--Perineal Laceration | PLAC| [ConditionPerinealLaceration]| | na | See [Note on missing data] | 
+| Not Mapped | Infections Present--Genital herpes simplex | Not Mapped| [ConditionInfectionPresentDuringPregnancy]|code=33839006 (Genital herpes simplex (disorder)) | na | Michigan state-specific requirement. | 
+| 196 | <nobr>Maternal Morbidity--Perineal Laceration</nobr> | PLAC| [ConditionPerinealLaceration]| | na | See [Note on missing data] | 
 | 157 | Risk Factors--Prepregnancy Diabetes | PDIAB| [ConditionPrepregnancyDiabetesVitalRecords]| | na | See [Note on missing data] | 
 | 159 | Risk Factors--Prepregnancy Hypertension  | PHYPE| [ConditionPrepregnancyHypertensionVitalRecords]| | na | See [Note on missing data] | 
 | 197 | Maternal Morbidity--Ruptured Uterus | RUT| [ConditionRupturedUterus]| | na | See [Note on missing data] | 
@@ -373,7 +374,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 182 | Initiating cause/condition - Placental insufficiency | COD18a3| [ConditionFetalDeathCauseOrCondition]|code=237292005 (Placental insufficiency (disorder)) | na |  | 
 | 183 | Initiating cause/condition - Prolapsed cord | COD18a4| [ConditionFetalDeathCauseOrCondition]|code=270500004 (Prolapsed cord (disorder)) | na |  | 
 | 184 | Initiating cause/condition - Chorioamnionitis | COD18a5| [ConditionFetalDeathCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | 
-| 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes, code.text | string | need to check this one - PHC1298 is ‘Complications of Placenta, Cord, or Membranes: Other (Specify)’ but IJE field is Y, N (not literal text) | 
+| 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes | na |  | 
 | 186 | Initiating cause/condition - Unknown | COD18a7| [ConditionFetalDeathCauseOrCondition]|code=UNK | na |  | 
 | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#maternalconditions, code.text | string | code.text should contain description | 
 | 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes, code.text | string | code.text should contain description | 
@@ -387,7 +388,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 196 | Other significant causes or conditions  - Placental insufficiency | COD18b3| [ConditionFetalDeathOtherCauseOrCondition]|code=237292005 (Placental insufficiency (disorder)) | na |  | 
 | 197 | Other significant causes or conditions - Prolapsed cord | COD18b4| [ConditionFetalDeathOtherCauseOrCondition]|code=270500004 (Prolapsed cord (disorder)) | na |  | 
 | 198 | Other significant causes or conditions - Chorioamnionitis | COD18b5| [ConditionFetalDeathOtherCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | 
-| 199 | Other significant causes or conditions - Other complications of placenta, cord, or membranes | COD18b6| [ConditionFetalDeathOtherCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes | na | need to check this one - PHC1298 is 'Complications of Placenta, Cord, or Membranes: Other (Specify)' but IJE field is Y, N (not literal text) | 
+| 199 | Other significant causes or conditions - Other complications of placenta, cord, or membranes | COD18b6| [ConditionFetalDeathOtherCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes | na |  | 
 | 200 | Other significant causes or conditions - Unknown | COD18b7| [ConditionFetalDeathOtherCauseOrCondition]|code=UNK | na |  | 
 | 201 | Other significant causes or conditions - Maternal conditions/diseases literal | COD18b8| [ConditionFetalDeathOtherCauseOrCondition]|code=FetalDeathCauseOrConditionCS#maternalconditions, <br />code.text | string | code.text should contain description | 
 | 202 | Other significant causes or conditions - Other complications of placenta, cord, or membranes literal | COD18b9| [ConditionFetalDeathOtherCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes, <br />code.text | string | code.text should contain description | 
