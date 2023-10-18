@@ -14,7 +14,7 @@ This profile is mapped to:
 | Fetal Death | 182 | Initiating cause/condition - Placental insufficiency | COD18a3 | code=237292005 (Placental insufficiency (disorder)) |na | |
 | Fetal Death | 183 | Initiating cause/condition - Prolapsed cord | COD18a4 | code=270500004 (Prolapsed cord (disorder)) |na | |
 | Fetal Death | 184 | Initiating cause/condition - Chorioamnionitis | COD18a5 | code=11612004 (Chorioamnionitis (disorder)) |na | |
-| Fetal Death | 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6 | code=FetalDeathCauseOrConditionCS#membranes, code.text |string |need to check this one - PHC1298 is ‘Complications of Placenta, Cord, or Membranes: Other (Specify)’ but IJE field is Y, N (not literal text) |
+| Fetal Death | 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6 | code=FetalDeathCauseOrConditionCS#membranes |na | |
 | Fetal Death | 186 | Initiating cause/condition - Unknown | COD18a7 | code=UNK |na | |
 | Fetal Death | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8 | code=FetalDeathCauseOrConditionCS#maternalconditions, code.text |string |code.text should contain description |
 | Fetal Death | 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9 | code=FetalDeathCauseOrConditionCS#membranes, code.text |string |code.text should contain description |

@@ -66,10 +66,10 @@ pages:
     title: BFDR Content Transitions 
   mdi-content-transitions.md:
     title: MDI Content Transitions 
-  bfdr_ije_mapping_new.md:
-    title: Updated BFDR Data Dictionary
-  vrdr_ije_mapping_new.md:
-    title: Updated VRDR Data Dictionary
+  bfdr_ije_mapping.md:
+    title: BFDR Data Dictionary
+  vrdr_ije_mapping.md:
+    title: VRDR Data Dictionary
   bfdr_appendices.md:
     title: BFDR Appendices
   bfdr_appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.md:
@@ -138,8 +138,9 @@ menu:
     Usage: usage.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
-    Updated VRDR Data Dictionary: vrdr_ije_mapping_new.html
-    Updated BFDR Data Dictionary: bfdr_ije_mapping_new.html
+    VRDR Data Dictionary: vrdr_ije_mapping.html
+    BFDR Data Dictionary: bfdr_ije_mapping.html
+    IJE Mapping to FHIR (xlsx): IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx
   BFDR: 
     Home: bfdr_index.html
     UseCases: bfdr_use_cases.html
