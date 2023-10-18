@@ -10,3 +10,12 @@ Description: "The weight of the infant/fetus at birth/delivery. Migrated from VR
 * subject only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
 * value[x] 1..
 * value[x] only Quantity
+// Add Edit Flags, a la VRDR 
+* value[x].extension contains
+    BypassEditFlag named bypassEditFlag 0..1
+* value[x].extension[bypassEditFlag]
+  * value[x] from BirthWeightEditFlagsVS (required)
+  * value[x] only CodeableConcept
+  * value[x] 
+    * ^short = "To reflect the relevant edit possibilities for birth weight."
+    * ^binding.description = "Birth Weight Edit Flags (NCHS)"

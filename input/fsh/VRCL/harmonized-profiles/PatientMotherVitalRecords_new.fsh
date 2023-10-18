@@ -14,11 +14,14 @@ Description: "This Patient profile represents the woman who gave birth to, or de
 * name[namePriorToFirstMarriage] MS 
 * name.family 1..
 * birthDate 1..
-  * extension[partialDate] MS 
+* birthDate.extension contains
+    PartialDate named partialDate 0..1 
+* birthDate.extension[partialDate] MS 
 // * birthDate 1..
 //   * extension contains ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..* MS
 //   * extension[datePartAbsentReason] ^short = "Indicates reason for missing data on either the birthDate or the birthTime."
 //     * ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
+* birthDate.extension[bypassEditFlag] ^short = "To reflect the relevant edit possibilities for Mother's date of birth."
 * deceased[x] MS
   * ^short = "Indicates if the individual is deceased or not, dateTime is preferred"
 * address.extension[withinCityLimitsIndicator] MS 

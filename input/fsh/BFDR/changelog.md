@@ -1,11 +1,54 @@
 ## Change Log
 
 
+### 17 October 2023
+
+#### **Summary**
+- ObservationPluralityVitalRecords and associated instances removed and replaced by multipleBirths extension.
+- editFlags were removed and are now extensions in their corresponding profiles
+- editFlags value sets were consolidated
+
+#### Deleted Instances
+- observation-edit-birth-weight-babyg-quinn
+- observation-edit-flag-delivery-wgt-not-named
+- observation-edit-flag-est-gestation-not-named
+- observation-edit-flag-estimate-of-gestation-example
+- observation-edit-flag-fathers-date-of-birth-example
+- observation-edit-flag-fathers-education-example
+- observation-edit-flag-mothers-date-of-birth-example
+- observation-edit-flag-mothers-delivery-weight-example
+- observation-edit-flag-mothers-dob-not-named
+- observation-edit-flag-mothers-education-example
+- observation-edit-flag-mothers-education-not-named
+- observation-edit-flag-mothers-height-example
+- observation-edit-flag-mothers-height-not-named
+- observation-edit-flag-mothers-prepreg-wgt-not-named
+- observation-edit-flag-mothers-prepregnancy-weight-example
+- observation-edit-flag-nbr-previous-cesareans-not-named
+- observation-edit-flag-number-prenatal-care-visits-example
+- observation-edit-flag-number-previous-cesareans-example
+- observation-edit-flag-plurality-example
+- observation-edit-flag-plurality-not-named
+
+
+#### Deleted Profiles
+- ObservationEditFlagPlurality
+- ObservationEditFlagBirthweight
+- ObservationEditFlagEstimateOfGestation
+- ObservationEditFlagFathersDateOfBirth
+- ObservationEditFlagFathersEducation.fsh
+- ObservationEditFlagMothersDateOfBirth
+- ObservationEditFlagMothersDeliveryWeight
+- ObservationEditFlagMothersEducation
+- ObservationEditFlagMothersHeight
+- ObservationEditFlagMothersPrepregnancyWeight
+- ObservationEditFlagNumberPrenatalCareVisits
+- ObservationEditFlagNumberPreviousCesareans
 
 ### As of 5 October 2023
 
 #### **Summary**
-The main change was that a subset of profiles/instances were moved between VRCL and BFDR. Those moved to BFDR had archived copies put in a "superseded" folder in VRCL and those moved to VRCL had archived copies put in a "superceded" folder in BFDR. Old instances were deleted after harmonization and STU1.1 updates were incorporated to profiles. - compositions/- bundles (besides those - related to race/ethnicity and cause of death) were updated accordingly.
+The main change was that a subset of profiles/instances were moved between VRCL and BFDR. Those moved to BFDR had archived copies put in a "superseded" folder in VRCL and those moved to VRCL had archived copies put in a "superseded" folder in BFDR. Old instances were deleted after harmonization and STU1.1 updates were incorporated to profiles. - compositions/- bundles (besides those - related to race/ethnicity and cause of death) were updated accordingly. 
 
 #### **Profiles Moving from VRCL (Superseded)**
 

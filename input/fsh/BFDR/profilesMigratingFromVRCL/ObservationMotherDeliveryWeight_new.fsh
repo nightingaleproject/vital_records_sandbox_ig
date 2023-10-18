@@ -12,3 +12,12 @@ Description: "The weight of the mother at the time of birth/delivery. Migrated f
 * category
   * text = "Vital Signs"
 * code = $loinc#69461-2 "Mother's body weight --at delivery"
+// Add Edit Flags, a la VRDR 
+* value[x].extension contains
+    BypassEditFlag named bypassEditFlag 0..1
+* value[x].extension[bypassEditFlag]
+  * value[x] from PregnancyReportEditFlagsVS (required)
+  * value[x] only CodeableConcept
+  * value[x] 
+    * ^short = "To reflect the relevant edit possibilities for pregnancy report of Education, Mother's height, Mother's pre-pregnancy weight and Prenatal care visit number and also to reflect the relevant edit possibilities for pregnancy status of Female decedent."
+    * ^binding.description = "Pregnancy Report Edit Flags (NCHS)"

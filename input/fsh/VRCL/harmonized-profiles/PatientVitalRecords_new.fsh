@@ -62,11 +62,17 @@ Description: "This abstract Patient profile includes common extensions and slici
 * birthDate.extension contains
     PartialDate named partialDate 0..1 and
     ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..*  and
-    $patient-birthTime named birthTime 0..1 
+    $patient-birthTime named birthTime 0..1 and
+    BypassEditFlag named bypassEditFlag 0..1
 * birthDate.extension[datePartAbsentReason] ^short = "Indicates reason for missing data on either the birthDate or the birthTime."
 * birthDate.extension[datePartAbsentReason] ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
 * birthDate.extension[partialDate] ^short = "partialDate"
 * birthDate.extension[partialDate] ^definition = "Alternative component representation of partial date."
+* birthDate.extension[bypassEditFlag]
+  * valueCodeableConcept from MothersDateOfBirthEditFlagsVS (required)
+  * value[x] only CodeableConcept
+    * ^short = "To reflect the relevant edit possibilities for date of birth."
+    * ^binding.description = "Date of Birth Edit Flags (NCHS)"
 * address
   * country from ResidenceCountryVS (required)  // COUNTRYC
   * state from StatesTerritoriesAndProvincesVS (required)  // STATEC

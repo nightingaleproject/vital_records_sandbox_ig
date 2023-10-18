@@ -1,5 +1,5 @@
-Instance: observation-plurality-carmen-teresa-lee-common
-InstanceOf: ObservationPluralityVitalRecords
+Instance: observation-plurality-carmen-teresa-lee-new
+InstanceOf: ObservationPluralityNew
 Title: "Observation - Plurality example [Carmen Teresa Lee]"
 Description: "Example of Observation-plurality-vr profile (Carmen Teresa Lee)"
 Usage: #example

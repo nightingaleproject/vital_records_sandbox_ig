@@ -42,7 +42,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-8
-* insert addentry(Observation, observation-number-prenatal-visits-jada-ann-quinn)
+* insert addentry(Observation, observation-number-prenatal-visits-jada-ann-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-prenatal-visits-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-9
@@ -74,15 +74,15 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-16
-* insert addentry(Observation, observation-mother-delivery-weight-jada-ann-quinn)
+* insert addentry(Observation, observation-mother-delivery-weight-jada-ann-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-delivery-weight-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-17
-* insert addentry(Observation, observation-mother-height-jada-ann-quinn)
+* insert addentry(Observation, observation-mother-height-jada-ann-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-height-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-18
-* insert addentry(Observation, observation-mother-prepregnancy-weight-jada-ann-quinn)
+* insert addentry(Observation, observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-prepregnancy-weight-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-19
@@ -110,7 +110,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Condition/condition-gestational-hypertension-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-25
-* insert addentry(Observation, observation-number-previous-cesareans-jada-ann-quinn)
+* insert addentry(Observation, observation-number-previous-cesareans-jada-ann-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-number-previous-cesareans-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-26
@@ -142,11 +142,11 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Condition/condition-ruptured-uterus-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-33
-* insert addentry(Observation, observation-birth-weight-babyg-quinn)
+* insert addentry(Observation, observation-birth-weight-babyg-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-birth-weight-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-34
-* insert addentry(Observation, observation-gestational-age-at-delivery-babyg-quinn)
+* insert addentry(Observation, observation-gestational-age-at-delivery-babyg-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-gestational-age-at-delivery-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-35
@@ -184,7 +184,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-43
-* insert addentry(Observation, observation-parent-education-level-jada-ann-quinn)
+* insert addentry(Observation, observation-parent-education-level-jada-ann-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-44
@@ -192,7 +192,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-ssn-requested-for-child-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-45
-* insert addentry(RelatedPerson, relatedperson-father-natural-james-brandon-quinn)
+* insert addentry(RelatedPerson, relatedperson-father-natural-james-brandon-quinn-w-edit)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-father-natural-james-brandon-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-46
@@ -200,56 +200,56 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-paternity-acknowledgement-signed-james-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-47
-* insert addentry(Observation, observation-parent-education-level-james-quinn)
+* insert addentry(Observation, observation-parent-education-level-james-quinn-w-edit)
 // * insert addentry(Observation, observation-parent-education-level-james-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-james-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-48
-* insert addentry(Observation, observation-edit-birth-weight-babyg-quinn)
+// * insert addentry(ObservationEditFlagBirthweight, observation-edit-birth-weight-babyg-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-birth-weight-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-49
-* insert addentry(Observation, observation-edit-flag-estimate-of-gestation-example)
+//* insert addentry(Observation, observation-edit-flag-estimate-of-gestation-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-estimate-of-gestation-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-50
-* insert addentry(Observation, observation-edit-flag-fathers-date-of-birth-example)
+//* insert addentry(Observation, observation-edit-flag-fathers-date-of-birth-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-fathers-date-of-birth-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-51
-* insert addentry(Observation, observation-edit-flag-fathers-education-example)
+//* insert addentry(Observation, observation-edit-flag-fathers-education-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-fathers-education-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-52
-* insert addentry(Observation, observation-edit-flag-mothers-date-of-birth-example)
+// * insert addentry(Observation, observation-edit-flag-mothers-date-of-birth-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-date-of-birth-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-53
-* insert addentry(Observation, observation-edit-flag-mothers-delivery-weight-example)
+//* insert addentry(Observation, observation-edit-flag-mothers-delivery-weight-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-delivery-weight-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-54
-* insert addentry(Observation, observation-edit-flag-mothers-education-example)
+//* insert addentry(Observation, observation-edit-flag-mothers-education-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-education-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-55
-* insert addentry(Observation, observation-edit-flag-mothers-height-example)
+//* insert addentry(Observation, observation-edit-flag-mothers-height-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-height-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-56
-* insert addentry(Observation, observation-edit-flag-mothers-prepregnancy-weight-example)
+//* insert addentry(Observation, observation-edit-flag-mothers-prepregnancy-weight-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-prepregnancy-weight-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-57
-* insert addentry(Observation, observation-edit-flag-number-prenatal-care-visits-example)
+//* insert addentry(Observation, observation-edit-flag-number-prenatal-care-visits-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-number-prenatal-care-visits-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-58
-* insert addentry(Observation, observation-edit-flag-number-previous-cesareans-example)
+//* insert addentry(Observation, observation-edit-flag-number-previous-cesareans-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-number-previous-cesareans-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-59
-* insert addentry(Observation, observation-edit-flag-plurality-example)
+//* insert addentry(Observation, observation-edit-flag-plurality-example)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-plurality-example"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-60

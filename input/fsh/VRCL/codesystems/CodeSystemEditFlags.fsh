@@ -1,15 +1,23 @@
 CodeSystem: EditFlagsCS
 Id: CodeSystem-vr-edit-flags
-Title: "CodeSystem - Birth and Death Financial Class"
+Title: "CodeSystem - Birth and Death Edit Flags"
 Description: "This code system contains codes to represent all edit flags"
 * ^caseSensitive = true
 * ^content = #complete
 * ^experimental = false
-* #editBypass0 "Edit Passed" 
-* #editBypass1 "Edit Failed, Data Queried, and Verified" 
-* #editBypass2 "Edit Failed, Data Queried, but not Verified" 
-* #editBypass3 "Edit Failed, Review Needed" 
-* #editBypass4 "Edit Failed, Query Needed" 
+* #off "Off" //PHC1380
+* #correctOutOfRange "Queried data correct, out of range" //PHC1491
+* #failedBirthWeightGestationEdit "Queried, failed birthweight/gestation edit"
+* #editBypass0 "Edit Passed" //PHC1362
+* #editBypass1 "Edit Failed, Data Queried, and Verified" //PHC1363
+* #editBypass2 "Edit Failed, Data Queried, but not Verified" //PHC1364 
+* #editBypass3 "Edit Failed, Review Needed" //PHC1366
+* #editBypass4 "Edit Failed, Query Needed" //PHC1365
+* #dataQueried "Data queried" //PHC2143
+* #failedVerified "Edit Failed, Verified" //PHC1492
+* #pluralityQueriedInconsistent "Plurality/Set Order Queried, Inconsistent" //PHC1495
+* #queriedCorrect "Queried, and Correct" //PHC1494
+
 * #DEducBypass0 "Decedents Education - Edit Passed"
 * #DEducBypass1 "Decedents Education - Edit Failed, Data Queried, and Verified" 
 * #DEducBypass2 "Decedents Education - Edit Failed, Data Queried, but not Verified"
@@ -25,8 +33,8 @@ Description: "This code system contains codes to represent all edit flags"
 * #maritalBypass4 "Marital - Edit Failed, Query Needed"
 * #MAgeBypass0 "Mothers Age - Edit Passed"
 * #MAgeAgeBypass1 "Mothers Age - Data Queried"
-* #FAgeBypass0 "Fathers Age - Edit Passed"
-* #FAgeBypass1 "Fathers Age - Data Queried"
+* #FAgeBypass0 "Fathers Age - Edit Passed" //PHC1362
+* #FAgeBypass1 "Fathers Age - Data Queried" //PHC2143
 * #MEducBypass0 "Mothers Education - Edit Passed"
 * #MEducBypass1 "Mothers Education - Edit Failed, Data Queried and Verified"
 * #MEducBypass2 "Mothers Education - Edit Failed, Data Queried, but not Verified" 
