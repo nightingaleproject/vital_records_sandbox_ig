@@ -145,7 +145,7 @@ menu:
     Capability Statement: CapabilityStatement-CapabilityStatement-bfdr.html
     ChangeLog: bfdr_change_log.html
     Content Transitions: bfdr-content-transitions.html
-    Updated VRDR Data Dictionary: vrdr_ije_mapping_new.html
+    Updated BFDR Data Dictionary: bfdr_ije_mapping_new.html
     Specification: bfdr_the_specification.html
     Forms Mapping: bfdr_vital_records_form_mapping.html
     Terminology: bfdr_terminology.html
@@ -156,7 +156,6 @@ menu:
     D Fetal Death Report: bfdr_appendix_d_-_example_fetal_death_report.html
   VRCL: 
     Home: vrcl_index.html
-    Capability Statement: 
     Terminology: vrcl_terminology.html
     Specification: vrcl_the_specification.html
     ChangeLog: vrcl_change_log.html
@@ -164,10 +163,10 @@ menu:
     Capability Statement EDRS: CapabilityStatement-CapabilityStatement-edrs-server.html
     Capability Statement Toxicology: CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server.html
     Capability Statement ME/C: CapabilityStatement-CapabilityStatement-medical-examiner-coroner-server.html
-    Content Transitions: di-content-transitions.html
+    Content Transitions: mdi-content-transitions.html
   VRDR: 
     Content Transitions: vrdr-content-transitions.html
-    Updated BFDR Data Dictionary: bfdr_ije_mapping_new.html
+    Updated VRDR Data Dictionary: vrdr_ije_mapping_new.html
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
