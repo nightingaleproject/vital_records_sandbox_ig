@@ -21,9 +21,9 @@
 |Tobacco Use |     DeathInvestigation    |    updated subject (although they match exactly here)    | [TobaccoUseContributedToDeath] |       [TobaccoUseContributedToDeathNew]       |    -     |
 |Death Location |     DeathInvestigation   |    -    | [DeathLocation] |       -       |    -     |
 |Injury Location |     DeathInvestigation   |    -    | [InjuryLocation] |     -    |    -     |
-|Injury Incident |     DeathInvestigation   |    constrained performer to [USCorePractitionerProfile], updated value sets   | [InjuryIncident] |       [InjuryIncidentNew]       |    -     |
+|Injury Incident |     DeathInvestigation   |    constrained performer to [USCorePractitioner], updated value sets   | [InjuryIncident] |       [InjuryIncidentNew]       |    -     |
 |Autopsy Performed Indicator|     DeathInvestigation   |    -    | [AutopsyPerformedIndicator] |       -       |    -     |
-|Death Date |     DeathInvestigation   |    updated value sets, subject updated to [PatientVitalRecordsNew], performer constrained to [USCorePractitionerProfile]   | [DeathDate] |       [DeathDateNew]       |    -     |
+|Death Date |     DeathInvestigation   |    updated value sets, subject updated to [PatientVitalRecordsNew], performer constrained to [USCorePractitioner]   | [DeathDate] |       [DeathDateNew]       |    -     |
 |Surgery Date |     DeathInvestigation   |    -    | [SurgeryDate] |       -       |    -     |
 |Certifier |     DeathCertification   |    added birthAttendantQualification    | [Certifier] |       [PractitionerVitalRecordsNew]      |    -     |
 |Death Certification |     DeathCertification   |    removed deprecated category and replaced Certifier with [PractitionerVitalRecordsNew]    | [DeathCertification] |       [DeathCertificationNew]       |    -     |

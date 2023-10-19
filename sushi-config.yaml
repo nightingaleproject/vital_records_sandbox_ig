@@ -58,10 +58,10 @@ publisher:
 pages:
   index.md:
     title: Home
-  BFDR_index.md: 
-    title: Birth and Fetal Death Reporting
-  VRCL_index.md: 
-    title: Vital Records Common Library
+  bfdr_index.md: 
+    title: Birth and Fetal Death Reporting Home
+  vrcl_index.md: 
+    title: Vital Records Common Library Home
   usage.md:
     title: Usage
   vrdr-content-transitions.md:
@@ -86,8 +86,6 @@ pages:
     title: BFDR Example Fetal Death Report
   bfdr_change_log.md:
     title: BFDR Change Log
-  bfdr_index.md:
-    title: BFDR Home
   bfdr_patient_worksheet_questionnaries.md:
     title: Patient WOrksheet Questionnaires
   bfdr_terminology.md:
@@ -100,8 +98,6 @@ pages:
     title: BFDR Vital Records Form Mapping 
   vrcl_change_log.md:
     title: VRCL Change Log 
-  vrcl_index.md:
-    title: VRCL Home 
   vrcl_terminology.md:
     title: VRCL Terminology 
   vrcl_the_specification.md:
@@ -139,18 +135,17 @@ parameters:
 menu:
   Home:
     Home: index.html
-    BFDR: BFDR_index.html
-    VRCL: VRCL_index.html
+    BFDR: bfdr_index.html
+    VRCL: vrcl_index.html
     Usage: usage.html
-  Artifacts:
-    All FHIR Artifacts: artifacts.html
-    Updated VRDR Data Dictionary: vrdr_ije_mapping_new.html
-    Updated BFDR Data Dictionary: bfdr_ije_mapping_new.html
+  Artifacts: artifacts.html
   BFDR: 
     Home: bfdr_index.html
     UseCases: bfdr_use_cases.html
+    Capability Statement: CapabilityStatement-CapabilityStatement-bfdr.html
     ChangeLog: bfdr_change_log.html
     Content Transitions: bfdr-content-transitions.html
+    Updated VRDR Data Dictionary: vrdr_ije_mapping_new.html
     Specification: bfdr_the_specification.html
     Forms Mapping: bfdr_vital_records_form_mapping.html
     Terminology: bfdr_terminology.html
@@ -159,14 +154,20 @@ menu:
     B Live Birth Certificate: bfdr_appendix_b_-_example_live_birth_certificate.html
     C Fetal Death Worksheet: bfdr_appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html
     D Fetal Death Report: bfdr_appendix_d_-_example_fetal_death_report.html
-
   VRCL: 
     Home: vrcl_index.html
+    Capability Statement: 
     Terminology: vrcl_terminology.html
     Specification: vrcl_the_specification.html
     ChangeLog: vrcl_change_log.html
-  MDI: mdi-content-transitions.html
-  VRDR: vrdr-content-transitions.html
+  MDI: 
+    Capability Statement EDRS: CapabilityStatement-CapabilityStatement-edrs-server.html
+    Capability Statement Toxicology: CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server.html
+    Capability Statement ME/C: CapabilityStatement-CapabilityStatement-medical-examiner-coroner-server.html
+    Content Transitions: di-content-transitions.html
+  VRDR: 
+    Content Transitions: vrdr-content-transitions.html
+    Updated BFDR Data Dictionary: bfdr_ije_mapping_new.html
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
@@ -456,6 +457,13 @@ groups:
     # description: BFDR ValueSets
     resources:
       - CigaretteSmokingBeforeAndDuringPregnancy
+      - BirthWeightEditFlagsVS
+      - EstimateOfGestationEditFlagsVS
+      - FathersDateOfBirthEditFlagsVS
+      - MothersDateOfBirthEditFlagsVS
+      - NumberPreviousCesareansEditFlagsVS
+      - PluralityEditFlagsVS
+      - PregnancyReportEditFlagsVS
 
   BFDRExtensions:
     name: BFDR Extensions 
@@ -470,7 +478,6 @@ groups:
   
   VRDRCodeSystems:
     name: VRDR CodeSystems
-    # description: VRDR CodeSystems 
     resources:
       - ActivityAtTimeOfDeathCS    
       - BypassEditFlagCS
@@ -520,6 +527,7 @@ groups:
       - TransaxConversionVS
       - ActivityAtTimeOfDeathVS
       - ICD10CausesOfDeathVS
+      - YesNoNotApplicableVS
       - YesNoUnknownVS
       - ResidenceCountryVS
       - BirthplaceCountryVS
@@ -637,9 +645,12 @@ groups:
       - ObservationToxicologyLabResult
       - SpecimenToxicologyLab
 
-  # MDIValueset:
-  #   name: MDI Value Set
-  #   resources:
+  MDIValueset:
+    name: MDI Value Set
+    resources:
+      - ValueSetTrackingNumberType
+      - CodeSystemDeathPregnancyStatus
+      - CodeSystemLocalComponentCodes
       # - ValueSetDateEstablishmentApproach
 
   MDIExtensions:

@@ -4,8 +4,8 @@
 
 | Name of Profile | Group | Change         |  Current Profile   | New Profile  | Comment |
 | :-------------: | ----- | -------------- | ------------- | ------------ | :-----: |
-|Decedent |  subject  |    -    | [USCorePatient] |  [PatientVitalRecordsNew] |   using common VRCL profile  |
-|Medical Examiner/Coroner (Certifier) |  author, attester  |    -    | [USCorePractitioner] |  [PractitionerVitalRecordsNew]  |   using common VRCL profile     |
+|Decedent |  subject  |    using common VRCL profile   | [USCorePatient] |  [PatientVitalRecordsNew] |  [PatientVitalRecordsNew] is an abstract profile based on [USCorePatient] that includes additional slices  |
+|Medical Examiner/Coroner (Certifier) |  author, attester  |    using common VRCL profile, includes slice items within address and slices for qualification    | [USCorePractitioner] |  [PractitionerVitalRecordsNew]  |   -    |
 |Death Location |  circumstances  |    Removal of MS flags, inclusion of consolidated code system, inclusion of city and county extensions to accomodate VRDR, replacement of address text with state code - now uses harmonized VRDR profile     | [LocationDeath] | [DeathLocation] |  -  |
 |Tobacco Use Contributed to Death |  circumstances  | Removal of MS flags, inclusion of common value set - now uses harmonized VRDR profile w  | [ObservationTobaccoUseContributedToDeath] |    [TobaccoUseContributedToDeathNew] | - |
 |Decedent Pregnancy |  circumstances  |   Removal of MS flags, inclusion of consolidated value set to include missing value, inclusion of bypass edit flag extensions  - now uses harmonized VRDR profile | [ObservationDecedentPregnancy] | [DecedentPregnancyStatusNew] | - |
