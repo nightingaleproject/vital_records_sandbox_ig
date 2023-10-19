@@ -7,6 +7,7 @@
 [USCorePractitioner]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html
 [USCorePractitionerRole]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitionerrole.html
 
+[QuestionnaireResponse]: http://hl7.org/fhir/R4/questionnaireresponse.html
 [PartialDatesAndTimes]: usage.html#partial-dates-and-times
 [Note on Decedent Name]: usage.html#decedent-name
 [Note on Decedent Gender]: usage.html#decedent-gender
