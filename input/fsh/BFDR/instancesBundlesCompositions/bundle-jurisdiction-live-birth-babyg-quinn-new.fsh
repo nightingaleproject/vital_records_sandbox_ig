@@ -1,4 +1,4 @@
-Instance: bundle-jurisdiction-live-birth-babyg-quinn-new
+Instance: bundle-jurisdiction-live-birth-babyg-quinn
 InstanceOf: BundleDocumentBFDRNew
 Title: "Bundle - Jurisdiction Live Birth Report - Baby G Quinn"
 Description: "Bundle - Jurisdiction Live Birth Report: Baby G Quinn example"
