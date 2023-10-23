@@ -87,7 +87,7 @@ pages:
   bfdr_change_log.md:
     title: BFDR Change Log
   bfdr_patient_worksheet_questionnaries.md:
-    title: Patient WOrksheet Questionnaires
+    title: Patient Worksheet Questionnaires
   bfdr_terminology.md:
     title: BFDR Terminology
   bfdr_the_specification.md:
@@ -102,6 +102,44 @@ pages:
     title: VRCL Terminology 
   vrcl_the_specification.md:
     title: VRCL Specification 
+  mdi_index.md:
+    title: MDI Home
+  mdi_background.md:
+    title: MDI Background
+  mdi_best_practices.md:
+    title: MDI Best Practices
+  mdi_change_log.md:
+    title: MDI Changes
+  mdi_downloads.md:
+    title: MDI Downloads
+  mdi_security_recommendations.md:
+    title: MDI Security Recommendations
+  mdi_specification.md:
+    title: MDI Specification
+  mdi_terminology.md:
+    title: MDI Terminology
+  vrdr_index.md:
+    title: VRDR Home
+  vrdr_background.md:
+    title: VRDR Background
+  vrdr_change_log.md:
+    title: VRDR Change Log
+  vrdr_conformance.md:
+    title: VRDR Conformance
+  vrdr_credits.md:
+    title: VRDR Credits
+  vrdr_downloads.md:
+    title: VRDR Downloads
+  vrdr_scope_of_the_vrdr_fhir_ig.md:
+    title: VRDR Scope
+  vrdr_usage.md:
+    title: VRDR Usage
+  DeathRecordDataDictionary.md:
+    title: Death Record Data Dictionary
+  MortalityRosterDataDictionary.md:
+    title: Mortality Roster Data Dictionary
+  SurveillanceDataDictionary.md:
+    title: Surveillance Data Dictionary
 
 
 
@@ -137,6 +175,7 @@ menu:
     Home: index.html
     BFDR: bfdr_index.html
     VRCL: vrcl_index.html
+    VRDR: vrdr_index.html
     Usage: usage.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
@@ -147,7 +186,7 @@ menu:
     Home: bfdr_index.html
     UseCases: bfdr_use_cases.html
     Capability Statement: CapabilityStatement-CapabilityStatement-bfdr.html
-    ChangeLog: bfdr_change_log.html
+    Changes: bfdr_change_log.html
     Content Transitions: bfdr-content-transitions.html
     Updated BFDR Data Dictionary: bfdr_ije_mapping_new.html
     Specification: bfdr_the_specification.html
@@ -162,15 +201,35 @@ menu:
     Home: vrcl_index.html
     Terminology: vrcl_terminology.html
     Specification: vrcl_the_specification.html
-    ChangeLog: vrcl_change_log.html
+    Changes: vrcl_change_log.html
   MDI: 
+    Home: mdi_index.html
     Capability Statement EDRS: CapabilityStatement-CapabilityStatement-edrs-server.html
     Capability Statement Toxicology: CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server.html
     Capability Statement ME/C: CapabilityStatement-CapabilityStatement-medical-examiner-coroner-server.html
     Content Transitions: mdi-content-transitions.html
+    Background: mdi_background.html
+    Best Practices: mdi_best_practices.html
+    Changes: mdi_change_log.html
+    Security Recommendations: mdi_security_recommendations.html
+    Specification: mdi_specification.html
+    Terminology: mdi_terminology.html
+    Downloads: mdi_downloads.html
   VRDR: 
+    Home: vrdr_index.html
+    Background: vrdr_background.html
+    Changes: vrdr_change_log.html
+    Conformance: vrdr_conformance.html
+    Scope: vrdr_scope_of_the_vrdr_fhir_ig.html
+    Usage: vrdr_usage.html
     Content Transitions: vrdr-content-transitions.html
     Updated VRDR Data Dictionary: vrdr_ije_mapping_new.html
+    Credits: vrdr_credits.html
+    Downloads: vrdr_downloads.html
+    # (old) Death Record Data Dictionary: DeathRecordDataDictionary.html
+    # (old) Mortality Roster Data Dictionary: MortalityRosterDataDictionary.html
+    # (old) Surveillance Data Dictionary: SurveillanceDataDictionary.html
+
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
