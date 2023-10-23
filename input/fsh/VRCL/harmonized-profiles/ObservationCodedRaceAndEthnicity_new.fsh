@@ -8,7 +8,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
 
 Note:  NCHS stopped providing RaceRecode40 data in 2022."
 * insert RequireMetaProfile(Profile: CodedRaceAndEthnicityNew)
-* code = ObservationsCS#codedraceandethnicity
+* code from ValueSetCodedRaceAndEthnicityPersonVitalRecords (required) //  code = ObservationsCS#codedraceandethnicity
 * value[x] 0..0
 * insert SubjectRelatedPattern
 * component ^slicing.discriminator.type = #value

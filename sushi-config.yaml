@@ -311,7 +311,7 @@ groups:
     description: BFDR New Composition and Bundle Profiles
     resources:
       - CompositionCodedCauseOfFetalDeathNew
-      - CompositionCodedRaceAndEthnicityNew
+      - CompositionCodedRaceAndEthnicity
       - CompositionJurisdictionFetalDeathReportNew
       - CompositionJurisdictionLiveBirthReportNew
       - CompositionProviderFetalDeathReportNew

@@ -6,7 +6,7 @@ Description: "Input (from EDRS or EBRS) Race and Ethnicity (Observation). This i
 
 This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core."
 * insert RequireMetaProfile(Profile: InputRaceAndEthnicityNew)
-* code = ObservationsCS#inputraceandethnicity
+* code from ValueSetInputRaceAndEthnicityPersonVitalRecords (required) //  ObservationsCS#inputraceandethnicity
 * value[x] 0..0
 * subject 1..1
 * insert SubjectRelatedPattern

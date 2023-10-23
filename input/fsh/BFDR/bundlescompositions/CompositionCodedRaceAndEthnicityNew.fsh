@@ -1,9 +1,9 @@
-Profile: CompositionCodedRaceAndEthnicityNew
+Profile: CompositionCodedRaceAndEthnicity
 Parent: Composition
 Id: Composition-coded-race-and-ethnicity
 Title: "Composition - Coded Race and Ethnicity"
 Description: "This profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office.\n
-The Coding of Race and Ethnicity follows the MRE pattern implemented in VRDR"
+The Coding of Race and Ethnicity follows the MRE pattern implemented in VRDR, and supports maternal and paternal race/ethnicity"
 * extension contains
     ExtensionFetalDeathReportNumber named fetalDeathReportNumber 0..1 and
     ExtensionLiveBirthCertificateNumber named liveBirthCertificateNumber 0..1
@@ -15,28 +15,16 @@ The Coding of Race and Ethnicity follows the MRE pattern implemented in VRDR"
 * author ..1 
   * ^short = "The author is the NCHS."
   * ^definition = "The author is the NCHS."
-* section 2..2 
-  * ^short = "Coded race and ethnicity section."
-  * ^definition = "This section contains the tabulated and post-edited coded race and ethnicity details for the mother or father."
-  * code = $loinc#86805-9
-    * ^short = "Race and ethnicity information Document"
-  * focus 1.. 
-  * focus only Reference(PatientMotherVitalRecordsNew or RelatedPersonFatherVitalRecordsNew)
-    * ^short = "The focus of this section is the mother or father"
-    * ^definition = "The subject of the composition as a whole is the newborn baby or decedent fetus. The focus of this section in the composition is the mother or father."
-  * entry 
-    * ^slicing.discriminator.type = #profile
-    * ^slicing.discriminator.path = "$this.resolve()"
-    * ^slicing.ordered = false
-    * ^slicing.rules = #open
-    * ^short = "Entries that are contained in the Coded Race and Ethnicity section"
-    * ^definition = "Entries that are contained in the Coded Race and Ethnicity section"
-  * entry contains
-      race 1..1  and
-      tabulatedEthnicity 1..1 
-  * entry[race] only Reference(ObservationRaceVitalRecords)
-    * ^short = "Bridged race"
-    * ^definition = "The mother or father's bridged race"
-  * entry[tabulatedEthnicity] only Reference(CodedRaceAndEthnicityNew)
-    * ^short = "Tabulated ethnicity"
-    * ^definition = "The mother or father's tabulated ethnicity"
+* section 1..2 
+* section 
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "code"
+  * ^slicing.rules = #open
+  * ^short = "The Composition is broken into sections, where each section includes the input and output race and ethnicity for one individual."
+  * ^definition = "The Composition is broken into sections where each section includes the input and output race and ethnicity for one individual."
+* insert BFDRCompositionSectionEntrySlicing(mother, 0, raceAndEthnicityMother, Race and Ethnicity - Mother)
+* insert BFDRCompositionSectionSlice(mother, inputRaceAndEthnicity, 0, 1, Input Race And Ethnicity, InputRaceAndEthnicity, InputRaceAndEthnicity)
+* insert BFDRCompositionSectionSlice(mother, codedRaceAndEthnicity, 0, 1, Coded Race And Ethnicity, Coded Race And Ethnicity, CodedRaceAndEthnicity)
+* insert BFDRCompositionSectionEntrySlicing(father, 0, raceAndEthnicityMother, Race and Ethnicity - Father)
+* insert BFDRCompositionSectionSlice(father, inputRaceAndEthnicity, 0, 1, Input Race And Ethnicity, InputRaceAndEthnicity, InputRaceAndEthnicity)
+* insert BFDRCompositionSectionSlice(father, codedRaceAndEthnicity, 0, 1, Coded Race And Ethnicity, Coded Race And Ethnicity, CodedRaceAndEthnicity)
