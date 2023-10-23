@@ -1,4 +1,4 @@
-Profile: CodedRaceAndEthnicityNew
+Profile: CodedRaceAndEthnicity
 Parent: Observation
 Id: coded-race-and-ethnicity-vr-new
 Title: "Coded Race and Ethnicity"

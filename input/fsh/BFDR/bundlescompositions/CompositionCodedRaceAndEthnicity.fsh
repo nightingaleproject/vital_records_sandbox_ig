@@ -22,9 +22,9 @@ The Coding of Race and Ethnicity follows the MRE pattern implemented in VRDR, an
   * ^slicing.rules = #open
   * ^short = "The Composition is broken into sections, where each section includes the input and output race and ethnicity for one individual."
   * ^definition = "The Composition is broken into sections where each section includes the input and output race and ethnicity for one individual."
-* insert BFDRCompositionSectionEntrySlicing(mother, 0, raceAndEthnicityMother, Race and Ethnicity - Mother)
+* insert BFDRCompositionLocalSectionEntrySlicing(mother, 0, #mother, Race and Ethnicity - Mother)
 * insert BFDRCompositionSectionSlice(mother, inputRaceAndEthnicity, 0, 1, Input Race And Ethnicity, InputRaceAndEthnicity, InputRaceAndEthnicity)
 * insert BFDRCompositionSectionSlice(mother, codedRaceAndEthnicity, 0, 1, Coded Race And Ethnicity, Coded Race And Ethnicity, CodedRaceAndEthnicity)
-* insert BFDRCompositionSectionEntrySlicing(father, 0, raceAndEthnicityMother, Race and Ethnicity - Father)
+* insert BFDRCompositionLocalSectionEntrySlicing(father, 0, #father, Race and Ethnicity - Father)
 * insert BFDRCompositionSectionSlice(father, inputRaceAndEthnicity, 0, 1, Input Race And Ethnicity, InputRaceAndEthnicity, InputRaceAndEthnicity)
 * insert BFDRCompositionSectionSlice(father, codedRaceAndEthnicity, 0, 1, Coded Race And Ethnicity, Coded Race And Ethnicity, CodedRaceAndEthnicity)

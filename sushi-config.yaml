@@ -236,9 +236,9 @@ groups:
   VRCommonProfiles:
     name: VRCL New Common Profiles 
     resources:
-      - CodedRaceAndEthnicityNew
+      - CodedRaceAndEthnicity
       - ObservationEducationLevelVitalRecordsNew
-      - InputRaceAndEthnicityNew 
+      - InputRaceAndEthnicity
       - PatientChildVitalRecordsNew
       - PatientDecedentFetusVitalRecordsNew
       - PatientMotherVitalRecordsNew
