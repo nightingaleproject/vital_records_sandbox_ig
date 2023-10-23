@@ -8,5 +8,5 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 216 | Abnormal Conditions of the Newborn--Antibiotics | ANTI |  |na |NOTE: If [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn] is present in bundle, then the interpretation is that all individual abnormal conditions of newborn are 'N'   <br />See [Note on missing data] |
+| Natality | 216 | Abnormal Conditions of the Newborn--Antibiotics | ANTI |  |na |See [Note on missing abnormal conditions of newborn data] |
 {: .grid }

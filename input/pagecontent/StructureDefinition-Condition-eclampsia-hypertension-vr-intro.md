@@ -9,6 +9,6 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 239 | Risk Factors--Hypertension Eclampsia   (RECOMMENDED ADDITION EFFECTIVE 2004) | EHYPE |  |na |NOTE: If [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew] is present in bundle, then the interpretation is that all individual risk factors are 'N'   <br />See [Note on missing data] |
-| Fetal Death | 173 | Risk Factors--Hypertension Eclampsia (added after 2004) | EHYPE |  |na |NOTE: If [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew] is present in bundle, then the interpretation is that all individual risk factors are 'N'   <br />See [Note on missing data] |
+| Natality | 239 | Risk Factors--Hypertension Eclampsia   (RECOMMENDED ADDITION EFFECTIVE 2004) | EHYPE |  |na |See [Note on missing pregnancy risk factors data] |
+| Fetal Death | 173 | Risk Factors--Hypertension Eclampsia (added after 2004) | EHYPE |  |na |See [Note on missing pregnancy risk factors data] |
 {: .grid }

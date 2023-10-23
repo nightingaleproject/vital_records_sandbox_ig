@@ -9,6 +9,6 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 240 | Risk Factors--Infertility: Fertility Enhancing Drugs  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_DRG |  |na |NOTE: If [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew] is present in bundle, then the interpretation is that all individual risk factors are 'N'   <br />See [Note on missing data] |
-| Fetal Death | 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG |  |na |NOTE: If [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew] is present in bundle, then the interpretation is that all individual risk factors are 'N'   <br />See [Note on missing data] |
+| Natality | 240 | Risk Factors--Infertility: Fertility Enhancing Drugs  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_DRG |  |na |See [Note on missing pregnancy risk factors data] |
+| Fetal Death | 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG |  |na |See [Note on missing pregnancy risk factors data] |
 {: .grid }
