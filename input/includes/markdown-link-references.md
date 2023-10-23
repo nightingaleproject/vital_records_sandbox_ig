@@ -14,7 +14,8 @@
 [CountyCodes]: usage.html#county-codes
 [StateLiterals]: usage.html#state-literals
 [CountryLiterals]: usage.html#country-literals
-[Note on missing abnormal conditions data]: usage.html#abnormal-conditions-of-newborn
+[Note on missing data]: usage.html#specifying-none-of-the-above-and-missing-data
+[Note on missing abnormal conditions of newborn data]: usage.html#abnormal-conditions-of-newborn
 [Note on missing maternal morbidity data]: usage.html#maternal-morbidities
 [Note on missing characteristics of labor and delivery data]: usage.html#characteristics-of-labor-and-delivery
 [Note on missing pregnancy risk factors data]: usage.html#pregnancy-risk-factors
