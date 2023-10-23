@@ -10,6 +10,6 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 199 | Maternal Morbidity--Admit to Intensive Care | AINT |  |na |See [Note on missing data] |
-| Fetal Death | 141 | Maternal Morbidity--Admit to Intensive Care | AINT |  |na |See [Note on missing data] |
+| Natality | 199 | Maternal Morbidity--Admit to Intensive Care | AINT |  |na |NOTE: If [ObservationNoneOfSpecifiedMaternalMorbidities] is present in bundle, then the interpretation is that all individual maternal morbidities are 'N'   <br />See [Note on missing data] |
+| Fetal Death | 141 | Maternal Morbidity--Admit to Intensive Care | AINT |  |na |NOTE: If [ObservationNoneOfSpecifiedMaternalMorbidities] is present in bundle, then the interpretation is that all individual maternal morbidities are 'N'   <br />See [Note on missing data] |
 {: .grid }

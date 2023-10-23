@@ -9,6 +9,6 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 165 | Risk Factors--Previous Cesarean | PCES |  |na |See [Note on missing data] |
-| Fetal Death | 118 | Risk Factors--Previous Cesarean | PCES |  |na |See [Note on missing data] |
+| Natality | 165 | Risk Factors--Previous Cesarean | PCES |  |na |NOTE: If [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew] is present in bundle, then the interpretation is that all individual risk factors are 'N'   <br />See [Note on missing data] |
+| Fetal Death | 118 | Risk Factors--Previous Cesarean | PCES |  |na |NOTE: If [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew] is present in bundle, then the interpretation is that all individual risk factors are 'N'   <br />See [Note on missing data] |
 {: .grid }

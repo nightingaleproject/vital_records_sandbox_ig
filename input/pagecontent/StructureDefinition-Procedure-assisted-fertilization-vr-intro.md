@@ -9,6 +9,6 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 241 | Risk Factors--Infertility: Asst. Rep. Technology  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_ART |  |na |See [Note on missing data] |
-| Fetal Death | 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART |  |na |See [Note on missing data] |
+| Natality | 241 | Risk Factors--Infertility: Asst. Rep. Technology  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_ART |  |na |NOTE: If [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew] is present in bundle, then the interpretation is that all individual risk factors are 'N'   <br />See [Note on missing data] |
+| Fetal Death | 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART |  |na |NOTE: If [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew] is present in bundle, then the interpretation is that all individual risk factors are 'N'   <br />See [Note on missing data] |
 {: .grid }

@@ -1,4 +1,4 @@
-# ruby tools/makeStructureDefinitionIntros.rb input/mapping/BFDR_Profile_Intros.xlsx input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx input/mapping/BFDR_Forms_Mapping.xlsx
+# ruby tools/makeStructureDefinitionIntros.rb input/mapping/BFDR_Profile_Intros.xlsx input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx input/mapping/BFDR_Forms_Mapping.xlsx
 
 require "json"
 require "pry"

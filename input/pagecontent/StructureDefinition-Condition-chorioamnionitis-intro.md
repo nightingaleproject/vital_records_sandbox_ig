@@ -8,5 +8,5 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 186 | Characteristics of Labor & Delivery--Chorioamnionitis | CHOR |  |na |See [Note on missing data] |
+| Natality | 186 | Characteristics of Labor & Delivery--Chorioamnionitis | CHOR |  |na |NOTE: If [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery] is present in bundle, then the interpretation is that all individual risk factors are 'N'   <br />See [Note on missing data] |
 {: .grid }

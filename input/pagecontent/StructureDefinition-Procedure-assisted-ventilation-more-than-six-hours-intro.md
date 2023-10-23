@@ -8,5 +8,5 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 213 | Abnormal Conditions of the Newborn--Assisted Ventilation > 6 hours | AVEN6 |  |na |See [Note on missing data] |
+| Natality | 213 | Abnormal Conditions of the Newborn--Assisted Ventilation > 6 hours | AVEN6 |  |na |NOTE: If [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn] is present in bundle, then the interpretation is that all individual abnormal conditions of newborn are 'N'   <br />See [Note on missing data] |
 {: .grid }
