@@ -1,4 +1,4 @@
-Instance: procedure-death-certification-a-freeman-new
+Instance: procedure-death-certification-a-freeman
 InstanceOf: DeathCertificationNew
 Title: "Procedure - Death Certification - Freeman"
 Description: "Procedure - Death Certification: Freeman example"
