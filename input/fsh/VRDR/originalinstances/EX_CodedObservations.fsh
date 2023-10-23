@@ -107,7 +107,7 @@ Usage: #example
 Description: "CodedRaceAndEthnicity-Example1"
 * insert AddMetaProfile(CodedRaceAndEthnicity)
 * status = #final
-* code = #codedRaceAndEthnicity
+* code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicity
 * subject.display = "NCHS generated"
 * component[FirstEditedCode].valueCodeableConcept = RaceCodeCS#101 "White"
 * component[SecondEditedCode].valueCodeableConcept = RaceCodeCS#122 "Israeli"
@@ -122,7 +122,7 @@ Usage: #example
 Description: "InputRaceAndEthnicity-Example1"
 * insert AddMetaProfile(InputRaceAndEthnicity)
 * status = #final
-* code = #inputRaceAndEthnicity
+* code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicity
 * subject.display = "NCHS generated"
 * component[White].valueBoolean = true
 * component[BlackOrAfricanAmerican].valueBoolean = false

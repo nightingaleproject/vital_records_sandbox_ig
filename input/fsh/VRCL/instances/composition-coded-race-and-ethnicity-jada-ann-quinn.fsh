@@ -2,7 +2,7 @@ Instance: CodedRaceAndEthnicity-Mother
 InstanceOf: CodedRaceAndEthnicity
 Usage: #example
 Description: "CodedRaceAndEthnicity Mother"
-* code = #codedraceandethnicityMother
+* code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother
 * status = #final
 * subject.display = "NCHS generated"
 * component[FirstEditedCode].valueCodeableConcept = RaceCodeCS#101 "White"
@@ -15,7 +15,7 @@ Instance: CodedRaceAndEthnicity-Father
 InstanceOf: CodedRaceAndEthnicity
 Usage: #example
 Description: "CodedRaceAndEthnicity Father"
-* code = #codedraceandethnicityFather
+* code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather
 * status = #final
 * subject.display = "NCHS generated"
 * component[FirstEditedCode].valueCodeableConcept = RaceCodeCS#101 "White"
@@ -30,7 +30,7 @@ InstanceOf: InputRaceAndEthnicity
 Usage: #example
 Description: "InputRaceAndEthnicity Mother"
 * insert AddMetaProfile(InputRaceAndEthnicity)
-* code = #inputraceandethnicityMother
+* code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother
 * status = #final
 * subject.display = "NCHS generated"
 * component[White].valueBoolean = true
@@ -62,7 +62,7 @@ InstanceOf: InputRaceAndEthnicity
 Usage: #example
 Description: "InputRaceAndEthnicity Father"
 * insert AddMetaProfile(InputRaceAndEthnicity)
-* code = #inputraceandethnicityFather
+* code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather
 * status = #final
 * subject.display = "NCHS generated"
 * component[White].valueBoolean = true
