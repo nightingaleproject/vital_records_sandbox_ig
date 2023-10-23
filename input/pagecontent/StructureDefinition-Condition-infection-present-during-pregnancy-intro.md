@@ -9,10 +9,10 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 168 | Infections Present--Gonorrhea | GON | code=15628003 (Gonorrhea (disorder)) |na |See [Note on missing data] |
-| Natality | 169 | Infections Present--Syphilis | SYPH | code=76272004 (Syphilis (disorder)) |na |See [Note on missing data] |
-| Natality | 171 | Infections Present--Chlamydia | CHAM | code=105629000 (Chlamydial infection (disorder)) |na |See [Note on missing data] |
-| Natality | 172 | Infections Present--Hepatitis B | HEPB | code=66071002 (Viral hepatitis type B (disorder)) |na |See [Note on missing data] |
-| Natality | 173 | Infections Present--Hepatitis C | HEPC | code=50711007 (Viral hepatitis type C (disorder)) |na |See [Note on missing data] |
+| Natality | 168 | Infections Present--Gonorrhea | GON | code=15628003 (Gonorrhea (disorder)) |na |See [Note on missing infections present data] |
+| Natality | 169 | Infections Present--Syphilis | SYPH | code=76272004 (Syphilis (disorder)) |na |See [Note on missing infections present data] |
+| Natality | 171 | Infections Present--Chlamydia | CHAM | code=105629000 (Chlamydial infection (disorder)) |na |See [Note on missing infections present data] |
+| Natality | 172 | Infections Present--Hepatitis B | HEPB | code=66071002 (Viral hepatitis type B (disorder)) |na |See [Note on missing infections present data] |
+| Natality | 173 | Infections Present--Hepatitis C | HEPC | code=50711007 (Viral hepatitis type C (disorder)) |na |See [Note on missing infections present data] |
 | Natality | Not Mapped | Infections Present--Genital herpes simplex | Not Mapped | code=33839006 (Genital herpes simplex (disorder)) |na |Michigan state-specific requirement. |
 {: .grid }

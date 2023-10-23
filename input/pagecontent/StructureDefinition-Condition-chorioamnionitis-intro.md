@@ -8,5 +8,5 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 186 | Characteristics of Labor & Delivery--Chorioamnionitis | CHOR |  |na |See [Note on missing data] |
+| Natality | 186 | Characteristics of Labor & Delivery--Chorioamnionitis | CHOR |  |na |See [Note on missing characteristics of labor and delivery data] |
 {: .grid }

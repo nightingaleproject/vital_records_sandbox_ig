@@ -8,5 +8,5 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 181 | Characteristics of Labor & Delivery--Induction of Labor | INDL |  |na |See [Note on missing data] |
+| Natality | 181 | Characteristics of Labor & Delivery--Induction of Labor | INDL |  |na |See [Note on missing characteristics of labor and delivery data] |
 {: .grid }
