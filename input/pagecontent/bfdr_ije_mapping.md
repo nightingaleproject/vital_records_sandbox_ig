@@ -373,7 +373,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 181 | Initiating cause/condition - Abruptio placenta | COD18a2| [ConditionFetalDeathCauseOrCondition]|code=415105001 (Placental abruption (disorder)) | na |  | 
 | 182 | Initiating cause/condition - Placental insufficiency | COD18a3| [ConditionFetalDeathCauseOrCondition]|code=237292005 (Placental insufficiency (disorder)) | na |  | 
 | 183 | Initiating cause/condition - Prolapsed cord | COD18a4| [ConditionFetalDeathCauseOrCondition]|code=270500004 (Prolapsed cord (disorder)) | na |  | 
-| 184 | Initiating cause/condition - Chorioamnionitis | COD18a5| [ConditionFetalDeathCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | 
+| 184 | <nobr>Initiating cause/condition - Chorioamnionitis</nobr> | COD18a5| [ConditionFetalDeathCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | 
 | 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes | na |  | 
 | 186 | Initiating cause/condition - Unknown | COD18a7| [ConditionFetalDeathCauseOrCondition]|code=UNK | na |  | 
 | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#maternalconditions, code.text | string | code.text should contain description | 
@@ -588,7 +588,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [CodedRaceAndEthnicity]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 62 | <nobr>Mother's Race Tabulation Variable 1E</nobr> | MRACE1E| [CodedRaceAndEthnicity]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
 | 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [CodedRaceAndEthnicity]|component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
 | 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [CodedRaceAndEthnicity]|component[ThirdEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
 | 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [CodedRaceAndEthnicity]|component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
