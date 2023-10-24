@@ -302,9 +302,9 @@ groups:
   VRCLProfiles:
     name: VRCL Profiles
     resources:
-      - CodedRaceAndEthnicityNew
+      - CodedRaceAndEthnicity
       - ObservationEducationLevelVitalRecordsNew
-      - InputRaceAndEthnicityNew 
+      - InputRaceAndEthnicity
       - PatientChildVitalRecordsNew
       - PatientDecedentFetusVitalRecordsNew
       - PatientMotherVitalRecordsNew
@@ -460,7 +460,7 @@ groups:
     resources:
       - BundleDocumentBFDRNew
       - CompositionCodedCauseOfFetalDeathNew
-      - CompositionCodedRaceAndEthnicityNew
+      - CompositionCodedRaceAndEthnicity
       - CompositionJurisdictionFetalDeathReportNew
       - CompositionJurisdictionLiveBirthReportNew
       - CompositionProviderFetalDeathReportNew
