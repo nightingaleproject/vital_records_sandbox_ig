@@ -102,7 +102,7 @@ Description: "ActivityAtTimeOfDeath-Example1"
 * valueCodeableConcept = ActivityAtTimeOfDeathCS#1 "While engaged in leisure activities."
 
 Instance: CodedRaceAndEthnicity-Example1
-InstanceOf: CodedRaceAndEthnicity
+InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "CodedRaceAndEthnicity-Example1"
 * insert AddMetaProfile(CodedRaceAndEthnicity)
@@ -117,7 +117,7 @@ Description: "CodedRaceAndEthnicity-Example1"
 
 
 Instance: InputRaceAndEthnicity-Example1
-InstanceOf: InputRaceAndEthnicity
+InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "InputRaceAndEthnicity-Example1"
 * insert AddMetaProfile(InputRaceAndEthnicity)
