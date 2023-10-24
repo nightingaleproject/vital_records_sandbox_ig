@@ -9,7 +9,7 @@ VRDR does not mark MS for any elements. Marked MS in MDI and VRCL: status, code,
 Profile: CauseOfDeathPart2New
 Parent: Observation
 Id: vrdr-cause-of-death-part2-new
-Title: "Cause of Death Part 2 Vital Records"
+Title: "Cause of Death Part 2"
 Description: "The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."
 //* insert RequireMetaProfile(CauseOfDeathPart2)
 * code only CodeableConcept

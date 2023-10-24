@@ -13,7 +13,7 @@ VRDR has no MS flags. MDI and VRCL have the same MS flags.
 Profile: DecedentPregnancyStatusNew
 Parent: Observation
 Id: vrdr-decedent-pregnancy-status-new
-Title: "Observation - Decedent Pregnancy Vital Records"
+Title: "Observation - Decedent Pregnancy"
 Description: "This Observation provides an indication of the pregnancy status of the decedent.
 This profile is designed to support VRDR and MDI"
 // * status 1..1 //in vrdr, status is fixed to final
