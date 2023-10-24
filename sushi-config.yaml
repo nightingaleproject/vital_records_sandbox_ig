@@ -1048,9 +1048,9 @@ groups:
       - TransportationIncidentRoleVS
       - UnitsOfAgeVS
       - USStatesAndTerritoriesVS
-      - YesNoNotApplicableVS
-      - YesNoUnknownNotApplicableVS
-      - YesNoUnknownVS 
+      # - YesNoNotApplicableVS
+      # - YesNoUnknownNotApplicableVS
+      # - YesNoUnknownVS 
 
   # VRDRBundles:
   #   name: VRDR Bundles
@@ -1087,8 +1087,8 @@ groups:
       - TransaxConversionCM
       - TransportationIncidentRoleCM
       - UnitsOfAgeCM
-      - YesNoUnknownCM
-      - YesNoUnknownNotApplicableCM
+      # - YesNoUnknownCM
+      # - YesNoUnknownNotApplicableCM
 
 
   VRDRExamples:
