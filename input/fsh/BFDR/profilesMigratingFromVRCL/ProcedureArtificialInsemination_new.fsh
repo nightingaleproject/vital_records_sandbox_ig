@@ -1,4 +1,4 @@
-Profile: ProcedureArtificialInseminationNew
+Profile: ProcedureArtificialInsemination
 Parent: USCoreProcedureProfile
 Id: Procedure-artificial-insemination
 Title: "Procedure - Artificial Insemination Vital Records"

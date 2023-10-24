@@ -1,5 +1,5 @@
 //content from ObservationGestationalAgeAtDeliveryVitalRecords moving from VRCL to BFDR. Changed to reference PatientChild and PatientDecedentFetus profiles in BFDR.
-Profile: ObservationGestationalAgeAtDeliveryNew
+Profile: ObservationGestationalAgeAtDelivery
 Parent: Observation
 Id: Observation-gestational-age-at-delivery
 Title: "Observation - Gestational Age at Delivery"

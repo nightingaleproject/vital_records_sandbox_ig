@@ -1,5 +1,5 @@
 //content from ObservationNumberPreviousCesareansVitalRecords moving from VRCL to BFDR. Changed to reference PatientMother profile in BFDR.
-Profile: ObservationNumberPreviousCesareansNew
+Profile: ObservationNumberPreviousCesareans
 Parent: Observation
 Id: Observation-number-previous-cesareans
 Title: "Observation - Number of Previous Cesareans"

@@ -1,5 +1,5 @@
 Instance: observation-mother-delivery-weight-jada-ann-quinn
-InstanceOf: ObservationMotherDeliveryWeightNew
+InstanceOf: ObservationMotherDeliveryWeight
 Title: "Observation - Mother Delivery Weight - Jada Ann Quinn"
 Description: "Observation - Mother Delivery Weight: Jada Ann Quinn example"
 Usage: #example

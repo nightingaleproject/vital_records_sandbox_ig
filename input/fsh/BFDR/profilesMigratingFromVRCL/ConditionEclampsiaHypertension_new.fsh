@@ -1,4 +1,4 @@
-Profile: ConditionEclampsiaHypertensionNew
+Profile: ConditionEclampsiaHypertension
 Parent: USCoreConditionProblemsHealthConcernsProfile
 Id: Condition-eclampsia-hypertension
 Title: "Condition - Eclampsia Hypertension Vital Records"

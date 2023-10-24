@@ -1,4 +1,4 @@
-Profile: ConditionPrepregnancyDiabetesNew
+Profile: ConditionPrepregnancyDiabetes
 Parent: USCoreConditionProblemsHealthConcernsProfile
 Id: Condition-prepregnancy-diabetes
 Title: "Condition - Prepregnancy Diabetes Vital Records"

@@ -1,4 +1,4 @@
-Profile: ObservationPreviousPretermBirthNew
+Profile: ObservationPreviousPretermBirth
 Parent: Observation
 Id: Observation-previous-preterm-birth
 Title: "Observation - Previous Preterm Birth Vital Records"

@@ -458,43 +458,43 @@ groups:
   BFDRProfiles:
     name: BFDR Profiles
     resources:
-      - BundleDocumentBFDRNew
-      - CompositionCodedCauseOfFetalDeathNew
-      - CompositionCodedRaceAndEthnicityNew
-      - CompositionJurisdictionFetalDeathReportNew
-      - CompositionJurisdictionLiveBirthReportNew
-      - CompositionProviderFetalDeathReportNew
-      - CompositionProviderLiveBirthReportNew
+      - BundleDocumentBFDR
+      - CompositionCodedCauseOfFetalDeath
+      - CompositionCodedRaceAndEthnicity
+      - CompositionJurisdictionFetalDeathReport
+      - CompositionJurisdictionLiveBirthReport
+      - CompositionProviderFetalDeathReport
+      - CompositionProviderLiveBirthReport
       - DemographicCodedContentBundleBFDR
-      - ConditionPrepregnancyHypertensionNew
-      - ConditionEclampsiaHypertensionNew
-      - ConditionGestationalDiabetesNew
-      - ConditionGestationalHypertensionNew
-      - ConditionPrepregnancyDiabetesNew
-      - ObservationApgarScoreNew
-      - ObservationBirthWeightNew
-      - ObservationGestationalAgeAtDeliveryNew
-      - ObservationInfantLivingNew
-      - ObservationLastMenstrualPeriodNew
-      - ObservationMotherDeliveryWeightNew
-      - ObservationMotherHeightNew
-      - ObservationMotherPrepregnancyWeightNew
-      - ObservationNoneOfSpecifiedPregnancyRiskFactorsNew
-      - ObservationNumberBirthsNowDeadNew
-      - ObservationNumberBirthsNowLivingNew
-      - ObservationNumberFetalDeathsThisDeliveryNew
-      - ObservationNumberLiveBirthsThisDeliveryNew
-      - ObservationNumberOtherPregnancyOutcomesNew
-      - ObservationNumberPrenatalVisitsNew
-      - ObservationNumberPreviousCesareansNew
-      - ObservationPreviousPretermBirthNew
-      - ProcedureInfertilityTreatmentNew
-      - ProcedureArtificialInseminationNew
-      - ProcedureAssistedFertilizationNew
+      - ConditionPrepregnancyHypertension
+      - ConditionEclampsiaHypertension
+      - ConditionGestationalDiabetes
+      - ConditionGestationalHypertension
+      - ConditionPrepregnancyDiabetes
+      - ObservationApgarScore
+      - ObservationBirthWeight
+      - ObservationGestationalAgeAtDelivery
+      - ObservationInfantLiving
+      - ObservationLastMenstrualPeriod
+      - ObservationMotherDeliveryWeight
+      - ObservationMotherHeight
+      - ObservationMotherPrepregnancyWeight
+      - ObservationNoneOfSpecifiedPregnancyRiskFactors
+      - ObservationNumberBirthsNowDead
+      - ObservationNumberBirthsNowLiving
+      - ObservationNumberFetalDeathsThisDelivery
+      - ObservationNumberLiveBirthsThisDelivery
+      - ObservationNumberOtherPregnancyOutcomes
+      - ObservationNumberPrenatalVisits
+      - ObservationNumberPreviousCesareans
+      - ObservationPreviousPretermBirth
+      - ProcedureInfertilityTreatment
+      - ProcedureArtificialInsemination
+      - ProcedureAssistedFertilization
       #- ObservationPregnancyRiskFactorNew
       #- PatientDecedentFetusNew
       #- PatientMotherNew
-      - ObservationPreviousCesareanNew
+      - ObservationPreviousCesarean
       - ConditionChorioamnionitis
       - ConditionCodedInitiatingFetalDeathCauseOrCondition
       - ConditionCodedOtherFetalDeathCauseOrCondition

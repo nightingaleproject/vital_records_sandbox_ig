@@ -1,4 +1,4 @@
-Profile: ObservationNoneOfSpecifiedPregnancyRiskFactorsNew
+Profile: ObservationNoneOfSpecifiedPregnancyRiskFactors
 Parent: Observation
 Id: Observation-none-of-specified-pregnancy-risk-factors
 Title: "Observation - None Of Specified Pregnancy Risk Factors Vital Records"

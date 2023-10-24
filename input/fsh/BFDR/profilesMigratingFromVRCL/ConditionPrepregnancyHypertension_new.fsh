@@ -1,4 +1,4 @@
-Profile: ConditionPrepregnancyHypertensionNew
+Profile: ConditionPrepregnancyHypertension
 Parent: USCoreConditionProblemsHealthConcernsProfile
 Id: Condition-prepregnancy-hypertension
 Title: "Condition - Prepregnancy Hypertension Vital Records"

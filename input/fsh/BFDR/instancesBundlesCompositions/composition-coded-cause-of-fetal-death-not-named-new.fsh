@@ -1,5 +1,5 @@
 Instance: composition-coded-cause-of-fetal-death-not-named
-InstanceOf: CompositionCodedCauseOfFetalDeathNew
+InstanceOf: CompositionCodedCauseOfFetalDeath
 Title: "Composition - Coded Cause of Fetal Death - Fetus Not Named"
 Description: "Composition - Coded Cause of Fetal Death: Fetus Not Named example"
 Usage: #example

@@ -1,5 +1,5 @@
 //content from ObservationMotherHeightVitalRecords moving from VRCL to BFDR. Changed to reference PatientMother profile in BFDR.
-Profile: ObservationMotherHeightNew
+Profile: ObservationMotherHeight
 Parent: USCoreVitalSignsProfile
 Id: Observation-mother-height
 Title: "Observation - Mother Height"

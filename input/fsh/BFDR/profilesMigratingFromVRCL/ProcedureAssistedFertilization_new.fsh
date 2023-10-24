@@ -1,4 +1,4 @@
-Profile: ProcedureAssistedFertilizationNew
+Profile: ProcedureAssistedFertilization
 Parent: USCoreProcedureProfile
 Id: Procedure-assisted-fertilization
 Title: "Procedure - assisted Fertilization Vital Records"

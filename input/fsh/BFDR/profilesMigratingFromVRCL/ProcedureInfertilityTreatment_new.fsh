@@ -1,4 +1,4 @@
-Profile: ProcedureInfertilityTreatmentNew
+Profile: ProcedureInfertilityTreatment
 Parent: USCoreProcedureProfile
 Id: Procedure-infertility-treatment
 Title: "Procedure - Infertility Treatment Vital Records"

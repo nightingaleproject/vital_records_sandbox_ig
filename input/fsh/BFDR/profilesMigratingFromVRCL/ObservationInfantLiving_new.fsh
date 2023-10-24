@@ -1,5 +1,5 @@
 //content from ObservationInfantLivingVitalRecords moving from VRCL to BFDR. Changed to reference PatientChild profile in BFDR.
-Profile: ObservationInfantLivingNew
+Profile: ObservationInfantLiving
 Parent: Observation
 Id: Observation-infant-living
 Title: "Observation - Infant Living"

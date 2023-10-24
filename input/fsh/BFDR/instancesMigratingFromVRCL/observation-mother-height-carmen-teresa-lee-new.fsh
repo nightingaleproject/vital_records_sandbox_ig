@@ -1,5 +1,5 @@
 Instance: observation-mother-height-carmen-teresa-lee
-InstanceOf: ObservationMotherHeightNew
+InstanceOf: ObservationMotherHeight
 Title: "Observation - Mother Height - Carmen Teresa Lee"
 Description: "Observation - Mother Height: Carmen Teresa Lee example"
 Usage: #example

@@ -1,5 +1,5 @@
 //content from ObservationApgarVitalRecords moving from VRCL to BFDR. Changed to reference PatientChild profile in BFDR. Should it reference ValueSetApgarTiming in BFDR instead of VRCL?
-Profile: ObservationApgarScoreNew
+Profile: ObservationApgarScore
 Parent: USCoreObservationSurveyProfile
 Id: Observation-apgar-score
 Title: "Observation - APGAR Score"

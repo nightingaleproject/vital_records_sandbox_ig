@@ -1,5 +1,5 @@
 Instance: composition-jurisdiction-fetal-death-not-named
-InstanceOf: CompositionJurisdictionFetalDeathReportNew
+InstanceOf: CompositionJurisdictionFetalDeathReport
 Title: "Composition - Jurisdiction Fetal Death Report - Fetus Not Named"
 Description: "Composition Jurisdiction Fetal Death Report: Fetus Not Named example"
 Usage: #example

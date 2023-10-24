@@ -1,4 +1,4 @@
-Profile: ConditionGestationalDiabetesNew
+Profile: ConditionGestationalDiabetes
 Parent: USCoreConditionProblemsHealthConcernsProfile
 Id: Condition-gestational-diabetes
 Title: "Condition - Gestational Diabetes Vital Records"

@@ -1,5 +1,5 @@
 //content from ObservationBirthWeightVitalRecords moving from VRCL to BFDR. Changed to reference PatientChild and PatientDecedentFetus profiles in BFDR.
-Profile: ObservationBirthWeightNew
+Profile: ObservationBirthWeight
 Parent: USCoreVitalSignsProfile
 Id: Observation-birth-weight
 Title: "Observation - Birth Weight"

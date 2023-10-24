@@ -1,5 +1,5 @@
 Instance: observation-number-deaths-this-delivery-carmen-teresa-lee
-InstanceOf: ObservationNumberFetalDeathsThisDeliveryNew
+InstanceOf: ObservationNumberFetalDeathsThisDelivery
 Title: "Observation - Number of Fetal Deaths This Delivery - Carmen Teresa Lee"
 Description: "Observation - Number of Fetal Deaths This Delivery: Carmen Teresa Lee example"
 Usage: #example

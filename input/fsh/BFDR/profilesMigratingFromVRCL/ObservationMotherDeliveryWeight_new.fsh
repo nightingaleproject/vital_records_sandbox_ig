@@ -1,5 +1,5 @@
 //content from ObservationMotherDeliveryVitalRecords moving from VRCL to BFDR. Changed to reference PatientMother profile in BFDR.
-Profile: ObservationMotherDeliveryWeightNew
+Profile: ObservationMotherDeliveryWeight
 Parent: USCoreVitalSignsProfile
 Id: Observation-mother-delivery-weight
 Title: "Observation - Mother Delivery Weight Vital Records"

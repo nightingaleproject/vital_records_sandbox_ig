@@ -1,5 +1,5 @@
 //content from ObservationLastMenstrualPeriodVitalRecords moving from VRCL to BFDR. Changed to reference PatientMother profile in BFDR.
-Profile: ObservationLastMenstrualPeriodNew
+Profile: ObservationLastMenstrualPeriod
 Parent: Observation
 Id: Observation-last-menstrual-period
 Title: "Observation - Last Menstrual Period"

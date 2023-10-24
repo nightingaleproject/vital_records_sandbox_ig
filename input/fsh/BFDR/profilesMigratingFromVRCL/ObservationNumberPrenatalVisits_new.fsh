@@ -1,5 +1,5 @@
 //content from ObservationNumberPrenatalVisitsVitalRecords moving from VRCL to BFDR. Changed to reference PatientMother profile in BFDR.
-Profile: ObservationNumberPrenatalVisitsNew
+Profile: ObservationNumberPrenatalVisits
 Parent: Observation
 Id: Observation-number-prenatal-visits
 Title: "Observation - Number of Prenatal Visits"

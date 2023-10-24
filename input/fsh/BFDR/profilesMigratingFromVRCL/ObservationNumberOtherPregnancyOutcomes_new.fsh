@@ -1,5 +1,5 @@
 //content from ObservationNumberOtherPregnancyOutcomesVitalRecords moving from VRCL to BFDR. Changed to reference PatientMother profile in BFDR.
-Profile: ObservationNumberOtherPregnancyOutcomesNew
+Profile: ObservationNumberOtherPregnancyOutcomes
 Parent: Observation
 Id: Observation-number-other-pregnancy-outcomes
 Title: "Observation - Number of Other Pregnancy Outcomes"

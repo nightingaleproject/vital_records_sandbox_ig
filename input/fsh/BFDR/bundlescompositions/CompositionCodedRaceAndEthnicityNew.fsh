@@ -1,4 +1,4 @@
-Profile: CompositionCodedRaceAndEthnicityNew
+Profile: CompositionCodedRaceAndEthnicity
 Parent: Composition
 Id: Composition-coded-race-and-ethnicity
 Title: "Composition - Coded Race and Ethnicity"

@@ -1,4 +1,4 @@
-Profile: ConditionGestationalHypertensionNew
+Profile: ConditionGestationalHypertension
 Parent: USCoreConditionProblemsHealthConcernsProfile
 Id: Condition-gestational-hypertension
 Title: "Condition - Gestational Hypertension Vital Records"

@@ -1,4 +1,4 @@
-Profile: ObservationPreviousCesareanNew
+Profile: ObservationPreviousCesarean
 Parent: Observation
 Id: Observation-previous-cesarean
 Title: "Observation - Previous Cesarean Vital Records"
