@@ -372,7 +372,7 @@ groups:
       - BirthDeliveryOccurredCS
       - CodeSystemAbnormalConditionsNewborn
       - CodeSystemInformantRelationshipToMotherNew
-      - CodeSystemLocalComponentCodesVitalRecords
+      # - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemLocationTypeVitalRecordsNew
       - CodeSystemMDI
       - EditFlagsCS
