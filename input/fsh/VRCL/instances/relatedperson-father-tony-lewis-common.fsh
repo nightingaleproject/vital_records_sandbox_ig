@@ -1,5 +1,5 @@
 Instance: relatedperson-father-tony-lewis-common
-InstanceOf: RelatedPersonFatherVitalRecordsNew
+InstanceOf: RelatedPersonFatherVitalRecords
 Title: "RelatedPerson - Adoptive Father"
 Description: "Example of RelatedPerson-father-vr profile (adoptive father)"
 Usage: #example

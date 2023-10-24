@@ -1,5 +1,5 @@
 Instance: observation-parent-education-level-jada-ann-quinn-w-edit
-InstanceOf: ObservationEducationLevelVitalRecordsNew
+InstanceOf: ObservationEducationLevelVitalRecords
 Title: "Observation - Parent Education Level - Jada Ann Quinn, with Edit Flag"
 Description: "Observation - Parent Education Level: Jada Ann Quinn example, with Edit Flag"
 Usage: #example

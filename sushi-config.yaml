@@ -303,16 +303,16 @@ groups:
     name: VRCL Profiles
     resources:
       - CodedRaceAndEthnicityNew
-      - ObservationEducationLevelVitalRecordsNew
+      - ObservationEducationLevelVitalRecords
       - InputRaceAndEthnicityNew 
-      - PatientChildVitalRecordsNew
-      - PatientDecedentFetusVitalRecordsNew
-      - PatientMotherVitalRecordsNew
-      - PatientVitalRecordsNew
-      - PractitionerVitalRecordsNew
-      - RelatedPersonFatherVitalRecordsNew
-      - RelatedPersonMotherVitalRecordsNew
-      - RelatedPersonParentVitalRecordsNew
+      - PatientChildVitalRecords
+      - PatientDecedentFetusVitalRecords
+      - PatientMotherVitalRecords
+      - PatientVitalRecords
+      - PractitionerVitalRecords
+      - RelatedPersonFatherVitalRecords
+      - RelatedPersonMotherVitalRecords
+      - RelatedPersonParentVitalRecords
       - LocationDeathVitalRecords
       - LocationInjuryVitalRecords
       - ObservationAutopsyPerformedIndicatorVitalRecords

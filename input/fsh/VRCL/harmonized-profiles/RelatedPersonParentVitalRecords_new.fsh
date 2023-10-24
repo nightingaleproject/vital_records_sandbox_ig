@@ -23,9 +23,9 @@ Except for MS (where policy should be standardized), I don't see any barrier to 
 VRCL also contains profiles for Natural Father and Gestational Mother - should VRDR use those? VRDR uses specific codes FTH and MTH, 
 whereas code for Natural Father is NFTH and Gestational Mother is GEST.
 */
-Profile: RelatedPersonParentVitalRecordsNew
+Profile: RelatedPersonParentVitalRecords
 Parent: RelatedPerson
-Id: RelatedPerson-parent-vr-new
+Id: RelatedPerson-parent-vr
 Title: "Related Person - Parent Vital Records"
 Description: "The RelatedPerson profile contains constraints common to the Mother and Father profiles. Serves as resource profile for RelatedPersonMother and RelatedPersonFather. 
 This profile is designed to supplant the similar profile in VRDR"

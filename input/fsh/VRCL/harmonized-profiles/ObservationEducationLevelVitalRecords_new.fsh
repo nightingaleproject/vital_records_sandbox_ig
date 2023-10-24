@@ -10,9 +10,9 @@ VRCL has a subject and focus.
 VRDR has no MS flags. VRDR has bypassEditFlag extension, VRCL does not. 
 */
 
-Profile: ObservationEducationLevelVitalRecordsNew
+Profile: ObservationEducationLevelVitalRecords
 Parent: Observation
-Id: Observation-education-level-vr-new
+Id: Observation-education-level-vr
 Title: "Observation - Education Level Vital Records"
 Description: "The highest degree or level of schooling completed by the decedent or parent. 
 This profile is designed to supplant similar profile in VRDR"
@@ -23,7 +23,7 @@ This profile is designed to supplant similar profile in VRDR"
 * subject only Reference(Patient)  // Child, Fetus, or Decedent
   * ^short = "This is the subject of the report, not the parent"
 * focus 0..1 // not present if subject is Decedent
-* focus only Reference(PatientMotherVitalRecordsNew or RelatedPersonParentVitalRecordsNew) //not required, may be omitted if reporting education level of decedent, not parent. 
+* focus only Reference(PatientMotherVitalRecords or RelatedPersonParentVitalRecords) //not required, may be omitted if reporting education level of decedent, not parent. 
   * ^short = "The RelatedPerson or Patient record for the parent"
 * value[x] 1..1
 * value[x] only CodeableConcept

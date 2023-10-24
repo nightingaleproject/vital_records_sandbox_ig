@@ -1,6 +1,6 @@
-Profile: PatientChildVitalRecordsNew
-Parent: PatientVitalRecordsNew
-Id: Patient-child-vr-new
+Profile: PatientChildVitalRecords
+Parent: PatientVitalRecords
+Id: Patient-child-vr
 Title: "Patient - Child Vital Records"
 Description: "The subject patient (newborn/infant/child) for whom clinical data is included in the report."
 * extension[race] MS

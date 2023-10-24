@@ -6,4 +6,4 @@ Description: "This profile represents an abnormal condition of antibiotic given 
 * code = $sct#434621000124103
 * code MS
   * ^short = "Antibiotic given for suspected neonatal sepsis (situation)"
-* subject only Reference(PatientChildVitalRecordsNew)
+* subject only Reference(PatientChildVitalRecords)

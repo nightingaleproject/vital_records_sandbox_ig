@@ -7,7 +7,7 @@ Description: "The height of the mother. Migrated from VRCL."
 * code = $loinc#3137-7
   * ^short = "Body height Measured"
 * subject 1..
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)
 * value[x] 1..
 * value[x] only Quantity
 // Add Edit Flags, a la VRDR 

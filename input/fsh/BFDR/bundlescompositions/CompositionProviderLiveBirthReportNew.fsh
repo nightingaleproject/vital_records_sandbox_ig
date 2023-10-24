@@ -25,7 +25,7 @@ Description: "This Composition profile defines constraints to address the use ca
   * ^short = "U.S. standard certificate of live birth - 2003 revision"
   * ^definition = "U.S. standard certificate of live birth - 2003 revision"
 * subject 1.. 
-* subject only Reference(PatientChildVitalRecordsNew)
+* subject only Reference(PatientChildVitalRecords)
   * ^short = "The subject of the composition is the newborn baby"
   * ^definition = "The subject of the composition as a whole is the newborn baby. Different sections in the composition have different focus (e.g.: the mother)."
 * encounter only Reference(EncounterBirth)
@@ -38,7 +38,7 @@ Description: "This Composition profile defines constraints to address the use ca
   * ^short = "Date report completed"
   * ^definition = "Date report completed"
 * author ..1 
-* author only Reference(PractitionerVitalRecordsNew)
+* author only Reference(PractitionerVitalRecords)
   * ^short = "The author is the person who verifies/approves the accuracy of the data to be sent to the vital records system."
   * ^definition = "Name and title of person completing the report. May be, but need not be, the same as the attendant at delivery."
 * section 1.. 
@@ -48,7 +48,7 @@ Description: "This Composition profile defines constraints to address the use ca
   * ^short = "The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate."
   * ^definition = "The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."
 * insert BFDRCompositionSectionEntrySlicing(motherPrenatal, 0, 57073-9, Provider Live Birth)
-* insert FocusRule(motherPrenatal, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecordsNew)
+* insert FocusRule(motherPrenatal, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
 * insert BFDRCompositionSectionSlice(motherPrenatal, plannedToDeliverAtHome, 0, 1, Planned to deliver at home, Planned to deliver at home, ObservationPlannedToDeliverAtHome)
 * insert BFDRCompositionSectionSlice(motherPrenatal, firstPrenatalCareVisit, 0, 1, First prenatal care visit, Date that mother had her first prenatal care visit, ObservationDateOfFirstPrenatalCareVisit)
 * insert BFDRCompositionSectionSlice(motherPrenatal, numberPrenatalCareVisits, 0, 1, Number of prenatal care visits, Those visits which are listed in the mother's prenatal care and/or facility records., ObservationNumberPrenatalVisits)
@@ -65,7 +65,7 @@ Description: "This Composition profile defines constraints to address the use ca
 * insert BFDRCompositionSectionSlice(motherPrenatal, motherReceivedWICFood, 0, 1, Use, Use of the Women\, Infant's\, and Children (WIC\) nutritional program by the mother during the pregnancy., ObservationMotherReceivedWICFood)
 * insert BFDRCompositionSectionSlice(motherPrenatal, cigaretteSmokingBeforeDuringPregnancy, 0, 4, Cigarettes smoked by the mother before and during the pregnancy, The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy, ObservationCigaretteSmokingBeforeDuringPregnancy)
 * insert BFDRCompositionSectionEntrySlicing(medicalHealthInformation, 0, 55752-0, Provider Live Birth)
-* insert FocusRule(medicalHealthInformation, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecordsNew)
+* insert FocusRule(medicalHealthInformation, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
 * insert BFDRCompositionSectionSlice(medicalHealthInformation, pregnancyRiskFactors, 0, *, Risk factors in this pregnancy, Selected medical risk factors of the mother during this pregnancy, ConditionPrepregnancyDiabetes or ConditionGestationalDiabetes or ConditionPrepregnancyHypertension or ConditionGestationalHypertension or ConditionEclampsiaHypertension or ObservationPreviousPretermBirth or ProcedureInfertilityTreatment or ProcedureArtificialInsemination or ProcedureAssistedFertilization or ObservationPreviousCesarean or ObservationNoneOfSpecifiedPregnancyRiskFactors)
 * insert BFDRCompositionSectionSlice(medicalHealthInformation, numberPreviousCesareans, 0, 1, If mother had a previous cesarean delivery\, how many, Number of previous cesarean deliveries, ObservationNumberPreviousCesareans)
 * insert BFDRCompositionSectionSlice(medicalHealthInformation, infectionsDuringPregnancy, 0, *, Infections present and/or treated during this pregnancy, Selected infections that the mother had or was treated for during the course of this pregnancy, ConditionInfectionPresentDuringPregnancy)
@@ -84,14 +84,14 @@ Description: "This Composition profile defines constraints to address the use ca
 * insert BFDRCompositionSectionSlice(newbornInformation, infantLiving, 0, 1, Is infant living at time of report?, Information on the infant's survival, ObservationInfantLiving)   
 * insert BFDRCompositionSectionSlice(newbornInformation, infantBreastfedAtDischarge, 0, 1, Is infant being breastfed at discharge?, Information on whether the infant is being breastfed at discharge from the hospital, ObservationInfantBreastfedAtDischarge)   
 * insert BFDRCompositionSectionEntrySlicing(motherInformation, 0, 92014-0, Provider Live Birth)
-* insert FocusRule(motherInformation, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecordsNew)
+* insert FocusRule(motherInformation, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
 * insert BFDRCompositionSectionSlice(motherInformation, marriedDuringPregnancy, 0, 1, Mother married during pregnancy, Was mother married at conception\, at the time of birth\, or at any time between conception and giving birth?, ObservationMotherMarriedDuringPregnancy)   
 * insert BFDRCompositionSectionSlice(motherInformation, ssnRequestedForChild, 0, 1, Was social security number requested for the child, Was social security number requested for the child, ObservationSSNRequestedForChild)     
-* insert BFDRCompositionSectionSlice(motherInformation, mothersEducation, 0, 1, Mother's education, Mother's education, ObservationEducationLevelVitalRecordsNew)   
+* insert BFDRCompositionSectionSlice(motherInformation, mothersEducation, 0, 1, Mother's education, Mother's education, ObservationEducationLevelVitalRecords)   
 * insert BFDRCompositionSectionEntrySlicing(fatherInformation, 0, 92013-2, Provider Live Birth)
 * insert FocusRule(fatherInformation, The focus of this section is the father, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father., RelatedPersonFatherNaturalVitalRecords)
 * insert BFDRCompositionSectionSlice(fatherInformation, paternityAcknowledgementSigned, 0, 1, Paternity acknowledgement signed by father, Whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception\, at the time of birth\, or at any time between conception and giving birth., ObservationPaternityAcknowledgementSigned)   
-* insert BFDRCompositionSectionSlice(fatherInformation, fathersEducation, 0, 1, Father's education, Father's education, ObservationEducationLevelVitalRecordsNew)     
+* insert BFDRCompositionSectionSlice(fatherInformation, fathersEducation, 0, 1, Father's education, Father's education, ObservationEducationLevelVitalRecords)     
 * section contains patientsQuestionnaireResponse 0..1
 * section[patientsQuestionnaireResponse] ^short = "Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Patient's Worksheet for Fetal Death Report"
   * code 1..

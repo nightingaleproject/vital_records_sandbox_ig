@@ -6,4 +6,4 @@ Description: "This profile represents an abnormal condition of the newborn of as
 * code = CodeSystemAbnormalConditionsNewborn#assistedventfollowingdelivery
 * code MS
   * ^short = "Assisted ventilation required immediately following delivery"
-* subject only Reference(PatientChildVitalRecordsNew)
+* subject only Reference(PatientChildVitalRecords)

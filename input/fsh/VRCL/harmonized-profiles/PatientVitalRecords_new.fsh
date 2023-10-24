@@ -1,6 +1,6 @@
-Profile: PatientVitalRecordsNew
+Profile: PatientVitalRecords
 Parent: USCorePatientProfile
-Id: Patient-vr-new
+Id: Patient-vr
 Title: "Patient - Vital Records"
 Description: "This abstract Patient profile includes common extensions and slicing used across vital records."
 * ^abstract = true 

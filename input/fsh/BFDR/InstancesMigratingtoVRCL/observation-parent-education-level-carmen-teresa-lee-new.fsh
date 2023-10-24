@@ -1,5 +1,5 @@
 Instance: observation-parent-education-level-carmen-teresa-lee
-InstanceOf: ObservationEducationLevelVitalRecordsNew
+InstanceOf: ObservationEducationLevelVitalRecords
 Title: "Observation - Parent Education Level - Carmen Teresa Lee"
 Description: "Observation - Parent Education Level: Carmen Teresa Lee example"
 Usage: #example

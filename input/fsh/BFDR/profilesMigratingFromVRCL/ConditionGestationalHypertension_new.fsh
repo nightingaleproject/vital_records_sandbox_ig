@@ -12,4 +12,4 @@ Description: "This Condition profile indicates that the mother had a pregnancy r
 // * . ^short = "This Condition profile indicates that the mother had a pregnancy risk factor of gestational hypertension."
 * code = $sct#48194001
   * ^short = "Pregnancy-induced hypertension (disorder)"
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)

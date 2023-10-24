@@ -8,7 +8,7 @@ Description: "This profile represents whether or not the mother was married at c
 * code = $loinc#87301-8
   * ^short = "Mother was married at any time during pregnancy"
 * subject 1.. MS
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)
 // * focus 1..1 MS
 // * focus only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..1 MS

@@ -12,4 +12,4 @@ Description: "This Condition profile indicates that the mother had a pregnancy r
 // * . ^short = "This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy diabetes."
 * code = $sct#73211009
   * ^short = "Diabetes mellitus (disorder)"
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)
