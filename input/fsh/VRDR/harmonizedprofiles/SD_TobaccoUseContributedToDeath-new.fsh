@@ -1,6 +1,6 @@
-Profile: TobaccoUseContributedToDeathNew
+Profile: TobaccoUseContributedToDeath
 Parent: Observation
-Id: vrdr-tobacco-use-contributed-to-death-new
+Id: vrdr-tobacco-use-contributed-to-death
 Title: "Tobacco Use Contributed To Death"
 Description: "Tobacco Use Contributed To Death (Observation)"
 * insert RequireMetaProfile(TobaccoUseContributedToDeath)

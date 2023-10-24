@@ -15,7 +15,7 @@ Description: "This Patient profile represents the woman who gave birth to, or de
 * name.family 1..
 * birthDate 1..
 * birthDate.extension contains
-    PartialDate named partialDate 0..1 
+    ExtensionPartialDateTimeVitalRecords named partialDate 0..1 
 * birthDate.extension[partialDate] MS 
 // * birthDate 1..
 //   * extension contains ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..* MS

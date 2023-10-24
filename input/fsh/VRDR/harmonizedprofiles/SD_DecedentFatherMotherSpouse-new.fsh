@@ -1,15 +1,17 @@
+//redo parents and strip redundancies
+
 Profile: DecedentFather
-Parent: USCoreRelatedPersonProfile
+Parent: RelatedPersonFatherVitalRecords
 Id: vrdr-decedent-father
 Title: "Decedent Father"
 Description: "Decedent Father (USCoreRelatedPerson)"
 * insert RequireMetaProfile(DecedentFather)
 * active = true
-* patient 1..1
-* patient only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
+//* patient 1..1
+//* patient only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
 * patient ^short = "Decedent"
 * relationship 1..1
-* relationship only CodeableConcept
+//* relationship only CodeableConcept
 * relationship = $v3-RoleCode#FTH // "father"
 * relationship.text = "Father"
 * relationship ^short = "relationship"
@@ -17,17 +19,17 @@ Description: "Decedent Father (USCoreRelatedPerson)"
 * address 0..1
 
 Profile: DecedentMother
-Parent: USCoreRelatedPersonProfile
+Parent: RelatedPersonParentVitalRecords
 Id: vrdr-decedent-mother
 Title: "Decedent Mother"
 Description: "Decedent Mother (USCoreRelatedPerson)"
 * insert RequireMetaProfile(DecedentMother)
 * active = true
-* patient 1..1
+//* patient 1..1
 * patient ^short = "Decedent"
-* patient only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
+//* patient only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
 * relationship 1..1
-* relationship only CodeableConcept
+//* relationship only CodeableConcept
 * relationship = $v3-RoleCode#MTH // "mother"
 * relationship.text = "Mother"
 * name.family ^short = "Maiden name if name.use=maiden"

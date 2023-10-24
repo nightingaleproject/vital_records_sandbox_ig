@@ -7,9 +7,9 @@ VRDR, VRCL, and MDI value date/time with partialDateTime - same
 
 VRDR does not have any MS flags. VRCL and MDI have the same MS flags.
 */
-Profile: DeathDateNew
+Profile: DeathDate
 Parent: Observation
-Id: vrdr-death-date-new
+Id: vrdr-death-date
 Title: "Observation - Death Date"
 Description: "This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period.
 This profile is designed to supplant the similar profiles in VRDR and MDI."

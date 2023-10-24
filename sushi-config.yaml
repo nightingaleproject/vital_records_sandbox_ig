@@ -313,8 +313,8 @@ groups:
       - RelatedPersonFatherVitalRecords
       - RelatedPersonMotherVitalRecords
       - RelatedPersonParentVitalRecords
-      - LocationDeathVitalRecords
-      - LocationInjuryVitalRecords
+     # - LocationDeathVitalRecords
+     # - LocationInjuryVitalRecords
       - ObservationAutopsyPerformedIndicatorVitalRecords
       - ObservationParentEducationLevelVitalRecords
       - ObservationRaceVitalRecords
@@ -330,6 +330,15 @@ groups:
       - ExtensionWithinCityLimitsIndicatorVitalRecords
       - ExtensionDatePartAbsentReasonVitalRecords
       - ExtensionPartialDateTimeVitalRecords
+      - BypassEditFlag
+      - CityCode
+      - DistrictCode
+      - PostDirectional
+      - PreDirectional
+      - StreetDesignator
+      - StreetName
+      - StreetNumber
+      - UnitOrAptNumber
 
 
   # VRCommonProfiles:
@@ -863,21 +872,21 @@ groups:
     name: VRDR Profiles
     resources: 
       - MortalityRosterBundle
-      - DecedentNew
-      - DeathCertificationNew 
-      - CauseOfDeathCodedContentBundleNew
-      - DemographicCodedContentBundleNew
-      - DeathCertificateNew
-      - DeathCertificateDocumentNew 
-      - CauseOfDeathPart1New
-      - CauseOfDeathPart2New
-      - DeathDateNew 
-      - InjuryIncidentNew 
-      - MannerOfDeathNew 
-      - TobaccoUseContributedToDeathNew 
-      - DecedentDispositionMethodNew
+      - Decedent
+      - DeathCertification 
+      - CauseOfDeathCodedContentBundle
+      - DemographicCodedContentBundle
+      - DeathCertificate
+      - DeathCertificateDocument
+      - CauseOfDeathPart1
+      - CauseOfDeathPart2
+      - DeathDate
+      - InjuryIncident
+      - MannerOfDeath
+      - TobaccoUseContributedToDeath
+      - DecedentDispositionMethod
       - DecedentEducationLevel
-      - DecedentPregnancyStatusNew
+      - DecedentPregnancyStatus
       - ActivityAtTimeOfDeath
       - AutomatedUnderlyingCauseOfDeath
       - AutopsyPerformedIndicator
@@ -964,29 +973,20 @@ groups:
       - AliasStatus
       - AuxiliaryStateIdentifier1
       - AuxiliaryStateIdentifier2
-      - BypassEditFlag
       - CertificateNumber
-      - CityCode
-      - DateDay
-      - DateMonth
-      - DateTime
-      - DateYear
-      - DistrictCode
+      #- DateDay
+      #- DateMonth
+      #- DateTime
+      #- DateYear
       - FilingFormat
       - LocationJurisdictionId
       - NVSSSexAtDeath
-      - PartialDate
-      - PartialDateTime
-      - PostDirectional
-      - PreDirectional
+      #- PartialDate
+      #- PartialDateTime
       - ReplaceStatus
       - SpouseAlive
       - StateSpecificField
-      - StreetDesignator
-      - StreetName
-      - StreetNumber
-      - UnitOrAptNumber
-      - WithinCityLimitsIndicator
+      #- WithinCityLimitsIndicator
 
   
   VRDRCodeSystems:
@@ -1098,7 +1098,7 @@ groups:
   VRDRExamples:
     name: VRDR Examples
     resources:
-      - CauseOfDeathCodedContentBundle-Example1-New
+      - CauseOfDeathCodedContentBundle-Example1
       - DemographicCodedContentBundle-Example1
       - DeathCertificateDocument-UT-1
       - DeathCertificateUT-Example1

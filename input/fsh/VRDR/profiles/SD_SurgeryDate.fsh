@@ -16,4 +16,4 @@ Description: "Date of Surgery (Observation).  The PartialDate extension supports
 * value[x] 0..1
 * value[x] only dateTime
 * valueDateTime.extension contains
-    PartialDate named partialDate 0..1
+    ExtensionPartialDateTimeVitalRecords named partialDate 0..1

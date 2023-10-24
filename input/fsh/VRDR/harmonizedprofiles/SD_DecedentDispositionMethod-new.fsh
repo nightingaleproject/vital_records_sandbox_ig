@@ -1,6 +1,6 @@
-Profile: DecedentDispositionMethodNew
+Profile: DecedentDispositionMethod
 Parent: Observation
-Id: vrdr-decedent-disposition-method-new
+Id: vrdr-decedent-disposition-method
 Title: "Decedent Disposition Method"
 Description: "Decedent Disposition Method (Observation)"
 * insert RequireMetaProfile(DecedentDispositionMethod)

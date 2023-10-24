@@ -5,9 +5,9 @@ Performer in VRDR is certifier. US Core Practitioner in MDI; either in VRCL. Per
 
 component:interval has cardinality 0..1 in VRDR, 1..1 in MDI and VRCL.
 */
-Profile: CauseOfDeathPart1New
+Profile: CauseOfDeathPart1
 Parent: Observation
-Id: vrdr-cause-of-death-part1-new
+Id: vrdr-cause-of-death-part1
 Title: "Cause Of Death Part 1"
 // Description: "Cause of death Part 1 (Observation). Cause of death prior to submission of the completed death report.  Line number can be 1-4."
 Description: "The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text. Line number can be 1-4 "

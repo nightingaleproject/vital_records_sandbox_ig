@@ -60,7 +60,7 @@ Description: "This abstract Patient profile includes common extensions and slici
     * extension contains $data-absent-reason named dataAbsentReason 0..1 
 
 * birthDate.extension contains
-    PartialDate named partialDate 0..1 and
+    ExtensionPartialDateTimeVitalRecords named partialDate 0..1 and
     ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..*  and
     $patient-birthTime named birthTime 0..1 and
     BypassEditFlag named bypassEditFlag 0..1
@@ -76,7 +76,7 @@ Description: "This abstract Patient profile includes common extensions and slici
 * address
   * country from ResidenceCountryVS (required)  // COUNTRYC
   * state from StatesTerritoriesAndProvincesVS (required)  // STATEC
-  * extension contains WithinCityLimitsIndicator named withinCityLimitsIndicator 0..1 MS
+  * extension contains ExtensionWithinCityLimitsIndicatorVitalRecords named withinCityLimitsIndicator 0..1 MS
   * extension[withinCityLimitsIndicator] ^short = "Used to indicate whether or not an address is within city limits."
   * extension[withinCityLimitsIndicator] ^definition = "Used to indicate whether or not an address is within city limits."
 * insert CityCode

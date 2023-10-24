@@ -1,6 +1,6 @@
-Profile: MannerOfDeathNew
+Profile: MannerOfDeath
 Parent: Observation
-Id: vrdr-manner-of-death-new
+Id: vrdr-manner-of-death
 Title: "Manner of Death"
 Description: "Manner of Death (Observation)"
 * insert RequireMetaProfile(MannerOfDeath)
