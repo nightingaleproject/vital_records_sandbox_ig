@@ -1,5 +1,5 @@
 Instance: CodedRaceAndEthnicity-Mother
-InstanceOf: CodedRaceAndEthnicity
+InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "CodedRaceAndEthnicity Mother"
 * code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother
@@ -12,7 +12,7 @@ Description: "CodedRaceAndEthnicity Mother"
 * component[HispanicCode].valueCodeableConcept = HispanicOriginCS#233 "Chilean"
 
 Instance: CodedRaceAndEthnicity-Father
-InstanceOf: CodedRaceAndEthnicity
+InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "CodedRaceAndEthnicity Father"
 * code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather
@@ -26,7 +26,7 @@ Description: "CodedRaceAndEthnicity Father"
 
 
 Instance: InputRaceAndEthnicityMother
-InstanceOf: InputRaceAndEthnicity
+InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "InputRaceAndEthnicity Mother"
 * insert AddMetaProfile(InputRaceAndEthnicity)
@@ -58,7 +58,7 @@ Description: "InputRaceAndEthnicity Mother"
 
 
 Instance: InputRaceAndEthnicityFather
-InstanceOf: InputRaceAndEthnicity
+InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "InputRaceAndEthnicity Father"
 * insert AddMetaProfile(InputRaceAndEthnicity)
