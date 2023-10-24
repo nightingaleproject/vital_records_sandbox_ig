@@ -8,7 +8,7 @@ Usage: #example
   * value = "urn:uuid:933dde44f7664b03a20b6324f23986c0"
 * type = #document
 * timestamp = "2022-01-04T08:51:14.637+00:00"
-* insert addentry(Composition, composition-mdi-to-edrs-a-freeman-new)
+* insert addentry(Composition, composition-mdi-to-edrs-a-freeman)
 * insert addentry(Observation, observation-how-death-injury-occurred-a-freeman-med-ingest)
 * insert addentry(Observation, observation-manner-of-death-a-freeman-accidental)
 * insert addentry(Observation, observation-cause-of-death-part1-a-freeman)

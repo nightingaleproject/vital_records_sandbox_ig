@@ -12,7 +12,7 @@ Description: "Tobacco Use Contributed To Death (Observation)"
 * code only CodeableConcept
 * code = $loinc#69443-0 "Did tobacco use contribute to death"
 * subject 1..1
-* subject only Reference(PatientVitalRecordsNew)
+* subject only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
 * value[x] 1..1
 * value[x] only CodeableConcept
 * value[x] from ContributoryTobaccoUseVS (required)

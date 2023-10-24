@@ -8,5 +8,5 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 198 | Maternal Morbidity--Unplanned Hysterectomy | UHYS |  |na |See [Note on missing data] |
+| Natality | 198 | Maternal Morbidity--Unplanned Hysterectomy | UHYS |  |na |See [Note on missing maternal morbidity data] |
 {: .grid }
