@@ -302,19 +302,19 @@ groups:
   VRCLProfiles:
     name: VRCL Profiles
     resources:
-      - CodedRaceAndEthnicityNew
-      - ObservationEducationLevelVitalRecords
-      - InputRaceAndEthnicityNew 
-      - PatientChildVitalRecords
-      - PatientDecedentFetusVitalRecords
-      - PatientMotherVitalRecords
-      - PatientVitalRecords
-      - PractitionerVitalRecords
-      - RelatedPersonFatherVitalRecords
-      - RelatedPersonMotherVitalRecords
-      - RelatedPersonParentVitalRecords
-     # - LocationDeathVitalRecords
-     # - LocationInjuryVitalRecords
+      - ObservationCodedRaceAndEthnicityVitalRecords
+      - ObservationEducationLevelVitalRecordsNew
+      - ObservationInputRaceAndEthnicityVitalRecords
+      - PatientChildVitalRecordsNew
+      - PatientDecedentFetusVitalRecordsNew
+      - PatientMotherVitalRecordsNew
+      - PatientVitalRecordsNew
+      - PractitionerVitalRecordsNew
+      - RelatedPersonFatherVitalRecordsNew
+      - RelatedPersonMotherVitalRecordsNew
+      - RelatedPersonParentVitalRecordsNew
+      - LocationDeathVitalRecords
+      - LocationInjuryVitalRecords
       - ObservationAutopsyPerformedIndicatorVitalRecords
       - ObservationParentEducationLevelVitalRecords
       - ObservationRaceVitalRecords
@@ -467,13 +467,13 @@ groups:
   BFDRProfiles:
     name: BFDR Profiles
     resources:
-      - BundleDocumentBFDR
-      - CompositionCodedCauseOfFetalDeath
+      - BundleDocumentBFDRNew
+      - CompositionCodedCauseOfFetalDeathNew
       - CompositionCodedRaceAndEthnicity
-      - CompositionJurisdictionFetalDeathReport
-      - CompositionJurisdictionLiveBirthReport
-      - CompositionProviderFetalDeathReport
-      - CompositionProviderLiveBirthReport
+      - CompositionJurisdictionFetalDeathReportNew
+      - CompositionJurisdictionLiveBirthReportNew
+      - CompositionProviderFetalDeathReportNew
+      - CompositionProviderLiveBirthReportNew
       - DemographicCodedContentBundleBFDR
       - ConditionPrepregnancyHypertension
       - ConditionEclampsiaHypertension
@@ -892,7 +892,6 @@ groups:
       - AutopsyPerformedIndicator
       - BirthRecordIdentifier
       - Certifier
-      - CodedRaceAndEthnicity
       - CodingStatusValues
       - DeathLocation
       - DecedentAge
@@ -908,13 +907,10 @@ groups:
       - ExaminerContacted
       - FuneralHome
       - InjuryLocation
-      - InputRaceAndEthnicity
       - ManualUnderlyingCauseOfDeath
       - PlaceOfInjury
       - RecordAxisCauseOfDeath
       - SurgeryDate
-      #- TobaccoUseContributedToDeath
-      #- DecedentDispositionMethod
 
   # VRDRProfilesNew:
   #   name: New VRDR Profiles
