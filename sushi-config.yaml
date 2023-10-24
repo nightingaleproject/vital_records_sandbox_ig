@@ -371,7 +371,6 @@ groups:
       - BirthAndFetalDeathFinancialClassCS
       - BirthDeliveryOccurredCS
       - CodeSystemAbnormalConditionsNewborn
-      - CodeSystemDeathPregnancyStatusVitalRecords
       - CodeSystemInformantRelationshipToMotherNew
       - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemLocationTypeVitalRecordsNew
@@ -406,7 +405,6 @@ groups:
       - ValueSetCertifierTypes  
       - ValueSetDateEstablishmentApproachVitalRecords
       - ValueSetDatePartVitalRecords
-      - ValueSetDeathPregnancyStatusVitalRecords
       - ValueSetEducationLevelPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetMannerOfDeathVitalRecords
@@ -994,6 +992,7 @@ groups:
       - ComponentCS
       - CountryCodeCS  
       - DateOfDeathDeterminationMethodsCS
+      - DeathPregnancyStatusCS
       - DocumentSectionCS
       - FilingFormatCS
       - HispanicOriginCS
@@ -1019,6 +1018,7 @@ groups:
       - CertifierTypesVS
       - ContributoryTobaccoUseVS
       - DateOfDeathDeterminationMethodsVS
+      - DeathPregnancyStatusVS
       - EditBypass01234VS     
       - EditBypass0124VS
       - EditBypass012VS
