@@ -883,7 +883,6 @@ groups:
       - AutopsyPerformedIndicator
       - BirthRecordIdentifier
       - Certifier
-      - CodedRaceAndEthnicity
       - CodingStatusValues
       - DeathLocation
       - DecedentAge
@@ -899,13 +898,10 @@ groups:
       - ExaminerContacted
       - FuneralHome
       - InjuryLocation
-      - InputRaceAndEthnicity
       - ManualUnderlyingCauseOfDeath
       - PlaceOfInjury
       - RecordAxisCauseOfDeath
       - SurgeryDate
-      - TobaccoUseContributedToDeath
-      - DecedentDispositionMethod
 
   # VRDRProfilesNew:
   #   name: New VRDR Profiles
