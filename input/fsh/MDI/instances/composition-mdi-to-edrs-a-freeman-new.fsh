@@ -1,4 +1,4 @@
-Instance: composition-mdi-to-edrs-a-freeman-new
+Instance: composition-mdi-to-edrs-a-freeman
 InstanceOf: CompositionMDIToEDRSNew
 Title: "MDI to EDRS Composition - Freeman"
 Description: "MDI to EDRS Composition: Freeman example"

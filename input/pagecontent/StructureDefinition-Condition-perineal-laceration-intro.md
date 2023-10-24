@@ -8,5 +8,5 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 196 | <nobr>Maternal Morbidity--Perineal Laceration</nobr> | PLAC |  |na |See [Note on missing data] |
+| Natality | 196 | <nobr>Maternal Morbidity--Perineal Laceration</nobr> | PLAC |  |na |See [Note on missing maternal morbidity data] |
 {: .grid }

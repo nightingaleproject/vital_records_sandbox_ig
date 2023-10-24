@@ -32,8 +32,19 @@ NCHS submission requires only a last name. Last name is required for NCHS submis
 ### Decedent Gender
 Profile conformance requires that gender be provided.   A value of 'unknown' will satisfy this requirement.   There is no IJE field that is mapped to the Decedent.gender field.
 
-### Missing Data
-TBD
+### Specifying None of the Above and Missing Data
+##### Abnormal Conditions of Newborn
+If [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn] is present in bundle, then the interpretation is that all individual abnormal conditions of newborn are 'N'
+##### Maternal Morbidities
+If [ObservationNoneOfSpecifiedMaternalMorbidities] is present in bundle, then the interpretation is that all individual maternal morbidities are 'N'
+##### Characteristics of Labor and Delivery
+If [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery] is present in bundle, then the interpretation is that all individual risk factors are 'N' 
+##### Pregnancy Risk Factors
+If [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew] is present in bundle, then the interpretation is that all individual risk factors are 'N'
+##### Congenital Anomalies of Newborn
+If code=260413007 (None), then the interpretation is that all individual congenital anomalies are 'N'
+##### Infection Present During Pregnancy
+If code=260413007 (None), then the interpretation is that all individual infections are 'N' 
 
 ### Handling of Edit Flags
 TBD

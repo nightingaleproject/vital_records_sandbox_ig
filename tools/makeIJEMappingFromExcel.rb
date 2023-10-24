@@ -1,4 +1,4 @@
-# ruby tools/makeIJEMappingFromExcel.rb input/mapping/BFDR_Profile_Intros.xlsx input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 
+# ruby tools/makeIJEMappingFromExcel.rb input/mapping/BFDR_Profile_Intros.xlsx input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 
 
 require "json"
 require "pry"

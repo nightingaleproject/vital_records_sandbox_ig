@@ -10,7 +10,7 @@ VRDR does not have any MS flags. VRCL and MDI have the same MS flags.
 Profile: DeathDateNew
 Parent: Observation
 Id: vrdr-death-date-new
-Title: "Observation - Death Date Vital Records"
+Title: "Observation - Death Date"
 Description: "This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period.
 This profile is designed to supplant the similar profiles in VRDR and MDI."
 * code = $loinc#81956-5

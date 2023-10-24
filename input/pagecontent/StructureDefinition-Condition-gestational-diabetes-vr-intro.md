@@ -9,6 +9,6 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 158 | Risk Factors--Gestational Diabetes | GDIAB |  |na |See [Note on missing data] |
-| Fetal Death | 111 | Risk Factors--Gestational Diabetes | GDIAB |  |na |See [Note on missing data] |
+| Natality | 158 | Risk Factors--Gestational Diabetes | GDIAB |  |na |See [Note on missing pregnancy risk factors data] |
+| Fetal Death | 111 | Risk Factors--Gestational Diabetes | GDIAB |  |na |See [Note on missing pregnancy risk factors data] |
 {: .grid }

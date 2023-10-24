@@ -58,6 +58,10 @@ publisher:
 pages:
   index.md:
     title: Home
+  bfdr_index.md: 
+    title: Birth and Fetal Death Reporting Home
+  vrcl_index.md: 
+    title: Vital Records Common Library Home
   usage.md:
     title: Usage
   vrdr-content-transitions.md:
@@ -82,10 +86,8 @@ pages:
     title: BFDR Example Fetal Death Report
   bfdr_change_log.md:
     title: BFDR Change Log
-  bfdr_index.md:
-    title: BFDR Home
   bfdr_patient_worksheet_questionnaries.md:
-    title: Patient WOrksheet Questionnaires
+    title: Patient Worksheet Questionnaires
   bfdr_terminology.md:
     title: BFDR Terminology
   bfdr_the_specification.md:
@@ -96,12 +98,48 @@ pages:
     title: BFDR Vital Records Form Mapping 
   vrcl_change_log.md:
     title: VRCL Change Log 
-  vrcl_index.md:
-    title: VRCL Home 
   vrcl_terminology.md:
     title: VRCL Terminology 
   vrcl_the_specification.md:
     title: VRCL Specification 
+  mdi_index.md:
+    title: MDI Home
+  mdi_background.md:
+    title: MDI Background
+  mdi_best_practices.md:
+    title: MDI Best Practices
+  mdi_change_log.md:
+    title: MDI Changes
+  mdi_downloads.md:
+    title: MDI Downloads
+  mdi_security_recommendations.md:
+    title: MDI Security Recommendations
+  mdi_specification.md:
+    title: MDI Specification
+  mdi_terminology.md:
+    title: MDI Terminology
+  vrdr_index.md:
+    title: VRDR Home
+  vrdr_background.md:
+    title: VRDR Background
+  vrdr_change_log.md:
+    title: VRDR Change Log
+  vrdr_conformance.md:
+    title: VRDR Conformance
+  vrdr_credits.md:
+    title: VRDR Credits
+  vrdr_downloads.md:
+    title: VRDR Downloads
+  vrdr_scope_of_the_vrdr_fhir_ig.md:
+    title: VRDR Scope
+  vrdr_usage.md:
+    title: VRDR Usage
+  DeathRecordDataDictionary.md:
+    title: Death Record Data Dictionary
+  MortalityRosterDataDictionary.md:
+    title: Mortality Roster Data Dictionary
+  SurveillanceDataDictionary.md:
+    title: Surveillance Data Dictionary
 
 
 
@@ -135,6 +173,9 @@ parameters:
 menu:
   Home:
     Home: index.html
+    BFDR: bfdr_index.html
+    VRCL: vrcl_index.html
+    VRDR: vrdr_index.html
     Usage: usage.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
@@ -144,8 +185,10 @@ menu:
   BFDR: 
     Home: bfdr_index.html
     UseCases: bfdr_use_cases.html
-    ChangeLog: bfdr_change_log.html
+    Capability Statement: CapabilityStatement-CapabilityStatement-bfdr.html
+    Changes: bfdr_change_log.html
     Content Transitions: bfdr-content-transitions.html
+    BFDR Data Dictionary: bfdr_ije_mapping.html
     Specification: bfdr_the_specification.html
     Forms Mapping: bfdr_vital_records_form_mapping.html
     Terminology: bfdr_terminology.html
@@ -154,14 +197,36 @@ menu:
     B Live Birth Certificate: bfdr_appendix_b_-_example_live_birth_certificate.html
     C Fetal Death Worksheet: bfdr_appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html
     D Fetal Death Report: bfdr_appendix_d_-_example_fetal_death_report.html
-
   VRCL: 
     Home: vrcl_index.html
     Terminology: vrcl_terminology.html
     Specification: vrcl_the_specification.html
-    ChangeLog: vrcl_change_log.html
-  MDI: mdi-content-transitions.html
-  VRDR: vrdr-content-transitions.html
+    Changes: vrcl_change_log.html
+  MDI: 
+    Home: mdi_index.html
+    Capability Statement EDRS: CapabilityStatement-CapabilityStatement-edrs-server.html
+    Capability Statement Toxicology: CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server.html
+    Capability Statement ME/C: CapabilityStatement-CapabilityStatement-medical-examiner-coroner-server.html
+    Content Transitions: mdi-content-transitions.html
+    Background: mdi_background.html
+    Best Practices: mdi_best_practices.html
+    Changes: mdi_change_log.html
+    Security Recommendations: mdi_security_recommendations.html
+    Specification: mdi_specification.html
+    Terminology: mdi_terminology.html
+    Downloads: mdi_downloads.html
+  VRDR: 
+    Home: vrdr_index.html
+    Background: vrdr_background.html
+    Changes: vrdr_change_log.html
+    Conformance: vrdr_conformance.html
+    Scope: vrdr_scope_of_the_vrdr_fhir_ig.html
+    Usage: vrdr_usage.html
+    Content Transitions: vrdr-content-transitions.html
+    VRDR Data Dictionary: vrdr_ije_mapping.html
+    Credits: vrdr_credits.html
+    Downloads: vrdr_downloads.html
+
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
@@ -233,8 +298,9 @@ menu:
 #
 
 groups:
-  VRCommonProfiles:
-    name: VRCL New Common Profiles 
+
+  VRCLProfiles:
+    name: VRCL Profiles
     resources:
       - ObservationCodedRaceAndEthnicityVitalRecords
       - ObservationEducationLevelVitalRecordsNew
@@ -247,11 +313,57 @@ groups:
       - RelatedPersonFatherVitalRecordsNew
       - RelatedPersonMotherVitalRecordsNew
       - RelatedPersonParentVitalRecordsNew
-      # - ObservationInjuryIncidentVitalRecordsNew
-      # - ObservationDecedentDispositionMethodVitalRecordsNew
-      # - ObservationDecedentPregnancyVitalRecordsNew
-      # - ObservationDeathDateVitalRecordsNew 
-      # - ProcedureDeathCertificationVitalRecordsNew 
+      - LocationDeathVitalRecords
+      - LocationInjuryVitalRecords
+      - ObservationAutopsyPerformedIndicatorVitalRecords
+      - ObservationParentEducationLevelVitalRecords
+      - ObservationRaceVitalRecords
+      - ObservationTabulatedEthnicityVitalRecords
+      - RelatedPersonFatherNaturalVitalRecords
+      - RelatedPersonMotherGestationalVitalRecords
+
+  VRCLExtensions:
+    name: VRCL Extensions
+    resources:
+      - ExtensionRelatedpersonBirthplaceVitalRecords
+      - ExtensionRelatedPersonDeceasedVitalRecords
+      - ExtensionWithinCityLimitsIndicatorVitalRecords
+      - ExtensionDatePartAbsentReasonVitalRecords
+      - ExtensionPartialDateTimeVitalRecords
+
+
+  # VRCommonProfiles:
+  #   name: VRCL New Common Profiles 
+  #   resources:
+  #     - CodedRaceAndEthnicityNew
+  #     - ObservationEducationLevelVitalRecordsNew
+  #     - InputRaceAndEthnicityNew 
+  #     - PatientChildVitalRecordsNew
+  #     - PatientDecedentFetusVitalRecordsNew
+  #     - PatientMotherVitalRecordsNew
+  #     - PatientVitalRecordsNew
+  #     - PractitionerVitalRecordsNew
+  #     - RelatedPersonFatherVitalRecordsNew
+  #     - RelatedPersonMotherVitalRecordsNew
+  #     - RelatedPersonParentVitalRecordsNew
+  #     # - ObservationInjuryIncidentVitalRecordsNew
+  #     # - ObservationDecedentDispositionMethodVitalRecordsNew
+  #     # - ObservationDecedentPregnancyVitalRecordsNew
+  #     # - ObservationDeathDateVitalRecordsNew 
+  #     # - ProcedureDeathCertificationVitalRecordsNew 
+
+  # UnchangedVRCommonProfiles:
+  #   name: Unchanged VRCL Common Profiles 
+  #   # description: Unchanged VRCL Common Profiles 
+  #   resources:
+  #     - LocationDeathVitalRecords
+  #     - LocationInjuryVitalRecords
+  #     - ObservationAutopsyPerformedIndicatorVitalRecords
+  #     - ObservationParentEducationLevelVitalRecords
+  #     - ObservationRaceVitalRecords
+  #     - ObservationTabulatedEthnicityVitalRecords
+  #     - RelatedPersonFatherNaturalVitalRecords
+  #     - RelatedPersonMotherGestationalVitalRecords
   
   VRCLCodeSystems:
     name: VRCL CodeSystems
@@ -305,11 +417,48 @@ groups:
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
       - ValueSetYesNoUnknownNotApplicableVitalRecords
-
-  BFDRCompositionBundleProfilesNew:
-    name: BFDR New Compositions and Bundles 
-    description: BFDR New Composition and Bundle Profiles
+  
+  VRCLConceptMaps:
+    name: VRCL Concept Maps
     resources:
+      - DeliveryRoutesCM
+      - BirthAndFetalDeathFinancialClassCM
+      - BirthAttendantTitlesCM
+      - FetalDeathCauseOrConditionCM
+      - BirthDeliveryOccurredCM
+      - FetalDeathCauseOrConditionCM
+      - FetalDeathTimePointsCM
+      - FetalPresentationCM
+      - HistologicalPlacentalExaminationCM
+      - InfectionsDuringPregnancyLiveBirthCM
+      - NewbornCongenitalAnomaliesCM
+
+  VRCLExamples:
+    name: VRCL Examples
+    resources:
+      - relatedperson-father-tony-lewis-common
+      - expansion-parameters-vr-common
+      - location-death-vr-atlanta-ga-a-freeman
+      - location-injury-vr-atlanta-ga-a-freeman
+      - observation-autopsy-performed-indicator-vr-a-freeman
+      - observation-autopsy-performed-not-named-common
+      - observation-tabulated-ethnicity-jada-ann-quinn-common
+      - relatedperson-father-tom-yan-lee-common
+      - relatedperson-mother-carol-hoffer-common
+      - relatedperson-mother-gestational-carmen-teresa-lee-common
+      - relatedperson-parent-stepmother
+      - us-core-patient-vr-a-freeman
+      - us-core-patient-vr-unknown-name
+  
+  BFDRCapabilityStatements:
+    name: BFDR Capability Statements
+    resources: 
+      - CapabilityStatement-bfdr
+
+  BFDRProfiles:
+    name: BFDR Profiles
+    resources:
+      - BundleDocumentBFDRNew
       - CompositionCodedCauseOfFetalDeathNew
       - CompositionCodedRaceAndEthnicity
       - CompositionJurisdictionFetalDeathReportNew
@@ -317,12 +466,6 @@ groups:
       - CompositionProviderFetalDeathReportNew
       - CompositionProviderLiveBirthReportNew
       - DemographicCodedContentBundleBFDR
-
-
-  BFDRProfilesfromVRCL:
-    name: BFDR New Profiles (from VRCL)
-    description: BFDR New Profiles (from VRCL)
-    resources:
       - ConditionPrepregnancyHypertensionNew
       - ConditionEclampsiaHypertensionNew
       - ConditionGestationalDiabetesNew
@@ -351,17 +494,503 @@ groups:
       #- ObservationPregnancyRiskFactorNew
       #- PatientDecedentFetusNew
       #- PatientMotherNew
+      - ObservationPreviousCesareanNew
+      - ConditionChorioamnionitis
+      - ConditionCodedInitiatingFetalDeathCauseOrCondition
+      - ConditionCodedOtherFetalDeathCauseOrCondition
+      - ConditionCongenitalAnomalyOfNewborn
+      - ConditionFetalDeathCauseOrCondition
+      - ConditionFetalDeathOtherCauseOrCondition
+      - ConditionInfectionPresentDuringPregnancy
+      - ConditionPerinealLaceration
+      - ConditionRupturedUterus
+      - ConditionSeizure
+      - CoveragePrincipalPayerDelivery
+      - EncounterBirth
+      - Encounter_Maternity
+      - ObservationSteroidsFetalLungMaturation
+      - ObservationAntibioticsAdministeredDuringLabor
+      - ObservationAutopsyHistologicalExamResultsUsed
+      - ObservationCigaretteSmokingBeforeDuringPregnancy
+      - ObservationDateOfFirstPrenatalCareVisit
+      - ObservationDateOfLastLiveBirth
+      - ObservationDateOfLastOtherPregnancyOutcome
+      - ObservationFetalDeathTimePoint
+      - ObservationFetalPresentation
+      - ObservationHistologicalPlacentalExamPerformed
+      - ObservationICUAdmission
+      - ObservationInfantBreastfedAtDischarge
+      - ObservationLaborTrialAttempted
+      - ObservationMethodOfDisposition
+      - ObservationMotherMarriedDuringPregnancy
+      - ObservationMotherReceivedWICFood
+      - ObservationNICUAdmission
+      - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
+      - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
+      - ObservationNoneOfSpecifiedMaternalMorbidities
+      - ObservationPaternityAcknowledgementSigned
+      - ObservationPlannedToDeliverAtHome
+      - ObservationSSNRequestedForChild
+      - ProcedureAntibioticSuspectedNeonatalSepsis
+      - ProcedureAssistedVentilationFollowingDelivery
+      - ProcedureAssistedVentilationMoreThanSixHours
+      - ProcedureAugmentationOfLabor
+      - ProcedureBloodTransfusion
+      - ProcedureEpiduralOrSpinalAnesthesia
+      - ProcedureFinalRouteMethodDelivery
+      - ProcedureInductionOfLabor
+      - ProcedureObstetric
+      - ProcedureSurfactantReplacementTherapy
+      - ProcedureUnplannedHysterectomy
+
+  BFDRExtensions:
+    name: BFDR Extensions 
+    resources:
+      - ExtensionDateFiledByRegistrar
+      - ExtensionDatereceivedByRegistrar
+      - ExtensionEncounterMaternityReference
+      - ExtensionFetalDeathLocalFileNumber
+      - ExtensionFetalDeathReportNumber
+      - ExtensionLiveBirthCertificateNumber
+      - ExtensionLiveBirthLocalFileNumber
+
+  # BFDRCompositionBundleProfilesNew:
+  #   name: BFDR New Compositions and Bundles 
+  #   resources:
+  #     - BundleDocumentBFDRNew
+  #     - CompositionCodedCauseOfFetalDeathNew
+  #     - CompositionCodedRaceAndEthnicityNew
+  #     - CompositionJurisdictionFetalDeathReportNew
+  #     - CompositionJurisdictionLiveBirthReportNew
+  #     - CompositionProviderFetalDeathReportNew
+  #     - CompositionProviderLiveBirthReportNew
+  #     - DemographicCodedContentBundleBFDR
+
+
+  # BFDRProfilesfromVRCL:
+  #   name: BFDR New Profiles (from VRCL)
+  #   # description: BFDR New Profiles (from VRCL)
+  #   resources:
+  #     - ConditionPrepregnancyHypertensionNew
+  #     - ConditionEclampsiaHypertensionNew
+  #     - ConditionGestationalDiabetesNew
+  #     - ConditionGestationalHypertensionNew
+  #     - ConditionPrepregnancyDiabetesNew
+  #     - ObservationApgarScoreNew
+  #     - ObservationBirthWeightNew
+  #     - ObservationGestationalAgeAtDeliveryNew
+  #     - ObservationInfantLivingNew
+  #     - ObservationLastMenstrualPeriodNew
+  #     - ObservationMotherDeliveryWeightNew
+  #     - ObservationMotherHeightNew
+  #     - ObservationMotherPrepregnancyWeightNew
+  #     - ObservationNoneOfSpecifiedPregnancyRiskFactorsNew
+  #     - ObservationNumberBirthsNowDeadNew
+  #     - ObservationNumberBirthsNowLivingNew
+  #     - ObservationNumberFetalDeathsThisDeliveryNew
+  #     - ObservationNumberLiveBirthsThisDeliveryNew
+  #     - ObservationNumberOtherPregnancyOutcomesNew
+  #     - ObservationNumberPrenatalVisitsNew
+  #     - ObservationNumberPreviousCesareansNew
+  #     - ObservationPreviousPretermBirthNew
+  #     - ProcedureInfertilityTreatmentNew
+  #     - ProcedureArtificialInseminationNew
+  #     - ProcedureAssistedFertilizationNew
+  #     #- ObservationPregnancyRiskFactorNew
+  #     #- PatientDecedentFetusNew
+  #     #- PatientMotherNew
+  #     - ObservationPreviousCesareanNew
+
+  # UnchangedBFDRProfiles:
+  #   name: Unchanged BFDR Profiles
+  #   # description: Unchanged BFDR Profiles
+  #   resources: 
+  #     - ConditionChorioamnionitis
+  #     - ConditionCodedInitiatingFetalDeathCauseOrCondition
+  #     - ConditionCodedOtherFetalDeathCauseOrCondition
+  #     - ConditionCongenitalAnomalyOfNewborn
+  #     - ConditionFetalDeathCauseOrCondition
+  #     - ConditionFetalDeathOtherCauseOrCondition
+  #     - ConditionInfectionPresentDuringPregnancy
+  #     - ConditionPerinealLaceration
+  #     - ConditionRupturedUterus
+  #     - ConditionSeizure
+  #     - CoveragePrincipalPayerDelivery
+  #     - EncounterBirth
+  #     - Encounter_Maternity
+  #     - ObservationSteroidsFetalLungMaturation
+  #     - ObservationAntibioticsAdministeredDuringLabor
+  #     - ObservationAutopsyHistologicalExamResultsUsed
+  #     - ObservationCigaretteSmokingBeforeDuringPregnancy
+  #     - ObservationDateOfFirstPrenatalCareVisit
+  #     - ObservationDateOfLastLiveBirth
+  #     - ObservationDateOfLastOtherPregnancyOutcome
+  #     - ObservationFetalDeathTimePoint
+  #     - ObservationFetalPresentation
+  #     - ObservationHistologicalPlacentalExamPerformed
+  #     - ObservationICUAdmission
+  #     - ObservationInfantBreastfedAtDischarge
+  #     - ObservationLaborTrialAttempted
+  #     - ObservationMethodOfDisposition
+  #     - ObservationMotherMarriedDuringPregnancy
+  #     - ObservationMotherReceivedWICFood
+  #     - ObservationNICUAdmission
+  #     - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
+  #     - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
+  #     - ObservationNoneOfSpecifiedMaternalMorbidities
+  #     - ObservationPaternityAcknowledgementSigned
+  #     - ObservationPlannedToDeliverAtHome
+  #     - ObservationSSNRequestedForChild
+  #     - ProcedureAntibioticSuspectedNeonatalSepsis
+  #     - ProcedureAssistedVentilationFollowingDelivery
+  #     - ProcedureAssistedVentilationMoreThanSixHours
+  #     - ProcedureAugmentationOfLabor
+  #     - ProcedureBloodTransfusion
+  #     - ProcedureEpiduralOrSpinalAnesthesia
+  #     - ProcedureFinalRouteMethodDelivery
+  #     - ProcedureInductionOfLabor
+  #     - ProcedureObstetric
+  #     - ProcedureSurfactantReplacementTherapy
+  #     - ProcedureUnplannedHysterectomy
+
+  # BirthEditFlags:
+  #   name: Birth Edit Flags
+  #   # description: Birth Edit Flags
+  #   resources:
+  #     - ObservationEditFlagBirthweight
+  #     - ObservationEditFlagEstimateOfGestation
+  #     - ObservationEditFlagFathersDateOfBirth
+  #     - ObservationEditFlagFathersEducation
+  #     - ObservationEditFlagMothersDateOfBirth
+  #     - ObservationEditFlagMothersDeliveryWeight
+  #     - ObservationEditFlagMothersEducation
+  #     - ObservationEditFlagMothersHeight
+  #     - ObservationEditFlagMothersPrepregnancyWeight
+  #     - ObservationEditFlagNumberPrenatalCareVisits
+  #     - ObservationEditFlagNumberPreviousCesareans
+  #     - ObservationEditFlagPlurality
 
 
   BFDRValueSets:
     name: BFDR ValueSets
-    description: BFDR ValueSets
+    # description: BFDR ValueSets
     resources:
       - CigaretteSmokingBeforeAndDuringPregnancy
+      - BirthWeightEditFlagsVS
+      - EstimateOfGestationEditFlagsVS
+      - FathersDateOfBirthEditFlagsVS
+      - MothersDateOfBirthEditFlagsVS
+      - NumberPreviousCesareansEditFlagsVS
+      - PluralityEditFlagsVS
+      - PregnancyReportEditFlagsVS
+    
+
+  BFDRExamples:
+    name: BFDR Examples
+    resources:
+      - bundle-jurisdiction-fetal-death-not-named
+      - bundle-jurisdiction-live-birth-babyg-quinn
+      - bundle-provider-fetal-death-not-named
+      - bundle-provider-live-birth-babyg-quinn
+      - composition-coded-cause-of-fetal-death-not-named
+      - composition-jurisdiction-fetal-death-not-named
+      - composition-jurisdiction-live-birth-babyg-quinn
+      - composition-provider-fetal-death-not-named
+      - composition-provider-live-birth-babyg-quinn
+      - observation-race-jada-ann-quinn
+      - observation-parent-education-level-carmen-teresa-lee
+      - observation-parent-education-level-carmen-teresa-lee-w-edit
+      - observation-parent-education-level-jada-ann-quinn
+      - observation-parent-education-level-jada-ann-quinn-w-edit
+      - observation-parent-education-level-james-quinn
+      - observation-parent-education-level-james-quinn-w-edit
+      - observation-parent-education-level-tom-yan-lee
+      - observation-parent-education-level-tom-yan-lee-w-edit
+      - observation-race-carmen-teresa-lee
+      - observation-race-james-quinn
+      - observation-race-tom-yan-lee
+      - observation-tabulated-ethnicity-carmen-teresa-lee
+      - observation-tabulated-ethnicity-jada-ann-quinn
+      - observation-tabulated-ethnicity-james-quinn
+      - observation-tabulated-ethnicity-tom-yan-lee
+      - patient-child-babyg-quinn
+      - patient-child-babyg-quinn-w-edit
+      - patient-decedent-fetus-not-named
+      - patient-decedent-fetus-not-named-w-edit
+      - patient-mother-birth-date-part-absent
+      - patient-mother-carmen-teresa-lee
+      - patient-mother-carmen-teresa-lee-w-edit
+      - patient-mother-jada-ann-quinn
+      - patient-mother-jada-ann-quinn-w-edit
+      - practitioner-vital-records-avery-jones
+      - practitioner-vital-records-janet-seito
+      - practitioner-vital-records-jessica-leung
+      - relatedperson-father-natural-james-brandon-quinn
+      - relatedperson-father-natural-james-brandon-quinn-w-edit
+      - relatedperson-father-natural-tom-yan-lee-w-edit
+      - relatedperson-father-natural-tom-yan-lee
+      - relatedperson-mother-carmen-teresa-lee
+      - relatedperson-mother-jada-ann-quinn
+      - condition-chorioamnionitis-jada-ann-quinn
+      - condition-coded-initiating-fetal-death-cause-or-condition
+      - condition-coded-other-fetal-death-cause-or-condition-not-named
+      - condition-congenital-anomaly-of-newborn-babyg-quinn-2
+      - condition-congenital-anomaly-of-newborn-babyg-quinn
+      - condition-fetal-death-cause-or-condition-not-named
+      - condition-fetal-death-other-significant-cause-not-named
+      - condition-infection-present-during-pregnancy-jada-ann-quinn
+      - condition-perineal-laceration-jada-ann-quinn
+      - condition-ruptured-uterus-jada-ann-quinn
+      - condition-seizure-babyg-quinn
+      - coverage-principal-payer-for-delivery-jada-ann-quinn
+      - encounter-birth-babyg-quinn
+      - encounter-maternity-carmen-teresa-lee
+      - encounter-maternity-jada-ann-quinn
+      - expansion-parameters-bfdr
+      - location-east-hospital
+      - location-north-hospital
+      - location-south-hospital
+      - observation-antibiotics-during-labor-jada-ann-quinn
+      - observation-autopsy-histological-exam-results-used-not-named
+      - observation-autopsy-performed-not-named
+      - observation-cig-smoking-pregnancy-1-carmen-teresa-lee
+      - observation-cig-smoking-pregnancy-1-jada-ann-quinn
+      - observation-cig-smoking-pregnancy-2-carmen-teresa-lee
+      - observation-cig-smoking-pregnancy-2-jada-ann-quinn
+      - observation-cig-smoking-pregnancy-3-carmen-teresa-lee
+      - observation-cig-smoking-pregnancy-3-jada-ann-quinn
+      - observation-cig-smoking-pregnancy-4-carmen-teresa-lee
+      - observation-cig-smoking-pregnancy-4-jada-ann-quinn
+      - observation-date-of-first-prenatal-care-visit-carmen-teresa-lee
+      - observation-date-of-first-prenatal-care-visit-jada-ann-quinn
+      - observation-date-of-last-live-birth-carmen-teresa-lee
+      - observation-date-of-last-live-birth-jada-ann-quinn
+      - observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn
+      - observation-fetal-death-time-point-not-named
+      - observation-fetal-presentation-babyg-quinn
+      - observation-fetal-presentation-not-named
+      - observation-histological-placental-exam-performed-not-named
+      - observation-icu-admission-jada-ann-quinn
+      - observation-infant-breastfed-at-discharge-babyg-quinn
+      - observation-labor-trial-attempted-babyg-quinn
+      - observation-method-of-disposition-not-named
+      - observation-mother-married-during-pregnancy-jada-ann-quinn
+      - observation-mother-received-wic-food-carmen-teresa-lee
+      - observation-mother-received-wic-food-jada-ann-quinn
+      - observation-nicu-admission-babyg-quinn
+      - observation-none-abnormal-conditions-babyg-quinn
+      - observation-none-chars-labor-delivery-jada-ann-quinn
+      - observation-none-maternal-morbidities-jada-ann-quinn
+      - observation-paternity-acknowledgement-signed-james-quinn
+      - observation-planned-to-deliver-at-home-babyg-quinn
+      - observation-planned-to-deliver-at-home-not-named
+      - observation-ssn-requested-for-child-babyg-quinn
+      - observation-steroids-fetal-lung-maturation-jada-ann-quinn
+      - organization-jurisdictional-vital-records-office
+      - organization-nchs
+      - organization-south-hospital
+      - procedure-antibiotic-sepsis-babyg-quinn
+      - procedure-augmentation-of-labor-quinn
+      - procedure-blood-transfusion-jada-ann-quinn
+      - procedure-epidural-or-spinal-anesthesia-jada-ann-quinn
+      - procedure-final-route-method-delivery-babyg-quinn
+      - procedure-final-route-method-delivery-not-named
+      - procedure-induction-of-labor-jada-ann-quinn
+      - procedure-obstetric-procedure-jada-ann-quinn
+      - procedure-surfactant-replacement-babyg-quinn
+      - procedure-unplanned-hysterectomy-quinn
+      - procedure-ventilation-following-babyg-quinn
+      - procedure-ventilation-more-6-hours-babyg-quinn
+      - Questionnaire-mothers-live-birth
+      - Questionnaire-patients-fetal-death
+      - QuestionnaireResponse-mothers-live-birth-jada-quinn
+      - QuestionnaireResponse-patients-fetal-death-carmen-lee
+      - observation-number-previous-cesareans-carmen-teresa-lee-w-edit
+      - procedure-infertility-treatment-jada-ann-quinn
+      - procedure-assisted-fertilization-jada-ann-quinn
+      - procedure-artificial-insemination-jada-ann-quinn
+      - observation-previous-preterm-births-jada-ann-quinn
+      - observation-previous-cesarean-jada-ann-quinn
+      - observation-number-previous-cesareans-jada-ann-quinn-w-edit
+      - observation-number-previous-cesareans-jada-ann-quinn
+      - observation-number-previous-cesareans-carmen-teresa-lee
+      - observation-number-prenatal-visits-jada-ann-quinn-w-edit
+      - observation-number-prenatal-visits-jada-ann-quinn
+      - observation-number-other-pregnancy-outcomes-jada-ann-quinn
+      - observation-number-live-births-this-delivery-jada-ann-quinn
+      - observation-number-live-births-this-delivery-carmen-teresa-lee
+      - observation-number-deaths-this-delivery-carmen-teresa-lee
+      - observation-number-births-now-living-jada-ann-quinn
+      - observation-number-births-now-living-carmen-teresa-lee
+      - observation-number-births-now-dead-jada-ann-quinn
+      - observation-number-births-now-dead-carmen-teresa-lee
+      - observation-none-specified-risk-factors-jada-ann-quinn
+      - observation-nbr-other-pregnancy-outcomes-jada-ann-quinn
+      - observation-nbr-live-births-delivery-carmen-teresa-lee
+      - observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit
+      - observation-mother-prepregnancy-weight-jada-ann-quinn
+      - observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit
+      - observation-mother-prepregnancy-weight-carmen-teresa-lee
+      - observation-mother-height-jada-ann-quinn-w-edit
+      - observation-mother-height-jada-ann-quinn
+      - observation-mother-height-carmen-teresa-lee-w-edit
+      - observation-mother-height-carmen-teresa-lee
+      - observation-mother-delivery-weight-jada-ann-quinn-w-edit
+      - observation-mother-delivery-weight-jada-ann-quinn
+      - observation-last-menstrual-period-jada-ann-quinn
+      - observation-last-menstrual-period-carmen-teresa-lee
+      - observation-infant-living-babyg-quinn
+      - observation-gestational-age-at-delivery-not-named-w-edit
+      - observation-gestational-age-at-delivery-not-named
+      - observation-gestational-age-at-delivery-babyg-quinn-w-edit
+      - observation-gestational-age-at-delivery-babyg-quinn
+      - observation-birth-weight-not-named-w-edit
+      - observation-birth-weight-not-named
+      - observation-birth-weight-babyg-quinn-w-edit
+      - observation-birth-weight-babyg-quinn
+      - observation-apgar-score-babyg-quinn-5-min
+      - observation-apgar-score-babyg-quinn-1-min
+      - condition-prepregnancy-hypertension-jada-ann-quinn
+      - condition-prepregnancy-hypertension-carmen-teresa-lee
+      - condition-prepregnancy-diabetes-jada-ann-quinn
+      - condition-gestational-hypertension-jada-ann-quinn
+      - condition-gestational-diabetes-jada-ann-quinn
+      - condition-gestational-diabetes-carmen-teresa-lee
+      - condition-eclampsia-hypertension-jada-ann-quinn
+
+
+  VRDRProfiles:
+    name: VRDR Profiles
+    resources: 
+      - MortalityRosterBundle
+      - DecedentNew
+      - DeathCertificationNew 
+      - CauseOfDeathCodedContentBundleNew
+      - DemographicCodedContentBundleNew
+      - DeathCertificateNew
+      - DeathCertificateDocumentNew 
+      - CauseOfDeathPart1New
+      - CauseOfDeathPart2New
+      - DeathDateNew 
+      - InjuryIncidentNew 
+      - MannerOfDeathNew 
+      - TobaccoUseContributedToDeathNew 
+      - DecedentDispositionMethodNew
+      - DecedentEducationLevel
+      - DecedentPregnancyStatusNew
+      - ActivityAtTimeOfDeath
+      - AutomatedUnderlyingCauseOfDeath
+      - AutopsyPerformedIndicator
+      - BirthRecordIdentifier
+      - Certifier
+      - CodedRaceAndEthnicity
+      - CodingStatusValues
+      - DeathLocation
+      - DecedentAge
+      #- DecedentDispositionMethod
+      - DecedentFather
+      - DecedentMilitaryService
+      - DecedentMother
+      - DecedentSpouse
+      - DecedentUsualWork
+      - DispositionLocation
+      - EmergingIssues
+      - EntityAxisCauseOfDeath
+      - ExaminerContacted
+      - FuneralHome
+      - InjuryLocation
+      - InputRaceAndEthnicity
+      - ManualUnderlyingCauseOfDeath
+      - PlaceOfInjury
+      - RecordAxisCauseOfDeath
+      - SurgeryDate
+      - TobaccoUseContributedToDeath
+      - DecedentDispositionMethod
+
+  # VRDRProfilesNew:
+  #   name: New VRDR Profiles
+  #   resources:  
+  #     - DecedentNew
+  #     - DeathCertificationNew 
+  #     - CauseOfDeathCodedContentBundleNew
+  #     - DemographicCodedContentBundleNew
+  #     - DeathCertificateNew
+  #     - DeathCertificateDocumentNew 
+  #     - CauseOfDeathPart1New
+  #     - CauseOfDeathPart2New
+  #     - DeathDateNew 
+  #     - InjuryIncidentNew 
+  #     - MannerOfDeathNew 
+  #     - TobaccoUseContributedToDeathNew 
+  #     - DecedentDispositionMethodNew
+  #     - DecedentEducationLevel
+  #     - DecedentPregnancyStatusNew
+
+  # UnchangedVRDRProfiles:
+  #   name: Unchanged VRDR Profiles
+  #   resources:
+  #     - ActivityAtTimeOfDeath
+  #     - AutomatedUnderlyingCauseOfDeath
+  #     - AutopsyPerformedIndicator
+  #     - BirthRecordIdentifier
+  #     - Certifier
+  #     - CodedRaceAndEthnicity
+  #     - CodingStatusValues
+  #     - DeathLocation
+  #     - DecedentAge
+  #     #- DecedentDispositionMethod
+  #     - DecedentFather
+  #     - DecedentMilitaryService
+  #     - DecedentMother
+  #     - DecedentSpouse
+  #     - DecedentUsualWork
+  #     - DispositionLocation
+  #     - EmergingIssues
+  #     - EntityAxisCauseOfDeath
+  #     - ExaminerContacted
+  #     - FuneralHome
+  #     - InjuryLocation
+  #     - InputRaceAndEthnicity
+  #     - ManualUnderlyingCauseOfDeath
+  #     - PlaceOfInjury
+  #     - RecordAxisCauseOfDeath
+  #     - SurgeryDate
+  #     - TobaccoUseContributedToDeath
+  #     - DecedentDispositionMethod
+
+  VRDRExtensions:
+    name: VRDR Extensions 
+    resources:
+      - AliasStatus
+      - AuxiliaryStateIdentifier1
+      - AuxiliaryStateIdentifier2
+      - BypassEditFlag
+      - CertificateNumber
+      - CityCode
+      - DateDay
+      - DateMonth
+      - DateTime
+      - DateYear
+      - DistrictCode
+      - FilingFormat
+      - LocationJurisdictionId
+      - NVSSSexAtDeath
+      - PartialDate
+      - PartialDateTime
+      - PostDirectional
+      - PreDirectional
+      - ReplaceStatus
+      - SpouseAlive
+      - StateSpecificField
+      - StreetDesignator
+      - StreetName
+      - StreetNumber
+      - UnitOrAptNumber
+      - WithinCityLimitsIndicator
+
   
   VRDRCodeSystems:
     name: VRDR CodeSystems
-    description: VRDR CodeSystems 
     resources:
       - ActivityAtTimeOfDeathCS    
       - BypassEditFlagCS
@@ -411,6 +1040,7 @@ groups:
       - TransaxConversionVS
       - ActivityAtTimeOfDeathVS
       - ICD10CausesOfDeathVS
+      - YesNoNotApplicableVS
       - YesNoUnknownVS
       - ResidenceCountryVS
       - BirthplaceCountryVS
@@ -426,35 +1056,223 @@ groups:
       - EditBypass0124VS
       - EditBypass01234VS     
 
-  VRDRProfilesNew:
-    name: New VRDR Profiles
-    resources:  
-      - DecedentNew 
-      - CauseOfDeathCodedContentBundleNew
-      - DemographicCodedContentBundleNew
-      - DeathCertificateNew
-      - DeathCertificateDocumentNew 
-      - CauseOfDeathPart1New
-      - CauseOfDeathPart2New
-      - DeathDateNew 
-      - InjuryIncidentNew 
-      - MannerOfDeathNew 
-      - TobaccoUseContributedToDeathNew 
+  # VRDRBundles:
+  #   name: VRDR Bundles
+  #   resources:
+  #     - MortalityRosterBundle
+  
+  VRDRConceptMaps:
+    name: VRDR Concept Maps
+    resources:
+      - PlaceOfInjuryCM
+      - ActivityAtTimeOfDeathCM
+      - AdministrativeGenderCM
+      - CertifierTypesCM
+      - ContributoryTobaccoUseCM
+      - EditBypass01234CM
+      - EditBypass01CM
+      - EditBypass012CM
+      - EditBypass0124CM
+      - EducationLevelCM
+      - FilingFormatCM
+      - HispanicNoUnknownCM
+      - HispanicOriginCM
+      - IntentionalRejectCM
+      - MannerOfDeathCM
+      - MaritalStatusCM
+      - MethodOfDispositionCM
+      - PlaceOfDeathCM
+      - RaceCodeCM
+      - RaceMissingValueReasonCM
+      - RaceRecode40CM
+      - ReplaceStatusCM
+      - SpouseAliveCM
+      - SystemRejectCM
+      - TransaxConversionCM
+      - TransportationIncidentRoleCM
+      - UnitsOfAgeCM
+      - YesNoUnknownCM
+      - YesNoUnknownNotApplicableCM
 
-  MDIProfilesNew:
-    name: New MDI Profiles
+
+  VRDRExamples:
+    name: VRDR Examples
+    resources:
+      - CauseOfDeathCodedContentBundle-Example1-New
+      - DemographicCodedContentBundle-Example1
+      - DeathCertificateDocument-UT-1
+      - DeathCertificateUT-Example1
+      - DecedentUT-Example1
+      - InputRaceAndEthnicityUT-Example1
+      - PractitionerUT-Example1
+      - BirthRecordIdentifierUT-Example1
+      - EducationUT-Example1
+      - FatherUT-Example1
+      - MotherUT-Example1
+      - AutopsyPerformedIndicatorUT-Example1
+      - CauseOfDeathPart1UT-Example1 
+      - DeathDateUT-Example1
+      - DeathLocationUT-Example1
+      - AgeUT-Example1 
+      - DispositionMethodUT-Example1 
+      - DispositionLocationUT-Example1
+      - UsualWorkUT-Example1
+      - MilitaryServiceUT-Example1
+      - PregnancyUT-Example1 
+      - ExaminerContactedUT-Example1 
+      - FuneralHomeUT-Example1
+      - InjuryIncidentUT-Example1 
+      - MannerOfDeathUT-Example1
+      - TobaccoUseUT-Example1 
+      - ProcedureDeathCertificationUT-Example1
+      - EmergingIssuesUT-Example1
+      - DeathCertification-Example1
+      - DeathCertification-Example2
+      - DeathDate-Example1
+      - DeathDate-Example2
+      - DeathDate-Example3
+      - Decedent-Example1
+      - Decedent-Example2
+      - Decedent-Example3
+      - DecedentPregnancyStatus-Example1
+      - InjuryIncident-Example1
+      - InjuryIncident-Example2
+      - InjuryLocation-Example1
+      - MannerOfDeath-Example1
+      - observation-cause-of-death-part1-a-freeman
+      - observation-contributing-cause-of-death-part2-a-freeman
+      - observation-decedent-pregnancy-a-freeman
+      - observation-manner-of-death-a-freeman-accidental
+      - observation-tobacco-use-a-freeman
+      - procedure-death-certification-vr-a-freeman
+      - TobaccoUseContributedToDeath-Example1
+      - SurgeryDate-Example1
+      - FuneralHome-Example1
+      - DecedentFather-Example1
+      - DecedentMother-Example1
+      - DecedentSpouse-Example1
+      - ExaminerContacted-Example1
+      - EmergingIssues-Example1
+      - DecedentUsualWork-Example1
+      - DecedentUsualWork-Example2
+      - DecedentMilitaryService-Example1
+      - DecedentEducationLevel-Example1
+      - DecedentDispositionMethod-Example1
+      - Mortician-Example1
+      - DispositionLocation-Example1
+      - DecedentAge-Example1
+      - DeathLocation-Example1
+      - DeathLocation-Example2
+      - DeathLocation-Example3
+      - AutomatedUnderlyingCauseOfDeath-Example1
+      - RecordAxisCauseOfDeath-Example1
+      - RecordAxisCauseOfDeath-Example2
+      - EntityAxisCauseOfDeath-Example1
+      - EntityAxisCauseOfDeath-Example2
+      - EntityAxisCauseOfDeath-Example3
+      - EntityAxisCauseOfDeath-Example4
+      - ManualUnderlyingCauseOfDeath-Example1
+      - PlaceOfInjury-Example1
+      - ActivityAtTimeOfDeath-Example1
+      - CodedRaceAndEthnicity-Example1
+      - InputRaceAndEthnicity-Example1
+      - CodingStatusValues-Example1
+      - CauseOfDeathPart1-Example1
+      - CauseOfDeathPart1-Example2
+      - CauseOfDeathPart2-Example1
+      - Certifier-Example1
+      - BirthRecordIdentifier-Example1
+      - AutopsyPerformedIndicator-Example1
+
+  MDIProfiles:
+    name: MDI Profiles
     resources:  
       - BundleDocumentMDIToEDRSNew 
       - BundleMessageToxToMDINew
       - CompositionMDIToEDRSNew
-    
-  MDIProfilesUnchanged:
-    name: Unchanged MDI Profiles
-    resources:  
       - DiagnosticReportToxicologyToMDI 
       - MessageHeaderToxicologyToMDI
       - ObservationAutopsyPerformedIndicator
       - ObservationToxicologyLabResult
+      - SpecimenToxicologyLab
+
+  MDIExtensions:
+    name: MDI Extensions 
+    resources:
+      - ExtensionDateDay
+      - ExtensionDateMonth
+      - ExtensionDateTime
+      - ExtensionDateYear
+      - ExtensionPartialDateTime
+      - ExtensionTrackingNumber
+
+  # MDIProfilesNew:
+  #   name: New MDI Profiles
+  #   resources:  
+  #     - BundleDocumentMDIToEDRSNew 
+  #     - BundleMessageToxToMDINew
+  #     - CompositionMDIToEDRSNew
+    
+  # MDIProfilesUnchanged:
+  #   name: Unchanged MDI Profiles
+  #   resources:  
+  #     - DiagnosticReportToxicologyToMDI 
+  #     - MessageHeaderToxicologyToMDI
+  #     - ObservationAutopsyPerformedIndicator
+  #     - ObservationToxicologyLabResult
+  #     - SpecimenToxicologyLab
+
+  MDIValueset:
+    name: MDI Value Set
+    resources:
+      - ValueSetTrackingNumberType
+      - CodeSystemDeathPregnancyStatus
+      - CodeSystemLocalComponentCodes
+      # - ValueSetDateEstablishmentApproach
+  
+  MDIExamples:
+    name: MDI Examples
+    resources:
+      - expansion-parameters-mdi
+      - bundle-mdi-to-edrs-a-freeman
+      - bundle-mdi-tox-report-message-a-freeman
+      - CapabilityStatement-edrs-server
+      - CapabilityStatement-forensic-toxicology-laboratory-server
+      - CapabilityStatement-medical-examiner-coroner-server
+      - composition-mdi-to-edrs-a-freeman
+      - diagnosticreport-mdi-toxicology-lab-a-freeman
+      - location-death-atlanta-ga-a-freeman
+      - location-injury-atlanta-ga-a-freeman
+      - MessageDefinition-toxicology-system
+      - messageheader-mdi-tox-result-report-a-freeman
+      - observation-autopsy-performed-indicator-a-freeman
+      - observation-death-date-a-freeman
+      - observation-how-death-injury-occurred-a-freeman-med-ingest
+      - procedure-death-certification-a-freeman
+      - specimen-bile-toxicology-a-freeman
+      - specimen-blood-toxicology-a-freeman
+      - specimen-liver-toxicology-a-freeman
+      - specimen-stomach-contents-toxicology-a-freeman
+      - specimen-urine-toxicology-a-freeman
+      - specimen-vitreous-humor-toxicology-a-freeman
+      - us-core-lab-result-4-anpp-blood-a-freeman
+      - us-core-lab-result-4-anpp-urine-a-freeman
+      - us-core-lab-result-acetylfentanyl-blood-a-freeman
+      - us-core-lab-result-acetylfentanyl-urine-a-freeman
+      - us-core-lab-result-etoh-gas-chromatography-blood-a-freeman
+      - us-core-lab-result-etoh-gas-chromatography-urine-a-freeman
+      - us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman
+      - us-core-lab-result-fentanyl-blood-a-freeman
+      - us-core-lab-result-fentanyl-urine-a-freeman
+      - us-core-lab-result-norfentanyl-urine-a-freeman
+      - us-core-lab-result-xylazine-urine-a-freeman
+      - us-core-organization-tox-lab
+      - us-core-patient-a-freeman
+      - us-core-patient-unknown-name
+      - us-core-practitioner-b-goldberger
+      - us-core-practitioner-j-jones
+      - us-core-practitioner-s-jones
+
 
 
 #

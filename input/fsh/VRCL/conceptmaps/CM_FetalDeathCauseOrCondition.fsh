@@ -1,4 +1,4 @@
-Instance: BirthDeathCauseOrConditionCM
+Instance: FetalDeathCauseOrConditionCM
 InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false
