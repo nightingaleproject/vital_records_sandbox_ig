@@ -1,5 +1,5 @@
 Instance: us-core-patient-unknown-name
-InstanceOf: PatientVitalRecordsNew
+InstanceOf: PatientVitalRecords
 Title: "US Core Patient - Unknown Name"
 Description: "US Core Patient: Unknown Name - Decedent where there is no information known about the patient. Assume that the system will assign a tracking number (e.g., medical record number, case number, or other)."
 Usage: #example

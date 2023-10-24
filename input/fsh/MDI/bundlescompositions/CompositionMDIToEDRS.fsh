@@ -31,11 +31,11 @@ Description: "This Composition profile represents data sent from an MDI informat
   * ^short = "MDI to EDRS (Death administrative information Document)"
   * ^definition = "MDI to EDRS"
 * subject 1.. MS
-* subject only Reference(PatientVitalRecordsNew)
+* subject only Reference(PatientVitalRecords)
   * ^short = "The subject of the composition is the decedent."
   * ^definition = "The subject of the composition is the decedent."
 * author ..* MS
-* author only Reference(PractitionerVitalRecordsNew)
+* author only Reference(PractitionerVitalRecords)
   * ^short = "The author is the medical examiner/coroner (ME/C) responsible for the case. There can be multiple ME/Cs per case."
   * ^definition = "The author is the medical examiner/coroner (ME/C) responsible for the case. There can be multiple ME/Cs per case."
 * attester 1..1 MS
@@ -44,7 +44,7 @@ Description: "This Composition profile represents data sent from an MDI informat
   * extension ..1 MS
   * extension only $data-absent-reason
     * ^short = "If attester is not yet named, use data absent reason"
-  * party only Reference(PractitionerVitalRecordsNew)
+  * party only Reference(PractitionerVitalRecords)
   * party MS
 * section 1.. MS
   * ^slicing.discriminator.type = #pattern
