@@ -904,8 +904,8 @@ groups:
       - PlaceOfInjury
       - RecordAxisCauseOfDeath
       - SurgeryDate
-      - TobaccoUseContributedToDeath
-      - DecedentDispositionMethod
+      #- TobaccoUseContributedToDeath
+      #- DecedentDispositionMethod
 
   # VRDRProfilesNew:
   #   name: New VRDR Profiles

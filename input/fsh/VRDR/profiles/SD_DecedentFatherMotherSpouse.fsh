@@ -6,7 +6,7 @@ Description: "Decedent Father (USCoreRelatedPerson)"
 * insert RequireMetaProfile(DecedentFather)
 * active = true
 * patient 1..1
-* patient only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
+* patient only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
 * patient ^short = "Decedent"
 * relationship 1..1
 * relationship only CodeableConcept
@@ -25,7 +25,7 @@ Description: "Decedent Mother (USCoreRelatedPerson)"
 * active = true
 * patient 1..1
 * patient ^short = "Decedent"
-* patient only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
+* patient only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
 * relationship 1..1
 * relationship only CodeableConcept
 * relationship = $v3-RoleCode#MTH // "mother"
@@ -42,7 +42,7 @@ Description: "Decedent Spouse (USCoreRelatedPerson)"
 * insert RequireMetaProfile(DecedentSpouse)
 * active = true
 * patient 1..1
-* patient only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
+* patient only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
 * patient ^short = "Decedent"
 * relationship 1..1
 * relationship only CodeableConcept

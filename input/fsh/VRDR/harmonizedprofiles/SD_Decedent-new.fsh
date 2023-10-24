@@ -1,5 +1,5 @@
 Profile: DecedentNew
-Parent: PatientVitalRecordsNew
+Parent: PatientVitalRecords
 Id: vrdr-decedent-new
 Title: "Decedent"
 Description: "Decedent (PatientVitalRecords)"

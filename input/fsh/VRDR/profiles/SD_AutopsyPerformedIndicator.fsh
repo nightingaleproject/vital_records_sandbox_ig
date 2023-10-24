@@ -11,7 +11,7 @@ Description: "Autopsy Performed Indicator (Observation)"
 * code only CodeableConcept
 * code = $loinc#85699-7 // "Autopsy was performed"
 * subject 1..1
-* subject only Reference(PatientVitalRecordsNew)
+* subject only Reference(PatientVitalRecords)
 * value[x] 1..1
 * value[x] only CodeableConcept
 * value[x] from YesNoUnknownVS (required)

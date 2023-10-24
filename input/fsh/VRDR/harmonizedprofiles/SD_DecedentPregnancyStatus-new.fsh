@@ -24,7 +24,7 @@ This profile is designed to support VRDR and MDI"
 * code = $loinc#69442-2
   * ^short = "Timing of recent pregnancy in relation to death"
 * subject 1..1 
-* subject only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
+* subject only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
   * ^short = "subject"
 * value[x] 1..1 
 * value[x] only CodeableConcept

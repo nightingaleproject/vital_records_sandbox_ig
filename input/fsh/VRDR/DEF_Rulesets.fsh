@@ -100,7 +100,7 @@ RuleSet: primobscodecomponent(code, type)
 * component[{code}] ^short = "{code}"
 
 RuleSet: NCHSObservationCommon
-* subject only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
+* subject only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
 * subject ^short = "Decedent"
 // * effective[x] 1..1
 * effective[x] only dateTime

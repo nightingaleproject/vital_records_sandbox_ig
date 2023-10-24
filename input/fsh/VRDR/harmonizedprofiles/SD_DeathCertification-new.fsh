@@ -19,4 +19,4 @@ Description: "Death Certification Procedure (USCoreProcedure). The procedure whe
 //* performer 1..1
 * performer.function 1..1
 * performer.function from CertifierTypesVS (required)
-* performer.actor only Reference(PractitionerVitalRecordsNew)
+* performer.actor only Reference(PractitionerVitalRecords)

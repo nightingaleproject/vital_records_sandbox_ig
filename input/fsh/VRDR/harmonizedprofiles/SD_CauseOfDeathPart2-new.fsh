@@ -21,7 +21,7 @@ Description: "The Observation - Contributing Cause of Death Part 2 profile is us
   * text ^short = "Cause of Death Part 2"
   * text ^maxLength = 240
 * subject 1..1
-* subject only Reference(PatientVitalRecordsNew)
+* subject only Reference(PatientVitalRecords)
   * ^label = "The decedent"
   * ^short = "The decedent"
 * performer only Reference(USCorePractitionerProfile)

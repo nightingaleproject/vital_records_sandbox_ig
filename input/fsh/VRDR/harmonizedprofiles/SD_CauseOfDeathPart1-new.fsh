@@ -19,7 +19,7 @@ Description: "The Observation - Cause of Death Part 1 profile reflects the order
 * valueCodeableConcept.text ^short = "Cause of Death Part 1, Line a,b,c,d"
 * valueCodeableConcept.text ^maxLength = 120
 * subject 1..1
-* subject only Reference(PatientVitalRecordsNew)
+* subject only Reference(PatientVitalRecords)
   * ^label = "The decedent"
   * ^short = "The decedent"
 * performer ^short = "Certifier"

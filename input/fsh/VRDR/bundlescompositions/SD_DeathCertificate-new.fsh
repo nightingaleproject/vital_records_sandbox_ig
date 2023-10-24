@@ -51,7 +51,7 @@ Description: "The body of the death certificate document (Composition)."
 * attester.mode = #legal (exactly)
 // * attester.time 1..1
 // * attester.time ^short = "Death Certification time."
-* attester.party only Reference(PractitionerVitalRecordsNew)
+* attester.party only Reference(PractitionerVitalRecords)
 * attester.party ^short = "Certifier."
 * event 1..1
 * event only BackboneElement
@@ -83,7 +83,7 @@ Description: "The body of the death certificate document (Composition)."
 * insert BundleSectionSlice(DecedentDemographics, Spouse,  0, 1, DecedentSpouse, DecedentSpouse, DecedentSpouse)
 * insert BundleSectionSlice(DecedentDemographics, Age,  0, 1, DecedentAge, DecedentAge, DecedentAge)
 * insert BundleSectionSlice(DecedentDemographics, BirthRecordID,  0, 1, BirthRecordIdentifier, BirthRecordIdentifier, BirthRecordIdentifier)
-* insert BundleSectionSlice(DecedentDemographics, EducationLevel,  0, 1, ObservationEducationLevelVitalRecordsNew, ObservationEducationLevelVitalRecordsNew, ObservationEducationLevelVitalRecordsNew
+* insert BundleSectionSlice(DecedentDemographics, EducationLevel,  0, 1, ObservationEducationLevelVitalRecords, ObservationEducationLevelVitalRecords, ObservationEducationLevelVitalRecords
 )
 * insert BundleSectionSlice(DecedentDemographics, MilitaryService,  0, 1, DecedentMilitaryService, DecedentMilitaryService, DecedentMilitaryService)
 * insert BundleSectionSlice(DecedentDemographics, UsualWork,  0, 1, DecedentUsualWork, DecedentUsualWork, DecedentUsualWork)
@@ -104,7 +104,7 @@ Description: "The body of the death certificate document (Composition)."
 * insert BundleSectionSlice(DeathInvestigation, DeathDate,  0, 1, DeathDate, DeathDate, DeathDateNew)
 * insert BundleSectionSlice(DeathInvestigation, SurgeryDate,  0, 1, SurgeryDate, SurgeryDate, SurgeryDate)
 //
-* insert BundleSectionSlice(DeathCertification, Certifier,  0, 1, Certifier, Certifier, PractitionerVitalRecordsNew)
+* insert BundleSectionSlice(DeathCertification, Certifier,  0, 1, Certifier, Certifier, PractitionerVitalRecords)
 * insert BundleSectionSlice(DeathCertification, DeathCertification,  0, 1, DeathCertification, DeathCertification, DeathCertificationNew)
 * insert BundleSectionSlice(DeathCertification, MannerOfDeath,  0, 1, MannerOfDeath, MannerOfDeath, MannerOfDeathNew)
 * insert BundleSectionSlice(DeathCertification, CauseOfDeathPart1,  0, 4, CauseOfDeathPart1, CauseOfDeathPart1, CauseOfDeathPart1New)

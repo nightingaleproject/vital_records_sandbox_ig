@@ -147,7 +147,7 @@ Description: "InputRaceAndEthnicityUT-Example1"
 * component[HispanicOther].valueCodeableConcept = $v2-0136#N "No"
 
 Instance: PractitionerUT-Example1
-InstanceOf: PractitionerVitalRecordsNew
+InstanceOf: PractitionerVitalRecords
 Usage: #example
 Description: "PractitionerUT-Example1"
 // * id = "practitioner-ut-example1"
@@ -175,7 +175,7 @@ Description: "BirthRecordIdentifierUT-Example1"
 * component[birthJurisdiction].valueString = "CO"
 
 Instance: EducationUT-Example1
-InstanceOf: ObservationEducationLevelVitalRecordsNew
+InstanceOf: ObservationEducationLevelVitalRecords
 Usage: #example
 Description: "EducationUT-Example1"
 * subject = Reference(DecedentUT-Example1)

@@ -17,6 +17,6 @@ Description: "Demographic Coded Content Bundle (Bundle): A bundle containing ins
 * type = #collection (exactly)
 * insert ProfileBasedEntrySlicing
 * insert BundleSlice(  Father, 0, 1, Father, Father, RelatedPersonFatherNaturalVitalRecords )
-* insert BundleSlice(  Mother, 0, 1, Mother, Mother, PatientMotherVitalRecordsNew )
+* insert BundleSlice(  Mother, 0, 1, Mother, Mother, PatientMotherVitalRecords )
 * insert BundleSlice(  CodedRaceAndEthnicity,  0, 1,  CodedRaceAndEthnicity,  CodedRaceAndEthnicity,  CodedRaceAndEthnicityNew)
 * insert BundleSlice(  InputRaceAndEthnicity,  0, 1,  InputRaceAndEthnicity,  InputRaceAndEthnicity,  InputRaceAndEthnicityNew)

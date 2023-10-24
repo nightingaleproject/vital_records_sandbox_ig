@@ -22,7 +22,7 @@ Description: "Emerging Issues (Observation)"
 * code 1..1
 * code = ObservationsCS#emergingissues // "NCHS-required Parameter Slots for Emerging Issues"
 * subject 1..1
-* subject only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
+* subject only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
 * effective[x] 0..0
 * value[x] 0..0
 * component ^slicing.discriminator.type = #value
