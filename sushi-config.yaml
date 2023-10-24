@@ -465,7 +465,6 @@ groups:
       - CompositionProviderFetalDeathReportNew
       - CompositionProviderLiveBirthReportNew
       - DemographicCodedContentBundleBFDR
-
       - ConditionChorioamnionitis
       - ConditionCodedInitiatingFetalDeathCauseOrCondition
       - ConditionCodedOtherFetalDeathCauseOrCondition
@@ -506,7 +505,7 @@ groups:
       #- ObservationPregnancyRiskFactorNew
       #- PatientDecedentFetusNew
       #- PatientMotherNew
-            - ObservationCigaretteSmokingBeforeDuringPregnancy
+      - ObservationCigaretteSmokingBeforeDuringPregnancy
       - ObservationDateOfFirstPrenatalCareVisit
       - ObservationDateOfLastLiveBirth
       - ObservationDateOfLastOtherPregnancyOutcome
@@ -1013,7 +1012,7 @@ groups:
   VRDRValueSets:
     name: VRDR ValueSets
     resources:    
-            - ActivityAtTimeOfDeathVS
+      - ActivityAtTimeOfDeathVS
       - AdministrativeGenderVS
       - BirthplaceCountryVS
       - CanadaProvincesVS

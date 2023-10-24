@@ -66,6 +66,7 @@ Description: "This Composition profile represents data sent from an MDI informat
   * ^short = "This slice contains demographic information about the decedent that is not represented in the decedent Patient profile."
   * ^definition = "This section contains demographic information about the decedent that is not represented in the decedent Patient profile."
   * code  = CodeSystemMDI#demographics
+  * code 1..1
     * ^definition = "Demographic information section"
     * text MS
   * text MS
@@ -73,6 +74,7 @@ Description: "This Composition profile represents data sent from an MDI informat
   * ^short = "This slice contains circumstances of the death."
   * ^definition = "This section contains circumstances of the death."
   * code  = CodeSystemMDI#circumstances
+  * code 1..1
     * ^definition = "Circumstances of the death section"
   * entry MS
     * ^short = "Entries that are contained in the Circumstances section"
@@ -111,6 +113,7 @@ Description: "This Composition profile represents data sent from an MDI informat
   * ^short = "This slice contains jurisdictional information about the death."
   * ^definition = "This section contains jurisdictional information about the death."
   * code = CodeSystemMDI#jurisdiction
+  * code 1..1
     * ^definition = "Jurisdiction section"
   * entry MS
     * ^short = "Entries that are contained in the Jurisdiction section"
@@ -170,6 +173,7 @@ Description: "This Composition profile represents data sent from an MDI informat
   * ^short = "This slice contains relevant medical history about the decedent."
   * ^definition = "This section contains relevant medical history about the decedent."
   * code = CodeSystemMDI#medical-history
+  * code 1..1
     * ^definition = "Medical history section"
   * text MS
     * ^label = "Narrative medical condition"
@@ -190,6 +194,7 @@ Description: "This Composition profile represents data sent from an MDI informat
   * ^short = "This slice contains exam and autopsy information."
   * ^definition = "This section contains exam and autopsy information."
   * code = CodeSystemMDI#exam-autopsy
+  * code 1..1
     * ^definition = "Exam/Autopsy section"
   * text ..1 MS
     * ^label = "Description of autopsy findings"
@@ -201,13 +206,15 @@ Description: "This Composition profile represents data sent from an MDI informat
 //     * ^short = "If autopsy was performed, if autopsy findings are available, and the autopsy Performer"
 //     * ^definition = "If autopsy was performed, if autopsy findings are available, and the autopsy Performer"
 // * section[narratives] ^label = "This slice contains additional death investigation narrative descriptions."
-* insert BundleSectionSlice(exam-autopsy, autopsy-performed, 0, 1,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], ObservationAutopsyPerformedIndicator )
+* insert BundleSectionSlice(exam-autopsy, autopsy-performed, 0, *,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], ObservationAutopsyPerformedIndicator )
+* insert BundleSectionSlice(exam-autopsy, autopsy-location, 0, *,  [[If autopsy was performed, location.]],  [[If autopsy was performed, location.]], USCoreOrganizationProfile or USCoreLocation )
+
 
 * section[narratives] ^label = "This slice contains additional death investigation narrative descriptions."
   * ^short = "This slice contains additional death investigation narrative descriptions."
   * ^definition = "This slice contains additional death investigation narrative descriptions."
   * code = CodeSystemMDI#narratives
-  * code MS
+  * code 1..1 MS
   * text MS
     * ^label = "Additional death investigation narrative descriptions."
     * ^short = "Additional death investigation narrative descriptions."
