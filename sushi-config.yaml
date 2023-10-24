@@ -188,7 +188,7 @@ menu:
     Capability Statement: CapabilityStatement-CapabilityStatement-bfdr.html
     Changes: bfdr_change_log.html
     Content Transitions: bfdr-content-transitions.html
-    Updated BFDR Data Dictionary: bfdr_ije_mapping_new.html
+    BFDR Data Dictionary: bfdr_ije_mapping.html
     Specification: bfdr_the_specification.html
     Forms Mapping: bfdr_vital_records_form_mapping.html
     Terminology: bfdr_terminology.html
@@ -223,7 +223,7 @@ menu:
     Scope: vrdr_scope_of_the_vrdr_fhir_ig.html
     Usage: vrdr_usage.html
     Content Transitions: vrdr-content-transitions.html
-    Updated VRDR Data Dictionary: vrdr_ije_mapping_new.html
+    VRDR Data Dictionary: vrdr_ije_mapping.html
     Credits: vrdr_credits.html
     Downloads: vrdr_downloads.html
 
