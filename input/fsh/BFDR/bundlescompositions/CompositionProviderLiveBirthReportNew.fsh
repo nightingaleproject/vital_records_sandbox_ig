@@ -88,7 +88,6 @@ Description: "This Composition profile defines constraints to address the use ca
 * insert BFDRCompositionSectionSlice(motherInformation, marriedDuringPregnancy, 0, 1, Mother married during pregnancy, Was mother married at conception\, at the time of birth\, or at any time between conception and giving birth?, ObservationMotherMarriedDuringPregnancy)   
 * insert BFDRCompositionSectionSlice(motherInformation, ssnRequestedForChild, 0, 1, Was social security number requested for the child, Was social security number requested for the child, ObservationSSNRequestedForChild)     
 * insert BFDRCompositionSectionSlice(motherInformation, mothersEducation, 0, 1, Mother's education, Mother's education, ObservationEducationLevelVitalRecords)   
-* insert BFDRCompositionSectionSlice(motherInformation, EmergingIssues,  0, 1, Emerging Issues, Emerging Issues, ObservationEmergingIssuesVitalRecords)
 * insert BFDRCompositionSectionEntrySlicing(fatherInformation, 0, 92013-2, Provider Live Birth)
 * insert FocusRule(fatherInformation, The focus of this section is the father, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father., RelatedPersonFatherNaturalVitalRecords)
 * insert BFDRCompositionSectionSlice(fatherInformation, paternityAcknowledgementSigned, 0, 1, Paternity acknowledgement signed by father, Whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception\, at the time of birth\, or at any time between conception and giving birth., ObservationPaternityAcknowledgementSigned)   
@@ -101,3 +100,5 @@ Description: "This Composition profile defines constraints to address the use ca
   * entry 1..1
   * entry only Reference(QuestionnaireResponse)
     * ^short = "QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"
+* insert BFDRCompositionSectionEntrySlicing(emergingIssues, 0, EmergingIssue, Provider Live Birth)
+* insert BFDRCompositionSectionSlice(emergingIssues, EmergingIssues,  0, 1, Emerging Issues, Emerging Issues, ObservationEmergingIssuesVitalRecords)

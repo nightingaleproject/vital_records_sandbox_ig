@@ -76,7 +76,6 @@ Description: "This Composition profile contains information of a fetal death and
 * insert BFDRCompositionSectionEntrySlicing(motherInformation, 0, 92014-0, Jurisdiction Fetal Death)
 * insert FocusRule(motherInformation, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
 * insert BFDRCompositionSectionSlice(motherInformation, mothersEducation, 0, 1, Mother's Education, Mother's Education, ObservationEducationLevelVitalRecords)   
-* insert BFDRCompositionSectionSlice(motherInformation, EmergingIssues,  0, 1, Emerging Issues, Emerging Issues, ObservationEmergingIssuesVitalRecords)
 * section contains fatherInformation 0..1
 * section[fatherInformation] ^short = "Father Administrative Section on the Fetal Death Report"
   * ^definition = "This section contains items from the Father administrative section on the Fetal Death Report."
@@ -85,6 +84,8 @@ Description: "This Composition profile contains information of a fetal death and
     * ^short = "Father's administrative information"
     * ^definition = "Father's administrative information"
 * insert FocusRule(fatherInformation, The focus of this section is the father, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father., RelatedPersonFatherNaturalVitalRecords)
+* insert BFDRCompositionSectionEntrySlicing(emergingIssues, 0, EmergingIssue, Jurisdiction Fetal Death)
+* insert BFDRCompositionSectionSlice(emergingIssues, EmergingIssues,  0, 1, Emerging Issues, Emerging Issues, ObservationEmergingIssuesVitalRecords)
 //* insert BFDRCompositionSectionEntrySlicing(editFlags, 1, 92012-4, Jurisdiction Fetal Death)
 //* section[editFlags].entry ..8
 //* insert BFDRCompositionSectionSlice(editFlags, editFlagWeightOfFetus, 1, 1, Birth weight edit flag, Birth weight edit flag, ObservationEditFlagBirthweight)   

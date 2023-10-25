@@ -16,7 +16,7 @@ Id: Observation-education-level-vr
 Title: "Observation - Education Level Vital Records"
 Description: "The highest degree or level of schooling completed by the decedent or parent. 
 This profile is designed to supplant similar profile in VRDR"
-* code from ValueSetEducationLevelPersonVitalRecordsNew (required) //created new valueset to include code for decedent's highest level of education, 80913-7
+* code from ValueSetEducationLevelPersonVitalRecords (required) //created new valueset to include code for decedent's highest level of education, 80913-7
   * ^short = "Persons for whom education level can be reported."
   * ^binding.description = "EducationLevelPerson"
 * subject 1..1

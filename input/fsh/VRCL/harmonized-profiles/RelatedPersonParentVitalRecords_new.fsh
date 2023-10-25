@@ -24,7 +24,7 @@ VRCL also contains profiles for Natural Father and Gestational Mother - should V
 whereas code for Natural Father is NFTH and Gestational Mother is GEST.
 */
 Profile: RelatedPersonParentVitalRecords
-Parent: RelatedPerson
+Parent: USCoreRelatedPerson
 Id: RelatedPerson-parent-vr
 Title: "Related Person - Parent Vital Records"
 Description: "The RelatedPerson profile contains constraints common to the Mother and Father profiles. Serves as resource profile for RelatedPersonMother and RelatedPersonFather. 
@@ -46,7 +46,7 @@ This profile is designed to supplant the similar profile in VRDR"
 * identifier[SSN] ^short = "SSN if available and appropriate to send"
   * type 1..1 
   * type = $v2-0203#SS
-* patient only Reference(Patient) //generalized to USCorePatient
+* patient only Reference(PatientVitalRecords) //generalized to USCorePatient
 //* patient MS - meaningless
 * relationship 1.. 
 * name 1.. 

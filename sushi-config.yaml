@@ -383,7 +383,7 @@ groups:
       - CodeSystemDeathPregnancyStatusVitalRecords
       - EditFlagsCS
       - FetalDeathCauseOrConditionCS
-      - CodeSystemInformantRelationshipToMotherNew
+      - CodeSystemInformantRelationshipToMother
       - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemLocationTypeVitalRecordsNew
       - CodeSystemMDI
@@ -396,9 +396,9 @@ groups:
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetBirthAttendantTitles
       - ValueSetBirthDeliveryOccurred
-      - ValueSetContributoryTobaccoUseVitalRecordsNew
+      - ValueSetContributoryTobaccoUseVitalRecords
       - ValueSetDeliveryRoutes
-      - ValueSetEducationLevelPersonVitalRecordsNew
+      - ValueSetEducationLevelPersonVitalRecords
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetFetalDeathTimePoints
       - ValueSetFetalPresentations
@@ -413,11 +413,10 @@ groups:
     name: VRCL ValueSets
     resources:
       - ValueSetApgarTimingVitalRecords    
-      - ValueSetCertifierTypes  
+      - ValueSetCertifierTypesVitalRecords  
       - ValueSetDateEstablishmentApproachVitalRecords
       - ValueSetDatePartVitalRecords
       - ValueSetDeathPregnancyStatusVitalRecords
-      - ValueSetEducationLevelPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetMannerOfDeathVitalRecords
       - ValueSetMotherRelationshipVitalRecords
@@ -531,7 +530,7 @@ groups:
       - ObservationICUAdmission
       - ObservationInfantBreastfedAtDischarge
       - ObservationLaborTrialAttempted
-      - ObservationMethodOfDisposition
+      #- ObservationMethodOfDisposition
       - ObservationMotherMarriedDuringPregnancy
       - ObservationMotherReceivedWICFood
       - ObservationNICUAdmission
@@ -783,7 +782,7 @@ groups:
       - observation-icu-admission-jada-ann-quinn
       - observation-infant-breastfed-at-discharge-babyg-quinn
       - observation-labor-trial-attempted-babyg-quinn
-      - observation-method-of-disposition-not-named
+      #- observation-method-of-disposition-not-named
       - observation-mother-married-during-pregnancy-jada-ann-quinn
       - observation-mother-received-wic-food-carmen-teresa-lee
       - observation-mother-received-wic-food-jada-ann-quinn

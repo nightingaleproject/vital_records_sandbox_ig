@@ -1,6 +1,7 @@
 ## Change Log
 
-
+### As of 9 October 2023
+- LocationDeathVitalRecords and LocationInjuryVitalRecords were superseded. VRDR and MDI will use SD_DeathLocation and SD_InjuryLocation profiles. 
 
 ### As of 9 October 2023
 

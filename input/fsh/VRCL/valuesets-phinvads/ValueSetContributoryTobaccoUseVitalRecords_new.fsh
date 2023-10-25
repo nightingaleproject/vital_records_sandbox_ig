@@ -1,5 +1,5 @@
-ValueSet: ValueSetContributoryTobaccoUseVitalRecordsNew
-Id: ValueSet-contributory-tobacco-use-vr-new
+ValueSet: ValueSetContributoryTobaccoUseVitalRecords
+Id: ValueSet-contributory-tobacco-use-vr
 Title: "ValueSet - Contributory Tobacco Use Vital Records"
 Description: "This value set contains codes that describe whether tobacco use contributed towards death"
 * insert SNOMEDCopyright
