@@ -119,12 +119,13 @@ Description: "DecedentUT-Example1"
 * maritalStatus = $v3-MaritalStatus#S "Never Married"
 
 Instance: InputRaceAndEthnicityUT-Example1
-InstanceOf: InputRaceAndEthnicityNew
+InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "InputRaceAndEthnicityUT-Example1"
 // * id = "0a1ded2c-6140-4abc-9128-0af93e2f2ea5"
 * status = #final
 * subject = Reference(DecedentUT-Example1)
+* code = #inputraceandethnicity 
 * component[White].valueBoolean = true
 * component[BlackOrAfricanAmerican].valueBoolean = false
 * component[AmericanIndianOrAlaskanNative].valueBoolean = true

@@ -34,4 +34,4 @@ Usage: #definition
   * profile = Canonical(CompositionCodedCauseOfFetalDeathNew)
 * document[+]
   * mode = #consumer
-  * profile = Canonical(CompositionCodedRaceAndEthnicityNew)
+  * profile = Canonical(CompositionCodedRaceAndEthnicity)

@@ -457,7 +457,7 @@ groups:
     resources:
       - BundleDocumentBFDRNew
       - CompositionCodedCauseOfFetalDeathNew
-      - CompositionCodedRaceAndEthnicityNew
+      - CompositionCodedRaceAndEthnicity
       - CompositionJurisdictionFetalDeathReportNew
       - CompositionJurisdictionLiveBirthReportNew
       - CompositionProviderFetalDeathReportNew
@@ -867,7 +867,6 @@ groups:
       - CauseOfDeathPart1New
       - CauseOfDeathPart2New
       - Certifier
-      - CodedRaceAndEthnicity
       - CodingStatusValues
       - DeathCertificateDocumentNew 
       - DeathCertificateNew

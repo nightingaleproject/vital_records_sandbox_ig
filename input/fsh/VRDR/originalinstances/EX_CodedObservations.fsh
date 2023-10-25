@@ -102,11 +102,12 @@ Description: "ActivityAtTimeOfDeath-Example1"
 * valueCodeableConcept = ActivityAtTimeOfDeathCS#1 "While engaged in leisure activities."
 
 Instance: CodedRaceAndEthnicity-Example1
-InstanceOf: CodedRaceAndEthnicity
+InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "CodedRaceAndEthnicity-Example1"
 * insert AddMetaProfile(CodedRaceAndEthnicity)
 * status = #final
+* code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicity
 * subject.display = "NCHS generated"
 * component[FirstEditedCode].valueCodeableConcept = RaceCodeCS#101 "White"
 * component[SecondEditedCode].valueCodeableConcept = RaceCodeCS#122 "Israeli"
@@ -116,11 +117,12 @@ Description: "CodedRaceAndEthnicity-Example1"
 
 
 Instance: InputRaceAndEthnicity-Example1
-InstanceOf: InputRaceAndEthnicity
+InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "InputRaceAndEthnicity-Example1"
 * insert AddMetaProfile(InputRaceAndEthnicity)
 * status = #final
+* code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicity
 * subject.display = "NCHS generated"
 * component[White].valueBoolean = true
 * component[BlackOrAfricanAmerican].valueBoolean = false
