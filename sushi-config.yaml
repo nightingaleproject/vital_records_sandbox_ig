@@ -385,7 +385,7 @@ groups:
       - FetalDeathCauseOrConditionCS
       - CodeSystemInformantRelationshipToMother
       - CodeSystemLocalComponentCodesVitalRecords
-      - CodeSystemLocationTypeVitalRecordsNew
+      - CodeSystemLocationTypeVitalRecords
       - CodeSystemMDI
       - CodeSystemAbnormalConditionsNewborn
 
