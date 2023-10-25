@@ -11,16 +11,16 @@ RuleSet: PlaceComponent(len, number)
 
 
 
-Profile: EmergingIssues
+Profile: ObservationEmergingIssuesVitalRecords
 Parent: Observation
-Id: vrdr-emerging-issues
-Title: "Emerging Issues"
+Id: Observation-emerging-issues-vr
+Title: "Observation - Emerging Issues Vital Records"
 Description: "Emerging Issues (Observation)"
-* insert RequireMetaProfile(EmergingIssues)
+* insert RequireMetaProfile(ObservationEmergingIssuesVitalRecords)
 * status 1..1
 * status = #final (exactly)
 * code 1..1
-* code = ObservationsCS#emergingissues // "NCHS-required Parameter Slots for Emerging Issues"
+* code = CodeSystemLocalObservationsCodesVitalRecords#emergingissues // "NCHS-required Parameter Slots for Emerging Issues"
 * subject 1..1
 * subject only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
 * effective[x] 0..0

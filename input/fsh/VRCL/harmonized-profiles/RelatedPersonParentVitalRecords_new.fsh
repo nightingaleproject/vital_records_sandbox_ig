@@ -32,8 +32,8 @@ This profile is designed to supplant the similar profile in VRDR"
 * extension contains
     ExtensionRelatedPersonDeceasedVitalRecords named deceased 0..1 and
     ExtensionRelatedpersonBirthplaceVitalRecords named birthPlace 0..1 and
-    USCoreRaceExtension named race 1..1 and
-    USCoreEthnicityExtension named ethnicity 1..1 
+    USCoreRaceExtension named race 0..1 and //relaxed constraint from 1..1 to 0..1
+    USCoreEthnicityExtension named ethnicity 0..1 //relaxed constraint from 1..1 to 0..1
 * extension[race] ^short = "If race is unknown, use UNK from the bound value set."
 * extension[ethnicity] ^short = "If ethnicity is unknown omit both coded data fields."
 * identifier 

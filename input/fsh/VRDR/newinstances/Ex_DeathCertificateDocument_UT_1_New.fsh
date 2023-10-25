@@ -370,7 +370,7 @@ Description: "ProcedureDeathCertificationUT-Example1"
 * performedDateTime = "2021-11-14T16:39:40-05:00"
 
 Instance: EmergingIssuesUT-Example1
-InstanceOf: EmergingIssues
+InstanceOf: ObservationEmergingIssuesVitalRecords
 Usage: #example
 Description: "EmergingIssuesUT-Example1"
 // * id = "3a1d5d86-4399-48ad-9d55-a22ddd283bfa"

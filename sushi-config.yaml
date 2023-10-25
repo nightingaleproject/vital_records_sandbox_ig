@@ -303,19 +303,20 @@ groups:
     name: VRCL Profiles
     resources:
       - ObservationCodedRaceAndEthnicityVitalRecords
-      - ObservationEducationLevelVitalRecordsNew
+      - ObservationEducationLevelVitalRecords
       - ObservationInputRaceAndEthnicityVitalRecords
-      - PatientChildVitalRecordsNew
-      - PatientDecedentFetusVitalRecordsNew
-      - PatientMotherVitalRecordsNew
-      - PatientVitalRecordsNew
-      - PractitionerVitalRecordsNew
-      - RelatedPersonFatherVitalRecordsNew
-      - RelatedPersonMotherVitalRecordsNew
-      - RelatedPersonParentVitalRecordsNew
-      - LocationDeathVitalRecords
-      - LocationInjuryVitalRecords
+      - PatientChildVitalRecords
+      - PatientDecedentFetusVitalRecords
+      - PatientMotherVitalRecords
+      - PatientVitalRecords
+      - PractitionerVitalRecords
+      - RelatedPersonFatherVitalRecords
+      - RelatedPersonMotherVitalRecords
+      - RelatedPersonParentVitalRecords
+      #- LocationDeathVitalRecords
+      #- LocationInjuryVitalRecords
       - ObservationAutopsyPerformedIndicatorVitalRecords
+      - ObservationEmergingIssuesVitalRecords
       - ObservationParentEducationLevelVitalRecords
       - ObservationRaceVitalRecords
       - ObservationTabulatedEthnicityVitalRecords
@@ -330,15 +331,15 @@ groups:
       - ExtensionWithinCityLimitsIndicatorVitalRecords
       - ExtensionDatePartAbsentReasonVitalRecords
       - ExtensionPartialDateTimeVitalRecords
-      - BypassEditFlag
-      - CityCode
-      - DistrictCode
-      - PostDirectional
-      - PreDirectional
-      - StreetDesignator
-      - StreetName
-      - StreetNumber
-      - UnitOrAptNumber
+      - ExtensionBypassEditFlagVitalRecords
+      - ExtensionCityCodeVitalRecords
+      - ExtensionDistrictCodeVitalRecords
+      - ExtensionPostDirectionalVitalRecords
+      - ExtensionPreDirectionalVitalRecords
+      - ExtensionStreetDesignatorVitalRecords
+      - ExtensionStreetNameVitalRecords
+      - ExtensionStreetNumberVitalRecords
+      - ExtensionUnitOrAptNumberVitalRecords
 
 
   # VRCommonProfiles:
@@ -467,13 +468,13 @@ groups:
   BFDRProfiles:
     name: BFDR Profiles
     resources:
-      - BundleDocumentBFDRNew
-      - CompositionCodedCauseOfFetalDeathNew
+      - BundleDocumentBFDR
+      - CompositionCodedCauseOfFetalDeath
       - CompositionCodedRaceAndEthnicity
-      - CompositionJurisdictionFetalDeathReportNew
-      - CompositionJurisdictionLiveBirthReportNew
-      - CompositionProviderFetalDeathReportNew
-      - CompositionProviderLiveBirthReportNew
+      - CompositionJurisdictionFetalDeathReport
+      - CompositionJurisdictionLiveBirthReport
+      - CompositionProviderFetalDeathReport
+      - CompositionProviderLiveBirthReport
       - DemographicCodedContentBundleBFDR
       - ConditionPrepregnancyHypertension
       - ConditionEclampsiaHypertension
@@ -895,14 +896,12 @@ groups:
       - CodingStatusValues
       - DeathLocation
       - DecedentAge
-      #- DecedentDispositionMethod
       - DecedentFather
       - DecedentMilitaryService
       - DecedentMother
       - DecedentSpouse
       - DecedentUsualWork
       - DispositionLocation
-      - EmergingIssues
       - EntityAxisCauseOfDeath
       - ExaminerContacted
       - FuneralHome
