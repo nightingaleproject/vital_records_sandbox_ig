@@ -12,4 +12,4 @@ Description: "Decedent Military Service (Observation)"
 * subject only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
 * value[x] 1..1
 * value[x] only CodeableConcept
-* value[x] from YesNoUnknownVS (required)
+* value[x] from ValueSetYesNoUnknownVitalRecords (required)

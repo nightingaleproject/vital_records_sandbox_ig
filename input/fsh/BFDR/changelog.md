@@ -36,7 +36,7 @@
 - ObservationEditFlagBirthweight
 - ObservationEditFlagEstimateOfGestation
 - ObservationEditFlagFathersDateOfBirth
-- ObservationEditFlagFathersEducation.fsh
+- ObservationEditFlagFathersEducation
 - ObservationEditFlagMothersDateOfBirth
 - ObservationEditFlagMothersDeliveryWeight
 - ObservationEditFlagMothersEducation
