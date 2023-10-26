@@ -60,7 +60,8 @@ Description: "This abstract Patient profile includes common extensions and slici
     * extension contains $data-absent-reason named dataAbsentReason 0..1 
 
 * birthDate.extension contains
-    ExtensionPartialDateTimeVitalRecords named partialDate 0..1 and
+    ExtensionPartialDateVitalRecords named partialDate 0..1 and
+    //PartialDate named partialDate 0..1 and
     ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..*  and
     $patient-birthTime named birthTime 0..1 and
     BypassEditFlag named bypassEditFlag 0..1

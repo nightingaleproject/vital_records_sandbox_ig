@@ -28,7 +28,7 @@ Description: "This Patient profile represents the woman who gave birth to, or de
 * link[mother] ^short = "Link to the birth mother's RelatedPerson record"
   * other only Reference(RelatedPersonMotherVitalRecords)
   * other MS
-    * ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
-    * ^type.extension.valueBoolean = false
   * type = #seealso
   * type MS
+    * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
+    * ^extension.valueBoolean = false
