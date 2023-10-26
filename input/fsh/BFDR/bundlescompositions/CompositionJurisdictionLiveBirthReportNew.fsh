@@ -10,13 +10,13 @@ Description: "This Composition profile contains information of a live birth and 
 * extension contains
     ExtensionLiveBirthCertificateNumber named liveBirthCertificateNumber 1..1  and
     ExtensionLiveBirthLocalFileNumber named liveBirthLocalFileNumber 0..1  and
-    ExtensionDateFiledByRegistrar named dateFiledByRegistrar 1..1 and
-    ReplaceStatus named replacementStatus 0..1
+    ExtensionDateFiledByRegistrar named dateFiledByRegistrar 1..1
+    // ReplaceStatus named replacementStatus 0..1
 * extension[liveBirthCertificateNumber] ^short = "Birth Number"
 * extension[liveBirthLocalFileNumber] ^short = "Local File No."
 * extension[dateFiledByRegistrar] ^short = "Date filed by registrar"
 // Status is deprecated (now flag in message header)
-* extension[replacementStatus] ^short = "Replace Status (deprecated)"
+// * extension[replacementStatus] ^short = "Replace Status (deprecated)"
 * status 
   * ^short = "In the case of a live birth sent in error, a status of 'entered-in-error' must be set."
   * ^definition = "In the case of a live birth sent in error, a status of 'entered-in-error' must be set."
