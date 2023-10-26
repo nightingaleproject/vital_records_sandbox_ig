@@ -1,17 +1,281 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# This is not relevant for our application
+# MDI 
+# APPROVED by HL7 Cross Group Projects WG, Minutes: (https://confluence.hl7.org/pages/viewpage.action?pageId=90341999 & https://confluence.hl7.org/pages/viewpage.action?pageId=90358833)
+US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+US FHIR Usage rules require that all profiles on Specimen derive from the core US profile
+
+
+
+# VRCL
+# APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
+US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+# External value sets
+Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
+# Information messages about draft condition category codes used in US Core
+INFORMATION: Condition/condition-eclampsia-hypertension-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
+INFORMATION: Condition/condition-gestational-diabetes-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
+INFORMATION: Condition/condition-gestational-hypertension-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
+INFORMATION: Condition/condition-prepregnancy-diabetes-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
+INFORMATION: Condition/condition-prepregnancy-hypertension-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
+# This is the code that is used in the Death Certification VRDR profile
+The code '103693007' is valid but is not active
+
+
+
+
+
+# VRDR
+# APPROVED by HL7 Cross Group Projects WG: US Core Observation Profiles are not an  appropriate basis for the following VRDR Observation profiles,  which are only for use in a Vital Records Exchange. (Minutes: https://confluence.hl7.org/display/CGP/2022-08-11+Cross-Group+Projects+Workgroup+Call )
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-activity-at-time-of-death').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-automated-underlying-cause-of-death').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-autopsy-performed-indicator').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-birth-record-identifier').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part1').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part2').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-age').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-disposition-method').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-education-level').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-military-service').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-pregnancy-status').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-usual-work').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-emerging-issues').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-entity-axis-cause-of-death').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-examiner-contacted').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-injury-incident').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-manner-of-death').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-manual-underlying-cause-of-death').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-place-of-injury').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-record-axis-cause-of-death').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-surgery-date').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-tobacco-use-contributed-to-death').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
+# APPROVED by HL7  Cross Group Projects WG: US Core Observation Profiles are not an appropriate basis for the following VRDR Observation profiles, which are only for use in a Vital Records Exchange. Systems exchanging these data more broadly should reference US Core. (Minutes: https://confluence.hl7.org/display/CGP/2022-08-11+Cross-Group+Projects+Workgroup+Call )
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-coded-race-and-ethnicity').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-input-race-and-ethnicity').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
+# DeathCertificateDocument is a Bundle of type document.  Only the first bundle entry (entry[0]), a DeathCertificate (Composition) is required and no other entries are specified in the profile. The entries referenced by the Composition are also required.  As a result, informational messages on entries 1 and beyond are not indicative of any actual issue.
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[14]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[16]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[17]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[18]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[19]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[20]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[21]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[22]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[23]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[24]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[25]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[26]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[27]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[28]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[29]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example1: Bundle.entry[30]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[14]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[16]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[17]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[18]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[19]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[20]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[21]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[22]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[23]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[24]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[25]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[26]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[27]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[28]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[29]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[30]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[31]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[32]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[33]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[34]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[35]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[36]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[37]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-Example2: Bundle.entry[38]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[14]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[16]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[17]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[18]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[19]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[20]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[21]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[22]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[23]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-1: Bundle.entry[24]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[14]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[16]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[17]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[18]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[19]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[20]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[21]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[22]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[23]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-ID-5: Bundle.entry[24]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[14]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[16]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[17]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-NJ-1: Bundle.entry[18]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[14]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[16]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[17]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[18]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[19]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[20]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[21]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[22]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[23]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+INFORMATION: Bundle/DeathCertificateDocument-UT-1: Bundle.entry[24]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document|2.2.0
+
+# TRX, IJE,  MRE are proprietary codesystems used in Interjurisdictional Exchange of Death Records.  The whole point of these conceptmaps is to make it easy to transition to the ValueSets used in this IG. The codesystem identifers TRX, IJE and MRE are not proper codesystem URIs.  Work is underway to define proper URIs that will be included in future versions of this IG. 
+of this concept map.
+WARNING: ConceptMap/ActivityAtTimeOfDeathCM: ConceptMap.group[0].source: The Source Code System TRX is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/AdministrativeGenderCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/CertifierTypesCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/CertifierTypesCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/ContributoryTobaccoUseCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/ContributoryTobaccoUseCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/EditBypass01234CM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/EditBypass0124CM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/EditBypass012CM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/EditBypass01CM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/EducationLevelCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/EducationLevelCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/EducationLevelCM: ConceptMap.group[2].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/FilingFormatCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/HispanicNoUnknownCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/HispanicNoUnknownCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/HispanicOriginCM: ConceptMap.group[0].source: The Source Code System MRE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/IntentionalRejectCM: ConceptMap.group[0].source: The Source Code System TRX is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/MannerOfDeathCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/MaritalStatusCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/MaritalStatusCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/MethodOfDispositionCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/MethodOfDispositionCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/PlaceOfDeathCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/PlaceOfDeathCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/PlaceOfInjuryCM: ConceptMap.group[0].source: The Source Code System TRX is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/PlaceOfInjuryCM: ConceptMap.group[1].source: The Source Code System TRX is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/PregnancyStatusCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/PregnancyStatusCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/RaceCodeCM: ConceptMap.group[0].source: The Source Code System MRE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/RaceMissingValueReasonCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/RaceRecode40CM: ConceptMap.group[0].source: The Source Code System MRE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/ReplaceStatusCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/SpouseAliveCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/SpouseAliveCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/SystemRejectCM: ConceptMap.group[0].source: The Source Code System TRX is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/TransaxConversionCM: ConceptMap.group[0].source: The Source Code System TRX is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/TransportationIncidentRoleCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/TransportationIncidentRoleCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/UnitsOfAgeCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/UnitsOfAgeCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/YesNoUnknownCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/YesNoUnknownCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/YesNoUnknownNotApplicableCM: ConceptMap.group[0].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/YesNoUnknownNotApplicableCM: ConceptMap.group[1].source: The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+
+# Publisher has trouble with a locally-defined ValueSet.   Valueset is AOK and unchanged since previous versions.
+INFORMATION: ValueSet/vrdr-race-code-vs: ValueSet.compose.include[0]: The value set include has too many codes to validate (1,168)
+WARNING: ValueSet.where(id = 'vrdr-race-code-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs
+
+# May be best practice, but not needed in this IG
 Best Practice Recommendation: In general, all observations should have a performer
 Best Practice Recommendation: In general, all observations should have an effective[x] ()
 
 # This is a publisher induced issue.   The extension in question is introduced by the publisher, not sushi.   See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/New.20ConceptMap.20Warning.20--.20induced.20by.20IG.20Publisher 
 The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
 
-# tweak the  file
-This element does not match any known slice defined in the profile
+# The code is valid.  THis code will be reconsidered in the next published update of this IG.
+The code '103693007' is valid but is not active
 
 
