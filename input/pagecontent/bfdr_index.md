@@ -31,12 +31,11 @@ This FHIR implementation guide uses the US Core profiles. Where this FHIR implem
 
 This Guide is divided into several pages which are listed at the top of each page in the menu bar.
 
-* Home: Introduction and background for HL7 FHIR® Vital Records Common Profiles Library
+* Home: Introduction and background for HL7 FHIR® Birth and Fetal Death Reporting IG
 * [The Specification](bfdr_the_specification.html): A technical overview of implementing the specification
 * [Use Cases](bfdr_use_cases.html): The use cases supported by this guide
 * Implementer Guidance: The [worksheet Questionnaire format](patient_worksheet_questionnaires.html), [IJE Mapping]), and [Vital Records Forms Mapping](bfdr_vital_records_forms_mapping.html)
 * [Terminology](bfdr_terminology.html): A listing of the value sets used in this guide
-* [Downloads](downloads.html): Links to downloadable artifacts
 * [Change Log](bfdr_change_log.html): Details of changes made in each version of this IG
 * [Artifact Index](artifacts.html): A list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide
 * Appendices: Examples of live birth and fetal death reports and worksheets
