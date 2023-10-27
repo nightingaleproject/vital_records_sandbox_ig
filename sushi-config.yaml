@@ -302,8 +302,8 @@ groups:
   VRCLProfiles:
     name: VRCL Profiles
     resources:
-      - CodedRaceAndEthnicityNew
-      - InputRaceAndEthnicityNew 
+      - ObservationCodedRaceAndEthnicityVitalRecords
+      - ObservationInputRaceAndEthnicityVitalRecords
       - LocationDeathVitalRecords
       - LocationInjuryVitalRecords
       - ObservationAutopsyPerformedIndicatorVitalRecords
@@ -891,7 +891,6 @@ groups:
       - FuneralHome
       - InjuryIncidentNew 
       - InjuryLocation
-      - InputRaceAndEthnicity
       - MannerOfDeathNew 
       - ManualUnderlyingCauseOfDeath
       - MortalityRosterBundle
