@@ -1,5 +1,5 @@
 Profile: RelatedPersonMotherGestationalVitalRecords
-Parent: RelatedPersonMotherVitalRecordsNew
+Parent: RelatedPersonMotherVitalRecords
 Id: RelatedPerson-mother-gestational-vr
 Title: "RelatedPerson - Mother Gestational Vital Records"
 Description: "The woman who gave birth to or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."

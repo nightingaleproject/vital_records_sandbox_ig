@@ -7,7 +7,7 @@ Description: "This Observation profile represents the method of disposition of t
 * code = $loinc#88241-5
   * ^short = "Fetal remains disposition method"
 * subject 1.. MS
-* subject only Reference(PatientDecedentFetusVitalRecordsNew)
+* subject only Reference(PatientDecedentFetusVitalRecords)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 * value[x] from PHVS_FetalRemainsDispositionMethod_NCHS (required)

@@ -7,7 +7,7 @@ Description: "This profile represents whether or not a histological placental ex
 * code = $loinc#73767-6
   * ^short = "Histological placental examination was performed [US Standard Report of Fetal Death]"
 * subject 1.. MS
-* subject only Reference(PatientDecedentFetusVitalRecordsNew)
+* subject only Reference(PatientDecedentFetusVitalRecords)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 * value[x] from ValueSetHistologicalPlacentalExamination (required)

@@ -1,5 +1,5 @@
 Instance: bundle-mdi-to-edrs-a-freeman
-InstanceOf: BundleDocumentMDIToEDRSNew
+InstanceOf: BundleDocumentMDIToEDRS
 Title: "Bundle - MDI to EDRS - Freeman"
 Description: "Bundle - MDI to EDRS: Freeman example"
 Usage: #example

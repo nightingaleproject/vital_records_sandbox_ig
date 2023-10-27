@@ -32,7 +32,7 @@ RuleSet: FocusRule(section, short, def, class)
 * section[{section}].focus ^definition = "{def}"
 * section[{section}].focus only Reference({class})
 
-Profile: CompositionCodedCauseOfFetalDeathNew
+Profile: CompositionCodedCauseOfFetalDeath
 Parent: Composition
 Title: "Composition - Coded Cause of Fetal Death"
 Description: "This profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices."
@@ -45,7 +45,7 @@ Description: "This profile communicates coded cause of fetal death information t
   * ^short = "Cause of death classification and related information Document"
   * ^definition = "Cause of death classification and related information Document"
 * subject 1.. 
-* subject only Reference(PatientDecedentFetusVitalRecordsNew)
+* subject only Reference(PatientDecedentFetusVitalRecords)
 * author ..1 
   * ^short = "The author is the NCHS."
   * ^definition = "The author is the NCHS."

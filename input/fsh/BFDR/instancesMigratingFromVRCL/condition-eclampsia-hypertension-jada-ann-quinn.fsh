@@ -1,5 +1,5 @@
 Instance: condition-eclampsia-hypertension-jada-ann-quinn
-InstanceOf: ConditionEclampsiaHypertensionNew
+InstanceOf: ConditionEclampsiaHypertension
 Title: "Condition - Eclampsia Hypertension - Jada Ann Quinn"
 Description: "Condition - Eclampsia Hypertension: Jada Ann Quinn example"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: observation-decedent-pregnancy-a-freeman
-InstanceOf: DecedentPregnancyStatusNew
+InstanceOf: DecedentPregnancyStatus
 Title: "Observation - Decedent Pregnancy - Freeman"
 Description: "Observation - Decedent Pregnancy: Freeman example"
 Usage: #example

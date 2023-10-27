@@ -1,5 +1,5 @@
 Instance: observation-none-specified-risk-factors-jada-ann-quinn
-InstanceOf: ObservationNoneOfSpecifiedPregnancyRiskFactorsNew
+InstanceOf: ObservationNoneOfSpecifiedPregnancyRiskFactors
 Title: "Observation - None of Specified Risk Factors - Jada Ann Quinn"
 Description: "Observation - Previous Cesarean: Jada Ann Quinn example"
 Usage: #example

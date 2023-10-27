@@ -1,5 +1,5 @@
 Instance: observation-manner-of-death-a-freeman-accidental
-InstanceOf: MannerOfDeathNew
+InstanceOf: MannerOfDeath
 Title: "Observation - Manner of Death - Freeman"
 Description: "Observation - Manner of Death: Freeman - accidental example"
 Usage: #example

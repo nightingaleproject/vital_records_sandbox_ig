@@ -1,5 +1,5 @@
 Instance: practitioner-vital-records-jessica-leung
-InstanceOf: PractitionerVitalRecordsNew
+InstanceOf: PractitionerVitalRecords
 Title: "Practitioner - Vital Records - Jessica Leung"
 Description: "Practitioner - Vital Records: Jessica Leung example"
 Usage: #example

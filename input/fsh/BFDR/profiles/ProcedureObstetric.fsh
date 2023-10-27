@@ -6,7 +6,7 @@ Description: "This profile represents information about a particular medical tre
 * code from ValueSetObstetricProcedure (required)
   * ^short = "The value set contains the list of values used to specify selected medical treatments or invasive / manipulative procedures performed during this pregnancy specifically for management of labor and / or delivery."
   * ^binding.description = "Obstetric Procedures (NCHS)"
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)
 * outcome MS
 * outcome from $procedure-outcome (required)
   * ^short = "Outcome, if procedure was performed."

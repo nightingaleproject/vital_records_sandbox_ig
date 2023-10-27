@@ -1,5 +1,5 @@
 Instance: observation-gestational-age-at-delivery-not-named-w-edit
-InstanceOf: ObservationGestationalAgeAtDeliveryNew
+InstanceOf: ObservationGestationalAgeAtDelivery
 Title: "Observation - Gestational Age at Delivery - Fetus Not Named, with Edit Flag"
 Description: "Observation - Gestational Age at Delivery: Fetus Not Named example, with Edit Flag"
 Usage: #example

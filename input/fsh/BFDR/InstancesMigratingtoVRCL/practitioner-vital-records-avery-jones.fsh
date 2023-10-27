@@ -1,5 +1,5 @@
 Instance: practitioner-vital-records-avery-jones
-InstanceOf: PractitionerVitalRecordsNew
+InstanceOf: PractitionerVitalRecords
 Title: "Practitioner - Vital Records - Avery Jones, MD"
 Description: "Practitioner - Vital Records: Avery Jones, MD example"
 Usage: #example

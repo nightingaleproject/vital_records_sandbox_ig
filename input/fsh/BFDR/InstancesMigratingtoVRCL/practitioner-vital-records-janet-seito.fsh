@@ -1,5 +1,5 @@
 Instance: practitioner-vital-records-janet-seito
-InstanceOf: PractitionerVitalRecordsNew
+InstanceOf: PractitionerVitalRecords
 Title: "Practitioner - Vital Records - Janet Seito"
 Description: "Practitioner - Vital Records: Janet Seito example"
 Usage: #example

@@ -15,7 +15,7 @@ Usage: #definition
 * format[+] = #json
 * document[0]
   * mode = #producer
-  * profile = Canonical(CompositionMDIToEDRSNew)
+  * profile = Canonical(CompositionMDIToEDRS)
 * document[+]
   * mode = #consumer
-  * profile = Canonical(CompositionMDIToEDRSNew)
+  * profile = Canonical(CompositionMDIToEDRS)

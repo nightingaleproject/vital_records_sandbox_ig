@@ -1,5 +1,5 @@
 Instance: observation-parent-education-level-tom-yan-lee-w-edit
-InstanceOf: ObservationEducationLevelVitalRecordsNew
+InstanceOf: ObservationEducationLevelVitalRecords
 Title: "Observation - Parent Education Level - Tom Yan Lee, with Edit Flag"
 Description: "Observation - Parent Education Level: Carmen Teresa Lee example, with Edit Flag"
 Usage: #example

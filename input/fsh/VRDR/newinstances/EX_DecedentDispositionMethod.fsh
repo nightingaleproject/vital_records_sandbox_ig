@@ -1,8 +1,8 @@
 Instance: DecedentDispositionMethod-Example1
-InstanceOf: DecedentDispositionMethodNew
+InstanceOf: DecedentDispositionMethod
 Usage: #example
 Description: "DecedentDispositionMethod-Example1"
-* insert AddMetaProfile(DecedentDispositionMethodNew)
+* insert AddMetaProfile(DecedentDispositionMethod)
 * status = #final
 * subject = Reference(Decedent-Example1)
 * performer = Reference(Mortician-Example1)

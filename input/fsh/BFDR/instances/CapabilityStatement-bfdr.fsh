@@ -18,20 +18,20 @@ Usage: #definition
   // These are produced by  the source of the reports and sent to a Jurisdiction VRO or to NCHS
 * document[0]
   * mode = #producer
-  * profile = Canonical(CompositionJurisdictionLiveBirthReportNew)
+  * profile = Canonical(CompositionJurisdictionLiveBirthReport)
 * document[+]
   * mode = #producer
-  * profile = Canonical(CompositionJurisdictionFetalDeathReportNew)
+  * profile = Canonical(CompositionJurisdictionFetalDeathReport)
 * document[+]
   * mode = #producer
-  * profile = Canonical(CompositionProviderLiveBirthReportNew)
+  * profile = Canonical(CompositionProviderLiveBirthReport)
 * document[+]
   * mode = #producer
-  * profile = Canonical(CompositionProviderFetalDeathReportNew)
+  * profile = Canonical(CompositionProviderFetalDeathReport)
   // These are produced by NCHS and consumed by the source of the reports
 * document[+]
   * mode = #consumer
-  * profile = Canonical(CompositionCodedCauseOfFetalDeathNew)
+  * profile = Canonical(CompositionCodedCauseOfFetalDeath)
 * document[+]
   * mode = #consumer
   * profile = Canonical(CompositionCodedRaceAndEthnicity)

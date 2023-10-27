@@ -1,5 +1,5 @@
 Instance: InjuryIncident-Example1
-InstanceOf: InjuryIncidentNew
+InstanceOf: InjuryIncident
 Usage: #example
 Description: "InjuryIncident-Example1 (with literal transportationRole)"
 * insert AddMetaProfile(InjuryIncident)
@@ -14,7 +14,7 @@ Description: "InjuryIncident-Example1 (with literal transportationRole)"
 * component[transportationRole].valueCodeableConcept.text = "Hoverboard Rider"
 
 Instance: InjuryIncident-Example2
-InstanceOf: InjuryIncidentNew
+InstanceOf: InjuryIncident
 Usage: #example
 Description: "InjuryIncident-Example2 (with coded transportationRole)"
 * insert AddMetaProfile(InjuryIncident)

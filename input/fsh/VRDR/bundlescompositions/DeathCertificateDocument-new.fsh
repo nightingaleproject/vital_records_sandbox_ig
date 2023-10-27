@@ -1,6 +1,6 @@
-Profile: DeathCertificateDocumentNew
+Profile: DeathCertificateDocument
 Parent: Bundle
-Id: vrdr-death-certificate-document-new
+Id: vrdr-death-certificate-document
 Title: "Death Certificate Document New"
 Description: "The resources comprising the death certificate composition (Bundle/Document)."
 * identifier 1..
@@ -20,4 +20,4 @@ Description: "The resources comprising the death certificate composition (Bundle
   * resource 1..
 * entry[DeathCertificate] ^short = "Death Certificate"
   * ^definition = "Death Certificate"
-  * resource only DeathCertificateNew
+  * resource only DeathCertificate

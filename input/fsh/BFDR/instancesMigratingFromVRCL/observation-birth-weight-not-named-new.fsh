@@ -1,5 +1,5 @@
 Instance: observation-birth-weight-not-named
-InstanceOf: ObservationBirthWeightNew
+InstanceOf: ObservationBirthWeight
 Title: "Observation - Birth Weight - Fetus Not Named"
 Description: "Observation - Birth Weight: Fetus Not Named example"
 Usage: #example

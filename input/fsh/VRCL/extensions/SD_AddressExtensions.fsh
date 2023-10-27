@@ -1,4 +1,4 @@
-Extension: CityCode
+Extension: ExtensionCityCodeVitalRecords
 Id: CityCode
 Title: "City Code"
 Description: "City expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)"
@@ -12,7 +12,7 @@ Description: "City expressed as a numeric value.  As of the date of publication,
 //* value[x] only string
 //* valueString from $PHVSCityPlacesNCHS (required)
 
-Extension: DistrictCode
+Extension: ExtensionDistrictCodeVitalRecords
 Id: DistrictCode
 Title: "District Code"
 Description: "District expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)"
@@ -35,32 +35,32 @@ Description: "District expressed as a numeric value.  As of the date of publicat
 // NEED TO WRITE THE INVARIANT!!!!!!  DO WE NEED THIS INVARIANT????
 
 
-Extension: PreDirectional
+Extension: ExtensionPreDirectionalVitalRecords
 Id: PreDirectional
 Title: "PreDirectional"
 Description: "PreDirectional"
 * insert addressextension(10)
-Extension: StreetName
+Extension: ExtensionStreetNameVitalRecords
 Id: StreetName
 Title: "StreetName"
 Description: "StreetName"
 * insert addressextension(50)
-Extension: StreetNumber
+Extension: ExtensionStreetNumberVitalRecords
 Id: StreetNumber
 Title: "StreetNumber"
 Description: "StreetNumber"
 * insert addressextension(10)
-Extension: StreetDesignator
+Extension: ExtensionStreetDesignatorVitalRecords
 Id: StreetDesignator
 Title: "StreetDesignator"
 Description: "StreetDesignator"
 * insert addressextension(10)
-Extension: PostDirectional
+Extension: ExtensionPostDirectionalVitalRecords
 Id: PostDirectional
 Title: "PostDirectional"
 Description: "PostDirectional"
 * insert addressextension(10)
-Extension: UnitOrAptNumber
+Extension: ExtensionUnitOrAptNumberVitalRecords
 Id: UnitOrAptNumber
 Title: "UnitOrAptNumber"
 Description: "UnitOrAptNumber"

@@ -1,5 +1,5 @@
 Instance: condition-prepregnancy-hypertension-jada-ann-quinn
-InstanceOf: ConditionGestationalHypertensionNew
+InstanceOf: ConditionGestationalHypertension
 Title: "Condition - Prepregnancy Hypertension - Jada Ann Quinn"
 Description: "Condition - Prepregnancy Hypertension: Jada Ann Quinn example"
 Usage: #example

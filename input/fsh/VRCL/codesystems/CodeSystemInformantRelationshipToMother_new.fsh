@@ -1,5 +1,5 @@
-CodeSystem: CodeSystemInformantRelationshipToMotherNew
-Id: CodeSystem-informant-relationship-to-mother-new
+CodeSystem: CodeSystemInformantRelationshipToMother
+Id: CodeSystem-informant-relationship-to-mother
 Title: "CodeSystem - Informant Relationship to Mother"
 Description: "This code system contains local codes from PHINVADs Informant Relationship to Mother valueset"
 * ^status = #active

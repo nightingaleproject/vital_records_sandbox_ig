@@ -1,5 +1,5 @@
 Instance: observation-tobacco-use-a-freeman
-InstanceOf: TobaccoUseContributedToDeathNew
+InstanceOf: TobaccoUseContributedToDeath
 Title: "Observation - Tobacco Use - Freeman"
 Description: "Observation - Tobacco Use: Freeman example"
 Usage: #example

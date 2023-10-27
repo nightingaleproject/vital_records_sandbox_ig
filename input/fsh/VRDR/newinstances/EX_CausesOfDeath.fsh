@@ -1,8 +1,8 @@
 Instance: CauseOfDeathPart1-Example1
-InstanceOf: CauseOfDeathPart1New
+InstanceOf: CauseOfDeathPart1
 Usage: #example
 Description: "CauseOfDeathPart1New-Example1"
-* meta.profile = Canonical(CauseOfDeathPart1New)
+* meta.profile = Canonical(CauseOfDeathPart1)
 * valueCodeableConcept.text = "Cardiopulmonary arrest"
 * subject = Reference(Decedent-Example1)
 * component[lineNumber].valueInteger = 1
@@ -11,10 +11,10 @@ Description: "CauseOfDeathPart1New-Example1"
 * status = #final
 
 Instance: CauseOfDeathPart1-Example2
-InstanceOf: CauseOfDeathPart1New
+InstanceOf: CauseOfDeathPart1
 Usage: #example
 Description: "CauseOfDeathPart1New-Example2"
-* meta.profile = Canonical(CauseOfDeathPart1New)
+* meta.profile = Canonical(CauseOfDeathPart1)
 * valueCodeableConcept.text = "Eclampsia"
 * component[lineNumber].valueInteger = 2
 * component[interval].valueString = "3 months"
@@ -23,10 +23,10 @@ Description: "CauseOfDeathPart1New-Example2"
 * status = #final
 
 Instance: CauseOfDeathPart2-Example1
-InstanceOf: CauseOfDeathPart2New
+InstanceOf: CauseOfDeathPart2
 Usage: #example
 Description: "CauseOfDeathPart2New-Example1"
-* meta.profile = Canonical(CauseOfDeathPart2New)
+* meta.profile = Canonical(CauseOfDeathPart2)
 * valueCodeableConcept.text = "hypertensive heart disease"
 * subject = Reference(Decedent-Example1)
 * performer = Reference(Certifier-Example1)

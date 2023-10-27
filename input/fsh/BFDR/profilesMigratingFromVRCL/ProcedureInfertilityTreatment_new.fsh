@@ -1,4 +1,4 @@
-Profile: ProcedureInfertilityTreatmentNew
+Profile: ProcedureInfertilityTreatment
 Parent: USCoreProcedureProfile
 Id: Procedure-infertility-treatment
 Title: "Procedure - Infertility Treatment Vital Records"
@@ -13,4 +13,4 @@ Description: "This Procedure profile records that a pregnancy risk factor of inf
 * code = $sct#445151000124101
 * code MS
   * ^short = "Fertility enhancing drug therapy (procedure)"
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)

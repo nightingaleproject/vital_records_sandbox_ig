@@ -1,5 +1,5 @@
 Instance: patient-decedent-fetus-not-named
-InstanceOf: PatientDecedentFetusVitalRecordsNew
+InstanceOf: PatientDecedentFetusVitalRecords
 Title: "Patient - Decedent Fetus example [Fetus Not Named]"
 Description: "Example of Patient-decedent-fetus-vr (Fetus Not Named)"
 Usage: #example

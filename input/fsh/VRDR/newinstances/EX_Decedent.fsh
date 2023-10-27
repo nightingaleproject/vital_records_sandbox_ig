@@ -1,5 +1,5 @@
 Instance: Decedent-Example3
-InstanceOf: DecedentNew
+InstanceOf: Decedent
 Usage: #example
 Description: "Decedent-Example3 - Stripped down for Mortality Roster"
 * insert AddMetaProfile(DecedentNew)
@@ -45,7 +45,7 @@ Description: "Decedent-Example3 - Stripped down for Mortality Roster"
 
 
 Instance: Decedent-Example2
-InstanceOf: DecedentNew
+InstanceOf: Decedent
 Usage: #example
 Description: "Decedent-Example2 - with birth jurisdiction"
 * insert AddMetaProfile(DecedentNew)
@@ -70,7 +70,7 @@ Description: "Decedent-Example2 - with birth jurisdiction"
 * birthDate.extension[partialDate].extension[day].valueUnsignedInt = 10
 * birthDate.extension[partialDate].extension[month].valueUnsignedInt = 11
 * birthDate.extension[partialDate].extension[year].valueUnsignedInt = 2004
-* address.extension[WithinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
+* address.extension[withinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
 * address.line = "5590 E Lockwood Drive SW, #1"
 * address.city = "Queens"
 * address.state = "NY"
@@ -91,7 +91,7 @@ Description: "Decedent-Example2 - with birth jurisdiction"
 * contact.relationship = $v2-0131#U
 
 Instance: Decedent-Example1
-InstanceOf: DecedentNew
+InstanceOf: Decedent
 Usage: #example
 Description: "Decedent-Example1"
 * insert AddMetaProfile(DecedentNew)
@@ -112,7 +112,7 @@ Description: "Decedent-Example1"
 * birthDate.extension[partialDate].extension[day].valueUnsignedInt = 10
 * birthDate.extension[partialDate].extension[month].valueUnsignedInt = 11
 * birthDate.extension[partialDate].extension[year].valueUnsignedInt = 2004
-* address.extension[WithinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
+* address.extension[withinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
 * address.line = "5590 Lockwood Drive"
 * address.city = "Danville"
 * address.state = "VA"

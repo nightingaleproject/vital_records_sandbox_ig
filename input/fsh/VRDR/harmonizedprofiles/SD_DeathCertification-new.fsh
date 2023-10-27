@@ -1,9 +1,9 @@
-Profile: DeathCertificationNew
+Profile: DeathCertification
 Parent: USCoreProcedureProfile
-Id: vrdr-death-certification-new
+Id: vrdr-death-certification
 Title: "Death Certification Procedure"
 Description: "Death Certification Procedure (USCoreProcedure). The procedure where the certification of death was performed by the certifier (USCoreProcedure)."
-* insert RequireMetaProfile(DeathCertificationNew)
+* insert RequireMetaProfile(DeathCertification)
 // * status only code
 // * status = #completed (exactly)
 // This category code is deprecated by SNOMEDCT.   No real need for category.   Relaxing this constraint.
@@ -19,4 +19,4 @@ Description: "Death Certification Procedure (USCoreProcedure). The procedure whe
 //* performer 1..1
 * performer.function 1..1
 * performer.function from CertifierTypesVS (required)
-* performer.actor only Reference(PractitionerVitalRecordsNew)
+* performer.actor only Reference(PractitionerVitalRecords)

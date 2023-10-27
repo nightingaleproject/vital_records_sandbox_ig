@@ -1,5 +1,5 @@
 Instance: observation-infant-living-babyg-quinn
-InstanceOf: ObservationInfantLivingNew
+InstanceOf: ObservationInfantLiving
 Title: "Observation - Infant Living - Baby G Quinn"
 Description: "Observation - Infant Living: BabyG Quinn example"
 Usage: #example

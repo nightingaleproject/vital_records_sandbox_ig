@@ -16,4 +16,4 @@ Description:   "Coding Status Values contains various status flags that result f
 * parameter[acmeSystemReject].value[x] from SystemRejectVS
 * parameter[transaxConversion].value[x] from TransaxConversionVS
 * parameter[receiptDate].valueDate.extension contains
-    PartialDate named partialDate 0..1
+    ExtensionPartialDateTimeVitalRecords named partialDate 0..1

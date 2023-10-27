@@ -21,9 +21,9 @@ RuleSet: BundleSectionSlice(section, name, min, max, short, def, class)
 
 //* section[{section}].entry[{name}].resource.meta.profile = Canonical({class})
 
-Profile: DeathCertificateNew
+Profile: DeathCertificate
 Parent: Composition
-Id: vrdr-death-certificate-new
+Id: vrdr-death-certificate
 Title: "Death Certificate"
 Description: "The body of the death certificate document (Composition)."
 * insert RequireMetaProfile(DeathCertificate)
@@ -41,7 +41,7 @@ Description: "The body of the death certificate document (Composition)."
 * extension[ReplaceStatus] ^short = "Replace Status (deprecated)"
 * extension[StateSpecificField] ^short = "State Specific Field"
 * subject 1..1
-* subject only Reference(DecedentNew)
+* subject only Reference(Decedent)
 // * date 1..1
 * date ^short = "Date of Registration"
 //* attester 1..1
@@ -51,7 +51,7 @@ Description: "The body of the death certificate document (Composition)."
 * attester.mode = #legal (exactly)
 // * attester.time 1..1
 // * attester.time ^short = "Death Certification time."
-* attester.party only Reference(PractitionerVitalRecordsNew)
+* attester.party only Reference(PractitionerVitalRecords)
 * attester.party ^short = "Certifier."
 * event 1..1
 * event only BackboneElement
@@ -59,7 +59,7 @@ Description: "The body of the death certificate document (Composition)."
 * event.code only CodeableConcept
 * event.code = $sct#103693007 // "Diagnostic procedure (procedure)"
 * event.detail 1..1
-* event.detail only Reference(DeathCertificationNew)
+* event.detail only Reference(DeathCertification)
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
@@ -77,43 +77,43 @@ Description: "The body of the death certificate document (Composition)."
 * insert CompositionSectionEntrySlicing(DecedentDisposition)
 * insert CompositionSectionEntrySlicing(CodedContent)
 //
-* insert BundleSectionSlice(DecedentDemographics, Decedent, 1, 1, Decedent, Decedent, DecedentNew)
+* insert BundleSectionSlice(DecedentDemographics, Decedent, 1, 1, Decedent, Decedent, Decedent)
 * insert BundleSectionSlice(DecedentDemographics, Father,  0, 1, DecedentFather, DecedentFather, DecedentFather)
 * insert BundleSectionSlice(DecedentDemographics, Mother,  0, 1, DecedentMother, DecedentMother, DecedentMother)
 * insert BundleSectionSlice(DecedentDemographics, Spouse,  0, 1, DecedentSpouse, DecedentSpouse, DecedentSpouse)
 * insert BundleSectionSlice(DecedentDemographics, Age,  0, 1, DecedentAge, DecedentAge, DecedentAge)
 * insert BundleSectionSlice(DecedentDemographics, BirthRecordID,  0, 1, BirthRecordIdentifier, BirthRecordIdentifier, BirthRecordIdentifier)
-* insert BundleSectionSlice(DecedentDemographics, EducationLevel,  0, 1, ObservationEducationLevelVitalRecordsNew, ObservationEducationLevelVitalRecordsNew, ObservationEducationLevelVitalRecordsNew
+* insert BundleSectionSlice(DecedentDemographics, EducationLevel,  0, 1, ObservationEducationLevelVitalRecords, ObservationEducationLevelVitalRecords, ObservationEducationLevelVitalRecords
 )
 * insert BundleSectionSlice(DecedentDemographics, MilitaryService,  0, 1, DecedentMilitaryService, DecedentMilitaryService, DecedentMilitaryService)
 * insert BundleSectionSlice(DecedentDemographics, UsualWork,  0, 1, DecedentUsualWork, DecedentUsualWork, DecedentUsualWork)
-* insert BundleSectionSlice(DecedentDemographics, EmergingIssues,  0, 1, EmergingIssues, EmergingIssues, EmergingIssues)
+* insert BundleSectionSlice(DecedentDemographics, EmergingIssues,  0, 1, EmergingIssues, EmergingIssues, ObservationEmergingIssuesVitalRecords)
 * insert BundleSectionSlice(DecedentDemographics, InputRaceAndEthnicity,  0, 1, InputRaceAndEthnicity, InputRaceAndEthnicity, ObservationInputRaceAndEthnicityVitalRecords)
 //
 * insert BundleSectionSlice(DeathInvestigation, ExaminerContacted, 0, 1, ExaminerContacted, ExaminerContacted, ExaminerContacted)
-* insert BundleSectionSlice(DeathInvestigation, PregnancyStatus, 0, 1, DecedentPregnancyStatusNew, DecedentPregnancyStatusNew, DecedentPregnancyStatusNew)
-* insert BundleSectionSlice(DeathInvestigation, TobaccoUse,  0, 1, TobaccoUse, TobaccoUse, TobaccoUseContributedToDeathNew)
+* insert BundleSectionSlice(DeathInvestigation, PregnancyStatus, 0, 1, DecedentPregnancyStatus, DecedentPregnancyStatus, DecedentPregnancyStatus)
+* insert BundleSectionSlice(DeathInvestigation, TobaccoUse,  0, 1, TobaccoUse, TobaccoUse, TobaccoUseContributedToDeath)
 // * insert BundleSectionSlice(DeathInvestigation, DeathOrInjuryLocation,  0, 2, Death or Injury  Location, Death or Injury Location, Location)
 * insert BundleSectionSlice(DeathInvestigation, DeathLocation,  0, 1, Death Location, Death Location, DeathLocation)
 * insert BundleSectionSlice(DeathInvestigation, InjuryLocation,  0, 1, Injury  Location, Injury Location, InjuryLocation)
   // See https://jira.hl7.org/browse/FHIR-41807
   // * insert BundleSectionSlice(DeathInvestigation, PlaceOfInjury,  0, 1, PlaceOfInjury, PlaceOfInjury, PlaceOfInjury)
-* insert BundleSectionSlice(DeathInvestigation, InjuryIncident,  0, 1, InjuryIncident, InjuryIncident, InjuryIncidentNew)
+* insert BundleSectionSlice(DeathInvestigation, InjuryIncident,  0, 1, InjuryIncident, InjuryIncident, InjuryIncident)
 * insert BundleSectionSlice(DeathInvestigation, Autopsy,  0, 1, AutopsyPerformedIndicator, AutopsyPerformedIndicator, AutopsyPerformedIndicator)
 //* insert BundleSectionSlice(DeathInvestigation, DeathLocation,  0, 1, DeathLocation, DeathLocation, DeathLocation)
-* insert BundleSectionSlice(DeathInvestigation, DeathDate,  0, 1, DeathDate, DeathDate, DeathDateNew)
+* insert BundleSectionSlice(DeathInvestigation, DeathDate,  0, 1, DeathDate, DeathDate, DeathDate)
 * insert BundleSectionSlice(DeathInvestigation, SurgeryDate,  0, 1, SurgeryDate, SurgeryDate, SurgeryDate)
 //
-* insert BundleSectionSlice(DeathCertification, Certifier,  0, 1, Certifier, Certifier, PractitionerVitalRecordsNew)
-* insert BundleSectionSlice(DeathCertification, DeathCertification,  0, 1, DeathCertification, DeathCertification, DeathCertificationNew)
-* insert BundleSectionSlice(DeathCertification, MannerOfDeath,  0, 1, MannerOfDeath, MannerOfDeath, MannerOfDeathNew)
-* insert BundleSectionSlice(DeathCertification, CauseOfDeathPart1,  0, 4, CauseOfDeathPart1, CauseOfDeathPart1, CauseOfDeathPart1New)
-* insert BundleSectionSlice(DeathCertification, CauseOfDeathPart2,  0, 1, CauseOfDeathPart2, CauseOfDeathPart2, CauseOfDeathPart2New)
+* insert BundleSectionSlice(DeathCertification, Certifier,  0, 1, Certifier, Certifier, PractitionerVitalRecords)
+* insert BundleSectionSlice(DeathCertification, DeathCertification,  0, 1, DeathCertification, DeathCertification, DeathCertification)
+* insert BundleSectionSlice(DeathCertification, MannerOfDeath,  0, 1, MannerOfDeath, MannerOfDeath, MannerOfDeath)
+* insert BundleSectionSlice(DeathCertification, CauseOfDeathPart1,  0, 4, CauseOfDeathPart1, CauseOfDeathPart1, CauseOfDeathPart1)
+* insert BundleSectionSlice(DeathCertification, CauseOfDeathPart2,  0, 1, CauseOfDeathPart2, CauseOfDeathPart2, CauseOfDeathPart2)
 // * insert BundleSectionSlice(DeathCertification, CauseOfDeathPathway,  0, 1, CauseOfDeathPathway, CauseOfDeathPathway, CauseOfDeathPathway)
 //
 * insert BundleSectionSlice(DecedentDisposition, DispositionLocation,  0, 1, DispositionLocation, DispositionLocation, DispositionLocation)
 * insert BundleSectionSlice(DecedentDisposition, FuneralHome,  0, 1, FuneralHome, FuneralHome, FuneralHome)
-* insert BundleSectionSlice(DecedentDisposition, DispositionMethod,  0, 1, DispositionMethod, DispositionMethod, DecedentDispositionMethodNew)
+* insert BundleSectionSlice(DecedentDisposition, DispositionMethod,  0, 1, DispositionMethod, DispositionMethod, DecedentDispositionMethod)
 * insert BundleSectionSlice(DecedentDisposition, Mortician,  0, 1, Mortician, Mortician, USCorePractitioner)
 //
 * insert BundleSectionSlice(CodedContent, ActivityAtTimeOfDeath,  0, 1,  ActivityAtTimeOfDeath,  ActivityAtTimeOfDeath,  ActivityAtTimeOfDeath)
