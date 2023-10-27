@@ -2,7 +2,7 @@
 Profile: ObservationMotherDeliveryWeightNew
 Parent: USCoreVitalSignsProfile
 Id: Observation-mother-delivery-weight
-Title: "Observation - Mother Delivery Weight Vital Records"
+Title: "Observation - Mother Delivery Weight"
 Description: "The weight of the mother at the time of birth/delivery. Migrated from VRCL."
 * code = $loinc#69461-2
 * subject 1..

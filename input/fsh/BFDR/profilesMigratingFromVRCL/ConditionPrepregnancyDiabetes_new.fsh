@@ -1,7 +1,7 @@
 Profile: ConditionPrepregnancyDiabetesNew
 Parent: USCoreConditionProblemsHealthConcernsProfile
 Id: Condition-prepregnancy-diabetes
-Title: "Condition - Prepregnancy Diabetes Vital Records"
+Title: "Condition - Prepregnancy Diabetes"
 Description: "This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy diabetes."
 // * ^contact.name = "HL7 Public Health Working Group"
 // * ^contact.telecom[0].system = #url
