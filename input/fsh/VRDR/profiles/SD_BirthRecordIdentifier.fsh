@@ -10,7 +10,7 @@ Description: "Birth Record Identifier (Observation).  This includes the record i
 * code only CodeableConcept
 * code = $v2-0203#BR // "Birth registry number"
 * subject 1..1
-* subject only Reference(PatientVitalRecordsNew)
+* subject only Reference(PatientVitalRecords)
 * value[x] 0..1
 * value[x] only string   // we considered shifting to integer and kept it as string.
 * valueString ^short = "Birth registry number"

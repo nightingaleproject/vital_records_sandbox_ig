@@ -1,5 +1,5 @@
 Instance: us-core-practitioner-j-jones
-InstanceOf: PractitionerVitalRecordsNew
+InstanceOf: PractitionerVitalRecords
 Title: "US Core Practitioner - Dr. Jane Jones"
 Description: "Example of US Core Practitioner - Dr. Jane Jones, medical examiner"
 Usage: #example

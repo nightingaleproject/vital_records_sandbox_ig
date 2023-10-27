@@ -1,5 +1,5 @@
 Instance: observation-previous-preterm-births-jada-ann-quinn
-InstanceOf: ObservationPreviousPretermBirthNew
+InstanceOf: ObservationPreviousPretermBirth
 Title: "Observation - Previous Preterm Births - Jada Ann Quinn"
 Description: "Observation - Previous Preterm Births: Jada Ann Quinn example"
 Usage: #example

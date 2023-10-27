@@ -1,5 +1,5 @@
 Instance: observation-how-death-injury-occurred-a-freeman-med-ingest
-InstanceOf: InjuryIncidentNew
+InstanceOf: InjuryIncident
 Title: "Observation - How Death Injury Occurred - Freeman - Medication ingestion"
 Description: "Observation - How Death Injury Occurred: Freeman - Medication ingestion (fentanyl) example"
 Usage: #example

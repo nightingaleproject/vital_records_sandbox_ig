@@ -1,5 +1,5 @@
 Instance: bundle-provider-live-birth-babyg-quinn
-InstanceOf: BundleDocumentBFDRNew
+InstanceOf: BundleDocumentBFDR
 Title: "Bundle - Provider Live Birth - Baby G Quinn"
 Description: "Bundle - Provider Live Birth: Baby G Quinn example"
 Usage: #example
@@ -8,7 +8,7 @@ Usage: #example
   * value = "urn:uuid:18825bb1-1acb-48c4-9b45-baa612640ba5"
 * type = #document
 * timestamp = "2019-02-11T02:05:44.434Z"
-* insert addentry(CompositionProviderLiveBirthReportNew, composition-provider-live-birth-babyg-quinn)
+* insert addentry(CompositionProviderLiveBirthReport, composition-provider-live-birth-babyg-quinn)
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-provider-live-birth-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-1

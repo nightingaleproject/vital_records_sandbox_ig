@@ -303,11 +303,20 @@ groups:
     name: VRCL Profiles
     resources:
       - ObservationCodedRaceAndEthnicityVitalRecords
+      - ObservationEducationLevelVitalRecords
       - ObservationInputRaceAndEthnicityVitalRecords
-      - LocationDeathVitalRecords
-      - LocationInjuryVitalRecords
+      - PatientChildVitalRecords
+      - PatientDecedentFetusVitalRecords
+      - PatientMotherVitalRecords
+      - PatientVitalRecords
+      - PractitionerVitalRecords
+      - RelatedPersonFatherVitalRecords
+      - RelatedPersonMotherVitalRecords
+      - RelatedPersonParentVitalRecords
+      #- LocationDeathVitalRecords
+      #- LocationInjuryVitalRecords
       - ObservationAutopsyPerformedIndicatorVitalRecords
-      - ObservationEducationLevelVitalRecordsNew
+      - ObservationEmergingIssuesVitalRecords
       - ObservationParentEducationLevelVitalRecords
       - ObservationRaceVitalRecords
       - ObservationTabulatedEthnicityVitalRecords
@@ -330,6 +339,18 @@ groups:
       - ExtensionRelatedpersonBirthplaceVitalRecords
       - ExtensionRelatedPersonDeceasedVitalRecords
       - ExtensionWithinCityLimitsIndicatorVitalRecords
+      - ExtensionDatePartAbsentReasonVitalRecords
+      - ExtensionPartialDateTimeVitalRecords
+      - ExtensionBypassEditFlagVitalRecords
+      - ExtensionCityCodeVitalRecords
+      - ExtensionDistrictCodeVitalRecords
+      - ExtensionPostDirectionalVitalRecords
+      - ExtensionPreDirectionalVitalRecords
+      - ExtensionStreetDesignatorVitalRecords
+      - ExtensionStreetNameVitalRecords
+      - ExtensionStreetNumberVitalRecords
+      - ExtensionUnitOrAptNumberVitalRecords
+
 
 
   # VRCommonProfiles:
@@ -370,10 +391,13 @@ groups:
     resources:
       - BirthAndFetalDeathFinancialClassCS
       - BirthDeliveryOccurredCS
-      - CodeSystemAbnormalConditionsNewborn
-      - CodeSystemInformantRelationshipToMotherNew
-      # - CodeSystemLocalComponentCodesVitalRecords
-      - CodeSystemLocationTypeVitalRecordsNew
+
+      - CodeSystemDeathPregnancyStatusVitalRecords
+      - EditFlagsCS
+      - FetalDeathCauseOrConditionCS
+      - CodeSystemInformantRelationshipToMother
+      - CodeSystemLocalComponentCodesVitalRecords
+      - CodeSystemLocationTypeVitalRecords
       - CodeSystemMDI
       - EditFlagsCS
       - FetalDeathCauseOrConditionCS
@@ -385,9 +409,9 @@ groups:
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetBirthAttendantTitles
       - ValueSetBirthDeliveryOccurred
-      - ValueSetContributoryTobaccoUseVitalRecordsNew
+      - ValueSetContributoryTobaccoUseVitalRecords
       - ValueSetDeliveryRoutes
-      - ValueSetEducationLevelPersonVitalRecordsNew
+      - ValueSetEducationLevelPersonVitalRecords
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetFetalDeathTimePoints
       - ValueSetFetalPresentations
@@ -402,10 +426,10 @@ groups:
     name: VRCL ValueSets
     resources:
       - ValueSetApgarTimingVitalRecords    
-      - ValueSetCertifierTypes  
+      - ValueSetCertifierTypesVitalRecords  
       - ValueSetDateEstablishmentApproachVitalRecords
       - ValueSetDatePartVitalRecords
-      - ValueSetEducationLevelPersonVitalRecords
+      - ValueSetDeathPregnancyStatusVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetMannerOfDeathVitalRecords
       - ValueSetMotherRelationshipVitalRecords
@@ -455,25 +479,49 @@ groups:
   BFDRProfiles:
     name: BFDR Profiles
     resources:
-      - BundleDocumentBFDRNew
-      - CompositionCodedCauseOfFetalDeathNew
+      - BundleDocumentBFDR
+      - CompositionCodedCauseOfFetalDeath
       - CompositionCodedRaceAndEthnicity
-      - CompositionJurisdictionFetalDeathReportNew
-      - CompositionJurisdictionLiveBirthReportNew
-      - CompositionProviderFetalDeathReportNew
-      - CompositionProviderLiveBirthReportNew
+      - CompositionJurisdictionFetalDeathReport
+      - CompositionJurisdictionLiveBirthReport
+      - CompositionProviderFetalDeathReport
+      - CompositionProviderLiveBirthReport
       - DemographicCodedContentBundleBFDR
+      - ConditionPrepregnancyHypertension
+      - ConditionEclampsiaHypertension
+      - ConditionGestationalDiabetes
+      - ConditionGestationalHypertension
+      - ConditionPrepregnancyDiabetes
+      - ObservationApgarScore
+      - ObservationBirthWeight
+      - ObservationGestationalAgeAtDelivery
+      - ObservationInfantLiving
+      - ObservationLastMenstrualPeriod
+      - ObservationMotherDeliveryWeight
+      - ObservationMotherHeight
+      - ObservationMotherPrepregnancyWeight
+      - ObservationNoneOfSpecifiedPregnancyRiskFactors
+      - ObservationNumberBirthsNowDead
+      - ObservationNumberBirthsNowLiving
+      - ObservationNumberFetalDeathsThisDelivery
+      - ObservationNumberLiveBirthsThisDelivery
+      - ObservationNumberOtherPregnancyOutcomes
+      - ObservationNumberPrenatalVisits
+      - ObservationNumberPreviousCesareans
+      - ObservationPreviousPretermBirth
+      - ProcedureInfertilityTreatment
+      - ProcedureArtificialInsemination
+      - ProcedureAssistedFertilization
+      #- ObservationPregnancyRiskFactorNew
+      #- PatientDecedentFetusNew
+      #- PatientMotherNew
+      - ObservationPreviousCesarean
       - ConditionChorioamnionitis
       - ConditionCodedInitiatingFetalDeathCauseOrCondition
       - ConditionCodedOtherFetalDeathCauseOrCondition
       - ConditionCongenitalAnomalyOfNewborn
       - ConditionFetalDeathCauseOrCondition
       - ConditionFetalDeathOtherCauseOrCondition
-      - ConditionGestationalDiabetesNew
-      - ConditionGestationalHypertensionNew
-      - ConditionEclampsiaHypertensionNew
-      - ConditionPrepregnancyHypertensionNew
-      - ConditionPrepregnancyDiabetesNew
       - ConditionInfectionPresentDuringPregnancy
       - ConditionPerinealLaceration
       - ConditionRupturedUterus
@@ -481,28 +529,9 @@ groups:
       - CoveragePrincipalPayerDelivery
       - EncounterBirth
       - Encounter_Maternity
+      - ObservationSteroidsFetalLungMaturation
       - ObservationAntibioticsAdministeredDuringLabor
-      - ObservationApgarScoreNew
       - ObservationAutopsyHistologicalExamResultsUsed
-      - ObservationBirthWeightNew
-      - ObservationGestationalAgeAtDeliveryNew
-      - ObservationInfantLivingNew
-      - ObservationLastMenstrualPeriodNew
-      - ObservationMotherDeliveryWeightNew
-      - ObservationMotherHeightNew
-      - ObservationMotherPrepregnancyWeightNew
-      - ObservationNoneOfSpecifiedPregnancyRiskFactorsNew
-      - ObservationNumberBirthsNowDeadNew
-      - ObservationNumberBirthsNowLivingNew
-      - ObservationNumberFetalDeathsThisDeliveryNew
-      - ObservationNumberLiveBirthsThisDeliveryNew
-      - ObservationNumberOtherPregnancyOutcomesNew
-      - ObservationNumberPrenatalVisitsNew
-      - ObservationNumberPreviousCesareansNew
-      - ObservationPreviousPretermBirthNew
-      #- ObservationPregnancyRiskFactorNew
-      #- PatientDecedentFetusNew
-      #- PatientMotherNew
       - ObservationCigaretteSmokingBeforeDuringPregnancy
       - ObservationDateOfFirstPrenatalCareVisit
       - ObservationDateOfLastLiveBirth
@@ -513,7 +542,7 @@ groups:
       - ObservationICUAdmission
       - ObservationInfantBreastfedAtDischarge
       - ObservationLaborTrialAttempted
-      - ObservationMethodOfDisposition
+      #- ObservationMethodOfDisposition
       - ObservationMotherMarriedDuringPregnancy
       - ObservationMotherReceivedWICFood
       - ObservationNICUAdmission
@@ -754,15 +783,7 @@ groups:
       - observation-infant-breastfed-at-discharge-babyg-quinn
       - observation-infant-living-babyg-quinn
       - observation-labor-trial-attempted-babyg-quinn
-      - observation-last-menstrual-period-carmen-teresa-lee
-      - observation-last-menstrual-period-jada-ann-quinn
-      - observation-method-of-disposition-not-named
-      - observation-mother-delivery-weight-jada-ann-quinn
-      - observation-mother-delivery-weight-jada-ann-quinn-w-edit
-      - observation-mother-height-carmen-teresa-lee
-      - observation-mother-height-carmen-teresa-lee-w-edit
-      - observation-mother-height-jada-ann-quinn
-      - observation-mother-height-jada-ann-quinn-w-edit
+      #- observation-method-of-disposition-not-named
       - observation-mother-married-during-pregnancy-jada-ann-quinn
       - observation-mother-prepregnancy-weight-carmen-teresa-lee
       - observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit
@@ -859,6 +880,22 @@ groups:
   VRDRProfiles:
     name: VRDR Profiles
     resources: 
+      - MortalityRosterBundle
+      - Decedent
+      - DeathCertification 
+      - CauseOfDeathCodedContentBundle
+      - DemographicCodedContentBundle
+      - DeathCertificate
+      - DeathCertificateDocument
+      - CauseOfDeathPart1
+      - CauseOfDeathPart2
+      - DeathDate
+      - InjuryIncident
+      - MannerOfDeath
+      - TobaccoUseContributedToDeath
+      - DecedentDispositionMethod
+      - DecedentEducationLevel
+      - DecedentPregnancyStatus
       - ActivityAtTimeOfDeath
       - AutomatedUnderlyingCauseOfDeath
       - AutopsyPerformedIndicator
@@ -874,8 +911,6 @@ groups:
       - DeathDateNew 
       - DeathLocation
       - DecedentAge
-      - DecedentDispositionMethodNew
-      - DecedentEducationLevel
       - DecedentFather
       - DecedentMilitaryService
       - DecedentMother
@@ -885,7 +920,6 @@ groups:
       - DecedentUsualWork
       - DemographicCodedContentBundleNew
       - DispositionLocation
-      - EmergingIssues
       - EntityAxisCauseOfDeath
       - ExaminerContacted
       - FuneralHome
@@ -956,29 +990,20 @@ groups:
       - AliasStatus
       - AuxiliaryStateIdentifier1
       - AuxiliaryStateIdentifier2
-      - BypassEditFlag
       - CertificateNumber
-      - CityCode
-      - DateDay
-      - DateMonth
-      - DateTime
-      - DateYear
-      - DistrictCode
+      #- DateDay
+      #- DateMonth
+      #- DateTime
+      #- DateYear
       - FilingFormat
       - LocationJurisdictionId
       - NVSSSexAtDeath
-      - PartialDate
-      - PartialDateTime
-      - PostDirectional
-      - PreDirectional
+      #- PartialDate
+      #- PartialDateTime
       - ReplaceStatus
       - SpouseAlive
       - StateSpecificField
-      - StreetDesignator
-      - StreetName
-      - StreetNumber
-      - UnitOrAptNumber
-      - WithinCityLimitsIndicator
+      #- WithinCityLimitsIndicator
 
   
   VRDRCodeSystems:
@@ -1092,21 +1117,8 @@ groups:
   VRDRExamples:
     name: VRDR Examples
     resources:
-      - ActivityAtTimeOfDeath-Example1
-      - AgeUT-Example1 
-      - AutomatedUnderlyingCauseOfDeath-Example1
-      - AutopsyPerformedIndicator-Example1
-      - AutopsyPerformedIndicatorUT-Example1
-      - BirthRecordIdentifier-Example1
-      - BirthRecordIdentifierUT-Example1
-      - CauseOfDeathCodedContentBundle-Example1-New
-      - CauseOfDeathPart1-Example1
-      - CauseOfDeathPart1-Example2
-      - CauseOfDeathPart1UT-Example1 
-      - CauseOfDeathPart2-Example1
-      - Certifier-Example1
-      - CodedRaceAndEthnicity-Example1
-      - CodingStatusValues-Example1
+      - CauseOfDeathCodedContentBundle-Example1
+      - DemographicCodedContentBundle-Example1
       - DeathCertificateDocument-UT-1
       - DeathCertificateUT-Example1
       - DeathCertification-Example1
@@ -1181,9 +1193,9 @@ groups:
   MDIProfiles:
     name: MDI Profiles
     resources:  
-      - BundleDocumentMDIToEDRSNew 
-      - BundleMessageToxToMDINew
-      - CompositionMDIToEDRSNew
+      - BundleDocumentMDIToEDRS 
+      - BundleMessageToxToMDI
+      - CompositionMDIToEDRS
       - DiagnosticReportToxicologyToMDI 
       - MessageHeaderToxicologyToMDI
       - ObservationAutopsyPerformedIndicator

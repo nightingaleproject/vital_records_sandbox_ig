@@ -1,5 +1,5 @@
-CodeSystem: CodeSystemLocationTypeVitalRecordsNew
-Id: CodeSystem-vr-location-type-new
+CodeSystem: CodeSystemLocationTypeVitalRecords
+Id: CodeSystem-vr-location-type
 Title: "CodeSystem - Location Type Vital Records"
 Description: "This CodeSystem contains codes that describe the Location Type"
 * insert boilerplate

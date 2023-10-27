@@ -1,5 +1,5 @@
 
-/* Do we still need Certifier Profile?????  Probably Not.  Adds zero value */
+/* Do we still need Certifier Profile?????  Probably Not.  Adds zero value... maybe consolidate with VRCL practitioner */
 Profile: Certifier
 Parent: USCorePractitionerProfile
 Id: vrdr-certifier

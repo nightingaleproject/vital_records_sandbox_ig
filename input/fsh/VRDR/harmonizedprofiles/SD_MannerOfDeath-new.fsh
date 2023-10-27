@@ -1,6 +1,6 @@
-Profile: MannerOfDeathNew
+Profile: MannerOfDeath
 Parent: Observation
-Id: vrdr-manner-of-death-new
+Id: vrdr-manner-of-death
 Title: "Manner of Death"
 Description: "Manner of Death (Observation)"
 * insert RequireMetaProfile(MannerOfDeath)
@@ -12,7 +12,7 @@ Description: "Manner of Death (Observation)"
 * code only CodeableConcept
 * code = $loinc#69449-7 // "Manner of death"
 * subject 1..1
-* subject only Reference(PatientVitalRecordsNew)
+* subject only Reference(PatientVitalRecords)
 * performer ^short = "Certifier"
 * performer only Reference(USCorePractitioner)
 * value[x] 1..1

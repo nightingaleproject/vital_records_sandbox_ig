@@ -1,6 +1,6 @@
-Profile: PatientMotherVitalRecordsNew
-Parent: PatientVitalRecordsNew
-Id: Patient-mother-vr-new
+Profile: PatientMotherVitalRecords
+Parent: PatientVitalRecords
+Id: Patient-mother-vr
 Title: "Patient - Mother Vital Records"
 Description: "This Patient profile represents the woman who gave birth to, or delivered the infant."
 // * extension[race] 1..
@@ -26,7 +26,7 @@ Description: "This Patient profile represents the woman who gave birth to, or de
 * link MS
 * link contains mother 0..1 MS
 * link[mother] ^short = "Link to the birth mother's RelatedPerson record"
-  * other only Reference(RelatedPersonMotherVitalRecordsNew)
+  * other only Reference(RelatedPersonMotherVitalRecords)
   * other MS
   //  * ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
   //  * ^type.extension.valueBoolean = false
@@ -36,3 +36,5 @@ Description: "This Patient profile represents the woman who gave birth to, or de
   // but in this case, I expect it's safe to remove it. So if you have FSH explicitly adding this extension, I'd just delete those lines of FSH.
   * type = #seealso
   * type MS
+    * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
+    * ^extension.valueBoolean = false

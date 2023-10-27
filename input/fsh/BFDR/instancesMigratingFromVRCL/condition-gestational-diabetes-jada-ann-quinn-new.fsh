@@ -1,5 +1,5 @@
 Instance: condition-gestational-diabetes-jada-ann-quinn
-InstanceOf: ConditionGestationalDiabetesNew
+InstanceOf: ConditionGestationalDiabetes
 Title: "Condition - Gestational Diabetes - Jada Ann Quinn"
 Description: "Condition - Gestational Diabetes: Jada Ann Quinn example"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: patient-mother-jada-ann-quinn
-InstanceOf: PatientMotherVitalRecordsNew
+InstanceOf: PatientMotherVitalRecords
 Title: "Patient - Mother Jada Ann Quinn"
 Description: "Example of Patient-mother-vr profile (Jada Ann Quinn)"
 Usage: #example

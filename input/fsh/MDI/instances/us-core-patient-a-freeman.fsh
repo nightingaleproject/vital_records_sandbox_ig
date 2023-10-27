@@ -1,5 +1,5 @@
 Instance: us-core-patient-a-freeman
-InstanceOf: PatientVitalRecordsNew
+InstanceOf: PatientVitalRecords
 Title: "US Core Patient - Alice J. Freeman"
 Description: "Example of US Core Patient - Alice J. Freeman, decedent"
 Usage: #example

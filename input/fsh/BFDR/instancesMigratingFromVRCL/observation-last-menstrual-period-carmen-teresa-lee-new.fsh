@@ -1,5 +1,5 @@
 Instance: observation-last-menstrual-period-carmen-teresa-lee
-InstanceOf: ObservationLastMenstrualPeriodNew
+InstanceOf: ObservationLastMenstrualPeriod
 Title: "Observation - Last Menstrual Period - Carmen Teresa Lee"
 Description: "Observation - Last Menstrual Period: Carmen Teresa Lee example"
 Usage: #example

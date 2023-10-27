@@ -1,5 +1,5 @@
 Instance: relatedperson-parent-stepmother
-InstanceOf: RelatedPersonParentVitalRecordsNew
+InstanceOf: RelatedPersonParentVitalRecords
 Title: "RelatedPerson - Stepmother"
 Description: "Example of RelatedPerson-parent-vr profile (stepmother)"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: location-injury-vr-atlanta-ga-a-freeman
-InstanceOf: LocationInjuryVitalRecords
+InstanceOf: InjuryLocation
 Title: "Atlanta GA Injury Location - Freeman"
 Description: "Example "
 Usage: #example
@@ -8,7 +8,7 @@ Usage: #example
   * value = "29"
 * status = #active
 * name = "Atlanta GA Injury Location - Freeman"
-* type = CodeSystemMDI#injury
+//* type = CodeSystemMDI#injury
 * address
   * use = #home
   * type = #physical

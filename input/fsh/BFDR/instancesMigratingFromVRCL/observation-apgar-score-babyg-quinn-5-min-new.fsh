@@ -1,5 +1,5 @@
 Instance: observation-apgar-score-babyg-quinn-5-min
-InstanceOf: ObservationApgarScoreNew
+InstanceOf: ObservationApgarScore
 Title: "Observation - Apgar Score - BabyG Quinn: 5 min"
 Description: "Observation - Apgar Score: BabyG Quinn: 5 min example"
 Usage: #example

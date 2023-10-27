@@ -1,6 +1,6 @@
-Profile: PatientDecedentFetusVitalRecordsNew
-Parent: PatientVitalRecordsNew
-Id: Patient-decedent-fetus-vr-new
+Profile: PatientDecedentFetusVitalRecords
+Parent: PatientVitalRecords
+Id: Patient-decedent-fetus-vr
 Title: "Patient - Decedent Fetus Vital Records"
 Description: "A stillborn for whom clinical data is included in the report."
 * extension[birthPlace] MS

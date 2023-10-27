@@ -1,5 +1,5 @@
 Profile: DecedentEducationLevel
-Parent: ObservationEducationLevelVitalRecordsNew
+Parent: ObservationEducationLevelVitalRecords
 Id: vrdr-decedent-education-level
 Title: "Decedent Education Level"
 Description: "Decedent Education Level (Observation)"

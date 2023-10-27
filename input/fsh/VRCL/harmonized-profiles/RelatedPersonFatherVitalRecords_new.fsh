@@ -21,9 +21,9 @@ Marks MS for a bunch of USCore stuff like race/ethnicity.
 
 Except for MS (where policy should be standardized), I don't see any barrier to using RelatedPersonVitalRecords, and its Father and Mother subtypes for VRDR as well.
 */
-Profile: RelatedPersonFatherVitalRecordsNew
-Parent: RelatedPersonParentVitalRecordsNew //Based on US Core Related Person Profile
-Id: RelatedPerson-father-vr-new
+Profile: RelatedPersonFatherVitalRecords
+Parent: RelatedPersonParentVitalRecords //Based on US Core Related Person Profile
+Id: RelatedPerson-father-vr
 Title: "RelatedPerson - Father Vital Records"
 Description: "The father of the report subject. Different individuals may play different roles as the father (e.g., biological father, adoptive father, etc.).
 This profile is designed to supplant the similar profile in VRDR"

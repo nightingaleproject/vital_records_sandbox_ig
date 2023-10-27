@@ -1,5 +1,5 @@
 Instance: observation-cause-of-death-part1-a-freeman
-InstanceOf: CauseOfDeathPart1New
+InstanceOf: CauseOfDeathPart1
 Title: "Observation - Cause of Death Part 1 - Freeman"
 Description: "Observation - Cause of Death Part 1: Freeman example"
 Usage: #example

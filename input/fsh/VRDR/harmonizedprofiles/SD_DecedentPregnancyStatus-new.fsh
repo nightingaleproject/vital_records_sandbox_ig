@@ -10,9 +10,9 @@ Status:
 BypassEditFlag slice:  Missing from MDI
 VRDR has no MS flags. MDI and VRCL have the same MS flags. 
 */
-Profile: DecedentPregnancyStatusNew
+Profile: DecedentPregnancyStatus
 Parent: Observation
-Id: vrdr-decedent-pregnancy-status-new
+Id: vrdr-decedent-pregnancy-status
 Title: "Observation - Decedent Pregnancy"
 Description: "This Observation provides an indication of the pregnancy status of the decedent.
 This profile is designed to support VRDR and MDI"
@@ -24,7 +24,7 @@ This profile is designed to support VRDR and MDI"
 * code = $loinc#69442-2
   * ^short = "Timing of recent pregnancy in relation to death"
 * subject 1..1 
-* subject only Reference(PatientVitalRecordsNew) //generalized to PatientVitalRecords
+* subject only Reference(PatientVitalRecords) //generalized to PatientVitalRecords
   * ^short = "subject"
 * value[x] 1..1 
 * value[x] only CodeableConcept

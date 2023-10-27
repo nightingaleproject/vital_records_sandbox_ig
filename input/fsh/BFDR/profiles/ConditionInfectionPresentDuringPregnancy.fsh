@@ -10,4 +10,4 @@ Description: "This Condition profile represents infections present and/or treate
 * code from ValueSetInfectionsDuringPregnancyLiveBirth (required)
   * ^short = "Infections present and/or treated during this pregnancy for live birth as required by the National US Standards. Note: Genital herpes simplex (SNOMED code 33839006) is only a Michigan state-specific requirement."
   * ^binding.description = "Infections During Pregnancy - Live Birth (NCHS)"
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)

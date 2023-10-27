@@ -1,5 +1,5 @@
 Instance: observation-number-previous-cesareans-carmen-teresa-lee-w-edit
-InstanceOf: ObservationNumberPreviousCesareansNew
+InstanceOf: ObservationNumberPreviousCesareans
 Title: "Observations - Number Previous Cesareans - Carmen Teresa Lee, with Edit Flag"
 Description: "Observations - Number Previous Cesareans: Carmen Teresa Lee example, with Edit Flag"
 Usage: #example

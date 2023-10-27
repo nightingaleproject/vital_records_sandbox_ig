@@ -1,5 +1,5 @@
 Instance: relatedperson-mother-carol-hoffer-common
-InstanceOf: RelatedPersonMotherVitalRecordsNew
+InstanceOf: RelatedPersonMotherVitalRecords
 Title: "RelatedPerson - Adoptive Mother"
 Description: "Example of RelatedPerson-mother-vr profile (adoptive mother)"
 Usage: #example

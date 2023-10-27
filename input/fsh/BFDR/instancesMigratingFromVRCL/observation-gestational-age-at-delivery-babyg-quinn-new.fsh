@@ -1,5 +1,5 @@
 Instance: observation-gestational-age-at-delivery-babyg-quinn
-InstanceOf: ObservationGestationalAgeAtDeliveryNew
+InstanceOf: ObservationGestationalAgeAtDelivery
 Title: "Observation - Gestational Age at Delivery - Baby G Quinn"
 Description: "Observation - Gestational Age at Delivery: Baby G Quinn example"
 Usage: #example
