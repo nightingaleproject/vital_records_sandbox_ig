@@ -5,5 +5,5 @@ Description: "DecedentPregnancyStatus-Example1"
 * insert AddMetaProfile(ObservationDecedentPregnancyVitalRecords)
 * subject = Reference(Decedent-Example1)
 * status = #final
-* valueCodeableConcept = CodeSystemDeathPregnancyStatusVitalRecords#2 "Pregnant at time of death"
+* valueCodeableConcept = DeathPregnancyStatusCS#2 "Pregnant at time of death"
 * valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#2 "Edit Failed, Data Queried, but not Verified"

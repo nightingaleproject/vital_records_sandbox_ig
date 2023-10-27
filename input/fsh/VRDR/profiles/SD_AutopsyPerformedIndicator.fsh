@@ -14,7 +14,7 @@ Description: "Autopsy Performed Indicator (Observation)"
 * subject only Reference(PatientVitalRecords)
 * value[x] 1..1
 * value[x] only CodeableConcept
-* value[x] from YesNoUnknownVS (required)
+* value[x] from ValueSetYesNoUnknownVitalRecords (required)
 * valueCodeableConcept ^short = "Autopsy was performed?"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
@@ -27,6 +27,6 @@ Description: "Autopsy Performed Indicator (Observation)"
 * component[autopsyResultsAvailable].code = $loinc#69436-4 // "Autopsy results available"
 * component[autopsyResultsAvailable].value[x] 1..1
 * component[autopsyResultsAvailable].value[x] only CodeableConcept
-* component[autopsyResultsAvailable].value[x] from YesNoUnknownNotApplicableVS (required)
+* component[autopsyResultsAvailable].value[x] from ValueSetYesNoUnknownNotApplicableVitalRecords (required)
 * performer 0..1
 * performer ^short = "Autopsy Performer using USCorePractioner"

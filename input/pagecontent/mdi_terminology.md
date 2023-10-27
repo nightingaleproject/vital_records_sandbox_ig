@@ -2,7 +2,7 @@
 * [ValueSetContributoryTobaccoUseVitalRecordsNew]
 * [ValueSetCertifierTypes]
 * [ValueSetDateEstablishmentApproachVitalRecords]
-* [ValueSetDeathPregnancyStatusVitalRecords]
+* [ValueSetDeathPregnancyStatus]
 * [ValueSetMannerOfDeathVitalRecords]
 * [ValueSetPlaceOfDeathVitalRecords]
 * [ValueSetTrackingNumberType]
