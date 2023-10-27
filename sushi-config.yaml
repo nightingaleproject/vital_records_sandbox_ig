@@ -302,34 +302,24 @@ groups:
   VRCLProfiles:
     name: VRCL Profiles
     resources:
+      - ObservationAutopsyPerformedIndicatorVitalRecords
       - ObservationCodedRaceAndEthnicityVitalRecords
       - ObservationEducationLevelVitalRecords
+      - ObservationEmergingIssuesVitalRecords
       - ObservationInputRaceAndEthnicityVitalRecords
+      - ObservationParentEducationLevelVitalRecords
+      - ObservationRaceVitalRecords
+      - ObservationTabulatedEthnicityVitalRecords
       - PatientChildVitalRecords
       - PatientDecedentFetusVitalRecords
       - PatientMotherVitalRecords
       - PatientVitalRecords
       - PractitionerVitalRecords
+      - RelatedPersonFatherNaturalVitalRecords
       - RelatedPersonFatherVitalRecords
+      - RelatedPersonMotherGestationalVitalRecords
       - RelatedPersonMotherVitalRecords
       - RelatedPersonParentVitalRecords
-      #- LocationDeathVitalRecords
-      #- LocationInjuryVitalRecords
-      - ObservationAutopsyPerformedIndicatorVitalRecords
-      - ObservationEmergingIssuesVitalRecords
-      - ObservationParentEducationLevelVitalRecords
-      - ObservationRaceVitalRecords
-      - ObservationTabulatedEthnicityVitalRecords
-      - PatientChildVitalRecordsNew
-      - PatientDecedentFetusVitalRecordsNew
-      - PatientMotherVitalRecordsNew
-      - PatientVitalRecordsNew
-      - PractitionerVitalRecordsNew
-      - RelatedPersonFatherNaturalVitalRecords
-      - RelatedPersonFatherVitalRecordsNew
-      - RelatedPersonMotherGestationalVitalRecords
-      - RelatedPersonMotherVitalRecordsNew
-      - RelatedPersonParentVitalRecordsNew
 
   VRCLExtensions:
     name: VRCL Extensions
@@ -339,8 +329,6 @@ groups:
       - ExtensionRelatedpersonBirthplaceVitalRecords
       - ExtensionRelatedPersonDeceasedVitalRecords
       - ExtensionWithinCityLimitsIndicatorVitalRecords
-      - ExtensionDatePartAbsentReasonVitalRecords
-      - ExtensionPartialDateTimeVitalRecords
       - ExtensionBypassEditFlagVitalRecords
       - ExtensionCityCodeVitalRecords
       - ExtensionDistrictCodeVitalRecords
@@ -354,24 +342,24 @@ groups:
 
 
   # VRCommonProfiles:
-  #   name: VRCL New Common Profiles 
+  #   name: VRCL  Common Profiles 
   #   resources:
-  #     - CodedRaceAndEthnicityNew
-  #     - ObservationEducationLevelVitalRecordsNew
-  #     - InputRaceAndEthnicityNew 
-  #     - PatientChildVitalRecordsNew
-  #     - PatientDecedentFetusVitalRecordsNew
-  #     - PatientMotherVitalRecordsNew
-  #     - PatientVitalRecordsNew
-  #     - PractitionerVitalRecordsNew
-  #     - RelatedPersonFatherVitalRecordsNew
-  #     - RelatedPersonMotherVitalRecordsNew
-  #     - RelatedPersonParentVitalRecordsNew
-  #     # - ObservationInjuryIncidentVitalRecordsNew
-  #     # - ObservationDecedentDispositionMethodVitalRecordsNew
-  #     # - ObservationDecedentPregnancyVitalRecordsNew
-  #     # - ObservationDeathDateVitalRecordsNew 
-  #     # - ProcedureDeathCertificationVitalRecordsNew 
+  #     - CodedRaceAndEthnicity
+  #     - ObservationEducationLevelVitalRecords
+  #     - InputRaceAndEthnicity 
+  #     - PatientChildVitalRecords
+  #     - PatientDecedentFetusVitalRecords
+  #     - PatientMotherVitalRecords
+  #     - PatientVitalRecords
+  #     - PractitionerVitalRecords
+  #     - RelatedPersonFatherVitalRecords
+  #     - RelatedPersonMotherVitalRecords
+  #     - RelatedPersonParentVitalRecords
+  #     # - ObservationInjuryIncidentVitalRecords
+  #     # - ObservationDecedentDispositionMethodVitalRecords
+  #     # - ObservationDecedentPregnancyVitalRecords
+  #     # - ObservationDeathDateVitalRecords 
+  #     # - ProcedureDeathCertificationVitalRecords 
 
   # UnchangedVRCommonProfiles:
   #   name: Unchanged VRCL Common Profiles 
@@ -391,21 +379,18 @@ groups:
     resources:
       - BirthAndFetalDeathFinancialClassCS
       - BirthDeliveryOccurredCS
-
-      - CodeSystemDeathPregnancyStatusVitalRecords
+      # - CodeSystemDeathPregnancyStatusVitalRecords
       - EditFlagsCS
       - FetalDeathCauseOrConditionCS
       - CodeSystemInformantRelationshipToMother
-      - CodeSystemLocalComponentCodesVitalRecords
+      # - CodeSystemLocalComponentCodesVitalRecords
       - CodeSystemLocationTypeVitalRecords
       - CodeSystemMDI
-      - EditFlagsCS
-      - FetalDeathCauseOrConditionCS
 
   PHINVADSValuesets:
-    name: New ValueSets from PHINVADS
+    name:  ValueSets from PHINVADS
     resources:
-      - ValueSetAbnormalConditionsNewborn
+      # - ValueSetAbnormalConditionsbornNew
       - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetBirthAttendantTitles
       - ValueSetBirthDeliveryOccurred
@@ -418,7 +403,7 @@ groups:
       - ValueSetHistologicalPlacentalExamination
       - ValueSetInfectionsDuringPregnancyLiveBirth
       - ValueSetInformantRelationshipToMother
-      - ValueSetNewbornCongenitalAnomalies
+      # - ValueSetbornCongenitalAnomalies
       - ValueSetObstetricProcedure
       - ValueSetPregnancyRiskFactors
 
@@ -429,7 +414,7 @@ groups:
       - ValueSetCertifierTypesVitalRecords  
       - ValueSetDateEstablishmentApproachVitalRecords
       - ValueSetDatePartVitalRecords
-      - ValueSetDeathPregnancyStatusVitalRecords
+      # - ValueSetDeathPregnancyStatusVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetMannerOfDeathVitalRecords
       - ValueSetMotherRelationshipVitalRecords
@@ -512,10 +497,9 @@ groups:
       - ProcedureInfertilityTreatment
       - ProcedureArtificialInsemination
       - ProcedureAssistedFertilization
-      #- ObservationPregnancyRiskFactorNew
-      #- PatientDecedentFetusNew
-      #- PatientMotherNew
-      - ObservationPreviousCesarean
+      #- ObservationPregnancyRiskFactor
+      #- PatientDecedentFetus
+      #- PatientMother
       - ConditionChorioamnionitis
       - ConditionCodedInitiatingFetalDeathCauseOrCondition
       - ConditionCodedOtherFetalDeathCauseOrCondition
@@ -529,7 +513,6 @@ groups:
       - CoveragePrincipalPayerDelivery
       - EncounterBirth
       - Encounter_Maternity
-      - ObservationSteroidsFetalLungMaturation
       - ObservationAntibioticsAdministeredDuringLabor
       - ObservationAutopsyHistologicalExamResultsUsed
       - ObservationCigaretteSmokingBeforeDuringPregnancy
@@ -551,12 +534,10 @@ groups:
       - ObservationNoneOfSpecifiedMaternalMorbidities
       - ObservationPaternityAcknowledgementSigned
       - ObservationPlannedToDeliverAtHome
-      - ObservationPreviousCesareanNew
+      - ObservationPreviousCesarean
       - ObservationSSNRequestedForChild
       - ObservationSteroidsFetalLungMaturation
       - ProcedureAntibioticSuspectedNeonatalSepsis
-      - ProcedureArtificialInseminationNew
-      - ProcedureAssistedFertilizationNew
       - ProcedureAssistedVentilationFollowingDelivery
       - ProcedureAssistedVentilationMoreThanSixHours
       - ProcedureAugmentationOfLabor
@@ -564,7 +545,6 @@ groups:
       - ProcedureEpiduralOrSpinalAnesthesia
       - ProcedureFinalRouteMethodDelivery
       - ProcedureInductionOfLabor
-      - ProcedureInfertilityTreatmentNew
       - ProcedureObstetric
       - ProcedureSurfactantReplacementTherapy
       - ProcedureUnplannedHysterectomy
@@ -580,52 +560,52 @@ groups:
       - ExtensionLiveBirthCertificateNumber
       - ExtensionLiveBirthLocalFileNumber
 
-  # BFDRCompositionBundleProfilesNew:
-  #   name: BFDR New Compositions and Bundles 
+  # BFDRCompositionBundleProfiles:
+  #   name: BFDR  Compositions and Bundles 
   #   resources:
-  #     - BundleDocumentBFDRNew
-  #     - CompositionCodedCauseOfFetalDeathNew
-  #     - CompositionCodedRaceAndEthnicityNew
-  #     - CompositionJurisdictionFetalDeathReportNew
-  #     - CompositionJurisdictionLiveBirthReportNew
-  #     - CompositionProviderFetalDeathReportNew
-  #     - CompositionProviderLiveBirthReportNew
+  #     - BundleDocumentBFDR
+  #     - CompositionCodedCauseOfFetalDeath
+  #     - CompositionCodedRaceAndEthnicity
+  #     - CompositionJurisdictionFetalDeathReport
+  #     - CompositionJurisdictionLiveBirthReport
+  #     - CompositionProviderFetalDeathReport
+  #     - CompositionProviderLiveBirthReport
   #     - DemographicCodedContentBundleBFDR
 
 
   # BFDRProfilesfromVRCL:
-  #   name: BFDR New Profiles (from VRCL)
-  #   # description: BFDR New Profiles (from VRCL)
+  #   name: BFDR  Profiles (from VRCL)
+  #   # description: BFDR  Profiles (from VRCL)
   #   resources:
-  #     - ConditionPrepregnancyHypertensionNew
-  #     - ConditionEclampsiaHypertensionNew
-  #     - ConditionGestationalDiabetesNew
-  #     - ConditionGestationalHypertensionNew
-  #     - ConditionPrepregnancyDiabetesNew
-  #     - ObservationApgarScoreNew
-  #     - ObservationBirthWeightNew
-  #     - ObservationGestationalAgeAtDeliveryNew
-  #     - ObservationInfantLivingNew
-  #     - ObservationLastMenstrualPeriodNew
-  #     - ObservationMotherDeliveryWeightNew
-  #     - ObservationMotherHeightNew
-  #     - ObservationMotherPrepregnancyWeightNew
-  #     - ObservationNoneOfSpecifiedPregnancyRiskFactorsNew
-  #     - ObservationNumberBirthsNowDeadNew
-  #     - ObservationNumberBirthsNowLivingNew
-  #     - ObservationNumberFetalDeathsThisDeliveryNew
-  #     - ObservationNumberLiveBirthsThisDeliveryNew
-  #     - ObservationNumberOtherPregnancyOutcomesNew
-  #     - ObservationNumberPrenatalVisitsNew
-  #     - ObservationNumberPreviousCesareansNew
-  #     - ObservationPreviousPretermBirthNew
-  #     - ProcedureInfertilityTreatmentNew
-  #     - ProcedureArtificialInseminationNew
-  #     - ProcedureAssistedFertilizationNew
-  #     #- ObservationPregnancyRiskFactorNew
-  #     #- PatientDecedentFetusNew
-  #     #- PatientMotherNew
-  #     - ObservationPreviousCesareanNew
+  #     - ConditionPrepregnancyHypertension
+  #     - ConditionEclampsiaHypertension
+  #     - ConditionGestationalDiabetes
+  #     - ConditionGestationalHypertension
+  #     - ConditionPrepregnancyDiabetes
+  #     - ObservationApgarScore
+  #     - ObservationBirthWeight
+  #     - ObservationGestationalAgeAtDelivery
+  #     - ObservationInfantLiving
+  #     - ObservationLastMenstrualPeriod
+  #     - ObservationMotherDeliveryWeight
+  #     - ObservationMotherHeight
+  #     - ObservationMotherPrepregnancyWeight
+  #     - ObservationNoneOfSpecifiedPregnancyRiskFactors
+  #     - ObservationNumberBirthsNowDead
+  #     - ObservationNumberBirthsNowLiving
+  #     - ObservationNumberFetalDeathsThisDelivery
+  #     - ObservationNumberLiveBirthsThisDelivery
+  #     - ObservationNumberOtherPregnancyOutcomes
+  #     - ObservationNumberPrenatalVisits
+  #     - ObservationNumberPreviousCesareans
+  #     - ObservationPreviousPretermBirth
+  #     - ProcedureInfertilityTreatment
+  #     - ProcedureArtificialInsemination
+  #     - ProcedureAssistedFertilization
+  #     #- ObservationPregnancyRiskFactor
+  #     #- PatientDecedentFetus
+  #     #- PatientMother
+  #     - ObservationPreviousCesarean
 
   # UnchangedBFDRProfiles:
   #   name: Unchanged BFDR Profiles
@@ -661,7 +641,7 @@ groups:
   #     - ObservationMotherMarriedDuringPregnancy
   #     - ObservationMotherReceivedWICFood
   #     - ObservationNICUAdmission
-  #     - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
+  #     - ObservationNoneOfSpecifiedAbnormalConditionsOfborn
   #     - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
   #     - ObservationNoneOfSpecifiedMaternalMorbidities
   #     - ObservationPaternityAcknowledgementSigned
@@ -880,77 +860,77 @@ groups:
   VRDRProfiles:
     name: VRDR Profiles
     resources: 
-      - MortalityRosterBundle
-      - Decedent
-      - DeathCertification 
-      - CauseOfDeathCodedContentBundle
-      - DemographicCodedContentBundle
-      - DeathCertificate
-      - DeathCertificateDocument
-      - CauseOfDeathPart1
-      - CauseOfDeathPart2
-      - DeathDate
-      - InjuryIncident
-      - MannerOfDeath
-      - TobaccoUseContributedToDeath
-      - DecedentDispositionMethod
-      - DecedentEducationLevel
-      - DecedentPregnancyStatus
+      # - MortalityRosterBundle
+      # - Decedent
+      # - DeathCertification 
+      # - CauseOfDeathCodedContentBundle
+      # - DemographicCodedContentBundle
+      # - DeathCertificate
+      # - DeathCertificateDocument
+      # - CauseOfDeathPart1
+      # - CauseOfDeathPart2
+      # - DeathDate
+      # - InjuryIncident
+      # - MannerOfDeath
+      # - TobaccoUseContributedToDeath
+      # - DecedentDispositionMethod
+      # - DecedentEducationLevel
+      # - DecedentPregnancyStatus
       - ActivityAtTimeOfDeath
       - AutomatedUnderlyingCauseOfDeath
       - AutopsyPerformedIndicator
       - BirthRecordIdentifier
-      - CauseOfDeathCodedContentBundleNew
-      - CauseOfDeathPart1New
-      - CauseOfDeathPart2New
+      - CauseOfDeathCodedContentBundle
+      - CauseOfDeathPart1
+      - CauseOfDeathPart2
       - Certifier
       - CodingStatusValues
-      - DeathCertificateDocumentNew 
-      - DeathCertificateNew
-      - DeathCertificationNew 
-      - DeathDateNew 
+      - DeathCertificateDocument 
+      - DeathCertificate
+      - DeathCertification 
+      - DeathDate 
       - DeathLocation
       - DecedentAge
       - DecedentFather
       - DecedentMilitaryService
       - DecedentMother
-      - DecedentNew
-      - DecedentPregnancyStatusNew
+      - Decedent
+      - DecedentPregnancyStatus
       - DecedentSpouse
       - DecedentUsualWork
-      - DemographicCodedContentBundleNew
+      - DemographicCodedContentBundle
       - DispositionLocation
       - EntityAxisCauseOfDeath
       - ExaminerContacted
       - FuneralHome
-      - InjuryIncidentNew 
+      - InjuryIncident 
       - InjuryLocation
-      - MannerOfDeathNew 
+      - MannerOfDeath 
       - ManualUnderlyingCauseOfDeath
       - MortalityRosterBundle
       - PlaceOfInjury
       - RecordAxisCauseOfDeath
       - SurgeryDate
-      - TobaccoUseContributedToDeathNew 
+      - TobaccoUseContributedToDeath 
 
-  # VRDRProfilesNew:
-  #   name: New VRDR Profiles
+  # VRDRProfiles:
+  #   name:  VRDR Profiles
   #   resources:  
-  #     - DecedentNew
-  #     - DeathCertificationNew 
-  #     - CauseOfDeathCodedContentBundleNew
-  #     - DemographicCodedContentBundleNew
-  #     - DeathCertificateNew
-  #     - DeathCertificateDocumentNew 
-  #     - CauseOfDeathPart1New
-  #     - CauseOfDeathPart2New
-  #     - DeathDateNew 
-  #     - InjuryIncidentNew 
-  #     - MannerOfDeathNew 
-  #     - TobaccoUseContributedToDeathNew 
-  #     - DecedentDispositionMethodNew
+  #     - Decedent
+  #     - DeathCertification 
+  #     - CauseOfDeathCodedContentBundle
+  #     - DemographicCodedContentBundle
+  #     - DeathCertificate
+  #     - DeathCertificateDocument 
+  #     - CauseOfDeathPart1
+  #     - CauseOfDeathPart2
+  #     - DeathDate 
+  #     - InjuryIncident 
+  #     - MannerOfDeath 
+  #     - TobaccoUseContributedToDeath 
+  #     - DecedentDispositionMethod
   #     - DecedentEducationLevel
-  #     - DecedentPregnancyStatusNew
+  #     - DecedentPregnancyStatus
 
   # UnchangedVRDRProfiles:
   #   name: Unchanged VRDR Profiles
@@ -1118,7 +1098,6 @@ groups:
     name: VRDR Examples
     resources:
       - CauseOfDeathCodedContentBundle-Example1
-      - DemographicCodedContentBundle-Example1
       - DeathCertificateDocument-UT-1
       - DeathCertificateUT-Example1
       - DeathCertification-Example1
@@ -1212,12 +1191,12 @@ groups:
       - ExtensionPartialDateTime
       - ExtensionTrackingNumber
 
-  # MDIProfilesNew:
-  #   name: New MDI Profiles
+  # MDIProfiles:
+  #   name:  MDI Profiles
   #   resources:  
-  #     - BundleDocumentMDIToEDRSNew 
-  #     - BundleMessageToxToMDINew
-  #     - CompositionMDIToEDRSNew
+  #     - BundleDocumentMDIToEDRS 
+  #     - BundleMessageToxToMDI
+  #     - CompositionMDIToEDRS
     
   # MDIProfilesUnchanged:
   #   name: Unchanged MDI Profiles
@@ -1321,7 +1300,7 @@ groups:
 instanceOptions:
   # When set to true, slices must be referred to by name and not only by a numeric index in order to be used
   # in an Instance's assignment rule. All slices appear in the order in which they are specified in FSH rules.
-  # While SUSHI defaults to false for legacy reasons, manualSliceOrding is recommended for new projects.
+  # While SUSHI defaults to false for legacy reasons, manualSliceOrding is recommended for  projects.
   manualSliceOrdering: true # true | false
   # Determines for which types of Instances SUSHI will automatically set meta.profile
   # if InstanceOf references a profile:
