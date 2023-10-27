@@ -36,5 +36,5 @@ Description: "This Patient profile represents the woman who gave birth to, or de
   // but in this case, I expect it's safe to remove it. So if you have FSH explicitly adding this extension, I'd just delete those lines of FSH.
   * type = #seealso
   * type MS
-    * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
-    * ^extension.valueBoolean = false
+    // * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
+    // * ^extension.valueBoolean = false
