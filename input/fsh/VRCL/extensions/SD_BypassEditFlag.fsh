@@ -1,4 +1,4 @@
-Extension: BypassEditFlag
+Extension: ExtensionBypassEditFlagVitalRecords
 Id: BypassEditFlag
 Title: "BypassEditFlag"
 Description: "Extension to hold a codeable concept from one of several valuesets."

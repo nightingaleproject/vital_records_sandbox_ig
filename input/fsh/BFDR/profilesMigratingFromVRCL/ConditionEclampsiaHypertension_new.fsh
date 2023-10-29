@@ -1,4 +1,4 @@
-Profile: ConditionEclampsiaHypertensionNew
+Profile: ConditionEclampsiaHypertension
 Parent: USCoreConditionProblemsHealthConcernsProfile
 Id: Condition-eclampsia-hypertension
 Title: "Condition - Eclampsia Hypertension"
@@ -13,4 +13,4 @@ Description: "This Condition profile indicates that the mother had a pregnancy r
 // * . ^short = "This Condition profile indicates that the mother had a pregnancy risk factor of eclampsia hypertension."
 * code = $sct#15938005
   * ^short = "Eclampsia (disorder)"
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)

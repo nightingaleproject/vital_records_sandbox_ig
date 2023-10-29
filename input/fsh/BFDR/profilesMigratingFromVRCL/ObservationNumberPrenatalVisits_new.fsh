@@ -1,5 +1,5 @@
 //content from ObservationNumberPrenatalVisitsVitalRecords moving from VRCL to BFDR. Changed to reference PatientMother profile in BFDR.
-Profile: ObservationNumberPrenatalVisitsNew
+Profile: ObservationNumberPrenatalVisits
 Parent: Observation
 Id: Observation-number-prenatal-visits
 Title: "Observation - Number of Prenatal Visits"
@@ -7,7 +7,7 @@ Description: "The total number of prenatal visits for the mother. The dates of t
 * code = $loinc#68493-6
 * code MS
 * subject 1.. MS
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)
 * effective[x] only dateTime
 // updated to accommodate effective date time inserted everywhere instances
 // * effective[x] only Period

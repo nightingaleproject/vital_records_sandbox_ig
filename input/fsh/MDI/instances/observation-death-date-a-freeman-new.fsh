@@ -1,5 +1,5 @@
 Instance: observation-death-date-a-freeman
-InstanceOf: DeathDateNew
+InstanceOf: DeathDate
 Title: "Observation - Death Date - Freeman"
 Description: "Observation - Death Date: Freeman death date, location, death pronouncer example"
 Usage: #example

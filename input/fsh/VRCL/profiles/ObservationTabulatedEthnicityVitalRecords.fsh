@@ -12,9 +12,9 @@ Description: "This profile records a code representing the ethnic affiliation in
 * code = $loinc#80978-0
   * ^short = "Tabulated ethnicity"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecordsNew or PatientDecedentFetusVitalRecordsNew)
+* subject only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
 * focus 1..1 MS
-* focus only Reference(PatientMotherVitalRecordsNew or RelatedPersonMotherGestationalVitalRecords or RelatedPersonFatherNaturalVitalRecords)
+* focus only Reference(PatientMotherVitalRecords or RelatedPersonMotherGestationalVitalRecords or RelatedPersonFatherNaturalVitalRecords)
 * value[x] 0..1 MS
 * value[x] only CodeableConcept
 * value[x] from $v3-Ethnicity_1 (required)

@@ -25,7 +25,7 @@
 * [Hi3 Solutions Corporation], a leading HIT vendor providing software solutions and professional services that promote evidence-based best practices in health.
 
 ### Acknowledgements
-* The development of the VRDR implementation guide by the [development team](credits.html#development-team) was performed under contract to CDC/NCHS/DVS under the direction of the [project facilitators](credits.html#project-facilitators).
+* The development of the VRDR implementation guide by the [development team](vrdr_credits.html#development-team) was performed under contract to CDC/NCHS/DVS under the direction of the [project facilitators](vrdr_credits.html#project-facilitators).
 * The content of this implementation guide draws heavily upon [Standard Death Record Implementation Guide](https://nightingaleproject.github.io/fhir-death-record/guide/index.html) developed by [MITRE].
 * The published content of this guide was developed using [FHIR Shorthand syntax](http://hl7.org/fhir/uv/shorthand/) and the [SUSHI tookit](https://fshschool.org/docs/sushi/), a free, open source toolchain from the [MITRE]. Generous guidance on FHIR Shorthand and SUSHI was provided by Chris Moesel.  FSH annotations of the example instances were produced using the [fshtomd.rb](https://github.com/HL7/vrdr/blob/master/tools/fshtomd.rb) script developed by Saul Kravitz. The data dictionaries were produced using the [makemarkdownfromexcel.rb](https://github.com/HL7/vrdr/blob/master/tools/makemarkdownfromexcel.rb) script developed by Saul Kravitz.
 * Earlier drafts of this guide were developed using [Trifolia-on-FHIR](https://trifolia-fhir-dev.lantanagroup.com/) and professional guidance provided by [Lantana Consulting Group](https://www.lantanagroup.com/).

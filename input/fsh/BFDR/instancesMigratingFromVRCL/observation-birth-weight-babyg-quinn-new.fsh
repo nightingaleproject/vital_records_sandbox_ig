@@ -1,5 +1,5 @@
 Instance: observation-birth-weight-babyg-quinn
-InstanceOf: ObservationBirthWeightNew
+InstanceOf: ObservationBirthWeight
 Title: "Observation - Birth Weight - Baby G Quinn"
 Description: "Observation - Birth Weight: Baby G Quinn example"
 Usage: #example

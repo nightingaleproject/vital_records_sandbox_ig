@@ -1,5 +1,5 @@
 Instance: patient-mother-birth-date-part-absent
-InstanceOf: PatientMotherVitalRecordsNew
+InstanceOf: PatientMotherVitalRecords
 Title: "Patient - Mother Date Part Absent"
 Description: "Example of Patient-mother-vr profile (Date Part Absent)"
 Usage: #example

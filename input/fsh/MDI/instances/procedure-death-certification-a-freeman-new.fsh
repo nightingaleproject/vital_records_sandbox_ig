@@ -1,5 +1,5 @@
 Instance: procedure-death-certification-a-freeman
-InstanceOf: DeathCertificationNew
+InstanceOf: DeathCertification
 Title: "Procedure - Death Certification - Freeman"
 Description: "Procedure - Death Certification: Freeman example"
 Usage: #example

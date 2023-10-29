@@ -3,7 +3,7 @@
 // * entry[=].fullUrl = "http://www.example.org/fhir/{type}/{id}"
 
 Instance: bundle-jurisdiction-fetal-death-not-named
-InstanceOf: BundleDocumentBFDRNew
+InstanceOf: BundleDocumentBFDR
 Title: "Bundle - Jurisdiction Fetal Death Report - Fetus Not Named"
 Description: "Bundle - Jurisdiction Fetal Death Report: Fetus Not Named example"
 Usage: #example
@@ -12,7 +12,7 @@ Usage: #example
   * value = "urn:uuid:9eeb1854-dee1-470a-9534-5cb25e18a323"
 * type = #document
 * timestamp = "2019-10-15T08:51:14.637+00:00"
-* insert addentry(CompositionJurisdictionFetalDeathReportNew, composition-jurisdiction-fetal-death-not-named)
+* insert addentry(CompositionJurisdictionFetalDeathReport, composition-jurisdiction-fetal-death-not-named)
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-jurisdiction-fetal-death-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-1

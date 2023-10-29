@@ -1,5 +1,5 @@
 Instance: patient-mother-jada-ann-quinn-w-edit
-InstanceOf: PatientMotherVitalRecordsNew
+InstanceOf: PatientMotherVitalRecords
 Title: "Patient - Mother Jada Ann Quinn, with Edit Flag"
 Description: "Example of Patient-mother-vr profile (Jada Ann Quinn), with Edit Flag"
 Usage: #example

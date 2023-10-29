@@ -1,4 +1,4 @@
-Profile: ObservationNoneOfSpecifiedPregnancyRiskFactorsNew
+Profile: ObservationNoneOfSpecifiedPregnancyRiskFactors
 Parent: Observation
 Id: Observation-none-of-specified-pregnancy-risk-factors
 Title: "Observation - None Of Specified Pregnancy Risk Factors"
@@ -10,7 +10,7 @@ Description: "This profile indicates that none of the specified pregnancy risk f
 * code = $loinc#73775-9
   * ^short = "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
 * subject 1..
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] = $sct#260413007

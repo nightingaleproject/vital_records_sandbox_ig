@@ -1,8 +1,8 @@
 Instance: DeathDate-Example1
-InstanceOf: DeathDateNew
+InstanceOf: DeathDate
 Usage: #example
 Description: "DeathDate-Example1"
-* insert AddMetaProfile(DeathDateNew)
+* insert AddMetaProfile(DeathDate)
 * subject = Reference(Decedent-Example1)
 * effectiveDateTime = "2020-11-12T16:39:40-05:00"
 * performer = Reference(Certifier-Example1)
@@ -17,10 +17,10 @@ Description: "DeathDate-Example1"
 * status = #final
 
 Instance: DeathDate-Example2
-InstanceOf: DeathDateNew
+InstanceOf: DeathDate
 Usage: #example
 Description: "DeathDate-Example1"
-* insert AddMetaProfile(DeathDateNew)
+* insert AddMetaProfile(DeathDate)
 * subject = Reference(Decedent-Example1)
 * effectiveDateTime = "2020-11-12T16:39:40-05:00"
 * performer = Reference(Certifier-Example1)
@@ -36,10 +36,10 @@ Description: "DeathDate-Example1"
 * status = #final
 
 Instance: DeathDate-Example3
-InstanceOf: DeathDateNew
+InstanceOf: DeathDate
 Usage: #example
 Description: "DeathDate-Example3 - Stripped down for Mortality Roster"
-* insert AddMetaProfile(DeathDateNew)
+* insert AddMetaProfile(DeathDate)
 * subject = Reference(Decedent-Example3)
 * effectiveDateTime = "2020-11-12T16:39:40-05:00"
 // * performer = Reference(Certifier-Example1)

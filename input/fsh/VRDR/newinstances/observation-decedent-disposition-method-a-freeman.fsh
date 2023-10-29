@@ -1,5 +1,5 @@
 Instance: DecedentDispositionMethod-a-freeman
-InstanceOf: DecedentDispositionMethodNew
+InstanceOf: DecedentDispositionMethod
 Title: "Observation - Disposition Method - Freeman"
 Usage: #example
 Description: "Observation - Disposition Method: Freeman example"

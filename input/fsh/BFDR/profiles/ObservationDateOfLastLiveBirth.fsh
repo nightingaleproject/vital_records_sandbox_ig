@@ -7,7 +7,7 @@ Description: "This profile represents the date of the mother's last live born in
 * code = $loinc#68499-3
   * ^short = "Date last live birth"
 * subject 1.. MS
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)
 // * focus 1..1 MS
 // * focus only Reference(PatientMotherVitalRecordsNew)
 * value[x] 1..1 MS

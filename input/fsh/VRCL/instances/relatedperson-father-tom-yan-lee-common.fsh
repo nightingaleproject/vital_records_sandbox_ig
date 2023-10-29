@@ -1,5 +1,5 @@
 Instance: relatedperson-father-tom-yan-lee-common
-InstanceOf: RelatedPersonFatherVitalRecordsNew
+InstanceOf: RelatedPersonFatherVitalRecords
 Title: "RelatedPerson - Father example [Tom Yan Lee]"
 Description: "Example of Relatedperson-father-vr (Tom Yan Lee)"
 Usage: #example

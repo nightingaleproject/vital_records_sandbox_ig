@@ -1,5 +1,5 @@
 Instance: us-core-practitioner-b-goldberger
-InstanceOf: PractitionerVitalRecordsNew
+InstanceOf: PractitionerVitalRecords
 Title: "US Core Practitioner - Dr. Bruce Goldberger"
 Description: "Example of US Core Practitioner - Dr. Bruce Goldberger, toxicologist"
 Usage: #example

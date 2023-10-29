@@ -1,5 +1,5 @@
 Instance: observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit
-InstanceOf: ObservationMotherPrepregnancyWeightNew
+InstanceOf: ObservationMotherPrepregnancyWeight
 Title: "Observation - Mother Prepregnancy Weight - Carmen Teresa Lee, with Edit Flag"
 Description: "Observation - Mother Prepregnancy Weight: Carmen Teresa Lee example, with Edit Flag"
 Usage: #example

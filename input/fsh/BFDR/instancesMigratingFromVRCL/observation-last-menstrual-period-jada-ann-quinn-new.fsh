@@ -1,5 +1,5 @@
 Instance: observation-last-menstrual-period-jada-ann-quinn
-InstanceOf: ObservationLastMenstrualPeriodNew
+InstanceOf: ObservationLastMenstrualPeriod
 Title: "Observation - Last Menstrual Period - Jada Ann Quinn"
 Description: "Observation - Last Menstrual Period: Jada Ann Quinn example"
 Usage: #example

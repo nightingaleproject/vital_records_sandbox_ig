@@ -1,5 +1,5 @@
 Instance: bundle-mdi-tox-report-message-a-freeman
-InstanceOf: BundleMessageToxToMDINew
+InstanceOf: BundleMessageToxToMDI
 Title: "Bundle - Message Toxicology to MDI - Freeman"
 Description: "Bundle - Message Toxicology to MDI:  Freeman example"
 Usage: #example

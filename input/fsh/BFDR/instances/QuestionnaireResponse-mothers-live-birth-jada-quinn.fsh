@@ -291,4 +291,4 @@ Usage: #example
 * item[+]
   * linkId = "informant-relationship"
   * text = "What is your relationship to the baby's mother?"
-  * answer.valueCoding = CodeSystemInformantRelationshipToMotherNew#otherrelative "Other relative"
+  * answer.valueCoding = CodeSystemInformantRelationshipToMother#otherrelative "Other relative"

@@ -1,5 +1,5 @@
 Instance: observation-mother-height-jada-ann-quinn-w-edit
-InstanceOf: ObservationMotherHeightNew
+InstanceOf: ObservationMotherHeight
 Title: "Observation - Mother Height - Jada Ann Quinn, with Edit Flag"
 Description: "Observation - Mother Height: Jada Ann Quinn example, with Edit Flag"
 Usage: #example

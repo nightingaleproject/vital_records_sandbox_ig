@@ -14,9 +14,9 @@ RuleSet: CompositionSectionEntryNoSlicingMDI(section)
 * section[{section}] ^short = "{section}"
 
 
-Profile: CompositionMDIToEDRSNew
+Profile: CompositionMDIToEDRS
 Parent: Composition
-Id: Composition-mdi-to-edrs-new
+Id: Composition-mdi-to-edrs
 Title: "Composition - MDI to EDRS"
 Description: "This Composition profile represents data sent from an MDI information management system to an EDRS."
 * extension contains ExtensionTrackingNumber named extension-tracking-numbers 0..* MS
@@ -31,11 +31,11 @@ Description: "This Composition profile represents data sent from an MDI informat
   * ^short = "MDI to EDRS (Death administrative information Document)"
   * ^definition = "MDI to EDRS"
 * subject 1.. MS
-* subject only Reference(PatientVitalRecordsNew)
+* subject only Reference(PatientVitalRecords)
   * ^short = "The subject of the composition is the decedent."
   * ^definition = "The subject of the composition is the decedent."
 * author ..* MS
-* author only Reference(PractitionerVitalRecordsNew)
+* author only Reference(PractitionerVitalRecords)
   * ^short = "The author is the medical examiner/coroner (ME/C) responsible for the case. There can be multiple ME/Cs per case."
   * ^definition = "The author is the medical examiner/coroner (ME/C) responsible for the case. There can be multiple ME/Cs per case."
 * attester 1..1 MS
@@ -44,7 +44,7 @@ Description: "This Composition profile represents data sent from an MDI informat
   * extension ..1 MS
   * extension only $data-absent-reason
     * ^short = "If attester is not yet named, use data absent reason"
-  * party only Reference(PractitionerVitalRecordsNew)
+  * party only Reference(PractitionerVitalRecords)
   * party MS
 * section 1.. MS
   * ^slicing.discriminator.type = #pattern
@@ -81,8 +81,8 @@ Description: "This Composition profile represents data sent from an MDI informat
     * ^definition = "Entries that are contained in the Circumstances section"
   * emptyReason MS
 * insert BundleSectionSlice(circumstances, death-location, 0, 1,  [[Apparent address where death actually occurred.]],  [[Apparent address where death actually occurred.]], DeathLocation )
-* insert BundleSectionSlice(circumstances, tobacco-use-contributed-to-death, 0, 1,  [[Whether or not tobacco use contributed to death.]],  [[Whether or not tobacco use contributed to death.]], TobaccoUseContributedToDeathNew )
-* insert BundleSectionSlice(circumstances, decedent-pregnancy, 1, 1,  [[Pregnancy status of the decedent.]],  [[Pregnancy status of the decedent.]], DecedentPregnancyStatusNew )
+* insert BundleSectionSlice(circumstances, tobacco-use-contributed-to-death, 0, 1,  [[Whether or not tobacco use contributed to death.]],  [[Whether or not tobacco use contributed to death.]], TobaccoUseContributedToDeath )
+* insert BundleSectionSlice(circumstances, decedent-pregnancy, 1, 1,  [[Pregnancy status of the decedent.]],  [[Pregnancy status of the decedent.]], DecedentPregnancyStatus )
 * insert BundleSectionSlice(circumstances, injury-location, 1, 1,  [[Apparent address where injury occurred.]],  [[Apparent address where injury occurred.]], InjuryLocation )
 
   //  * entry[death-location] only Reference(DeathLocation)
@@ -119,8 +119,8 @@ Description: "This Composition profile represents data sent from an MDI informat
     * ^short = "Entries that are contained in the Jurisdiction section"
     * ^definition = "Entries that are contained in the Jurisdiction section"
   * emptyReason MS
-* insert BundleSectionSlice(jurisdiction, death-date, 0, 1,  [[The estimated and pronounced date of death, also contains the death pronouncer practitioner.]],  [[The estimated and pronounced date of death, also contains the death pronouncer practitioner.]], DeathDateNew )
-* insert BundleSectionSlice(jurisdiction, death-certification, 0, 1,  [[The procedure where the certification of death was performed by the certifier.]],  [[The procedure where the certification of death was performed by the certifier.]], DeathCertificationNew )
+* insert BundleSectionSlice(jurisdiction, death-date, 0, 1,  [[The estimated and pronounced date of death, also contains the death pronouncer practitioner.]],  [[The estimated and pronounced date of death, also contains the death pronouncer practitioner.]], DeathDate )
+* insert BundleSectionSlice(jurisdiction, death-certification, 0, 1,  [[The procedure where the certification of death was performed by the certifier.]],  [[The procedure where the certification of death was performed by the certifier.]], DeathCertification )
 // * entry contains
 //      death-certification 0..1 MS and 
 //      death-date 0..1 MS 
@@ -145,10 +145,10 @@ Description: "This Composition profile represents data sent from an MDI informat
     * ^short = "Entries that are contained in the Cause-Manner section"
     * ^definition = "Entries that are contained in the Cause-Manner section"
   * emptyReason MS
-* insert BundleSectionSlice(cause-manner, cause, 0, 1,  [[Up to 4 lines of cause of death.]],  [[Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death.]], CauseOfDeathPart1New )
-* insert BundleSectionSlice(cause-manner, other-condition, 0, 1,  [[Other significant conditions contributing to death but not resulting in the underlying cause..]],  [[Other significant conditions contributing to death but not resulting in the underlying cause..]], CauseOfDeathPart2New )
-* insert BundleSectionSlice(cause-manner, manner, 0, 1,  [[Manner of death]],  [[The conclusion arrived at upon completion of death investigation regarding the manner of death.]], MannerOfDeathNew )
-* insert BundleSectionSlice(cause-manner, how-injury, 0, 1,  [[Certified explanation of how injury occurred.]],  [[Certified explanation of how injury occurred.]], InjuryIncidentNew )
+* insert BundleSectionSlice(cause-manner, cause, 0, 1,  [[Up to 4 lines of cause of death.]],  [[Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death.]], CauseOfDeathPart1 )
+* insert BundleSectionSlice(cause-manner, other-condition, 0, 1,  [[Other significant conditions contributing to death but not resulting in the underlying cause..]],  [[Other significant conditions contributing to death but not resulting in the underlying cause..]], CauseOfDeathPart2 )
+* insert BundleSectionSlice(cause-manner, manner, 0, 1,  [[Manner of death]],  [[The conclusion arrived at upon completion of death investigation regarding the manner of death.]], MannerOfDeath )
+* insert BundleSectionSlice(cause-manner, how-injury, 0, 1,  [[Certified explanation of how injury occurred.]],  [[Certified explanation of how injury occurred.]], InjuryIncident )
 
   // * entry contains
   //     cause 0..4 MS and

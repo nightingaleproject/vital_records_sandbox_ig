@@ -1,5 +1,5 @@
 Instance: location-death-vr-atlanta-ga-a-freeman
-InstanceOf: LocationDeathVitalRecords
+InstanceOf: DeathLocation
 Title: "Atlanta GA Death Location - Freeman"
 Description: "Example "
 Usage: #example
@@ -8,7 +8,7 @@ Usage: #example
   * value = "29"
 * status = #active
 * name = "Atlanta GA Death Location - Freeman"
-* type = CodeSystemMDI#death
+//* type = CodeSystemMDI#death
 * address
   * use = #home
   * type = #physical
@@ -16,4 +16,4 @@ Usage: #example
   * city = "Atlanta"
   * district = "Fulton County"
   * state = "GA"
-  * country = "USA"
+  * country = "US"

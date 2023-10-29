@@ -1,5 +1,5 @@
 Instance: observation-number-prenatal-visits-jada-ann-quinn
-InstanceOf: ObservationNumberPrenatalVisitsNew
+InstanceOf: ObservationNumberPrenatalVisits
 Title: "Observation - Number Prenatal Visits - Jada Ann Quinn"
 Description: "Observation - Number Prenatal Visits: Jada Ann Quinn example"
 Usage: #example

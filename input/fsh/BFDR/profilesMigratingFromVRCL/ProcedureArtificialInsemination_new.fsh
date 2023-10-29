@@ -1,4 +1,4 @@
-Profile: ProcedureArtificialInseminationNew
+Profile: ProcedureArtificialInsemination
 Parent: USCoreProcedureProfile
 Id: Procedure-artificial-insemination
 Title: "Procedure - Artificial Insemination"
@@ -16,4 +16,4 @@ Description: "This Procedure profile records that a pregnancy risk factor of art
 * code = $sct#58533008
 * code MS
   * ^short = "Artificial insemination (procedure)"
-* subject only Reference(PatientMotherVitalRecordsNew)
+* subject only Reference(PatientMotherVitalRecords)

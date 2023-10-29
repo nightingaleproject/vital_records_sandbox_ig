@@ -9,11 +9,11 @@ RuleSet: Identifiers2020NY000182
 * identifier.extension[auxiliaryStateIdentifier1].valueString = "000000000001"
 * identifier.extension[auxiliaryStateIdentifier2].valueString = "100000000001"
 
-Instance: CauseOfDeathCodedContentBundle-Example1-New
-InstanceOf: CauseOfDeathCodedContentBundleNew
+Instance: CauseOfDeathCodedContentBundle-Example1
+InstanceOf: CauseOfDeathCodedContentBundle
 Usage: #example
 Description: "CauseofDeathCodedContentBundle-Example1"
-* insert AddMetaProfile(CauseOfDeathCodedContentBundleNew)
+* insert AddMetaProfile(CauseOfDeathCodedContentBundle)
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
 * insert Identifiers2020NY000182
 * timestamp = "2020-10-20T14:48:35.401641-04:00"
@@ -42,10 +42,10 @@ Description: "CauseofDeathCodedContentBundle-Example1"
 
 
 Instance: DemographicCodedContentBundle-Example1
-InstanceOf: DemographicCodedContentBundleNew
+InstanceOf: DemographicCodedContentBundle
 Usage: #example
 Description: "DemographicCodedContentBundle-Example1"
-* insert AddMetaProfile(DemographicCodedContentBundleNew)
+* insert AddMetaProfile(DemographicCodedContentBundle)
 * identifier.system = "http://nchs.cdc.gov/vrdr_id"
 * insert Identifiers2020NY000182
 * timestamp = "2020-10-20T14:48:35.401641-04:00"

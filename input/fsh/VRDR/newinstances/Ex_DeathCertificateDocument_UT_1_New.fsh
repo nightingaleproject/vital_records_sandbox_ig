@@ -1,5 +1,5 @@
 Instance: DeathCertificateDocument-UT-1
-InstanceOf: DeathCertificateDocumentNew
+InstanceOf: DeathCertificateDocument
 Description: "Example Record from UT"
 Usage: #example
 * timestamp = "2022-12-23T19:55:16.4587968+00:00"
@@ -35,7 +35,7 @@ Usage: #example
 
 
 Instance: DeathCertificateUT-Example1
-InstanceOf: DeathCertificateNew
+InstanceOf: DeathCertificate
 Usage: #example
 Description: "DeathCertificateUT-Example1"
 * extension[FilingFormat].valueCodeableConcept = FilingFormatCS#electronic
@@ -81,7 +81,7 @@ Description: "DeathCertificateUT-Example1"
 
 
 Instance: DecedentUT-Example1 // f906300e-3622-459c-8201-af0d9b90fb75
-InstanceOf: DecedentNew
+InstanceOf: Decedent
 Usage: #example 
 Description: "DecedentUT-Example1"
 * extension[NVSSSexAtDeath].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
@@ -148,7 +148,7 @@ Description: "InputRaceAndEthnicityUT-Example1"
 * component[HispanicOther].valueCodeableConcept = $v2-0136#N "No"
 
 Instance: PractitionerUT-Example1
-InstanceOf: PractitionerVitalRecordsNew
+InstanceOf: PractitionerVitalRecords
 Usage: #example
 Description: "PractitionerUT-Example1"
 // * id = "practitioner-ut-example1"
@@ -176,7 +176,7 @@ Description: "BirthRecordIdentifierUT-Example1"
 * component[birthJurisdiction].valueString = "CO"
 
 Instance: EducationUT-Example1
-InstanceOf: ObservationEducationLevelVitalRecordsNew
+InstanceOf: ObservationEducationLevelVitalRecords
 Usage: #example
 Description: "EducationUT-Example1"
 * subject = Reference(DecedentUT-Example1)
@@ -217,7 +217,7 @@ Description: "AutopsyPerformedIndicatorUT-Example1"
 * component[autopsyResultsAvailable].valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
 
 Instance: CauseOfDeathPart1UT-Example1 
-InstanceOf: CauseOfDeathPart1New
+InstanceOf: CauseOfDeathPart1
 Usage: #example
 Description: "CauseOfDeathPart1UT-Example1 "
 * subject = Reference(DecedentUT-Example1)
@@ -228,7 +228,7 @@ Description: "CauseOfDeathPart1UT-Example1 "
 * status = #preliminary
 
 Instance: DeathDateUT-Example1
-InstanceOf: DeathDateNew
+InstanceOf: DeathDate
 Usage: #example
 Description: "DeathDateUT-Example1"
 * status = #final 
@@ -264,7 +264,7 @@ Description: "AgeUT-Example1 "
 * valueQuantity = 10 'mo' "Months"
 
 Instance: DispositionMethodUT-Example1 
-InstanceOf: DecedentDispositionMethodNew
+InstanceOf: DecedentDispositionMethod
 Usage: #example
 Description: "DispositionMethodUT-Example1"
 * status = #final 
@@ -301,7 +301,7 @@ Description: "MilitaryServiceUT-Example1"
 * valueCodeableConcept = $v2-0136#N "No"
 
 Instance: PregnancyUT-Example1 
-InstanceOf: DecedentPregnancyStatusNew
+InstanceOf: DecedentPregnancyStatus
 Usage: #example
 Description: "PregnancyUT-Example1"
 * status = #final 
@@ -331,7 +331,7 @@ Description: "FuneralHomeUT-Example1"
 * address.country = "US"
 
 Instance: InjuryIncidentUT-Example1 
-InstanceOf: InjuryIncidentNew
+InstanceOf: InjuryIncident
 Usage: #example
 Description: "InjuryIncidentUT-Example1"
 * status = #final 
@@ -339,7 +339,7 @@ Description: "InjuryIncidentUT-Example1"
 * component[workInjuryIndicator].valueCodeableConcept = $v3-NullFlavor#UNK "Unknown"
 
 Instance: MannerOfDeathUT-Example1 
-InstanceOf: MannerOfDeathNew
+InstanceOf: MannerOfDeath
 Usage: #example
 Description: "MannerOfDeathUT-Example1"
 * status = #final 
@@ -348,7 +348,7 @@ Description: "MannerOfDeathUT-Example1"
 * valueCodeableConcept = $sct#185973002 "Patient awaiting investigation"
 
 Instance: TobaccoUseUT-Example1 
-InstanceOf: TobaccoUseContributedToDeathNew
+InstanceOf: TobaccoUseContributedToDeath
 Usage: #example
 Description: "TobaccoUseUT-Example1"
 //* id = "8942bdc4-b1dd-4458-aa6a-158e22ea3d24"
@@ -356,7 +356,7 @@ Description: "TobaccoUseUT-Example1"
 * valueCodeableConcept = $sct#373067005 "No"
 
 Instance: ProcedureDeathCertificationUT-Example1
-InstanceOf: DeathCertificationNew
+InstanceOf: DeathCertification
 Usage: #example
 Description: "ProcedureDeathCertificationUT-Example1"
 // * id = procedure-death-certification-ut-example1 
@@ -370,7 +370,7 @@ Description: "ProcedureDeathCertificationUT-Example1"
 * performedDateTime = "2021-11-14T16:39:40-05:00"
 
 Instance: EmergingIssuesUT-Example1
-InstanceOf: EmergingIssues
+InstanceOf: ObservationEmergingIssuesVitalRecords
 Usage: #example
 Description: "EmergingIssuesUT-Example1"
 // * id = "3a1d5d86-4399-48ad-9d55-a22ddd283bfa"

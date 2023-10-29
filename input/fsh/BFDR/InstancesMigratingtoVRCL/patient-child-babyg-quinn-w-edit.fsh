@@ -1,5 +1,5 @@
 Instance: patient-child-babyg-quinn-w-edit
-InstanceOf: PatientChildVitalRecordsNew
+InstanceOf: PatientChildVitalRecords
 Title: "Patient - Child example [Baby G Quinn], with Edit Flag"
 Description: "Example of Patient-child-vr profile (Baby G Quinn), with Edit Flag"
 Usage: #example

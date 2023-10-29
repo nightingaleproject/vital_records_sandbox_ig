@@ -1,5 +1,5 @@
 Instance: observation-nbr-other-pregnancy-outcomes-jada-ann-quinn
-InstanceOf: ObservationNumberOtherPregnancyOutcomesNew
+InstanceOf: ObservationNumberOtherPregnancyOutcomes
 Title: "Observation - Number Other Pregnancy Outcomes - Jada Ann Quinn"
 Description: "Observation - Number Other Pregnancy Outcomes: Jada Ann Quinn example"
 Usage: #example

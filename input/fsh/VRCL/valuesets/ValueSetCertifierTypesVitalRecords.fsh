@@ -1,4 +1,4 @@
-ValueSet: ValueSetCertifierTypes
+ValueSet: ValueSetCertifierTypesVitalRecords
 Id: ValueSet-certifier-types-vr
 Title: "ValueSet - Certifier Types Vital Records"
 Description: """A set of codes indicating the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)

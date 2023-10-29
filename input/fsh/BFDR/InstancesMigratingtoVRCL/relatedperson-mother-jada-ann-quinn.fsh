@@ -1,5 +1,5 @@
 Instance: relatedperson-mother-jada-ann-quinn
-InstanceOf: RelatedPersonMotherVitalRecordsNew
+InstanceOf: RelatedPersonMotherVitalRecords
 Title: "RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn"
 Description: "RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn example"
 Usage: #example
