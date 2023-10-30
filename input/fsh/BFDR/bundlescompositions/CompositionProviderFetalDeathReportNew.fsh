@@ -10,11 +10,11 @@ Description: "This Composition profile contains constraints to address the use c
     ExtensionFetalDeathReportNumber named fetalDeathReportNumber 0..1  and
     ExtensionFetalDeathLocalFileNumber named fetalDeathLocalFileNumber 0..1  and
     ExtensionDatereceivedByRegistrar named dateReceivedByRegistrar 1..1 and
-    ReplaceStatus named replacementStatus 0..1
+    // ReplaceStatus named replacementStatus 0..1
 * extension[fetalDeathReportNumber] ^short = "State File Number"
 * extension[fetalDeathLocalFileNumber] ^short = "Local File No."
 // Status is deprecated (now flag in message header)
-* extension[replacementStatus] ^short = "Replace Status (deprecated)"
+// * extension[replacementStatus] ^short = "Replace Status (deprecated)"
 * status 
   * ^short = "In the case of a fetal death sent in error, a status of 'entered-in-error' must be set."
   * ^definition = "In the case of a fetal death sent in error, a status of 'entered-in-error' must be set."
