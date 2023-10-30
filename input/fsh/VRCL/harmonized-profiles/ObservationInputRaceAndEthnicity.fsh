@@ -4,7 +4,11 @@ Id: input-race-and-ethnicity-vr
 Title: "Input Race and Ethnicity"
 Description: "Input (from EDRS or EBRS) Race and Ethnicity (Observation). This is information collected by jurisdictions and submitted to NCHS.
 
-This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core."
+This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.
+
+Submission of race and ethnicity data and return of coded race and ethnicity is done with a uniform approach across all vital records use cases.
+The formats for Fetal Race and Ethnicity (FRE), Mortality Race and Ethnicity(MRE), and Natality Race and Ethnicity (NRE) are described
+in [NCHS Procedures for Multiple-Race and Hispanic Origin Coding](https://www.cdc.gov/nchs/data/dvs/multiple_race_documentation_5-10-04.pdf)."
 * code from ValueSetInputRaceAndEthnicityPersonVitalRecords (required) //  ObservationsCS#inputraceandethnicity
 * value[x] 0..0
 * insert SubjectRelatedPattern
