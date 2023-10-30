@@ -3,7 +3,6 @@ InstanceOf: PatientMotherVitalRecords
 Title: "Patient - Mother example [Carmen Teresa Lee]"
 Description: "Example of Patient-mother-vr profile (Carmen Teresa Lee)"
 Usage: #example
-* relationship = #MTH 
 * extension[race]
   * extension[ombCategory]
     * valueCoding = urn:oid:2.16.840.1.113883.6.238#2054-5 "Black or African American"
