@@ -16,7 +16,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 243 | Date of Registration--Year | DOR_YR| [CompositionProviderLiveBirthReport]|extension[dateFiledByRegistrar].value | dateTime | Used for Jurisdiction Report also | 
 | 244 | Date of Registration--Month | DOR_MO| [CompositionProviderLiveBirthReport]|extension[dateFiledByRegistrar].value | dateTime | Used for Jurisdiction Report also | 
 | 245 | Date of Registration--Day | DOR_DY| [CompositionProviderLiveBirthReport]|extension[dateFiledByRegistrar].value | dateTime | Used for Jurisdiction Report also | 
-| 186 | Characteristics of Labor & Delivery--Chorioamnionitis | CHOR| [ConditionChorioamnionitis]| | na | See [Note on missing characteristics of labor and delivery data] | 
+| 186 | <nobr>Characteristics of Labor & Delivery--Chorioamnionitis<nobr> | CHOR| [ConditionChorioamnionitis]| | na | See [Note on missing characteristics of labor and delivery data] | 
 | 219 | Congenital Anomalies of the Newborn--Anencephaly | ANEN| [ConditionCongenitalAnomalyOfNewborn]|code=89369001 (Anencephalus (disorder)) | na | See [Note on missing congenital anomaly data] | 
 | 220 | Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida | MNSB| [ConditionCongenitalAnomalyOfNewborn]|code=67531005 (Spina bifida (disorder)) | na | See [Note on missing congenital anomaly data] | 
 | 221 | Congenital Anomalies of the Newborn--Cyanotic congenital heart disease | CCHD| [ConditionCongenitalAnomalyOfNewborn]|code=12770006 (Cyanotic congenital heart disease (disorder)) | na | See [Note on missing congenital anomaly data] | 
@@ -135,7 +135,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 33 | Mother's Education--Edit Flag | MEDUC_BYPASS| [ObservationEditFlagMothersEducation]|value | codeable | [PHVS_EditFlags_NCHS], <br />why does this not use same edit flag as father's education [PHVS_EducationLevelEditFlags_NCHS]?  <br />See [Handling of edit flags] | 
 | 136 | Mother's Height--Edit Flag | HGT_BYPASS| [ObservationEditFlagMothersHeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags]  | 
 | 138 | Mother's Prepregnancy Weight--Edit Flag | PWGT_BYPASS| [ObservationEditFlagMothersPrepregnancyWeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags] | 
-| 133 | Total Number of Prenatal Care Visits--Edit Flag | NPREV_BYPASS| [ObservationEditFlagNumberPrenatalCareVisits]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags]  | 
+| 133 | <nobr>Total Number of Prenatal Care Visits--Edit Flag<nobr> | NPREV_BYPASS| [ObservationEditFlagNumberPrenatalCareVisits]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags]  | 
 | 167 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS| [ObservationEditFlagNumberPreviousCesareans]|value | codeable | [PHVS_NumberOfPreviousCesareansEditFlags_NCHS], <br />See [Handling of edit flags]  | 
 | 211 | Plurality--Edit Flag | PLUR_BYPASS| [ObservationEditFlagPlurality]|value | codeable | [PHVS_PluralityEditFlags_NCHS], <br />See [Handling of edit flags] | 
 | 192 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [ValueSetFetalPresentations] | 
@@ -366,14 +366,14 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 3 | Certificate Number | FILENO| [CompositionProviderFetalDeathReport]|extension[fetalDeathReportNumber].value | identifier | Used for Jurisdiction Report, Coded Cause of Fetal Death, and Coded Race and Ethnicity Compositions also | 
 | 5 | Auxiliary State file number | AUXNO| [CompositionProviderFetalDeathReport]|extension[fetalDeathLocalFileNumber].value | identifier | Used for Jurisdiction Report also | 
 | 176 | Date of Registration--Year | DOR_YR| [CompositionProviderFetalDeathReport]|extension[dateReceivedByRegistrar].value | dateTime | Used for Jurisdiction Report also | 
-| 177 | Date of Registration--Month | DOR_MO| [CompositionProviderFetalDeathReport]|extension[dateReceivedByRegistrar].value | dateTime | Used for Jurisdiction Report also | 
+| 177 | <nobr>Date of Registration--Month<nobr> | DOR_MO| [CompositionProviderFetalDeathReport]|extension[dateReceivedByRegistrar].value | dateTime | Used for Jurisdiction Report also | 
 | 178 | Date of Registration--Day | DOR_DY| [CompositionProviderFetalDeathReport]|extension[dateReceivedByRegistrar].value | dateTime | Used for Jurisdiction Report also | 
 | 173 | Risk Factors--Hypertension Eclampsia (added after 2004) | EHYPE| [ConditionEclampsiaHypertensionVitalRecords]| | na | See [Note on missing pregnancy risk factors data] | 
 | 180 | Initiating cause/condition - Rupture of membranes prior to onset of labor | COD18a1| [ConditionFetalDeathCauseOrCondition]|code=44223004 (Premature rupture of membranes (disorder)) | na |  | 
 | 181 | Initiating cause/condition - Abruptio placenta | COD18a2| [ConditionFetalDeathCauseOrCondition]|code=415105001 (Placental abruption (disorder)) | na |  | 
 | 182 | Initiating cause/condition - Placental insufficiency | COD18a3| [ConditionFetalDeathCauseOrCondition]|code=237292005 (Placental insufficiency (disorder)) | na |  | 
 | 183 | Initiating cause/condition - Prolapsed cord | COD18a4| [ConditionFetalDeathCauseOrCondition]|code=270500004 (Prolapsed cord (disorder)) | na |  | 
-| 184 | Initiating cause/condition - Chorioamnionitis | COD18a5| [ConditionFetalDeathCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | 
+| 184 | <nobr>Initiating cause/condition - Chorioamnionitis<nobr> | COD18a5| [ConditionFetalDeathCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | 
 | 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes | na |  | 
 | 186 | Initiating cause/condition - Unknown | COD18a7| [ConditionFetalDeathCauseOrCondition]|code=UNK | na |  | 
 | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#maternalconditions, code.text | string | code.text should contain description | 
@@ -588,7 +588,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [CodedRaceAndEthnicity]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
+| 62 | <nobr>Mother's Race Tabulation Variable 1E<nobr> | MRACE1E| [CodedRaceAndEthnicity]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
 | 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [CodedRaceAndEthnicity]|component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
 | 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [CodedRaceAndEthnicity]|component[ThirdEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
 | 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [CodedRaceAndEthnicity]|component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | 
