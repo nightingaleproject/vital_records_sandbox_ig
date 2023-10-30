@@ -9,7 +9,7 @@ Description: "This Composition profile contains constraints to address the use c
 * extension contains
     ExtensionFetalDeathReportNumber named fetalDeathReportNumber 0..1  and
     ExtensionFetalDeathLocalFileNumber named fetalDeathLocalFileNumber 0..1  and
-    ExtensionDatereceivedByRegistrar named dateReceivedByRegistrar 1..1 and
+    ExtensionDatereceivedByRegistrar named dateReceivedByRegistrar 1..1
     ReplaceStatus named replacementStatus 0..1
 * extension[fetalDeathReportNumber] ^short = "State File Number"
 * extension[fetalDeathLocalFileNumber] ^short = "Local File No."
