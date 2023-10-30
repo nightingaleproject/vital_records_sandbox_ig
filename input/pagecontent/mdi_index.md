@@ -48,7 +48,7 @@ This guide includes the following sections, listed at the top of each page in th
 * [Best Practices](mdi_best_practices.html): Guidance on implementation and use of this specification
 * [Specification](mdi_specification.html): Technical details on implementing the specification
 * [Terminology](mdi_terminology.html): List of all value sets used in this guide
-* [Downloads](downloads.html): Links for downloading the full IG package as well as format-specific definitions files and example files in XML, JSON, and TTL
+* [Downloads](mdi_downloads.html): Links for downloading the full IG package as well as format-specific definitions files and example files in XML, JSON, and TTL
 * [Change Log](mdi_change_log.html): List of changes made in each published update
 * [Artifacts Index Summary](artifacts.html): List of all FHIR artifacts specified by this guide, with brief descriptions
 

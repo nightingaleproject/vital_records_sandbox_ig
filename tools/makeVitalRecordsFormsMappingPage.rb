@@ -105,12 +105,12 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
             if vProfile.include?("Questionnaire") 
               vProfileWithURL = "[" + vProfileFieldContext + "]" + "(Questionnaire-" + vProfile + ".html)"  
             else
-              vProfileWithURL = "[" + vProfileFieldContext + "]" + "(StructureDefinition-" + vProfile + ".html)"
+              vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhirusbfdr}}/" + "StructureDefinition-" + vProfile + ".html)"
             end
         when "VRCPL"
             # *TODO* this may needneeds to be updated prior to publication - for some reason the jekyll variable doesn't work the same for current build IG
             #vProfileWithURL = "[" + vProfile + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition/" + vProfile + ")"
-            vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "StructureDefinition-" + vProfile + ".html)"
+            vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/" + "StructureDefinition-" + vProfile + ".html)"
         when "US CORE"
             vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhiruscore}}" + "/StructureDefinition-" + vProfile + ".html)"
         when "FHIR"
