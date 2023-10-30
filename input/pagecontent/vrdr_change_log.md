@@ -27,9 +27,10 @@
 #### General Changes
 * __Scope:__ The VRDR IG now supports standards-based interoperable exchange of death record information that is information-content equivalent with the legacy IJE, MRE, TRX, and Mortality Roster formats.   The mapping of legacy IJE fields to the FHIR profiles is clearly documented.   Profiles that did not support any data fields used for submission of death records to NCHS or for inter-jurisdictional exchange were eliminated.
 * __Documentation:__ A [death record data dictionary](DeathRecordDataDictionary.html) that maps IJE fields has been added, and each profile includes the data dictionary elements that the profile supports. A separate [mortality roster data dictionary](MortalityRosterDataDictionary.html) is also included.
-* __Use Case Documentation:__ Documentation is provided for the [four use cases](background.html#use-cases) the VRDR is intended to support, and how the IG's profiles are used in support of each use case.
-* __Inclusion of FHIR Profiles for Coded Content:__ Eight [new profiles](artifacts.html#e-coded-observations), seven of which are Observations, have been added to support interoperable exchange of the decedent's coded race, ethnicity and cause of death.
-* __Race and Ethnicity:__ The Race and Ethnicity submitted as part of death registration are now represented accurately with respect to the NCHS process.  Separate profiles are provided for submission of [sending race and ethnicity to NCHS](StructureDefinition-vrdr-input-race-and-ethnicity.html), and to represent [coded race and ethnicity](StructureDefinition-vrdr-coded-race-and-ethnicity.html).
+* __Use Case Documentation:__ Documentation is provided for the [four use cases](vrdr_background.html#use-cases) the VRDR is intended to support, and how the IG's profiles are used in support of each use case.
+<!--- TODO after IGs separate, revert new profiles back to:  [new profiles](artifacts.html#e-coded-observations)--->
+* __Inclusion of FHIR Profiles for Coded Content:__ Eight [new profiles](artifacts.html#13), seven of which are Observations, have been added to support interoperable exchange of the decedent's coded race, ethnicity and cause of death.
+* __Race and Ethnicity:__ The Race and Ethnicity submitted as part of death registration are now represented accurately with respect to the NCHS process.  Separate profiles are provided for submission of [sending race and ethnicity to NCHS](StructureDefinition-input-race-and-ethnicity-vr.html), and to represent [coded race and ethnicity](StructureDefinition-coded-race-and-ethnicity-vr.html).
 * __Additional Bundles:__ In addition to the [DeathCertificateDocument](StructureDefinition-vrdr-death-certificate-document.html) new bundles have been defined for exchange of [coded demographic](StructureDefinition-vrdr-demographic-coded-bundle.html),  [cause of death](StructureDefinition-vrdr-cause-of-death-coded-bundle.html), and [mortality roster](StructureDefinition-vrdr-mortality-roster-bundle.html) information.  The new bundles are information content equivalent to their legacy counterparts.  All four bundles use the same set of identifiers.
 * __Examples:__ [Examples](artifacts.html#example-example-instances) are included for all profiles and extensions.
 * __Consistent Naming and Identifiers:__ The names and identifiers have been changed to achieve consistency.
@@ -38,7 +39,8 @@
 #### Terminology Changes
 * __Standard Terminologies:__  An attempt has been made to use standard terminologies and code systems (e.g., SNOMED-CT, LOINC, HL7) wherever possible.
 * __Non-Standard Terminologies:__ Non-standard terminologies are represented within the IG, rather than by reference to PHINVADs.
-* __ValueSets:__ All valuesets are included within the IG, rather than by reference to PHINVADs.   [Concept maps](artifacts.html#terminology-concept-maps) are provided to enable client software to map from legacy codes to the codes used in the IG's valuesets.
+<!--- TODO after IGs separate, revert new profiles back to:  [new profiles](artifacts.html#e-coded-observations)--->
+* __ValueSets:__ All valuesets are included within the IG, rather than by reference to PHINVADs.   [Concept maps](artifacts.html#17) are provided to enable client software to map from legacy codes to the codes used in the IG's valuesets.
 * __States, Territories, Jurisdictions, Provinces and Countries:__ All of these geographic entities are represented consistently throughout the IG using 2-letter postal abbreviations.
 
 #### Notable Changes to Profiles

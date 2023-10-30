@@ -1,7 +1,7 @@
 Profile: ConditionGestationalDiabetes
 Parent: USCoreConditionProblemsHealthConcernsProfile
 Id: Condition-gestational-diabetes
-Title: "Condition - Gestational Diabetes Vital Records"
+Title: "Condition - Gestational Diabetes"
 Description: "This Condition profile indicates that the mother had a pregnancy risk factor of gestational diabetes."
 // * ^contact.name = "HL7 Public Health Working Group"
 // * ^contact.telecom[0].system = #url

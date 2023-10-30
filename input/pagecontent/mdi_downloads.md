@@ -18,9 +18,10 @@ The entire IG (including the HTML files, definitions, validation information, et
 
 {% include cross-version-analysis.xhtml %}
 
+<!--- TODO add this back after IG's are separated --->
 ### Dependency Table
+<!--- {% include dependency-table.xhtml %} --->
 
-{% include dependency-table.xhtml %}
 
 ### Global Profiles Table
 

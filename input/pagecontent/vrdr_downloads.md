@@ -12,9 +12,12 @@ The source code for this Implementation Guide can be found on IHE GitHub [https:
 
 {% include cross-version-analysis.xhtml %}
 
+<!--- TODO after IGs separate add dependency table back --->
+
 #### Dependency Table
 
-{% include dependency-table.xhtml %}
+<!--- {% include dependency-table.xhtml %} --->
+
 
 #### Globals Table
 
