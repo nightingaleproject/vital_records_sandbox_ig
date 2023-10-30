@@ -24,6 +24,12 @@ Description: "This Patient profile represents the woman who gave birth to, or de
   * ^short = "Indicates if the individual is deceased or not, dateTime is preferred"
 * address.extension[withinCityLimitsIndicator] MS 
 * link MS
+* link 
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "type"
+  * ^slicing.description = "Slice based on link type"
+  * ^slicing.ordered = false
+  * ^slicing.rules = #open
 * link contains mother 0..1 MS
 * link[mother] ^short = "Link to the birth mother's RelatedPerson record"
   * other only Reference(RelatedPersonMotherVitalRecords)

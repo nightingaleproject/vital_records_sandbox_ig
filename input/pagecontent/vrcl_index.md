@@ -38,5 +38,3 @@ This Guide is divided into several pages which are listed at the top of each pag
 </tr>
 </tbody>
 </table>
-
-
