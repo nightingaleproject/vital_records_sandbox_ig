@@ -43,6 +43,6 @@ Usage: #example
   * state = "MI"
   * postalCode = "48103"
   * country = "US"
-* link
+* link[mother]
   * other = Reference(relatedperson-mother-carmen-teresa-lee)
-  * type = #seealso
+  // * type = #seealso

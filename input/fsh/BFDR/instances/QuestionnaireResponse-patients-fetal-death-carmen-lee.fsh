@@ -3,7 +3,7 @@ InstanceOf: QuestionnaireResponse
 Title: "QuestionnaireResponse - Patient's Fetal Death Worksheet: Carmen Lee"
 Description: "QuestionnaireResponse - Patient's Fetal Death Worksheet: Carmen Lee"
 Usage: #example
-* questionnaire = "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-patients-fetal-death"
+* questionnaire = Canonical(Questionnaire-patients-fetal-death)
 * status = #completed
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
 * source = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"

@@ -83,10 +83,5 @@ Description: "This abstract Patient profile includes common extensions and slici
 * insert CityCode
 * insert CountyCode
 * insert AddressComponents
-* link 
-  * ^slicing.discriminator.type = #pattern
-  * ^slicing.discriminator.path = "type"
-  * ^slicing.description = "Slice based on link type"
-  * ^slicing.ordered = false
-  * ^slicing.rules = #open
+
 
