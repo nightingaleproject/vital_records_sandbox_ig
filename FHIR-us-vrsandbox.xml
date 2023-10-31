@@ -71,7 +71,6 @@
 <artifact id="CodeSystem/CodeSystem-vr-fetal-death-cause-or-condition" key="CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition" name="CodeSystem - Fetal Death Cause or Condition"/>
 <artifact id="CodeSystem/CodeSystem-informant-relationship-to-mother" key="CodeSystem-CodeSystem-informant-relationship-to-mother" name="CodeSystem - Informant Relationship to Mother"/>
 <artifact id="CodeSystem/CodeSystem-local-component-codes" key="CodeSystem-CodeSystem-local-component-codes" name="CodeSystem - Local Component Codes"/>
-<artifact id="CodeSystem/CodeSystem-vr-location-type" key="CodeSystem-CodeSystem-vr-location-type" name="CodeSystem - Location Type Vital Records"/>
 <artifact id="CodeSystem/CodeSystem-vr-codes" key="CodeSystem-CodeSystem-vr-codes" name="CodeSystem - MDI"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Example1" key="Observation-CodedRaceAndEthnicity-Example1" name="CodedRaceAndEthnicity-Example1"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Father" key="Observation-CodedRaceAndEthnicity-Father" name="CodedRaceAndEthnicity-Father"/>
@@ -460,8 +459,8 @@
 <artifact id="Observation/observation-number-previous-cesareans-carmen-teresa-lee" key="Observation-observation-number-previous-cesareans-carmen-teresa-lee" name="Observations - Number Previous Cesareans - Carmen Teresa Lee"/>
 <artifact id="Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit" key="Observation-observation-number-previous-cesareans-carmen-teresa-lee-w-edit" name="Observations - Number Previous Cesareans - Carmen Teresa Lee, with Edit Flag"/>
 <artifact id="Parameters/expansion-parameters-mdi" key="Parameters-expansion-parameters-mdi" name="Parameters - SNOMED US Version"/>
-<artifact id="StructureDefinition/ExtensionDatePartAbsentReasonVitalRecords" key="StructureDefinition-ExtensionDatePartAbsentReasonVitalRecords" name="Partial Date"/>
 <artifact id="StructureDefinition/ExtensionPartialDateVitalRecords" key="StructureDefinition-ExtensionPartialDateVitalRecords" name="Partial Date"/>
+<artifact id="StructureDefinition/ExtensionDatePartAbsentReasonVitalRecords" key="StructureDefinition-ExtensionDatePartAbsentReasonVitalRecords" name="Partial Date Absent Reason"/>
 <artifact id="StructureDefinition/ExtensionPartialDateTimeVitalRecords" key="StructureDefinition-ExtensionPartialDateTimeVitalRecords" name="Partial Date Time"/>
 <artifact id="StructureDefinition/Patient-child-vr" key="StructureDefinition-Patient-child-vr" name="Patient - Child Vital Records"/>
 <artifact id="Patient/patient-child-babyg-quinn" key="Patient-patient-child-babyg-quinn" name="Patient - Child example [Baby G Quinn]"/>
@@ -609,7 +608,7 @@
 <artifact id="ValueSet/ValueSet-apgar-timing-vr" key="ValueSet-ValueSet-apgar-timing-vr" name="ValueSet - APGAR Score Timing Vital Records"/>
 <artifact id="ValueSet/ValueSet-abnormal-conditions-newborn-vr" key="ValueSet-ValueSet-abnormal-conditions-newborn-vr" name="ValueSet - Abnormal Conditions Vital Records"/>
 <artifact id="ValueSet/ValueSet-birth-attendant-titles-vr" key="ValueSet-ValueSet-birth-attendant-titles-vr" name="ValueSet - Birth Attendants Titles Vital Records"/>
-<artifact id="ValueSet/ValueSet-birth-delivery-occurred-vr" key="ValueSet-ValueSet-birth-delivery-occurred-vr" name="ValueSet - Birth Delivery Occurred Vital Records"/>
+<artifact id="ValueSet/ValueSet-birth-delivery-occurred" key="ValueSet-ValueSet-birth-delivery-occurred" name="ValueSet - Birth Delivery Occurred"/>
 <artifact id="ValueSet/ValueSet-birth-and-fetal-death-financial-class" key="ValueSet-ValueSet-birth-and-fetal-death-financial-class" name="ValueSet - Birth and Fetal Death Financial Class"/>
 <artifact id="ValueSet/ValueSet-certifier-types-vr" key="ValueSet-ValueSet-certifier-types-vr" name="ValueSet - Certifier Types Vital Records"/>
 <artifact id="ValueSet/ValueSet-coded-race-and-ethnicity-person-vr" key="ValueSet-ValueSet-coded-race-and-ethnicity-person-vr" name="ValueSet - Coded Race and Ethnicity Person Vital Records"/>
@@ -620,7 +619,7 @@
 <artifact id="ValueSet/ValueSet-delivery-routes" key="ValueSet-ValueSet-delivery-routes" name="ValueSet - Delivery Routes"/>
 <artifact id="ValueSet/ValueSet-education-level-person-vr" key="ValueSet-ValueSet-education-level-person-vr" name="ValueSet - Education Level Person Vital Records"/>
 <artifact id="ValueSet/ValueSet-father-relationship-vr" key="ValueSet-ValueSet-father-relationship-vr" name="ValueSet - Father Relationship Vital Records"/>
-<artifact id="ValueSet/ValueSet-fetal-death-cause-or-condition-vr" key="ValueSet-ValueSet-fetal-death-cause-or-condition-vr" name="ValueSet - Fetal Death Cause or Condition Vital Records"/>
+<artifact id="ValueSet/ValueSet-fetal-death-cause-or-condition" key="ValueSet-ValueSet-fetal-death-cause-or-condition" name="ValueSet - Fetal Death Cause or Condition"/>
 <artifact id="ValueSet/ValueSet-fetal-death-time-points-vr" key="ValueSet-ValueSet-fetal-death-time-points-vr" name="ValueSet - Fetal Death Time Points Vital Records"/>
 <artifact id="ValueSet/ValueSet-fetal-presentations-vr" key="ValueSet-ValueSet-fetal-presentations-vr" name="ValueSet - Fetal Presentations Vital Records"/>
 <artifact id="ValueSet/ValueSet-histological-placental-examination-vr" key="ValueSet-ValueSet-histological-placental-examination-vr" name="ValueSet - Histological Placental Examination Vital Records"/>

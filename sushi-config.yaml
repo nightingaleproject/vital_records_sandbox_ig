@@ -393,16 +393,7 @@ groups:
   PHINVADSValuesets:
     name:  ValueSets from PHINVADS
     resources:
-      - ValueSetBirthAttendantTitles
-      - ValueSetContributoryTobaccoUseVitalRecords
-      - ValueSetDeliveryRoutes
       - ValueSetEducationLevelPersonVitalRecords
-      - ValueSetFetalDeathTimePoints
-      - ValueSetFetalPresentations
-      - ValueSetHistologicalPlacentalExamination
-      - ValueSetInfectionsDuringPregnancyLiveBirth
-      - ValueSetObstetricProcedure
-      - ValueSetPregnancyRiskFactors
 
   VRCLValueSets:
     name: VRCL ValueSets
@@ -425,15 +416,6 @@ groups:
   VRCLConceptMaps:
     name: VRCL Concept Maps
     resources:
-      - BirthAndFetalDeathFinancialClassCM
-      - BirthAttendantTitlesCM
-      - BirthDeliveryOccurredCM
-      - DeliveryRoutesCM
-      - FetalDeathCauseOrConditionCM
-      - FetalDeathTimePointsCM
-      - FetalPresentationCM
-      - HistologicalPlacentalExaminationCM
-      - InfectionsDuringPregnancyLiveBirthCM
       - NewbornCongenitalAnomaliesCM
 
   VRCLExamples:
@@ -685,19 +667,38 @@ groups:
     name: BFDR ValueSets
     resources:
       - BirthAndFetalDeathFinancialClassVS
+      - BirthAttendantTitlesVS
       - BirthDeliveryOccurredVS
       - BirthWeightEditFlagsVS
-      - CigaretteSmokingBeforeAndDuringPregnancy
+      - CigaretteSmokingBeforeAndDuringPregnancyVS
+      - DeliveryRoutesVS
       - EstimateOfGestationEditFlagsVS
       - FathersDateOfBirthEditFlagsVS
       - FetalDeathCauseOrConditionVS
+      - FetalDeathTimePointsVS
+      - FetalPresentationsVS
+      - HistologicalPlacentalExaminationVS
+      - InfectionsDuringPregnancyLiveBirthVS
       - InformantRelationshipToMotherVS
       - MothersDateOfBirthEditFlagsVS
       - NumberPreviousCesareansEditFlagsVS
+      - ObstetricProcedureVS
       - PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
       
     
+  BFDRConceptMaps:
+    name: BFDR Concept Maps
+    resources:
+      - BirthAndFetalDeathFinancialClassCM
+      - BirthAttendantTitlesCM
+      - BirthDeliveryOccurredCM 
+      - DeliveryRoutesCM 
+      - FetalDeathCauseOrConditionCM
+      - FetalDeathTimePointsCM
+      - FetalPresentationCM
+      - HistologicalPlacentalExaminationCM
+      - InfectionsDuringPregnancyLiveBirthCM
 
   BFDRExamples:
     name: BFDR Examples

@@ -10,6 +10,6 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 193 | Method of Delivery--Route and Method of Delivery | ROUT | code |codeable |[ValueSetDeliveryRoutes] |
-| Fetal Death | 134 | Method of Delivery--Route and Method of Delivery | ROUT | code |codeable |[ValueSetDeliveryRoutes] |
+| Natality | 193 | Method of Delivery--Route and Method of Delivery | ROUT | code |codeable |[DeliveryRoutesVS] |
+| Fetal Death | 134 | Method of Delivery--Route and Method of Delivery | ROUT | code |codeable |[DeliveryRoutesVS] |
 {: .grid }

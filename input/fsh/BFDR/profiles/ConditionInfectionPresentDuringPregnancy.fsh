@@ -7,7 +7,7 @@ Description: "This Condition profile represents infections present and/or treate
 * category contains infectionDuringPregnancy 1..1 MS
 * category[infectionDuringPregnancy] = $loinc#72519-2
   * ^short = "Infections present AndOr treated during this pregnancy for live birth [US Standard Certificate of Live Birth]"
-* code from ValueSetInfectionsDuringPregnancyLiveBirth (required)
+* code from InfectionsDuringPregnancyLiveBirthVS (required)
   * ^short = "Infections present and/or treated during this pregnancy for live birth as required by the National US Standards. Note: Genital herpes simplex (SNOMED code 33839006) is only a Michigan state-specific requirement."
   * ^binding.description = "Infections During Pregnancy - Live Birth (NCHS)"
 * subject only Reference(PatientMotherVitalRecords)

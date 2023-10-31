@@ -13,7 +13,7 @@ Description: "This Practitioner profile represents a practitioner who is involve
   * ^slicing.rules = #open
   * ^slicing.description = "Slicing based on the profile conformance of the sliced element"
 * qualification contains birthAttendantQualification 0..1
-* qualification[birthAttendantQualification].code from ValueSetBirthAttendantTitles (required)
+* qualification[birthAttendantQualification].code from BirthAttendantTitlesVS (required)
 * qualification[birthAttendantQualification].code ^short = "List of titles"
 * qualification[birthAttendantQualification].code ^binding.description = "Live Birth/Fetal Death Practitioner title"
 * name 1..1

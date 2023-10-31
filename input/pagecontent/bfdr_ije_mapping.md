@@ -138,7 +138,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 133 | <nobr>Total Number of Prenatal Care Visits--Edit Flag<nobr> | NPREV_BYPASS| [ObservationEditFlagNumberPrenatalCareVisits]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags]  | 
 | 167 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS| [ObservationEditFlagNumberPreviousCesareans]|value | codeable | [PHVS_NumberOfPreviousCesareansEditFlags_NCHS], <br />See [Handling of edit flags]  | 
 | 211 | Plurality--Edit Flag | PLUR_BYPASS| [ObservationEditFlagPlurality]|value | codeable | [PHVS_PluralityEditFlags_NCHS], <br />See [Handling of edit flags] | 
-| 192 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [ValueSetFetalPresentations] | 
+| 192 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [FetalPresentationsVS] | 
 | 203 | Obstetric Estimation of Gestation | OWGEST| [ObservationGestationalAgeAtDeliveryVitalRecords]|value | quantity |  | 
 | 199 | Maternal Morbidity--Admit to Intensive Care | AINT| [ObservationICUAdmission]| | na | See [Note on missing maternal morbidity data] | 
 | 233 | Is Infant Being Breastfed at discharge? (RECOMMENDED CHANGE EFFECTIVE 2004) | BFED| [ObservationInfantBreastfedAtDischarge]|value | boolean | Discussion needed: IJE values are Y, N, U. However, encoding with Boolean does not capture Unknown | 
@@ -239,13 +239,13 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 320 | Mother's Mailing Address Country (Literal) | MAIL_CNTRYTXT| [PatientMotherVitalRecords]|address.country (expanded from 2 letter code) | string | See [CountryLiterals] | 
 | 333 | Mother's Medical Record Number | MOM_MED_REC_NUM| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR”  | string |  | 
 | 340 | For use of jurisdictions with domestic partnerships, othertypes of relationships. | MARITAL_DESCRIP| [PatientMotherVitalRecords]|maritalStatus.text | string | codeable.text should show up in differential with description from col F | 
-| 124 | Attendant Title | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | 
+| 124 | Attendant Title | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [BirthAttendantTitlesVS] | 
 | 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string |  | 
 | 326 | Attendant's Name | ATTEND_NAME| [PractitionerVitalRecords]|name.text | string |  | 
 | 327 | Attendant's NPI | ATTEND_NPI| [PractitionerVitalRecords]|identifier:NPI | string |  | 
 | 328 | Certifier's Name | CERTIF_NAME| [PractitionerVitalRecords]|name.text | string |  | 
 | 329 | Certifier's NPI | CERTIF_NPI| [PractitionerVitalRecords]|identifier:NPI | identifier |  | 
-| 330 | Certifier Title | CERTIF| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | 
+| 330 | Certifier Title | CERTIF| [PractitionerVitalRecords]|qualification.code | codeable | [BirthAttendantTitlesVS] | 
 | 331 | Certifier ("Other" specified text) | CERTIF_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string |  | 
 | 216 | Abnormal Conditions of the Newborn--Antibiotics | ANTI| [ProcedureAntibioticSuspectedNeonatalSepsis]| | na | See [Note on missing abnormal conditions of newborn data] | 
 | 240 | Risk Factors--Infertility: Fertility Enhancing Drugs  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_DRG| [ProcedureArtificialInseminationVitalRecords]| | na | See [Note on missing pregnancy risk factors data] | 
@@ -255,7 +255,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 182 | Characteristics of Labor & Delivery--Augmentation of Labor | AUGL| [ProcedureAugmentationOfLabor]| | na | See [Note on missing characteristics of labor and delivery data] | 
 | 195 | Maternal Morbidity--Maternal Transfusion | MTR| [ProcedureBloodTransfusion]| | na | See [Note on missing maternal morbidity data] | 
 | 189 | Characteristics of Labor & Delivery--Anesthesia | ESAN| [ProcedureEpiduralOrSpinalAnesthesia]| | na | See [Note on missing characteristics of labor and delivery data] | 
-| 193 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [ValueSetDeliveryRoutes] | 
+| 193 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS] | 
 | 181 | Characteristics of Labor & Delivery--Induction of Labor | INDL| [ProcedureInductionOfLabor]| | na | See [Note on missing characteristics of labor and delivery data] | 
 | 164 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926) | INFT| [ProcedureInfertilityTreatmentVitalRecords]| | na | See [Note on missing pregnancy risk factors data] | 
 | 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS| [ProcedureObstetric]|code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value)) | codeable | [ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? | 
@@ -501,10 +501,10 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 92 | Mother's Prepregnancy Weight--Edit Flag | PWGT_BYPASS| [ObservationEditFlagMothersPrepregnancyWeight]|value | codeable | [PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags] | 
 | 120 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS| [ObservationEditFlagNumberPreviousCesareans]|value | codeable | [PHVS_NumberOfPreviousCesareansEditFlags_NCHS], <br />See [Handling of edit flags]  | 
 | 155 | Plurality--Edit Flag | PLUR_BYPASS| [ObservationEditFlagPlurality]|value | codeable | [PHVS_PluralityEditFlags_NCHS], <br />See [Handling of edit flags] | 
-| 147 | Estimated time of fetal death | ETIME| [ObservationFetalDeathTimePoint]|value | codeable | [ValueSetFetalDeathTimePoints] | 
-| 133 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [ValueSetFetalPresentations] | 
+| 147 | Estimated time of fetal death | ETIME| [ObservationFetalDeathTimePoint]|value | codeable | [FetalDeathTimePointsVS] | 
+| 133 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [FetalPresentationsVS] | 
 | 145 | Obstetric Estimation of Gestation | OWGEST| [ObservationGestationalAgeAtDeliveryVitalRecords]|value | quantity |  | 
-| 149 | Was a Histological Placental Examination Performed? | HISTOP| [ObservationHistologicalPlacentalExamPerformed]|value | codeable | [ValueSetHistologicalPlacentalExamination] | 
+| 149 | Was a Histological Placental Examination Performed? | HISTOP| [ObservationHistologicalPlacentalExamPerformed]|value | codeable | [HistologicalPlacentalExaminationVS] | 
 | 141 | Maternal Morbidity--Admit to Intensive Care | AINT| [ObservationICUAdmission]| | na | See [Note on missing maternal morbidity data] | 
 | 135 | Method of Delivery--Trial of Labor Attempted | TLAB| [ObservationLaborTrialAttempted]|value | boolean | Discussion needed: IJE values are Y, N, U, and X (not applicable). However, encoding with Boolean does not capture Unknown or Not Applicable | 
 | 107 | Date Last Normal Menses Began--Year | DLMP_YR| [ObservationLastMenstrualPeriodVitalRecords]|value | dateTime | See [PartialDatesAndTimes] | 
@@ -575,13 +575,13 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 265 | Mother's Social Security Number | MOM_SSN| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”  | string |  | 
 | 279 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].state | string | See [StateLiterals] | 
 | 280 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].country (expanded from 2 letter code) | string | See [CountryLiterals] | 
-| 78 | Attendant | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | 
+| 78 | Attendant | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [BirthAttendantTitlesVS] | 
 | 340 | Attendant's Name | ATTEND_NAME| [PractitionerVitalRecords]|name.text | string |  | 
 | 341 | Attendant's NPI | ATTEND_NPI| [PractitionerVitalRecords]|identifier:NPI | string |  | 
 | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string | code.text should contain description | 
 | 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG| [ProcedureArtificialInseminationVitalRecords]| | na | See [Note on missing pregnancy risk factors data] | 
 | 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART| [ProcedureAssistedFertilizationVitalRecords]| | na | See [Note on missing pregnancy risk factors data] | 
-| 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [ValueSetDeliveryRoutes] | 
+| 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS] | 
 | 117 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575) | INFT| [ProcedureInfertilityTreatmentVitalRecords]| | na | See [Note on missing pregnancy risk factors data] | 
 {: .grid }
 #### Coded Content
