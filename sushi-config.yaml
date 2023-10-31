@@ -388,33 +388,19 @@ groups:
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
-      - BirthAndFetalDeathFinancialClassCS
-      - BirthDeliveryOccurredCS
-      # - CodeSystemDeathPregnancyStatusVitalRecords
       - EditFlagsCS
-      - FetalDeathCauseOrConditionCS
-      - CodeSystemInformantRelationshipToMother
-      # - CodeSystemLocalComponentCodesVitalRecords
-      - CodeSystemLocationTypeVitalRecords
-      - CodeSystemMDI
 
   PHINVADSValuesets:
     name:  ValueSets from PHINVADS
     resources:
-      # - ValueSetAbnormalConditionsbornNew
-      - ValueSetBirthAndFetalDeathFinancialClass
       - ValueSetBirthAttendantTitles
-      - ValueSetBirthDeliveryOccurred
       - ValueSetContributoryTobaccoUseVitalRecords
       - ValueSetDeliveryRoutes
       - ValueSetEducationLevelPersonVitalRecords
-      - ValueSetFetalDeathCauseOrCondition
       - ValueSetFetalDeathTimePoints
       - ValueSetFetalPresentations
       - ValueSetHistologicalPlacentalExamination
       - ValueSetInfectionsDuringPregnancyLiveBirth
-      - ValueSetInformantRelationshipToMother
-      # - ValueSetbornCongenitalAnomalies
       - ValueSetObstetricProcedure
       - ValueSetPregnancyRiskFactors
 
@@ -687,19 +673,30 @@ groups:
   #     - ObservationEditFlagNumberPreviousCesareans
   #     - ObservationEditFlagPlurality
 
+  BFDRCodeSystems:
+    name: BFDR CodeSystems
+    resources:
+      - BirthAndFetalDeathFinancialClassCS
+      - BirthDeliveryOccurredCS
+      - FetalDeathCauseOrConditionCS
+      - InformantRelationshipToMotherCS
 
   BFDRValueSets:
     name: BFDR ValueSets
-    # description: BFDR ValueSets
     resources:
+      - BirthAndFetalDeathFinancialClassVS
+      - BirthDeliveryOccurredVS
       - BirthWeightEditFlagsVS
       - CigaretteSmokingBeforeAndDuringPregnancy
       - EstimateOfGestationEditFlagsVS
       - FathersDateOfBirthEditFlagsVS
+      - FetalDeathCauseOrConditionVS
+      - InformantRelationshipToMotherVS
       - MothersDateOfBirthEditFlagsVS
       - NumberPreviousCesareansEditFlagsVS
       - PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
+      
     
 
   BFDRExamples:
@@ -1218,7 +1215,12 @@ groups:
   #     - ObservationToxicologyLabResult
   #     - SpecimenToxicologyLab
 
-  MDIValueset:
+  MDICodeSystems:
+    name: MDI CodeSystems
+    resources:
+      - CodeSystemMDI
+
+  MDIValuesetS:
     name: MDI Value Set
     resources:
       - CodeSystemLocalComponentCodes

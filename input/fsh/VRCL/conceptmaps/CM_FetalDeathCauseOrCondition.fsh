@@ -2,7 +2,7 @@ Instance: FetalDeathCauseOrConditionCM
 InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false
-* insert ConceptMapIntro(FetalDeathCauseOrCondition, ValueSetFetalDeathCauseOrCondition)
+* insert ConceptMapIntro(FetalDeathCauseOrCondition, FetalDeathCauseOrConditionVS)
 * insert AddGroup("IJE", $sct)
 // snomed to IJE fields 
 * insert MapConcept( #COD18a1,  "Initiating cause/condition - Rupture of membranes prior to onset of labor", #44223004, "Premature rupture of membranes")

@@ -43,10 +43,10 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 159 | Risk Factors--Prepregnancy Hypertension  | PHYPE| [ConditionPrepregnancyHypertensionVitalRecords]| | na | See [Note on missing pregnancy risk factors data] | 
 | 197 | Maternal Morbidity--Ruptured Uterus | RUT| [ConditionRupturedUterus]| | na | See [Note on missing maternal morbidity data] | 
 | 217 | Abnormal Conditions of the Newborn--Seizures | SEIZ| [ConditionSeizure]| | na | See [Note on missing abnormal conditions of newborn data] | 
-| 153 | Principal source of Payment for this delivery | PAY| [CoveragePrincipalPayerDelivery]|type | codeable | [ValueSetBirthAndFetalDeathFinancialClass]  | 
+| 153 | Principal source of Payment for this delivery | PAY| [CoveragePrincipalPayerDelivery]|type | codeable | [BirthAndFetalDeathFinancialClassVS]  | 
 | 125 | Mother Transferred? | TRAN| [Encounter_Maternity]|hospitalization.admitSource = "hosp-trans" | codeable | [HL7EncounterAdmitSourceVS](http://hl7.org/fhir/ValueSet/encounter-admit-source), <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'hosp-trans' | 
 | 302 | Facility Mother Moved From (if transferred) | HOSPFROM| [Encounter_Maternity]|hospitalization.origin.name | string |  | 
-| 11 | Place Where Birth Occurred (type of place or institution) | BPLACE| [EncounterBirth]|location.physicalType | codeable | [ValueSetBirthDeliveryOccurred] | 
+| 11 | Place Where Birth Occurred (type of place or institution) | BPLACE| [EncounterBirth]|location.physicalType | codeable | [BirthDeliveryOccurredVS] | 
 | 12 | Facility ID (NPI) - if available | FNPI| [EncounterBirth]|location.location.id | string |  | 
 | 13 | Facility ID (State-Assigned) | SFN| [EncounterBirth]|location.location.identifier | Identifier |  | 
 | 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN| [EncounterBirth]|hospitalization.dischargeDisposition="other-hcf" | codeable | [USCoreDischargeDispositionVS](http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition). <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'other-hcf' | 
@@ -403,7 +403,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 112 | Risk Factors--Hypertension Prepregnancy | PHYPE| [ConditionPrepregnancyHypertensionVitalRecords]| | na | See [Note on missing pregnancy risk factors data] | 
 | 139 | Maternal Morbidity--Ruptured Uterus | RUT| [ConditionRupturedUterus]| | na | See [Note on missing maternal morbidity data] | 
 | 10 | County of Delivery | CNTYO| [Encounter_Maternity]|location.location.address.district.extension[countyCode] | integer | See [CountyCodes] | 
-| 11 | Place Where Delivery Occurred | DPLACE| [Encounter_Maternity]|location.physicalType | codeable | [ValueSetBirthDeliveryOccurred] | 
+| 11 | Place Where Delivery Occurred | DPLACE| [Encounter_Maternity]|location.physicalType | codeable | [BirthDeliveryOccurredVS] | 
 | 12 | Facility ID (NPI) - If available | FNPI| [Encounter_Maternity]|location.location.id | string |  | 
 | 13 | Facility ID (State-Assigned) | SFN| [Encounter_Maternity]|location.location.identifier | Identifier |  | 
 | 224 | Name of Delivery Facility | HOSP_D| [Encounter_Maternity]|location.location.name | string |  | 

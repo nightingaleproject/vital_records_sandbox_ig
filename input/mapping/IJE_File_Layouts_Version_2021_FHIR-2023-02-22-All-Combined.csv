@@ -259,7 +259,7 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 5 = Home (Unknown if Intended)
 6 = Clinic/Doctor's Office
 7 = Other
-9 = Unknown",,BFDR,EncounterBirth,location.physicalType,codeable,[ValueSetBirthDeliveryOccurred],,,,,Encounter-birth
+9 = Unknown",,BFDR,EncounterBirth,location.physicalType,codeable,[BirthDeliveryOccurredVS],,,,,Encounter-birth
 1352,Birth Infant Death,11,38,1,Place Where Birth Occurred (type of place or institution),BPLACE,"1 = Hospital
 2 = Freestanding Birth Center
 3 = Home (Intended)
@@ -276,7 +276,7 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 5 = Home (Unknown if Intended)
 6 = Clinic/Doctor's Office
 7 = Other
-9 = Unknown",,BFDR,Encounter_Maternity,location.physicalType,codeable,[ValueSetBirthDeliveryOccurred],,,,,Encounter-maternity
+9 = Unknown",,BFDR,Encounter_Maternity,location.physicalType,codeable,[BirthDeliveryOccurredVS],,,,,Encounter-maternity
 1193,ITOP,11,38,10,Patient ID Number,PAT_ID, ,,not implemented,not implemented,,,,,,,,not implemented
 283,Surveillance,11,187,9,Social Security Number,SSN,9 digit SSN; blank if unknown or not sharable,,VRDR,Decedent,"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB""",string,-,y,,,,Decedent
 284,Surveillance,12,196,1,Decedent's Age--Type,AGETYPE,"1 = Years
@@ -1944,7 +1944,7 @@ X = Not Applicable",,BFDR,ObservationAutopsyHistologicalExamResultsUsed,value,co
 5 = CHAMPUS/TRICARE
 6 = Other Government (Fed, State, Local) 
 8 = Other
-9 = Unknown",,BFDR,CoveragePrincipalPayerDelivery,type,codeable,[ValueSetBirthAndFetalDeathFinancialClass] ,,,,,Coverage-principal-payer-for-delivery
+9 = Unknown",,BFDR,CoveragePrincipalPayerDelivery,type,codeable,[BirthAndFetalDeathFinancialClassVS] ,,,,,Coverage-principal-payer-for-delivery
 1494,Birth Infant Death,153,811,1,Principal source of Payment for this delivery,PAY,"1 = Medicaid
 2 = Private Insurance
 3 = Self-pay

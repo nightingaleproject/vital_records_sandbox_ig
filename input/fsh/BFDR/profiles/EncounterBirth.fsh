@@ -47,7 +47,7 @@ Description: "This Encounter profile represents the child's birth encounter."
     * ^short = "Facility name (if not institution, give street and number)"
     * ^definition = "Facility name (if not institution, give street and number)"
   * physicalType MS
-  * physicalType from ValueSetBirthDeliveryOccurred (preferred)
+  * physicalType from BirthDeliveryOccurredVS (preferred)
     * ^short = "The value set contains the list of values used to indicate the type of place where birth or delivery occurred."
     * ^definition = "Place where birth occurred (type of place)"
     * ^binding.description = "Birth or Delivery Occurred (NCHS)"

@@ -53,7 +53,7 @@ When the known components of the date can be expressed as a valid dateTime, the 
 
 Extension: ExtensionDatePartAbsentReasonVitalRecords
 Id: ExtensionDatePartAbsentReasonVitalRecords
-Title: "Partial Date"
+Title: "Partial Date Absent Reason"
 Description: "Provides values of a partial date (Extension).
 If a component is missing, it is assumed unknown.
 * This extension SHOULD NOT be used when the value can be expressed as a [date](https://build.fhir.org/datatypes.html#date), specifically YYYY, YYYY-MM or YYYY-MM-DD).
