@@ -1,6 +1,6 @@
 ### Value Sets Defined in This MDI Implementation Guide
 * [ValueSetCertifierTypes]
-* [ValueSetDateEstablishmentApproachVitalRecords]
+* [DateOfDeathDeterminationMethodsVS]
 * [ValueSetDeathPregnancyStatus]
 * [ValueSetPlaceOfDeathVitalRecords]
 * [ValueSetTrackingNumberType]

@@ -398,7 +398,6 @@ groups:
   VRCLValueSets:
     name: VRCL ValueSets
     resources:  
-      - ValueSetDateEstablishmentApproachVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetPlaceOfDeathVitalRecords
