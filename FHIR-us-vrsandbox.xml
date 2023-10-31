@@ -606,13 +606,11 @@
 <artifact id="ConceptMap/UnitsOfAgeCM" key="ConceptMap-UnitsOfAgeCM" name="UnitsOfAgeCM"/>
 <artifact id="Observation/UsualWorkUT-Example1" key="Observation-UsualWorkUT-Example1" name="UsualWorkUT-Example1"/>
 <artifact id="ValueSet/ValueSet-apgar-timing-vr" key="ValueSet-ValueSet-apgar-timing-vr" name="ValueSet - APGAR Score Timing Vital Records"/>
-<artifact id="ValueSet/ValueSet-abnormal-conditions-newborn-vr" key="ValueSet-ValueSet-abnormal-conditions-newborn-vr" name="ValueSet - Abnormal Conditions Vital Records"/>
-<artifact id="ValueSet/ValueSet-birth-attendant-titles-vr" key="ValueSet-ValueSet-birth-attendant-titles-vr" name="ValueSet - Birth Attendants Titles Vital Records"/>
+<artifact id="ValueSet/ValueSet-birth-attendant-titles" key="ValueSet-ValueSet-birth-attendant-titles" name="ValueSet - Birth Attendants Titles"/>
 <artifact id="ValueSet/ValueSet-birth-delivery-occurred" key="ValueSet-ValueSet-birth-delivery-occurred" name="ValueSet - Birth Delivery Occurred"/>
 <artifact id="ValueSet/ValueSet-birth-and-fetal-death-financial-class" key="ValueSet-ValueSet-birth-and-fetal-death-financial-class" name="ValueSet - Birth and Fetal Death Financial Class"/>
 <artifact id="ValueSet/ValueSet-certifier-types-vr" key="ValueSet-ValueSet-certifier-types-vr" name="ValueSet - Certifier Types Vital Records"/>
 <artifact id="ValueSet/ValueSet-coded-race-and-ethnicity-person-vr" key="ValueSet-ValueSet-coded-race-and-ethnicity-person-vr" name="ValueSet - Coded Race and Ethnicity Person Vital Records"/>
-<artifact id="ValueSet/ValueSet-contributory-tobacco-use-vr" key="ValueSet-ValueSet-contributory-tobacco-use-vr" name="ValueSet - Contributory Tobacco Use Vital Records"/>
 <artifact id="ValueSet/ValueSet-date-establishment-approach-vr" key="ValueSet-ValueSet-date-establishment-approach-vr" name="ValueSet - Date Establishment Approach Vital Records"/>
 <artifact id="ValueSet/ValueSet-date-part-vr" key="ValueSet-ValueSet-date-part-vr" name="ValueSet - Date Part Vital Records"/>
 <artifact id="ValueSet/ValueSet-death-pregnancy-status" key="ValueSet-ValueSet-death-pregnancy-status" name="ValueSet - Death Pregnancy Status"/>
@@ -620,18 +618,18 @@
 <artifact id="ValueSet/ValueSet-education-level-person-vr" key="ValueSet-ValueSet-education-level-person-vr" name="ValueSet - Education Level Person Vital Records"/>
 <artifact id="ValueSet/ValueSet-father-relationship-vr" key="ValueSet-ValueSet-father-relationship-vr" name="ValueSet - Father Relationship Vital Records"/>
 <artifact id="ValueSet/ValueSet-fetal-death-cause-or-condition" key="ValueSet-ValueSet-fetal-death-cause-or-condition" name="ValueSet - Fetal Death Cause or Condition"/>
-<artifact id="ValueSet/ValueSet-fetal-death-time-points-vr" key="ValueSet-ValueSet-fetal-death-time-points-vr" name="ValueSet - Fetal Death Time Points Vital Records"/>
-<artifact id="ValueSet/ValueSet-fetal-presentations-vr" key="ValueSet-ValueSet-fetal-presentations-vr" name="ValueSet - Fetal Presentations Vital Records"/>
-<artifact id="ValueSet/ValueSet-histological-placental-examination-vr" key="ValueSet-ValueSet-histological-placental-examination-vr" name="ValueSet - Histological Placental Examination Vital Records"/>
+<artifact id="ValueSet/ValueSet-fetal-death-time-points" key="ValueSet-ValueSet-fetal-death-time-points" name="ValueSet - Fetal Death Time Points"/>
+<artifact id="ValueSet/ValueSet-fetal-presentations" key="ValueSet-ValueSet-fetal-presentations" name="ValueSet - Fetal Presentations"/>
+<artifact id="ValueSet/ValueSet-histological-placental-examination" key="ValueSet-ValueSet-histological-placental-examination" name="ValueSet - Histological Placental Examination"/>
 <artifact id="ValueSet/ValueSet-infections-during-pregnancy-live-birth" key="ValueSet-ValueSet-infections-during-pregnancy-live-birth" name="ValueSet - Infections During Pregnancy Live Birth"/>
 <artifact id="ValueSet/ValueSet-informant-relationship-to-mother" key="ValueSet-ValueSet-informant-relationship-to-mother" name="ValueSet - Informant Relationship to Mother"/>
 <artifact id="ValueSet/ValueSet-input-race-and-ethnicity-person-vr" key="ValueSet-ValueSet-input-race-and-ethnicity-person-vr" name="ValueSet - Input Race and Ethnicity Person Vital Records"/>
 <artifact id="ValueSet/ValueSet-manner-of-death-vr" key="ValueSet-ValueSet-manner-of-death-vr" name="ValueSet - Manner of Death Vital Records"/>
 <artifact id="ValueSet/ValueSet-mother-relationship-vr" key="ValueSet-ValueSet-mother-relationship-vr" name="ValueSet - Mother Relationship Vital Records"/>
 <artifact id="ValueSet/ValueSet-newborn-congenital-anomalies" key="ValueSet-ValueSet-newborn-congenital-anomalies" name="ValueSet - Newborn Congenital Anomalies"/>
+<artifact id="ValueSet/ValueSet-obstetric-procedure" key="ValueSet-ValueSet-obstetric-procedure" name="ValueSet - Obstetric Procedures"/>
 <artifact id="ValueSet/ValueSet-obstetric-procedure-vr" key="ValueSet-ValueSet-obstetric-procedure-vr" name="ValueSet - Obstetric Procedures Vital Records"/>
 <artifact id="ValueSet/ValueSet-place-of-death-vr" key="ValueSet-ValueSet-place-of-death-vr" name="ValueSet - Place of Death Vital Records"/>
-<artifact id="ValueSet/ValueSet-pregnancy-risk-factors-vr" key="ValueSet-ValueSet-pregnancy-risk-factors-vr" name="ValueSet - Pregnancy Risk Factors Vital Records"/>
 <artifact id="ValueSet/ValueSet-tracking-number-type" key="ValueSet-ValueSet-tracking-number-type" name="ValueSet - Tracking Number Type"/>
 <artifact id="ValueSet/ValueSet-transportation-incident-role-vr" key="ValueSet-ValueSet-transportation-incident-role-vr" name="ValueSet - Transportation Incident Role Vital Records"/>
 <artifact id="ValueSet/ValueSet-units-of-age-vr" key="ValueSet-ValueSet-units-of-age-vr" name="ValueSet - Units of Age Vital Records"/>
