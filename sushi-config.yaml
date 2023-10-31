@@ -415,7 +415,7 @@ groups:
       - ValueSetInfectionsDuringPregnancyLiveBirth
       - ValueSetInformantRelationshipToMother
       # - ValueSetbornCongenitalAnomalies
-      - ValueSetObstetricProcedure
+      # - ValueSetObstetricProcedure
       - ValueSetPregnancyRiskFactors
 
   VRCLValueSets:
@@ -532,6 +532,7 @@ groups:
       - ObservationDateOfLastOtherPregnancyOutcome
       - ObservationFetalDeathTimePoint
       - ObservationFetalPresentation
+      - ObservationFinalRouteAndMethodOfDelivery
       - ObservationHistologicalPlacentalExamPerformed
       - ObservationICUAdmission
       - ObservationInfantBreastfedAtDischarge
@@ -543,6 +544,7 @@ groups:
       - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
       - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
       - ObservationNoneOfSpecifiedMaternalMorbidities
+      - ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy
       - ObservationPaternityAcknowledgementSigned
       - ObservationPlannedToDeliverAtHome
       - ObservationPreviousCesarean
@@ -554,7 +556,6 @@ groups:
       - ProcedureAugmentationOfLabor
       - ProcedureBloodTransfusion
       - ProcedureEpiduralOrSpinalAnesthesia
-      - ProcedureFinalRouteMethodDelivery
       - ProcedureInductionOfLabor
       - ProcedureObstetric
       - ProcedureSurfactantReplacementTherapy
@@ -698,6 +699,7 @@ groups:
       - FathersDateOfBirthEditFlagsVS
       - MothersDateOfBirthEditFlagsVS
       - NumberPreviousCesareansEditFlagsVS
+      - ValueSetObstetricProcedureOutcome
       - PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
     
