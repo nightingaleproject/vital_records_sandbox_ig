@@ -50,4 +50,4 @@ This profile is designed to supplant the similar profiles in VRDR and MDI."
   * code = $loinc#58332-8
   * value[x] 1..1
   * value[x] only CodeableConcept
-  * value[x] from ValueSetPlaceOfDeathVitalRecords (required) //need to consolidate on the right valueset. this references the VRCL valueset
+  * value[x] from PlaceOfDeathVS (required) //need to consolidate on the right valueset. this references the VRCL valueset

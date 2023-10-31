@@ -1,3 +1,4 @@
+// Using VRDR VS instead
 ValueSet: ValueSetPlaceOfDeathVitalRecords
 Id: ValueSet-place-of-death-vr
 Title: "ValueSet - Place of Death Vital Records"

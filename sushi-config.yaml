@@ -400,7 +400,6 @@ groups:
     resources:  
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetMotherRelationshipVitalRecords
-      - ValueSetPlaceOfDeathVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
@@ -1054,9 +1053,6 @@ groups:
       - TransportationIncidentRoleVS
       - UnitsOfAgeVS
       - USStatesAndTerritoriesVS
-      # - YesNoNotApplicableVS
-      # - YesNoUnknownNotApplicableVS
-      # - YesNoUnknownVS 
 
   # VRDRBundles:
   #   name: VRDR Bundles
@@ -1093,8 +1089,6 @@ groups:
       - TransaxConversionCM
       - TransportationIncidentRoleCM
       - UnitsOfAgeCM
-      # - YesNoUnknownCM
-      # - YesNoUnknownNotApplicableCM
 
 
   VRDRExamples:

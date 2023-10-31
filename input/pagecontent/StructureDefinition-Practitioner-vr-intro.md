@@ -25,15 +25,15 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 124 | Attendant Title | ATTEND | qualification.code |codeable |[BirthAttendantTitlesVS] |
+| Natality | 124 | Attendant Title | ATTEND | qualification.code |codeable |[ValueSetBirthAttendantTitles] |
 | Natality | 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | qualification.code.text |string | |
 | Natality | 326 | Attendant's Name | ATTEND_NAME | name.text |string | |
 | Natality | 327 | Attendant's NPI | ATTEND_NPI | identifier:NPI |string | |
 | Natality | 328 | Certifier's Name | CERTIF_NAME | name.text |string | |
 | Natality | 329 | Certifier's NPI | CERTIF_NPI | identifier:NPI |identifier | |
-| Natality | 330 | Certifier Title | CERTIF | qualification.code |codeable |[BirthAttendantTitlesVS] |
+| Natality | 330 | Certifier Title | CERTIF | qualification.code |codeable |[ValueSetBirthAttendantTitles] |
 | Natality | 331 | Certifier ("Other" specified text) | CERTIF_OTH_TXT | qualification.code.text |string | |
-| Fetal Death | 78 | Attendant | ATTEND | qualification.code |codeable |[BirthAttendantTitlesVS] |
+| Fetal Death | 78 | Attendant | ATTEND | qualification.code |codeable |[ValueSetBirthAttendantTitles] |
 | Fetal Death | 340 | Attendant's Name | ATTEND_NAME | name.text |string | |
 | Fetal Death | 341 | Attendant's NPI | ATTEND_NPI | identifier:NPI |string | |
 | Fetal Death | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | qualification.code.text |string |code.text should contain description |
