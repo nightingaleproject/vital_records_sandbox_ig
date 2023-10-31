@@ -42,7 +42,7 @@ Description: "This Observation provides the certified explanation of how the inj
 * component[transportationRole]
   * code = $loinc#69451-3
   * value[x] only CodeableConcept
-  * value[x] from ValueSetTransportationIncidentRoleVitalRecords (required)
+  * value[x] from TransportationIncidentRoleVS (required)
     * ^short = "Transportation role of decedent"
   * valueCodeableConcept 1..1
     * text ^short = "Transportation role of decedent, if code = OTH"

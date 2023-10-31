@@ -397,17 +397,11 @@ groups:
 
   VRCLValueSets:
     name: VRCL ValueSets
-    resources:
-      - ValueSetApgarTimingVitalRecords    
-      - ValueSetCertifierTypesVitalRecords  
+    resources:  
       - ValueSetDateEstablishmentApproachVitalRecords
-      - ValueSetDatePartVitalRecords
-      # - ValueSetDeathPregnancyStatusVitalRecords
       - ValueSetFatherRelationshipVitalRecords
-      - ValueSetMannerOfDeathVitalRecords
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetPlaceOfDeathVitalRecords
-      - ValueSetTransportationIncidentRoleVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
@@ -666,6 +660,7 @@ groups:
   BFDRValueSets:
     name: BFDR ValueSets
     resources:
+      - ApgarTimingVS 
       - BirthAndFetalDeathFinancialClassVS
       - BirthAttendantTitlesVS
       - BirthDeliveryOccurredVS

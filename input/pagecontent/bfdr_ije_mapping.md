@@ -112,8 +112,8 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 106 | Father's Race--First Other Literal | FRACE22| [InputRaceAndEthnicity]|component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
 | 107 | Father's Race--Second Other Literal | FRACE23| [InputRaceAndEthnicity]|component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | string |  | 
 | 185 | Characteristics of Labor & Delivery--Antibiotics | ANTB| [ObservationAntibioticsAdministeredDuringLabor]| | na | See [Note on missing characteristics of labor and delivery data] | 
-| 205 | Apgar Score at 5 Minutes | APGAR5| [ObservationApgarScoreVitalRecords]|value, <br />code = 9274-2 (5 minute Apgar Score) | integer | [ValueSetApgarTimingVitalRecords] | 
-| 206 | Apgar Score at 10 Minutes | APGAR10| [ObservationApgarScoreVitalRecords]|value, <br />code = 9271-8 (10 minute Apgar Score) | integer | [ValueSetApgarTimingVitalRecords] | 
+| 205 | Apgar Score at 5 Minutes | APGAR5| [ObservationApgarScoreVitalRecords]|value, <br />code = 9274-2 (5 minute Apgar Score) | integer | [ApgarTimingVS] | 
+| 206 | Apgar Score at 10 Minutes | APGAR10| [ObservationApgarScoreVitalRecords]|value, <br />code = 9271-8 (10 minute Apgar Score) | integer | [ApgarTimingVS] | 
 | 201 | Birthweight in grams | BWG| [ObservationBirthWeightVitalRecords]|value | quantity |  | 
 | 149 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=64794-1 (In the 3 months before you got pregnant, <br />how many cigarettes did you smoke on an average day) | integer |  | 
 | 150 | Number of Cigarettes Smoked in 1st 3 months | CIGFN| [ObservationCigaretteSmokingBeforeDuringPregnancy]|value, <br />code=87298-6 (Cigarettes smoked per day by Mother--1st trimester) | integer |  | 

@@ -2,7 +2,6 @@
 * [ValueSetCertifierTypes]
 * [ValueSetDateEstablishmentApproachVitalRecords]
 * [ValueSetDeathPregnancyStatus]
-* [ValueSetMannerOfDeathVitalRecords]
 * [ValueSetPlaceOfDeathVitalRecords]
 * [ValueSetTrackingNumberType]
 * [TransportationIncidentRoleVS]
