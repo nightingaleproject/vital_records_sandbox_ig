@@ -40,7 +40,7 @@ If [ObservationNoneOfSpecifiedMaternalMorbidities] is present in bundle, then th
 ##### Characteristics of Labor and Delivery
 If [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery] is present in bundle, then the interpretation is that all individual risk factors are 'N' 
 ##### Pregnancy Risk Factors
-If [ObservationNoneOfSpecifiedPregnancyRiskFactorsNew] is present in bundle, then the interpretation is that all individual risk factors are 'N'
+If [ObservationNoneOfSpecifiedPregnancyRiskFactors] is present in bundle, then the interpretation is that all individual risk factors are 'N'
 ##### Congenital Anomalies of Newborn
 If code=260413007 (None), then the interpretation is that all individual congenital anomalies are 'N'
 ##### Infection Present During Pregnancy
