@@ -81,10 +81,14 @@ pages:
     title: BFDR Content Transitions 
   mdi-content-transitions.md:
     title: MDI Content Transitions 
-  bfdr_ije_mapping.md:
-    title: BFDR Data Dictionary
-  vrdr_ije_mapping.md:
-    title: VRDR Data Dictionary
+  bfdr_ije_mapping_natality.md:
+    title: BFDR Data Dictionary Natality
+  bfdr_ije_mapping_fetalDeath.md:
+    title: BFDR Data Dictionary Fetal Death
+  vrdr_ije_mapping_mortality.md:
+    title: VRDR Data Dictionary Mortality
+  vrdr_ije_mapping_mortalityRoster.md:
+    title: VRDR Data Dictionary Mortality Roster
   bfdr_appendices.md:
     title: BFDR Appendices
   bfdr_appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.md:
@@ -190,8 +194,10 @@ menu:
     Usage: usage.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
-    VRDR Data Dictionary: vrdr_ije_mapping.html
-    BFDR Data Dictionary: bfdr_ije_mapping.html
+    VRDR Mortality Data Dictionary: vrdr_ije_mapping_mortality.html
+    VRDR Mortality Roster Data Dictionary: vrdr_ije_mapping_mortalityRoster.html
+    BFDR Natality Data Dictionary: bfdr_ije_mapping_natality.html
+    BFDR Fetal Death Data Dictionary: bfdr_ije_mapping_fetalDeath.html
     IJE Mapping to FHIR (xlsx): IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx
   BFDR: 
     Home: bfdr_index.html
@@ -319,8 +325,6 @@ groups:
       - ObservationEmergingIssuesVitalRecords
       - ObservationInputRaceAndEthnicityVitalRecords
       - ObservationParentEducationLevelVitalRecords
-      - ObservationRaceVitalRecords
-      - ObservationTabulatedEthnicityVitalRecords
       - PatientChildVitalRecords
       - PatientDecedentFetusVitalRecords
       - PatientMotherVitalRecords
@@ -388,26 +392,13 @@ groups:
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
-      - BirthAndFetalDeathFinancialClassCS
-      - BirthDeliveryOccurredCS
-      # - CodeSystemDeathPregnancyStatusVitalRecords
       - EditFlagsCS
-      - FetalDeathCauseOrConditionCS
-      - CodeSystemInformantRelationshipToMother
-      # - CodeSystemLocalComponentCodesVitalRecords
-      - CodeSystemLocationTypeVitalRecords
-      - CodeSystemMDI
 
   PHINVADSValuesets:
     name:  ValueSets from PHINVADS
     resources:
-      # - ValueSetAbnormalConditionsbornNew
-      - ValueSetBirthAndFetalDeathFinancialClass
-      - ValueSetBirthAttendantTitles
-      - ValueSetBirthDeliveryOccurred
-      - ValueSetContributoryTobaccoUseVitalRecords
-      - ValueSetDeliveryRoutes
       - ValueSetEducationLevelPersonVitalRecords
+<<<<<<< HEAD
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetFetalDeathTimePoints
       - ValueSetFetalPresentations
@@ -417,20 +408,14 @@ groups:
       # - ValueSetbornCongenitalAnomalies
       # - ValueSetObstetricProcedure
       - ValueSetPregnancyRiskFactors
+=======
+>>>>>>> main
 
   VRCLValueSets:
     name: VRCL ValueSets
-    resources:
-      - ValueSetApgarTimingVitalRecords    
-      - ValueSetCertifierTypesVitalRecords  
-      - ValueSetDateEstablishmentApproachVitalRecords
-      - ValueSetDatePartVitalRecords
-      # - ValueSetDeathPregnancyStatusVitalRecords
+    resources:  
       - ValueSetFatherRelationshipVitalRecords
-      - ValueSetMannerOfDeathVitalRecords
       - ValueSetMotherRelationshipVitalRecords
-      - ValueSetPlaceOfDeathVitalRecords
-      - ValueSetTransportationIncidentRoleVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
@@ -439,15 +424,6 @@ groups:
   VRCLConceptMaps:
     name: VRCL Concept Maps
     resources:
-      - BirthAndFetalDeathFinancialClassCM
-      - BirthAttendantTitlesCM
-      - BirthDeliveryOccurredCM
-      - DeliveryRoutesCM
-      - FetalDeathCauseOrConditionCM
-      - FetalDeathTimePointsCM
-      - FetalPresentationCM
-      - HistologicalPlacentalExaminationCM
-      - InfectionsDuringPregnancyLiveBirthCM
       - NewbornCongenitalAnomaliesCM
 
   VRCLExamples:
@@ -458,7 +434,7 @@ groups:
       - location-injury-vr-atlanta-ga-a-freeman
       - observation-autopsy-performed-indicator-vr-a-freeman
       - observation-autopsy-performed-not-named-common
-      - observation-tabulated-ethnicity-jada-ann-quinn-common
+      #- observation-tabulated-ethnicity-jada-ann-quinn-common
       - relatedperson-father-tom-yan-lee-common
       - relatedperson-father-tony-lewis-common
       - relatedperson-mother-carol-hoffer-common
@@ -691,21 +667,55 @@ groups:
   #     - ObservationEditFlagNumberPreviousCesareans
   #     - ObservationEditFlagPlurality
 
+  BFDRCodeSystems:
+    name: BFDR CodeSystems
+    resources:
+      - BirthAndFetalDeathFinancialClassCS
+      - BirthDeliveryOccurredCS
+      - FetalDeathCauseOrConditionCS
+      - InformantRelationshipToMotherCS
 
   BFDRValueSets:
     name: BFDR ValueSets
-    # description: BFDR ValueSets
     resources:
+      - ApgarTimingVS 
+      - BirthAndFetalDeathFinancialClassVS
+      - BirthAttendantTitlesVS
+      - BirthDeliveryOccurredVS
       - BirthWeightEditFlagsVS
-      - CigaretteSmokingBeforeAndDuringPregnancy
+      - CigaretteSmokingBeforeAndDuringPregnancyVS
+      - DeliveryRoutesVS
       - EstimateOfGestationEditFlagsVS
       - FathersDateOfBirthEditFlagsVS
+      - FetalDeathCauseOrConditionVS
+      - FetalDeathTimePointsVS
+      - FetalPresentationsVS
+      - HistologicalPlacentalExaminationVS
+      - InfectionsDuringPregnancyLiveBirthVS
+      - InformantRelationshipToMotherVS
       - MothersDateOfBirthEditFlagsVS
       - NumberPreviousCesareansEditFlagsVS
+<<<<<<< HEAD
       - ValueSetObstetricProcedureOutcome
+=======
+      - ObstetricProcedureVS
+>>>>>>> main
       - PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
+      
     
+  BFDRConceptMaps:
+    name: BFDR Concept Maps
+    resources:
+      - BirthAndFetalDeathFinancialClassCM
+      - BirthAttendantTitlesCM
+      - BirthDeliveryOccurredCM 
+      - DeliveryRoutesCM 
+      - FetalDeathCauseOrConditionCM
+      - FetalDeathTimePointsCM
+      - FetalPresentationCM
+      - HistologicalPlacentalExaminationCM
+      - InfectionsDuringPregnancyLiveBirthCM
 
   BFDRExamples:
     name: BFDR Examples
@@ -823,16 +833,16 @@ groups:
       - observation-planned-to-deliver-at-home-not-named
       - observation-previous-cesarean-jada-ann-quinn
       - observation-previous-preterm-births-jada-ann-quinn
-      - observation-race-carmen-teresa-lee
-      - observation-race-jada-ann-quinn
-      - observation-race-james-quinn
-      - observation-race-tom-yan-lee
+      #- observation-race-carmen-teresa-lee 
+      #- observation-race-jada-ann-quinn
+      #- observation-race-james-quinn
+      #- observation-race-tom-yan-lee
       - observation-ssn-requested-for-child-babyg-quinn
       - observation-steroids-fetal-lung-maturation-jada-ann-quinn
-      - observation-tabulated-ethnicity-carmen-teresa-lee
-      - observation-tabulated-ethnicity-jada-ann-quinn
-      - observation-tabulated-ethnicity-james-quinn
-      - observation-tabulated-ethnicity-tom-yan-lee
+      #- observation-tabulated-ethnicity-carmen-teresa-lee
+      #- observation-tabulated-ethnicity-jada-ann-quinn
+      #- observation-tabulated-ethnicity-james-quinn
+      #- observation-tabulated-ethnicity-tom-yan-lee
       - organization-jurisdictional-vital-records-office
       - organization-nchs
       - organization-south-hospital
@@ -1067,9 +1077,6 @@ groups:
       - TransportationIncidentRoleVS
       - UnitsOfAgeVS
       - USStatesAndTerritoriesVS
-      # - YesNoNotApplicableVS
-      # - YesNoUnknownNotApplicableVS
-      # - YesNoUnknownVS 
 
   # VRDRBundles:
   #   name: VRDR Bundles
@@ -1106,8 +1113,6 @@ groups:
       - TransaxConversionCM
       - TransportationIncidentRoleCM
       - UnitsOfAgeCM
-      # - YesNoUnknownCM
-      # - YesNoUnknownNotApplicableCM
 
 
   VRDRExamples:
@@ -1223,7 +1228,12 @@ groups:
   #     - ObservationToxicologyLabResult
   #     - SpecimenToxicologyLab
 
-  MDIValueset:
+  MDICodeSystems:
+    name: MDI CodeSystems
+    resources:
+      - CodeSystemMDI
+
+  MDIValuesetS:
     name: MDI Value Set
     resources:
       - CodeSystemLocalComponentCodes

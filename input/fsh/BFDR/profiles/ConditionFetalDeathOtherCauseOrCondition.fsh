@@ -7,7 +7,7 @@ Description: "This Condition profile represents another significant cause or con
 * category contains otherCauseOrCondition 1..1 MS
 * category[otherCauseOrCondition] = $loinc#76061-1
   * ^short = "Other significant causes or conditions of fetal death [US Standard Report of Fetal Death]"
-* code from ValueSetFetalDeathCauseOrCondition (required)
+* code from FetalDeathCauseOrConditionVS (required)
   * ^short = "The value sets contains the list of values used to report initiating cause or condition or other significant causes or conditions contributing to fetal death."
   * ^binding.description = "Fetal Death Cause or Condition (NCHS)"
   * coding MS

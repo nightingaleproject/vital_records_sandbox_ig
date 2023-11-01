@@ -10,7 +10,7 @@ Description: "This Observation profile represents the fetal presentation (orient
 * subject only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
-* value[x] from ValueSetFetalPresentations (required)
+* value[x] from FetalPresentationsVS (required)
   * ^short = "The value set contains the list of the different presentations (orientations within the mother's womb) that a fetus may be in prior to delivery."
   * ^definition = "The presentation (orientation within the mother's womb) that a fetus may be in prior to delivery/birth."
   * ^binding.description = "Fetal Presentations (NCHS)"

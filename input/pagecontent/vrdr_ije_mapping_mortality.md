@@ -1,10 +1,10 @@
 
 ### Death Record IJE Mapping
 
-| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
+| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| 109 | Was Autopsy performed | AUTOP| [AutopsyPerformedIndicator]|value | codeable | [YesNoUnknownVS] | 
-| 110 | Were Autopsy Findings Available to Complete the Cause of Death? | AUTOPF| [AutopsyPerformedIndicator]|component[ autopsyResultsAvailable ].value | codeable | [YesNoUnknownNotApplicableVS] | 
+| 109 | Was Autopsy performed | AUTOP| [AutopsyPerformedIndicator]|value | codeable | [ValueSetYesNoUnknownVitalRecords] | 
+| 110 | Were Autopsy Findings Available to Complete the Cause of Death? | AUTOPF| [AutopsyPerformedIndicator]|component[ autopsyResultsAvailable ].value | codeable | [ValueSetYesNoUnknownNotApplicableVitalRecords] | 
 | 88 | Infant Death/Birth Linking - birth certificate number | BCNO| [BirthRecordIdentifier]|value | string(6) | - | 
 | 89 | Infant Death/Birth Linking - year of birth | IDOB_YR| [BirthRecordIdentifier]|component[birthYear].value | dateTime | YYYY component | 
 | 90 | Infant Death/Birth Linking - State, U.S. Territory or Canadian Province of Birth - code | BSTATE| [BirthRecordIdentifier]|component[birthJurisdiction].value | string | [JurisdictionsProvincesVS] | 
@@ -85,7 +85,7 @@
 | 25 | Decedent's Residence--County | COUNTYC| [Decedent]|address.district.extension[ districtCode ] | integer | see [CountyCodes] | 
 | 26 | State, U.S. Territory or Canadian Province of Decedent's residence - code | STATEC| [Decedent]|address.state | string | [StatesTerritoriesAndProvincesVS] | 
 | 27 | Decedent's Residence--Country | COUNTRYC| [Decedent]|address.country | string | [ResidenceCountryVS] | 
-| 28 | Decedent's Residence--Inside City Limits | LIMITS| [Decedent]|address.city.extension[ withinCityLimits]  | codeable | [YesNoUnknownVS] | 
+| 28 | Decedent's Residence--Inside City Limits | LIMITS| [Decedent]|address.city.extension[ withinCityLimits]  | codeable | [ValueSetYesNoUnknownVitalRecords] | 
 | 29 | Marital Status | MARITAL| [Decedent]|maritalStatus | codeable |  [MaritalStatusVS] | 
 | 30 | Marital Status--Edit Flag | MARITAL_BYPASS| [Decedent]|maritalStatus.extension[ BypassEditFlag]  | codeable | [EditBypass0124VS] | 
 | 143 | Decedent's spouse living at decedent's DOD? | SPOUSELV| [Decedent]|extension[ SpouseAlive ]  | codeable |  [SpouseAliveVS] | 
@@ -118,7 +118,7 @@
 | 167 | Father's First Name | DDADF| [DecedentFather]|name.given , name.use = official | string | - | 
 | 168 | Father's Middle Name | DDADMID| [DecedentFather]|name.given , name.use = official | string | - | 
 | 199 | Father's Suffix | FATHERSUFFIX| [DecedentFather]|name.suffix , name.use = official | string | - | 
-| 128 | Decedent ever served in Armed Forces? | ARMEDF| [DecedentMilitaryService]|value | codeable | [YesNoUnknownVS] | 
+| 128 | Decedent ever served in Armed Forces? | ARMEDF| [DecedentMilitaryService]|value | codeable | [ValueSetYesNoUnknownVitalRecords] | 
 | 169 | Mother's First Name | DMOMF| [DecedentMother]|name.given , name.use = official | string | - | 
 | 170 | Mother's Middle Name | DMOMMID| [DecedentMother]|name.given , name.use = official | string | - | 
 | 171 | Mother's Maiden Surname | DMOMMDN| [DecedentMother]|name.family , name.type=maiden | string  | - | 
@@ -137,17 +137,17 @@
 | 203 | Disposition State or Territory - Literal | DISPSTATE| [DispositionLocation]|address.state (expanded from 2 letter code) | string | See [StateLiterals] | 
 | 204 | Disposition City - Code | DISPCITYCODE| [DispositionLocation]|address.city.extension[ cityCode].value | integer | see [CityCodes] | 
 | 205 | Disposition City - Literal | DISPCITY| [DispositionLocation]|address.city | string | - | 
-| 248 | Blank for One-Byte Field 1 | PLACE1_1| [EmergingIssues]|component[EmergingIssue1_1].value | string(1) | - | 
-| 249 | Blank for One-Byte Field 2 | PLACE1_2| [EmergingIssues]|component[EmergingIssue1_2].value | string(1) | - | 
-| 250 | Blank for One-Byte Field 3 | PLACE1_3| [EmergingIssues]|component[EmergingIssue1_3].value | string(1) | - | 
-| 251 | Blank for One-Byte Field 4 | PLACE1_4| [EmergingIssues]|component[EmergingIssue1_4].value | string(1) | - | 
-| 252 | Blank for One-Byte Field 5 | PLACE1_5| [EmergingIssues]|component[EmergingIssue1_5].value | string(1) | - | 
-| 253 | Blank for One-Byte Field 6 | PLACE1_6| [EmergingIssues]|component[EmergingIssue1_6].value | string(1) | - | 
-| 254 | Blank for Eight-Byte Field 1 | PLACE8_1| [EmergingIssues]|component[EmergingIssue8_1].value | string(8) | - | 
-| 255 | Blank for Eight-Byte Field 2 | PLACE8_2| [EmergingIssues]|component[EmergingIssue8_2].value | string(8) | - | 
-| 256 | Blank for Eight-Byte Field 3 | PLACE8_3| [EmergingIssues]|component[EmergingIssue8_3].value | string(8) | - | 
-| 257 | Blank for Twenty-Byte Field | PLACE20| [EmergingIssues]|component[EmergingIssue20].value | string(20) | - | 
-| 172 | Was case Referred to Medical Examiner/Coroner? | REFERRED| [ExaminerContacted]|value | codeable | [YesNoUnknownVS] | 
+| 248 | Blank for One-Byte Field 1 | PLACE1_1| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue1_1].value | string(1) |  | 
+| 249 | Blank for One-Byte Field 2 | PLACE1_2| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue1_2].value | string(1) |  | 
+| 250 | Blank for One-Byte Field 3 | PLACE1_3| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue1_3].value | string(1) |  | 
+| 251 | Blank for One-Byte Field 4 | PLACE1_4| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue1_4].value | string(1) |  | 
+| 252 | Blank for One-Byte Field 5 | PLACE1_5| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue1_5].value | string(1) |  | 
+| 253 | Blank for One-Byte Field 6 | PLACE1_6| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue1_6].value | string(1) |  | 
+| 254 | Blank for Eight-Byte Field 1 | PLACE8_1| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue8_1].value | string(8) |  | 
+| 255 | Blank for Eight-Byte Field 2 | PLACE8_2| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue8_2].value | string(8) |  | 
+| 256 | Blank for Eight-Byte Field 3 | PLACE8_3| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue8_3].value | string(8) |  | 
+| 257 | Blank for Twenty-Byte Field | PLACE20| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue20].value | string(20) |  | 
+| 172 | Was case Referred to Medical Examiner/Coroner? | REFERRED| [ExaminerContacted]|value | codeable | [ValueSetYesNoUnknownVitalRecords] | 
 | 206 | Funeral Facility Name | FUNFACNAME| [FuneralHome]|name | string | - | 
 | 207 | Funeral Facility - Street number | FUNFACSTNUM| [FuneralHome]|address.extension[stnum] | string | - | 
 | 208 | Funeral Facility - Pre Directional | FUNFACPREDIR| [FuneralHome]|address.extension[predir] | string | - | 
@@ -164,7 +164,7 @@
 | 115 | Date of injury--day | DOI_DY| [InjuryIncident]|effective | dateTime | See [PartialDatesAndTimes] | 
 | 116 | Date of injury--year | DOI_YR| [InjuryIncident]|effective | dateTime | See [PartialDatesAndTimes] | 
 | 117 | Time of injury | TOI_HR| [InjuryIncident]|effective | dateTime | See [PartialDatesAndTimes] | 
-| 118 | Injury at work | WORKINJ| [InjuryIncident]|component[InjuryAtWork].value | codeable | [YesNoUnknownNotApplicableVS] | 
+| 118 | Injury at work | WORKINJ| [InjuryIncident]|component[InjuryAtWork].value | codeable | [ValueSetYesNoUnknownNotApplicableVitalRecords] | 
 | 126 | Time of Injury Unit | TOI_UNIT| [InjuryIncident]|effective | implicit |  | 
 | 173 | Place of Injury- literal | POILITRL| [InjuryIncident]|component[ placeOfInjury ].value.text | string | - | 
 | 174 | Describe How Injury Occurred | HOWINJ| [InjuryIncident]|value.text | string | - | 
@@ -177,35 +177,6 @@
 | 181 | Place of injury. Longitude | LONG_I| [InjuryLocation]|position.longitude | float | - | 
 | 182 | Place of injury. Latitude | LAT_I| [InjuryLocation]|position.latitude | float | - | 
 | 237 | State, U.S. Territory or Canadian Province of Injury - literal | STINJURY| [InjuryLocation]|address.state (expanded from 2 letter code) | string | See [StateLiterals] | 
-| 39 | Decedent of Hispanic Origin?--Mexican | DETHNIC1| [InputRaceAndEthnicity]|component[ HispanicMexican].valueCoding | codeable | [HispanicNoUnknownVS] | 
-| 40 | Decedent of Hispanic Origin?--Puerto Rican | DETHNIC2| [InputRaceAndEthnicity]|component[ HispanicPuertoRican].valueCoding | codeable | [HispanicNoUnknownVS] | 
-| 41 | Decedent of Hispanic Origin?--Cuban | DETHNIC3| [InputRaceAndEthnicity]|component[ HispanicCuban ].valueCoding | codeable | [HispanicNoUnknownVS] | 
-| 42 | Decedent of Hispanic Origin?--Other | DETHNIC4| [InputRaceAndEthnicity]|component[ HispanicOther ].valueCoding | codeable | [HispanicNoUnknownVS] | 
-| 43 | Decedent of Hispanic Origin?--Other, Literal | DETHNIC5| [InputRaceAndEthnicity]|component[ HispanicLiteral ].valueString | string | - | 
-| 44 | Decedent's Race--White | RACE1| [InputRaceAndEthnicity]|component[ White].valueBoolean | boolean | - | 
-| 45 | Decedent's Race--Black or African American | RACE2| [InputRaceAndEthnicity]|component[ BlackOrAfricanAmerican].valueBoolean | boolean | - | 
-| 46 | Decedent's Race--American Indian or Alaska Native | RACE3| [InputRaceAndEthnicity]|component[ AmericanIndianOrAlaskanNative].valueBoolean | boolean | - | 
-| 47 | Decedent's Race--Asian Indian | RACE4| [InputRaceAndEthnicity]|component[ AsianIndian].valueBoolean | boolean | - | 
-| 48 | Decedent's Race--Chinese | RACE5| [InputRaceAndEthnicity]|component[ Chinese].valueBoolean | boolean | - | 
-| 49 | Decedent's Race--Filipino | RACE6| [InputRaceAndEthnicity]|component[ Filipino].valueBoolean | boolean | - | 
-| 50 | Decedent's Race--Japanese | RACE7| [InputRaceAndEthnicity]|component[ Japanese].valueBoolean | boolean | - | 
-| 51 | Decedent's Race--Korean | RACE8| [InputRaceAndEthnicity]|component[ Korean].valueBoolean | boolean | - | 
-| 52 | Decedent's Race--Vietnamese | RACE9| [InputRaceAndEthnicity]|component[ Vietnamese].valueBoolean | boolean | - | 
-| 53 | Decedent's Race--Other Asian | RACE10| [InputRaceAndEthnicity]|component[ OtherAsian].valueBoolean | boolean | - | 
-| 54 | Decedent's Race--Native Hawaiian | RACE11| [InputRaceAndEthnicity]|component[ NativeHawaiian].valueBoolean | boolean | - | 
-| 55 | Decedent's Race--Guamanian or Chamorro | RACE12| [InputRaceAndEthnicity]|component[ GuamanianOrChamorro].valueBoolean | boolean | - | 
-| 56 | Decedent's Race--Samoan | RACE13| [InputRaceAndEthnicity]|component[ Samoan].valueBoolean | boolean | - | 
-| 57 | Decedent's Race--Other Pacific Islander | RACE14| [InputRaceAndEthnicity]|component[ OtherPacificIslander].valueBoolean | boolean | - | 
-| 58 | Decedent's Race--Other | RACE15| [InputRaceAndEthnicity]|component[ OtherRace].valueBoolean | boolean | - | 
-| 59 | Decedent's Race--First American Indian or Alaska Native Literal | RACE16| [InputRaceAndEthnicity]|component[ FirstAmericanIndianOrAlaskanNativeLiteral].valueString | string | - | 
-| 60 | Decedent's Race--Second American Indian or Alaska Native Literal | RACE17| [InputRaceAndEthnicity]|component[ SecondAmericanIndianOrAlaskanNativeLiteral].valueString | string | - | 
-| 61 | Decedent's Race--First Other Asian Literal | RACE18| [InputRaceAndEthnicity]|component[ FirstOtherAsianLiteral].valueString | string | - | 
-| 62 | Decedent's Race--Second Other Asian Literal | RACE19| [InputRaceAndEthnicity]|component[ SecondOtherAsianLiteral].valueString | string | - | 
-| 63 | Decedent's Race--First Other Pacific Islander Literal | RACE20| [InputRaceAndEthnicity]|component[ FirstOtherPacificIslanderLiteral].valueString | string | - | 
-| 64 | Decedent's Race--Second Other Pacific Islander Literal | RACE21| [InputRaceAndEthnicity]|component[ SecondOtherPacificIslanderLiteral].valueString | string | - | 
-| 65 | Decedent's Race--First Other Literal | RACE22| [InputRaceAndEthnicity]|component[ FirstOtherRaceLiteral].valueString | string | - | 
-| 66 | Decedent's Race--Second Other Literal | RACE23| [InputRaceAndEthnicity]|component[ SecondOtherRaceLiteral].valueString | string | - | 
-| 83 | Decedent's Race--Missing | RACE_MVR| [InputRaceAndEthnicity]|component[ MissingValueReason].valueCoding | codeable | [RaceMissingValueReasonVS]  | 
 | 100 | Manner of Death | MANNER| [MannerOfDeath]|value | codeable | [MannerOfDeathVS] | 
 | 123 | Surgery Date--month | SUR_MO| [SurgeryDate]|value | dateTime | See [PartialDatesAndTimes] | 
 | 124 | Surgery Date--day | SUR_DY| [SurgeryDate]|value | dateTime | See [PartialDatesAndTimes] | 
@@ -214,7 +185,7 @@
 {: .grid }
 #### Coded Content
 
-| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
+| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | 120 | Activity at time of death (computer generated) | INACT| [ActivityAtTimeOfDeath]|value | codeable | [ActivityAtTimeOfDeathVS] | 
 | 105 | ACME Underlying Cause | ACME_UC| [AutomatedUnderlyingCauseOfDeath]|value | codeable | [ICD10CausesOfDeathVS] | 
@@ -222,25 +193,6 @@
 | 108 | Record-axis codes | RAC| [RecordAxisCauseOfDeath]|Each entry is a 3-tuple (value, component[position], component[WouldBeUnderlyingCauseOfDeathWithoutPregnancy]) | codeable | [ICD10CausesOfDeathVS] | 
 | 106 | Entity-axis codes | EAC| [EntityAxisCauseOfDeath]|Each entry is a 4-tuble (value, component[position], component[lineNumber], component[e-code-indicator]   | codeable | [ICD10CausesOfDeathVS] | 
 | 103 | Place of Injury (computer generated) | INJPL| [PlaceOfInjury]|value | codeable | [PlaceOfInjuryVS] | 
-| 67 | First Edited Code | RACE1E| [CodedRaceAndEthnicity]|component[FirstEditedCode].value |  | - | 
-| 68 | Second Edited Code | RACE2E| [CodedRaceAndEthnicity]|component[SecondEditedCode].value | codeable | [RaceCodeVS] | 
-| 69 | Third Edited Code | RACE3E| [CodedRaceAndEthnicity]|component[ThirdEditedCode].value | codeable | [RaceCodeVS] | 
-| 70 | Fourth Edited Code | RACE4E| [CodedRaceAndEthnicity]|component[FourthEditedCode].value | codeable | [RaceCodeVS] | 
-| 71 | Fifth Edited Code | RACE5E| [CodedRaceAndEthnicity]|component[FifthEditedCode].value | codeable | [RaceCodeVS] | 
-| 72 | Sixth Edited Code | RACE6E| [CodedRaceAndEthnicity]|component[SixthEditedCode].value | codeable | [RaceCodeVS] | 
-| 73 | Seventh Edited Code | RACE7E| [CodedRaceAndEthnicity]|component[SeventhEditedCode].value | codeable | [RaceCodeVS] | 
-| 74 | Eighth Edited Code | RACE8E| [CodedRaceAndEthnicity]|component[EighthEditedCode].value | codeable | [RaceCodeVS] | 
-| 75 | First American Indian Code | RACE16C| [CodedRaceAndEthnicity]|component[FirstAmericanIndianCode].value | codeable | [RaceCodeVS] | 
-| 76 | Second American Indian Code | RACE17C| [CodedRaceAndEthnicity]|component[SecondAmericanIndianCode].value | codeable | [RaceCodeVS] | 
-| 77 | First Other Asian Code | RACE18C| [CodedRaceAndEthnicity]|component[FirstOtherAsianCode].value | codeable | [RaceCodeVS] | 
-| 78 | Second Other Asian Code | RACE19C| [CodedRaceAndEthnicity]|component[SecondOtherAsianCode].value | codeable | [RaceCodeVS] | 
-| 79 | First Other Pacific Islander Code | RACE20C| [CodedRaceAndEthnicity]|component[FirstOtherPacificIslanderCode].value | codeable | [RaceCodeVS] | 
-| 80 | Second Other Pacific Islander Code | RACE21C| [CodedRaceAndEthnicity]|component[SecondOtherPacificIslanderCode].value | codeable | [RaceCodeVS] | 
-| 81 | First Other Race Code | RACE22C| [CodedRaceAndEthnicity]|component[FirstOtherRaceCode].value | codeable | [RaceCodeVS] | 
-| 82 | Second Other Race Code | RACE23C| [CodedRaceAndEthnicity]|component[SecondOtherRaceCode].value | codeable | [RaceCodeVS] | 
-| 160 | Hispanic | DETHNICE | [CodedRaceAndEthnicity]|component[HispanicCode].value | codeable | [HispanicOriginVS] | 
-| 247 | Hispanic Code for Literal | DETHNIC5C| [CodedRaceAndEthnicity]|component[HispanicCodeForLiteral].value | codeable | [HispanicOriginVS] | 
-| NA | Race Recode 40  (No longer provided as of 2022) | *NO IJE MAPPING*| [CodedRaceAndEthnicity]|component[RaceRecode40].value | codeable | [RaceRecode40VS] | 
 | 91 | Receipt date -- Year | R_YR| [CodingStatusValues]|parameter[receiptDate].value | date | See [PartialDatesAndTimes] | 
 | 92 | Receipt date -- Month | R_MO| [CodingStatusValues]|parameter[receiptDate].value | date | See [PartialDatesAndTimes] | 
 | 93 | Receipt date -- Day | R_DY| [CodingStatusValues]|parameter[receiptDate].value | date | See [PartialDatesAndTimes] | 
@@ -260,7 +212,7 @@
 {: .grid }
 #### Not Implemented Content
 
-| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
+| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | 4 | Void flag | VOID| [not implemented]| |  | - | 
 | 11 | Alias Record Flag | ALIAS| [not implemented]| |  | - | 
@@ -285,49 +237,5 @@
 | 245 | SSA Date of State Transmission | SSADATETRANS| [not implemented]| |  | - | 
 | 258 | Blank for future expansion | BLANK2| [not implemented]| |  | - | 
 | 259 | Blank for Jurisdictional Use Only | BLANK3| [not implemented]| |  | - | 
-{: .grid }
-{% include markdown-link-references.md %}
-### Mortality Roster IJE Mapping
-
-| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| 8 | Date of Death--Month | DOD_MO| [DeathDate]|value | dateTime | See [PartialDatesAndTimes] | 
-| 9 | Date of Death--Day | DOD_DY| [DeathDate]|value | dateTime | See [PartialDatesAndTimes] | 
-| 10 | Date of Death--Year | DOD_YR| [DeathDate]|value | dateTime | Required for processing | 
-| 6 | State, U.S. Territory or Canadian Province of Death - literal | STATETEXT_D| [DeathLocation]|address.state (expanded from 2 letter code) | string | - | 
-| 7 | State, U.S. Territory or Canadian Province of Death - code | DSTATE| [DeathLocation]|address.state or address.state.extension[nationalReportingJurisdictionId ] | codeable | [StatesTerritoriesAndProvincesVS] or [JurisdictionVS] | 
-| 30 | Death Country - Code | DCOUNTRYC| [DeathLocation]|address.country  | string  | [ResidenceCountryVS].  Note: For US Death certificates should be US.    | 
-| 1 | State, U.S. Territory or Canadian Province of Birth - literal | STATEBTH| [Decedent]|extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code) | string | See [StateLiterals] | 
-| 2 | State, U.S. Territory or Canadian Province of Birth - code | BPLACE_ST| [Decedent]|extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present  | string | [JurisdictionsProvincesVS] | 
-| 3 | Decedent's Legal Name--Given  | GNAME| [Decedent]|name.given , name.use = official | string | See [Note on Decedent Name] | 
-| 4 | Decedent's Legal Name--Middle | MIDNAME| [Decedent]|name.given , name.use = official (first letter) | string | See [Note on Decedent Name] | 
-| 5 | Decedent's Legal Name--Last | LNAME| [Decedent]|name.family , name.use = official | string | See [Note on Decedent Name] | 
-| 11 | Date of Birth--Month | DOB_MO| [Decedent]|birthDate | dateTime | See [PartialDatesAndTimes] | 
-| 12 | Date of Birth--Day | DOB_DY| [Decedent]|birthDate | dateTime | See [PartialDatesAndTimes] | 
-| 13 | Date of Birth--Year | DOB_YR| [Decedent]|birthDate | dateTime | See [PartialDatesAndTimes] | 
-| 14 | Sex | SEX| [Decedent]|extension[NVSS-SexAtDeath]  | codeable | [AdministrativeGenderVS] | 
-| NA | Gender | *NO IJE MAPPING*| [Decedent]|gender | codeable | [AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] | 
-| 22 | Decedent's Suffix | SUFF| [Decedent]|name.suffix , name.use = official | string | - | 
-| 26 | Decedent's Maiden Name | DMAIDEN| [Decedent]|name.text , name.use=maiden | string |  | 
-| 27 | State, U.S. Territory or Canadian Province of Decedent's Residence - literal | STATETEXT_R | [Decedent]|address.state (expanded from 2 letter code) | string | See [StateLiterals] | 
-| 28 | State, U.S. Territory or Canadian Province of Decedent's Residence - code | STATEC| [Decedent]|address.state | string | [StatesTerritoriesAndProvincesVS] | 
-| 29 | Birthplace Country - Code | BPLACE_CT| [Decedent]|extension[patient-birthPlace].value[x].country  | string | [BirthplaceCountryVS]. | 
-| 31 | Decedent's Residence Country - Code | COUNTRYC| [Decedent]|address.country | string | [ResidenceCountryVS] | 
-| 32 | Decedent's SSN (may be used by some jurisdictions when allowed by law, to match with the SSN contained with the birth record) | SSN| [Decedent]|identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code="SB" | string | - | 
-| 16 | Father's First Name | DADFNAME| [DecedentFather]|name.given , name.use = official | string | - | 
-| 17 | Father's Middle Name | DADMIDNAME| [DecedentFather]|name.given , name.use = official | string | - | 
-| 18 | Father's Surname | DADLNAME| [DecedentFather]|name.family | string | - | 
-| 23 | Father's Suffix | DADSUFF| [DecedentFather]|name.suffix , name.use = official | string | - | 
-| 19 | Mother's Given Name | MOMGNAME| [DecedentMother]|name.given , name.use = official | string | - | 
-| 20 | Mother's Middle Name | MOMMIDNAME| [DecedentMother]|name.given , name.use = official | string | - | 
-| 21 | Mother's Maiden Surname | MOMMAIDNAME| [DecedentMother]|name.family , name.type=maiden | string  | - | 
-| 24 | Mother's Suffix | MOMSUFF| [DecedentMother]|name.suffix , name.use = official | string | - | 
-{: .grid }
-#### Not Implemented Content
-
-| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| 25 | Filler | BLANK1| [not implemented]| |  |  | 
-| 35 | Blank for Future Expansion | BLANK2| [not implemented]| |  |  | 
 {: .grid }
 {% include markdown-link-references.md %}

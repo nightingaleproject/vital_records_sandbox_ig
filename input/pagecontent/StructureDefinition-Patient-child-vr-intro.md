@@ -45,6 +45,7 @@ This profile is mapped to:
 | Natality | 10 | County of Birth | CNTYO | extension[patient-birthplace].value[x].district.extension[countyCode] |integer |See [CountyCodes] |
 | Natality | 207 | Plurality | PLUR | extension[patient-multipleBirthTotal].valuePositiveInt |integer | |
 | Natality | 208 | Set Order | SORD | multipleBirth[x] |integer | |
+| Natality | 211 | Plurality--Edit Flag | PLUR_BYPASS | multipleBirth.extension[bypassEditFlag].value |codeable |[PluralityEditFlagsVS], <br />See [Handling of edit flags] |
 | Natality | 237 | Mother's Reported Age | MAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ] |quantity | |
 | Natality | 238 | Father's Reported Age | FAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ] |quantity | |
 | Natality | 247 | Child's First Name | KIDFNAME | name.given, <br />name.use = official |string | |

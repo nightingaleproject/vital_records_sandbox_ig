@@ -1,6 +1,6 @@
 ### IG Defined Value Sets
 
-* [CigaretteSmokingBeforeAndDuringPregnancy](ValueSet-cigarette-smoking-before-during-pregnancy.html)
+* [CigaretteSmokingBeforeAndDuringPregnancyVS](ValueSet-cigarette-smoking-before-during-pregnancy.html)
 
 ### HL7 Defined Value Sets
 

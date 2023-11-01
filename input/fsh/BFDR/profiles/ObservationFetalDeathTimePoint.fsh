@@ -10,6 +10,6 @@ Description: "This Observation profile represents the estimated time of fetal de
 * subject only Reference(PatientDecedentFetusVitalRecords)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
-* value[x] from ValueSetFetalDeathTimePoints (required)
+* value[x] from FetalDeathTimePointsVS (required)
   * ^short = "The value set contains a list of items to indicate when the fetus died with respect to labor and assessment."
   * ^binding.description = "Fetal Death Time Points (NCHS)"
