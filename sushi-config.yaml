@@ -398,6 +398,18 @@ groups:
     name:  ValueSets from PHINVADS
     resources:
       - ValueSetEducationLevelPersonVitalRecords
+<<<<<<< HEAD
+      - ValueSetFetalDeathCauseOrCondition
+      - ValueSetFetalDeathTimePoints
+      - ValueSetFetalPresentations
+      - ValueSetHistologicalPlacentalExamination
+      - ValueSetInfectionsDuringPregnancyLiveBirth
+      - ValueSetInformantRelationshipToMother
+      # - ValueSetbornCongenitalAnomalies
+      # - ValueSetObstetricProcedure
+      - ValueSetPregnancyRiskFactors
+=======
+>>>>>>> main
 
   VRCLValueSets:
     name: VRCL ValueSets
@@ -454,6 +466,7 @@ groups:
       - ConditionPrepregnancyDiabetes
       - ObservationApgarScore
       - ObservationBirthWeight
+      #- ObservationFinalRouteAndMethodOfDelivery
       - ObservationGestationalAgeAtDelivery
       - ObservationInfantLiving
       - ObservationLastMenstrualPeriod
@@ -481,6 +494,7 @@ groups:
       - ConditionCongenitalAnomalyOfNewborn
       - ConditionFetalDeathCauseOrCondition
       - ConditionFetalDeathOtherCauseOrCondition
+      - ProcedureFinalRouteMethodDelivery
       - ConditionInfectionPresentDuringPregnancy
       - ConditionPerinealLaceration
       - ConditionRupturedUterus
@@ -496,6 +510,7 @@ groups:
       - ObservationDateOfLastOtherPregnancyOutcome
       - ObservationFetalDeathTimePoint
       - ObservationFetalPresentation
+      #- ObservationFinalRouteAndMethodOfDelivery
       - ObservationHistologicalPlacentalExamPerformed
       - ObservationICUAdmission
       - ObservationInfantBreastfedAtDischarge
@@ -506,7 +521,9 @@ groups:
       - ObservationNICUAdmission
       - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
       - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
+      - ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy
       - ObservationNoneOfSpecifiedMaternalMorbidities
+      - ObservationNoneOfSpecifiedObstetricProcedures
       - ObservationPaternityAcknowledgementSigned
       - ObservationPlannedToDeliverAtHome
       - ObservationPreviousCesarean
@@ -518,7 +535,6 @@ groups:
       - ProcedureAugmentationOfLabor
       - ProcedureBloodTransfusion
       - ProcedureEpiduralOrSpinalAnesthesia
-      - ProcedureFinalRouteMethodDelivery
       - ProcedureInductionOfLabor
       - ProcedureObstetric
       - ProcedureSurfactantReplacementTherapy
@@ -679,7 +695,11 @@ groups:
       - InformantRelationshipToMotherVS
       - MothersDateOfBirthEditFlagsVS
       - NumberPreviousCesareansEditFlagsVS
+<<<<<<< HEAD
+      - ValueSetObstetricProcedureOutcome
+=======
       - ObstetricProcedureVS
+>>>>>>> main
       - PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
       
@@ -760,6 +780,8 @@ groups:
       - observation-fetal-death-time-point-not-named
       - observation-fetal-presentation-babyg-quinn
       - observation-fetal-presentation-not-named
+      - procedure-final-route-method-delivery-babyg-quinn
+      - procedure-final-route-method-delivery-not-named
       - observation-gestational-age-at-delivery-babyg-quinn
       - observation-gestational-age-at-delivery-babyg-quinn-w-edit
       - observation-gestational-age-at-delivery-not-named
@@ -842,8 +864,6 @@ groups:
       - procedure-augmentation-of-labor-quinn
       - procedure-blood-transfusion-jada-ann-quinn
       - procedure-epidural-or-spinal-anesthesia-jada-ann-quinn
-      - procedure-final-route-method-delivery-babyg-quinn
-      - procedure-final-route-method-delivery-not-named
       - procedure-induction-of-labor-jada-ann-quinn
       - procedure-infertility-treatment-jada-ann-quinn
       - procedure-obstetric-procedure-jada-ann-quinn

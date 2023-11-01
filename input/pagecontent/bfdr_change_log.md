@@ -1,3 +1,12 @@
+
+
+### STU 2.0-Ballot, November 2023
+| Jira Issue | Description of Change | Changes Made |
+|---|---|---|
+|   |  Representing 'None-Of-The-Above' from the Worksheets |  Some of the none-of-the-above values were represented by Conditions or Procedures using the code of 'None' or 'Unknown', which is not good FHIR form (ref).  All of the none-of-the-above values are now represented as observations with a clear code, and a value of 'None'.   This involves FinalBirthAndDelivery, Congenital ANomolies of the Newborn, Infections during Pregnancy and Obstetrics Procedure.  The ObstetricsProcedure and FinalRouteAndMethodDelivery remain, but  additional observations have been added to represent the absence of an Obstetrics Procedure and an Unknown delivery procedure. Similarly, the Congenital Anomolies and Infections During Pregnancy conditions remain, but  new observations have been created to represent the absence of these conditions.  The valueset for the outcome of the obstetrics procedure has been constrained to successful/unsuccessful, since partially successful is not meaningful in this context.  Need examples of all new none-of-the-above Observations.|
+|   |  Final Route and Delivery combined with Trial Labor Attempted |  With the transition of FinalRouteAndDelivery to an observation, and the tight linkage between the trial labor attempted observation and the method of delivery, it made sense to add the trial labor attempted as a component of the FinalRouteAndDeliveryMethod observation.   A constraint should be added to constrain the presence and value of the component relative to the method of delivery  |
+|   | Changed the SNOMED Code used to represent a NICU admission |  This code appears in both the Observation - NICU Admission, and in the Abnormal Conditions Vital Records Value Set.  The code was changed from 405269005 Neonatal intensive care unit (environment) to 830077005 Admission to neonatal intensive care unit (procedure) since that seems more appropriate. |
+|   | Changed the SNOMED Code used to represent normal (vaginal delivery) |  This code is used in a valueset of procedures, so should be a procedure.  The code was changed from 48782003	"Spontaneous vaginal delivery (finding) to 700000006 "Vaginal delivery of fetus (procedure)". |
 ### STU 1.1 Update, July 2023
 
 | Jira Issue | Description of Change | Changes Made |
