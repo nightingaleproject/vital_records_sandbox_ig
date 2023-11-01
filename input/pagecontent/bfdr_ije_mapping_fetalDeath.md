@@ -171,6 +171,7 @@ Pregnancy Risk Factors
 | 120 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS| [ObservationNumberPreviousCesareans]|value.extension[bypassEditFlag].value | codeable | [NumberPreviousCesareansEditFlagsVS], <br />See [Handling of edit flags]  | J | 
 | 32 | Mother's Education | MEDUC| [ObservationParentEducationLevelVitalRecords]|value, <br />focus[ PatientMotherVitalRecords ] | codeable | [EducationLevelVS] | B | 
 | 283 | Father's Education | FEDUC| [ObservationParentEducationLevelVitalRecords]|value, <br />focus[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [EducationLevelVS] | B | 
+| 118 | Risk Factors--Previous Cesarean | PCES| [ObservationPreviousCesarean]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 269 | Occupation of Mother | MOM_OC_T| [odh-UsualWork]|value.text | string(40) |  | B | 
 | 271 | Occupation of Father | DAD_OC_T| [odh-UsualWork]|value.text | string(40) |  | B | 
 | 273 | Industry of Mother | MOM_IN_T| [odh-UsualWork]|component [odh-UsualIndustry].value.text | string(40) |  | B | 

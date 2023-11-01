@@ -178,6 +178,7 @@ Infection Present During Pregnancy
 | 32 | Mother's Education | MEDUC| [ObservationParentEducationLevelVitalRecords]|value,  <br />focus[ PatientMotherVitalRecords ] | codeable | [EducationLevelVS] | B | 
 | 78 | Father's Education | FEDUC| [ObservationParentEducationLevelVitalRecords]|value, focus[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [EducationLevelVS] | B | 
 | 31 | Mother Married?--Acknowledgement of Paternity Signed | ACKN| [ObservationPaternityAcknowledgementSigned]|value | codeable | [ValueSetYesNoNotApplicableVitalRecords] | B | 
+| 165 | Risk Factors--Previous Cesarean | PCES| [ObservationPreviousCesarean]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 161 | Risk Factors--Previous Preterm Births | PPB| [ObservationPreviousPretermBirth]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 321 | Social Security Number Requested for Child? | SSN_REQ| [ObservationSSNRequestedForChild]|value | boolean |  | B | 
 | 184 | Characteristics of Labor & Delivery--Steroids | STER| [ObservationSteroidsFetalLungMaturation]| | na | See [Note on missing characteristics of labor and delivery data] | B | 
