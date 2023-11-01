@@ -47,9 +47,9 @@ If [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn] is present in bun
 ##### Infection Present During Pregnancy
 If [ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy] is present in bundle, then the interpretation is that all individual infections are 'N' and [ConditionInfectionPresentDuringPregnancy] should not be used. 
 ##### Method of Delivery 
-* If [ObservationUnknownFinalRouteMethodDelivery] is present in bundle, then the interpretation is that the method of delivery is unknown, and [ProcedureFinalRouteMethodDelivery] should not be used.
+If [ObservationUnknownFinalRouteMethodDelivery] is present in bundle, then the interpretation is that the method of delivery is unknown, and [ProcedureFinalRouteMethodDelivery] should not be used.
 ##### Obstetric Procedures 
-* If [ObservationNoneOfSpecifiedObstetricsProcedures] is present in bundle, then the interpretation is that external cephalic procedure was not performed, and [ProcedureObstetric] should not be used.
+If [ObservationNoneOfSpecifiedObstetricsProcedures] is present in bundle, then the interpretation is that external cephalic procedure was not performed, and [ProcedureObstetric] should not be used.
 
 ### Handling of Edit Flags
 TBD

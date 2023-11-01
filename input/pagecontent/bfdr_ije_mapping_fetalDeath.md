@@ -7,6 +7,14 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
 * FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
 
+#### Specifying None of the Above and Missing Data
+All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [Note on missing data]
+| **Observation** |  **Complements**   |
+| --------------- | ------------------ |
+| [ObservationNoneOfSpecifiedMaternalMorbidities] | [ProcedureBloodTransfusion], [ConditionPerinealLaceration], [ConditionRupturedUterus], [ProcedureUnplannedHysterectomy], [ObservationICUAdmission] |
+| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureArtificialInsemination], [ProcedureAssistedFertilization], [ObservationPreviousCesarean] |
+| [ObservationUnknownFinalRouteMethodDelivery] | [ProcedureFinalRouteMethodDelivery] |
+{: .grid }
 
 ### Fetal Death IJE Mapping
 
@@ -14,7 +22,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- | ---- |
 | 3 | Certificate Number | FILENO| [CompositionProviderFetalDeathReport]|extension[fetalDeathReportNumber].value | identifier | Used for Jurisdiction Report, Coded Cause of Fetal Death, and Coded Race and Ethnicity Compositions also | B | 
 | 5 | Auxiliary State file number | AUXNO| [CompositionProviderFetalDeathReport]|extension[fetalDeathLocalFileNumber].value | identifier | Used for Jurisdiction Report also | B | 
-| 176 | <nobr>Date of Registration--Year</nobr> | DOR_YR| [CompositionProviderFetalDeathReport]|extension[dateReceivedByRegistrar].value | dateTime | Used for Jurisdiction Report also | B | 
+| 176 | Date of Registration--Year | DOR_YR| [CompositionProviderFetalDeathReport]|extension[dateReceivedByRegistrar].value | dateTime | Used for Jurisdiction Report also | B | 
 | 177 | Date of Registration--Month | DOR_MO| [CompositionProviderFetalDeathReport]|extension[dateReceivedByRegistrar].value | dateTime | Used for Jurisdiction Report also | B | 
 | 178 | Date of Registration--Day | DOR_DY| [CompositionProviderFetalDeathReport]|extension[dateReceivedByRegistrar].value | dateTime | Used for Jurisdiction Report also | B | 
 | 173 | Risk Factors--Hypertension Eclampsia (added after 2004) | EHYPE| [ConditionEclampsiaHypertension]| | na | See [Note on missing pregnancy risk factors data] | B | 
@@ -253,7 +261,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 213 | Coded other significant causes or conditions- fifth mentioned | OCOD5| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
 | 214 | Coded other significant causes or conditions- sixth mentioned | OCOD6| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
 | 215 | Coded other significant causes or conditions- seventh mentioned | OCOD7| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
-| 62 | <nobr>Mother's Race Tabulation Variable 1E</nobr> | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[ThirdEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
@@ -294,7 +302,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** | **Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- | ---- |
-| 4 | Void flag | VOID| <nobr>[not implemented]</nobr>| |  |  | - | 
+| 4 | Void flag | VOID| [not implemented]| |  |  | - | 
 | 29 | Mother Married?--Ever(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARE| [not implemented]| |  |  | - | 
 | 30 | Mother Married?-- At Conception, at Delivery or any Time in Between(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARN| [not implemented]| |  |  | - | 
 | 31 | FILLER | *NO IJE MAPPING*| [not implemented]| |  |  | - | 

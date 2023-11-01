@@ -9,14 +9,15 @@ The following IJE mappings to locations in FHIR specifications are for informati
 
 #### Specifying None of the Above and Missing Data
 All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [Note on missing data]
-| **Observation** |  **Complements**   | 
+
+| **Observation** |  **Complements**   |
 | --------------- | ------------------ |
 | [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn]  | [ProcedureAssistedVentilationFollowingDelivery], [ProcedureAssistedVentilationFollowingDelivery], [ObservationNICUAdmission], [ProcedureSurfactantReplacementTherapy], [ProcedureAntibioticSuspectedNeonatalSepsis], [ConditionSeizure] |
 | [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery]  | [ProcedureInductionOfLabor], [ProcedureAugmentationOfLabor], [ObservationSteroidsFetalLungMaturation], [ObservationAntibioticsAdministeredDuringLabor], [ConditionChorioamnionitis], [ProcedureEpiduralOrSpinalAnesthesia] |
 | [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn] | [ConditionCongenitalAnomalyOfNewborn] |
 | [ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy] | [ConditionInfectionPresentDuringPregnancy] |
 | [ObservationNoneOfSpecifiedMaternalMorbidities] | [ProcedureBloodTransfusion], [ConditionPerinealLaceration], [ConditionRupturedUterus], [ProcedureUnplannedHysterectomy], [ObservationICUAdmission] |
-| [ObservationNoneOfSpecifiedObstetricsProcedures] | [ProcedureObstetric] |
+| [ObservationNoneOfSpecifiedObstetricProcedures] | [ProcedureObstetric] |
 | [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureArtificialInsemination], [ProcedureAssistedFertilization], [ObservationPreviousCesarean] |
 | [ObservationUnknownFinalRouteMethodDelivery] | [ProcedureFinalRouteMethodDelivery] |
 {: .grid }
@@ -289,7 +290,7 @@ All of the none-of-the-above values are represented as observations with a clear
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** | **Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- | ---- |
-| 62 | <nobr>Mother's Race Tabulation Variable 1E</nobr> | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[ThirdEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
@@ -331,7 +332,7 @@ All of the none-of-the-above values are represented as observations with a clear
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** | **Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- | ---- |
 | 4 | Void flag | VOID| [not implemented]| |  |  | - | 
-| 29 | Mother Married?--Ever (NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARE| <nobr>[not implemented]</nobr>| |  |  | - | 
+| 29 | Mother Married?--Ever (NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARE| [not implemented]| |  |  | - | 
 | 129 | Date of Last Prenatal Care Visit--Month(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | DOLP_MO| [not implemented]| |  |  | - | 
 | 130 | Date of Last Prenatal Care Visit--Day(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | DOLP_DY| [not implemented]| |  |  | - | 
 | 131 | Date of Last Prenatal Care Visit--Year(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | DOLP_YR| [not implemented]| |  |  | - | 
@@ -377,11 +378,4 @@ All of the none-of-the-above values are represented as observations with a clear
 | 353 | Blank for Jurisdictional Use Only | BLANK2| [not implemented]| |  |  | - | 
 {: .grid }
 {% include markdown-link-references.md %}
-#### Specifying None of the Above and Missing Data
-All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [Note on missing data]
-| **Observation** |  **Complements**   | 
-| --------------- | ------------------ |
-| [ObservationNoneOfSpecifiedMaternalMorbidities] | [ProcedureBloodTransfusion], [ConditionPerinealLaceration], [ConditionRupturedUterus], [ProcedureUnplannedHysterectomy], [ObservationICUAdmission] |
-| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureArtificialInsemination], [ProcedureAssistedFertilization], [ObservationPreviousCesarean] |
-| [ObservationUnknownFinalRouteMethodDelivery] | [ProcedureFinalRouteMethodDelivery] |
-{: .grid }
+
