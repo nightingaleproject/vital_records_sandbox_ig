@@ -63,6 +63,7 @@ This profile is mapped to:
 | Natality | 14 | Date of Birth (Mother)--Year | MDOB_YR | birthDate |date |See [PartialDatesAndTimes] |
 | Natality | 15 | Date of Birth (Mother)--Month | MDOB_MO | birthDate |date |See [PartialDatesAndTimes] |
 | Natality | 16 | Date of Birth (Mother)--Day | MDOB_DY | birthDate |date |See [PartialDatesAndTimes] |
+| Natality | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS | birthDate.extension[bypassEditFlag].value |codeable |[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] |
 | Natality | 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER | extension[patient-birthPlace].value[x].state |string |[StatesTerritoriesAndProvincesVS] |
 | Natality | 19 | Birthplace of Mother--Country | BPLACEC_CNT | extension[patient-birthPlace].value[x].country  |string |[ResidenceCountryVS] |
 | Natality | 20 | Residence of Mother--City | CITYC | address.city.extension[ cityCode ] |integer |See [CityCodes] |
@@ -110,6 +111,7 @@ This profile is mapped to:
 | Fetal Death | 14 | Date of Birth (Mother)--Year | MDOB_YR | birthDate |date |See [PartialDatesAndTimes] |
 | Fetal Death | 15 | Date of Birth (Mother)--Month | MDOB_MO | birthDate |date |See [PartialDatesAndTimes] |
 | Fetal Death | 16 | Date of Birth (Mother)--Day | MDOB_DY | birthDate |date |See [PartialDatesAndTimes] |
+| Fetal Death | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS | birthDate.extension[bypassEditFlag].value |codeable |[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] |
 | Fetal Death | 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER | extension[patient-birthPlace].value[x].state |string |[StatesTerritoriesAndProvincesVS] |
 | Fetal Death | 19 | Mother's Birthplace--Country | BPLACEC_CNT | extension[patient-birthPlace].value[x].country  |string |[ResidenceCountryVS] |
 | Fetal Death | 20 | Residence of Mother--City/Town | CITYC | address.city.extension[ cityCode ] |integer |See [CityCodes] |

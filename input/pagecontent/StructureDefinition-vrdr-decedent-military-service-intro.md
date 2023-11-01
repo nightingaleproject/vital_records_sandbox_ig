@@ -2,5 +2,5 @@
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Mortality | 128 | Decedent ever served in Armed Forces? | ARMEDF | value |codeable |[ValueSetYesNoNotApplicableVitalRecords] |
+| Mortality | 128 | Decedent ever served in Armed Forces? | ARMEDF | value |codeable |[ValueSetYesNoUnknownVitalRecords] |
 {: .grid }

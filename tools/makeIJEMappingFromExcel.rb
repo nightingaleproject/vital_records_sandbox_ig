@@ -111,8 +111,8 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
     pOutputFile.puts "{% include markdown-link-references.md %}"
 end
 
-#create BFDR data dictionary
-vOutputFilename = "/generated/dataDictionaries/bfdr_ije_mapping.md"
+#create BFDR data dictionary_natality
+vOutputFilename = "/generated/dataDictionaries/bfdr_ije_mapping_natality.md"
 puts vOutputFilename
 vOutputFile = File.open(Dir.pwd + vOutputFilename, "w")
 vOutputFile.puts "Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdictional Exchange) data element names (codes). The IJE codes are used for data exchange among jurisdictions and with authorized data partners, such as National Vital Statistics System (NVSS). The National Center for Health Statistics (NCHS) has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG; however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS.
@@ -125,16 +125,67 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)"
 
 vOutputFile.puts ""
-createMappingTable("BFDR", "Natality", "### Natality (Live Birth) IJE Mapping", vOutputFile, vProfileIntrosSpreadsheet, vSpreadsheet)
-createMappingTable("BFDR", "Fetal Death", "### Fetal Death IJE Mapping", vOutputFile, vProfileIntrosSpreadsheet, vSpreadsheet)
+vOutputFile.puts "#### Specifying None of the Above and Missing Data"
+vOutputFile.puts "
+Abnormal Conditions of Newborn
+* If [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn] is present in bundle, then the interpretation is that all individual abnormal conditions of newborn are 'N'
 
-#create VRDR data dictionary
-vOutputFilename2 = "/generated/dataDictionaries/vrdr_ije_mapping.md"
+Maternal Morbidities
+* If [ObservationNoneOfSpecifiedMaternalMorbidities] is present in bundle, then the interpretation is that all individual maternal morbidities are 'N'
+
+Characteristics of Labor and Delivery
+* If [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery] is present in bundle, then the interpretation is that all individual risk factors are 'N' 
+
+Pregnancy Risk Factors
+* If [ObservationNoneOfSpecifiedPregnancyRiskFactors] is present in bundle, then the interpretation is that all individual risk factors are 'N'
+
+Congenital Anomalies of Newborn
+* If code=260413007 (None), then the interpretation is that all individual congenital anomalies are 'N'
+
+Infection Present During Pregnancy
+* If code=260413007 (None), then the interpretation is that all individual infections are 'N'" 
+
+vOutputFile.puts ""
+createMappingTable("BFDR", "Natality", "### Natality (Live Birth) IJE Mapping", vOutputFile, vProfileIntrosSpreadsheet, vSpreadsheet)
+
+#create BFDR data dictionary_fetalDeath
+vOutputFilename1 = "/generated/dataDictionaries/bfdr_ije_mapping_fetalDeath.md"
+puts vOutputFilename1
+vOutputFile1 = File.open(Dir.pwd + vOutputFilename1, "w")
+vOutputFile1.puts "Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdictional Exchange) data element names (codes). The IJE codes are used for data exchange among jurisdictions and with authorized data partners, such as National Vital Statistics System (NVSS). The National Center for Health Statistics (NCHS) has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG; however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS.
+
+The following IJE mappings to locations in FHIR specifications are for information purposes only:
+* BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
+* VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
+* US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
+* ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
+* FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)"
+
+vOutputFile1.puts ""
+vOutputFile1.puts "#### Specifying None of the Above and Missing Data"
+vOutputFile1.puts "
+Maternal Morbidities
+* If [ObservationNoneOfSpecifiedMaternalMorbidities] is present in bundle, then the interpretation is that all individual maternal morbidities are 'N'
+
+Pregnancy Risk Factors
+* If [ObservationNoneOfSpecifiedPregnancyRiskFactors] is present in bundle, then the interpretation is that all individual risk factors are 'N'"
+
+vOutputFile1.puts ""
+createMappingTable("BFDR", "Fetal Death", "### Fetal Death IJE Mapping", vOutputFile1, vProfileIntrosSpreadsheet, vSpreadsheet)
+
+#create VRDR data dictionary_mortality
+vOutputFilename2 = "/generated/dataDictionaries/vrdr_ije_mapping_mortality.md"
 puts vOutputFilename2
 vOutputFile2 = File.open(Dir.pwd + vOutputFilename2, "w")
 vOutputFile2.puts ""
 createMappingTable("VRDR", "Mortality", "### Death Record IJE Mapping", vOutputFile2,vProfileIntrosSpreadsheet, vSpreadsheet)
-createMappingTable("VRDR", "Mortality Roster", "### Mortality Roster IJE Mapping", vOutputFile2, vProfileIntrosSpreadsheet, vSpreadsheet)
+
+#create VRDR data dictionary_mortalityRoster
+vOutputFilename3 = "/generated/dataDictionaries/vrdr_ije_mapping_mortalityRoster.md"
+puts vOutputFilename3
+vOutputFile3 = File.open(Dir.pwd + vOutputFilename3, "w")
+vOutputFile3.puts ""
+createMappingTable("VRDR", "Mortality Roster", "### Mortality Roster IJE Mapping", vOutputFile3, vProfileIntrosSpreadsheet, vSpreadsheet)
 
 
 
