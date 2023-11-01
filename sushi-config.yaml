@@ -400,7 +400,6 @@ groups:
     name:  ValueSets from PHINVADS
     resources:
       - ValueSetEducationLevelPersonVitalRecords
-<<<<<<< HEAD
       - ValueSetFetalDeathCauseOrCondition
       - ValueSetFetalDeathTimePoints
       - ValueSetFetalPresentations
@@ -410,8 +409,6 @@ groups:
       # - ValueSetbornCongenitalAnomalies
       # - ValueSetObstetricProcedure
       - ValueSetPregnancyRiskFactors
-=======
->>>>>>> main
 
   VRCLValueSets:
     name: VRCL ValueSets
@@ -697,11 +694,7 @@ groups:
       - InformantRelationshipToMotherVS
       - MothersDateOfBirthEditFlagsVS
       - NumberPreviousCesareansEditFlagsVS
-<<<<<<< HEAD
       - ValueSetObstetricProcedureOutcome
-=======
-      - ObstetricProcedureVS
->>>>>>> main
       - PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
       
