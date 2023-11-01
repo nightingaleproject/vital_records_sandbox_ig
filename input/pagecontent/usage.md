@@ -49,7 +49,7 @@ If [ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy] is present in bu
 ##### Method of Delivery 
 If [ObservationUnknownFinalRouteMethodDelivery] is present in bundle, then the interpretation is that the method of delivery is unknown, and [ProcedureFinalRouteMethodDelivery] should not be used.
 ##### Obstetric Procedures 
-If [ObservationNoneOfSpecifiedObstetricsProcedures] is present in bundle, then the interpretation is that external cephalic procedure was not performed, and [ProcedureObstetric] should not be used.
+If [ObservationNoneOfSpecifiedObstetricProcedures] is present in bundle, then the interpretation is that external cephalic procedure was not performed, and [ProcedureObstetric] should not be used.
 
 ### Handling of Edit Flags
 TBD
