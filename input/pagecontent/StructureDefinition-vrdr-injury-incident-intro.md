@@ -6,7 +6,7 @@
 | Mortality | 115 | Date of injury--day | DOI_DY | effective |dateTime |See [PartialDatesAndTimes] |
 | Mortality | 116 | Date of injury--year | DOI_YR | effective |dateTime |See [PartialDatesAndTimes] |
 | Mortality | 117 | Time of injury | TOI_HR | effective |dateTime |See [PartialDatesAndTimes] |
-| Mortality | 118 | Injury at work | WORKINJ | component[InjuryAtWork].value |codeable |[YesNoUnknownNotApplicableVS] |
+| Mortality | 118 | Injury at work | WORKINJ | component[InjuryAtWork].value |codeable |[ValueSetYesNoUnknownNotApplicableVitalRecords] |
 | Mortality | 126 | Time of Injury Unit | TOI_UNIT | effective |implicit | |
 | Mortality | 173 | Place of Injury- literal | POILITRL | component[ placeOfInjury ].value.text |string |- |
 | Mortality | 174 | Describe How Injury Occurred | HOWINJ | value.text |string |- |
