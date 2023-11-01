@@ -3,6 +3,4 @@ These validation checks are done at the jurisdiction prior to sending to the Nat
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 204 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS | value |codeable |[PHVS_EstimateOf GestationEditFlags_NCHS], <br />See [Handling of edit flags]  |
-| Fetal Death | 146 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS | value |codeable |[PHVS_EstimateOf GestationEditFlags_NCHS], <br />See [Handling of edit flags]  |
 {: .grid }

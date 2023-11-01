@@ -3,6 +3,4 @@ These validation checks are done at the jurisdiction prior to sending to the Nat
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS | value |codeable |[PHVS_BirthdateEditFlags_NCHS], <br />See [Handling of edit flags] |
-| Fetal Death | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS | value |codeable |[PHVS_BirthdateEditFlags_NCHS], <br />See [Handling of edit flags] |
 {: .grid }

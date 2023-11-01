@@ -5,5 +5,6 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 153 | Principal source of Payment for this delivery | PAY | type |codeable |[BirthAndFetalDeathFinancialClassVS]  |
+| Natality | 142 | Previous Live Births Now Living | PLBL | value |integer | |
+| Fetal Death | 96 | Previous Live Births Now Living | PLBL | value |integer | |
 {: .grid }

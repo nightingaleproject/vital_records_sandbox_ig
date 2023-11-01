@@ -5,5 +5,5 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 153 | Principal source of Payment for this delivery | PAY | type |codeable |[BirthAndFetalDeathFinancialClassVS]  |
+| Natality | 232 | Is Infant Living at Time of Report? | ILIV | value |boolean |Discussion needed: IJE values are Y, N, U. However, encoding with Boolean does not capture Unknown |
 {: .grid }

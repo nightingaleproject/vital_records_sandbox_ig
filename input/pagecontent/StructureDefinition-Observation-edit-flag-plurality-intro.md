@@ -3,6 +3,4 @@ These validation checks are done at the jurisdiction prior to sending to the Nat
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 211 | Plurality--Edit Flag | PLUR_BYPASS | value |codeable |[PHVS_PluralityEditFlags_NCHS], <br />See [Handling of edit flags] |
-| Fetal Death | 155 | Plurality--Edit Flag | PLUR_BYPASS | value |codeable |[PHVS_PluralityEditFlags_NCHS], <br />See [Handling of edit flags] |
 {: .grid }

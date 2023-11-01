@@ -3,6 +3,4 @@ These validation checks are done at the jurisdiction prior to sending to the Nat
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 136 | Mother's Height--Edit Flag | HGT_BYPASS | value |codeable |[PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags]  |
-| Fetal Death | 90 | Mother's Height--Edit Flag | HGT_BYPASS | value |codeable |[PHVS_PregnancyReportEditFlags_NCHS], <br />See [Handling of edit flags]  |
 {: .grid }
