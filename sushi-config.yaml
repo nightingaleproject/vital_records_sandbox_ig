@@ -392,6 +392,13 @@ groups:
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
+      - CodeSystemCanadianProvincesVitalRecords
+      - CodeSystemCountryCodeVitalRecords  
+      - CodeSystemHispanicOriginVitalRecords
+      - CodeSystemJurisdictionsVitalRecords
+      - CodeSystemMissingValueReasonVitalRecords
+      - CodeSystemRaceCodeVitalRecords
+      - CodeSystemRaceRecode40VitalRecords
       - EditFlagsCS
 
   PHINVADSValuesets:
@@ -402,8 +409,22 @@ groups:
   VRCLValueSets:
     name: VRCL ValueSets
     resources:  
+      - ValueSetAdministrativeGenderVitalRecords
+      - ValueSetBirthplaceCountryVitalRecords
+      - ValueSetCanadaProvincesVitalRecords
+      - ValueSetEducationLevelVitalRecords
       - ValueSetFatherRelationshipVitalRecords
+      - ValueSetHispanicNoUnknownVitalRecords
+      - ValueSetHispanicOriginVitalRecords
+      - ValueSetJurisdictionsProvincesVitalRecords
+      - ValueSetJurisdictionVitalRecords
       - ValueSetMotherRelationshipVitalRecords
+      - ValueSetRaceCodeVitalRecords
+      - ValueSetRaceMissingValueReasonVitalRecords
+      - ValueSetResidenceCountryVitalRecords
+      - ValueSetSpouseAliveVitalRecords
+      - ValueSetStatesTerritoriesAndProvincesVitalRecords
+      - ValueSetUSStatesAndTerritoriesVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
@@ -412,7 +433,15 @@ groups:
   VRCLConceptMaps:
     name: VRCL Concept Maps
     resources:
+      - AdministrativeGenderCM
+      - EducationLevelCM 
+      - HispanicNoUnknownCM
+      - HispanicOriginCM
       - NewbornCongenitalAnomaliesCM
+      - RaceCodeCM
+      - RaceMissingValueReasonCM
+      - SpouseAliveCM
+      - UnitsOfAgeCM
 
   VRCLExamples:
     name: VRCL Examples
@@ -997,22 +1026,15 @@ groups:
     resources:
       - ActivityAtTimeOfDeathCS    
       - BypassEditFlagCS
-      - CanadianProvincesCS
       - ComponentCS
-      - CountryCodeCS  
       - DateOfDeathDeterminationMethodsCS
       - DeathPregnancyStatusCS
       - DocumentSectionCS
       - FilingFormatCS
-      - HispanicOriginCS
       - IntentionalRejectCS
-      - JurisdictionsCS
       - LocationTypeCS
-      - MissingValueReasonCS
       - ObservationsCS
       - OrganizationTypeCS
-      - RaceCodeCS
-      - RaceRecode40CS
       - ReplaceStatusCS
       - SystemRejectCS
       - TransaxConversionCS
@@ -1021,9 +1043,6 @@ groups:
     name: VRDR ValueSets
     resources:    
       - ActivityAtTimeOfDeathVS
-      - AdministrativeGenderVS
-      - BirthplaceCountryVS
-      - CanadaProvincesVS
       - CertifierTypesVS
       - ContributoryTobaccoUseVS
       - DateOfDeathDeterminationMethodsVS
@@ -1032,31 +1051,18 @@ groups:
       - EditBypass0124VS
       - EditBypass012VS
       - EditBypass01VS
-      - EducationLevelVS
       - FilingFormatVS
-      - HispanicNoUnknownVS
-      - HispanicOriginVS
       - ICD10CausesOfDeathVS
       - IntentionalRejectVS
-      - JurisdictionsProvincesVS
-      - JurisdictionVS
       - MannerOfDeathVS
       - MaritalStatusVS
       - MethodOfDispositionVS
       - PlaceOfDeathVS
       - PlaceOfInjuryVS
-      - RaceCodeVS
-      - RaceMissingValueReasonVS
-      - RaceRecode40VS
       - ReplaceStatusVS
-      - ResidenceCountryVS
-      - SpouseAliveVS
-      - StatesTerritoriesAndProvincesVS
       - SystemRejectVS
       - TransaxConversionVS
       - TransportationIncidentRoleVS
-      - UnitsOfAgeVS
-      - USStatesAndTerritoriesVS
 
   # VRDRBundles:
   #   name: VRDR Bundles
@@ -1067,32 +1073,23 @@ groups:
     name: VRDR Concept Maps
     resources:
       - ActivityAtTimeOfDeathCM
-      - AdministrativeGenderCM
       - CertifierTypesCM
       - ContributoryTobaccoUseCM
       - EditBypass01234CM
       - EditBypass0124CM
       - EditBypass012CM
       - EditBypass01CM
-      - EducationLevelCM
       - FilingFormatCM
-      - HispanicNoUnknownCM
-      - HispanicOriginCM
       - IntentionalRejectCM
       - MannerOfDeathCM
       - MaritalStatusCM
       - MethodOfDispositionCM
       - PlaceOfDeathCM
       - PlaceOfInjuryCM
-      - RaceCodeCM
-      - RaceMissingValueReasonCM
-      - RaceRecode40CM
       - ReplaceStatusCM
-      - SpouseAliveCM
       - SystemRejectCM
       - TransaxConversionCM
       - TransportationIncidentRoleCM
-      - UnitsOfAgeCM
 
 
   VRDRExamples:

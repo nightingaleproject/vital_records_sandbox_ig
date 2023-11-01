@@ -23,7 +23,7 @@ Description: "The decedent's chronological age at the time of death (Observation
 */
 * value[x] 0..1
 * value[x] only Quantity  // value = AGE, code = AGETYPE
-* valueQuantity.code from UnitsOfAgeVS (required)
+* valueQuantity.code from ValueSetUnitsOfAgeVitalRecords (required)
 * valueQuantity.code 1..1
 * valueQuantity.value 1..1
 * valueQuantity.value ^short = "Decedent's age at time of death"
