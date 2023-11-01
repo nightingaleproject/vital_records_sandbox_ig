@@ -1,5 +1,8 @@
 ## Change Log
 
+### As of 31 October 2023
+- Removed ObservationRaceVitalRecords and ObservationTabulatedEthnicityVitalRecords and related instances
+
 ### As of 9 October 2023
 - LocationDeathVitalRecords and LocationInjuryVitalRecords were superseded. VRDR and MDI will use SD_DeathLocation and SD_InjuryLocation profiles. 
 

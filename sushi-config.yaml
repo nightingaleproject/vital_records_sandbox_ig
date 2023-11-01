@@ -319,8 +319,6 @@ groups:
       - ObservationEmergingIssuesVitalRecords
       - ObservationInputRaceAndEthnicityVitalRecords
       - ObservationParentEducationLevelVitalRecords
-      - ObservationRaceVitalRecords
-      - ObservationTabulatedEthnicityVitalRecords
       - PatientChildVitalRecords
       - PatientDecedentFetusVitalRecords
       - PatientMotherVitalRecords
@@ -426,7 +424,7 @@ groups:
       - location-injury-vr-atlanta-ga-a-freeman
       - observation-autopsy-performed-indicator-vr-a-freeman
       - observation-autopsy-performed-not-named-common
-      - observation-tabulated-ethnicity-jada-ann-quinn-common
+      #- observation-tabulated-ethnicity-jada-ann-quinn-common
       - relatedperson-father-tom-yan-lee-common
       - relatedperson-father-tony-lewis-common
       - relatedperson-mother-carol-hoffer-common
@@ -814,16 +812,16 @@ groups:
       - observation-planned-to-deliver-at-home-not-named
       - observation-previous-cesarean-jada-ann-quinn
       - observation-previous-preterm-births-jada-ann-quinn
-      - observation-race-carmen-teresa-lee
-      - observation-race-jada-ann-quinn
-      - observation-race-james-quinn
-      - observation-race-tom-yan-lee
+      #- observation-race-carmen-teresa-lee 
+      #- observation-race-jada-ann-quinn
+      #- observation-race-james-quinn
+      #- observation-race-tom-yan-lee
       - observation-ssn-requested-for-child-babyg-quinn
       - observation-steroids-fetal-lung-maturation-jada-ann-quinn
-      - observation-tabulated-ethnicity-carmen-teresa-lee
-      - observation-tabulated-ethnicity-jada-ann-quinn
-      - observation-tabulated-ethnicity-james-quinn
-      - observation-tabulated-ethnicity-tom-yan-lee
+      #- observation-tabulated-ethnicity-carmen-teresa-lee
+      #- observation-tabulated-ethnicity-jada-ann-quinn
+      #- observation-tabulated-ethnicity-james-quinn
+      #- observation-tabulated-ethnicity-tom-yan-lee
       - organization-jurisdictional-vital-records-office
       - organization-nchs
       - organization-south-hospital
