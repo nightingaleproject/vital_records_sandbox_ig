@@ -1,3 +1,11 @@
+
+
+### STU 2.0-Ballot, November 2023
+| Jira Issue | Description of Change | Changes Made |
+|---|---|---|
+|   |  Representing 'None-Of-The-Above' from the Worksheets |  Some of the none-of-the-above values were represented by Conditions or Procedures using the code of 'None', which is not good FHIR form (ref).  All of the none-of-the-above values are now represented as observations with a clear code, and a value of 'None'.   This involves FinalBirthAndDelivery and Obstetrics Procedure.  The ObstetricsProcedure still remains, but an additional observation has been added to represent the absence of an Obstetrics Procedure.|
+|   |  Final Route and Delivery combined with Trial Labor Attempted |  With the transition of FinalRouteAndDelivery to an observation, and the tight linkage between the trial labor attempted observation and the method of delivery, it made sense to add the trial labor attempted as a component of the FinalRouteAndDeliveryMethod observation.   A constraint should be added to constrain the presence and value of the component relative to the method of delivery  |
+
 ### STU 1.1 Update, July 2023
 
 | Jira Issue | Description of Change | Changes Made |

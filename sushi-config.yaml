@@ -490,6 +490,7 @@ groups:
       - ConditionPrepregnancyDiabetes
       - ObservationApgarScore
       - ObservationBirthWeight
+      - ObservationFinalRouteAndMethodOfDelivery
       - ObservationGestationalAgeAtDelivery
       - ObservationInfantLiving
       - ObservationLastMenstrualPeriod
@@ -536,7 +537,7 @@ groups:
       - ObservationHistologicalPlacentalExamPerformed
       - ObservationICUAdmission
       - ObservationInfantBreastfedAtDischarge
-      - ObservationLaborTrialAttempted
+      #- ObservationLaborTrialAttempted
       #- ObservationMethodOfDisposition
       - ObservationMotherMarriedDuringPregnancy
       - ObservationMotherReceivedWICFood
@@ -665,7 +666,6 @@ groups:
   #     - ProcedureAugmentationOfLabor
   #     - ProcedureBloodTransfusion
   #     - ProcedureEpiduralOrSpinalAnesthesia
-  #     - ProcedureFinalRouteMethodDelivery
   #     - ProcedureInductionOfLabor
   #     - ProcedureObstetric
   #     - ProcedureSurfactantReplacementTherapy
@@ -767,6 +767,8 @@ groups:
       - observation-fetal-death-time-point-not-named
       - observation-fetal-presentation-babyg-quinn
       - observation-fetal-presentation-not-named
+      - observation-final-route-method-delivery-babyg-quinn
+      - observation-final-route-method-delivery-not-named
       - observation-gestational-age-at-delivery-babyg-quinn
       - observation-gestational-age-at-delivery-babyg-quinn-w-edit
       - observation-gestational-age-at-delivery-not-named
@@ -775,7 +777,7 @@ groups:
       - observation-icu-admission-jada-ann-quinn
       - observation-infant-breastfed-at-discharge-babyg-quinn
       - observation-infant-living-babyg-quinn
-      - observation-labor-trial-attempted-babyg-quinn
+      #- observation-labor-trial-attempted-babyg-quinn
       #- observation-method-of-disposition-not-named
       - observation-mother-married-during-pregnancy-jada-ann-quinn
       - observation-mother-prepregnancy-weight-carmen-teresa-lee
@@ -849,8 +851,6 @@ groups:
       - procedure-augmentation-of-labor-quinn
       - procedure-blood-transfusion-jada-ann-quinn
       - procedure-epidural-or-spinal-anesthesia-jada-ann-quinn
-      - procedure-final-route-method-delivery-babyg-quinn
-      - procedure-final-route-method-delivery-not-named
       - procedure-induction-of-labor-jada-ann-quinn
       - procedure-infertility-treatment-jada-ann-quinn
       - procedure-obstetric-procedure-jada-ann-quinn

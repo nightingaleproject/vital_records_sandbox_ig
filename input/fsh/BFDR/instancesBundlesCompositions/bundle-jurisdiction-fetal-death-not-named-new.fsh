@@ -94,7 +94,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-fetal-presentation-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-20
-* insert addentry(Procedure, procedure-final-route-method-delivery-not-named)
+* insert addentry(Observation, observation-final-route-method-delivery-not-named)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Procedure/procedure-final-route-method-delivery-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-21

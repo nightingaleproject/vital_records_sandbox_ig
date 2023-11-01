@@ -10,5 +10,5 @@ Usage: #example
 * focus = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * effectiveDateTime = "2019-12-02"
 * performer = Reference(practitioner-vital-records-janet-seito)
-* valueCodeableConcept = $sct#260413007 "None"
+* valueCodeableConcept 
   * text = "None"
