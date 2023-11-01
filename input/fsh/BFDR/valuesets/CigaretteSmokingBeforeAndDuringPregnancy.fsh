@@ -1,4 +1,4 @@
-ValueSet: CigaretteSmokingBeforeAndDuringPregnancy
+ValueSet: CigaretteSmokingBeforeAndDuringPregnancyVS
 Id: cigarette-smoking-before-during-pregnancy
 Title: "Cigarette Smoking Before and During Pregnancy"
 Description: "This value set contains codes to determine the number of cigarettes smoked in specific periods before and during pregnancy."
