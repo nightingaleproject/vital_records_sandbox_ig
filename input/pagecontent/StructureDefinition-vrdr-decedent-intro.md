@@ -23,7 +23,7 @@ The Decedent profile contains basic information about the decedent, including da
 | Mortality | 25 | Decedent's Residence--County | COUNTYC | address.district.extension[ districtCode ] |integer |see [CountyCodes] |
 | Mortality | 26 | State, U.S. Territory or Canadian Province of Decedent's residence - code | STATEC | address.state |string |[StatesTerritoriesAndProvincesVS] |
 | Mortality | 27 | Decedent's Residence--Country | COUNTRYC | address.country |string |[ResidenceCountryVS] |
-| Mortality | 28 | Decedent's Residence--Inside City Limits | LIMITS | address.city.extension[ withinCityLimits]  |codeable |[YesNoUnknownVS] |
+| Mortality | 28 | Decedent's Residence--Inside City Limits | LIMITS | address.city.extension[ withinCityLimits]  |codeable |[ValueSetYesNoNotApplicableVitalRecords] |
 | Mortality | 29 | Marital Status | MARITAL | maritalStatus |codeable | [MaritalStatusVS] |
 | Mortality | 30 | Marital Status--Edit Flag | MARITAL_BYPASS | maritalStatus.extension[ BypassEditFlag]  |codeable |[EditBypass0124VS] |
 | Mortality | 143 | Decedent's spouse living at decedent's DOD? | SPOUSELV | extension[ SpouseAlive ]  |codeable | [SpouseAliveVS] |

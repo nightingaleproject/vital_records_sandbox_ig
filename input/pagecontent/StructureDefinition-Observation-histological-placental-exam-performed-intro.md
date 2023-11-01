@@ -7,5 +7,5 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Fetal Death | 149 | Was a Histological Placental Examination Performed? | HISTOP | value |codeable |[HistologicalPlacentalExaminationVS] |
+| Fetal Death | 149 | Was a Histological Placental Examination Performed? | HISTOP | value |codeable |[ValueSetHistologicalPlacentalExamination] |
 {: .grid }
