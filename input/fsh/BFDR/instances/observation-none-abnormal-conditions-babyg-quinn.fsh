@@ -11,5 +11,5 @@ Usage: #example
 * subject = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
 * effectiveDateTime = "2019-12-02"
 * performer = Reference(practitioner-vital-records-janet-seito)
-* valueCodeableConcept = $sct#260413007 "None"
+* valueCodeableConcept
   * text = "None of the specified abnormal conditions of the newborn"
