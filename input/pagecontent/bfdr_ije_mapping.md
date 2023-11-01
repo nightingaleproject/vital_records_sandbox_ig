@@ -43,10 +43,10 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 159 | Risk Factors--Prepregnancy Hypertension  | PHYPE| [ConditionPrepregnancyHypertension]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 197 | Maternal Morbidity--Ruptured Uterus | RUT| [ConditionRupturedUterus]| | na | See [Note on missing maternal morbidity data] | B | 
 | 217 | Abnormal Conditions of the Newborn--Seizures | SEIZ| [ConditionSeizure]| | na | See [Note on missing abnormal conditions of newborn data] | B | 
-| 153 | Principal source of Payment for this delivery | PAY| [CoveragePrincipalPayerDelivery]|type | codeable | [ValueSetBirthAndFetalDeathFinancialClass]  | B | 
+| 153 | Principal source of Payment for this delivery | PAY| [CoveragePrincipalPayerDelivery]|type | codeable | [BirthAndFetalDeathFinancialClassVS]  | B | 
 | 125 | Mother Transferred? | TRAN| [Encounter_Maternity]|hospitalization.admitSource = "hosp-trans" | codeable | [HL7EncounterAdmitSourceVS](http://hl7.org/fhir/ValueSet/encounter-admit-source), <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'hosp-trans' | B | 
 | 302 | Facility Mother Moved From (if transferred) | HOSPFROM| [Encounter_Maternity]|hospitalization.origin.name | string |  | B | 
-| 11 | Place Where Birth Occurred (type of place or institution) | BPLACE| [EncounterBirth]|location.physicalType | codeable | [ValueSetBirthDeliveryOccurred] | B | 
+| 11 | Place Where Birth Occurred (type of place or institution) | BPLACE| [EncounterBirth]|location.physicalType | codeable | [BirthDeliveryOccurredVS] | B | 
 | 12 | Facility ID (NPI) - if available | FNPI| [EncounterBirth]|location.location.id | string |  | B | 
 | 13 | Facility ID (State-Assigned) | SFN| [EncounterBirth]|location.location.identifier | Identifier |  | B | 
 | 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN| [EncounterBirth]|hospitalization.dischargeDisposition="other-hcf" | codeable | [USCoreDischargeDispositionVS](http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition). <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'other-hcf' | B | 
@@ -127,7 +127,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 146 | Date of Last Live Birth--Year | YLLB| [ObservationDateOfLastLiveBirth]|value | dateTime | See [PartialDatesAndTimes] | B | 
 | 147 | Date of Last Other Pregnancy Outcome--Month | MOPO| [ObservationDateOfLastOtherPregnancyOutcome]|value | dateTime | See [PartialDatesAndTimes] | B | 
 | 148 | Date of Last Other Pregnancy Outcome--Year | YOPO| [ObservationDateOfLastOtherPregnancyOutcome]|value | dateTime | See [PartialDatesAndTimes] | B | 
-| 192 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [ValueSetFetalPresentations] | B | 
+| 192 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [FetalPresentationsVS] | B | 
 | 203 | Obstetric Estimation of Gestation | OWGEST| [ObservationGestationalAgeAtDelivery]|value | quantity |  | B | 
 | 204 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [ObservationGestationalAgeAtDelivery]|value.extension[bypassEditFlag].value | codeable | [EstimateOfGestationEditFlagsVS], <br />See [Handling of edit flags]  | J | 
 | 199 | Maternal Morbidity--Admit to Intensive Care | AINT| [ObservationICUAdmission]| | na | See [Note on missing maternal morbidity data] | B | 
@@ -235,13 +235,13 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 320 | Mother's Mailing Address Country (Literal) | MAIL_CNTRYTXT| [PatientMotherVitalRecords]|address.country (expanded from 2 letter code) | string | See [CountryLiterals] | B | 
 | 333 | Mother's Medical Record Number | MOM_MED_REC_NUM| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR”  | string |  | B | 
 | 340 | For use of jurisdictions with domestic partnerships, othertypes of relationships. | MARITAL_DESCRIP| [PatientMotherVitalRecords]|maritalStatus.text | string | codeable.text should show up in differential with description from col F | B | 
-| 124 | Attendant Title | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | B | 
+| 124 | Attendant Title | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [BirthAttendantTitlesVS] | B | 
 | 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string |  | B | 
 | 326 | Attendant's Name | ATTEND_NAME| [PractitionerVitalRecords]|name.text | string |  | B | 
 | 327 | Attendant's NPI | ATTEND_NPI| [PractitionerVitalRecords]|identifier:NPI | string |  | B | 
 | 328 | Certifier's Name | CERTIF_NAME| [PractitionerVitalRecords]|name.text | string |  | B | 
 | 329 | Certifier's NPI | CERTIF_NPI| [PractitionerVitalRecords]|identifier:NPI | identifier |  | B | 
-| 330 | Certifier Title | CERTIF| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | B | 
+| 330 | Certifier Title | CERTIF| [PractitionerVitalRecords]|qualification.code | codeable | [BirthAttendantTitlesVS] | B | 
 | 331 | Certifier ("Other" specified text) | CERTIF_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string |  | B | 
 | 216 | Abnormal Conditions of the Newborn--Antibiotics | ANTI| [ProcedureAntibioticSuspectedNeonatalSepsis]| | na | See [Note on missing abnormal conditions of newborn data] | B | 
 | 240 | Risk Factors--Infertility: Fertility Enhancing Drugs  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_DRG| [ProcedureArtificialInsemination]| | na | See [Note on missing pregnancy risk factors data] | B | 
@@ -251,7 +251,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 182 | Characteristics of Labor & Delivery--Augmentation of Labor | AUGL| [ProcedureAugmentationOfLabor]| | na | See [Note on missing characteristics of labor and delivery data] | B | 
 | 195 | Maternal Morbidity--Maternal Transfusion | MTR| [ProcedureBloodTransfusion]| | na | See [Note on missing maternal morbidity data] | B | 
 | 189 | Characteristics of Labor & Delivery--Anesthesia | ESAN| [ProcedureEpiduralOrSpinalAnesthesia]| | na | See [Note on missing characteristics of labor and delivery data] | B | 
-| 193 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [ValueSetDeliveryRoutes] | B | 
+| 193 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS] | B | 
 | 181 | Characteristics of Labor & Delivery--Induction of Labor | INDL| [ProcedureInductionOfLabor]| | na | See [Note on missing characteristics of labor and delivery data] | B | 
 | 164 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926) | INFT| [ProcedureInfertilityTreatment]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS| [ProcedureObstetric]|code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value)) | codeable | [ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? | B | 
@@ -274,7 +274,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** | **Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- | ---- |
-| 62 | <nobr>Mother's Race Tabulation Variable 1E<nobr> | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[ThirdEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
@@ -315,7 +315,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** | **Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- | ---- |
-| 4 | Void flag | VOID| <nobr>[not implemented]</nobr>| |  |  | - | 
+| 4 | Void flag | VOID| [not implemented]| |  |  | - | 
 | 29 | Mother Married?--Ever (NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARE| [not implemented]| |  |  | - | 
 | 129 | Date of Last Prenatal Care Visit--Month(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | DOLP_MO| [not implemented]| |  |  | - | 
 | 130 | Date of Last Prenatal Care Visit--Day(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | DOLP_DY| [not implemented]| |  |  | - | 
@@ -376,7 +376,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 181 | Initiating cause/condition - Abruptio placenta | COD18a2| [ConditionFetalDeathCauseOrCondition]|code=415105001 (Placental abruption (disorder)) | na |  | B | 
 | 182 | Initiating cause/condition - Placental insufficiency | COD18a3| [ConditionFetalDeathCauseOrCondition]|code=237292005 (Placental insufficiency (disorder)) | na |  | B | 
 | 183 | Initiating cause/condition - Prolapsed cord | COD18a4| [ConditionFetalDeathCauseOrCondition]|code=270500004 (Prolapsed cord (disorder)) | na |  | B | 
-| 184 | <nobr>Initiating cause/condition - Chorioamnionitis</nobr> | COD18a5| [ConditionFetalDeathCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | B | 
+| 184 | Initiating cause/condition - Chorioamnionitis | COD18a5| [ConditionFetalDeathCauseOrCondition]|code=11612004 (Chorioamnionitis (disorder)) | na |  | B | 
 | 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#membranes | na |  | B | 
 | 186 | Initiating cause/condition - Unknown | COD18a7| [ConditionFetalDeathCauseOrCondition]|code=UNK | na |  | B | 
 | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8| [ConditionFetalDeathCauseOrCondition]|code=FetalDeathCauseOrConditionCS#maternalconditions, code.text | string | code.text should contain description | B | 
@@ -406,7 +406,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 112 | Risk Factors--Hypertension Prepregnancy | PHYPE| [ConditionPrepregnancyHypertension]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 139 | Maternal Morbidity--Ruptured Uterus | RUT| [ConditionRupturedUterus]| | na | See [Note on missing maternal morbidity data] | B | 
 | 10 | County of Delivery | CNTYO| [Encounter_Maternity]|location.location.address.district.extension[countyCode] | integer | See [CountyCodes] | B | 
-| 11 | Place Where Delivery Occurred | DPLACE| [Encounter_Maternity]|location.physicalType | codeable | [ValueSetBirthDeliveryOccurred] | B | 
+| 11 | Place Where Delivery Occurred | DPLACE| [Encounter_Maternity]|location.physicalType | codeable | [BirthDeliveryOccurredVS] | B | 
 | 12 | Facility ID (NPI) - If available | FNPI| [Encounter_Maternity]|location.location.id | string |  | B | 
 | 13 | Facility ID (State-Assigned) | SFN| [Encounter_Maternity]|location.location.identifier | Identifier |  | B | 
 | 224 | Name of Delivery Facility | HOSP_D| [Encounter_Maternity]|location.location.name | string |  | B | 
@@ -495,11 +495,11 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 82 | Date of First Prenatal Care Visit--Year | DOFP_YR| [ObservationDateOfFirstPrenatalCareVisit]|value | dateTime | See [PartialDatesAndTimes] | B | 
 | 99 | Date of Last Live Birth--Month | MLLB| [ObservationDateOfLastLiveBirth]|value | dateTime | See [PartialDatesAndTimes] | B | 
 | 100 | Date of Last Live Birth--Year | YLLB| [ObservationDateOfLastLiveBirth]|value | dateTime | See [PartialDatesAndTimes] | B | 
-| 147 | Estimated time of fetal death | ETIME| [ObservationFetalDeathTimePoint]|value | codeable | [ValueSetFetalDeathTimePoints] | B | 
-| 133 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [ValueSetFetalPresentations] | B | 
+| 147 | Estimated time of fetal death | ETIME| [ObservationFetalDeathTimePoint]|value | codeable | [FetalDeathTimePointsVS] | B | 
+| 133 | Method of Delivery--Fetal Presentation | PRES| [ObservationFetalPresentation]|value | codeable | [FetalPresentationsVS] | B | 
 | 145 | Obstetric Estimation of Gestation | OWGEST| [ObservationGestationalAgeAtDelivery]|value | quantity |  | B | 
 | 146 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [ObservationGestationalAgeAtDelivery]|value.extension[bypassEditFlag].value | codeable | [EstimateOfGestationEditFlagsVS], <br />See [Handling of edit flags]  | J | 
-| 149 | Was a Histological Placental Examination Performed? | HISTOP| [ObservationHistologicalPlacentalExamPerformed]|value | codeable | [ValueSetHistologicalPlacentalExamination] | B | 
+| 149 | Was a Histological Placental Examination Performed? | HISTOP| [ObservationHistologicalPlacentalExamPerformed]|value | codeable | [HistologicalPlacentalExaminationVS] | B | 
 | 141 | Maternal Morbidity--Admit to Intensive Care | AINT| [ObservationICUAdmission]| | na | See [Note on missing maternal morbidity data] | B | 
 | 135 | Method of Delivery--Trial of Labor Attempted | TLAB| [ObservationLaborTrialAttempted]|value | boolean | Discussion needed: IJE values are Y, N, U, and X (not applicable). However, encoding with Boolean does not capture Unknown or Not Applicable | B | 
 | 107 | Date Last Normal Menses Began--Year | DLMP_YR| [ObservationLastMenstrualPeriod]|value | dateTime | See [PartialDatesAndTimes] | B | 
@@ -566,7 +566,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 251 | Mother's Residence Post Directional | POSTDIR| [PatientMotherVitalRecords]|address.extension[postdir] | string |  | B | 
 | 252 | Mother's Residence Unit or Apartment Number | APTNUMB| [PatientMotherVitalRecords]|address.extension[unitnum] | string |  | B | 
 | 253 | Mother's Residence Street Address | ADDRESS| [PatientMotherVitalRecords]|address.line | string |  | B | 
-| 254 | <nobr>Mother's Residence Zip code and Zip+4</nobr> | ZIPCODE| [PatientMotherVitalRecords]|address.postalCode | string |  | B | 
+| 254 | Mother's Residence Zip code and Zip+4 | ZIPCODE| [PatientMotherVitalRecords]|address.postalCode | string |  | B | 
 | 255 | Mother's Residence County (literal) | COUNTYTXT| [PatientMotherVitalRecords]|address.district | string |  | B | 
 | 256 | Mother's Residence City/Town/Place (literal)  | CITYTXT| [PatientMotherVitalRecords]|address.city | string |  | B | 
 | 257 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT| [PatientMotherVitalRecords]|address.state (expanded from 2 letter code) | string | See [StateLiterals] | B | 
@@ -574,13 +574,13 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 265 | Mother's Social Security Number | MOM_SSN| [PatientMotherVitalRecords]|identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”  | string |  | B | 
 | 279 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].state | string | See [StateLiterals] | B | 
 | 280 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT| [PatientMotherVitalRecords]|extension[patient-birthPlace].value[x].country (expanded from 2 letter code) | string | See [CountryLiterals] | B | 
-| 78 | Attendant | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [ValueSetBirthAttendantTitles] | B | 
+| 78 | Attendant | ATTEND| [PractitionerVitalRecords]|qualification.code | codeable | [BirthAttendantTitlesVS] | B | 
 | 340 | Attendant's Name | ATTEND_NAME| [PractitionerVitalRecords]|name.text | string |  | B | 
 | 341 | Attendant's NPI | ATTEND_NPI| [PractitionerVitalRecords]|identifier:NPI | string |  | B | 
 | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string | code.text should contain description | B | 
 | 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG| [ProcedureArtificialInsemination]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART| [ProcedureAssistedFertilization]| | na | See [Note on missing pregnancy risk factors data] | B | 
-| 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [ValueSetDeliveryRoutes] | B | 
+| 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS] | B | 
 | 117 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575) | INFT| [ProcedureInfertilityTreatment]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [RelatedPersonFatherVitalRecords]|birthDate.extension[bypassEditFlag].value | codeable | [MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] | J | 
 | 354 | Blank for One-Byte Field 1 | PLACE1_1| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue1_1].value | string(1) |  | B | 
@@ -606,7 +606,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 213 | Coded other significant causes or conditions- fifth mentioned | OCOD5| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
 | 214 | Coded other significant causes or conditions- sixth mentioned | OCOD6| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
 | 215 | Coded other significant causes or conditions- seventh mentioned | OCOD7| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
-| 62 | <nobr>Mother's Race Tabulation Variable 1E</nobr> | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[ThirdEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
@@ -647,7 +647,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** | **Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- | ---- |
-| 4 | Void flag | VOID| <nobr>[not implemented]</nobr>| |  |  | - | 
+| 4 | Void flag | VOID| [not implemented]| |  |  | - | 
 | 29 | Mother Married?--Ever(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARE| [not implemented]| |  |  | - | 
 | 30 | Mother Married?-- At Conception, at Delivery or any Time in Between(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARN| [not implemented]| |  |  | - | 
 | 31 | FILLER | *NO IJE MAPPING*| [not implemented]| |  |  | - | 
