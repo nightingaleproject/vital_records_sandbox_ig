@@ -30,8 +30,9 @@ IJE_FHIR_IG_COL = 9
 IJE_PROFILE_COL = 10
 IJE_FHIR_FIELD_COL = 11
 IJE_FHIR_TYPE_COL = 12
-IJE_FHIR_ENCODING_COL = 13
-IJE_MAPPING_PROFILE_COL = 18
+IJE_FHIR_COMMENTS_COL = 13
+IJE_UNIQUENESS_COL = 14
+IJE_MAPPING_PROFILE_COL = 19
 
 # BFDR_Profile_Intros.xlsx columns
 INTRO_ORDER_COL = 0
@@ -51,12 +52,16 @@ vProfileIntrosSpreadsheet.default_sheet = "BFDR"
 vSpreadsheet = open_spreadsheet(ARGV[1])
 vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
 
-def printHeader(hHeading, pOutputFile)
-    pOutputFile.puts "{: .grid }"
+def printHeader(hHeading, pOutputFile, pIG)
     pOutputFile.puts hHeading
     pOutputFile.puts ""
-    pOutputFile.puts "| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |"
-    pOutputFile.puts "| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |"
+    if pIG == "BFDR"
+        pOutputFile.puts "| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** | **Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)** |"
+        pOutputFile.puts "| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- | ---- |"
+    else
+        pOutputFile.puts "| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** |"
+        pOutputFile.puts "| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |"    
+    end
     return true
 end 
 
@@ -70,12 +75,7 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
         profileHeading = row[INTRO_HEADING_COL].value.to_s if row[INTRO_HEADING_COL]
         profiles.append([profileName, profileHeading])
     end
-
-    pOutputFile.puts pHeading
-    pOutputFile.puts ""
-
-    pOutputFile.puts "| **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set**  |"
-    pOutputFile.puts "| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |"
+    printHeader(pHeading, pOutputFile, pRowFilterIG)
 
     codedHeader = false
     notImplementedHeader = false
@@ -83,26 +83,33 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
         pSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
             next if row[IJE_USECASE_COL].value.to_s != pRowFilter || row[IJE_PROFILE_COL].value.to_s != x #|| row[IJE_PROFILE_COL].value.to_s == "not implemented"
             if codedHeader == false && y.to_s == "Coding"
-                codedHeader = printHeader("#### Coded Content", pOutputFile)
+                pOutputFile.puts "{: .grid }"
+                codedHeader = printHeader("#### Coded Content", pOutputFile, pRowFilterIG)
             end
             if notImplementedHeader == false && y.to_s == "Not Implemented"
-                notImplementedHeader = printHeader("#### Not Implemented Content", pOutputFile)
+                pOutputFile.puts "{: .grid }"
+                notImplementedHeader = printHeader("#### Not Implemented Content", pOutputFile, pRowFilterIG)
             end
-            field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = fhirig = ""
+            field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = fhirig = fhirunique = ""
             field = row[IJE_FIELD_COL].value.to_s if row[IJE_FIELD_COL]
             ijename = row[IJE_NAME_COL].value.to_s if row[IJE_NAME_COL]
             fhirig = row[IJE_FHIR_IG_COL].value.to_s if row[IJE_FHIR_IG_COL]
             profile = "[" + row[IJE_PROFILE_COL].value.to_s + "]" if row[IJE_PROFILE_COL] 
             fhirfield = row[IJE_FHIR_FIELD_COL].value.to_s if row[IJE_FHIR_FIELD_COL]
             fhirtype = row[IJE_FHIR_TYPE_COL].value.to_s if row[IJE_FHIR_TYPE_COL]
-            fhirencoding = row[IJE_FHIR_ENCODING_COL].value.to_s if row[IJE_FHIR_ENCODING_COL]   
+            fhirencoding = row[IJE_FHIR_COMMENTS_COL].value.to_s if row[IJE_FHIR_COMMENTS_COL]   
+            fhirunique = row[IJE_UNIQUENESS_COL].value.to_s if row[IJE_UNIQUENESS_COL] 
             description = row[IJE_DESC_COL].value.to_s if row[IJE_DESC_COL]
-            pOutputFile.puts "| " + field.chomp + " | " + description.chomp + " | " + ijename + "| " + profile + "|" + fhirfield + " | " + fhirtype + " | " + fhirencoding + " | "
+            if pRowFilterIG == "BFDR"
+                pOutputFile.puts "| " + field.chomp + " | " + description.chomp + " | " + ijename + "| " + profile + "|" + fhirfield + " | " + fhirtype + " | " + fhirencoding + " | " + fhirunique + " | "
+            else
+                pOutputFile.puts "| " + field.chomp + " | " + description.chomp + " | " + ijename + "| " + profile + "|" + fhirfield + " | " + fhirtype + " | " + fhirencoding + " | "
+            end
         end
     end
     pOutputFile.puts "{: .grid }"
     pOutputFile.puts "{% include markdown-link-references.md %}"
-  end
+end
 
 #create BFDR data dictionary
 vOutputFilename = "/generated/dataDictionaries/bfdr_ije_mapping.md"
