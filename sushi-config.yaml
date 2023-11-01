@@ -490,7 +490,7 @@ groups:
       - ConditionPrepregnancyDiabetes
       - ObservationApgarScore
       - ObservationBirthWeight
-      - ObservationFinalRouteAndMethodOfDelivery
+      #- ObservationFinalRouteAndMethodOfDelivery
       - ObservationGestationalAgeAtDelivery
       - ObservationInfantLiving
       - ObservationLastMenstrualPeriod
@@ -518,6 +518,7 @@ groups:
       - ConditionCongenitalAnomalyOfNewborn
       - ConditionFetalDeathCauseOrCondition
       - ConditionFetalDeathOtherCauseOrCondition
+      - ProcedureFinalRouteMethodDelivery
       - ConditionInfectionPresentDuringPregnancy
       - ConditionPerinealLaceration
       - ConditionRupturedUterus
@@ -533,11 +534,11 @@ groups:
       - ObservationDateOfLastOtherPregnancyOutcome
       - ObservationFetalDeathTimePoint
       - ObservationFetalPresentation
-      - ObservationFinalRouteAndMethodOfDelivery
+      #- ObservationFinalRouteAndMethodOfDelivery
       - ObservationHistologicalPlacentalExamPerformed
       - ObservationICUAdmission
       - ObservationInfantBreastfedAtDischarge
-      #- ObservationLaborTrialAttempted
+      - ObservationLaborTrialAttempted
       #- ObservationMethodOfDisposition
       - ObservationMotherMarriedDuringPregnancy
       - ObservationMotherReceivedWICFood
@@ -666,6 +667,7 @@ groups:
   #     - ProcedureAugmentationOfLabor
   #     - ProcedureBloodTransfusion
   #     - ProcedureEpiduralOrSpinalAnesthesia
+  #     - ProcedureFinalRouteMethodDelivery
   #     - ProcedureInductionOfLabor
   #     - ProcedureObstetric
   #     - ProcedureSurfactantReplacementTherapy
@@ -767,8 +769,8 @@ groups:
       - observation-fetal-death-time-point-not-named
       - observation-fetal-presentation-babyg-quinn
       - observation-fetal-presentation-not-named
-      - observation-final-route-method-delivery-babyg-quinn
-      - observation-final-route-method-delivery-not-named
+      - procedure-final-route-method-delivery-babyg-quinn
+      - procedure-final-route-method-delivery-not-named
       - observation-gestational-age-at-delivery-babyg-quinn
       - observation-gestational-age-at-delivery-babyg-quinn-w-edit
       - observation-gestational-age-at-delivery-not-named
@@ -777,7 +779,7 @@ groups:
       - observation-icu-admission-jada-ann-quinn
       - observation-infant-breastfed-at-discharge-babyg-quinn
       - observation-infant-living-babyg-quinn
-      #- observation-labor-trial-attempted-babyg-quinn
+      - observation-labor-trial-attempted-babyg-quinn
       #- observation-method-of-disposition-not-named
       - observation-mother-married-during-pregnancy-jada-ann-quinn
       - observation-mother-prepregnancy-weight-carmen-teresa-lee

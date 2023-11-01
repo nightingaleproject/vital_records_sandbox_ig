@@ -62,7 +62,7 @@ Usage: #example
   * entry[characteristicsLaborDelivery] = Reference(condition-chorioamnionitis-jada-ann-quinn) "Condition - Characteristic of Labor and Delivery (Jada Ann Quinn: Chorioamnionitis)"
   * entry[characteristicsLaborDelivery] = Reference(procedure-induction-of-labor-jada-ann-quinn) "Procedure - Characteristic of Labor and Delivery (Jada Ann Quinn: Induction of Labor)"
   * entry[fetalPresentation] = Reference(observation-fetal-presentation-babyg-quinn) "Observation - Fetal Presentation (Baby G Quinn)"
-  * entry[finalRouteMethodDelivery] = Reference(observation-final-route-method-delivery-babyg-quinn) "Observation - Final Route and Method of Delivery (Baby G Quinn)"
+  * entry[finalRouteMethodDelivery] = Reference(procedure-final-route-method-delivery-babyg-quinn) "Procedure - Final Route and Method of Delivery (Baby G Quinn)"
   * entry[maternalMorbidity] = Reference(condition-ruptured-uterus-jada-ann-quinn) "Condition - Maternal Morbidity - Ruptured Uterus (Jada Ann Quinn)"
 * section[newbornInformation]
   // * title = "Newborn section on the Live Birth Certificate"

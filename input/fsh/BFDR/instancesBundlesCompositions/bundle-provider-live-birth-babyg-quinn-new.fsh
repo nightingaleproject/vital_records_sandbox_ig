@@ -138,7 +138,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-fetal-presentation-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-32
-* insert addentry(Observation, observation-final-route-method-delivery-babyg-quinn)
+* insert addentry(Procedure, procedure-final-route-method-delivery-babyg-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Procedure/procedure-final-route-method-delivery-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-33

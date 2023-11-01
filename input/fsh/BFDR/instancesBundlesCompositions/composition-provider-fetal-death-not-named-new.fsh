@@ -44,7 +44,7 @@ Usage: #example
   * focus = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
   * entry[numberPreviousCesareans] = Reference(observation-number-previous-cesareans-carmen-teresa-lee) "Observation - Number Previous Cesareans (Carmen Teresa Lee)"
   * entry[fetalPresentation] = Reference(observation-fetal-presentation-not-named) "Observation - Fetal Presentation (Fetus Not Named)"
-  * entry[finalRouteMethodDelivery] = Reference(observation-final-route-method-delivery-not-named) "Observation - Final Route and Method of Delivery (Fetus Not Named)"
+  * entry[finalRouteMethodDelivery] = Reference(procedure-final-route-method-delivery-not-named) "Procedure - Final Route and Method of Delivery (Fetus Not Named)"
 * section[fetus]
   // * title = "Fetal delivery information section on the Fetal Death Report"
   // * code = $loinc#76400-1 "Fetal delivery information Document [US Standard Report of Fetal Death]"
