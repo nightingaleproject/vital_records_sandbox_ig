@@ -614,7 +614,7 @@ For Canadian Provinces:
 1205,ITOP,23,163,28,Patient's Residence county literal,COUNTYTXT,Valid county literal or blank if unknown,,not implemented,not implemented,,,,,,,,,not implemented,
 452,Mortality Roster,23,528,10,Father's Suffix,DADSUFF,,,VRDR,DecedentFather,"name.suffix , name.use = official",string,-,,FATHERSUFFIX,,,,DecedentFather,
 31,Mortality,24,217,5,Decedent's Residence--City,CITYC,NCHS Instruction Manual: Part 8,,VRDR,Decedent,address.city.extension[ cityCode ],integer,see [CityCodes],,y,,,,Decedent,
-296,Surveillance,24,225,1,Decedent's Residence--Inside City Limits,LIMITS,Y = Yes N = No.  U = Unknown ,,VRDR,Decedent,address.city.extension[ withinCityLimits] ,codeable,[YesNoUnknownVS],,y,,,,Decedent,
+296,Surveillance,24,225,1,Decedent's Residence--Inside City Limits,LIMITS,Y = Yes N = No.  U = Unknown ,,VRDR,Decedent,address.city.extension[ withinCityLimits] ,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,Decedent,
 488,Natality,24,80,1,Residence of Mother--Inside City Limits,LIMITS,"Y = Yes
 N = No
 U = Unknown",,VRCPL,PatientMotherVitalRecords,address.extension[ withinCityLimitsIndicator ].value,codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Extension-within-city-limits-indicator-vr,
@@ -682,7 +682,7 @@ Variable description (""Contents"") edited; same as NCHS ""Facility Name--County
 1368,Birth Infant Death,27,87,2,Date of Birth (Father)--Day,FDOB_DY,"01-31 (based on month), 99",,,,,,,,,,,,,
 456,Mortality Roster,27,600,28,"State, U.S. Territory or Canadian Province of Decedent's Residence - literal",STATETEXT_R ,"valid state, U.S. territory or Canadian province literal, otherwise blank",,VRDR,Decedent,address.state (expanded from 2 letter code),string,See [StateLiterals],,,,,,Decedent,
 1209,ITOP,27,249,3,Old NCHS residence city/county combo code,RESCON,See codes used before new 200x codes -- receiving state will recode,,not implemented,not implemented,,,,,,,,,not implemented,
-35,Mortality,28,229,1,Decedent's Residence--Inside City Limits,LIMITS,Y = Yes N = No.  U = Unknown ,,VRDR,Decedent,address.city.extension[ withinCityLimits] ,codeable,[YesNoUnknownVS],,y,,,,Decedent,
+35,Mortality,28,229,1,Decedent's Residence--Inside City Limits,LIMITS,Y = Yes N = No.  U = Unknown ,,VRDR,Decedent,address.city.extension[ withinCityLimits] ,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,Decedent,
 300,Surveillance,28,231,2,Date of Death--Month,DOD_MO,"01-12, 99",,VRDR,DeathDate,value,dateTime,See [PartialDatesAndTimes],,y,,,,DeathDate,
 492,Natality,28,89,1,Date of Birth (Father)--Edit Flag,FAGE_BYPASS,"0 = Edit Passed
 1 = Data Queried",,VRCPL,RelatedPersonFatherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-date-of-birth,
@@ -1111,7 +1111,7 @@ C = Not Obtainable",,VRDR,InputRaceAndEthnicity,component[ MissingValueReason].v
 B = Korean; C = Samoan;
 D = Vietnamese; E = Guamian;
 F = Multi-racial",,not implemented,not implemented,,,,,,,,,not implemented,
-337,Surveillance,65,703,1,Was Autopsy performed,AUTOP,Y = Yes N = No.  U = Unknown,,VRDR,AutopsyPerformedIndicator,value,codeable,[YesNoUnknownVS],,y,,,,AutopsyPerformedIndicator,
+337,Surveillance,65,703,1,Was Autopsy performed,AUTOP,Y = Yes N = No.  U = Unknown,,VRDR,AutopsyPerformedIndicator,value,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,AutopsyPerformedIndicator,
 72,Mortality,65,466,30,Decedent's Race--First Other Literal,RACE22,Literal; Blank ,,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,component[ FirstOtherRaceLiteral].valueString,string,-,,y,,,,InputRaceAndEthnicity,
 529,Natality,65,383,3,Mother's Race Tabulation Variable 4E,MRACE4E,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ]",codeable,[RaceCodeVS],N,,,,,Observation-race-vr,
 882,Fetal Death,65,383,3,Mother's Race Tabulation Variable 4E,MRACE4E,Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ]",codeable,[RaceCodeVS],N,,,,,Observation-race-vr,
@@ -1519,7 +1519,7 @@ year of delivery, 8888, 9999",,not implemented,not implemented,,,,-,,,,,not impl
 1291,ITOP,109,906,1,Failure of first method at time of followup at this facility,FAIL_F1,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
 573,Natality,109,706,3,Father's Race Tabulation Variable 2E,FRACE2E,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[SecondEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]",codeable,[RaceCodeVS],N,,,,,Observation-race-vr,
 1450,Birth Infant Death,109,706,3,Father's Race Tabulation Variable 2E,FRACE2E,NCHS Appendix E,,,,,,,,,,,,,
-119,Mortality,109,976,1,Was Autopsy performed,AUTOP,Y = Yes N = No.  U = Unknown,,VRDR,AutopsyPerformedIndicator,value,codeable,[YesNoUnknownVS],,y,,,,AutopsyPerformedIndicator,
+119,Mortality,109,976,1,Was Autopsy performed,AUTOP,Y = Yes N = No.  U = Unknown,,VRDR,AutopsyPerformedIndicator,value,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,AutopsyPerformedIndicator,
 381,Surveillance,110,1675,50,Long string address for decedent's place of residence same as above but allows states to choose the way they capture information.,ADDRESS_R,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Decedent's Residence address that's used in their system versus reprogramming.",,VRDR,Decedent,address.line[0],string,-,,y,,,,Decedent,
 574,Natality,110,709,3,Father's Race Tabulation Variable 3E,FRACE3E,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[ThirdEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]",codeable,[RaceCodeVS],N,,,,,Observation-race-vr,
 1451,Birth Infant Death,110,709,3,Father's Race Tabulation Variable 3E,FRACE3E,NCHS Appendix E,,,,,,,,,,,,,
@@ -1718,7 +1718,7 @@ U = Unknown",,,,,,,,,,,,,
 1469,Birth Infant Death,128,757,4,Date of First Prenatal Care Visit--Year,DOFP_YR,"4 digit year; year of child's birth or
 (year of child's birth - 1), 8888=no care, 9999=unknown ",,,,,,,,,,,,,
 1310,ITOP,128,1121,1,Secondary management -- hospitalization,HOSP_MAN,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
-140,Mortality,128,1081,1,Decedent ever served in Armed Forces?,ARMEDF,Y=yes; N=no; U=unknown,I,VRDR,DecedentMilitaryService,value,codeable,[YesNoUnknownVS],,,,,,DecedentMilitaryService,
+140,Mortality,128,1081,1,Decedent ever served in Armed Forces?,ARMEDF,Y=yes; N=no; U=unknown,I,VRDR,DecedentMilitaryService,value,codeable,[ValueSetYesNoUnknownVitalRecords],,,,,,DecedentMilitaryService,
 400,Surveillance,129,,,Cause of Death Part I Line a (coded),*NO IJE MAPPING*,Coded Cause(s) of Death Associated with Text on  Line 1b,,VRDR,CauseOfDeathPart1,"value.coding,   component[lineNumber] = 1",codeable,[ICD10CausesOfDeathVS],,y,,,,CauseOfDeathPart1,
 593,Natality,129,761,2,Date of Last Prenatal Care Visit--Month(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),DOLP_MO,"01-12, 88=no care, 99=unknown",,not implemented,not implemented,,,,-,,,,,not implemented,
 1470,Birth Infant Death,129,761,2,Date of Last Prenatal Care Visit--Month,DOLP_MO,"01-12, 88=no care, 99=unknown",,,,,,,,,,,,,
@@ -1917,7 +1917,7 @@ P = Planned",,BFDR,ObservationHistologicalPlacentalExamPerformed,value,codeable,
 1331,ITOP,149,1191,1,Reason for Termination -- Contraceptive failure,REASON_CONTRA_FAIL,"Y, N",,not implemented,not implemented,,,,,,,,,not implemented,
 967,Fetal Death,150,535,1,Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death?,AUTOPF,"Y = Yes
 N = No
-X = Not Applicable",,BFDR,ObservationAutopsyHistologicalExamResultsUsed,value,codeable,"[ValueSetYesNoNotApplicable], <br />sandbox uses boolean, BFDR IG uses codeable",B,,,,,Observation-autopsy-histological-exam-results-used,
+X = Not Applicable",,BFDR,ObservationAutopsyHistologicalExamResultsUsed,value,codeable,"[ValueSetYesNoNotApplicableVitalRecords], <br />sandbox uses boolean, BFDR IG uses codeable",B,,,,,Observation-autopsy-histological-exam-results-used,
 614,Natality,150,805,2,Number of Cigarettes Smoked in 1st 3 months,CIGFN,"00-98, 99",,BFDR,ObservationCigaretteSmokingBeforeDuringPregnancy,"value, <br />code=87298-6 (Cigarettes smoked per day by Mother--1st trimester)",integer,,B,,,,,Observation-cigarette-smoking-before-during-pregnancy,
 1491,Birth Infant Death,150,805,2,Number of Cigarettes Smoked in 1st 3 months,CIGFN,"00-98, 99",,,,,,,,,,,,,
 162,Mortality,150,1543,10,Decedent's Residence - Post Directional,POSTDIR_R,,,VRDR,Decedent,address.extension[postdir],string,-,,y,,,,Decedent,
@@ -2104,7 +2104,7 @@ Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr,
 989,Fetal Death,172,571,2,Father's Reported Age,FAGER,"00-98, 99",,VRCPL,PatientDecedentFetusVitalRecords,"extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ]",quantity,,B,,,Needs work,FHIR-41388,Extension-reported-parent-age-at-delivery-vr,
 636,Natality,172,836,1,Infections Present--Hepatitis B,HEPB,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=66071002 (Viral hepatitis type B (disorder)),na,See [Note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy,
 1513,Birth Infant Death,172,836,1,Infections Present--Hepatitis B,HEPB,"Y, N, U",,,,,,,,,,,,,
-184,Mortality,172,2108,1,Was case Referred to Medical Examiner/Coroner?,REFERRED,Y=Yes; N=No; U=Unknown,i,VRDR,ExaminerContacted,value,codeable,[YesNoUnknownVS],,,,,,ExaminerContacted,
+184,Mortality,172,2108,1,Was case Referred to Medical Examiner/Coroner?,REFERRED,Y=Yes; N=No; U=Unknown,i,VRDR,ExaminerContacted,value,codeable,[ValueSetYesNoUnknownVitalRecords],,,,,,ExaminerContacted,
 990,Fetal Death,173,573,1,Risk Factors--Hypertension Eclampsia (added after 2004),EHYPE,"Y, N, U  (BLANK IF NOT ADDED)",,BFDR,ConditionEclampsiaHypertension,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART

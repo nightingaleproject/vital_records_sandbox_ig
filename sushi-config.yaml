@@ -401,17 +401,9 @@ groups:
 
   VRCLValueSets:
     name: VRCL ValueSets
-    resources:
-      - ValueSetApgarTimingVitalRecords    
-      - ValueSetCertifierTypesVitalRecords  
-      - ValueSetDateEstablishmentApproachVitalRecords
-      - ValueSetDatePartVitalRecords
-      # - ValueSetDeathPregnancyStatusVitalRecords
+    resources:  
       - ValueSetFatherRelationshipVitalRecords
-      - ValueSetMannerOfDeathVitalRecords
       - ValueSetMotherRelationshipVitalRecords
-      - ValueSetPlaceOfDeathVitalRecords
-      - ValueSetTransportationIncidentRoleVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
@@ -670,6 +662,7 @@ groups:
   BFDRValueSets:
     name: BFDR ValueSets
     resources:
+      - ApgarTimingVS 
       - BirthAndFetalDeathFinancialClassVS
       - BirthAttendantTitlesVS
       - BirthDeliveryOccurredVS
@@ -1064,9 +1057,6 @@ groups:
       - TransportationIncidentRoleVS
       - UnitsOfAgeVS
       - USStatesAndTerritoriesVS
-      # - YesNoNotApplicableVS
-      # - YesNoUnknownNotApplicableVS
-      # - YesNoUnknownVS 
 
   # VRDRBundles:
   #   name: VRDR Bundles
@@ -1103,8 +1093,6 @@ groups:
       - TransaxConversionCM
       - TransportationIncidentRoleCM
       - UnitsOfAgeCM
-      # - YesNoUnknownCM
-      # - YesNoUnknownNotApplicableCM
 
 
   VRDRExamples:

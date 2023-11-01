@@ -33,7 +33,7 @@ This profile is designed to supplant the similar profiles in VRDR and MDI."
   * ^short = "Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"
   * ^definition = "Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"
 * method 0..1 
-* method from ValueSetDateEstablishmentApproachVitalRecords (extensible) //need to consolidate on the right valueset. this references the VRCL valueset
+* method from DateOfDeathDeterminationMethodsVS (extensible) //need to consolidate on the right valueset. this references the VRCL valueset
   * ^short = "Codes that describe the approach to establishing a date."
   * ^binding.description = "ValueSetDateEstablishmentApproach"
 * component ^slicing.discriminator.type = #value
@@ -50,4 +50,4 @@ This profile is designed to supplant the similar profiles in VRDR and MDI."
   * code = $loinc#58332-8
   * value[x] 1..1
   * value[x] only CodeableConcept
-  * value[x] from ValueSetPlaceOfDeathVitalRecords (required) //need to consolidate on the right valueset. this references the VRCL valueset
+  * value[x] from PlaceOfDeathVS (required) //need to consolidate on the right valueset. this references the VRCL valueset

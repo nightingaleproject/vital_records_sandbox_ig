@@ -10,6 +10,6 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 192 | Method of Delivery--Fetal Presentation | PRES | value |codeable |[FetalPresentationsVS] |
-| Fetal Death | 133 | Method of Delivery--Fetal Presentation | PRES | value |codeable |[FetalPresentationsVS] |
+| Natality | 192 | Method of Delivery--Fetal Presentation | PRES | value |codeable |[ValueSetFetalPresentations] |
+| Fetal Death | 133 | Method of Delivery--Fetal Presentation | PRES | value |codeable |[ValueSetFetalPresentations] |
 {: .grid }

@@ -1,13 +1,12 @@
 ### Value Sets Defined in This MDI Implementation Guide
 * [ValueSetCertifierTypes]
-* [ValueSetDateEstablishmentApproachVitalRecords]
+* [DateOfDeathDeterminationMethodsVS]
 * [ValueSetDeathPregnancyStatus]
-* [ValueSetMannerOfDeathVitalRecords]
-* [ValueSetPlaceOfDeathVitalRecords]
+* [PlaceOfDeathVS]
 * [ValueSetTrackingNumberType]
 * [TransportationIncidentRoleVS]
-* [YesNoUnknownVS]
-* [YesNoUnknownNotApplicableVS]
+* [ValueSetYesNoUnknownVitalRecords]
+* [ValueSetYesNoUnknownNotApplicableVitalRecords]
 
 ### HL7 Defined Value Sets
 * [DataAbsentReason](http://hl7.org/fhir/R4/valueset-data-absent-reason.html)
