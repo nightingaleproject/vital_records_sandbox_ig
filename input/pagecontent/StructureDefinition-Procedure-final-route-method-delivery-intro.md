@@ -8,8 +8,9 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 193 | Method of Delivery--Route and Method of Delivery | ROUT | code |codeable |[ValueSetDeliveryRoutes] |
-| Fetal Death | 134 | Method of Delivery--Route and Method of Delivery | ROUT | code |codeable |[ValueSetDeliveryRoutes] |
+| Natality | 193 | Method of Delivery--Route and Method of Delivery | ROUT | code |codeable |[DeliveryRoutesVS], See [Note on missing method of delivery data] |
+| Fetal Death | 134 | Method of Delivery--Route and Method of Delivery | ROUT | code |codeable |[DeliveryRoutesVS], See [Note on missing method of delivery data] |
 {: .grid }
+{% include markdown-link-references.md %}

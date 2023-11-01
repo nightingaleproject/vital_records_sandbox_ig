@@ -6,7 +6,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 196 | <nobr>Maternal Morbidity--Perineal Laceration</nobr> | PLAC |  |na |See [Note on missing maternal morbidity data] |
 {: .grid }
+{% include markdown-link-references.md %}

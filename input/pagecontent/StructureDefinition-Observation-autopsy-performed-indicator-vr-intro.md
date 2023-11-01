@@ -5,7 +5,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Fetal Death | 148 | Was an Autopsy Performed? | AUTOP | value |codeable |[ValueSetYesNoUnknownNotApplicableVitalRecords] |
 {: .grid }
+{% include markdown-link-references.md %}

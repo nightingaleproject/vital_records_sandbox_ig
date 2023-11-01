@@ -4,8 +4,9 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 147 | Date of Last Other Pregnancy Outcome--Month | MOPO | value |dateTime |See [PartialDatesAndTimes] |
 | Natality | 148 | Date of Last Other Pregnancy Outcome--Year | YOPO | value |dateTime |See [PartialDatesAndTimes] |
 {: .grid }
+{% include markdown-link-references.md %}

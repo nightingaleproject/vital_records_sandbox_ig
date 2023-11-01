@@ -7,13 +7,6 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
 * FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
 
-#### Specifying None of the Above and Missing Data
-
-Maternal Morbidities
-* If [ObservationNoneOfSpecifiedMaternalMorbidities] is present in bundle, then the interpretation is that all individual maternal morbidities are 'N'
-
-Pregnancy Risk Factors
-* If [ObservationNoneOfSpecifiedPregnancyRiskFactors] is present in bundle, then the interpretation is that all individual risk factors are 'N'
 
 ### Fetal Death IJE Mapping
 

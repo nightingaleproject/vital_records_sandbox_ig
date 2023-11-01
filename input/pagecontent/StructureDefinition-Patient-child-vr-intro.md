@@ -34,7 +34,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 1 | Date of Birth (Infant)--Year | IDOB_YR | birthDate |date | |
 | Natality | 2 | State, U.S. Territory or Canadian Province of Birth (Infant) - code | BSTATE | extension[patient-birthPlace].value[x].state |string |[StatesTerritoriesAndProvincesVS] |
@@ -58,3 +58,4 @@ This profile is mapped to:
 | Fetal Death | 151 | Plurality | PLUR | extension[patient-multipleBirthTotal].valuePositiveInt |integer | |
 | Fetal Death | 171 | Mother's Reported Age | MAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ] |quantity | |
 {: .grid }
+{% include markdown-link-references.md %}

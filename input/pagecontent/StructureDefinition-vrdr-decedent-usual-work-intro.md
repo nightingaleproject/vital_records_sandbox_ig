@@ -8,10 +8,11 @@ Implementors are free to use the coded fields with the defined valuesets for int
   references in this IG.  For NCHS provided coded values the specific vocabulary used will depend on the death year.
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 84 | Occupation -- Literal  | OCCUP | value.text |string(40) |- |
 | Mortality | 86 | Industry -- Literal  | INDUST | component [ odh-UsualIndustry	].value.text |string(40) |- |
 | Mortality | 94 | Occupation -- 4 digit Code  | OCCUPC4 | valueCodeableConcept.coding[occupationCDCCensus2018]  |codeable |[PHVS_Occupation_CDC_Census2018VS] |
 | Mortality | 95 | Industry -- 4 digit Code | INDUSTC4 | component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCCensus2018]  |codeable |[PHVS_Industry_CDC_Census2018VS] |
 {: .grid }
+{% include markdown-link-references.md %}

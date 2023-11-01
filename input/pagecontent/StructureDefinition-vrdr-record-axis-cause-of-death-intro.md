@@ -10,7 +10,8 @@ In the FHIR encoding, in lieu of using the 5th position of the ICD10 code, a fla
 * insert RequireMetaProfile(Profile: RecordAxisCauseOfDeath)
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 108 | Record-axis codes | RAC | Each entry is a 3-tuple (value, component[position], component[WouldBeUnderlyingCauseOfDeathWithoutPregnancy]) |codeable |[ICD10CausesOfDeathVS] |
 {: .grid }
+{% include markdown-link-references.md %}

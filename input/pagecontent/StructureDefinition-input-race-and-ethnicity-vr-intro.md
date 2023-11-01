@@ -1,7 +1,7 @@
 In cases where multiple races are recorded for a person an algorithm (NCHS defined) is used to select a single race. The goal is to provide race statistics that are comparable with those used historically to facilitate time series analysis. The goal is to maintain consistency between data collected after the definitional change (allowing collection of multiple races and ethnicities) and that collected prior to that time. This intent is to maintain the integrity of time series (data collected from a range of time periods) reporting.
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
 | Natality | 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
@@ -145,3 +145,4 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
 | Mortality | 66 | Decedent's Race--Second Other Literal | RACE23 | component[ SecondOtherRaceLiteral].valueString |string |- |
 | Mortality | 83 | Decedent's Race--Missing | RACE_MVR | component[ MissingValueReason].valueCoding |codeable |[RaceMissingValueReasonVS]  |
 {: .grid }
+{% include markdown-link-references.md %}

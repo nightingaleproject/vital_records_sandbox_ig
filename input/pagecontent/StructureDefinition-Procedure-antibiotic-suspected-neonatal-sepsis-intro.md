@@ -6,7 +6,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 216 | Abnormal Conditions of the Newborn--Antibiotics | ANTI |  |na |See [Note on missing abnormal conditions of newborn data] |
 {: .grid }
+{% include markdown-link-references.md %}

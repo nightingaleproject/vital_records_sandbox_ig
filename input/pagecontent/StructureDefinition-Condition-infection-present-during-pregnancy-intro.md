@@ -7,7 +7,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 168 | Infections Present--Gonorrhea | GON | code=15628003 (Gonorrhea (disorder)) |na |See [Note on missing infections present data] |
 | Natality | 169 | Infections Present--Syphilis | SYPH | code=76272004 (Syphilis (disorder)) |na |See [Note on missing infections present data] |
@@ -16,3 +16,4 @@ This profile is mapped to:
 | Natality | 173 | Infections Present--Hepatitis C | HEPC | code=50711007 (Viral hepatitis type C (disorder)) |na |See [Note on missing infections present data] |
 | Natality | Not Mapped | Infections Present--Genital herpes simplex | Not Mapped | code=33839006 (Genital herpes simplex (disorder)) |na |Michigan state-specific requirement. |
 {: .grid }
+{% include markdown-link-references.md %}

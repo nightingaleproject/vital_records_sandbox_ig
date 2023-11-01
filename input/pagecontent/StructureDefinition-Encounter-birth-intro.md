@@ -16,9 +16,9 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE | location.physicalType |codeable |[ValueSetBirthDeliveryOccurred] |
+| Natality | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE | location.physicalType |codeable |[BirthDeliveryOccurredVS] |
 | Natality | 12 | Facility ID (NPI) - if available | FNPI | location.location.id |string | |
 | Natality | 13 | Facility ID (State-Assigned) | SFN | location.location.identifier |Identifier | |
 | Natality | 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN | hospitalization.dischargeDisposition="other-hcf" |codeable |[USCoreDischargeDispositionVS](http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition). <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'other-hcf' |
@@ -28,3 +28,4 @@ This profile is mapped to:
 | Natality | 335 | Date Signed by Certifier--Month | CERTIFIED_MO | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
 | Natality | 336 | Date Signed by Certifier--Day | CERTIFIED_DY | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
 {: .grid }
+{% include markdown-link-references.md %}

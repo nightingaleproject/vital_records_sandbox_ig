@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 2 | State, U.S. Territory or Canadian Province of Death - code | DSTATE | address.state or address.state.extension[nationalReportingJurisdictionId ] |codeable |[StatesTerritoriesAndProvincesVS] in state field or [JurisdictionVS] in extension |
 | Mortality | 32 | County of Death Occurrence | COD | address.district.extension[ districtCode ] |integer |see [CountyCodes] |
@@ -24,3 +24,4 @@
 | Mortality Roster | 7 | State, U.S. Territory or Canadian Province of Death - code | DSTATE | address.state or address.state.extension[nationalReportingJurisdictionId ] |codeable |[StatesTerritoriesAndProvincesVS] or [JurisdictionVS] |
 | Mortality Roster | 30 | Death Country - Code | DCOUNTRYC | address.country  |string  |[ResidenceCountryVS].  Note: For US Death certificates should be US.    |
 {: .grid }
+{% include markdown-link-references.md %}
