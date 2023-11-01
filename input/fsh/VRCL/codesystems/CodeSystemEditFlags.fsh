@@ -18,54 +18,54 @@ Description: "This code system contains codes to represent all edit flags"
 * #pluralityQueriedInconsistent "Plurality/Set Order Queried, Inconsistent" //PHC1495
 * #queriedCorrect "Queried, and Correct" //PHC1494
 
-* #DEducBypass0 "Decedents Education - Edit Passed"
-* #DEducBypass1 "Decedents Education - Edit Failed, Data Queried, and Verified" 
-* #DEducBypass2 "Decedents Education - Edit Failed, Data Queried, but not Verified"
-* #DEducBypass3 "Decedents Education - Edit Failed, Review Needed"
-* #DEducBypass4 "Decedents Education - Edit Failed, Query Needed"
-* #sexBypass0 "Sex - Edit Passed"
-* #sexBypass1 "Sex - Edit Failed, Data Queried, and Verified"
-* #ageBypass0 "Age - Edit Passed"
-* #ageBypass1 "Age - Edit Failed, Data Queried, and Verified"
-* #maritalBypass0 "Marital - Edit Passed"
-* #maritalBypass1 "Marital - Edit Failed, Data Queried, and Verified"
-* #maritalBypass2 "Marital - Edit Failed, Data Queried, but not Verified"
-* #maritalBypass4 "Marital - Edit Failed, Query Needed"
-* #MAgeBypass0 "Mothers Age - Edit Passed"
-* #MAgeAgeBypass1 "Mothers Age - Data Queried"
-* #FAgeBypass0 "Fathers Age - Edit Passed" //PHC1362
-* #FAgeBypass1 "Fathers Age - Data Queried" //PHC2143
-* #MEducBypass0 "Mothers Education - Edit Passed"
-* #MEducBypass1 "Mothers Education - Edit Failed, Data Queried and Verified"
-* #MEducBypass2 "Mothers Education - Edit Failed, Data Queried, but not Verified" 
-* #FEducBypass0 "Fathers Education - Edit Passed"
-* #FEducBypass1 "Fathers Education - Edit Failed, Data Queried and Verified"
-* #FEducBypass2 "Fathers Education - Edit Failed, Data Queried, but not Verified" 
-* #NPrevBypass0 "Number of Prenatal Care Visits - Edit Passed"
-* #NPrevBypass1 "Number of Prenatal Care Visits - Edit Failed, Number Verified"
-* #NPrevBypass2 "Number of Prenatal Care Visits - Edit Failed, Number not Verified"
-* #HGTBypass0 "Mothers Height - Edit Passed"
-* #HGTBypass1 "Mothers Height - Edit Failed, Number Verified"
-* #HGTBypass2 "Mothers Height - Edit Failed, Number not Verified"
-* #PWGTBypass0 "Mothers Prepregnancy Weight - Edit Passed"
-* #PWGTBypass1 "Mothers Prepregnancy Weight - Edit Failed, Number Verified"
-* #PWGTBypass2 "Mothers Prepregnancy Weight - Edit Failed, Number not Verified"
-* #DWGTBypass0 "Mothers Delivery Weight - Edit Passed"
-* #DWGTBypass1 "Mothers Delivery Weight - Edit Failed, Number Verified"
-* #DWGTBypass2 "Mothers Delivery Weight - Edit Failed, Number not Verified"
-* #NPCesBypass0 "Number of Previous Cesareans - Edit Passed"
-* #NPCesBypass1 "Number of Previous Cesareans - Edit Failed, Verified"
-* #birthweightBypass0 "Birthweight - Off"
-* #birthweightBypass1 "Birthweight - Queried data correct, out of range"
-* #birthweightBypass2 "Birthweight - Queried, failed birthweight/gestation edit"
-* #OWGestBypass0 "Obstetric Estimation of Gestation - Off"
-* #OWGestBypass1 "Obstetric Estimation of Gestation - Queried data correct, out of range"
-* #pluralityBypass0 "Plurality - Off"
-* #pluralityBypass1 "Plurality - Queried, and Correct"
-* #pluralityBypass2 "Plurality - Plurality/Set Order Queried, Inconsistent"
-* #fetalWeightBypass0 "Weight of Fetus - Off"
-* #fetalWeightBypass1 "Weight of Fetus - Queried data correct, out of range"
-* #fetalWeightBypass2 "Weight of Fetus - Queried, failed delivery weight/gestation edit"
-* #pregnancyReportBypass0 "Pregnancy Report - Edit Passed"
-* #pregnancyReportBypass1 "Pregnancy Report - Edit Failed, Data Queried, and Verified"
-* #pregnancyReportBypass2 "Pregnancy Report - Edit Failed, Data Queried, but not Verified"
+// * #DEducBypass0 "Decedents Education - Edit Passed" // * #editBypass0
+// * #DEducBypass1 "Decedents Education - Edit Failed, Data Queried, and Verified" // * #editBypass1
+// * #DEducBypass2 "Decedents Education - Edit Failed, Data Queried, but not Verified" // * #editBypass2
+// * #DEducBypass3 "Decedents Education - Edit Failed, Review Needed" // * #editBypass3
+// * #DEducBypass4 "Decedents Education - Edit Failed, Query Needed" // * #editBypass4
+// * #sexBypass0 "Sex - Edit Passed" // * #editBypass0
+// * #sexBypass1 "Sex - Edit Failed, Data Queried, and Verified" // * #editBypass1
+// * #ageBypass0 "Age - Edit Passed" // * #editBypass0
+// * #ageBypass1 "Age - Edit Failed, Data Queried, and Verified" // * #editBypass1
+// * #maritalBypass0 "Marital - Edit Passed" // * #editBypass0
+// * #maritalBypass1 "Marital - Edit Failed, Data Queried, and Verified" // * #editBypass1
+// * #maritalBypass2 "Marital - Edit Failed, Data Queried, but not Verified" // * #editBypass2
+// * #maritalBypass4 "Marital - Edit Failed, Query Needed" // * #editBypass4
+// * #MAgeBypass0 "Mothers Age - Edit Passed" // * #editBypass0
+// * #MAgeAgeBypass1 "Mothers Age - Data Queried" // #dataQueried
+// * #FAgeBypass0 "Fathers Age - Edit Passed" //PHC1362 // * #editBypass0
+// * #FAgeBypass1 "Fathers Age - Data Queried" //PHC2143 // #dataQueried
+// * #MEducBypass0 "Mothers Education - Edit Passed" // #editBypass0
+// * #MEducBypass1 "Mothers Education - Edit Failed, Data Queried and Verified" //  #editBypass1
+// * #MEducBypass2 "Mothers Education - Edit Failed, Data Queried, but not Verified" // #editBypass2
+// * #FEducBypass0 "Fathers Education - Edit Passed" //  #editBypass0
+// * #FEducBypass1 "Fathers Education - Edit Failed, Data Queried and Verified" //  #editBypass1
+// * #FEducBypass2 "Fathers Education - Edit Failed, Data Queried, but not Verified" //  #editBypass2
+// * #NPrevBypass0 "Number of Prenatal Care Visits - Edit Passed" //  #editBypass0
+// * #NPrevBypass1 "Number of Prenatal Care Visits - Edit Failed, Number Verified" //  #editBypass1
+// * #NPrevBypass2 "Number of Prenatal Care Visits - Edit Failed, Number not Verified" //  #editBypass2
+// * #HGTBypass0 "Mothers Height - Edit Passed" // #editBypass0
+// * #HGTBypass1 "Mothers Height - Edit Failed, Number Verified" // #editBypass1
+// * #HGTBypass2 "Mothers Height - Edit Failed, Number not Verified" // #editBypass2
+// * #PWGTBypass0 "Mothers Prepregnancy Weight - Edit Passed"  #editBypass0
+// * #PWGTBypass1 "Mothers Prepregnancy Weight - Edit Failed, Number Verified" // #editBypass1
+// * #PWGTBypass2 "Mothers Prepregnancy Weight - Edit Failed, Number not Verified" // #editBypass2
+// * #DWGTBypass0 "Mothers Delivery Weight - Edit Passed" // #editBypass0
+// * #DWGTBypass1 "Mothers Delivery Weight - Edit Failed, Number Verified" // #editBypass1
+// * #DWGTBypass2 "Mothers Delivery Weight - Edit Failed, Number not Verified" // #editBypass2
+// * #NPCesBypass0 "Number of Previous Cesareans - Edit Passed" // #editBypass0
+// * #NPCesBypass1 "Number of Previous Cesareans - Edit Failed, Verified" // #editBypass1
+// * #birthweightBypass0 "Birthweight - Off" // #off
+// * #birthweightBypass1 "Birthweight - Queried data correct, out of range" // #correctOutOfRange
+// * #birthweightBypass2 "Birthweight - Queried, failed birthweight/gestation edit" // #failedBirthWeightGestationEdit
+// * #OWGestBypass0 "Obstetric Estimation of Gestation - Off" // #off
+// * #OWGestBypass1 "Obstetric Estimation of Gestation - Queried data correct, out of range" // #correctOutOfRange
+// * #pluralityBypass0 "Plurality - Off" //  #off
+// * #pluralityBypass1 "Plurality - Queried, and Correct" // #correctOutOfRange
+// * #pluralityBypass2 "Plurality - Plurality/Set Order Queried, Inconsistent" // #pluralityQueriedInconsistent
+// * #fetalWeightBypass0 "Weight of Fetus - Off" // #off
+// * #fetalWeightBypass1 "Weight of Fetus - Queried data correct, out of range" // #correctOutOfRange
+// * #fetalWeightBypass2 "Weight of Fetus - Queried, failed delivery weight/gestation edit" // #failedBirthWeightGestationEdit
+// * #pregnancyReportBypass0 "Pregnancy Report - Edit Passed" // #editBypass0
+// * #pregnancyReportBypass1 "Pregnancy Report - Edit Failed, Data Queried, and Verified" // #editBypass1
+// * #pregnancyReportBypass2 "Pregnancy Report - Edit Failed, Data Queried, but not Verified" //#editBypass2

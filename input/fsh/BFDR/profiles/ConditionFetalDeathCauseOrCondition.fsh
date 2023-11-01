@@ -7,7 +7,7 @@ Description: "This Condition profile contains information provided by the clinic
 * category contains initiatingCauseOrCondition 1..1 MS
 * category[initiatingCauseOrCondition] = $loinc#76060-3
   * ^short = "Initiating cause or condition of fetal death [US Standard Report of Fetal Death]"
-* code from ValueSetFetalDeathCauseOrCondition (required)
+* code from FetalDeathCauseOrConditionVS (required)
   * ^short = "The value sets contains the list of values used to report initiating cause or condition or other significant causes or conditions contributing to fetal death."
   * ^binding.description = "Fetal Death Cause or Condition (NCHS)"
   * coding MS

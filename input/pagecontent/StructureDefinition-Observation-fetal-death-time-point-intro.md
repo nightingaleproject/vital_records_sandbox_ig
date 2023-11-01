@@ -7,5 +7,5 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Fetal Death | 147 | Estimated time of fetal death | ETIME | value |codeable |[ValueSetFetalDeathTimePoints] |
+| Fetal Death | 147 | Estimated time of fetal death | ETIME | value |codeable |[FetalDeathTimePointsVS] |
 {: .grid }

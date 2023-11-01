@@ -1,5 +1,4 @@
 ### Value Sets Defined in This MDI Implementation Guide
-* [ValueSetContributoryTobaccoUseVitalRecordsNew]
 * [ValueSetCertifierTypes]
 * [ValueSetDateEstablishmentApproachVitalRecords]
 * [ValueSetDeathPregnancyStatus]

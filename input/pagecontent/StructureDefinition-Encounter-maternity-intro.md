@@ -19,7 +19,7 @@ This profile is mapped to:
 | Natality | 125 | Mother Transferred? | TRAN | hospitalization.admitSource = "hosp-trans" |codeable |[HL7EncounterAdmitSourceVS](http://hl7.org/fhir/ValueSet/encounter-admit-source), <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'hosp-trans' |
 | Natality | 302 | Facility Mother Moved From (if transferred) | HOSPFROM | hospitalization.origin.name |string | |
 | Fetal Death | 10 | County of Delivery | CNTYO | location.location.address.district.extension[countyCode] |integer |See [CountyCodes] |
-| Fetal Death | 11 | Place Where Delivery Occurred | DPLACE | location.physicalType |codeable |[ValueSetBirthDeliveryOccurred] |
+| Fetal Death | 11 | Place Where Delivery Occurred | DPLACE | location.physicalType |codeable |[BirthDeliveryOccurredVS] |
 | Fetal Death | 12 | Facility ID (NPI) - If available | FNPI | location.location.id |string | |
 | Fetal Death | 13 | Facility ID (State-Assigned) | SFN | location.location.identifier |Identifier | |
 | Fetal Death | 224 | Name of Delivery Facility | HOSP_D | location.location.name |string | |
