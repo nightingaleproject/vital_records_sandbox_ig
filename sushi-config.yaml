@@ -398,15 +398,15 @@ groups:
     name:  ValueSets from PHINVADS
     resources:
       - ValueSetEducationLevelPersonVitalRecords
-      - ValueSetFetalDeathCauseOrCondition
-      - ValueSetFetalDeathTimePoints
-      - ValueSetFetalPresentations
-      - ValueSetHistologicalPlacentalExamination
-      - ValueSetInfectionsDuringPregnancyLiveBirth
-      - ValueSetInformantRelationshipToMother
+      #- ValueSetFetalDeathCauseOrCondition
+      #- ValueSetFetalDeathTimePoints
+      #- ValueSetFetalPresentations
+      #- ValueSetHistologicalPlacentalExamination
+      #- ValueSetInfectionsDuringPregnancyLiveBirth
+      #- ValueSetInformantRelationshipToMother
       # - ValueSetbornCongenitalAnomalies
       # - ValueSetObstetricProcedure
-      - ValueSetPregnancyRiskFactors
+      #- ValueSetPregnancyRiskFactors
 
   VRCLValueSets:
     name: VRCL ValueSets

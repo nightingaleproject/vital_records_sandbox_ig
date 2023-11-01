@@ -2,13 +2,8 @@ Profile: ProcedureFinalRouteMethodDelivery
 Parent: USCoreProcedureProfile
 Id: Procedure-final-route-method-delivery
 Title: "Procedure - Final Route and Method of Delivery"
-<<<<<<< HEAD
-Description: "This profile represents the final route and method of delivery.  If Unknown, use [ObservationUnknownFinalRouteMethodDelivery]"
-* code from ValueSetDeliveryRoutes (required)
-=======
 Description: "This profile represents the final route and method of delivery."
 * code from DeliveryRoutesVS (required)
->>>>>>> main
   * ^short = "The value set contains the list of the possible routes by which the infant or fetus may be delivered."
   * ^binding.description = "Delivery Routes (NCHS)"
 * subject only Reference(PatientMotherVitalRecords)
