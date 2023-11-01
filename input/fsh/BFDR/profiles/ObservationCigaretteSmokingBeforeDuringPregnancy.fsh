@@ -10,7 +10,7 @@ Description: """This profile represents the average number of cigarettes smoked 
 
 Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number."""
 * code 1..1 MS
-* code from CigaretteSmokingBeforeAndDuringPregnancy (required)
+* code from CigaretteSmokingBeforeAndDuringPregnancyVS (required)
   * ^short = "This value set contains codes to determine the number of cigarettes smoked in specific periods before and during pregnancy."
   * ^binding.description = "CigaretteSmokingBeforeAndDuringPregnancy"
 * subject 1.. MS 

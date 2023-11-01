@@ -259,7 +259,7 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 5 = Home (Unknown if Intended)
 6 = Clinic/Doctor's Office
 7 = Other
-9 = Unknown",,BFDR,EncounterBirth,location.physicalType,codeable,[ValueSetBirthDeliveryOccurred],,,,,Encounter-birth
+9 = Unknown",,BFDR,EncounterBirth,location.physicalType,codeable,[BirthDeliveryOccurredVS],,,,,Encounter-birth
 1352,Birth Infant Death,11,38,1,Place Where Birth Occurred (type of place or institution),BPLACE,"1 = Hospital
 2 = Freestanding Birth Center
 3 = Home (Intended)
@@ -276,7 +276,7 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 5 = Home (Unknown if Intended)
 6 = Clinic/Doctor's Office
 7 = Other
-9 = Unknown",,BFDR,Encounter_Maternity,location.physicalType,codeable,[ValueSetBirthDeliveryOccurred],,,,,Encounter-maternity
+9 = Unknown",,BFDR,Encounter_Maternity,location.physicalType,codeable,[BirthDeliveryOccurredVS],,,,,Encounter-maternity
 1193,ITOP,11,38,10,Patient ID Number,PAT_ID, ,,not implemented,not implemented,,,,,,,,not implemented
 283,Surveillance,11,187,9,Social Security Number,SSN,9 digit SSN; blank if unknown or not sharable,,VRDR,Decedent,"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB""",string,-,y,,,,Decedent
 284,Surveillance,12,196,1,Decedent's Age--Type,AGETYPE,"1 = Years
@@ -1205,7 +1205,7 @@ Now dead",PLBD,"00-30
 3 = CNM/CM
 4 = Other midwife
 5 = Other (specify)
-9 = Unknown",,VRCPL,PractitionerVitalRecords,qualification.code,codeable,[ValueSetBirthAttendantTitles],,,,,Practitioner-vr
+9 = Unknown",,VRCPL,PractitionerVitalRecords,qualification.code,codeable,[BirthAttendantTitlesVS],,,,,Practitioner-vr
 1260,ITOP,78,724,1,Contraceptive type - Foam,CONTRA_FOAM,"Y, N, U",,not implemented,not implemented,,,,,,,,not implemented
 85,Mortality,78,559,3,Second Other Asian Code,RACE19C,Appendix I,,VRDR,CodedRaceAndEthnicity,component[SecondOtherAsianCode].value,codeable,[RaceCodeVS],,,,,CodedRaceAndEthnicity
 542,Natality,78,422,1,Father's Education,FEDUC,"1 = 8th grade or less
@@ -1657,7 +1657,7 @@ U = Unknown",,not implemented,not implemented,,,,,,,,not implemented
 3 = CNM/CM
 4 = Other midwife
 5 = Other (specify)
-9 = Unknown",,VRCPL,PractitionerVitalRecords,qualification.code,codeable,[ValueSetBirthAttendantTitles],,,,,Practitioner-vr
+9 = Unknown",,VRCPL,PractitionerVitalRecords,qualification.code,codeable,[BirthAttendantTitlesVS],,,,,Practitioner-vr
 1465,Birth Infant Death,124,751,1,Attendant Title,ATTEND,"1 = MD
 2 = DO
 3 = CNM/CM
@@ -1757,7 +1757,7 @@ U = Unknown",,,,,,,,,,,
 950,Fetal Death,133,514,1,Method of Delivery--Fetal Presentation,PRES,"1 = Cephalic
 2 = Breech
 3 = Other
-9 = Unknown",,BFDR,ObservationFetalPresentation,value,codeable,[ValueSetFetalPresentations],,,,,Observation-fetal-presentation
+9 = Unknown",,BFDR,ObservationFetalPresentation,value,codeable,[FetalPresentationsVS],,,,,Observation-fetal-presentation
 405,Surveillance,134,2736,120,Cause of Death Part I Line c (literal),COD1C,Literal information reported on Line c,,VRDR,CauseOfDeathPart1,"value.text,   component[lineNumber] = 3",string(120),-,y,,,,CauseOfDeathPart1
 1316,ITOP,134,1127,1,Diagnostic Proc -- Ultrasound,DIAG_ULTRA,"Y, N, U",,not implemented,not implemented,,,,,,,,not implemented
 598,Natality,134,772,1,Mother's Height--Feet,HFT,"1-8, 9",,VRCPL,ObservationMotherHeightVitalRecords,value,quantity,,,,,,Observation-mother-height-vr
@@ -1767,7 +1767,7 @@ U = Unknown",,,,,,,,,,,
 2 = Forceps
 3 = Vacuum
 4 = Cesarean
-9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,[ValueSetDeliveryRoutes],,,,,Procedure-final-route-method-delivery
+9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,[DeliveryRoutesVS],,,,,Procedure-final-route-method-delivery
 406,Surveillance,135,,,Cause of Death Part I Line c (coded),*NO IJE MAPPING*,Coded Cause(s) of Death Associated with Text on  Line 1c,,VRDR,CauseOfDeathPart1,"value.coding,   component[lineNumber] = 3",codeable,[ICD10CausesOfDeathVS],y,,,,CauseOfDeathPart1
 1317,ITOP,135,1128,1,Diagnostic Proc -- Cordocentesis,DIAG_CORD,"Y, N, U",,not implemented,not implemented,,,,,,,,not implemented
 599,Natality,135,773,2,Mother's Height--Inches,HIN,"00-11, 99",,VRCPL,ObservationMotherHeightVitalRecords,value,quantity,,,,,,Observation-mother-height-vr
@@ -1891,7 +1891,7 @@ year of child's birth, 8888, 9999",,,,,,,,,,,
 964,Fetal Death,147,532,1,Estimated time of fetal death,ETIME,"N = At assessment, no labor
 L = At assessment, labor
 A = Labor, no assessment
-U = Unknown",,BFDR,ObservationFetalDeathTimePoint,value,codeable,[ValueSetFetalDeathTimePoints],,,,,Observation-estimated-fetal-death-time-point
+U = Unknown",,BFDR,ObservationFetalDeathTimePoint,value,codeable,[FetalDeathTimePointsVS],,,,,Observation-estimated-fetal-death-time-point
 418,Surveillance,147,3485,10,Father's Suffix,FATHERSUFFIX,,i,VRDR,DecedentFather,"name.suffix , name.use = official",string,-,,,,,DecedentFather
 611,Natality,147,797,2,Date of Last Other Pregnancy Outcome--Month,MOPO,"01-12, 88, 99",,BFDR,ObservationDateOfLastOtherPregnancyOutcome,value,dateTime,See [PartialDatesAndTimes],,,,,Observation-date-of-last-other-pregnancy-outcome
 1488,Birth Infant Death,147,797,2,Date of Last Other Pregnancy Outcome--Month,MOPO,"01-12, 88, 99",,,,,,,,,,,
@@ -1911,7 +1911,7 @@ year of child's birth, 8888, 9999",,,,,,,,,,,
 1490,Birth Infant Death,149,803,2,Number of Cigarettes Smoked in 3 months prior to Pregnancy,CIGPN,"00-98, 99",,,,,,,,,,,
 966,Fetal Death,149,534,1,Was a Histological Placental Examination Performed?,HISTOP,"Y = Yes
 N = No
-P = Planned",,BFDR,ObservationHistologicalPlacentalExamPerformed,value,codeable,[ValueSetHistologicalPlacentalExamination],,,,,Observation-histological-placental-exam-performed
+P = Planned",,BFDR,ObservationHistologicalPlacentalExamPerformed,value,codeable,[HistologicalPlacentalExaminationVS],,,,,Observation-histological-placental-exam-performed
 420,Surveillance,149,3505,30,Informant's Relationship,INFORMRELATE,,i,VRDR,Decedent,contact.type.text ,string (30 characters),-,,,,,Decedent
 161,Mortality,149,1533,10,Decedent's Residence - Street designator,STDESIG_R,,,VRDR,Decedent,address.extension[stdesig],string,-,y,,,,Decedent
 1331,ITOP,149,1191,1,Reason for Termination -- Contraceptive failure,REASON_CONTRA_FAIL,"Y, N",,not implemented,not implemented,,,,,,,,not implemented
@@ -1944,7 +1944,7 @@ X = Not Applicable",,BFDR,ObservationAutopsyHistologicalExamResultsUsed,value,co
 5 = CHAMPUS/TRICARE
 6 = Other Government (Fed, State, Local) 
 8 = Other
-9 = Unknown",,BFDR,CoveragePrincipalPayerDelivery,type,codeable,[ValueSetBirthAndFetalDeathFinancialClass] ,,,,,Coverage-principal-payer-for-delivery
+9 = Unknown",,BFDR,CoveragePrincipalPayerDelivery,type,codeable,[BirthAndFetalDeathFinancialClassVS] ,,,,,Coverage-principal-payer-for-delivery
 1494,Birth Infant Death,153,811,1,Principal source of Payment for this delivery,PAY,"1 = Medicaid
 2 = Private Insurance
 3 = Self-pay
@@ -2255,7 +2255,7 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Ob
 656,Natality,192,856,1,Method of Delivery--Fetal Presentation,PRES,"1 = Cephalic
 2 = Breech
 3 = Other
-9 = Unknown",,BFDR,ObservationFetalPresentation,value,codeable,[ValueSetFetalPresentations],,,,,Observation-fetal-presentation
+9 = Unknown",,BFDR,ObservationFetalPresentation,value,codeable,[FetalPresentationsVS],,,,,Observation-fetal-presentation
 1533,Birth Infant Death,192,856,1,Method of Delivery--Fetal Presentation,PRES,"1 = Cephalic
 2 = Breech
 3 = Other
@@ -2267,7 +2267,7 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Ob
 2 = Forceps
 3 = Vacuum
 4 = Cesarean
-9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,[ValueSetDeliveryRoutes],,,,,Procedure-final-route-method-delivery
+9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,[DeliveryRoutesVS],,,,,Procedure-final-route-method-delivery
 1534,Birth Infant Death,193,857,1,Method of Delivery--Route and Method of Delivery,ROUT,"1 = Spontaneous
 2 = Forceps
 3 = Vacuum
@@ -3116,7 +3116,7 @@ or blank",,,,,,,,,,,
 4 = Other midwife
 5 = Other (specify) 
 6 = Hospital Admin
-9 = Unknown",,VRCPL,PractitionerVitalRecords,qualification.code,codeable,[ValueSetBirthAttendantTitles],,,,,Practitioner-vr
+9 = Unknown",,VRCPL,PractitionerVitalRecords,qualification.code,codeable,[BirthAttendantTitlesVS],,,,,Practitioner-vr
 1671,Birth Infant Death,330,2901,1,Certifier Title,CERTIF,"1 = MD
 2 = DO
 3 = CNM/CM

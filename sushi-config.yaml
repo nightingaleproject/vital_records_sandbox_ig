@@ -388,35 +388,12 @@ groups:
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
-      - BirthAndFetalDeathFinancialClassCS
-      - BirthDeliveryOccurredCS
-      # - CodeSystemDeathPregnancyStatusVitalRecords
       - EditFlagsCS
-      - FetalDeathCauseOrConditionCS
-      - CodeSystemInformantRelationshipToMother
-      # - CodeSystemLocalComponentCodesVitalRecords
-      - CodeSystemLocationTypeVitalRecords
-      - CodeSystemMDI
 
   PHINVADSValuesets:
     name:  ValueSets from PHINVADS
     resources:
-      # - ValueSetAbnormalConditionsbornNew
-      - ValueSetBirthAndFetalDeathFinancialClass
-      - ValueSetBirthAttendantTitles
-      - ValueSetBirthDeliveryOccurred
-      - ValueSetContributoryTobaccoUseVitalRecords
-      - ValueSetDeliveryRoutes
       - ValueSetEducationLevelPersonVitalRecords
-      - ValueSetFetalDeathCauseOrCondition
-      - ValueSetFetalDeathTimePoints
-      - ValueSetFetalPresentations
-      - ValueSetHistologicalPlacentalExamination
-      - ValueSetInfectionsDuringPregnancyLiveBirth
-      - ValueSetInformantRelationshipToMother
-      # - ValueSetbornCongenitalAnomalies
-      - ValueSetObstetricProcedure
-      - ValueSetPregnancyRiskFactors
 
   VRCLValueSets:
     name: VRCL ValueSets
@@ -439,15 +416,6 @@ groups:
   VRCLConceptMaps:
     name: VRCL Concept Maps
     resources:
-      - BirthAndFetalDeathFinancialClassCM
-      - BirthAttendantTitlesCM
-      - BirthDeliveryOccurredCM
-      - DeliveryRoutesCM
-      - FetalDeathCauseOrConditionCM
-      - FetalDeathTimePointsCM
-      - FetalPresentationCM
-      - HistologicalPlacentalExaminationCM
-      - InfectionsDuringPregnancyLiveBirthCM
       - NewbornCongenitalAnomaliesCM
 
   VRCLExamples:
@@ -687,20 +655,50 @@ groups:
   #     - ObservationEditFlagNumberPreviousCesareans
   #     - ObservationEditFlagPlurality
 
+  BFDRCodeSystems:
+    name: BFDR CodeSystems
+    resources:
+      - BirthAndFetalDeathFinancialClassCS
+      - BirthDeliveryOccurredCS
+      - FetalDeathCauseOrConditionCS
+      - InformantRelationshipToMotherCS
 
   BFDRValueSets:
     name: BFDR ValueSets
-    # description: BFDR ValueSets
     resources:
+      - BirthAndFetalDeathFinancialClassVS
+      - BirthAttendantTitlesVS
+      - BirthDeliveryOccurredVS
       - BirthWeightEditFlagsVS
-      - CigaretteSmokingBeforeAndDuringPregnancy
+      - CigaretteSmokingBeforeAndDuringPregnancyVS
+      - DeliveryRoutesVS
       - EstimateOfGestationEditFlagsVS
       - FathersDateOfBirthEditFlagsVS
+      - FetalDeathCauseOrConditionVS
+      - FetalDeathTimePointsVS
+      - FetalPresentationsVS
+      - HistologicalPlacentalExaminationVS
+      - InfectionsDuringPregnancyLiveBirthVS
+      - InformantRelationshipToMotherVS
       - MothersDateOfBirthEditFlagsVS
       - NumberPreviousCesareansEditFlagsVS
+      - ObstetricProcedureVS
       - PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
+      
     
+  BFDRConceptMaps:
+    name: BFDR Concept Maps
+    resources:
+      - BirthAndFetalDeathFinancialClassCM
+      - BirthAttendantTitlesCM
+      - BirthDeliveryOccurredCM 
+      - DeliveryRoutesCM 
+      - FetalDeathCauseOrConditionCM
+      - FetalDeathTimePointsCM
+      - FetalPresentationCM
+      - HistologicalPlacentalExaminationCM
+      - InfectionsDuringPregnancyLiveBirthCM
 
   BFDRExamples:
     name: BFDR Examples
@@ -1218,7 +1216,12 @@ groups:
   #     - ObservationToxicologyLabResult
   #     - SpecimenToxicologyLab
 
-  MDIValueset:
+  MDICodeSystems:
+    name: MDI CodeSystems
+    resources:
+      - CodeSystemMDI
+
+  MDIValuesetS:
     name: MDI Value Set
     resources:
       - CodeSystemLocalComponentCodes
