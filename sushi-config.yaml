@@ -545,8 +545,9 @@ groups:
       - ObservationNICUAdmission
       - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
       - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
-      - ObservationNoneOfSpecifiedMaternalMorbidities
       - ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy
+      - ObservationNoneOfSpecifiedMaternalMorbidities
+      - ObservationNoneOfSpecifiedObstetricProcedures
       - ObservationPaternityAcknowledgementSigned
       - ObservationPlannedToDeliverAtHome
       - ObservationPreviousCesarean
