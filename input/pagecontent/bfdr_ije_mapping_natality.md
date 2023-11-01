@@ -8,24 +8,18 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
 
 #### Specifying None of the Above and Missing Data
-
-Abnormal Conditions of Newborn
-* If [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn] is present in bundle, then the interpretation is that all individual abnormal conditions of newborn are 'N'
-
-Maternal Morbidities
-* If [ObservationNoneOfSpecifiedMaternalMorbidities] is present in bundle, then the interpretation is that all individual maternal morbidities are 'N'
-
-Characteristics of Labor and Delivery
-* If [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery] is present in bundle, then the interpretation is that all individual risk factors are 'N' 
-
-Pregnancy Risk Factors
-* If [ObservationNoneOfSpecifiedPregnancyRiskFactors] is present in bundle, then the interpretation is that all individual risk factors are 'N'
-
-Congenital Anomalies of Newborn
-* If code=260413007 (None), then the interpretation is that all individual congenital anomalies are 'N'
-
-Infection Present During Pregnancy
-* If code=260413007 (None), then the interpretation is that all individual infections are 'N'
+All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [Note on missing data]
+| **Observation** |  **Complements**   | 
+| --------------- | ------------------ |
+| [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn]  | [ProcedureAssistedVentilationFollowingDelivery], [ProcedureAssistedVentilationFollowingDelivery], [ObservationNICUAdmission], [ProcedureSurfactantReplacementTherapy], [ProcedureAntibioticSuspectedNeonatalSepsis], [ConditionSeizure] |
+| [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery]  | [ProcedureInductionOfLabor], [ProcedureAugmentationOfLabor], [ObservationSteroidsFetalLungMaturation], [ObservationAntibioticsAdministeredDuringLabor], [ConditionChorioamnionitis], [ProcedureEpiduralOrSpinalAnesthesia] |
+| [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn] | [ConditionCongenitalAnomalyOfNewborn] |
+| [ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy] | [ConditionInfectionPresentDuringPregnancy] |
+| [ObservationNoneOfSpecifiedMaternalMorbidities] | [ProcedureBloodTransfusion], [ConditionPerinealLaceration], [ConditionRupturedUterus], [ProcedureUnplannedHysterectomy], [ObservationICUAdmission] |
+| [ObservationNoneOfSpecifiedObstetricsProcedures] | [ProcedureObstetric] |
+| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureArtificialInsemination], [ProcedureAssistedFertilization], [ObservationPreviousCesarean] |
+| [ObservationUnknownFinalRouteMethodDelivery] | [ProcedureFinalRouteMethodDelivery] |
+{: .grid }
 
 ### Natality (Live Birth) IJE Mapping
 
@@ -272,11 +266,11 @@ Infection Present During Pregnancy
 | 182 | Characteristics of Labor & Delivery--Augmentation of Labor | AUGL| [ProcedureAugmentationOfLabor]| | na | See [Note on missing characteristics of labor and delivery data] | B | 
 | 195 | Maternal Morbidity--Maternal Transfusion | MTR| [ProcedureBloodTransfusion]| | na | See [Note on missing maternal morbidity data] | B | 
 | 189 | Characteristics of Labor & Delivery--Anesthesia | ESAN| [ProcedureEpiduralOrSpinalAnesthesia]| | na | See [Note on missing characteristics of labor and delivery data] | B | 
-| 193 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS] | B | 
+| 193 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS], See [Note on missing method of delivery data] | B | 
 | 181 | Characteristics of Labor & Delivery--Induction of Labor | INDL| [ProcedureInductionOfLabor]| | na | See [Note on missing characteristics of labor and delivery data] | B | 
 | 164 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926) | INFT| [ProcedureInfertilityTreatment]| | na | See [Note on missing pregnancy risk factors data] | B | 
-| 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS| [ProcedureObstetric]|code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value)) | codeable | [ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? | B | 
-| 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF| [ProcedureObstetric]|code=240278000 (External cephalic version (procedure)), <br />outcome=385671000 (Unsuccessful (qualifier value)) | codeable | [ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? | B | 
+| 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS| [ProcedureObstetric]|code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value)) | codeable | [ValueSetObstetricProcedureOutcome], See [Note on missing obstetric procedures data] | B | 
+| 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF| [ProcedureObstetric]|code=240278000 (External cephalic version (procedure)), <br />outcome=385671000 (Unsuccessful (qualifier value)) | codeable | [ValueSetObstetricProcedureOutcome], See [Note on missing obstetric procedures data] | B | 
 | 215 | Abnormal Conditions of the Newborn--Surfactant Replacement | SURF| [ProcedureSurfactantReplacementTherapy]| | na | See [Note on missing abnormal conditions of newborn data] | B | 
 | 198 | Maternal Morbidity--Unplanned Hysterectomy | UHYS| [ProcedureUnplannedHysterectomy]| | na | See [Note on missing maternal morbidity data] | B | 
 | 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [RelatedPersonFatherVitalRecords]|birthDate.extension[bypassEditFlag].value | codeable | [MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] | J | 

@@ -234,7 +234,7 @@ Pregnancy Risk Factors
 | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string | code.text should contain description | B | 
 | 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG| [ProcedureArtificialInsemination]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART| [ProcedureAssistedFertilization]| | na | See [Note on missing pregnancy risk factors data] | B | 
-| 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS] | B | 
+| 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS], See [Note on missing method of delivery data] | B | 
 | 117 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575) | INFT| [ProcedureInfertilityTreatment]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [RelatedPersonFatherVitalRecords]|birthDate.extension[bypassEditFlag].value | codeable | [MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] | J | 
 | 354 | Blank for One-Byte Field 1 | PLACE1_1| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue1_1].value | string(1) |  | B | 
