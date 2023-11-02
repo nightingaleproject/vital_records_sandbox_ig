@@ -11,18 +11,18 @@ The Decedent profile contains basic information about the decedent, including da
 | Mortality | 8 | Decedent's Legal Name--Middle | MNAME | name.given , name.use = official (first letter) |string |- |
 | Mortality | 9 | Decedent's Legal Name--Last | LNAME | name.family , name.use = official. (absence is equivalent to 'UNKNOWN'.) |string |- |
 | Mortality | 10 | Decedent's Legal Name--Suffix | SUFF | name.suffix , name.use = official |string |- |
-| Mortality | 13 | Sex | SEX | extension[NVSS-SexAtDeath]  |codeable |[AdministrativeGenderVS] |
-| Mortality | NA | Gender | *NO IJE MAPPING* | gender |codeable |[AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] |
+| Mortality | 13 | Sex | SEX | extension[NVSS-SexAtDeath]  |codeable |[ValueSetAdministrativeGenderVitalRecords] |
+| Mortality | NA | Gender | *NO IJE MAPPING* | gender |codeable |[ValueSetAdministrativeGenderVitalRecords](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] |
 | Mortality | 15 | Social Security Number | SSN | identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code="SB" |string |- |
 | Mortality | 19 | Date of Birth--Year | DOB_YR | birthDate |dateTime |See [PartialDatesAndTimes] |
 | Mortality | 20 | Date of Birth--Month | DOB_MO | birthDate |dateTime |See [PartialDatesAndTimes] |
 | Mortality | 21 | Date of Birth--Day | DOB_DY | birthDate |dateTime |See [PartialDatesAndTimes] |
-| Mortality | 22 | Birthplace--Country | BPLACE_CNT | extension[patient-birthPlace].value[x].country  |string |[BirthplaceCountryVS] |
-| Mortality | 23 | State, U.S. Territory or Canadian Province of Birth - code | BPLACE_ST | extension[patient-birthPlace].value[x].state |string |[StatesTerritoriesAndProvincesVS] |
+| Mortality | 22 | Birthplace--Country | BPLACE_CNT | extension[patient-birthPlace].value[x].country  |string |[ValueSetBirthplaceCountryVitalRecords] |
+| Mortality | 23 | State, U.S. Territory or Canadian Province of Birth - code | BPLACE_ST | extension[patient-birthPlace].value[x].state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
 | Mortality | 24 | Decedent's Residence--City | CITYC | address.city.extension[ cityCode ] |integer |see [CityCodes] |
 | Mortality | 25 | Decedent's Residence--County | COUNTYC | address.district.extension[ districtCode ] |integer |see [CountyCodes] |
-| Mortality | 26 | State, U.S. Territory or Canadian Province of Decedent's residence - code | STATEC | address.state |string |[StatesTerritoriesAndProvincesVS] |
-| Mortality | 27 | Decedent's Residence--Country | COUNTRYC | address.country |string |[ResidenceCountryVS] |
+| Mortality | 26 | State, U.S. Territory or Canadian Province of Decedent's residence - code | STATEC | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
+| Mortality | 27 | Decedent's Residence--Country | COUNTRYC | address.country |string |[ValueSetResidenceCountryVitalRecords] |
 | Mortality | 28 | Decedent's Residence--Inside City Limits | LIMITS | address.city.extension[ withinCityLimits]  |codeable |[ValueSetYesNoUnknownVitalRecords] |
 | Mortality | 29 | Marital Status | MARITAL | maritalStatus |codeable | [MaritalStatusVS] |
 | Mortality | 30 | Marital Status--Edit Flag | MARITAL_BYPASS | maritalStatus.extension[ BypassEditFlag]  |codeable |[EditBypass0124VS] |
@@ -47,20 +47,20 @@ The Decedent profile contains basic information about the decedent, including da
 | Mortality | 238 | State, U.S. Territory or Canadian Province of Birth - literal | STATEBTH | extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code) |string |See [StateLiterals] |
 | Mortality | 246 | Marital Descriptor | MARITAL_DESCRIP | maritalStatus.text  |string |- |
 | Mortality Roster | 1 | State, U.S. Territory or Canadian Province of Birth - literal | STATEBTH | extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code) |string |See [StateLiterals] |
-| Mortality Roster | 2 | State, U.S. Territory or Canadian Province of Birth - code | BPLACE_ST | extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present  |string |[JurisdictionsProvincesVS] |
+| Mortality Roster | 2 | State, U.S. Territory or Canadian Province of Birth - code | BPLACE_ST | extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present  |string |[ValueSetJurisdictionsProvincesVitalRecords] |
 | Mortality Roster | 3 | Decedent's Legal Name--Given  | GNAME | name.given , name.use = official |string |See [Note on Decedent Name] |
 | Mortality Roster | 4 | Decedent's Legal Name--Middle | MIDNAME | name.given , name.use = official (first letter) |string |See [Note on Decedent Name] |
 | Mortality Roster | 5 | Decedent's Legal Name--Last | LNAME | name.family , name.use = official |string |See [Note on Decedent Name] |
 | Mortality Roster | 11 | Date of Birth--Month | DOB_MO | birthDate |dateTime |See [PartialDatesAndTimes] |
 | Mortality Roster | 12 | Date of Birth--Day | DOB_DY | birthDate |dateTime |See [PartialDatesAndTimes] |
 | Mortality Roster | 13 | Date of Birth--Year | DOB_YR | birthDate |dateTime |See [PartialDatesAndTimes] |
-| Mortality Roster | 14 | Sex | SEX | extension[NVSS-SexAtDeath]  |codeable |[AdministrativeGenderVS] |
-| Mortality Roster | NA | Gender | *NO IJE MAPPING* | gender |codeable |[AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] |
+| Mortality Roster | 14 | Sex | SEX | extension[NVSS-SexAtDeath]  |codeable |[ValueSetAdministrativeGenderVitalRecords] |
+| Mortality Roster | NA | Gender | *NO IJE MAPPING* | gender |codeable |[ValueSetAdministrativeGenderVitalRecords](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] |
 | Mortality Roster | 22 | Decedent's Suffix | SUFF | name.suffix , name.use = official |string |- |
 | Mortality Roster | 26 | Decedent's Maiden Name | DMAIDEN | name.text , name.use=maiden |string | |
 | Mortality Roster | 27 | State, U.S. Territory or Canadian Province of Decedent's Residence - literal | STATETEXT_R  | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
-| Mortality Roster | 28 | State, U.S. Territory or Canadian Province of Decedent's Residence - code | STATEC | address.state |string |[StatesTerritoriesAndProvincesVS] |
-| Mortality Roster | 29 | Birthplace Country - Code | BPLACE_CT | extension[patient-birthPlace].value[x].country  |string |[BirthplaceCountryVS]. |
-| Mortality Roster | 31 | Decedent's Residence Country - Code | COUNTRYC | address.country |string |[ResidenceCountryVS] |
+| Mortality Roster | 28 | State, U.S. Territory or Canadian Province of Decedent's Residence - code | STATEC | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
+| Mortality Roster | 29 | Birthplace Country - Code | BPLACE_CT | extension[patient-birthPlace].value[x].country  |string |[ValueSetBirthplaceCountryVitalRecords]. |
+| Mortality Roster | 31 | Decedent's Residence Country - Code | COUNTRYC | address.country |string |[ValueSetResidenceCountryVitalRecords] |
 | Mortality Roster | 32 | Decedent's SSN (may be used by some jurisdictions when allowed by law, to match with the SSN contained with the birth record) | SSN | identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code="SB" |string |- |
 {: .grid }

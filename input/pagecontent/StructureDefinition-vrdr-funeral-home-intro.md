@@ -11,7 +11,7 @@
 | Mortality | 212 | Funeral Facility - Unit or apt number | FUNUNITNUM | address.extension[unitnum] |string |- |
 | Mortality | 213 | Long string address for Funeral Facility same as above but allows states to choose the way they capture information. | FUNFACADDRESS | address.line |string |address.line  |
 | Mortality | 214 | Funeral Facility - City or Town name | FUNCITYTEXT | address.city |string |address.city  |
-| Mortality | 215 | State, U.S. Territory or Canadian Province of Funeral Facility - code | FUNSTATECD | address.state |string |[StatesTerritoriesAndProvincesVS] |
+| Mortality | 215 | State, U.S. Territory or Canadian Province of Funeral Facility - code | FUNSTATECD | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
 | Mortality | 216 | State, U.S. Territory or Canadian Province of Funeral Facility - literal | FUNSTATE | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
 | Mortality | 217 | Funeral Facility - ZIP | FUNZIP | address.postalCode |string |- |
 {: .grid }

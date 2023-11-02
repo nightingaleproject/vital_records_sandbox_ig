@@ -9,7 +9,7 @@
 <artifact id="ValueSet/vrdr-activity-at-time-of-death-vs" key="ValueSet-vrdr-activity-at-time-of-death-vs" name="Activity at Time of Death VS"/>
 <artifact id="ConceptMap/ActivityAtTimeOfDeathCM" key="ConceptMap-ActivityAtTimeOfDeathCM" name="ActivityAtTimeOfDeath Concept Map"/>
 <artifact id="Observation/ActivityAtTimeOfDeath-Example1" key="Observation-ActivityAtTimeOfDeath-Example1" name="ActivityAtTimeOfDeath-Example1"/>
-<artifact id="ValueSet/vrdr-administrative-gender-vs" key="ValueSet-vrdr-administrative-gender-vs" name="Administrative Gender PHVS_Sex_MFU"/>
+<artifact id="ValueSet/ValueSet-administrative-gender-vr" key="ValueSet-ValueSet-administrative-gender-vr" name="Administrative Gender PHVS_Sex_MFU"/>
 <artifact id="ConceptMap/AdministrativeGenderCM" key="ConceptMap-AdministrativeGenderCM" name="AdministrativeGender Concept Map"/>
 <artifact id="Observation/AgeUT-Example1" key="Observation-AgeUT-Example1" name="AgeUT-Example1"/>
 <artifact id="StructureDefinition/AliasStatus" key="StructureDefinition-AliasStatus" name="Alias Status of a Death Roster"/>
@@ -29,7 +29,7 @@
 <artifact id="ConceptMap/BirthDeliveryOccurredCM" key="ConceptMap-BirthDeliveryOccurredCM" name="BirthDeliveryOccurred Concept Map"/>
 <artifact id="Observation/BirthRecordIdentifier-Example1" key="Observation-BirthRecordIdentifier-Example1" name="BirthRecordIdentifier-Example1"/>
 <artifact id="Observation/BirthRecordIdentifierUT-Example1" key="Observation-BirthRecordIdentifierUT-Example1" name="BirthRecordIdentifierUT-Example1"/>
-<artifact id="ValueSet/vrdr-birthplace-country-vs" key="ValueSet-vrdr-birthplace-country-vs" name="Birthplace Country Value Set"/>
+<artifact id="ValueSet/ValueSet-birthplace-country-vr" key="ValueSet-ValueSet-birthplace-country-vr" name="Birthplace Country Value Set"/>
 <artifact id="StructureDefinition/vr-demographic-coded-bundle" key="StructureDefinition-vr-demographic-coded-bundle" name="Bundle - Demographic Coded Content Bundle for BFDR"/>
 <artifact id="StructureDefinition/BundleDocumentBFDR" key="StructureDefinition-BundleDocumentBFDR" name="Bundle - Document Birth and Fetal Death"/>
 <artifact id="StructureDefinition/Bundle-document-mdi-to-edrs" key="StructureDefinition-Bundle-document-mdi-to-edrs" name="Bundle - Document MDI to EDRS"/>
@@ -42,8 +42,8 @@
 <artifact id="Bundle/bundle-provider-live-birth-babyg-quinn" key="Bundle-bundle-provider-live-birth-babyg-quinn" name="Bundle - Provider Live Birth - Baby G Quinn"/>
 <artifact id="CodeSystem/vrdr-bypass-edit-flag-cs" key="CodeSystem-vrdr-bypass-edit-flag-cs" name="Bypass Edit Flag Code System"/>
 <artifact id="StructureDefinition/BypassEditFlag" key="StructureDefinition-BypassEditFlag" name="BypassEditFlag"/>
-<artifact id="CodeSystem/vrdr-canadian-provinces-cs" key="CodeSystem-vrdr-canadian-provinces-cs" name="Canadian Provinces"/>
-<artifact id="ValueSet/vrdr-canada-provinces-vs" key="ValueSet-vrdr-canada-provinces-vs" name="Canadian Provinces Value Set"/>
+<artifact id="CodeSystem/CodeSystem-canadian-provinces-vr" key="CodeSystem-CodeSystem-canadian-provinces-vr" name="Canadian Provinces"/>
+<artifact id="ValueSet/ValueSet-canada-provinces-vr" key="ValueSet-ValueSet-canada-provinces-vr" name="Canadian Provinces Value Set"/>
 <artifact id="CapabilityStatement/CapabilityStatement-bfdr" key="CapabilityStatement-CapabilityStatement-bfdr" name="CapabilityStatement - Birth and Fetal Death"/>
 <artifact id="CapabilityStatement/CapabilityStatement-edrs-server" key="CapabilityStatement-CapabilityStatement-edrs-server" name="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
 <artifact id="CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server" key="CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server" name="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
@@ -124,7 +124,7 @@
 <artifact id="Condition/condition-seizure-babyg-quinn" key="Condition-condition-seizure-babyg-quinn" name="Condition - Seizure - BabyG Quinn"/>
 <artifact id="ValueSet/vrdr-contributory-tobacco-use-vs" key="ValueSet-vrdr-contributory-tobacco-use-vs" name="Contributory Tobacco Use VS"/>
 <artifact id="ConceptMap/ContributoryTobaccoUseCM" key="ConceptMap-ContributoryTobaccoUseCM" name="ContributoryTobaccoUse Concept Map"/>
-<artifact id="CodeSystem/vrdr-country-code-cs" key="CodeSystem-vrdr-country-code-cs" name="Country Codes"/>
+<artifact id="CodeSystem/CodeSystem-country-code-vr" key="CodeSystem-CodeSystem-country-code-vr" name="Country Codes"/>
 <artifact id="StructureDefinition/Coverage-principal-payer-delivery" key="StructureDefinition-Coverage-principal-payer-delivery" name="Coverage - Principal Payer for Delivery"/>
 <artifact id="Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn" key="Coverage-coverage-principal-payer-for-delivery-jada-ann-quinn" name="Coverage - Principal Payer for Delivery - Jada Ann Quinn"/>
 <artifact id="CodeSystem/vrdr-date-of-death-determination-methods-cs" key="CodeSystem-vrdr-date-of-death-determination-methods-cs" name="Date of Death Determination Methods"/>
@@ -187,7 +187,7 @@
 <artifact id="ConceptMap/EditBypass012CM" key="ConceptMap-EditBypass012CM" name="EditBypass012 Concept Map"/>
 <artifact id="ConceptMap/EditBypass01234CM" key="ConceptMap-EditBypass01234CM" name="EditBypass01234 Concept Map"/>
 <artifact id="ConceptMap/EditBypass0124CM" key="ConceptMap-EditBypass0124CM" name="EditBypass0124 Concept Map"/>
-<artifact id="ValueSet/vrdr-education-level-vs" key="ValueSet-vrdr-education-level-vs" name="Education Level"/>
+<artifact id="ValueSet/ValueSet-education-level-vr" key="ValueSet-ValueSet-education-level-vr" name="Education Level"/>
 <artifact id="ConceptMap/EducationLevelCM" key="ConceptMap-EducationLevelCM" name="EducationLevel Concept Map"/>
 <artifact id="Observation/EducationUT-Example1" key="Observation-EducationUT-Example1" name="EducationUT-Example1"/>
 <artifact id="Observation/EmergingIssues-Example1" key="Observation-EmergingIssues-Example1" name="EmergingIssues-Example1"/>
@@ -234,11 +234,11 @@
 <artifact id="StructureDefinition/vrdr-funeral-home" key="StructureDefinition-vrdr-funeral-home" name="Funeral Home"/>
 <artifact id="Organization/FuneralHome-Example1" key="Organization-FuneralHome-Example1" name="FuneralHome-Example1"/>
 <artifact id="Organization/FuneralHomeUT-Example1" key="Organization-FuneralHomeUT-Example1" name="FuneralHomeUT-Example1"/>
-<artifact id="ValueSet/vrdr-hispanic-no-unknown-vs" key="ValueSet-vrdr-hispanic-no-unknown-vs" name="Hispanic(Yes) No Unknown"/>
+<artifact id="ValueSet/ValueSet-hispanic-no-unknown-vr" key="ValueSet-ValueSet-hispanic-no-unknown-vr" name="Hispanic(Yes) No Unknown"/>
 <artifact id="ConceptMap/HispanicNoUnknownCM" key="ConceptMap-HispanicNoUnknownCM" name="HispanicNoUnknown Concept Map"/>
-<artifact id="CodeSystem/vrdr-hispanic-origin-cs" key="CodeSystem-vrdr-hispanic-origin-cs" name="HispanicOrigin CS"/>
+<artifact id="CodeSystem/CodeSystem-hispanic-origin-vr" key="CodeSystem-CodeSystem-hispanic-origin-vr" name="HispanicOrigin CS"/>
 <artifact id="ConceptMap/HispanicOriginCM" key="ConceptMap-HispanicOriginCM" name="HispanicOrigin Concept Map"/>
-<artifact id="ValueSet/vrdr-hispanic-origin-vs" key="ValueSet-vrdr-hispanic-origin-vs" name="HispanicOrigin Value Set"/>
+<artifact id="ValueSet/ValueSet-hispanic-origin-vr" key="ValueSet-ValueSet-hispanic-origin-vr" name="HispanicOrigin Value Set"/>
 <artifact id="ConceptMap/HistologicalPlacentalExaminationCM" key="ConceptMap-HistologicalPlacentalExaminationCM" name="HistologicalPlacentalExamination Concept Map"/>
 <artifact id="ValueSet/vrdr-icd10-causes-of-death-vs" key="ValueSet-vrdr-icd10-causes-of-death-vs" name="ICD10 Causes of Death VS"/>
 <artifact id="ConceptMap/InfectionsDuringPregnancyLiveBirthCM" key="ConceptMap-InfectionsDuringPregnancyLiveBirthCM" name="InfectionsDuringPregnancyLiveBirth Concept Map"/>
@@ -255,9 +255,9 @@
 <artifact id="CodeSystem/vrdr-intentional-reject-cs" key="CodeSystem-vrdr-intentional-reject-cs" name="Intentional Reject CodeSystem"/>
 <artifact id="ValueSet/vrdr-intentional-reject-vs" key="ValueSet-vrdr-intentional-reject-vs" name="Intentional Reject ValueSet"/>
 <artifact id="ConceptMap/IntentionalRejectCM" key="ConceptMap-IntentionalRejectCM" name="IntentionalReject Concept Map"/>
-<artifact id="ValueSet/vrdr-jurisdiction-vs" key="ValueSet-vrdr-jurisdiction-vs" name="Jurisdictions Value Set"/>
-<artifact id="ValueSet/vrdr-jurisdictions-provinces-vs" key="ValueSet-vrdr-jurisdictions-provinces-vs" name="Jurisdictions and Provinces Value Set"/>
-<artifact id="CodeSystem/vrdr-jurisdictions-cs" key="CodeSystem-vrdr-jurisdictions-cs" name="Jurisdictions that are not US States or Territories"/>
+<artifact id="ValueSet/ValueSet-jurisdiction-vr" key="ValueSet-ValueSet-jurisdiction-vr" name="Jurisdictions Value Set"/>
+<artifact id="ValueSet/Valueset-jurisdictions-provinces-vr" key="ValueSet-Valueset-jurisdictions-provinces-vr" name="Jurisdictions and Provinces Value Set"/>
+<artifact id="CodeSystem/CodeSystem-jurisdictions-vr" key="CodeSystem-CodeSystem-jurisdictions-vr" name="Jurisdictions that are not US States or Territories"/>
 <artifact id="CodeSystem/vrdr-component-cs" key="CodeSystem-vrdr-component-cs" name="Local Component Codes"/>
 <artifact id="CodeSystem/vrdr-observations-cs" key="CodeSystem-vrdr-observations-cs" name="Local Observation Codes"/>
 <artifact id="CodeSystem/CodeSystem-local-observation-codes-vr" key="CodeSystem-CodeSystem-local-observation-codes-vr" name="Local Observation Codes"/>
@@ -282,7 +282,7 @@
 <artifact id="ValueSet/vrdr-method-of-disposition-vs" key="ValueSet-vrdr-method-of-disposition-vs" name="Method of Disposition VS"/>
 <artifact id="ConceptMap/MethodOfDispositionCM" key="ConceptMap-MethodOfDispositionCM" name="MethodOfDisposition Concept Map"/>
 <artifact id="Observation/MilitaryServiceUT-Example1" key="Observation-MilitaryServiceUT-Example1" name="MilitaryServiceUT-Example1"/>
-<artifact id="CodeSystem/vrdr-missing-value-reason-cs" key="CodeSystem-vrdr-missing-value-reason-cs" name="Missing Value Reason Codesystem"/>
+<artifact id="CodeSystem/CodeSystem-missing-value-reason-vr" key="CodeSystem-CodeSystem-missing-value-reason-vr" name="Missing Value Reason Codesystem"/>
 <artifact id="StructureDefinition/vrdr-mortality-roster-bundle" key="StructureDefinition-vrdr-mortality-roster-bundle" name="Mortality Roster Bundle"/>
 <artifact id="Practitioner/Mortician-Example1" key="Practitioner-Mortician-Example1" name="Mortician-Example1"/>
 <artifact id="RelatedPerson/MotherUT-Example1" key="RelatedPerson-MotherUT-Example1" name="MotherUT-Example1"/>
@@ -430,19 +430,8 @@
 <artifact id="Observation/observation-previous-cesarean-jada-ann-quinn" key="Observation-observation-previous-cesarean-jada-ann-quinn" name="Observation - Previous Cesarean - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Observation-previous-preterm-birth" key="StructureDefinition-Observation-previous-preterm-birth" name="Observation - Previous Preterm Birth"/>
 <artifact id="Observation/observation-previous-preterm-births-jada-ann-quinn" key="Observation-observation-previous-preterm-births-jada-ann-quinn" name="Observation - Previous Preterm Births - Jada Ann Quinn"/>
-<artifact id="Observation/observation-race-carmen-teresa-lee" key="Observation-observation-race-carmen-teresa-lee" name="Observation - Race - Vital Records - Carmen Teresa Lee"/>
-<artifact id="Observation/observation-race-jada-ann-quinn" key="Observation-observation-race-jada-ann-quinn" name="Observation - Race - Vital Records - Jada Ann Quinn"/>
-<artifact id="Observation/observation-race-james-quinn" key="Observation-observation-race-james-quinn" name="Observation - Race - Vital Records - James Quinn"/>
-<artifact id="Observation/observation-race-tom-yan-lee" key="Observation-observation-race-tom-yan-lee" name="Observation - Race - Vital Records - Tom Yan Lee"/>
-<artifact id="StructureDefinition/Observation-race-vr" key="StructureDefinition-Observation-race-vr" name="Observation - Race Vital Records"/>
 <artifact id="Observation/observation-ssn-requested-for-child-babyg-quinn" key="Observation-observation-ssn-requested-for-child-babyg-quinn" name="Observation - SSN Requested for Child - BabyG Quinn"/>
 <artifact id="StructureDefinition/Observation-ssn-requested-for-child" key="StructureDefinition-Observation-ssn-requested-for-child" name="Observation - Social Security Number Requested For Child"/>
-<artifact id="Observation/observation-tabulated-ethnicity-carmen-teresa-lee" key="Observation-observation-tabulated-ethnicity-carmen-teresa-lee" name="Observation - Tabulated Ethnicity - Vital Records - Carmen Teresa Lee"/>
-<artifact id="Observation/observation-tabulated-ethnicity-jada-ann-quinn" key="Observation-observation-tabulated-ethnicity-jada-ann-quinn" name="Observation - Tabulated Ethnicity - Vital Records - Jada Ann Quinn"/>
-<artifact id="Observation/observation-tabulated-ethnicity-james-quinn" key="Observation-observation-tabulated-ethnicity-james-quinn" name="Observation - Tabulated Ethnicity - Vital Records - James Quinn"/>
-<artifact id="Observation/observation-tabulated-ethnicity-tom-yan-lee" key="Observation-observation-tabulated-ethnicity-tom-yan-lee" name="Observation - Tabulated Ethnicity - Vital Records - Tom Yan Lee"/>
-<artifact id="StructureDefinition/Observation-tabulated-ethnicity-vr" key="StructureDefinition-Observation-tabulated-ethnicity-vr" name="Observation - Tabulated Ethnicity Vital Records"/>
-<artifact id="Observation/observation-tabulated-ethnicity-jada-ann-quinn-common" key="Observation-observation-tabulated-ethnicity-jada-ann-quinn-common" name="Observation - Tabulated Ethnicity example [Jada Ann Quinn]"/>
 <artifact id="Observation/observation-tobacco-use-a-freeman" key="Observation-observation-tobacco-use-a-freeman" name="Observation - Tobacco Use - Freeman"/>
 <artifact id="StructureDefinition/Observation-toxicology-lab-result" key="StructureDefinition-Observation-toxicology-lab-result" name="Observation - Toxicology Lab Result"/>
 <artifact id="Observation/us-core-lab-result-4-anpp-blood-a-freeman" key="Observation-us-core-lab-result-4-anpp-blood-a-freeman" name="Observation - Toxicology Lab Result - 4-anpp Blood Freeman"/>
@@ -527,11 +516,11 @@
 <artifact id="Questionnaire/Questionnaire-patients-fetal-death" key="Questionnaire-Questionnaire-patients-fetal-death" name="Questionnaire - Patient's Fetal Death Worksheet"/>
 <artifact id="QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn" key="QuestionnaireResponse-QuestionnaireResponse-mothers-live-birth-jada-quinn" name="QuestionnaireResponse - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn"/>
 <artifact id="QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee" key="QuestionnaireResponse-QuestionnaireResponse-patients-fetal-death-carmen-lee" name="QuestionnaireResponse - Patient's Fetal Death Worksheet: Carmen Lee"/>
-<artifact id="CodeSystem/vrdr-race-code-cs" key="CodeSystem-vrdr-race-code-cs" name="Race Code CS"/>
-<artifact id="ValueSet/vrdr-race-code-vs" key="ValueSet-vrdr-race-code-vs" name="Race Code Value Set"/>
-<artifact id="ValueSet/vrdr-race-missing-value-reason-vs" key="ValueSet-vrdr-race-missing-value-reason-vs" name="Race Missing Value Reason"/>
-<artifact id="CodeSystem/vrdr-race-recode-40-cs" key="CodeSystem-vrdr-race-recode-40-cs" name="Race Recode 40 CS"/>
-<artifact id="ValueSet/vrdr-race-recode-40-vs" key="ValueSet-vrdr-race-recode-40-vs" name="Race Recode 40 Value Set"/>
+<artifact id="CodeSystem/CodeSystem-race-code-vr" key="CodeSystem-CodeSystem-race-code-vr" name="Race Code CS"/>
+<artifact id="ValueSet/ValueSet-race-code-vr" key="ValueSet-ValueSet-race-code-vr" name="Race Code Value Set"/>
+<artifact id="ValueSet/ValueSet-race-missing-value-reason-vr" key="ValueSet-ValueSet-race-missing-value-reason-vr" name="Race Missing Value Reason"/>
+<artifact id="CodeSystem/CodeSystem-race-recode-40-vr" key="CodeSystem-CodeSystem-race-recode-40-vr" name="Race Recode 40 CS"/>
+<artifact id="ValueSet/ValueSet-race-recode-40-vr" key="ValueSet-ValueSet-race-recode-40-vr" name="Race Recode 40 Value Set"/>
 <artifact id="ConceptMap/RaceCodeCM" key="ConceptMap-RaceCodeCM" name="RaceCodes Concept Map"/>
 <artifact id="ConceptMap/RaceMissingValueReasonCM" key="ConceptMap-RaceMissingValueReasonCM" name="RaceMissingValueReason Concept Map"/>
 <artifact id="ConceptMap/RaceRecode40CM" key="ConceptMap-RaceRecode40CM" name="RaceRecode40 Concept Map"/>
@@ -558,7 +547,7 @@
 <artifact id="ValueSet/vrdr-replace-status-vs" key="ValueSet-vrdr-replace-status-vs" name="Replacement Status VS"/>
 <artifact id="CodeSystem/vrdr-replace-status-cs" key="CodeSystem-vrdr-replace-status-cs" name="Replacement Status of Death Record Submission"/>
 <artifact id="StructureDefinition/ReplaceStatus" key="StructureDefinition-ReplaceStatus" name="Replacement Status of a Death Record (deprecated)"/>
-<artifact id="ValueSet/vrdr-residence-country-vs" key="ValueSet-vrdr-residence-country-vs" name="Residence Country Value Set"/>
+<artifact id="ValueSet/ValueSet-residence-country-vr" key="ValueSet-ValueSet-residence-country-vr" name="Residence Country Value Set"/>
 <artifact id="StructureDefinition/Specimen-toxicology-lab" key="StructureDefinition-Specimen-toxicology-lab" name="Specimen - Toxicology Lab"/>
 <artifact id="Specimen/specimen-bile-toxicology-a-freeman" key="Specimen-specimen-bile-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Bile"/>
 <artifact id="Specimen/specimen-blood-toxicology-a-freeman" key="Specimen-specimen-blood-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Blood"/>
@@ -566,11 +555,11 @@
 <artifact id="Specimen/specimen-stomach-contents-toxicology-a-freeman" key="Specimen-specimen-stomach-contents-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Stomach Contents"/>
 <artifact id="Specimen/specimen-urine-toxicology-a-freeman" key="Specimen-specimen-urine-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Urine"/>
 <artifact id="Specimen/specimen-vitreous-humor-toxicology-a-freeman" key="Specimen-specimen-vitreous-humor-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Vitreous Humor"/>
-<artifact id="ValueSet/vrdr-spouse-alive-vs" key="ValueSet-vrdr-spouse-alive-vs" name="Spouse Alive Value Set"/>
+<artifact id="ValueSet/ValueSet-spouse-alive-vr" key="ValueSet-ValueSet-spouse-alive-vr" name="Spouse Alive Value Set"/>
 <artifact id="StructureDefinition/SpouseAlive" key="StructureDefinition-SpouseAlive" name="Spouse Is Alive"/>
 <artifact id="ConceptMap/SpouseAliveCM" key="ConceptMap-SpouseAliveCM" name="SpouseAlive Concept Map"/>
 <artifact id="StructureDefinition/StateSpecificField" key="StructureDefinition-StateSpecificField" name="State Specific Field"/>
-<artifact id="ValueSet/vrdr-states-territories-provinces-vs" key="ValueSet-vrdr-states-territories-provinces-vs" name="States, Territories and Provinces Value Set"/>
+<artifact id="ValueSet/ValueSet-states-territories-provinces-vr" key="ValueSet-ValueSet-states-territories-provinces-vr" name="States, Territories and Provinces Value Set"/>
 <artifact id="StructureDefinition/StreetDesignator" key="StructureDefinition-StreetDesignator" name="StreetDesignator"/>
 <artifact id="StructureDefinition/StreetName" key="StructureDefinition-StreetName" name="StreetName"/>
 <artifact id="StructureDefinition/StreetNumber" key="StructureDefinition-StreetNumber" name="StreetNumber"/>
@@ -599,10 +588,9 @@
 <artifact id="Practitioner/us-core-practitioner-b-goldberger" key="Practitioner-us-core-practitioner-b-goldberger" name="US Core Practitioner - Dr. Bruce Goldberger"/>
 <artifact id="Practitioner/us-core-practitioner-j-jones" key="Practitioner-us-core-practitioner-j-jones" name="US Core Practitioner - Dr. Jane Jones"/>
 <artifact id="Practitioner/us-core-practitioner-s-jones" key="Practitioner-us-core-practitioner-s-jones" name="US Core Practitioner - Dr. Sam Jones"/>
-<artifact id="ValueSet/vrdr-usstates-territories-vs" key="ValueSet-vrdr-usstates-territories-vs" name="US States, Territories Value Set"/>
+<artifact id="ValueSet/ValueSet-usstates-territories-vr" key="ValueSet-ValueSet-usstates-territories-vr" name="US States, Territories Value Set"/>
 <artifact id="Parameters/expansion-parameters-bfdr" key="Parameters-expansion-parameters-bfdr" name="USA SNOMED-CT"/>
 <artifact id="StructureDefinition/UnitOrAptNumber" key="StructureDefinition-UnitOrAptNumber" name="UnitOrAptNumber"/>
-<artifact id="ValueSet/vrdr-units-of-age-vs" key="ValueSet-vrdr-units-of-age-vs" name="Units of Age"/>
 <artifact id="ConceptMap/UnitsOfAgeCM" key="ConceptMap-UnitsOfAgeCM" name="UnitsOfAge Concept Map"/>
 <artifact id="Observation/UsualWorkUT-Example1" key="Observation-UsualWorkUT-Example1" name="UsualWorkUT-Example1"/>
 <artifact id="ValueSet/ValueSet-apgar-timing" key="ValueSet-ValueSet-apgar-timing" name="ValueSet - APGAR Score Timing"/>
@@ -639,7 +627,8 @@
 <page key="bfdr_appendices" name="BFDR Appendices"/>
 <page key="bfdr_change_log" name="BFDR Change Log"/>
 <page key="bfdr-content-transitions" name="BFDR Content Transitions"/>
-<page key="bfdr_ije_mapping" name="BFDR Data Dictionary"/>
+<page key="bfdr_ije_mapping_fetalDeath" name="BFDR Data Dictionary Fetal Death"/>
+<page key="bfdr_ije_mapping_natality" name="BFDR Data Dictionary Natality"/>
 <page key="bfdr_appendix_d_-_example_fetal_death_report" name="BFDR Example Fetal Death Report"/>
 <page key="bfdr_appendix_b_-_example_live_birth_certificate" name="BFDR Example Live Birth Certificate"/>
 <page key="bfdr_appendix_c_-_example_facility_worksheet_for_the_fetal_death_report" name="BFDR Facility Worksheet for Fetal Death"/>
@@ -673,7 +662,8 @@
 <page key="vrdr_conformance" name="VRDR Conformance"/>
 <page key="vrdr-content-transitions" name="VRDR Content Transitions"/>
 <page key="vrdr_credits" name="VRDR Credits"/>
-<page key="vrdr_ije_mapping" name="VRDR Data Dictionary"/>
+<page key="vrdr_ije_mapping_mortality" name="VRDR Data Dictionary Mortality"/>
+<page key="vrdr_ije_mapping_mortalityRoster" name="VRDR Data Dictionary Mortality Roster"/>
 <page key="vrdr_downloads" name="VRDR Downloads"/>
 <page key="vrdr_index" name="VRDR Home"/>
 <page key="vrdr_scope_of_the_vrdr_fhir_ig" name="VRDR Scope"/>

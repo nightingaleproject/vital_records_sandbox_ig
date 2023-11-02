@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 // Id: vrdr-race-recode40-cm
 Usage: #definition
 * experimental = false
-* insert ConceptMapIntro(RaceRecode40, RaceRecode40VS)
+* insert ConceptMapIntro(RaceRecode40, ValueSetRaceRecode40VitalRecords)
 * insert AddGroup("MRE",[[Canonical(CodeSystemRaceRecode40VitalRecords)]])
 * insert MapConcept(#01, "White", #01,  "White")
 * insert MapConcept(#02, "Black", #02,  "Black")

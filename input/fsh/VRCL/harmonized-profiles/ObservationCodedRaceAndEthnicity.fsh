@@ -34,6 +34,6 @@ in [NCHS Procedures for Multiple-Race and Hispanic Origin Coding](https://www.cd
 * insert obscodecomponent(SecondOtherPacificIslanderCode,ValueSetRaceCodeVitalRecords)
 * insert obscodecomponent(FirstOtherRaceCode,ValueSetRaceCodeVitalRecords)
 * insert obscodecomponent(SecondOtherRaceCode,ValueSetRaceCodeVitalRecords)
-* insert obscodecomponent(RaceRecode40,RaceRecode40VS)
+* insert obscodecomponent(RaceRecode40,ValueSetRaceRecode40VitalRecords)
 * insert obscodecomponent(HispanicCode,ValueSetHispanicOriginVitalRecords)
 * insert obscodecomponent(HispanicCodeForLiteral,ValueSetHispanicOriginVitalRecords)
