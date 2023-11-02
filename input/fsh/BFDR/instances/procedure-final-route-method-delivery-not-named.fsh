@@ -4,7 +4,7 @@ Title: "Procedure - Final Route / Method of Delivery - Fetus Not Named"
 Description: "Procedure - Final Route / Method of Delivery: Fetus Not Named example"
 Usage: #example
 * status = #completed
-* code = $sct#48782003 "Delivery normal (finding)"
+* code = $sct#700000006 "Vaginal delivery of fetus (procedure)"
   * text = "Spontaneous vaginal delivery"
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
 * performedPeriod
