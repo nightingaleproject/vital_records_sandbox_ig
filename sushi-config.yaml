@@ -349,6 +349,7 @@ groups:
       - ExtensionBypassEditFlagVitalRecords
       - ExtensionCityCodeVitalRecords
       - ExtensionDistrictCodeVitalRecords
+      - ExtensionPartialDateVitalRecords
       - ExtensionPostDirectionalVitalRecords
       - ExtensionPreDirectionalVitalRecords
       - ExtensionStreetDesignatorVitalRecords
@@ -395,6 +396,7 @@ groups:
     name: VRCL CodeSystems
     resources:
       - EditFlagsCS
+      - CodeSystemLocalObservationsCodesVitalRecords
 
   PHINVADSValuesets:
     name:  ValueSets from PHINVADS
@@ -413,7 +415,9 @@ groups:
   VRCLValueSets:
     name: VRCL ValueSets
     resources:  
+      - ValueSetCodedRaceAndEthnicityPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
+      - ValueSetInputRaceAndEthnicityPersonVitalRecords
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
@@ -472,6 +476,7 @@ groups:
       - ObservationMotherDeliveryWeight
       - ObservationMotherHeight
       - ObservationMotherPrepregnancyWeight
+      - ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn
       - ObservationNoneOfSpecifiedPregnancyRiskFactors
       - ObservationNumberBirthsNowDead
       - ObservationNumberBirthsNowLiving
@@ -481,6 +486,7 @@ groups:
       - ObservationNumberPrenatalVisits
       - ObservationNumberPreviousCesareans
       - ObservationPreviousPretermBirth
+      - ObservationUnknownFinalRouteMethodDelivery
       - ProcedureInfertilityTreatment
       - ProcedureArtificialInsemination
       - ProcedureAssistedFertilization
@@ -669,6 +675,7 @@ groups:
   BFDRCodeSystems:
     name: BFDR CodeSystems
     resources:
+      - AbnormalConditionsNewbornCS
       - BirthAndFetalDeathFinancialClassCS
       - BirthDeliveryOccurredCS
       - FetalDeathCauseOrConditionCS
@@ -693,10 +700,11 @@ groups:
       - InfectionsDuringPregnancyLiveBirthVS
       - InformantRelationshipToMotherVS
       - MothersDateOfBirthEditFlagsVS
+      - NewbornCongenitalAnomaliesVS
       - NumberPreviousCesareansEditFlagsVS
-      - ValueSetObstetricProcedureOutcome
       - PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
+      - ValueSetObstetricProcedureOutcome
       
     
   BFDRConceptMaps:
@@ -897,6 +905,7 @@ groups:
       - DeathLocation
       - DecedentAge
       - DecedentDispositionMethod
+      - DecedentEducationLevel
       - DecedentFather
       - DecedentMilitaryService
       - DecedentMother
