@@ -63,15 +63,14 @@
 <artifact id="ConceptMap/CertifierTypesCM" key="ConceptMap-CertifierTypesCM" name="CertifierTypes Concept Map"/>
 <artifact id="ValueSet/cigarette-smoking-before-during-pregnancy" key="ValueSet-cigarette-smoking-before-during-pregnancy" name="Cigarette Smoking Before and During Pregnancy"/>
 <artifact id="StructureDefinition/CityCode" key="StructureDefinition-CityCode" name="City Code"/>
-<artifact id="CodeSystem/CodeSystem-vr-abnormal-conditions-newborn" key="CodeSystem-CodeSystem-vr-abnormal-conditions-newborn" name="CodeSystem - Abnormal Conditions Newborn"/>
+<artifact id="CodeSystem/CodeSystem-abnormal-conditions-newborn" key="CodeSystem-CodeSystem-abnormal-conditions-newborn" name="CodeSystem - Abnormal Conditions Newborn"/>
 <artifact id="CodeSystem/CodeSystem-vr-birth-delivery-occurred" key="CodeSystem-CodeSystem-vr-birth-delivery-occurred" name="CodeSystem - Birth Delivery Occurred"/>
 <artifact id="CodeSystem/CodeSystem-vr-edit-flags" key="CodeSystem-CodeSystem-vr-edit-flags" name="CodeSystem - Birth and Death Edit Flags"/>
 <artifact id="CodeSystem/CodeSystem-vr-birth-and-fetal-death-financial-class" key="CodeSystem-CodeSystem-vr-birth-and-fetal-death-financial-class" name="CodeSystem - Birth and Death Financial Class"/>
 <artifact id="CodeSystem/CodeSystem-death-pregnancy-status" key="CodeSystem-CodeSystem-death-pregnancy-status" name="CodeSystem - Death Pregnancy Status Vital Records"/>
 <artifact id="CodeSystem/CodeSystem-vr-fetal-death-cause-or-condition" key="CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition" name="CodeSystem - Fetal Death Cause or Condition"/>
 <artifact id="CodeSystem/CodeSystem-informant-relationship-to-mother" key="CodeSystem-CodeSystem-informant-relationship-to-mother" name="CodeSystem - Informant Relationship to Mother"/>
-<artifact id="CodeSystem/CodeSystem-local-component-codes" key="CodeSystem-CodeSystem-local-component-codes" name="CodeSystem - Local Component Codes"/>
-<artifact id="CodeSystem/CodeSystem-vr-codes" key="CodeSystem-CodeSystem-vr-codes" name="CodeSystem - MDI"/>
+<artifact id="CodeSystem/CodeSystem-mdi-codes" key="CodeSystem-CodeSystem-mdi-codes" name="CodeSystem - MDI"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Example1" key="Observation-CodedRaceAndEthnicity-Example1" name="CodedRaceAndEthnicity-Example1"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Father" key="Observation-CodedRaceAndEthnicity-Father" name="CodedRaceAndEthnicity-Father"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Mother" key="Observation-CodedRaceAndEthnicity-Mother" name="CodedRaceAndEthnicity-Mother"/>
@@ -206,18 +205,13 @@
 <artifact id="StructureDefinition/vrdr-examiner-contacted" key="StructureDefinition-vrdr-examiner-contacted" name="Examiner Contacted"/>
 <artifact id="Observation/ExaminerContacted-Example1" key="Observation-ExaminerContacted-Example1" name="ExaminerContacted-Example1"/>
 <artifact id="Observation/ExaminerContactedUT-Example1" key="Observation-ExaminerContactedUT-Example1" name="ExaminerContactedUT-Example1"/>
-<artifact id="StructureDefinition/Extension-date-day" key="StructureDefinition-Extension-date-day" name="Extension - Date Day"/>
 <artifact id="StructureDefinition/Extension-date-filed-by-registrar" key="StructureDefinition-Extension-date-filed-by-registrar" name="Extension - Date Filed by Registrar"/>
-<artifact id="StructureDefinition/Extension-date-month" key="StructureDefinition-Extension-date-month" name="Extension - Date Month"/>
-<artifact id="StructureDefinition/Extension-date-time" key="StructureDefinition-Extension-date-time" name="Extension - Date Time"/>
-<artifact id="StructureDefinition/Extension-date-year" key="StructureDefinition-Extension-date-year" name="Extension - Date Year"/>
 <artifact id="StructureDefinition/Extension-date-received-by-registrar" key="StructureDefinition-Extension-date-received-by-registrar" name="Extension - Date received by Registrar"/>
 <artifact id="StructureDefinition/Extension-encounter-maternity-reference" key="StructureDefinition-Extension-encounter-maternity-reference" name="Extension - Encounter Maternity Reference"/>
 <artifact id="StructureDefinition/Extension-fetal-death-local-file-number" key="StructureDefinition-Extension-fetal-death-local-file-number" name="Extension - Fetal Death Local File Number"/>
 <artifact id="StructureDefinition/Extension-fetal-death-report-number" key="StructureDefinition-Extension-fetal-death-report-number" name="Extension - Fetal Death Report Number"/>
 <artifact id="StructureDefinition/Extension-live-birth-certificate-number" key="StructureDefinition-Extension-live-birth-certificate-number" name="Extension - Live Birth Certificate Number"/>
 <artifact id="StructureDefinition/Extension-live-birth-local-file-number" key="StructureDefinition-Extension-live-birth-local-file-number" name="Extension - Live Birth Local File Number"/>
-<artifact id="StructureDefinition/Extension-partial-date-time" key="StructureDefinition-Extension-partial-date-time" name="Extension - Partial DateTime"/>
 <artifact id="StructureDefinition/Extension-relatedperson-birthplace-vr" key="StructureDefinition-Extension-relatedperson-birthplace-vr" name="Extension - RelatedPerson Birth Place Vital Records"/>
 <artifact id="StructureDefinition/Extension-relatedperson-deceased-vr" key="StructureDefinition-Extension-relatedperson-deceased-vr" name="Extension - RelatedPerson Deceased Vital Records"/>
 <artifact id="StructureDefinition/Extension-tracking-number" key="StructureDefinition-Extension-tracking-number" name="Extension - Tracking Number"/>
@@ -259,8 +253,8 @@
 <artifact id="ValueSet/vrdr-jurisdictions-provinces-vs" key="ValueSet-vrdr-jurisdictions-provinces-vs" name="Jurisdictions and Provinces Value Set"/>
 <artifact id="CodeSystem/vrdr-jurisdictions-cs" key="CodeSystem-vrdr-jurisdictions-cs" name="Jurisdictions that are not US States or Territories"/>
 <artifact id="CodeSystem/vrdr-component-cs" key="CodeSystem-vrdr-component-cs" name="Local Component Codes"/>
-<artifact id="CodeSystem/vrdr-observations-cs" key="CodeSystem-vrdr-observations-cs" name="Local Observation Codes"/>
 <artifact id="CodeSystem/CodeSystem-local-observation-codes-vr" key="CodeSystem-CodeSystem-local-observation-codes-vr" name="Local Observation Codes"/>
+<artifact id="CodeSystem/vrdr-observations-cs" key="CodeSystem-vrdr-observations-cs" name="Local Observation Codes"/>
 <artifact id="CodeSystem/vrdr-organization-type-cs" key="CodeSystem-vrdr-organization-type-cs" name="Local Organization Type"/>
 <artifact id="Location/location-death-atlanta-ga-a-freeman" key="Location-location-death-atlanta-ga-a-freeman" name="Location - Death - Atlanta GA Freeman"/>
 <artifact id="Location/location-injury-atlanta-ga-a-freeman" key="Location-location-injury-atlanta-ga-a-freeman" name="Location - Injury - Atlanta GA Freeman"/>
@@ -386,7 +380,10 @@
 <artifact id="Observation/observation-none-abnormal-conditions-babyg-quinn" key="Observation-observation-none-abnormal-conditions-babyg-quinn" name="Observation - None Of Specified Abnormal Conditions of Newborn - BabyG Quinn"/>
 <artifact id="StructureDefinition/Observation-none-of-specified-characteristics-of-labor-delivery" key="StructureDefinition-Observation-none-of-specified-characteristics-of-labor-delivery" name="Observation - None Of Specified Characteristics of Labor and Delivery"/>
 <artifact id="Observation/observation-none-chars-labor-delivery-jada-ann-quinn" key="Observation-observation-none-chars-labor-delivery-jada-ann-quinn" name="Observation - None Of Specified Characteristics of Labor and Delivery - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Observation-None-congenital-anomolies-of-the-newborn" key="StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn" name="Observation - None Of Specified Congenital Anomolies Of The Newborn"/>
+<artifact id="StructureDefinition/Observation-no-infections-present-during-pregnancy" key="StructureDefinition-Observation-no-infections-present-during-pregnancy" name="Observation - None Of Specified Infections Specified During Pregnancy"/>
 <artifact id="StructureDefinition/Observation-none-of-specified-maternal-morbidities" key="StructureDefinition-Observation-none-of-specified-maternal-morbidities" name="Observation - None Of Specified Maternal Morbidities"/>
+<artifact id="StructureDefinition/Observation-none-of-specified-obstetric-procedures" key="StructureDefinition-Observation-none-of-specified-obstetric-procedures" name="Observation - None Of Specified Maternal Morbidities"/>
 <artifact id="Observation/observation-none-maternal-morbidities-jada-ann-quinn" key="Observation-observation-none-maternal-morbidities-jada-ann-quinn" name="Observation - None Of Specified Maternal Morbidities - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors" key="StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors" name="Observation - None Of Specified Pregnancy Risk Factors"/>
 <artifact id="Observation/observation-none-specified-risk-factors-jada-ann-quinn" key="Observation-observation-none-specified-risk-factors-jada-ann-quinn" name="Observation - None of Specified Risk Factors - Jada Ann Quinn"/>
@@ -430,19 +427,8 @@
 <artifact id="Observation/observation-previous-cesarean-jada-ann-quinn" key="Observation-observation-previous-cesarean-jada-ann-quinn" name="Observation - Previous Cesarean - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Observation-previous-preterm-birth" key="StructureDefinition-Observation-previous-preterm-birth" name="Observation - Previous Preterm Birth"/>
 <artifact id="Observation/observation-previous-preterm-births-jada-ann-quinn" key="Observation-observation-previous-preterm-births-jada-ann-quinn" name="Observation - Previous Preterm Births - Jada Ann Quinn"/>
-<artifact id="Observation/observation-race-carmen-teresa-lee" key="Observation-observation-race-carmen-teresa-lee" name="Observation - Race - Vital Records - Carmen Teresa Lee"/>
-<artifact id="Observation/observation-race-jada-ann-quinn" key="Observation-observation-race-jada-ann-quinn" name="Observation - Race - Vital Records - Jada Ann Quinn"/>
-<artifact id="Observation/observation-race-james-quinn" key="Observation-observation-race-james-quinn" name="Observation - Race - Vital Records - James Quinn"/>
-<artifact id="Observation/observation-race-tom-yan-lee" key="Observation-observation-race-tom-yan-lee" name="Observation - Race - Vital Records - Tom Yan Lee"/>
-<artifact id="StructureDefinition/Observation-race-vr" key="StructureDefinition-Observation-race-vr" name="Observation - Race Vital Records"/>
 <artifact id="Observation/observation-ssn-requested-for-child-babyg-quinn" key="Observation-observation-ssn-requested-for-child-babyg-quinn" name="Observation - SSN Requested for Child - BabyG Quinn"/>
 <artifact id="StructureDefinition/Observation-ssn-requested-for-child" key="StructureDefinition-Observation-ssn-requested-for-child" name="Observation - Social Security Number Requested For Child"/>
-<artifact id="Observation/observation-tabulated-ethnicity-carmen-teresa-lee" key="Observation-observation-tabulated-ethnicity-carmen-teresa-lee" name="Observation - Tabulated Ethnicity - Vital Records - Carmen Teresa Lee"/>
-<artifact id="Observation/observation-tabulated-ethnicity-jada-ann-quinn" key="Observation-observation-tabulated-ethnicity-jada-ann-quinn" name="Observation - Tabulated Ethnicity - Vital Records - Jada Ann Quinn"/>
-<artifact id="Observation/observation-tabulated-ethnicity-james-quinn" key="Observation-observation-tabulated-ethnicity-james-quinn" name="Observation - Tabulated Ethnicity - Vital Records - James Quinn"/>
-<artifact id="Observation/observation-tabulated-ethnicity-tom-yan-lee" key="Observation-observation-tabulated-ethnicity-tom-yan-lee" name="Observation - Tabulated Ethnicity - Vital Records - Tom Yan Lee"/>
-<artifact id="StructureDefinition/Observation-tabulated-ethnicity-vr" key="StructureDefinition-Observation-tabulated-ethnicity-vr" name="Observation - Tabulated Ethnicity Vital Records"/>
-<artifact id="Observation/observation-tabulated-ethnicity-jada-ann-quinn-common" key="Observation-observation-tabulated-ethnicity-jada-ann-quinn-common" name="Observation - Tabulated Ethnicity example [Jada Ann Quinn]"/>
 <artifact id="Observation/observation-tobacco-use-a-freeman" key="Observation-observation-tobacco-use-a-freeman" name="Observation - Tobacco Use - Freeman"/>
 <artifact id="StructureDefinition/Observation-toxicology-lab-result" key="StructureDefinition-Observation-toxicology-lab-result" name="Observation - Toxicology Lab Result"/>
 <artifact id="Observation/us-core-lab-result-4-anpp-blood-a-freeman" key="Observation-us-core-lab-result-4-anpp-blood-a-freeman" name="Observation - Toxicology Lab Result - 4-anpp Blood Freeman"/>
@@ -456,6 +442,7 @@
 <artifact id="Observation/us-core-lab-result-fentanyl-urine-a-freeman" key="Observation-us-core-lab-result-fentanyl-urine-a-freeman" name="Observation - Toxicology Lab Result - Fentanyl Urine Freeman"/>
 <artifact id="Observation/us-core-lab-result-norfentanyl-urine-a-freeman" key="Observation-us-core-lab-result-norfentanyl-urine-a-freeman" name="Observation - Toxicology Lab Result - Norfentanyl Urine Freeman"/>
 <artifact id="Observation/us-core-lab-result-xylazine-urine-a-freeman" key="Observation-us-core-lab-result-xylazine-urine-a-freeman" name="Observation - Toxicology Lab Result - Xylazine Urine Freeman"/>
+<artifact id="StructureDefinition/Observation-unknown-final-route-and-method-of-delivery" key="StructureDefinition-Observation-unknown-final-route-and-method-of-delivery" name="Observation - Unknown Final Route and Method of Delivery"/>
 <artifact id="Observation/observation-number-previous-cesareans-carmen-teresa-lee" key="Observation-observation-number-previous-cesareans-carmen-teresa-lee" name="Observations - Number Previous Cesareans - Carmen Teresa Lee"/>
 <artifact id="Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit" key="Observation-observation-number-previous-cesareans-carmen-teresa-lee-w-edit" name="Observations - Number Previous Cesareans - Carmen Teresa Lee, with Edit Flag"/>
 <artifact id="Parameters/expansion-parameters-mdi" key="Parameters-expansion-parameters-mdi" name="Parameters - SNOMED US Version"/>
@@ -623,8 +610,8 @@
 <artifact id="ValueSet/ValueSet-input-race-and-ethnicity-person-vr" key="ValueSet-ValueSet-input-race-and-ethnicity-person-vr" name="ValueSet - Input Race and Ethnicity Person Vital Records"/>
 <artifact id="ValueSet/ValueSet-mother-relationship-vr" key="ValueSet-ValueSet-mother-relationship-vr" name="ValueSet - Mother Relationship Vital Records"/>
 <artifact id="ValueSet/ValueSet-newborn-congenital-anomalies" key="ValueSet-ValueSet-newborn-congenital-anomalies" name="ValueSet - Newborn Congenital Anomalies"/>
+<artifact id="ValueSet/ValueSet-obstetric-procedure-outcome" key="ValueSet-ValueSet-obstetric-procedure-outcome" name="ValueSet - Obstetric Procedure Outcome"/>
 <artifact id="ValueSet/ValueSet-obstetric-procedure" key="ValueSet-ValueSet-obstetric-procedure" name="ValueSet - Obstetric Procedures"/>
-<artifact id="ValueSet/ValueSet-obstetric-procedure-vr" key="ValueSet-ValueSet-obstetric-procedure-vr" name="ValueSet - Obstetric Procedures Vital Records"/>
 <artifact id="ValueSet/ValueSet-tracking-number-type" key="ValueSet-ValueSet-tracking-number-type" name="ValueSet - Tracking Number Type"/>
 <artifact id="ValueSet/ValueSet-units-of-age-vr" key="ValueSet-ValueSet-units-of-age-vr" name="ValueSet - Units of Age Vital Records"/>
 <artifact id="ValueSet/ValueSet-yes-no-unknown-not-applicable-vr" key="ValueSet-ValueSet-yes-no-unknown-not-applicable-vr" name="ValueSet - Yes No Unknown NotApplicable Vital Records"/>
@@ -639,7 +626,8 @@
 <page key="bfdr_appendices" name="BFDR Appendices"/>
 <page key="bfdr_change_log" name="BFDR Change Log"/>
 <page key="bfdr-content-transitions" name="BFDR Content Transitions"/>
-<page key="bfdr_ije_mapping" name="BFDR Data Dictionary"/>
+<page key="bfdr_ije_mapping_fetalDeath" name="BFDR Data Dictionary Fetal Death"/>
+<page key="bfdr_ije_mapping_natality" name="BFDR Data Dictionary Natality"/>
 <page key="bfdr_appendix_d_-_example_fetal_death_report" name="BFDR Example Fetal Death Report"/>
 <page key="bfdr_appendix_b_-_example_live_birth_certificate" name="BFDR Example Live Birth Certificate"/>
 <page key="bfdr_appendix_c_-_example_facility_worksheet_for_the_fetal_death_report" name="BFDR Facility Worksheet for Fetal Death"/>
@@ -673,7 +661,8 @@
 <page key="vrdr_conformance" name="VRDR Conformance"/>
 <page key="vrdr-content-transitions" name="VRDR Content Transitions"/>
 <page key="vrdr_credits" name="VRDR Credits"/>
-<page key="vrdr_ije_mapping" name="VRDR Data Dictionary"/>
+<page key="vrdr_ije_mapping_mortality" name="VRDR Data Dictionary Mortality"/>
+<page key="vrdr_ije_mapping_mortalityRoster" name="VRDR Data Dictionary Mortality Roster"/>
 <page key="vrdr_downloads" name="VRDR Downloads"/>
 <page key="vrdr_index" name="VRDR Home"/>
 <page key="vrdr_scope_of_the_vrdr_fhir_ig" name="VRDR Scope"/>
