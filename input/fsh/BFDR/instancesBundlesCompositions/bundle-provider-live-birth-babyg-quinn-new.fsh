@@ -214,11 +214,11 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Organization/organization-south-hospital"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-53
-// * insert addentry(Observation, observation-labor-trial-attempted-babyg-quinn)
+* insert addentry(Observation, observation-labor-trial-attempted-babyg-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-54
-* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
+//* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-mother-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-55
