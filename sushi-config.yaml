@@ -881,22 +881,6 @@ groups:
   VRDRProfiles:
     name: VRDR Profiles
     resources: 
-      # - MortalityRosterBundle
-      # - Decedent
-      # - DeathCertification 
-      # - CauseOfDeathCodedContentBundle
-      # - DemographicCodedContentBundle
-      # - DeathCertificate
-      # - DeathCertificateDocument
-      # - CauseOfDeathPart1
-      # - CauseOfDeathPart2
-      # - DeathDate
-      # - InjuryIncident
-      # - MannerOfDeath
-      # - TobaccoUseContributedToDeath
-      # - DecedentDispositionMethod
-      # - DecedentEducationLevel
-      # - DecedentPregnancyStatus
       - ActivityAtTimeOfDeath
       - AutomatedUnderlyingCauseOfDeath
       - AutopsyPerformedIndicator
@@ -912,6 +896,7 @@ groups:
       - DeathDate 
       - DeathLocation
       - DecedentAge
+      - DecedentDispositionMethod
       - DecedentFather
       - DecedentMilitaryService
       - DecedentMother
@@ -1200,11 +1185,11 @@ groups:
   MDIExtensions:
     name: MDI Extensions 
     resources:
-      - ExtensionDateDay
-      - ExtensionDateMonth
-      - ExtensionDateTime
-      - ExtensionDateYear
-      - ExtensionPartialDateTime
+      # - ExtensionDateDay
+      # - ExtensionDateMonth
+      # - ExtensionDateTime
+      # - ExtensionDateYear
+      # - ExtensionPartialDateTime
       - ExtensionTrackingNumber
 
   # MDIProfiles:
@@ -1231,10 +1216,7 @@ groups:
   MDIValuesetS:
     name: MDI Value Set
     resources:
-      - CodeSystemLocalComponentCodes
       - ValueSetTrackingNumberType
-      # - CodeSystemDeathPregnancyStatus
-      # - ValueSetDateEstablishmentApproach
   
   MDIExamples:
     name: MDI Examples
