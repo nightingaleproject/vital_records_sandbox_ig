@@ -205,7 +205,8 @@ menu:
     Capability Statement: CapabilityStatement-CapabilityStatement-bfdr.html
     Changes: bfdr_change_log.html
     Content Transitions: bfdr-content-transitions.html
-    BFDR Data Dictionary: bfdr_ije_mapping.html
+    BFDR Natality Data Dictionary: bfdr_ije_mapping_natality.html
+    BFDR Fetal Death Data Dictionary: bfdr_ije_mapping_fetalDeath.html
     Specification: bfdr_the_specification.html
     Forms Mapping: bfdr_vital_records_form_mapping.html
     Terminology: bfdr_terminology.html
@@ -240,7 +241,8 @@ menu:
     Scope: vrdr_scope_of_the_vrdr_fhir_ig.html
     Usage: vrdr_usage.html
     Content Transitions: vrdr-content-transitions.html
-    VRDR Data Dictionary: vrdr_ije_mapping.html
+    VRDR Death Record Data Dictionary: vrdr_ije_mapping_mortality.html
+    VRDR Mortality Roster Data Dictionary: vrdr_ije_mapping_mortalityRoster.html
     Credits: vrdr_credits.html
     Downloads: vrdr_downloads.html
 
@@ -398,12 +400,12 @@ groups:
     name:  ValueSets from PHINVADS
     resources:
       - ValueSetEducationLevelPersonVitalRecords
-      #- ValueSetFetalDeathCauseOrCondition
-      #- ValueSetFetalDeathTimePoints
-      #- ValueSetFetalPresentations
-      #- ValueSetHistologicalPlacentalExamination
-      #- ValueSetInfectionsDuringPregnancyLiveBirth
-      #- ValueSetInformantRelationshipToMother
+      #- FetalDeathCauseOrConditionVS
+      #- FetalDeathTimePointsVS
+      #- FetalPresentationsVS
+      #- HistologicalPlacentalExaminationVS
+      #- InfectionsDuringPregnancyLiveBirthVS
+      #- InformantRelationshipToMotherVS
       # - ValueSetbornCongenitalAnomalies
       # - ValueSetObstetricProcedure
       #- ValueSetPregnancyRiskFactors

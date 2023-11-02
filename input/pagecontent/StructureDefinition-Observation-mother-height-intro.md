@@ -7,7 +7,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 134 | Mother's Height--Feet | HFT | value |quantity | |
 | Natality | 135 | Mother's Height--Inches | HIN | value |quantity | |
@@ -16,3 +16,4 @@ This profile is mapped to:
 | Fetal Death | 89 | Mother's Height--Inches | HIN | value |quantity | |
 | Fetal Death | 90 | Mother's Height--Edit Flag | HGT_BYPASS | value.extension[bypassEditFlag].value |codeable |[PregnancyReportEditFlagsVS], <br />See [Handling of edit flags]  |
 {: .grid }
+{% include markdown-link-references.md %}

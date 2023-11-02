@@ -3,7 +3,7 @@ The death record submission process does not require an identifier.  As a result
 an identifier.
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 220 | Certifier's First Name | CERTFIRST | name.given , name.use = official |string |- |
 | Mortality | 221 | Certifier's Middle Name | CERTMIDDLE | name.given , name.use = official |string |- |
@@ -21,3 +21,4 @@ an identifier.
 | Mortality | 233 | State, U.S. Territory or Canadian Province of Certifier - literal | CERTSTATE | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
 | Mortality | 234 | Certifier - Zip | CERTZIP | address.postalCode |string |- |
 {: .grid }
+{% include markdown-link-references.md %}

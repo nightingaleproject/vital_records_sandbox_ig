@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 91 | Receipt date -- Year | R_YR | parameter[receiptDate].value |date |See [PartialDatesAndTimes] |
 | Mortality | 92 | Receipt date -- Month | R_MO | parameter[receiptDate].value |date |See [PartialDatesAndTimes] |
@@ -11,3 +11,4 @@
 | Mortality | NA | coder status  | CS (TRX Field, no IJE Mapping) | parameter[coderStatus].value |integer |- |
 | Mortality | NA | shipment number  | SHIP (TRX Field, no IJE Mapping) | parameter[shipmentNumber].value |string |- |
 {: .grid }
+{% include markdown-link-references.md %}

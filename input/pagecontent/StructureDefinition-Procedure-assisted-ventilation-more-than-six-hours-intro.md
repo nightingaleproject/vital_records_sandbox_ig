@@ -6,7 +6,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 213 | Abnormal Conditions of the Newborn--Assisted Ventilation > 6 hours | AVEN6 |  |na |See [Note on missing abnormal conditions of newborn data] |
 {: .grid }
+{% include markdown-link-references.md %}

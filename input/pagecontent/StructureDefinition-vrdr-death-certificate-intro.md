@@ -60,7 +60,7 @@ The replacement status of a submission is now specified as a message parameter a
 The profile includes:
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 6 | Source flag: paper/electronic | MFILED | extension[ filingFormat]  |codeable | [FilingFormatVS] |
 | Mortality | 96 | Date of Registration--Year | DOR_YR | date |dateTime |- |
@@ -69,3 +69,4 @@ The profile includes:
 | Mortality | 122 | State Specific Data  | STATESP | extension[ stateSpecificField] |string(30) |- |
 | Mortality | 184 | Replacement Record  | REPLACE (*deprecated*) | extension[ replaceStatus ].value |codeable |[ReplaceStatusVS] |
 {: .grid }
+{% include markdown-link-references.md %}

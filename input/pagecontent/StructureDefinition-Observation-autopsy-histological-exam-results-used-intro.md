@@ -5,7 +5,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Fetal Death | 150 | Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death? | AUTOPF | value |codeable |[ValueSetYesNoNotApplicableVitalRecords], <br />sandbox uses boolean, BFDR IG uses codeable |
 {: .grid }
+{% include markdown-link-references.md %}

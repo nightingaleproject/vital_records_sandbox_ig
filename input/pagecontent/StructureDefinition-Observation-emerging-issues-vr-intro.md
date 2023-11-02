@@ -3,7 +3,7 @@ EmergingIssues profile supports placeholder fields required for 2022 submissions
                 There are 6 1-char fields (PLACE1_1-6), 3 8-char fields (PLACE8_1-3), and one 20-char field (PLACE20-1).
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 342 | Blank for One-Byte Field 1 | PLACE1_1 | component[EmergingIssue1_1].value |string(1) | |
 | Natality | 343 | Blank for One-Byte Field 2 | PLACE1_2 | component[EmergingIssue1_2].value |string(1) | |
@@ -36,3 +36,4 @@ EmergingIssues profile supports placeholder fields required for 2022 submissions
 | Mortality | 256 | Blank for Eight-Byte Field 3 | PLACE8_3 | component[EmergingIssue8_3].value |string(8) | |
 | Mortality | 257 | Blank for Twenty-Byte Field | PLACE20 | component[EmergingIssue20].value |string(20) | |
 {: .grid }
+{% include markdown-link-references.md %}

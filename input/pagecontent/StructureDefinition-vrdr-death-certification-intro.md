@@ -7,8 +7,9 @@
   The Death Certification profile includes:
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 119 | Title of Certifier | CERTL | performer.function (note that if value is "OTH" then performed.function.text should contain 'Full Text for Other Individual Legally Allowed to Certify') |codeable |[CertifierTypesVS] |
 | Mortality | 235 | Certifier Date Signed | CERTDATE | performed |dateTime |- |
 {: .grid }
+{% include markdown-link-references.md %}

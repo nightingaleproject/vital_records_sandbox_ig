@@ -7,7 +7,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 154 | Date Last Normal Menses Began--Year | DLMP_YR | value |dateTime |See [PartialDatesAndTimes] |
 | Natality | 155 | Date Last Normal Menses Began--Month | DLMP_MO | value |dateTime |See [PartialDatesAndTimes] |
@@ -16,3 +16,4 @@ This profile is mapped to:
 | Fetal Death | 108 | Date Last Normal Menses Began--Month | DLMP_MO | value |dateTime |See [PartialDatesAndTimes] |
 | Fetal Death | 109 | Date Last Normal Menses Began--Day | DLMP_DY | value |dateTime |See [PartialDatesAndTimes] |
 {: .grid }
+{% include markdown-link-references.md %}

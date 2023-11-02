@@ -8,12 +8,14 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
 
 #### Specifying None of the Above and Missing Data
+All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [Note on missing data]
 
-Maternal Morbidities
-* If [ObservationNoneOfSpecifiedMaternalMorbidities] is present in bundle, then the interpretation is that all individual maternal morbidities are 'N'
-
-Pregnancy Risk Factors
-* If [ObservationNoneOfSpecifiedPregnancyRiskFactors] is present in bundle, then the interpretation is that all individual risk factors are 'N'
+| **Observation** |  **Complements**   |
+| --------------- | ------------------ |
+| [ObservationNoneOfSpecifiedMaternalMorbidities] | [ProcedureBloodTransfusion], [ConditionPerinealLaceration], [ConditionRupturedUterus], [ProcedureUnplannedHysterectomy], [ObservationICUAdmission] |
+| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureArtificialInsemination], [ProcedureAssistedFertilization], [ObservationPreviousCesarean] |
+| [ObservationUnknownFinalRouteMethodDelivery] | [ProcedureFinalRouteMethodDelivery] |
+{: .grid }
 
 ### Fetal Death IJE Mapping
 
@@ -234,7 +236,7 @@ Pregnancy Risk Factors
 | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string | code.text should contain description | B | 
 | 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG| [ProcedureArtificialInsemination]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART| [ProcedureAssistedFertilization]| | na | See [Note on missing pregnancy risk factors data] | B | 
-| 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS] | B | 
+| 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS], See [Note on missing method of delivery data] | B | 
 | 117 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575) | INFT| [ProcedureInfertilityTreatment]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [RelatedPersonFatherVitalRecords]|birthDate.extension[bypassEditFlag].value | codeable | [MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] | J | 
 | 354 | Blank for One-Byte Field 1 | PLACE1_1| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue1_1].value | string(1) |  | B | 
@@ -260,7 +262,7 @@ Pregnancy Risk Factors
 | 213 | Coded other significant causes or conditions- fifth mentioned | OCOD5| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
 | 214 | Coded other significant causes or conditions- sixth mentioned | OCOD6| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
 | 215 | Coded other significant causes or conditions- seventh mentioned | OCOD7| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
-| 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 62 | <nobr>Mother's Race Tabulation Variable 1E</nobr> | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[ThirdEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
 | 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
@@ -301,7 +303,7 @@ Pregnancy Risk Factors
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** | **Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- | ---- |
-| 4 | Void flag | VOID| [not implemented]| |  |  | - | 
+| 4 | Void flag | VOID| <nobr>[not implemented]</nobr>| |  |  | - | 
 | 29 | Mother Married?--Ever(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARE| [not implemented]| |  |  | - | 
 | 30 | Mother Married?-- At Conception, at Delivery or any Time in Between(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARN| [not implemented]| |  |  | - | 
 | 31 | FILLER | *NO IJE MAPPING*| [not implemented]| |  |  | - | 

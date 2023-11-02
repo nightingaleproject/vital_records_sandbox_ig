@@ -22,6 +22,8 @@
 [Note on missing pregnancy risk factors data]: usage.html#pregnancy-risk-factors
 [Note on missing congenital anomaly data]: usage.html#congenital-anomalies-of-newborn
 [Note on missing infections present data]: usage.html#infection-present-during-pregnancy
+[Note on missing method of delivery data]: usage.html#method-of-delivery
+[Note on missing obstetric procedures data]: usage.html#obstetric-procedures
 [Handling of edit flags]: usage.html#handling-of-edit-flags
 
 [Birth and Fetal Death Vital Reporting]: bfdr_index.html

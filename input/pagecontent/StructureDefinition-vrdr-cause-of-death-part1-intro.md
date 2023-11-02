@@ -1,7 +1,7 @@
 The [Certifier] is optionally referenced from this profile (performer).
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 185 | Cause of Death Part I Line a | COD1A | value.text,   component[lineNumber] = 1 |string(120) |- |
 | Mortality | 186 | Cause of Death Part I Interval, Line a | INTERVAL1A | component[interval].value, component[lineNumber] = 1 |string(20) |- |
@@ -12,3 +12,4 @@ The [Certifier] is optionally referenced from this profile (performer).
 | Mortality | 191 | Cause of Death Part I Line d | COD1D | value.text,   component[lineNumber] = 4 |string(120) |- |
 | Mortality | 192 | Cause of Death Part I Interval, Line d | INTERVAL1D | component[interval].value, component[lineNumber] = 4 |string(20) |- |
 {: .grid }
+{% include markdown-link-references.md %}

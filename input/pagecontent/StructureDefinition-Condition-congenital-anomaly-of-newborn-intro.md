@@ -6,7 +6,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 219 | Congenital Anomalies of the Newborn--Anencephaly | ANEN | code=89369001 (Anencephalus (disorder)) |na |See [Note on missing congenital anomaly data] |
 | Natality | 220 | Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida | MNSB | code=67531005 (Spina bifida (disorder)) |na |See [Note on missing congenital anomaly data] |
@@ -21,3 +21,4 @@ This profile is mapped to:
 | Natality | 229 | Congenital Anomalies of the Newborn--Suspected Chromosomal disorder | CDIT | code=409709004 (Chromosomal disorder (disorder)) |na |See [Note on missing congenital anomaly data] |
 | Natality | 230 | Congenital Anomalies of the Newborn--Hypospadias | HYPO | code=416010008 (Hypospadias (disorder)) |na |See [Note on missing congenital anomaly data] |
 {: .grid }
+{% include markdown-link-references.md %}
