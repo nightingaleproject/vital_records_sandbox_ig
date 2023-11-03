@@ -527,8 +527,6 @@ groups:
       #- PatientDecedentFetus
       #- PatientMother
       - ConditionChorioamnionitis
-      - ConditionCodedInitiatingFetalDeathCauseOrCondition
-      - ConditionCodedOtherFetalDeathCauseOrCondition
       - ConditionCongenitalAnomalyOfNewborn
       - ConditionFetalDeathCauseOrCondition
       - ConditionFetalDeathOtherCauseOrCondition
@@ -543,6 +541,8 @@ groups:
       - ObservationAntibioticsAdministeredDuringLabor
       - ObservationAutopsyHistologicalExamResultsUsed
       - ObservationCigaretteSmokingBeforeDuringPregnancy
+      - ObservationCodedInitiatingFetalDeathCauseOrCondition
+      - ObservationCodedOtherFetalDeathCauseOrCondition
       - ObservationDateOfFirstPrenatalCareVisit
       - ObservationDateOfLastLiveBirth
       - ObservationDateOfLastOtherPregnancyOutcome
@@ -767,8 +767,6 @@ groups:
       - composition-provider-fetal-death-not-named
       - composition-provider-live-birth-babyg-quinn
       - condition-chorioamnionitis-jada-ann-quinn
-      - condition-coded-initiating-fetal-death-cause-or-condition
-      - condition-coded-other-fetal-death-cause-or-condition-not-named
       - condition-congenital-anomaly-of-newborn-babyg-quinn
       - condition-congenital-anomaly-of-newborn-babyg-quinn-2
       - condition-eclampsia-hypertension-jada-ann-quinn
@@ -809,6 +807,8 @@ groups:
       - observation-cig-smoking-pregnancy-3-jada-ann-quinn
       - observation-cig-smoking-pregnancy-4-carmen-teresa-lee
       - observation-cig-smoking-pregnancy-4-jada-ann-quinn
+      - observation-coded-initiating-fetal-death-cause-or-condition
+      - observation-coded-other-fetal-death-cause-or-condition-not-named
       - observation-date-of-first-prenatal-care-visit-carmen-teresa-lee
       - observation-date-of-first-prenatal-care-visit-jada-ann-quinn
       - observation-date-of-last-live-birth-carmen-teresa-lee

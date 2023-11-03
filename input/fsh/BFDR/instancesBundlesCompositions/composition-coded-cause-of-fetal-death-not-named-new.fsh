@@ -17,5 +17,5 @@ Usage: #example
 * section[codedCauseOfFetalDeath]
   * title = "Coded Cause of Fetal Death"
   * code = $loinc#86804-2 "Cause of death classification and related information Document"
-  * entry[0] = Reference(condition-coded-initiating-fetal-death-cause-or-condition) "Condition - Coded Initiating Fetal Death Cause or Condition (Not Named)"
-  * entry[+] = Reference(condition-coded-other-fetal-death-cause-or-condition-not-named) "Condition - Coded Other Fetal Death Cause or Condition (Not Named)"
+  * entry[+] = Reference(observation-coded-initiating-fetal-death-cause-or-condition) "Condition - Coded Initiating Fetal Death Cause or Condition (Not Named)"
+  * entry[+] = Reference(observation-coded-other-fetal-death-cause-or-condition-not-named) "Condition - Coded Other Fetal Death Cause or Condition (Not Named)"
