@@ -9,4 +9,4 @@ Description: "Location Jurisdiction Id (Extension)"
 * url 1..1
 * value[x] 1..1
 * value[x] only string
-* valueString from JurisdictionVS (required)
+* valueString from ValueSetJurisdictionVitalRecords (required)

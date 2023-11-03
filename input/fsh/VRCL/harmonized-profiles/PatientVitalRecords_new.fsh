@@ -7,8 +7,8 @@ Description: "This abstract Patient profile includes common extensions and slici
 * extension contains $patient-birthPlace named birthPlace 0..1 
 * extension[birthPlace] ^short = "Place of Birth for the patient should include the state and/or country"
 * extension[birthPlace].valueAddress
-  * country from BirthplaceCountryVS (required)    // BPLACE_CNT
-  * state from StatesTerritoriesAndProvincesVS (required) // BPLACE_ST
+  * country from ValueSetBirthplaceCountryVitalRecords (required)    // BPLACE_CNT
+  * state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required) // BPLACE_ST
   * district.extension contains
        DistrictCode named districtCode 0..1
   * district.extension[districtCode] ^label = "County code"
@@ -75,8 +75,8 @@ Description: "This abstract Patient profile includes common extensions and slici
     * ^short = "To reflect the relevant edit possibilities for date of birth."
     * ^binding.description = "Date of Birth Edit Flags (NCHS)"
 * address
-  * country from ResidenceCountryVS (required)  // COUNTRYC
-  * state from StatesTerritoriesAndProvincesVS (required)  // STATEC
+  * country from ValueSetResidenceCountryVitalRecords (required)  // COUNTRYC
+  * state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required)  // STATEC
   * extension contains ExtensionWithinCityLimitsIndicatorVitalRecords named withinCityLimitsIndicator 0..1 MS
   * extension[withinCityLimitsIndicator] ^short = "Used to indicate whether or not an address is within city limits."
   * extension[withinCityLimitsIndicator] ^definition = "Used to indicate whether or not an address is within city limits."

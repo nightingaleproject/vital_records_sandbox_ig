@@ -35,6 +35,7 @@ This Guide is divided into several pages which are listed at the top of each pag
 * [The Specification](bfdr_the_specification.html): A technical overview of implementing the specification
 * [Use Cases](bfdr_use_cases.html): The use cases supported by this guide
 * Implementer Guidance: The [worksheet Questionnaire format](bfdr_patient_worksheet_questionnaires.html), [IJE Natality Mapping](bfdr_ije_mapping_natality.html), [IJE Fetal Death Mapping](bfdr_ije_mapping_fetalDeath.html), and [Vital Records Forms Mapping](bfdr_vital_records_form_mapping.html)
+* Implementer Guidance: The [worksheet Questionnaire format](bfdr_patient_worksheet_questionnaires.html), [IJE Mapping]), and [Vital Records Forms Mapping](bfdr_vital_records_form_mapping.html)
 * [Terminology](bfdr_terminology.html): A listing of the value sets used in this guide
 * [Change Log](bfdr_change_log.html): Details of changes made in each version of this IG
 * [Artifact Index](artifacts.html): A list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide

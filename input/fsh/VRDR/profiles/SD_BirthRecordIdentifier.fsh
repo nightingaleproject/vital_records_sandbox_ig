@@ -29,7 +29,7 @@ Description: "Birth Record Identifier (Observation).  This includes the record i
 * component[birthJurisdiction].code = $loinc#21842-0 // "Birthplace"
 * component[birthJurisdiction].value[x] 1..1
 * component[birthJurisdiction].value[x] only string
-* component[birthJurisdiction].valueString from JurisdictionVS (required)
+* component[birthJurisdiction].valueString from ValueSetJurisdictionVitalRecords (required)
 * component[birthYear] ^short = "Birth Year"
 * component[birthYear].code = $loinc#80904-6 // "Birth year"
 * component[birthYear].value[x] 1..1

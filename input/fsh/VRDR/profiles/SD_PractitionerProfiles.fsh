@@ -15,8 +15,8 @@ Description: "Certifier (USCorePractitioner)"
 * insert CityCode
 * insert CountyCode
 * insert AddressComponents
-* address.country from ResidenceCountryVS (required)
-* address.state from StatesTerritoriesAndProvincesVS (required)
+* address.country from ValueSetResidenceCountryVitalRecords (required)
+* address.state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required)
 
 // * qualification 1..1
 // * qualification only BackboneElement

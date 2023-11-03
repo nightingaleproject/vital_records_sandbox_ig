@@ -11,9 +11,9 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 32 | Mother's Education | MEDUC | value,  <br />focus[ PatientMotherVitalRecords ] |codeable |[EducationLevelVS] |
-| Natality | 78 | Father's Education | FEDUC | value, focus[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[EducationLevelVS] |
-| Fetal Death | 32 | Mother's Education | MEDUC | value, <br />focus[ PatientMotherVitalRecords ] |codeable |[EducationLevelVS] |
-| Fetal Death | 283 | Father's Education | FEDUC | value, <br />focus[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[EducationLevelVS] |
+| Natality | 32 | Mother's Education | MEDUC | value,  <br />focus[ PatientMotherVitalRecords ] |codeable |[ValueSetEducationLevelVitalRecords] |
+| Natality | 78 | Father's Education | FEDUC | value, focus[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetEducationLevelVitalRecords] |
+| Fetal Death | 32 | Mother's Education | MEDUC | value, <br />focus[ PatientMotherVitalRecords ] |codeable |[ValueSetEducationLevelVitalRecords] |
+| Fetal Death | 283 | Father's Education | FEDUC | value, <br />focus[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetEducationLevelVitalRecords] |
 {: .grid }
 {% include markdown-link-references.md %}
