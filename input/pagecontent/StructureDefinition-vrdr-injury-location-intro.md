@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 176 | County of Injury - literal | COUNTYTEXT_I | address.district |string |- |
 | Mortality | 177 | County of Injury code | COUNTYCODE_I | address.district.extension[ districtCode].value |integer |see [CountyCodes] |
@@ -11,3 +11,4 @@
 | Mortality | 182 | Place of injury. Latitude | LAT_I | position.latitude |float |- |
 | Mortality | 237 | State, U.S. Territory or Canadian Province of Injury - literal | STINJURY | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
 {: .grid }
+{% include markdown-link-references.md %}

@@ -1767,7 +1767,7 @@ U = Unknown",,,,,,,,,,,,,
 2 = Forceps
 3 = Vacuum
 4 = Cesarean
-9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,[DeliveryRoutesVS],B,,,,,Procedure-final-route-method-delivery,
+9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,"[DeliveryRoutesVS], See [Note on missing method of delivery data]",B,,,,,Procedure-final-route-method-delivery,
 406,Surveillance,135,,,Cause of Death Part I Line c (coded),*NO IJE MAPPING*,Coded Cause(s) of Death Associated with Text on  Line 1c,,VRDR,CauseOfDeathPart1,"value.coding,   component[lineNumber] = 3",codeable,[ICD10CausesOfDeathVS],,y,,,,CauseOfDeathPart1,
 1317,ITOP,135,1128,1,Diagnostic Proc -- Cordocentesis,DIAG_CORD,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
 599,Natality,135,773,2,Mother's Height--Inches,HIN,"00-11, 99",,BFDR,ObservationMotherHeight,value,quantity,,B,,,,,Observation-mother-height-vr,
@@ -2137,11 +2137,11 @@ Enter full text if it does not fit above (blank for natural death)",,VRDR,Injury
 639,Natality,175,839,1,Obstetric Procedures--Tocolysis(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),TOC,"Y, N, U",,not implemented,not implemented,,,,-,,,,,not implemented,
 1516,Birth Infant Death,175,839,1,Obstetric Procedures--Tocolysis,TOC,"Y, N, U",,,,,,,,,,,,,
 993,Fetal Death,176,576,4,Date of Registration--Year,DOR_YR,"4 digit year; >=year of delivery, Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)",,BFDR,CompositionProviderFetalDeathReport,extension[dateReceivedByRegistrar].value,dateTime,Used for Jurisdiction Report also,B,,,,,Extension-date-received-by-registrar,
-640,Natality,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value))",codeable,"[ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure?",B,,,,,Procedure-obstetric,
+640,Natality,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value))",codeable,"[ValueSetObstetricProcedureOutcome], See [Note on missing obstetric procedures data]",B,,,,,Procedure-obstetric,
 1517,Birth Infant Death,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,,,,,,,,,,,,
 188,Mortality,176,2439,28,County of Injury - literal,COUNTYTEXT_I,Valid county literal; blank for natural death,i,VRDR,InjuryLocation,address.district,string,-,,,,,,InjuryLocation,
 994,Fetal Death,177,580,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,BFDR,CompositionProviderFetalDeathReport,extension[dateReceivedByRegistrar].value,dateTime,Used for Jurisdiction Report also,B,,,,,Extension-date-received-by-registrar,
-641,Natality,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000 (External cephalic version (procedure)), <br />outcome=385671000 (Unsuccessful (qualifier value))",codeable,"[ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure?",B,,,,,Procedure-obstetric,
+641,Natality,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000 (External cephalic version (procedure)), <br />outcome=385671000 (Unsuccessful (qualifier value))",codeable,"[ValueSetObstetricProcedureOutcome], See [Note on missing obstetric procedures data]",B,,,,,Procedure-obstetric,
 1518,Birth Infant Death,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,,,,,,,,,,,,
 189,Mortality,177,2467,3,County of Injury code,COUNTYCODE_I,"NCHS Instruction Manual: Part 8; 999=unknown; 
 Blank for natural death.",i,VRDR,InjuryLocation,address.district.extension[ districtCode].value,integer,see [CountyCodes],,,,,,InjuryLocation,
@@ -2267,7 +2267,7 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Ob
 2 = Forceps
 3 = Vacuum
 4 = Cesarean
-9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,[DeliveryRoutesVS],B,,,,,Procedure-final-route-method-delivery,
+9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,"[DeliveryRoutesVS], See [Note on missing method of delivery data]",B,,,,,Procedure-final-route-method-delivery,
 1534,Birth Infant Death,193,857,1,Method of Delivery--Route and Method of Delivery,ROUT,"1 = Spontaneous
 2 = Forceps
 3 = Vacuum

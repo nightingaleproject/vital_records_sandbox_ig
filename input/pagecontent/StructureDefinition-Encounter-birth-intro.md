@@ -16,7 +16,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE | location.physicalType |codeable |[BirthDeliveryOccurredVS] |
 | Natality | 12 | Facility ID (NPI) - if available | FNPI | location.location.id |string | |
@@ -28,3 +28,4 @@ This profile is mapped to:
 | Natality | 335 | Date Signed by Certifier--Month | CERTIFIED_MO | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
 | Natality | 336 | Date Signed by Certifier--Day | CERTIFIED_DY | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
 {: .grid }
+{% include markdown-link-references.md %}

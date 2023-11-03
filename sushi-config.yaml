@@ -205,7 +205,8 @@ menu:
     Capability Statement: CapabilityStatement-CapabilityStatement-bfdr.html
     Changes: bfdr_change_log.html
     Content Transitions: bfdr-content-transitions.html
-    # BFDR Data Dictionary: bfdr_ije_mapping.html
+    BFDR Natality Data Dictionary: bfdr_ije_mapping_natality.html
+    BFDR Fetal Death Data Dictionary: bfdr_ije_mapping_fetalDeath.html
     Specification: bfdr_the_specification.html
     Forms Mapping: bfdr_vital_records_form_mapping.html
     Terminology: bfdr_terminology.html
@@ -240,7 +241,8 @@ menu:
     Scope: vrdr_scope_of_the_vrdr_fhir_ig.html
     Usage: vrdr_usage.html
     Content Transitions: vrdr-content-transitions.html
-    # VRDR Data Dictionary: vrdr_ije_mapping.html
+    VRDR Death Record Data Dictionary: vrdr_ije_mapping_mortality.html
+    VRDR Mortality Roster Data Dictionary: vrdr_ije_mapping_mortalityRoster.html
     Credits: vrdr_credits.html
     Downloads: vrdr_downloads.html
 
@@ -347,6 +349,7 @@ groups:
       - ExtensionBypassEditFlagVitalRecords
       - ExtensionCityCodeVitalRecords
       - ExtensionDistrictCodeVitalRecords
+      - ExtensionPartialDateVitalRecords
       - ExtensionPostDirectionalVitalRecords
       - ExtensionPreDirectionalVitalRecords
       - ExtensionStreetDesignatorVitalRecords
@@ -400,11 +403,21 @@ groups:
       - CodeSystemRaceCodeVitalRecords
       - CodeSystemRaceRecode40VitalRecords
       - EditFlagsCS
+      - CodeSystemLocalObservationsCodesVitalRecords
 
   PHINVADSValuesets:
     name:  ValueSets from PHINVADS
     resources:
       - ValueSetEducationLevelPersonVitalRecords
+      #- FetalDeathCauseOrConditionVS
+      #- FetalDeathTimePointsVS
+      #- FetalPresentationsVS
+      #- HistologicalPlacentalExaminationVS
+      #- InfectionsDuringPregnancyLiveBirthVS
+      #- InformantRelationshipToMotherVS
+      # - ValueSetbornCongenitalAnomalies
+      # - ValueSetObstetricProcedure
+      #- ValueSetPregnancyRiskFactors
 
   VRCLValueSets:
     name: VRCL ValueSets
@@ -413,11 +426,13 @@ groups:
       - ValueSetBirthplaceCountryVitalRecords
       - ValueSetCanadaProvincesVitalRecords
       - ValueSetEducationLevelVitalRecords
+      - ValueSetCodedRaceAndEthnicityPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetHispanicNoUnknownVitalRecords
       - ValueSetHispanicOriginVitalRecords
       - ValueSetJurisdictionsProvincesVitalRecords
       - ValueSetJurisdictionVitalRecords
+      - ValueSetInputRaceAndEthnicityPersonVitalRecords
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetRaceCodeVitalRecords
       - ValueSetRaceMissingValueReasonVitalRecords
@@ -447,6 +462,10 @@ groups:
   VRCLExamples:
     name: VRCL Examples
     resources:
+      - CodedRaceAndEthnicity-Father
+      - CodedRaceAndEthnicity-Mother
+      - InputRaceAndEthnicityFather
+      - InputRaceAndEthnicityMother
       - expansion-parameters-vr-common
       - location-death-vr-atlanta-ga-a-freeman
       - location-injury-vr-atlanta-ga-a-freeman
@@ -484,12 +503,14 @@ groups:
       - ConditionPrepregnancyDiabetes
       - ObservationApgarScore
       - ObservationBirthWeight
+      #- ObservationFinalRouteAndMethodOfDelivery
       - ObservationGestationalAgeAtDelivery
       - ObservationInfantLiving
       - ObservationLastMenstrualPeriod
       - ObservationMotherDeliveryWeight
       - ObservationMotherHeight
       - ObservationMotherPrepregnancyWeight
+      - ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn
       - ObservationNoneOfSpecifiedPregnancyRiskFactors
       - ObservationNumberBirthsNowDead
       - ObservationNumberBirthsNowLiving
@@ -499,6 +520,7 @@ groups:
       - ObservationNumberPrenatalVisits
       - ObservationNumberPreviousCesareans
       - ObservationPreviousPretermBirth
+      - ObservationUnknownFinalRouteMethodDelivery
       - ProcedureInfertilityTreatment
       - ProcedureArtificialInsemination
       - ProcedureAssistedFertilization
@@ -511,6 +533,7 @@ groups:
       - ConditionCongenitalAnomalyOfNewborn
       - ConditionFetalDeathCauseOrCondition
       - ConditionFetalDeathOtherCauseOrCondition
+      - ProcedureFinalRouteMethodDelivery
       - ConditionInfectionPresentDuringPregnancy
       - ConditionPerinealLaceration
       - ConditionRupturedUterus
@@ -526,6 +549,7 @@ groups:
       - ObservationDateOfLastOtherPregnancyOutcome
       - ObservationFetalDeathTimePoint
       - ObservationFetalPresentation
+      #- ObservationFinalRouteAndMethodOfDelivery
       - ObservationHistologicalPlacentalExamPerformed
       - ObservationICUAdmission
       - ObservationInfantBreastfedAtDischarge
@@ -536,7 +560,9 @@ groups:
       - ObservationNICUAdmission
       - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
       - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
+      - ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy
       - ObservationNoneOfSpecifiedMaternalMorbidities
+      - ObservationNoneOfSpecifiedObstetricProcedures
       - ObservationPaternityAcknowledgementSigned
       - ObservationPlannedToDeliverAtHome
       - ObservationPreviousCesarean
@@ -548,7 +574,6 @@ groups:
       - ProcedureAugmentationOfLabor
       - ProcedureBloodTransfusion
       - ProcedureEpiduralOrSpinalAnesthesia
-      - ProcedureFinalRouteMethodDelivery
       - ProcedureInductionOfLabor
       - ProcedureObstetric
       - ProcedureSurfactantReplacementTherapy
@@ -684,6 +709,7 @@ groups:
   BFDRCodeSystems:
     name: BFDR CodeSystems
     resources:
+      - AbnormalConditionsNewbornCS
       - BirthAndFetalDeathFinancialClassCS
       - BirthDeliveryOccurredCS
       - FetalDeathCauseOrConditionCS
@@ -708,10 +734,12 @@ groups:
       - InfectionsDuringPregnancyLiveBirthVS
       - InformantRelationshipToMotherVS
       - MothersDateOfBirthEditFlagsVS
+      - NewbornCongenitalAnomaliesVS
       - NumberPreviousCesareansEditFlagsVS
       - ObstetricProcedureVS
       - PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
+      - ValueSetObstetricProcedureOutcome
       
     
   BFDRConceptMaps:
@@ -790,6 +818,16 @@ groups:
       - observation-fetal-death-time-point-not-named
       - observation-fetal-presentation-babyg-quinn
       - observation-fetal-presentation-not-named
+      - observation-last-menstrual-period-carmen-teresa-lee
+      - observation-last-menstrual-period-jada-ann-quinn
+      - observation-mother-delivery-weight-jada-ann-quinn
+      - observation-mother-delivery-weight-jada-ann-quinn-w-edit
+      - observation-mother-height-carmen-teresa-lee
+      - observation-mother-height-carmen-teresa-lee-w-edit
+      - observation-mother-height-jada-ann-quinn
+      - observation-mother-height-jada-ann-quinn-w-edit
+      - procedure-final-route-method-delivery-babyg-quinn
+      - procedure-final-route-method-delivery-not-named
       - observation-gestational-age-at-delivery-babyg-quinn
       - observation-gestational-age-at-delivery-babyg-quinn-w-edit
       - observation-gestational-age-at-delivery-not-named
@@ -872,8 +910,6 @@ groups:
       - procedure-augmentation-of-labor-quinn
       - procedure-blood-transfusion-jada-ann-quinn
       - procedure-epidural-or-spinal-anesthesia-jada-ann-quinn
-      - procedure-final-route-method-delivery-babyg-quinn
-      - procedure-final-route-method-delivery-not-named
       - procedure-induction-of-labor-jada-ann-quinn
       - procedure-infertility-treatment-jada-ann-quinn
       - procedure-obstetric-procedure-jada-ann-quinn
@@ -896,22 +932,6 @@ groups:
   VRDRProfiles:
     name: VRDR Profiles
     resources: 
-      # - MortalityRosterBundle
-      # - Decedent
-      # - DeathCertification 
-      # - CauseOfDeathCodedContentBundle
-      # - DemographicCodedContentBundle
-      # - DeathCertificate
-      # - DeathCertificateDocument
-      # - CauseOfDeathPart1
-      # - CauseOfDeathPart2
-      # - DeathDate
-      # - InjuryIncident
-      # - MannerOfDeath
-      # - TobaccoUseContributedToDeath
-      # - DecedentDispositionMethod
-      # - DecedentEducationLevel
-      # - DecedentPregnancyStatus
       - ActivityAtTimeOfDeath
       - AutomatedUnderlyingCauseOfDeath
       - AutopsyPerformedIndicator
@@ -927,6 +947,8 @@ groups:
       - DeathDate 
       - DeathLocation
       - DecedentAge
+      - DecedentDispositionMethod
+      - DecedentEducationLevel
       - DecedentFather
       - DecedentMilitaryService
       - DecedentMother
@@ -1096,7 +1118,21 @@ groups:
   VRDRExamples:
     name: VRDR Examples
     resources:
+      - ActivityAtTimeOfDeath-Example1
+      - AgeUT-Example1
+      - AutomatedUnderlyingCauseOfDeath-Example1
+      - AutopsyPerformedIndicator-Example1
+      - AutopsyPerformedIndicatorUT-Example1
+      - BirthRecordIdentifier-Example1
+      - BirthRecordIdentifierUT-Example1
+      - CauseOfDeathPart1-Example1
+      - CauseOfDeathPart1-Example2
+      - CauseOfDeathPart1UT-Example1
+      - CauseOfDeathPart2-Example1
       - CauseOfDeathCodedContentBundle-Example1
+      - Certifier-Example1
+      - CodedRaceAndEthnicity-Example1
+      - CodingStatusValues-Example1
       - DeathCertificateDocument-UT-1
       - DeathCertificateUT-Example1
       - DeathCertification-Example1
@@ -1113,6 +1149,7 @@ groups:
       - Decedent-Example2
       - Decedent-Example3
       - DecedentAge-Example1
+      - DecedentDispositionMethod-a-freeman
       - DecedentDispositionMethod-Example1
       - DecedentEducationLevel-Example1
       - DecedentFather-Example1
@@ -1183,11 +1220,11 @@ groups:
   MDIExtensions:
     name: MDI Extensions 
     resources:
-      - ExtensionDateDay
-      - ExtensionDateMonth
-      - ExtensionDateTime
-      - ExtensionDateYear
-      - ExtensionPartialDateTime
+      # - ExtensionDateDay
+      # - ExtensionDateMonth
+      # - ExtensionDateTime
+      # - ExtensionDateYear
+      # - ExtensionPartialDateTime
       - ExtensionTrackingNumber
 
   # MDIProfiles:
@@ -1214,10 +1251,7 @@ groups:
   MDIValuesetS:
     name: MDI Value Set
     resources:
-      - CodeSystemLocalComponentCodes
       - ValueSetTrackingNumberType
-      # - CodeSystemDeathPregnancyStatus
-      # - ValueSetDateEstablishmentApproach
   
   MDIExamples:
     name: MDI Examples

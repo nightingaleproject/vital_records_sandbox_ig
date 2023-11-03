@@ -8,12 +8,14 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
 
 #### Specifying None of the Above and Missing Data
+All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [Note on missing data]
 
-Maternal Morbidities
-* If [ObservationNoneOfSpecifiedMaternalMorbidities] is present in bundle, then the interpretation is that all individual maternal morbidities are 'N'
-
-Pregnancy Risk Factors
-* If [ObservationNoneOfSpecifiedPregnancyRiskFactors] is present in bundle, then the interpretation is that all individual risk factors are 'N'
+| **Observation** |  **Complements**   |
+| --------------- | ------------------ |
+| [ObservationNoneOfSpecifiedMaternalMorbidities] | [ProcedureBloodTransfusion], [ConditionPerinealLaceration], [ConditionRupturedUterus], [ProcedureUnplannedHysterectomy], [ObservationICUAdmission] |
+| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureArtificialInsemination], [ProcedureAssistedFertilization], [ObservationPreviousCesarean] |
+| [ObservationUnknownFinalRouteMethodDelivery] | [ProcedureFinalRouteMethodDelivery] |
+{: .grid }
 
 ### Fetal Death IJE Mapping
 
@@ -234,7 +236,7 @@ Pregnancy Risk Factors
 | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT| [PractitionerVitalRecords]|qualification.code.text | string | code.text should contain description | B | 
 | 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG| [ProcedureArtificialInsemination]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART| [ProcedureAssistedFertilization]| | na | See [Note on missing pregnancy risk factors data] | B | 
-| 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS] | B | 
+| 134 | Method of Delivery--Route and Method of Delivery | ROUT| [ProcedureFinalRouteMethodDelivery]|code | codeable | [DeliveryRoutesVS], See [Note on missing method of delivery data] | B | 
 | 117 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575) | INFT| [ProcedureInfertilityTreatment]| | na | See [Note on missing pregnancy risk factors data] | B | 
 | 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [RelatedPersonFatherVitalRecords]|birthDate.extension[bypassEditFlag].value | codeable | [MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] | J | 
 | 354 | Blank for One-Byte Field 1 | PLACE1_1| [ObservationEmergingIssuesVitalRecords]|component[EmergingIssue1_1].value | string(1) |  | B | 
@@ -260,7 +262,7 @@ Pregnancy Risk Factors
 | 213 | Coded other significant causes or conditions- fifth mentioned | OCOD5| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
 | 214 | Coded other significant causes or conditions- sixth mentioned | OCOD6| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
 | 215 | Coded other significant causes or conditions- seventh mentioned | OCOD7| [ConditionCodedOtherFetalDeathCauseOrCondition]|code  | codeable | [https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933] | N | 
-| 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [ValueSetRaceCodeVitalRecords] | N | 
+| 62 | <nobr>Mother's Race Tabulation Variable 1E</nobr> | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [ValueSetRaceCodeVitalRecords] | N | 
 | 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [ValueSetRaceCodeVitalRecords] | N | 
 | 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[ThirdEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [ValueSetRaceCodeVitalRecords] | N | 
 | 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [ValueSetRaceCodeVitalRecords] | N | 
@@ -296,12 +298,48 @@ Pregnancy Risk Factors
 | 330 | Mother's Edited Hispanic Origin Code | METHNICE| [ObservationCodedRaceAndEthnicityVitalRecords]|component[HispanicCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [ValueSetHispanicOriginVitalRecords] | N | 
 | 332 | Father's Hispanic Code for Literal | FETHNIC5C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[HispanicCodeForLiteral].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [ValueSetHispanicOriginVitalRecords] | N | 
 | 333 | Father's Edited Hispanic Origin Code | FETHNICE| [ObservationCodedRaceAndEthnicityVitalRecords]|component[HispanicCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [ValueSetHispanicOriginVitalRecords] | N | 
+| 62 | <nobr>Mother's Race Tabulation Variable 1E</nobr> | MRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[ThirdEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FourthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 66 | Mother's Race Tabulation Variable 5E | MRACE5E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FifthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 67 | Mother's Race Tabulation Variable 6E | MRACE6E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SixthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 68 | Mother's Race Tabulation Variable 7E | MRACE7E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SeventhEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 69 | Mother's Race Tabulation Variable 8E | MRACE8E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[EighthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 70 | Mother's Race Tabulation Variable 16C | MRACE16C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstAmericanIndianCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 71 | Mother's Race Tabulation Variable 17C | MRACE17C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondAmericanIndianCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 72 | Mother's Race Tabulation Variable 18C | MRACE18C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstOtherAsianCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 73 | Mother's Race Tabulation Variable 19C | MRACE19C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondOtherAsianCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 74 | Mother's Race Tabulation Variable 20C | MRACE20C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstOtherPacificIslanderCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 75 | Mother's Race Tabulation Variable 21C | MRACE21C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondOtherPacificIslanderCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 76 | Mother's Race Tabulation Variable 22C | MRACE22C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstOtherRaceCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 77 | Mother's Race Tabulation Variable 23C | MRACE23C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondOtherRaceCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 313 | Father's Race Tabulation Variable 1E | FRACE1E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 314 | Father's Race Tabulation Variable 2E | FRACE2E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 315 | Father's Race Tabulation Variable 3E | FRACE3E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[ThirdEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 316 | Father's Race Tabulation Variable 4E | FRACE4E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FourthEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 317 | Father's Race Tabulation Variable 5E | FRACE5E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FifthEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 318 | Father's Race Tabulation Variable 6E | FRACE6E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SixthEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 319 | Father's Race Tabulation Variable 7E | FRACE7E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SeventhEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 320 | Father's Race Tabulation Variable 8E | FRACE8E| [ObservationCodedRaceAndEthnicityVitalRecords]|component[EighthEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 321 | Father's Race Tabulation Variable 16C | FRACE16C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstAmericanIndianCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 322 | Father's Race Tabulation Variable 17C | FRACE17C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondAmericanIndianCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 323 | Father's Race Tabulation Variable 18C | FRACE18C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstOtherAsianCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 324 | Father's Race Tabulation Variable 19C | FRACE19C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondOtherAsianCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 325 | Father's Race Tabulation Variable 20C | FRACE20C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstOtherPacificIslanderCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 326 | Father's Race Tabulation Variable 21C | FRACE21C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondOtherPacificIslanderCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 327 | Father's Race Tabulation Variable 22C | FRACE22C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[FirstOtherRaceCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 328 | Father's Race Tabulation Variable 23C | FRACE23C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[SecondOtherRaceCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [RaceCodeVS] | N | 
+| 329 | Mother's Hispanic Code for Literal | METHNIC5C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[HispanicCodeForLiteral].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicOriginVS] | N | 
+| 330 | Mother's Edited Hispanic Origin Code | METHNICE| [ObservationCodedRaceAndEthnicityVitalRecords]|component[HispanicCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] | codeable | [HispanicOriginVS] | N | 
+| 332 | Father's Hispanic Code for Literal | FETHNIC5C| [ObservationCodedRaceAndEthnicityVitalRecords]|component[HispanicCodeForLiteral].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicOriginVS] | N | 
+| 333 | Father's Edited Hispanic Origin Code | FETHNICE| [ObservationCodedRaceAndEthnicityVitalRecords]|component[HispanicCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] | codeable | [HispanicOriginVS] | N | 
 {: .grid }
 #### Not Implemented Content
 
 | **#** |  **Description**   |  **IJE Name**  | **Profile**  |  **Field**  |  **Type**  | **Value Set/Comments** | **Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)** |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- | ---- |
-| 4 | Void flag | VOID| [not implemented]| |  |  | - | 
+| 4 | Void flag | VOID| <nobr>[not implemented]</nobr>| |  |  | - | 
 | 29 | Mother Married?--Ever(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARE| [not implemented]| |  |  | - | 
 | 30 | Mother Married?-- At Conception, at Delivery or any Time in Between(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARN| [not implemented]| |  |  | - | 
 | 31 | FILLER | *NO IJE MAPPING*| [not implemented]| |  |  | - | 

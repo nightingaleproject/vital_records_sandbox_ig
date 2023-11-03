@@ -5,7 +5,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 161 | Risk Factors--Previous Preterm Births | PPB |  |na |See [Note on missing pregnancy risk factors data] |
 {: .grid }
+{% include markdown-link-references.md %}

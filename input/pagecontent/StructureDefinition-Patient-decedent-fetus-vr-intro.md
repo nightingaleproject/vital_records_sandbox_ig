@@ -19,7 +19,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Fetal Death | 1 | Date of Delivery (Fetus)--Year | FDOD_YR | birthDate | | |
 | Fetal Death | 2 | State, U.S. Territory or Canadian Province of Place of Delivery - code | DSTATE | extension[patient-birthPlace].value[x].state |codeable |[ValueSetStatesTerritoriesAndProvincesVitalRecords]  |
@@ -35,3 +35,4 @@ This profile is mapped to:
 | Fetal Death | 221 | Fetus Last Name | FETLNAME | name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.) |string  |See [Note on Decedent Name] |
 | Fetal Death | 222 | Fetus Surname Suffix | SUFFIX | name.suffix, <br />name.use = official |string | |
 {: .grid }
+{% include markdown-link-references.md %}

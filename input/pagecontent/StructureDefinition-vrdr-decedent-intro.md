@@ -5,7 +5,7 @@ The Decedent profile contains basic information about the decedent, including da
   due to lack of a value for gender.
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 7 | Decedent's Legal Name--Given  | GNAME | name.given , name.use = official |string |- |
 | Mortality | 8 | Decedent's Legal Name--Middle | MNAME | name.given , name.use = official (first letter) |string |- |
@@ -64,3 +64,4 @@ The Decedent profile contains basic information about the decedent, including da
 | Mortality Roster | 31 | Decedent's Residence Country - Code | COUNTRYC | address.country |string |[ValueSetResidenceCountryVitalRecords] |
 | Mortality Roster | 32 | Decedent's SSN (may be used by some jurisdictions when allowed by law, to match with the SSN contained with the birth record) | SSN | identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code="SB" |string |- |
 {: .grid }
+{% include markdown-link-references.md %}

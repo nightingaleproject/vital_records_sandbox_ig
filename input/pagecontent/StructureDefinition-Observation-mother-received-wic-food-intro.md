@@ -7,8 +7,9 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 141 | Did Mother get WIC Food for Herself? | WIC | value |codeable |[ValueSetYesNoUnknownVitalRecords] |
 | Fetal Death | 95 | Did Mother get WIC Food for Herself? | WIC | value |codeable |[ValueSetYesNoUnknownVitalRecords] |
 {: .grid }
+{% include markdown-link-references.md %}

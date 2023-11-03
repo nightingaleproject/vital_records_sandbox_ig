@@ -9,7 +9,7 @@ In addition, when the coding process has led to duplication of data, the duplica
 Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 62 | Mother's Race Tabulation Variable 1E | MRACE1E | component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetRaceCodeVitalRecords] |
 | Natality | 63 | Mother's Race Tabulation Variable 2E | MRACE2E | component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetRaceCodeVitalRecords] |
@@ -103,3 +103,4 @@ Coded race and ethnicity data is communicated for both the mother and father in 
 | Mortality | 247 | Hispanic Code for Literal | DETHNIC5C | component[HispanicCodeForLiteral].value |codeable |[ValueSetHispanicOriginVitalRecords] |
 | Mortality | NA | Race Recode 40  (No longer provided as of 2022) | *NO IJE MAPPING* | component[ValueSetRaceRecode40VitalRecords].value |codeable |[RaceRecode40VS] |
 {: .grid }
+{% include markdown-link-references.md %}

@@ -277,7 +277,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-66
-* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
+//* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-mother-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-67

@@ -14,7 +14,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 125 | Mother Transferred? | TRAN | hospitalization.admitSource = "hosp-trans" |codeable |[HL7EncounterAdmitSourceVS](http://hl7.org/fhir/ValueSet/encounter-admit-source), <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'hosp-trans' |
 | Natality | 302 | Facility Mother Moved From (if transferred) | HOSPFROM | hospitalization.origin.name |string | |
@@ -40,3 +40,4 @@ This profile is mapped to:
 | Fetal Death | 348 | Date Signed by Certifier--Month | CERTIFIED_MO | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
 | Fetal Death | 349 | Date Signed by Certifier--Day | CERTIFIED_DY | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
 {: .grid }
+{% include markdown-link-references.md %}

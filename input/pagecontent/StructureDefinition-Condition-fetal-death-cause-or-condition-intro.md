@@ -7,7 +7,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Fetal Death | 180 | Initiating cause/condition - Rupture of membranes prior to onset of labor | COD18a1 | code=44223004 (Premature rupture of membranes (disorder)) |na | |
 | Fetal Death | 181 | Initiating cause/condition - Abruptio placenta | COD18a2 | code=415105001 (Placental abruption (disorder)) |na | |
@@ -24,3 +24,4 @@ This profile is mapped to:
 | Fetal Death | 192 | Initiating cause/condition - Fetal infection literal | COD18a13 | code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text |string |specific description of fetal infection should be provided in the code.text field |
 | Fetal Death | 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14 | code=FetalDeathCauseOrConditionCS#fetalconditions, <br />code.text |string |code.text should contain description |
 {: .grid }
+{% include markdown-link-references.md %}

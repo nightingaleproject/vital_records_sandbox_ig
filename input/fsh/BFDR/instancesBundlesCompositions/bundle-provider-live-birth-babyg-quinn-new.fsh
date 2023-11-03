@@ -91,17 +91,8 @@ Usage: #example
 //   * fullUrl = "http://example.org/fhir/Observation/observation-mother-received-wic-food-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-20
 * insert addentry(Observation, observation-cig-smoking-pregnancy-1-jada-ann-quinn)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-21
 * insert addentry(Observation, observation-cig-smoking-pregnancy-2-jada-ann-quinn)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-22
 * insert addentry(Observation, observation-cig-smoking-pregnancy-3-jada-ann-quinn)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-live-birth-babyg-quinn-23
 * insert addentry(Observation, observation-cig-smoking-pregnancy-4-jada-ann-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn"
@@ -227,7 +218,7 @@ Usage: #example
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-54
-* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
+//* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
 // * entry[+]
 //   * fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-mother-jada-ann-quinn"
 //   * resource = Inline-Instance-for-bundle-provider-live-birth-babyg-quinn-55

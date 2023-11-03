@@ -7,7 +7,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 126 | Date of First Prenatal Care Visit--Month | DOFP_MO | value |dateTime |See [PartialDatesAndTimes] |
 | Natality | 127 | Date of First Prenatal Care Visit--Day | DOFP_DY | value |dateTime |See [PartialDatesAndTimes] |
@@ -16,3 +16,4 @@ This profile is mapped to:
 | Fetal Death | 81 | Date of First Prenatal Care Visit--Day | DOFP_DY | value |dateTime |See [PartialDatesAndTimes] |
 | Fetal Death | 82 | Date of First Prenatal Care Visit--Year | DOFP_YR | value |dateTime |See [PartialDatesAndTimes] |
 {: .grid }
+{% include markdown-link-references.md %}

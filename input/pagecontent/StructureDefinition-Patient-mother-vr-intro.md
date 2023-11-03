@@ -58,7 +58,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 14 | Date of Birth (Mother)--Year | MDOB_YR | birthDate |date |See [PartialDatesAndTimes] |
 | Natality | 15 | Date of Birth (Mother)--Month | MDOB_MO | birthDate |date |See [PartialDatesAndTimes] |
@@ -143,3 +143,4 @@ This profile is mapped to:
 | Fetal Death | 279 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT | extension[patient-birthPlace].value[x].state |string |See [StateLiterals] |
 | Fetal Death | 280 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT | extension[patient-birthPlace].value[x].country (expanded from 2 letter code) |string |See [CountryLiterals] |
 {: .grid }
+{% include markdown-link-references.md %}

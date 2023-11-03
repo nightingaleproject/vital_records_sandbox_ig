@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 12 | Father's Surname | FLNAME | name.family |string |- |
 | Mortality | 167 | Father's First Name | DDADF | name.given , name.use = official |string |- |
@@ -11,3 +11,4 @@
 | Mortality Roster | 18 | Father's Surname | DADLNAME | name.family |string |- |
 | Mortality Roster | 23 | Father's Suffix | DADSUFF | name.suffix , name.use = official |string |- |
 {: .grid }
+{% include markdown-link-references.md %}

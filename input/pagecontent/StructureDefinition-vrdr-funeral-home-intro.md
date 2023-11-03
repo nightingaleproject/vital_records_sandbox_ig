@@ -1,6 +1,6 @@
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set**  |
+| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Mortality | 206 | Funeral Facility Name | FUNFACNAME | name |string |- |
 | Mortality | 207 | Funeral Facility - Street number | FUNFACSTNUM | address.extension[stnum] |string |- |
@@ -15,3 +15,4 @@
 | Mortality | 216 | State, U.S. Territory or Canadian Province of Funeral Facility - literal | FUNSTATE | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
 | Mortality | 217 | Funeral Facility - ZIP | FUNZIP | address.postalCode |string |- |
 {: .grid }
+{% include markdown-link-references.md %}
