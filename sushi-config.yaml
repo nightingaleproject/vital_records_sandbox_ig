@@ -149,10 +149,10 @@ pages:
     title: VRDR Scope
   vrdr_usage.md:
     title: VRDR Usage
-  DeathRecordDataDictionary.md:
-    title: Death Record Data Dictionary
-  MortalityRosterDataDictionary.md:
-    title: Mortality Roster Data Dictionary
+  # DeathRecordDataDictionary.md:
+  #   title: Death Record Data Dictionary
+  # MortalityRosterDataDictionary.md:
+  #   title: Mortality Roster Data Dictionary
   SurveillanceDataDictionary.md:
     title: Surveillance Data Dictionary
 
@@ -395,6 +395,13 @@ groups:
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
+      - CodeSystemCanadianProvincesVitalRecords
+      - CodeSystemCountryCodeVitalRecords  
+      - CodeSystemHispanicOriginVitalRecords
+      - CodeSystemJurisdictionsVitalRecords
+      - CodeSystemMissingValueReasonVitalRecords
+      - CodeSystemRaceCodeVitalRecords
+      - CodeSystemRaceRecode40VitalRecords
       - EditFlagsCS
       - CodeSystemLocalObservationsCodesVitalRecords
 
@@ -415,10 +422,24 @@ groups:
   VRCLValueSets:
     name: VRCL ValueSets
     resources:  
+      - ValueSetBirthplaceCountryVitalRecords
+      # - ValueSetCanadaProvincesVitalRecords
+      - ValueSetEducationLevelVitalRecords
       - ValueSetCodedRaceAndEthnicityPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
+      - ValueSetHispanicNoUnknownVitalRecords
+      - ValueSetHispanicOriginVitalRecords
+      # - ValueSetJurisdictionsProvincesVitalRecords
+      - ValueSetJurisdictionVitalRecords
       - ValueSetInputRaceAndEthnicityPersonVitalRecords
       - ValueSetMotherRelationshipVitalRecords
+      - ValueSetRaceCodeVitalRecords
+      - ValueSetRaceMissingValueReasonVitalRecords
+      - ValueSetRaceRecode40VitalRecords
+      - ValueSetResidenceCountryVitalRecords
+      - ValueSetSpouseAliveVitalRecords
+      - ValueSetStatesTerritoriesAndProvincesVitalRecords
+      - ValueSetUSStatesAndTerritoriesVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
@@ -427,7 +448,15 @@ groups:
   VRCLConceptMaps:
     name: VRCL Concept Maps
     resources:
+      - EducationLevelCM 
+      - HispanicNoUnknownCM
+      - HispanicOriginCM
       - NewbornCongenitalAnomaliesCM
+      - RaceCodeCM 
+      - RaceMissingValueReasonCM
+      - RaceRecode40CM
+      - SpouseAliveCM
+      - UnitsOfAgeCM
 
   VRCLExamples:
     name: VRCL Examples
@@ -1019,22 +1048,15 @@ groups:
     resources:
       - ActivityAtTimeOfDeathCS    
       - BypassEditFlagCS
-      - CanadianProvincesCS
       - ComponentCS
-      - CountryCodeCS  
       - DateOfDeathDeterminationMethodsCS
       - DeathPregnancyStatusCS
       - DocumentSectionCS
       - FilingFormatCS
-      - HispanicOriginCS
       - IntentionalRejectCS
-      - JurisdictionsCS
       - LocationTypeCS
-      - MissingValueReasonCS
       - ObservationsCS
       - OrganizationTypeCS
-      - RaceCodeCS
-      - RaceRecode40CS
       - ReplaceStatusCS
       - SystemRejectCS
       - TransaxConversionCS
@@ -1042,10 +1064,8 @@ groups:
   VRDRValueSets:
     name: VRDR ValueSets
     resources:    
-      - ActivityAtTimeOfDeathVS
       - AdministrativeGenderVS
-      - BirthplaceCountryVS
-      - CanadaProvincesVS
+      - ActivityAtTimeOfDeathVS
       - CertifierTypesVS
       - ContributoryTobaccoUseVS
       - DateOfDeathDeterminationMethodsVS
@@ -1054,31 +1074,18 @@ groups:
       - EditBypass0124VS
       - EditBypass012VS
       - EditBypass01VS
-      - EducationLevelVS
       - FilingFormatVS
-      - HispanicNoUnknownVS
-      - HispanicOriginVS
       - ICD10CausesOfDeathVS
       - IntentionalRejectVS
-      - JurisdictionsProvincesVS
-      - JurisdictionVS
       - MannerOfDeathVS
       - MaritalStatusVS
       - MethodOfDispositionVS
       - PlaceOfDeathVS
       - PlaceOfInjuryVS
-      - RaceCodeVS
-      - RaceMissingValueReasonVS
-      - RaceRecode40VS
       - ReplaceStatusVS
-      - ResidenceCountryVS
-      - SpouseAliveVS
-      - StatesTerritoriesAndProvincesVS
       - SystemRejectVS
       - TransaxConversionVS
       - TransportationIncidentRoleVS
-      - UnitsOfAgeVS
-      - USStatesAndTerritoriesVS
 
   # VRDRBundles:
   #   name: VRDR Bundles
@@ -1088,33 +1095,25 @@ groups:
   VRDRConceptMaps:
     name: VRDR Concept Maps
     resources:
-      - ActivityAtTimeOfDeathCM
       - AdministrativeGenderCM
+      - ActivityAtTimeOfDeathCM
       - CertifierTypesCM
       - ContributoryTobaccoUseCM
       - EditBypass01234CM
       - EditBypass0124CM
       - EditBypass012CM
       - EditBypass01CM
-      - EducationLevelCM
       - FilingFormatCM
-      - HispanicNoUnknownCM
-      - HispanicOriginCM
       - IntentionalRejectCM
       - MannerOfDeathCM
       - MaritalStatusCM
       - MethodOfDispositionCM
       - PlaceOfDeathCM
       - PlaceOfInjuryCM
-      - RaceCodeCM
-      - RaceMissingValueReasonCM
-      - RaceRecode40CM
       - ReplaceStatusCM
-      - SpouseAliveCM
       - SystemRejectCM
       - TransaxConversionCM
       - TransportationIncidentRoleCM
-      - UnitsOfAgeCM
 
 
   VRDRExamples:

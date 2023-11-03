@@ -40,7 +40,7 @@ Description: "The Observation - Cause of Death Part 1 profile reflects the order
   * value[x] only string or Quantity
   * valueString ^short = "Interval"
   * valueString ^maxLength = 20
-  * valueQuantity.code from UnitsOfAgeVS (required)
+  * valueQuantity.code from ValueSetUnitsOfAgeVitalRecords (required)
 * component[lineNumber]
   * ^short = "lineNumber"
   * code 1..1

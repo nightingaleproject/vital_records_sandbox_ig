@@ -17,12 +17,12 @@ Description: "Death Location (USCoreLocation)"
 * address.country ^short = "Address country"
 * address.postalCode ^short = "Address zip"
 * address.line ^short = "Address text"
-* address.state from StatesTerritoriesAndProvincesVS  (required)
+* address.state from ValueSetStatesTerritoriesAndProvincesVitalRecords  (required)
 * address.state 1..1
 * address.state ^short = "State/Jurisdiction of death.  Use value in Jurisdiction if present."
 * address.state.extension contains
     LocationJurisdictionId named nationalReportingJurisdictionId 0..1  // jurisdiction_id
-* address.country from ResidenceCountryVS (required)
+* address.country from ValueSetResidenceCountryVitalRecords (required)
 * insert CityCode
 * insert CountyCode
 * insert AddressComponents
