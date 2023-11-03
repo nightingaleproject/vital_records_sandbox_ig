@@ -11,8 +11,8 @@ The Decedent profile contains basic information about the decedent, including da
 | Mortality | 8 | Decedent's Legal Name--Middle | MNAME | name.given , name.use = official (first letter) |string |- |
 | Mortality | 9 | Decedent's Legal Name--Last | LNAME | name.family , name.use = official. (absence is equivalent to 'UNKNOWN'.) |string |- |
 | Mortality | 10 | Decedent's Legal Name--Suffix | SUFF | name.suffix , name.use = official |string |- |
-| Mortality | 13 | Sex | SEX | extension[NVSS-SexAtDeath]  |codeable |[ValueSetAdministrativeGenderVitalRecords] |
-| Mortality | NA | Gender | *NO IJE MAPPING* | gender |codeable |[ValueSetAdministrativeGenderVitalRecords](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] |
+| Mortality | 13 | Sex | SEX | extension[NVSS-SexAtDeath]  |codeable |[AdministrativeGenderVS] |
+| Mortality | NA | Gender | *NO IJE MAPPING* | gender |codeable |[AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] |
 | Mortality | 15 | Social Security Number | SSN | identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code="SB" |string |- |
 | Mortality | 19 | Date of Birth--Year | DOB_YR | birthDate |dateTime |See [PartialDatesAndTimes] |
 | Mortality | 20 | Date of Birth--Month | DOB_MO | birthDate |dateTime |See [PartialDatesAndTimes] |
@@ -47,15 +47,15 @@ The Decedent profile contains basic information about the decedent, including da
 | Mortality | 238 | State, U.S. Territory or Canadian Province of Birth - literal | STATEBTH | extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code) |string |See [StateLiterals] |
 | Mortality | 246 | Marital Descriptor | MARITAL_DESCRIP | maritalStatus.text  |string |- |
 | Mortality Roster | 1 | State, U.S. Territory or Canadian Province of Birth - literal | STATEBTH | extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code) |string |See [StateLiterals] |
-| Mortality Roster | 2 | State, U.S. Territory or Canadian Province of Birth - code | BPLACE_ST | extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present  |string |[ValueSetJurisdictionsProvincesVitalRecords] |
+| Mortality Roster | 2 | State, U.S. Territory or Canadian Province of Birth - code | BPLACE_ST | extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present  |string |[ValueSetJurisdictionVitalRecords] |
 | Mortality Roster | 3 | Decedent's Legal Name--Given  | GNAME | name.given , name.use = official |string |See [Note on Decedent Name] |
 | Mortality Roster | 4 | Decedent's Legal Name--Middle | MIDNAME | name.given , name.use = official (first letter) |string |See [Note on Decedent Name] |
 | Mortality Roster | 5 | Decedent's Legal Name--Last | LNAME | name.family , name.use = official |string |See [Note on Decedent Name] |
 | Mortality Roster | 11 | Date of Birth--Month | DOB_MO | birthDate |dateTime |See [PartialDatesAndTimes] |
 | Mortality Roster | 12 | Date of Birth--Day | DOB_DY | birthDate |dateTime |See [PartialDatesAndTimes] |
 | Mortality Roster | 13 | Date of Birth--Year | DOB_YR | birthDate |dateTime |See [PartialDatesAndTimes] |
-| Mortality Roster | 14 | Sex | SEX | extension[NVSS-SexAtDeath]  |codeable |[ValueSetAdministrativeGenderVitalRecords] |
-| Mortality Roster | NA | Gender | *NO IJE MAPPING* | gender |codeable |[ValueSetAdministrativeGenderVitalRecords](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] |
+| Mortality Roster | 14 | Sex | SEX | extension[NVSS-SexAtDeath]  |codeable |[AdministrativeGenderVS] |
+| Mortality Roster | NA | Gender | *NO IJE MAPPING* | gender |codeable |[AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] |
 | Mortality Roster | 22 | Decedent's Suffix | SUFF | name.suffix , name.use = official |string |- |
 | Mortality Roster | 26 | Decedent's Maiden Name | DMAIDEN | name.text , name.use=maiden |string | |
 | Mortality Roster | 27 | State, U.S. Territory or Canadian Province of Decedent's Residence - literal | STATETEXT_R  | address.state (expanded from 2 letter code) |string |See [StateLiterals] |

@@ -9,7 +9,7 @@
 <artifact id="ValueSet/vrdr-activity-at-time-of-death-vs" key="ValueSet-vrdr-activity-at-time-of-death-vs" name="Activity at Time of Death VS"/>
 <artifact id="ConceptMap/ActivityAtTimeOfDeathCM" key="ConceptMap-ActivityAtTimeOfDeathCM" name="ActivityAtTimeOfDeath Concept Map"/>
 <artifact id="Observation/ActivityAtTimeOfDeath-Example1" key="Observation-ActivityAtTimeOfDeath-Example1" name="ActivityAtTimeOfDeath-Example1"/>
-<artifact id="ValueSet/ValueSet-administrative-gender-vr" key="ValueSet-ValueSet-administrative-gender-vr" name="Administrative Gender PHVS_Sex_MFU"/>
+<artifact id="ValueSet/vrdr-administrative-gender-vs" key="ValueSet-vrdr-administrative-gender-vs" name="Administrative Gender PHVS_Sex_MFU"/>
 <artifact id="ConceptMap/AdministrativeGenderCM" key="ConceptMap-AdministrativeGenderCM" name="AdministrativeGender Concept Map"/>
 <artifact id="Observation/AgeUT-Example1" key="Observation-AgeUT-Example1" name="AgeUT-Example1"/>
 <artifact id="StructureDefinition/AliasStatus" key="StructureDefinition-AliasStatus" name="Alias Status of a Death Roster"/>
@@ -43,7 +43,6 @@
 <artifact id="CodeSystem/vrdr-bypass-edit-flag-cs" key="CodeSystem-vrdr-bypass-edit-flag-cs" name="Bypass Edit Flag Code System"/>
 <artifact id="StructureDefinition/BypassEditFlag" key="StructureDefinition-BypassEditFlag" name="BypassEditFlag"/>
 <artifact id="CodeSystem/CodeSystem-canadian-provinces-vr" key="CodeSystem-CodeSystem-canadian-provinces-vr" name="Canadian Provinces"/>
-<artifact id="ValueSet/ValueSet-canada-provinces-vr" key="ValueSet-ValueSet-canada-provinces-vr" name="Canadian Provinces Value Set"/>
 <artifact id="CapabilityStatement/CapabilityStatement-bfdr" key="CapabilityStatement-CapabilityStatement-bfdr" name="CapabilityStatement - Birth and Fetal Death"/>
 <artifact id="CapabilityStatement/CapabilityStatement-edrs-server" key="CapabilityStatement-CapabilityStatement-edrs-server" name="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
 <artifact id="CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server" key="CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server" name="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
@@ -70,7 +69,7 @@
 <artifact id="CodeSystem/CodeSystem-death-pregnancy-status" key="CodeSystem-CodeSystem-death-pregnancy-status" name="CodeSystem - Death Pregnancy Status Vital Records"/>
 <artifact id="CodeSystem/CodeSystem-vr-fetal-death-cause-or-condition" key="CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition" name="CodeSystem - Fetal Death Cause or Condition"/>
 <artifact id="CodeSystem/CodeSystem-informant-relationship-to-mother" key="CodeSystem-CodeSystem-informant-relationship-to-mother" name="CodeSystem - Informant Relationship to Mother"/>
-<artifact id="CodeSystem/CodeSystem-mdi-codes" key="CodeSystem-CodeSystem-mdi-codes" name="CodeSystem - MDI"/>
+<artifact id="CodeSystem/CodeSystem-vr-codes" key="CodeSystem-CodeSystem-vr-codes" name="CodeSystem - MDI"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Example1" key="Observation-CodedRaceAndEthnicity-Example1" name="CodedRaceAndEthnicity-Example1"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Father" key="Observation-CodedRaceAndEthnicity-Father" name="CodedRaceAndEthnicity-Father"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Mother" key="Observation-CodedRaceAndEthnicity-Mother" name="CodedRaceAndEthnicity-Mother"/>
@@ -250,7 +249,6 @@
 <artifact id="ValueSet/vrdr-intentional-reject-vs" key="ValueSet-vrdr-intentional-reject-vs" name="Intentional Reject ValueSet"/>
 <artifact id="ConceptMap/IntentionalRejectCM" key="ConceptMap-IntentionalRejectCM" name="IntentionalReject Concept Map"/>
 <artifact id="ValueSet/ValueSet-jurisdiction-vr" key="ValueSet-ValueSet-jurisdiction-vr" name="Jurisdictions Value Set"/>
-<artifact id="ValueSet/Valueset-jurisdictions-provinces-vr" key="ValueSet-Valueset-jurisdictions-provinces-vr" name="Jurisdictions and Provinces Value Set"/>
 <artifact id="CodeSystem/CodeSystem-jurisdictions-vr" key="CodeSystem-CodeSystem-jurisdictions-vr" name="Jurisdictions that are not US States or Territories"/>
 <artifact id="CodeSystem/vrdr-component-cs" key="CodeSystem-vrdr-component-cs" name="Local Component Codes"/>
 <artifact id="CodeSystem/CodeSystem-local-observation-codes-vr" key="CodeSystem-CodeSystem-local-observation-codes-vr" name="Local Observation Codes"/>

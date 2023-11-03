@@ -7,7 +7,7 @@
 | 110 | Were Autopsy Findings Available to Complete the Cause of Death? | AUTOPF| [AutopsyPerformedIndicator]|component[ autopsyResultsAvailable ].value | codeable | [ValueSetYesNoUnknownNotApplicableVitalRecords] | 
 | 88 | Infant Death/Birth Linking - birth certificate number | BCNO| [BirthRecordIdentifier]|value | string(6) | - | 
 | 89 | Infant Death/Birth Linking - year of birth | IDOB_YR| [BirthRecordIdentifier]|component[birthYear].value | dateTime | YYYY component | 
-| 90 | Infant Death/Birth Linking - State, U.S. Territory or Canadian Province of Birth - code | BSTATE| [BirthRecordIdentifier]|component[birthJurisdiction].value | string | [ValueSetJurisdictionsProvincesVitalRecords] | 
+| 90 | Infant Death/Birth Linking - State, U.S. Territory or Canadian Province of Birth - code | BSTATE| [BirthRecordIdentifier]|component[birthJurisdiction].value | string | [ValueSetJurisdictionVitalRecords] | 
 | 185 | Cause of Death Part I Line a | COD1A| [CauseOfDeathPart1]|value.text,   component[lineNumber] = 1 | string(120) | - | 
 | 186 | Cause of Death Part I Interval, Line a | INTERVAL1A| [CauseOfDeathPart1]|component[interval].value, component[lineNumber] = 1 | string(20) | - | 
 | 187 | Cause of Death Part I Line b | COD1B| [CauseOfDeathPart1]|value.text,   component[lineNumber] = 2 | string(120) | - | 
@@ -73,8 +73,8 @@
 | 8 | Decedent's Legal Name--Middle | MNAME| [Decedent]|name.given , name.use = official (first letter) | string | - | 
 | 9 | Decedent's Legal Name--Last | LNAME| [Decedent]|name.family , name.use = official. (absence is equivalent to 'UNKNOWN'.) | string | - | 
 | 10 | Decedent's Legal Name--Suffix | SUFF| [Decedent]|name.suffix , name.use = official | string | - | 
-| 13 | Sex | SEX| [Decedent]|extension[NVSS-SexAtDeath]  | codeable | [ValueSetAdministrativeGenderVitalRecords] | 
-| NA | Gender | *NO IJE MAPPING*| [Decedent]|gender | codeable | [ValueSetAdministrativeGenderVitalRecords](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] | 
+| 13 | Sex | SEX| [Decedent]|extension[NVSS-SexAtDeath]  | codeable | [AdministrativeGenderVS] | 
+| NA | Gender | *NO IJE MAPPING*| [Decedent]|gender | codeable | [AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] | 
 | 15 | Social Security Number | SSN| [Decedent]|identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code="SB" | string | - | 
 | 19 | Date of Birth--Year | DOB_YR| [Decedent]|birthDate | dateTime | See [PartialDatesAndTimes] | 
 | 20 | Date of Birth--Month | DOB_MO| [Decedent]|birthDate | dateTime | See [PartialDatesAndTimes] | 

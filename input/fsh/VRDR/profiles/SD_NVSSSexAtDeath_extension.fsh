@@ -4,7 +4,7 @@ Title: "NVSS SexAtDeath"
 Description: "Sex on visual inspection at the time of death by the funeral home"
 * value[x] 1..1
 * value[x] only CodeableConcept
-* value[x] from ValueSetAdministrativeGenderVitalRecords (required)
+* value[x] from AdministrativeGenderVS (required)
 
 Extension: SpouseAlive
 Id: SpouseAlive

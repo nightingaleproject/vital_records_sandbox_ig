@@ -249,7 +249,7 @@ N = Not Yet Determined",,,,,,,,,,,,,
 1192,ITOP,10,36,2,Date ITOP Report Completed - Day,DOC_DY,01-31 (based on month),,not implemented,not implemented,,,,,,,,,not implemented,
 282,Surveillance,10,186,1,Sex,SEX,"M = Male
 F = Female
-U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[ValueSetAdministrativeGenderVitalRecords],,y,,,,Decedent,
+U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[AdministrativeGenderVS],,y,,,,Decedent,
 18,Mortality,11,138,1,Alias Record Flag,ALIAS,"0 = Original Record
 1 = Alias Record",,not implemented,not implemented,,,-,,y,,,,not implemented,
 475,Natality,11,38,1,Place Where Birth Occurred (type of place or institution),BPLACE,"1 = Hospital
@@ -300,7 +300,7 @@ Codes: If AGETYPE = 1 then 001-135, 999
                                         9 then 999",,VRDR,DecedentAge,valueQuantity.value,decimal,-,,y,,,,DecedentAge,
 20,Mortality,13,189,1,Sex,SEX,"M = Male
 F = Female
-U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[ValueSetAdministrativeGenderVitalRecords],,y,,,,Decedent,
+U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[AdministrativeGenderVS],,y,,,,Decedent,
 442,Mortality Roster,13,207,4,Date of Birth--Year,DOB_YR,"4 digit year; <=year of death, 9999",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,,Decedent,
 477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,EncounterBirth,location.location.identifier,Identifier,,B,,,,,Encounter-birth,
 830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,Encounter_Maternity,location.location.identifier,Identifier,,B,,,,,Encounter-maternity,
@@ -314,13 +314,13 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[ValueSetAdmini
 1 = Edit Failed, Data Queried, and Verified",,VRDR,DecedentAge,value.extension[BypassEditFlag].value,codeable,[EditBypass01VS],,y,,,,DecedentAge,
 21,Mortality,14,190,1,Sex--Edit Flag,SEX_BYPASS,"0 = Edit Passed
 1 = Edit Failed, Data Queried, and Verified",,not implemented,not implemented,,,-,,,,,,not implemented,
-443,Mortality Roster,14,211,1,Sex,SEX,M=male; F=female; U=unknown,,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[ValueSetAdministrativeGenderVitalRecords],,,,,,Decedent,
+443,Mortality Roster,14,211,1,Sex,SEX,M=male; F=female; U=unknown,,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[AdministrativeGenderVS],,,,,,Decedent,
 1196,ITOP,14,52,12,Facility ID (NPI),FNPI, ,,not implemented,not implemented,,,,,,,,,not implemented,
 478,Natality,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,4 digit year (< year of birth of child);  9999 = unknown,,VRCPL,PatientMotherVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,Patient-mother-vr,
 831,Fetal Death,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,"4 digit year; < year of delivery, 9999",,VRCPL,PatientMotherVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,Patient-mother-vr,
 1355,Birth Infant Death,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,4 digit year (< year of birth of child);  9999 = unknown,,,,,,,,,,,,,
-,Mortality,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[ValueSetAdministrativeGenderVitalRecords](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender],,,,,,,
-,Mortality Roster,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[ValueSetAdministrativeGenderVitalRecords](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender],,,,,,,
+,Mortality,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender],,,,,,,
+,Mortality Roster,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender],,,,,,,
 22,Mortality,15,191,9,Social Security Number,SSN,9 digit SSN; blank if unknown or not sharable,,VRDR,Decedent,"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB""",string,-,,y,,,,Decedent,
 444,Mortality Roster,15,212,6,State File Number,FILENO,Left 0 filled; 000001-999999,,VRDR,MortalityRosterBundle,identifier.extension[ certificateNumber].value,string(6),-,,,,,,MortalityRosterBundle,
 287,Surveillance,15,201,4,Date of Birth--Year,DOB_YR,"4 digit year; <=year of death, 9999",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,y,,,,Decedent,

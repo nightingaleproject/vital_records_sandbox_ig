@@ -3,7 +3,7 @@ Instance: AdministrativeGenderCM
 InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false
-* insert ConceptMapIntro(AdministrativeGender, ValueSetAdministrativeGenderVitalRecords)
+* insert ConceptMapIntro(AdministrativeGender, AdministrativeGenderVS)
 * insert AddGroup("IJE",$admingender)
 * insert MapConcept( #M,  "Male",#male, "Male")
 * insert MapConcept( #F,  "Female",#female, "Female")

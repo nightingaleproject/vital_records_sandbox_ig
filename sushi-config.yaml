@@ -149,10 +149,10 @@ pages:
     title: VRDR Scope
   vrdr_usage.md:
     title: VRDR Usage
-  DeathRecordDataDictionary.md:
-    title: Death Record Data Dictionary
-  MortalityRosterDataDictionary.md:
-    title: Mortality Roster Data Dictionary
+  # DeathRecordDataDictionary.md:
+  #   title: Death Record Data Dictionary
+  # MortalityRosterDataDictionary.md:
+  #   title: Mortality Roster Data Dictionary
   SurveillanceDataDictionary.md:
     title: Surveillance Data Dictionary
 
@@ -422,15 +422,14 @@ groups:
   VRCLValueSets:
     name: VRCL ValueSets
     resources:  
-      - ValueSetAdministrativeGenderVitalRecords
       - ValueSetBirthplaceCountryVitalRecords
-      - ValueSetCanadaProvincesVitalRecords
+      # - ValueSetCanadaProvincesVitalRecords
       - ValueSetEducationLevelVitalRecords
       - ValueSetCodedRaceAndEthnicityPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetHispanicNoUnknownVitalRecords
       - ValueSetHispanicOriginVitalRecords
-      - ValueSetJurisdictionsProvincesVitalRecords
+      # - ValueSetJurisdictionsProvincesVitalRecords
       - ValueSetJurisdictionVitalRecords
       - ValueSetInputRaceAndEthnicityPersonVitalRecords
       - ValueSetMotherRelationshipVitalRecords
@@ -449,13 +448,13 @@ groups:
   VRCLConceptMaps:
     name: VRCL Concept Maps
     resources:
-      - AdministrativeGenderCM
       - EducationLevelCM 
       - HispanicNoUnknownCM
       - HispanicOriginCM
       - NewbornCongenitalAnomaliesCM
-      - RaceCodeCM
+      - RaceCodeCM 
       - RaceMissingValueReasonCM
+      - RaceRecode40CM
       - SpouseAliveCM
       - UnitsOfAgeCM
 
@@ -1065,6 +1064,7 @@ groups:
   VRDRValueSets:
     name: VRDR ValueSets
     resources:    
+      - AdministrativeGenderVS
       - ActivityAtTimeOfDeathVS
       - CertifierTypesVS
       - ContributoryTobaccoUseVS
@@ -1095,6 +1095,7 @@ groups:
   VRDRConceptMaps:
     name: VRDR Concept Maps
     resources:
+      - AdministrativeGenderCM
       - ActivityAtTimeOfDeathCM
       - CertifierTypesCM
       - ContributoryTobaccoUseCM
