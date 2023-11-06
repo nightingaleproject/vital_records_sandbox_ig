@@ -284,7 +284,7 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 4 = Days
 5 = Hours
 6 = Minutes
-9 = Unknown (not classifiable)",,VRDR,DecedentAge,valueQuantity.code,codeable,[UnitsOfAgeVS],,y,,,,DecedentAge,
+9 = Unknown (not classifiable)",,VRDR,DecedentAge,valueQuantity.code,codeable,[ValueSetUnitsOfAgeVitalRecords],,y,,,,DecedentAge,
 19,Mortality,12,139,50,Father's Surname,FLNAME,,,VRDR,DecedentFather,name.family,string,-,,y,,,,DecedentFather,
 1194,ITOP,12,48,3,County of Termination,CNTY_T,NCHS Instruction Manual: Part 8,,not implemented,not implemented,,,,,,,,,not implemented,
 441,Mortality Roster,12,205,2,Date of Birth--Day,DOB_DY,"01-31 (based on month), 99",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,,Decedent,
@@ -319,8 +319,8 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 478,Natality,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,4 digit year (< year of birth of child);  9999 = unknown,,VRCPL,PatientMotherVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,Patient-mother-vr,
 831,Fetal Death,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,"4 digit year; < year of delivery, 9999",,VRCPL,PatientMotherVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,Patient-mother-vr,
 1355,Birth Infant Death,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,4 digit year (< year of birth of child);  9999 = unknown,,,,,,,,,,,,,
-,Mortality,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender],,,,,,,
-,Mortality Roster,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender],,,,,,,
+,Mortality,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS] - See [Note on Decedent Gender],,,,,,,
+,Mortality Roster,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS] - See [Note on Decedent Gender],,,,,,,
 22,Mortality,15,191,9,Social Security Number,SSN,9 digit SSN; blank if unknown or not sharable,,VRDR,Decedent,"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB""",string,-,,y,,,,Decedent,
 444,Mortality Roster,15,212,6,State File Number,FILENO,Left 0 filled; 000001-999999,,VRDR,MortalityRosterBundle,identifier.extension[ certificateNumber].value,string(6),-,,,,,,MortalityRosterBundle,
 287,Surveillance,15,201,4,Date of Birth--Year,DOB_YR,"4 digit year; <=year of death, 9999",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,y,,,,Decedent,
@@ -333,7 +333,7 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 4 = Days
 5 = Hours
 6 = Minutes
-9 = Unknown (not classifiable)",,VRDR,DecedentAge,valueQuantity.code,codeable,[UnitsOfAgeVS],,y,,,,DecedentAge,
+9 = Unknown (not classifiable)",,VRDR,DecedentAge,valueQuantity.code,codeable,[ValueSetUnitsOfAgeVitalRecords],,y,,,,DecedentAge,
 288,Surveillance,16,205,2,Date of Birth--Month,DOB_MO,"01-12, 99",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,y,,,,Decedent,
 445,Mortality Roster,16,218,50,Father's First Name,DADFNAME,"Free form literal, left justified; if unknown, leave blank",,VRDR,DecedentFather,"name.given , name.use = official",string,-,,DDADF,,,,DecedentFather,
 480,Natality,16,61,2,Date of Birth (Mother)--Day,MDOB_DY,"01-31 (based on month), 99",,VRCPL,PatientMotherVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,Patient-mother-vr,
@@ -1139,7 +1139,7 @@ Some states keep a version of multiple race that is not in the new format but so
 1250,ITOP,68,704,2,"Previous live births,
 Now living",PLBL,"00-30
 99 = Unknown",,not implemented,not implemented,,,,,,,,,not implemented,
-340,Surveillance,68,706,1,Pregnancy,PREG,,,VRDR,DecedentPregnancyStatus,value,codeable,[PregnancyStatusVS],,y,,,,DecedentPregnancyStatus,
+340,Surveillance,68,706,1,Pregnancy,PREG,,,VRDR,DecedentPregnancyStatus,value,codeable,[DeathPregnancyStatusVS],,y,,,,DecedentPregnancyStatus,
 76,Mortality,69,532,3,Third Edited Code,RACE3E,Appendix I,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,component[ThirdEditedCode].value,codeable,[ValueSetRaceCodeVitalRecords],,,,,,CodedRaceAndEthnicity,
 341,Surveillance,69,707,2,Date of injury--month,DOI_MO,,,VRDR,InjuryIncident,effective,dateTime,See [PartialDatesAndTimes],,y,,,,InjuryIncident,
 533,Natality,69,395,3,Mother's Race Tabulation Variable 8E,MRACE8E,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[EighthEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ]",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr,
@@ -1422,7 +1422,7 @@ U = Unknown",,BFDR,ObservationMotherReceivedWICFood,value,codeable,[ValueSetYesN
 1278,ITOP,96,844,1,"Retained products
 (at time of procedure)",RETAN_TP,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
 367,Surveillance,96,1378,1,Decedent's spouse living at decedent's DOD?,SPOUSELV,"1=yes; 2=no; 8=unmarried; 9=unknown;
-blank if not reported",I,VRDR,Decedent,extension[ValueSetSpouseAliveVitalRecords] ,codeable, [SpouseAliveVS],,,,,,Decedent,
+blank if not reported",I,VRDR,Decedent,extension[ValueSetSpouseAliveVitalRecords] ,codeable, [ValueSetSpouseAliveVitalRecords],,,,,,Decedent,
 1279,ITOP,97,845,1,"Death 
 (at time of procedure)",DEATH_TP,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
 105,Mortality,97,693,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,VRDR,DeathCertificate,date,dateTime,-,,y,,,,DeathCertificate,
@@ -1544,7 +1544,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 383,Surveillance,112,1775,50,Father's First Name,DDADF,"Free form literal; if unknown, leave blank",i,VRDR,DecedentFather,"name.given , name.use = official",string,-,,,,,,DecedentFather,
 576,Natality,112,715,3,Father's Race Tabulation Variable 5E,FRACE5E,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[FifthEditedCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr,
 1453,Birth Infant Death,112,715,3,Father's Race Tabulation Variable 5E,FRACE5E,NCHS Appendix E,,,,,,,,,,,,,
-122,Mortality,112,979,1,Pregnancy,PREG,,,VRDR,DecedentPregnancyStatus,value,codeable,[PregnancyStatusVS],,y,,,,DecedentPregnancyStatus,
+122,Mortality,112,979,1,Pregnancy,PREG,,,VRDR,DecedentPregnancyStatus,value,codeable,[DeathPregnancyStatusVS],,y,,,,DecedentPregnancyStatus,
 929,Fetal Death,112,492,1,Risk Factors--Hypertension Prepregnancy,PHYPE,"Y, N, U",,BFDR,ConditionPrepregnancyHypertension,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
@@ -1861,7 +1861,7 @@ IJE Fetal Death Data Elements: RUT, AINT
 414,Surveillance,143,3392,5,Decedent's Birth Place City - Code,DBPLACECITYCODE,NCHS Instruction Manual: Part 8,i,VRDR,Decedent,extension[patient-birthPlace].value[x].city.extension[ cityCode],integer,see [CityCodes],,,,,,Decedent,
 960,Fetal Death,143,524,4,Weight of Fetus,FWG,0000-9999,,BFDR,ObservationBirthWeight,value,quantity,,B,,,,,Observation-birth-weight-vr,
 155,Mortality,143,1384,1,Decedent's spouse living at decedent's DOD?,SPOUSELV,"1=yes; 2=no; 8=unmarried; 9=unknown;
-blank if not reported",I,VRDR,Decedent,extension[ SpouseAlive ] ,codeable, [SpouseAliveVS],,,,,,Decedent,
+blank if not reported",I,VRDR,Decedent,extension[ SpouseAlive ] ,codeable, [ValueSetSpouseAliveVitalRecords],,,,,,Decedent,
 607,Natality,143,787,2,Previous Live Births Now Dead,PLBD,"00-30, 99",,BFDR,ObservationNumberBirthsNowDead,value,integer,,B,,,,,Observation-number-births-now-dead-vr,
 1484,Birth Infant Death,143,787,2,Previous Live Births Now Dead,PLBD,"00-30, 99",,,,,,,,,,,,,
 1325,ITOP,143,1185,1,Reason for Termination -- Mental health,REASON_MENTAL_HLTH,"Y, N",,not implemented,not implemented,,,,,,,,,not implemented,
@@ -2137,11 +2137,11 @@ Enter full text if it does not fit above (blank for natural death)",,VRDR,Injury
 639,Natality,175,839,1,Obstetric Procedures--Tocolysis(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),TOC,"Y, N, U",,not implemented,not implemented,,,,-,,,,,not implemented,
 1516,Birth Infant Death,175,839,1,Obstetric Procedures--Tocolysis,TOC,"Y, N, U",,,,,,,,,,,,,
 993,Fetal Death,176,576,4,Date of Registration--Year,DOR_YR,"4 digit year; >=year of delivery, Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)",,BFDR,CompositionProviderFetalDeathReport,extension[dateReceivedByRegistrar].value,dateTime,Used for Jurisdiction Report also,B,,,,,Extension-date-received-by-registrar,
-640,Natality,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value))",codeable,"[ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure?",B,,,,,Procedure-obstetric,
+640,Natality,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value))",codeable,,B,,,,,Procedure-obstetric,
 1517,Birth Infant Death,176,840,1,Obstetric Procedures--Successful External Cephalic Version,ECVS,"Y, N, U",,,,,,,,,,,,,
 188,Mortality,176,2439,28,County of Injury - literal,COUNTYTEXT_I,Valid county literal; blank for natural death,i,VRDR,InjuryLocation,address.district,string,-,,,,,,InjuryLocation,
 994,Fetal Death,177,580,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,BFDR,CompositionProviderFetalDeathReport,extension[dateReceivedByRegistrar].value,dateTime,Used for Jurisdiction Report also,B,,,,,Extension-date-received-by-registrar,
-641,Natality,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000 (External cephalic version (procedure)), <br />outcome=385671000 (Unsuccessful (qualifier value))",codeable,"[ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure?",B,,,,,Procedure-obstetric,
+641,Natality,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,BFDR,ProcedureObstetric,"code=240278000 (External cephalic version (procedure)), <br />outcome=385671000 (Unsuccessful (qualifier value))",codeable,,B,,,,,Procedure-obstetric,
 1518,Birth Infant Death,177,841,1,Obstetric Procedures--Failed External Cephalic Version,ECVF,"Y, N, U",,,,,,,,,,,,,
 189,Mortality,177,2467,3,County of Injury code,COUNTYCODE_I,"NCHS Instruction Manual: Part 8; 999=unknown; 
 Blank for natural death.",i,VRDR,InjuryLocation,address.district.extension[ districtCode].value,integer,see [CountyCodes],,,,,,InjuryLocation,
