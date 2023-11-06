@@ -423,6 +423,7 @@ groups:
     name: VRCL ValueSets
     resources:  
       - ValueSetBirthplaceCountryVitalRecords
+      - ValueSetBirthSexVitalRecords
       # - ValueSetCanadaProvincesVitalRecords
       - ValueSetEducationLevelVitalRecords
       - ValueSetCodedRaceAndEthnicityPersonVitalRecords
