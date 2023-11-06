@@ -5,7 +5,7 @@ Title: "Injury Location"
 Description: "Injury Location (USCoreLocation)"
 * insert RequireMetaProfile(InjuryLocation)
 * address 0..1
-* address.state from StatesTerritoriesAndProvincesVS (required)
+* address.state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required)
 * position 0..1  // LONG_I and LAT_I
 * position ^short = "Lat/Long of Injury"
 * insert CityCode

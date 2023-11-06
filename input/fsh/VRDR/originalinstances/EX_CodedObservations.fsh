@@ -109,11 +109,11 @@ Description: "CodedRaceAndEthnicity-Example1"
 * status = #final
 * code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicity
 * subject.display = "NCHS generated"
-* component[FirstEditedCode].valueCodeableConcept = RaceCodeCS#101 "White"
-* component[SecondEditedCode].valueCodeableConcept = RaceCodeCS#122 "Israeli"
-* component[FirstAmericanIndianCode].valueCodeableConcept = RaceCodeCS#A31 "Arikara"
-* component[RaceRecode40].valueCodeableConcept = RaceRecode40CS#20 "AIAN and Asian"
-* component[HispanicCode].valueCodeableConcept = HispanicOriginCS#233 "Chilean"
+* component[FirstEditedCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#101 "White"
+* component[SecondEditedCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#122 "Israeli"
+* component[FirstAmericanIndianCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#A31 "Arikara"
+* component[RaceRecode40].valueCodeableConcept = CodeSystemRaceRecode40VitalRecords#20 "AIAN and Asian"
+* component[HispanicCode].valueCodeableConcept = CodeSystemHispanicOriginVitalRecords#233 "Chilean"
 
 
 Instance: InputRaceAndEthnicity-Example1

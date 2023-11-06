@@ -17,7 +17,7 @@ an identifier.
 | Mortality | 229 | Certifier - Unit or apt number | CERTUNITNUM | address.extension[unitnum] |string |- |
 | Mortality | 230 | Long string address for Certifier same as above but allows states to choose the way they capture information. | CERTADDRESS | address.line  |string |- |
 | Mortality | 231 | Certifier - City or Town name | CERTCITYTEXT | address.city  |string |- |
-| Mortality | 232 | State, U.S. Territory or Canadian Province of Certifier - code | CERTSTATECD | address.state |string |[StatesTerritoriesAndProvincesVS] |
+| Mortality | 232 | State, U.S. Territory or Canadian Province of Certifier - code | CERTSTATECD | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
 | Mortality | 233 | State, U.S. Territory or Canadian Province of Certifier - literal | CERTSTATE | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
 | Mortality | 234 | Certifier - Zip | CERTZIP | address.postalCode |string |- |
 {: .grid }

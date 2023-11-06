@@ -37,7 +37,7 @@ This profile is mapped to:
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
 | Natality | 1 | Date of Birth (Infant)--Year | IDOB_YR | birthDate |date | |
-| Natality | 2 | State, U.S. Territory or Canadian Province of Birth (Infant) - code | BSTATE | extension[patient-birthPlace].value[x].state |string |[StatesTerritoriesAndProvincesVS] |
+| Natality | 2 | State, U.S. Territory or Canadian Province of Birth (Infant) - code | BSTATE | extension[patient-birthPlace].value[x].state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
 | Natality | 6 | Time of Birth | TB | birthDate.extension[patient-birthTime] | |See [PartialDatesAndTimes] |
 | Natality | 7 | Sex | ISEX | extension[us-core-birthsex].value |codeable |[USCoreBirthSexVS](http://hl7.org/fhir/us/core/ValueSet/birthsex) |
 | Natality | 8 | Date of Birth (Infant)--Month | IDOB_MO | birthDate |date | |

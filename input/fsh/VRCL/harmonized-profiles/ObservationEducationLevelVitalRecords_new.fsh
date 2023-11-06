@@ -23,7 +23,7 @@ This profile is designed to supplant similar profile in VRDR"
 * insert SubjectRelatedPattern
 * value[x] 1..1
 * value[x] only CodeableConcept
-* value[x] from EducationLevelVS (required) // use VRDR valueset
+* value[x] from ValueSetEducationLevelVitalRecords (required) // use VRDR valueset
   * ^short = "The collection of education levels used for vital records reporting."
   * ^binding.description = "Vital Records Education Level (NCHS)"
 * value[x].extension contains

@@ -64,12 +64,12 @@ This profile is mapped to:
 | Natality | 15 | Date of Birth (Mother)--Month | MDOB_MO | birthDate |date |See [PartialDatesAndTimes] |
 | Natality | 16 | Date of Birth (Mother)--Day | MDOB_DY | birthDate |date |See [PartialDatesAndTimes] |
 | Natality | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS | birthDate.extension[bypassEditFlag].value |codeable |[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] |
-| Natality | 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER | extension[patient-birthPlace].value[x].state |string |[StatesTerritoriesAndProvincesVS] |
-| Natality | 19 | Birthplace of Mother--Country | BPLACEC_CNT | extension[patient-birthPlace].value[x].country  |string |[ResidenceCountryVS] |
+| Natality | 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER | extension[patient-birthPlace].value[x].state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
+| Natality | 19 | Birthplace of Mother--Country | BPLACEC_CNT | extension[patient-birthPlace].value[x].country  |string |[ValueSetResidenceCountryVitalRecords] |
 | Natality | 20 | Residence of Mother--City | CITYC | address.city.extension[ cityCode ] |integer |See [CityCodes] |
 | Natality | 21 | Residence of Mother--County | COUNTYC | address.district.extension[countyCode] |integer |See [CountyCodes] |
-| Natality | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | address.state |string |[StatesTerritoriesAndProvincesVS] |
-| Natality | 23 | Residence of Mother--Country | COUNTRYC | address.country |string |[ResidenceCountryVS] |
+| Natality | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
+| Natality | 23 | Residence of Mother--Country | COUNTRYC | address.country |string |[ValueSetResidenceCountryVitalRecords] |
 | Natality | 24 | Residence of Mother--Inside City Limits | LIMITS | address.extension[ withinCityLimitsIndicator ].value |codeable |[ValueSetYesNoUnknownVitalRecords] |
 | Natality | 254 | Mother's First Name | MOMFNAME | name.given, <br />name.use = official |string | |
 | Natality | 255 | Mother's Middle Name | MOMMIDDL | name.given, <br />name.use = official  |string | |
@@ -112,12 +112,12 @@ This profile is mapped to:
 | Fetal Death | 15 | Date of Birth (Mother)--Month | MDOB_MO | birthDate |date |See [PartialDatesAndTimes] |
 | Fetal Death | 16 | Date of Birth (Mother)--Day | MDOB_DY | birthDate |date |See [PartialDatesAndTimes] |
 | Fetal Death | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS | birthDate.extension[bypassEditFlag].value |codeable |[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] |
-| Fetal Death | 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER | extension[patient-birthPlace].value[x].state |string |[StatesTerritoriesAndProvincesVS] |
-| Fetal Death | 19 | Mother's Birthplace--Country | BPLACEC_CNT | extension[patient-birthPlace].value[x].country  |string |[ResidenceCountryVS] |
+| Fetal Death | 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER | extension[patient-birthPlace].value[x].state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
+| Fetal Death | 19 | Mother's Birthplace--Country | BPLACEC_CNT | extension[patient-birthPlace].value[x].country  |string |[ValueSetResidenceCountryVitalRecords] |
 | Fetal Death | 20 | Residence of Mother--City/Town | CITYC | address.city.extension[ cityCode ] |integer |See [CityCodes] |
 | Fetal Death | 21 | Residence of Mother--County | COUNTYC | address.district.extension[countyCode] |integer |See [CountyCodes] |
-| Fetal Death | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | address.state |string |[StatesTerritoriesAndProvincesVS] |
-| Fetal Death | 23 | Residence of Mother--Country | COUNTRYC | address.country |string |[ResidenceCountryVS] |
+| Fetal Death | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
+| Fetal Death | 23 | Residence of Mother--Country | COUNTRYC | address.country |string |[ValueSetResidenceCountryVitalRecords] |
 | Fetal Death | 24 | Residence of Mother--Inside City/Town Limits | LIMITS | address.extension[ withinCityLimitsIndicator ].value |codeable |[ValueSetYesNoUnknownVitalRecords] |
 | Fetal Death | 239 | Mother's Legal First Name | MOMFNAME | name.given, <br />name.use = official |string | |
 | Fetal Death | 240 | Mother's Legal Middle Name | MOMMNAME | name.given, <br />name.use = official  |string | |

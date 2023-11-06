@@ -149,10 +149,10 @@ pages:
     title: VRDR Scope
   vrdr_usage.md:
     title: VRDR Usage
-  DeathRecordDataDictionary.md:
-    title: Death Record Data Dictionary
-  MortalityRosterDataDictionary.md:
-    title: Mortality Roster Data Dictionary
+  # DeathRecordDataDictionary.md:
+  #   title: Death Record Data Dictionary
+  # MortalityRosterDataDictionary.md:
+  #   title: Mortality Roster Data Dictionary
   SurveillanceDataDictionary.md:
     title: Surveillance Data Dictionary
 
@@ -349,6 +349,7 @@ groups:
       - ExtensionBypassEditFlagVitalRecords
       - ExtensionCityCodeVitalRecords
       - ExtensionDistrictCodeVitalRecords
+      - ExtensionPartialDateVitalRecords
       - ExtensionPostDirectionalVitalRecords
       - ExtensionPreDirectionalVitalRecords
       - ExtensionStreetDesignatorVitalRecords
@@ -394,7 +395,15 @@ groups:
   VRCLCodeSystems:
     name: VRCL CodeSystems
     resources:
+      - CodeSystemCanadianProvincesVitalRecords
+      - CodeSystemCountryCodeVitalRecords  
+      - CodeSystemHispanicOriginVitalRecords
+      - CodeSystemJurisdictionsVitalRecords
+      - CodeSystemMissingValueReasonVitalRecords
+      - CodeSystemRaceCodeVitalRecords
+      - CodeSystemRaceRecode40VitalRecords
       - EditFlagsCS
+      - CodeSystemLocalObservationsCodesVitalRecords
 
   PHINVADSValuesets:
     name:  ValueSets from PHINVADS
@@ -413,8 +422,24 @@ groups:
   VRCLValueSets:
     name: VRCL ValueSets
     resources:  
+      - ValueSetBirthplaceCountryVitalRecords
+      # - ValueSetCanadaProvincesVitalRecords
+      - ValueSetEducationLevelVitalRecords
+      - ValueSetCodedRaceAndEthnicityPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
+      - ValueSetHispanicNoUnknownVitalRecords
+      - ValueSetHispanicOriginVitalRecords
+      # - ValueSetJurisdictionsProvincesVitalRecords
+      - ValueSetJurisdictionVitalRecords
+      - ValueSetInputRaceAndEthnicityPersonVitalRecords
       - ValueSetMotherRelationshipVitalRecords
+      - ValueSetRaceCodeVitalRecords
+      - ValueSetRaceMissingValueReasonVitalRecords
+      - ValueSetRaceRecode40VitalRecords
+      - ValueSetResidenceCountryVitalRecords
+      - ValueSetSpouseAliveVitalRecords
+      - ValueSetStatesTerritoriesAndProvincesVitalRecords
+      - ValueSetUSStatesAndTerritoriesVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
@@ -423,11 +448,23 @@ groups:
   VRCLConceptMaps:
     name: VRCL Concept Maps
     resources:
+      - EducationLevelCM 
+      - HispanicNoUnknownCM
+      - HispanicOriginCM
       - NewbornCongenitalAnomaliesCM
+      - RaceCodeCM 
+      - RaceMissingValueReasonCM
+      - RaceRecode40CM
+      - SpouseAliveCM
+      - UnitsOfAgeCM
 
   VRCLExamples:
     name: VRCL Examples
     resources:
+      - CodedRaceAndEthnicity-Father
+      - CodedRaceAndEthnicity-Mother
+      - InputRaceAndEthnicityFather
+      - InputRaceAndEthnicityMother
       - expansion-parameters-vr-common
       - location-death-vr-atlanta-ga-a-freeman
       - location-injury-vr-atlanta-ga-a-freeman
@@ -472,6 +509,7 @@ groups:
       - ObservationMotherDeliveryWeight
       - ObservationMotherHeight
       - ObservationMotherPrepregnancyWeight
+      - ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn
       - ObservationNoneOfSpecifiedPregnancyRiskFactors
       - ObservationNumberBirthsNowDead
       - ObservationNumberBirthsNowLiving
@@ -481,6 +519,7 @@ groups:
       - ObservationNumberPrenatalVisits
       - ObservationNumberPreviousCesareans
       - ObservationPreviousPretermBirth
+      - ObservationUnknownFinalRouteMethodDelivery
       - ProcedureInfertilityTreatment
       - ProcedureArtificialInsemination
       - ProcedureAssistedFertilization
@@ -488,8 +527,6 @@ groups:
       #- PatientDecedentFetus
       #- PatientMother
       - ConditionChorioamnionitis
-      - ConditionCodedInitiatingFetalDeathCauseOrCondition
-      - ConditionCodedOtherFetalDeathCauseOrCondition
       - ConditionCongenitalAnomalyOfNewborn
       - ConditionFetalDeathCauseOrCondition
       - ConditionFetalDeathOtherCauseOrCondition
@@ -504,6 +541,8 @@ groups:
       - ObservationAntibioticsAdministeredDuringLabor
       - ObservationAutopsyHistologicalExamResultsUsed
       - ObservationCigaretteSmokingBeforeDuringPregnancy
+      - ObservationCodedInitiatingFetalDeathCauseOrCondition
+      - ObservationCodedOtherFetalDeathCauseOrCondition
       - ObservationDateOfFirstPrenatalCareVisit
       - ObservationDateOfLastLiveBirth
       - ObservationDateOfLastOtherPregnancyOutcome
@@ -669,6 +708,7 @@ groups:
   BFDRCodeSystems:
     name: BFDR CodeSystems
     resources:
+      - AbnormalConditionsNewbornCS
       - BirthAndFetalDeathFinancialClassCS
       - BirthDeliveryOccurredCS
       - FetalDeathCauseOrConditionCS
@@ -693,10 +733,12 @@ groups:
       - InfectionsDuringPregnancyLiveBirthVS
       - InformantRelationshipToMotherVS
       - MothersDateOfBirthEditFlagsVS
+      - NewbornCongenitalAnomaliesVS
       - NumberPreviousCesareansEditFlagsVS
-      - ValueSetObstetricProcedureOutcome
+      - ObstetricProcedureVS
       - PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
+      - ValueSetObstetricProcedureOutcome
       
     
   BFDRConceptMaps:
@@ -725,8 +767,6 @@ groups:
       - composition-provider-fetal-death-not-named
       - composition-provider-live-birth-babyg-quinn
       - condition-chorioamnionitis-jada-ann-quinn
-      - condition-coded-initiating-fetal-death-cause-or-condition
-      - condition-coded-other-fetal-death-cause-or-condition-not-named
       - condition-congenital-anomaly-of-newborn-babyg-quinn
       - condition-congenital-anomaly-of-newborn-babyg-quinn-2
       - condition-eclampsia-hypertension-jada-ann-quinn
@@ -767,6 +807,8 @@ groups:
       - observation-cig-smoking-pregnancy-3-jada-ann-quinn
       - observation-cig-smoking-pregnancy-4-carmen-teresa-lee
       - observation-cig-smoking-pregnancy-4-jada-ann-quinn
+      - observation-coded-initiating-fetal-death-cause-or-condition
+      - observation-coded-other-fetal-death-cause-or-condition-not-named
       - observation-date-of-first-prenatal-care-visit-carmen-teresa-lee
       - observation-date-of-first-prenatal-care-visit-jada-ann-quinn
       - observation-date-of-last-live-birth-carmen-teresa-lee
@@ -775,6 +817,14 @@ groups:
       - observation-fetal-death-time-point-not-named
       - observation-fetal-presentation-babyg-quinn
       - observation-fetal-presentation-not-named
+      - observation-last-menstrual-period-carmen-teresa-lee
+      - observation-last-menstrual-period-jada-ann-quinn
+      - observation-mother-delivery-weight-jada-ann-quinn
+      - observation-mother-delivery-weight-jada-ann-quinn-w-edit
+      - observation-mother-height-carmen-teresa-lee
+      - observation-mother-height-carmen-teresa-lee-w-edit
+      - observation-mother-height-jada-ann-quinn
+      - observation-mother-height-jada-ann-quinn-w-edit
       - procedure-final-route-method-delivery-babyg-quinn
       - procedure-final-route-method-delivery-not-named
       - observation-gestational-age-at-delivery-babyg-quinn
@@ -881,22 +931,6 @@ groups:
   VRDRProfiles:
     name: VRDR Profiles
     resources: 
-      # - MortalityRosterBundle
-      # - Decedent
-      # - DeathCertification 
-      # - CauseOfDeathCodedContentBundle
-      # - DemographicCodedContentBundle
-      # - DeathCertificate
-      # - DeathCertificateDocument
-      # - CauseOfDeathPart1
-      # - CauseOfDeathPart2
-      # - DeathDate
-      # - InjuryIncident
-      # - MannerOfDeath
-      # - TobaccoUseContributedToDeath
-      # - DecedentDispositionMethod
-      # - DecedentEducationLevel
-      # - DecedentPregnancyStatus
       - ActivityAtTimeOfDeath
       - AutomatedUnderlyingCauseOfDeath
       - AutopsyPerformedIndicator
@@ -912,6 +946,8 @@ groups:
       - DeathDate 
       - DeathLocation
       - DecedentAge
+      - DecedentDispositionMethod
+      - DecedentEducationLevel
       - DecedentFather
       - DecedentMilitaryService
       - DecedentMother
@@ -1012,22 +1048,15 @@ groups:
     resources:
       - ActivityAtTimeOfDeathCS    
       - BypassEditFlagCS
-      - CanadianProvincesCS
       - ComponentCS
-      - CountryCodeCS  
       - DateOfDeathDeterminationMethodsCS
       - DeathPregnancyStatusCS
       - DocumentSectionCS
       - FilingFormatCS
-      - HispanicOriginCS
       - IntentionalRejectCS
-      - JurisdictionsCS
       - LocationTypeCS
-      - MissingValueReasonCS
       - ObservationsCS
       - OrganizationTypeCS
-      - RaceCodeCS
-      - RaceRecode40CS
       - ReplaceStatusCS
       - SystemRejectCS
       - TransaxConversionCS
@@ -1035,10 +1064,8 @@ groups:
   VRDRValueSets:
     name: VRDR ValueSets
     resources:    
-      - ActivityAtTimeOfDeathVS
       - AdministrativeGenderVS
-      - BirthplaceCountryVS
-      - CanadaProvincesVS
+      - ActivityAtTimeOfDeathVS
       - CertifierTypesVS
       - ContributoryTobaccoUseVS
       - DateOfDeathDeterminationMethodsVS
@@ -1047,31 +1074,18 @@ groups:
       - EditBypass0124VS
       - EditBypass012VS
       - EditBypass01VS
-      - EducationLevelVS
       - FilingFormatVS
-      - HispanicNoUnknownVS
-      - HispanicOriginVS
       - ICD10CausesOfDeathVS
       - IntentionalRejectVS
-      - JurisdictionsProvincesVS
-      - JurisdictionVS
       - MannerOfDeathVS
       - MaritalStatusVS
       - MethodOfDispositionVS
       - PlaceOfDeathVS
       - PlaceOfInjuryVS
-      - RaceCodeVS
-      - RaceMissingValueReasonVS
-      - RaceRecode40VS
       - ReplaceStatusVS
-      - ResidenceCountryVS
-      - SpouseAliveVS
-      - StatesTerritoriesAndProvincesVS
       - SystemRejectVS
       - TransaxConversionVS
       - TransportationIncidentRoleVS
-      - UnitsOfAgeVS
-      - USStatesAndTerritoriesVS
 
   # VRDRBundles:
   #   name: VRDR Bundles
@@ -1081,39 +1095,45 @@ groups:
   VRDRConceptMaps:
     name: VRDR Concept Maps
     resources:
-      - ActivityAtTimeOfDeathCM
       - AdministrativeGenderCM
+      - ActivityAtTimeOfDeathCM
       - CertifierTypesCM
       - ContributoryTobaccoUseCM
       - EditBypass01234CM
       - EditBypass0124CM
       - EditBypass012CM
       - EditBypass01CM
-      - EducationLevelCM
       - FilingFormatCM
-      - HispanicNoUnknownCM
-      - HispanicOriginCM
       - IntentionalRejectCM
       - MannerOfDeathCM
       - MaritalStatusCM
       - MethodOfDispositionCM
       - PlaceOfDeathCM
       - PlaceOfInjuryCM
-      - RaceCodeCM
-      - RaceMissingValueReasonCM
-      - RaceRecode40CM
       - ReplaceStatusCM
-      - SpouseAliveCM
       - SystemRejectCM
       - TransaxConversionCM
       - TransportationIncidentRoleCM
-      - UnitsOfAgeCM
 
 
   VRDRExamples:
     name: VRDR Examples
     resources:
+      - ActivityAtTimeOfDeath-Example1
+      - AgeUT-Example1
+      - AutomatedUnderlyingCauseOfDeath-Example1
+      - AutopsyPerformedIndicator-Example1
+      - AutopsyPerformedIndicatorUT-Example1
+      - BirthRecordIdentifier-Example1
+      - BirthRecordIdentifierUT-Example1
+      - CauseOfDeathPart1-Example1
+      - CauseOfDeathPart1-Example2
+      - CauseOfDeathPart1UT-Example1
+      - CauseOfDeathPart2-Example1
       - CauseOfDeathCodedContentBundle-Example1
+      - Certifier-Example1
+      - CodedRaceAndEthnicity-Example1
+      - CodingStatusValues-Example1
       - DeathCertificateDocument-UT-1
       - DeathCertificateUT-Example1
       - DeathCertification-Example1
@@ -1130,6 +1150,7 @@ groups:
       - Decedent-Example2
       - Decedent-Example3
       - DecedentAge-Example1
+      - DecedentDispositionMethod-a-freeman
       - DecedentDispositionMethod-Example1
       - DecedentEducationLevel-Example1
       - DecedentFather-Example1
@@ -1200,11 +1221,11 @@ groups:
   MDIExtensions:
     name: MDI Extensions 
     resources:
-      - ExtensionDateDay
-      - ExtensionDateMonth
-      - ExtensionDateTime
-      - ExtensionDateYear
-      - ExtensionPartialDateTime
+      # - ExtensionDateDay
+      # - ExtensionDateMonth
+      # - ExtensionDateTime
+      # - ExtensionDateYear
+      # - ExtensionPartialDateTime
       - ExtensionTrackingNumber
 
   # MDIProfiles:
@@ -1231,10 +1252,7 @@ groups:
   MDIValuesetS:
     name: MDI Value Set
     resources:
-      - CodeSystemLocalComponentCodes
       - ValueSetTrackingNumberType
-      # - CodeSystemDeathPregnancyStatus
-      # - ValueSetDateEstablishmentApproach
   
   MDIExamples:
     name: MDI Examples

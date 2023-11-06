@@ -3,10 +3,10 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Natality | 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Natality | 36 | Mother of Hispanic Origin?--Cuban | METHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Natality | 37 | Mother of Hispanic Origin?--Other | METHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
+| Natality | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Natality | 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Natality | 36 | Mother of Hispanic Origin?--Cuban | METHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Natality | 37 | Mother of Hispanic Origin?--Other | METHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
 | Natality | 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5 | component[ HispanicLiteral ].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
 | Natality | 39 | Mother's Race--White | MRACE1 | component[ White].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
 | Natality | 40 | Mother's Race--Black or African American | MRACE2 | component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
@@ -31,10 +31,10 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
 | Natality | 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21 | component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
 | Natality | 60 | Mother's Race--First Other Literal | MRACE22 | component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
 | Natality | 61 | Mother's Race--Second Other Literal | MRACE23 | component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Natality | 80 | Father of Hispanic Origin?--Mexican | FETHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Natality | 81 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Natality | 82 | Father of Hispanic Origin?--Cuban | FETHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Natality | 83 | Father of Hispanic Origin?--Other | FETHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[HispanicNoUnknownVS] |
+| Natality | 80 | Father of Hispanic Origin?--Mexican | FETHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Natality | 81 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Natality | 82 | Father of Hispanic Origin?--Cuban | FETHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Natality | 83 | Father of Hispanic Origin?--Other | FETHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
 | Natality | 84 | Father of Hispanic Origin?--Other Literal | FETHNIC5 | component[ HispanicLiteral ].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
 | Natality | 85 | Father's Race--White | FRACE1 | component[ White].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
 | Natality | 86 | Father's Race--Black or African American | FRACE2 | component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
@@ -59,10 +59,10 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
 | Natality | 105 | Father's Race--Second Other Pacific Islander Literal | FRACE21 | component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
 | Natality | 106 | Father's Race--First Other Literal | FRACE22 | component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
 | Natality | 107 | Father's Race--Second Other Literal | FRACE23 | component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Fetal Death | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Fetal Death | 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Fetal Death | 36 | Mother of Hispanic Origin?--Cuban | METHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Fetal Death | 37 | Mother of Hispanic Origin?--Other | METHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[HispanicNoUnknownVS] |
+| Fetal Death | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Fetal Death | 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Fetal Death | 36 | Mother of Hispanic Origin?--Cuban | METHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Fetal Death | 37 | Mother of Hispanic Origin?--Other | METHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
 | Fetal Death | 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5 | component[ HispanicLiteral ].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
 | Fetal Death | 39 | Mother's Race--White | MRACE1 | component[ White].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
 | Fetal Death | 40 | Mother's Race--Black or African American | MRACE2 | component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
@@ -87,10 +87,10 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
 | Fetal Death | 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21 | component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
 | Fetal Death | 60 | Mother's Race--First Other Literal | MRACE22 | component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
 | Fetal Death | 61 | Mother's Race--Second Other Literal | MRACE23 | component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Fetal Death | 285 | Father of Hispanic Origin?--Mexican | FETHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Fetal Death | 286 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Fetal Death | 287 | Father of Hispanic Origin?--Cuban | FETHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[HispanicNoUnknownVS] |
-| Fetal Death | 288 | Father of Hispanic Origin?--Other | FETHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[HispanicNoUnknownVS] |
+| Fetal Death | 285 | Father of Hispanic Origin?--Mexican | FETHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Fetal Death | 286 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Fetal Death | 287 | Father of Hispanic Origin?--Cuban | FETHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Fetal Death | 288 | Father of Hispanic Origin?--Other | FETHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
 | Fetal Death | 289 | Father of Hispanic Origin?--Other Literal | FETHNIC5 | component[ HispanicLiteral ].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
 | Fetal Death | 290 | Father's Race--White | FRACE1 | component[ White].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
 | Fetal Death | 291 | Father's Race--Black or African American | FRACE2 | component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
@@ -115,10 +115,10 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
 | Fetal Death | 310 | Father's Race--Second Other Pacific Islander Literal | FRACE21 | component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
 | Fetal Death | 311 | Father's Race--First Other Literal | FRACE22 | component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
 | Fetal Death | 312 | Father's Race--Second Other Literal | FRACE23 | component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Mortality | 39 | Decedent of Hispanic Origin?--Mexican | DETHNIC1 | component[ HispanicMexican].valueCoding |codeable |[HispanicNoUnknownVS] |
-| Mortality | 40 | Decedent of Hispanic Origin?--Puerto Rican | DETHNIC2 | component[ HispanicPuertoRican].valueCoding |codeable |[HispanicNoUnknownVS] |
-| Mortality | 41 | Decedent of Hispanic Origin?--Cuban | DETHNIC3 | component[ HispanicCuban ].valueCoding |codeable |[HispanicNoUnknownVS] |
-| Mortality | 42 | Decedent of Hispanic Origin?--Other | DETHNIC4 | component[ HispanicOther ].valueCoding |codeable |[HispanicNoUnknownVS] |
+| Mortality | 39 | Decedent of Hispanic Origin?--Mexican | DETHNIC1 | component[ HispanicMexican].valueCoding |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Mortality | 40 | Decedent of Hispanic Origin?--Puerto Rican | DETHNIC2 | component[ HispanicPuertoRican].valueCoding |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Mortality | 41 | Decedent of Hispanic Origin?--Cuban | DETHNIC3 | component[ HispanicCuban ].valueCoding |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
+| Mortality | 42 | Decedent of Hispanic Origin?--Other | DETHNIC4 | component[ HispanicOther ].valueCoding |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
 | Mortality | 43 | Decedent of Hispanic Origin?--Other, Literal | DETHNIC5 | component[ HispanicLiteral ].valueString |string |- |
 | Mortality | 44 | Decedent's Race--White | RACE1 | component[ White].valueBoolean |boolean |- |
 | Mortality | 45 | Decedent's Race--Black or African American | RACE2 | component[ BlackOrAfricanAmerican].valueBoolean |boolean |- |
@@ -143,6 +143,6 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
 | Mortality | 64 | Decedent's Race--Second Other Pacific Islander Literal | RACE21 | component[ SecondOtherPacificIslanderLiteral].valueString |string |- |
 | Mortality | 65 | Decedent's Race--First Other Literal | RACE22 | component[ FirstOtherRaceLiteral].valueString |string |- |
 | Mortality | 66 | Decedent's Race--Second Other Literal | RACE23 | component[ SecondOtherRaceLiteral].valueString |string |- |
-| Mortality | 83 | Decedent's Race--Missing | RACE_MVR | component[ MissingValueReason].valueCoding |codeable |[RaceMissingValueReasonVS]  |
+| Mortality | 83 | Decedent's Race--Missing | RACE_MVR | component[ MissingValueReason].valueCoding |codeable |[ValueSetRaceMissingValueReasonVitalRecords] |
 {: .grid }
 {% include markdown-link-references.md %}
