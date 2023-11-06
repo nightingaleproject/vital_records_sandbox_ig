@@ -1,6 +1,6 @@
 
 <style>
-    div.outer {
+    div.inputs {
     width:1800px;
     overflow:auto;
     }

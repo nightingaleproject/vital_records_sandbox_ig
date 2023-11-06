@@ -23,7 +23,7 @@ All of the none-of-the-above values are represented as observations with a clear
 {: .grid }
 
 <style>
-    div.outer {
+    div.inputs {
     width:1800px;
     overflow:auto;
     }
@@ -44,12 +44,12 @@ All of the none-of-the-above values are represented as observations with a clear
     </style>
 ### Natality (Live Birth) IJE Mapping
 
-<div class='outer'>
+<div class='inputs'>
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
 <tr>
 <td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>
-<td style='background-color:#98c1d9; width: 30%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>
 <td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>
 <td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
@@ -321,12 +321,12 @@ All of the none-of-the-above values are represented as observations with a clear
 </div>
 ### Coded Content
 
-<div>
+<div class='inputs'>
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
 <tr>
 <td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>
-<td style='background-color:#98c1d9; width: 30%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>
 <td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>
 <td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
@@ -380,7 +380,7 @@ All of the none-of-the-above values are represented as observations with a clear
 <tbody>
 <tr>
 <td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>
-<td style='background-color:#98c1d9; width: 30%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>
 <td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>
 <td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>

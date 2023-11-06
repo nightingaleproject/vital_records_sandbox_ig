@@ -56,8 +56,8 @@ def printHeader(hHeading, pOutputFile, pIG, tableStyle)
     pOutputFile.puts hHeading
     pOutputFile.puts ""
     if pIG == "BFDR"
-        if tableStyle == "BFDR Inputs"
-            pOutputFile.puts "<div class='outer'>"
+        if tableStyle == "BFDR Inputs" or tableStyle == "Coding"
+            pOutputFile.puts "<div class='inputs'>"
         else
             pOutputFile.puts "<div>"
         end
@@ -65,7 +65,7 @@ def printHeader(hHeading, pOutputFile, pIG, tableStyle)
         pOutputFile.puts "<tbody>"
         pOutputFile.puts "<tr>"
         pOutputFile.puts "<td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9; width: 30%;'><b>Description</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>"
         pOutputFile.puts "<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>"
         pOutputFile.puts "<td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>"
         pOutputFile.puts "<td style='background-color:#98c1d9;'><b>Field</b></td>"
@@ -101,7 +101,7 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
         profiles.append([profileName, profileHeading])
     end
     pOutputFile.puts"<style>
-    div.outer {
+    div.inputs {
     width:1800px;
     overflow:auto;
     }
@@ -254,20 +254,7 @@ File.foreach(Dir.pwd + "/fsh-generated/includes/fsh-link-references.md", chomp: 
     aliases[parts[0]]=s
 end
 
-#aliasOutputFilename = "/generated/dataDictionaries/aliasOutputFilename.md"
-#aliasOutputFilename = File.open(Dir.pwd + aliasOutputFilename, "w")
-#aliasOutputFilename.puts( aliases.map{ |k,v| "#{k} => #{v}" }.sort )
-#substitute urls properly into html
-#def exchangeURLs(pOutputFile, pOutputFilename, aliases)
-#    content = File.read(pOutputFile)
-#    File.delete(pOutputFile)
-#    aliases.each{|key, value|
-#        content=content.gsub(key,value)}
-#    contentOutputFile= File.open(Dir.pwd + pOutputFilename, "w")
-#    contentOutputFile.puts content
-#    contentOutputFile.close
-#    #File.open(pOutputFile, 'w') { |file| file.write(content) }
-#end
+#global substitute to create html links
 def exchangeURLs(pOutputFile, aliases)
     content = File.read(pOutputFile)
     aliases.each{|key, value|
