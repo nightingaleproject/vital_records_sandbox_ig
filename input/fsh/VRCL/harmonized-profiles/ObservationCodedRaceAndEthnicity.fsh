@@ -1,7 +1,7 @@
 Profile: ObservationCodedRaceAndEthnicityVitalRecords
 Parent: Observation
 Id: coded-race-and-ethnicity-vr
-Title: "Observation - Coded Race and Ethnicity"
+Title: "Observation - Coded Race and Ethnicity Vital Records"
 Description: "Coded (from NCHS) Race and Ethnicity (Observation). This is information that is coded by NCHS and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions.
 
 This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.

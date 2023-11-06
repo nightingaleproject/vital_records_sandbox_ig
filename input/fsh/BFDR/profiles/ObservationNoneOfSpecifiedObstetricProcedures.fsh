@@ -1,7 +1,7 @@
 Profile: ObservationNoneOfSpecifiedObstetricProcedures
 Parent: Observation
 Id: Observation-none-of-specified-obstetric-procedures
-Title: "Observation - None Of Specified Maternal Morbidities"
+Title: "Observation - None Of Specified Obstetric Procedures"
 Description: "This profile indicates that none of the specified obstetric procedures were present."
 * code = $loinc#73814-6 "Obstetric procedures performed [US Standard Certificate of Live Birth]"
   * ^short = "Obstetric procedures performed [US Standard Certificate of Live Birth]"
