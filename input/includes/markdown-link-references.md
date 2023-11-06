@@ -1,4 +1,3 @@
-
 [USCoreConditionEncounterDiagnosis]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-condition-encounter-diagnosis.html
 [USCoreConditionProblemsandHealthConcerns]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-condition-problems-health-concerns.html
 [USCoreLocation]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-location.html
@@ -6,7 +5,6 @@
 [USCorePatient]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html
 [USCorePractitioner]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html
 [USCorePractitionerRole]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitionerrole.html
-
 [QuestionnaireResponse]: http://hl7.org/fhir/R4/questionnaireresponse.html
 [PartialDatesAndTimes]: usage.html#partial-dates-and-times
 [Note on Decedent Name]: usage.html#decedent-name
@@ -25,12 +23,10 @@
 [Note on missing method of delivery data]: usage.html#method-of-delivery
 [Note on missing obstetric procedures data]: usage.html#obstetric-procedures
 [Handling of edit flags]: usage.html#handling-of-edit-flags
-
 [Birth and Fetal Death Vital Reporting]: bfdr_index.html
 [Vital Records Common Library]: vrcl_index.html
 [Medicolegal Death Investigation]: mdi_index.html
 [Vital Records Death Reporting]: vrdr_index.html
-
 [PHVS_Occupation_CDC_Census2010VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186
 [PHVS_Industry_CDC_Census2010VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7187
 [PHVS_Occupation_CDC_Census2012VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8026
@@ -38,5 +34,8 @@
 [PHVS_Occupation_CDC_Census2018VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8065
 [PHVS_Industry_CDC_Census2018VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8066
 [ACMESystemRejectVS]: ValueSet-vrdr-system-reject-vs.html
-
+[VRFM]: https://build.fhir.org/ig/nightingaleproject/vital_records_fhir_messaging_ig/message.html#successful-death-record-submission
+[HL7EncounterAdmitSourceVS]: http://hl7.org/fhir/ValueSet/encounter-admit-source
+[USCoreDischargeDispositionVS]: http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition
+[USCoreBirthSexVS]: http://hl7.org/fhir/us/core/ValueSet/birthsex
 {% include fsh-link-references.md %}
