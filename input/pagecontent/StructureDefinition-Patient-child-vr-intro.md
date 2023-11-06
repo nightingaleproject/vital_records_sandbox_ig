@@ -39,7 +39,7 @@ This profile is mapped to:
 | Natality | 1 | Date of Birth (Infant)--Year | IDOB_YR | birthDate |date | |
 | Natality | 2 | State, U.S. Territory or Canadian Province of Birth (Infant) - code | BSTATE | extension[patient-birthPlace].value[x].state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
 | Natality | 6 | Time of Birth | TB | birthDate.extension[patient-birthTime] | |See [PartialDatesAndTimes] |
-| Natality | 7 | Sex | ISEX | extension[us-core-birthsex].value |codeable |[USCoreBirthSexVS](http://hl7.org/fhir/us/core/ValueSet/birthsex) |
+| Natality | 7 | Sex | ISEX | extension[us-core-birthsex].value |codeable |[USCoreBirthSexVS] |
 | Natality | 8 | Date of Birth (Infant)--Month | IDOB_MO | birthDate |date | |
 | Natality | 9 | Date of Birth (Infant)--Day | IDOB_DY | birthDate |date | |
 | Natality | 10 | County of Birth | CNTYO | extension[patient-birthplace].value[x].district.extension[countyCode] |integer |See [CountyCodes] |

@@ -22,7 +22,7 @@ The DecedentAge profile of Observation records the decedents age at time of deat
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Mortality | 16 | Decedent's Age--Type | AGETYPE | valueQuantity.code |codeable |[UnitsOfAgeVS] |
+| Mortality | 16 | Decedent's Age--Type | AGETYPE | valueQuantity.code |codeable |[ValueSetUnitsOfAgeVitalRecords] |
 | Mortality | 17 | Decedent's Age--Units | AGE  | valueQuantity.value |decimal |- |
 | Mortality | 18 | Decedent's Age--Edit Flag | AGE_BYPASS | value.extension[ BypassEditFlag ].value |codeable |See [Note on Decedent Name] |
 {: .grid }
