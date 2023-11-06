@@ -7,7 +7,7 @@ This profile is mapped to:
 
 | **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
 | :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS | code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value)) |codeable |[ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? |
-| Natality | 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF | code=240278000 (External cephalic version (procedure)), <br />outcome=385671000 (Unsuccessful (qualifier value)) |codeable |[ProcedureOutcomeCodesSNOMEDCT](http://hl7.org/fhir/ValueSet/procedure-outcome) valueset includes Successful, Unsuccessful, and Partially successful values, whereas IJE values are Y, N, U. <br />Discussion needed: Is ECVF always the complement of ECVS?   <br />If there is a successful procedure, does that imply that there was NOT an unsuccessful procedure? |
+| Natality | 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS | code=240278000 (External cephalic version (procedure)), <br />outcome=385669000 (Successful (qualifier value)) |codeable | |
+| Natality | 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF | code=240278000 (External cephalic version (procedure)), <br />outcome=385671000 (Unsuccessful (qualifier value)) |codeable | |
 {: .grid }
 {% include markdown-link-references.md %}

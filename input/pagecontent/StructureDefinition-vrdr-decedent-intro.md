@@ -12,7 +12,7 @@ The Decedent profile contains basic information about the decedent, including da
 | Mortality | 9 | Decedent's Legal Name--Last | LNAME | name.family , name.use = official. (absence is equivalent to 'UNKNOWN'.) |string |- |
 | Mortality | 10 | Decedent's Legal Name--Suffix | SUFF | name.suffix , name.use = official |string |- |
 | Mortality | 13 | Sex | SEX | extension[NVSS-SexAtDeath]  |codeable |[AdministrativeGenderVS] |
-| Mortality | NA | Gender | *NO IJE MAPPING* | gender |codeable |[AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] |
+| Mortality | NA | Gender | *NO IJE MAPPING* | gender |codeable |[AdministrativeGenderVS] - See [Note on Decedent Gender] |
 | Mortality | 15 | Social Security Number | SSN | identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code="SB" |string |- |
 | Mortality | 19 | Date of Birth--Year | DOB_YR | birthDate |dateTime |See [PartialDatesAndTimes] |
 | Mortality | 20 | Date of Birth--Month | DOB_MO | birthDate |dateTime |See [PartialDatesAndTimes] |
@@ -26,7 +26,7 @@ The Decedent profile contains basic information about the decedent, including da
 | Mortality | 28 | Decedent's Residence--Inside City Limits | LIMITS | address.city.extension[ withinCityLimits]  |codeable |[ValueSetYesNoUnknownVitalRecords] |
 | Mortality | 29 | Marital Status | MARITAL | maritalStatus |codeable | [MaritalStatusVS] |
 | Mortality | 30 | Marital Status--Edit Flag | MARITAL_BYPASS | maritalStatus.extension[ BypassEditFlag]  |codeable |[EditBypass0124VS] |
-| Mortality | 143 | Decedent's spouse living at decedent's DOD? | SPOUSELV | extension[ SpouseAlive ]  |codeable | [SpouseAliveVS] |
+| Mortality | 143 | Decedent's spouse living at decedent's DOD? | SPOUSELV | extension[ SpouseAlive ]  |codeable | [ValueSetSpouseAliveVitalRecords] |
 | Mortality | 146 | Decedent's Residence - Street number | STNUM_R | address.extension[stnum] |string |- |
 | Mortality | 147 | Decedent's Residence - Pre Directional | PREDIR_R | address.extension[predir] |string |- |
 | Mortality | 148 | Decedent's Residence - Street name | STNAME_R | address.extension[stname] |string |- |
@@ -55,7 +55,7 @@ The Decedent profile contains basic information about the decedent, including da
 | Mortality Roster | 12 | Date of Birth--Day | DOB_DY | birthDate |dateTime |See [PartialDatesAndTimes] |
 | Mortality Roster | 13 | Date of Birth--Year | DOB_YR | birthDate |dateTime |See [PartialDatesAndTimes] |
 | Mortality Roster | 14 | Sex | SEX | extension[NVSS-SexAtDeath]  |codeable |[AdministrativeGenderVS] |
-| Mortality Roster | NA | Gender | *NO IJE MAPPING* | gender |codeable |[AdministrativeGenderVS](http://hl7.org/fhir/R4/valueset-administrative-gender.html) - See [Note on Decedent Gender] |
+| Mortality Roster | NA | Gender | *NO IJE MAPPING* | gender |codeable |[AdministrativeGenderVS] - See [Note on Decedent Gender] |
 | Mortality Roster | 22 | Decedent's Suffix | SUFF | name.suffix , name.use = official |string |- |
 | Mortality Roster | 26 | Decedent's Maiden Name | DMAIDEN | name.text , name.use=maiden |string | |
 | Mortality Roster | 27 | State, U.S. Territory or Canadian Province of Decedent's Residence - literal | STATETEXT_R  | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
