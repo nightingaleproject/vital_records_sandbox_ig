@@ -850,7 +850,6 @@ groups:
       - encounter-birth-babyg-quinn
       - encounter-maternity-carmen-teresa-lee
       - encounter-maternity-jada-ann-quinn
-      - expansion-parameters-bfdr
       - location-east-hospital
       - location-north-hospital
       - location-south-hospital
@@ -1337,7 +1336,6 @@ groups:
       - CapabilityStatement-medical-examiner-coroner-server
       - composition-mdi-to-edrs-a-freeman
       - diagnosticreport-mdi-toxicology-lab-a-freeman
-      - expansion-parameters-mdi
       - location-death-atlanta-ga-a-freeman
       - location-injury-atlanta-ga-a-freeman
       - MessageDefinition-toxicology-system
