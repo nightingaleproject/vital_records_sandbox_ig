@@ -1,6 +1,6 @@
 Instance: relatedperson-father-tony-lewis-common
 InstanceOf: RelatedPersonFatherVitalRecords
-Title: "RelatedPerson - Adoptive Father"
+Title: "RelatedPerson - Adoptive Father example [Tony Lewis]"
 Description: "Example of RelatedPerson-father-vr profile (adoptive father)"
 Usage: #example
 * extension[race]

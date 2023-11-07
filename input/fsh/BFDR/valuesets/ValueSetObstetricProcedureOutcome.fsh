@@ -1,7 +1,7 @@
 ValueSet: ValueSetObstetricProcedureOutcome
 Id: ValueSet-obstetric-procedure-outcome
 Title: "ValueSet - Obstetric Procedure Outcome"
-Description: "This value set contains codes that represent the successful or unsuccessful outcome of an obstretric procedure"
+Description: "This valueset contains codes that represent the successful or unsuccessful outcome of an obstretric procedure"
 * ^status = #active
 * ^experimental = false
 * insert SNOMEDCopyright

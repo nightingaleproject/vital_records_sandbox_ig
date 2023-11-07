@@ -15,7 +15,7 @@
 
 CodeSystem: CodeSystemCanadianProvincesVitalRecords
 Id: CodeSystem-canadian-provinces-vr
-Title: "Canadian Provinces"
+Title: "CodeSystem - Canadian Provinces Vital Records"
 Description: "Canadian Provinces"
 * ^caseSensitive = true
 * #AB	"Alberta" "Alberta"

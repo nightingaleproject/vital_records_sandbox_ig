@@ -1,7 +1,7 @@
 ValueSet: ValueSetFatherRelationshipVitalRecords
 Id: ValueSet-father-relationship-vr
 Title: "ValueSet - Father Relationship Vital Records"
-Description: "This value set contains codes that represent relationships describing the father's role relative to the subject."
+Description: "This valueset contains codes that represent relationships describing the father's role relative to the subject."
 * ^status = #active
 * ^experimental = false
 * $v3-RoleCode#ADOPTF "adoptive father"

@@ -1,6 +1,6 @@
 CodeSystem: CodeSystemRaceRecode40VitalRecords
 Id: CodeSystem-race-recode-40-vr
-Title: "Race Recode 40 CS"
+Title: "CodeSystem - Race Recode 40 Vital Records"
 Description: "Race Recode 40"
 * ^caseSensitive = true
 * ^experimental = false

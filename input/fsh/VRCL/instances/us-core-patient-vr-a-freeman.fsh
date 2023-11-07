@@ -1,6 +1,7 @@
 Instance: us-core-patient-vr-a-freeman
 InstanceOf: USCorePatientProfile
-Description: "Example "
+Title: "USCorePatient - Patient example [A Freeman]"
+Description: "Example of US Core Patient profile (A Freeman)"
 Usage: #example
 * extension[0]
   * extension[0]

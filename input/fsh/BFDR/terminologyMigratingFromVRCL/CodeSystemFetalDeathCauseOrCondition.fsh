@@ -1,7 +1,7 @@
 CodeSystem: FetalDeathCauseOrConditionCS
 Id: CodeSystem-vr-fetal-death-cause-or-condition
 Title: "CodeSystem - Fetal Death Cause or Condition"
-Description: "This code system contains codes local codes from PHINVADs valueset"
+Description: "This code system contains local codes from PHINVADs valueset for fetal death cause or condition"
 * ^caseSensitive = true
 * ^content = #complete
 * ^experimental = false

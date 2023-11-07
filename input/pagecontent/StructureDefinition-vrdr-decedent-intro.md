@@ -26,7 +26,7 @@ The Decedent profile contains basic information about the decedent, including da
 | Mortality | 28 | Decedent's Residence--Inside City Limits | LIMITS | address.city.extension[ withinCityLimits]  |codeable |[ValueSetYesNoUnknownVitalRecords] |
 | Mortality | 29 | Marital Status | MARITAL | maritalStatus |codeable | [MaritalStatusVS] |
 | Mortality | 30 | Marital Status--Edit Flag | MARITAL_BYPASS | maritalStatus.extension[ BypassEditFlag]  |codeable |[EditBypass0124VS] |
-| Mortality | 143 | Decedent's spouse living at decedent's DOD? | SPOUSELV | extension[ SpouseAlive ]  |codeable | [ValueSetSpouseAliveVitalRecords] |
+| Mortality | 143 | Decedent's spouse living at decedent's DOD? | SPOUSELV | extension[ SpouseAlive ]  |codeable | [SpouseAliveVS] |
 | Mortality | 146 | Decedent's Residence - Street number | STNUM_R | address.extension[stnum] |string |- |
 | Mortality | 147 | Decedent's Residence - Pre Directional | PREDIR_R | address.extension[predir] |string |- |
 | Mortality | 148 | Decedent's Residence - Street name | STNAME_R | address.extension[stname] |string |- |
