@@ -1,4 +1,4 @@
-Instance: HispanicNoUnknownCM
+Instance: ConceptMapHispanicNoUnknownVitalRecords
 InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false

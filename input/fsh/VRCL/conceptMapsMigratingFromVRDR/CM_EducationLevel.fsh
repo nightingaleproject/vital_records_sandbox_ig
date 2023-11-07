@@ -1,4 +1,4 @@
-Instance: EducationLevelCM
+Instance: ConceptMapEducationLevelVitalRecords
 InstanceOf: ConceptMap
 // Id: vrdr-education-level-cm
 Usage: #definition

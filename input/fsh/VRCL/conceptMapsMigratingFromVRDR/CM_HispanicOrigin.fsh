@@ -1,4 +1,4 @@
-Instance: HispanicOriginCM
+Instance: ConceptMapHispanicOriginVitalRecords
 InstanceOf: ConceptMap
 // Id: vrdr-hispanic-origin-cm
 Usage: #definition

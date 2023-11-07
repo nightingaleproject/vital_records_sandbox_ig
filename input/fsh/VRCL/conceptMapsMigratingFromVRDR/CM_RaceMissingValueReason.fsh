@@ -1,4 +1,4 @@
-Instance: RaceMissingValueReasonCM
+Instance: ConceptMapRaceMissingValueReasonVitalRecords
 InstanceOf: ConceptMap
 // Id: vrdr-race-missing-value-reason-cm
 Usage: #definition

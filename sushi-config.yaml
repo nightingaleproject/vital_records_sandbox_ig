@@ -449,15 +449,18 @@ groups:
   VRCLConceptMaps:
     name: VRCL Concept Maps
     resources:
-      - EducationLevelCM 
-      - HispanicNoUnknownCM
-      - HispanicOriginCM
+      - ConceptMapEducationLevelVitalRecords
+      - ConceptMapHispanicNoUnknownVitalRecords
+      - ConceptMapHispanicOriginVitalRecords
       - NewbornCongenitalAnomaliesCM
-      - RaceCodeCM 
-      - RaceMissingValueReasonCM
-      - RaceRecode40CM
+      - ConceptMapRaceCodeVitalRecords 
+      - ConceptMapRaceMissingValueReasonVitalRecords
+      - ConceptMapRaceRecode40VitalRecords
       - SpouseAliveCM
-      - UnitsOfAgeCM
+      - ConceptMapUnitsOfAgeVitalRecords
+      - ConceptMapYesNoNotApplicableVitalRecords
+      - ConceptMapYesNoUnknownNotApplicableVitalRecords
+      - ConceptMapYesNoUnknownVitalRecords
 
   VRCLExamples:
     name: VRCL Examples

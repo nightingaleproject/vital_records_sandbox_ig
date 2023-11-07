@@ -4,7 +4,7 @@ Title: "HispanicOrigin Value Set"
 Description: "NCHS HispanicOrigin Value Set.
 
 
-Mapping to IJE codes [here](ConceptMap-HispanicOriginCM.html)."
+Mapping to IJE codes [here](ConceptMap-ConceptMapHispanicOriginVitalRecords.html)."
 //* include codes from system CodeSystemHispanicOriginVitalRecords
 * CodeSystemHispanicOriginVitalRecords#100 "Non-Hispanic"
 * CodeSystemHispanicOriginVitalRecords#200 "Spaniard"

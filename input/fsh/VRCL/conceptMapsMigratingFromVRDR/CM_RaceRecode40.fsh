@@ -1,4 +1,4 @@
-Instance: RaceRecode40CM
+Instance: ConceptMapRaceRecode40VitalRecords
 InstanceOf: ConceptMap
 // Id: vrdr-race-recode40-cm
 Usage: #definition

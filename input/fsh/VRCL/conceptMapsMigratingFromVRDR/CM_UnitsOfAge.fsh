@@ -1,4 +1,4 @@
-Instance: UnitsOfAgeCM
+Instance: ConceptMapUnitsOfAgeVitalRecords
 InstanceOf: ConceptMap
 // Id: vrdr-units-of-age-cm
 Usage: #definition

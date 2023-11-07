@@ -1,4 +1,4 @@
-Instance: RaceCodeCM
+Instance: ConceptMapRaceCodeVitalRecords
 InstanceOf: ConceptMap
 // Id: vrdr-race-code-cm
 Usage: #definition
