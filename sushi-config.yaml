@@ -405,10 +405,10 @@ groups:
       - EditFlagsCS
       - CodeSystemLocalObservationsCodesVitalRecords
 
-  PHINVADSValuesets:
-    name:  ValueSets from PHINVADS
-    resources:
-      - ValueSetEducationLevelPersonVitalRecords
+  #PHINVADSValuesets:
+    #name:  ValueSets from PHINVADS
+    #resources:
+      #- ValueSetEducationLevelPersonVitalRecords
       #- FetalDeathCauseOrConditionVS
       #- FetalDeathTimePointsVS
       #- FetalPresentationsVS
@@ -426,6 +426,7 @@ groups:
       - ValueSetBirthSexVitalRecords
       # - ValueSetCanadaProvincesVitalRecords
       - ValueSetEducationLevelVitalRecords
+      - ValueSetEducationLevelPersonVitalRecords
       - ValueSetCodedRaceAndEthnicityPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetHispanicNoUnknownVitalRecords

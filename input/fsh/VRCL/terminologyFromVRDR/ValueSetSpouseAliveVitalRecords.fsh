@@ -1,6 +1,6 @@
 ValueSet: ValueSetSpouseAliveVitalRecords
 Id: ValueSet-spouse-alive-vr
-Title: "Spouse Alive Value Set"
+Title: "ValueSet - Spouse Alive Vital Records"
 Description: "The set of codes used to indicate whether the decedent's spouse is alive.
 
 Mapping to IJE codes [here](ConceptMap-SpouseAliveCM.html)."

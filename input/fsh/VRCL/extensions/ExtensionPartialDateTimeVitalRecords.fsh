@@ -1,6 +1,6 @@
 Extension: ExtensionPartialDateTimeVitalRecords
 Id: ExtensionPartialDateTimeVitalRecords
-Title: "Partial Date Time"
+Title: "Extension - Partial Date Time Vital Records"
 Description: "Provides values of a partial dateTime (Extension).
 
 If a component is missing, it is assumed unknown.

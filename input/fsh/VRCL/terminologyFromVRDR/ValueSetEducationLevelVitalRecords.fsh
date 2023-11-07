@@ -1,6 +1,6 @@
 ValueSet: ValueSetEducationLevelVitalRecords
 Id: ValueSet-education-level-vr
-Title: "Education Level"
+Title: "ValueSet - Education Level Vital Records"
 Description: "Highest educational level achieved.
 
 Mapping to IJE codes [here](ConceptMap-EducationLevelCM.html)."

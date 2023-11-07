@@ -1,7 +1,7 @@
 
 ValueSet: ValueSetRaceRecode40VitalRecords
 Id: ValueSet-race-recode-40-vr
-Title: "Race Recode 40 Value Set"
+Title: "ValueSet - Race Recode 40 Vital Records"
 Description: "NCHS Race Recode 40 Valueset.
 
 NCHS will stop delivering this coded data in this representation in 2022.

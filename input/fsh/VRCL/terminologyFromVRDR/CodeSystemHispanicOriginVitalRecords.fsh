@@ -1,6 +1,6 @@
 CodeSystem: CodeSystemHispanicOriginVitalRecords
 Id: CodeSystem-hispanic-origin-vr
-Title: "HispanicOrigin CS"
+Title: "CodeSystem - HispanicOrigin Vital Records"
 Description: "HispanicOrigin from [Appendix_D_Excel_Hispanic_Origin_Code_List_Update_2011](https://www.cdc.gov/nchs/data/dvs/Appendix_D_Excel_Hispanic_Origin_Code_List_Update_2011.xls"
 
 * ^caseSensitive = true

@@ -1,6 +1,6 @@
 ValueSet: ValueSetRaceMissingValueReasonVitalRecords
 Id: ValueSet-race-missing-value-reason-vr
-Title: "Race Missing Value Reason"
+Title: "ValueSet - Race Missing Value Reason Vital Records"
 Description: "A set of code values used to indicate the reason decedent race data is absent.
 
 Mapping to IJE codes [here](ConceptMap-RaceMissingValueReasonCM.html)."

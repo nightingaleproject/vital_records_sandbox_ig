@@ -1,6 +1,6 @@
 ValueSet: ValueSetRaceCodeVitalRecords
 Id: ValueSet-race-code-vr
-Title: "Race Code Value Set"
+Title: "ValueSet - Race Code Vital Records"
 Description: "NCHS Race Codes.
 
 Mapping to IJE codes [here](ConceptMap-RaceCodeCM.html)."
