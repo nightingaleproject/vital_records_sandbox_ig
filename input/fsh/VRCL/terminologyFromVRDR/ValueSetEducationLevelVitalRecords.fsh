@@ -1,7 +1,7 @@
 ValueSet: ValueSetEducationLevelVitalRecords
 Id: ValueSet-education-level-vr
 Title: "ValueSet - Education Level Vital Records"
-Description: "Highest educational level achieved.
+Description: "This valueset contains the set of codes used to represent the Highest educational level achieved.
 
 Mapping to IJE codes [here](ConceptMap-EducationLevelCM.html)."
 * $HL7_EducationLevelCS#ELEM "Elementary School"

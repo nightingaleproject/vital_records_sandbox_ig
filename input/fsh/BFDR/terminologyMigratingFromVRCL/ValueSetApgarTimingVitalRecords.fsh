@@ -1,7 +1,7 @@
 ValueSet: ApgarTimingVS
 Id: ValueSet-apgar-timing
 Title: "ValueSet - APGAR Score Timing"
-Description: "This value set contains codes to represent standard timings for APGAR assessments."
+Description: "This valueset contains codes to represent standard timings for APGAR assessments."
 * ^experimental = false
 * ^status = #active 
 * insert LOINCCopyright

@@ -1,7 +1,7 @@
 ValueSet: ValueSetYesNoUnknownNotApplicableVitalRecords
 Id: ValueSet-yes-no-unknown-not-applicable-vr
 Title: "ValueSet - Yes No Unknown NotApplicable Vital Records"
-Description: "Valueset with Yes, No, Unknown, and Not Applicable."
+Description: "This valueset contains the set of codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable."
 * ^status = #active
 * ^experimental = false
 * $v2-0136#Y "Yes"

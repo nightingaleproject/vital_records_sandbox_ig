@@ -1,7 +1,7 @@
 ValueSet: ValueSetHispanicNoUnknownVitalRecords
 Id: ValueSet-hispanic-no-unknown-vr
 Title: "ValueSet - Hispanic(Yes) No Unknown Vital Records"
-Description: "Value set with Hispanic(Yes), No and Unknown.
+Description: "This valueset contains the set of codes used to represent Hispanic(Yes), No and Unknown.
 
 Mapping to IJE codes [here](ConceptMap-HispanicNoUnknownCM.html)."
 * $v2-0136#N "No"

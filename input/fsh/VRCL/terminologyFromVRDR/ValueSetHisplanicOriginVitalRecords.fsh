@@ -1,7 +1,7 @@
 ValueSet: ValueSetHispanicOriginVitalRecords
 Id: ValueSet-hispanic-origin-vr
 Title: "ValueSet - HispanicOrigin Vital Records"
-Description: "NCHS HispanicOrigin Value Set.
+Description: "This valueset contains the set of codes used to represent NCHS HispanicOrigin.
 
 
 Mapping to IJE codes [here](ConceptMap-HispanicOriginCM.html)."

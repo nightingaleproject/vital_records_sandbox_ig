@@ -60,7 +60,7 @@ RuleSet: USStatesAndTerritories
 ValueSet: ValueSetUSStatesAndTerritoriesVitalRecords
 Id: ValueSet-usstates-territories-vr
 Title: "ValueSet - US States, Territories Vital Records"
-Description: "2 Letter States and Territories Value Set"
+Description: "This valueset contains the set of codes used to represent 2 Letter States and Territories"
 * ^status = #active
 * ^version = "1.0.0"
 * ^experimental = false

@@ -1,7 +1,7 @@
 ValueSet: ValueSetStatesTerritoriesAndProvincesVitalRecords
 Id: ValueSet-states-territories-provinces-vr
 Title: "ValueSet - States, Territories and Provinces Vital Records"
-Description: "2 Letter States and Provinces Value Set"
+Description: "This valueset contains the set of codes used to represent 2 Letter States and Provinces"
 * ^copyright = "The Canadian Province codesystem is copright Canada Health Infoway"
 * ^status = #active
 * ^experimental = false

@@ -2,7 +2,7 @@
 ValueSet: ValueSetRaceRecode40VitalRecords
 Id: ValueSet-race-recode-40-vr
 Title: "ValueSet - Race Recode 40 Vital Records"
-Description: "NCHS Race Recode 40 Valueset.
+Description: "This valueset contains the set of codes used to represent NCHS Race Recode 40.
 
 NCHS will stop delivering this coded data in this representation in 2022.
 
