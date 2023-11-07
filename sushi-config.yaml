@@ -439,7 +439,6 @@ groups:
       - ValueSetRaceMissingValueReasonVitalRecords
       - ValueSetRaceRecode40VitalRecords
       - ValueSetResidenceCountryVitalRecords
-      - ValueSetSpouseAliveVitalRecords
       - ValueSetStatesTerritoriesAndProvincesVitalRecords
       - ValueSetUSStatesAndTerritoriesVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
@@ -457,7 +456,6 @@ groups:
       - RaceCodeCM 
       - RaceMissingValueReasonCM
       - RaceRecode40CM
-      - SpouseAliveCM
       - UnitsOfAgeCM
 
   VRCLExamples:
@@ -468,8 +466,6 @@ groups:
       - InputRaceAndEthnicityFather
       - InputRaceAndEthnicityMother
       - expansion-parameters-vr-common
-      - location-death-vr-atlanta-ga-a-freeman
-      - location-injury-vr-atlanta-ga-a-freeman
       - observation-autopsy-performed-indicator-vr-a-freeman
       - observation-autopsy-performed-not-named-common
       #- observation-tabulated-ethnicity-jada-ann-quinn-common
@@ -1085,6 +1081,7 @@ groups:
       - PlaceOfDeathVS
       - PlaceOfInjuryVS
       - ReplaceStatusVS
+      - SpouseAliveVS
       - SystemRejectVS
       - TransaxConversionVS
       - TransportationIncidentRoleVS
@@ -1113,6 +1110,7 @@ groups:
       - PlaceOfDeathCM
       - PlaceOfInjuryCM
       - ReplaceStatusCM
+      - SpouseAliveCM
       - SystemRejectCM
       - TransaxConversionCM
       - TransportationIncidentRoleCM
@@ -1185,6 +1183,8 @@ groups:
       - InjuryLocation-Example1
       - InputRaceAndEthnicity-Example1
       - InputRaceAndEthnicityUT-Example1
+      - location-death-vr-atlanta-ga-a-freeman
+      - location-injury-vr-atlanta-ga-a-freeman
       - MannerOfDeath-Example1
       - MannerOfDeathUT-Example1
       - ManualUnderlyingCauseOfDeath-Example1

@@ -1,6 +1,6 @@
 Instance: relatedperson-mother-gestational-carmen-teresa-lee-common
 InstanceOf: RelatedPersonMotherGestationalVitalRecords
-Title: "RelatedPerson - Mother Gestaional example [Carmen Teresa Lee]"
+Title: "RelatedPerson - Mother Gestational example [Carmen Teresa Lee]"
 Description: "Example of Relatedperson-gestational-vr profile (Carmen Teresa Lee)"
 Usage: #example
 * extension[0]

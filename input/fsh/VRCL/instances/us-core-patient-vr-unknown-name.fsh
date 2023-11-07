@@ -1,5 +1,6 @@
 Instance: us-core-patient-vr-unknown-name
 InstanceOf: USCorePatientProfile
+Title: "USCorePatient - Patient example [Unknown Name]"
 Description: "Example "
 Usage: #example
 * identifier

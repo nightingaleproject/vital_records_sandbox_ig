@@ -1,7 +1,7 @@
 ValueSet: PregnancyReportEditFlagsVS
 Id: ValueSet-pregnancy-report-edit-flags 
-Title: "Pregnancy Report Edit Flags (NCHS)"
-Description: "Pregnancy Report Edit Flags, based on PHVS_PregnancyReportEditFlags_NCHS. Used for MothersHeight, MothersDeliveryWeight, MothersPrepregnancyWeight, NumberPrenatalCareVisits "
+Title: "ValueSet - Pregnancy Report Edit Flags (NCHS)"
+Description: "This value set contains codes to represent Pregnancy Report Edit Flags. This valueset is based on [PHVS_PregnancyReportEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BD25B456-85EC-45D7-B578-1024EE2920F4). Used for MothersHeight, MothersDeliveryWeight, MothersPrepregnancyWeight, NumberPrenatalCareVisits"
 * ^experimental = false
 * EditFlagsCS#editBypass0 "Edit Passed" //PHC1362
 * EditFlagsCS#editBypass1 "Edit Failed, Data Queried, and Verified" //PHC1363

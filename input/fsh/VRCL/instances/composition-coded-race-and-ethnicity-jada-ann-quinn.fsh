@@ -1,6 +1,7 @@
 Instance: CodedRaceAndEthnicity-Mother
 InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
 Usage: #example
+Title: "Observation - CodedRaceAndEthnicity example [Mother]"
 Description: "CodedRaceAndEthnicity Mother"
 * code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother
 * status = #final
@@ -14,6 +15,7 @@ Description: "CodedRaceAndEthnicity Mother"
 Instance: CodedRaceAndEthnicity-Father
 InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
 Usage: #example
+Title: "Observation - CodedRaceAndEthnicity example [Father]"
 Description: "CodedRaceAndEthnicity Father"
 * code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather
 * status = #final
@@ -28,6 +30,7 @@ Description: "CodedRaceAndEthnicity Father"
 Instance: InputRaceAndEthnicityMother
 InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
+Title: "Observation - InputRaceAndEthnicity example [Mother]"
 Description: "InputRaceAndEthnicity Mother"
 * insert AddMetaProfile(InputRaceAndEthnicity)
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother
@@ -60,6 +63,7 @@ Description: "InputRaceAndEthnicity Mother"
 Instance: InputRaceAndEthnicityFather
 InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
+Title: "Observation - InputRaceAndEthnicity example [Father]"
 Description: "InputRaceAndEthnicity Father"
 * insert AddMetaProfile(InputRaceAndEthnicity)
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather
