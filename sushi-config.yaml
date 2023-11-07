@@ -456,6 +456,11 @@ groups:
       - RaceMissingValueReasonCM
       - RaceRecode40CM
       - UnitsOfAgeCM
+  
+  VRCLParameters:
+    name:
+    resources:
+      - expansion-parameters-vr-common
 
   VRCLExamples:
     name: VRCL Examples
@@ -464,7 +469,6 @@ groups:
       - CodedRaceAndEthnicity-Mother
       - InputRaceAndEthnicityFather
       - InputRaceAndEthnicityMother
-      - expansion-parameters-vr-common
       - observation-autopsy-performed-indicator-vr-a-freeman
       - observation-autopsy-performed-not-named-common
       #- observation-tabulated-ethnicity-jada-ann-quinn-common
@@ -480,111 +484,167 @@ groups:
     name: BFDR Capability Statements
     resources: 
       - CapabilityStatement-bfdr
-
-  BFDRProfiles:
-    name: BFDR Profiles
+  
+  BFDRBundles:
+    name: BFDR Bundles
     resources:
       - BundleDocumentBFDR
-      - CompositionCodedCauseOfFetalDeath
-      - CompositionCodedRaceAndEthnicity
-      - CompositionJurisdictionFetalDeathReport
-      - CompositionJurisdictionLiveBirthReport
+      - DemographicCodedContentBundleBFDR
+  
+  BFDRCompositionsEHRtoVRO:
+    name: BFDR Compositions EHR to VRO
+    resources:
       - CompositionProviderFetalDeathReport
       - CompositionProviderLiveBirthReport
-      - DemographicCodedContentBundleBFDR
-      - ConditionPrepregnancyHypertension
+  
+  BFDRCompositionsVROtoNCHS:
+    name: BFDR Compositions VRO to NCHS
+    resources:
+      - CompositionJurisdictionFetalDeathReport
+      - CompositionJurisdictionLiveBirthReport
+  
+  BFDRCompositionsNCHStoVRO:
+    name: BFDR Compositions NCHS to VRO
+    resources:
+      - CompositionCodedCauseOfFetalDeath
+      - CompositionCodedRaceAndEthnicity
+
+  BFDRProfilesEncounter:
+    name: BFDR Profiles Encounter
+    resources:
+      - EncounterBirth
+      - Encounter_Maternity
+      - ExtensionEncounterMaternityReference
+
+  BFDRProfilesNewbornFetus:
+    name: BFDR Profiles Newborn/Fetus
+    resources:
+      - ConditionCongenitalAnomalyOfNewborn
+      - ObservationApgarScore
+      - ObservationBirthWeight
+      - ObservationFetalPresentation
+      - ObservationGestationalAgeAtDelivery
+      - ObservationInfantBreastfedAtDischarge
+      - ObservationInfantLiving
+      - ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn
+      - ObservationNumberFetalDeathsThisDelivery
+      - ObservationNumberLiveBirthsThisDelivery
+      
+  BFDRProfilesAbnormalConditionoftheNewborn:
+    name: BFDR Profiles Abnormal Condition of the Newborn
+    resources:
+      - ConditionSeizure
+      - ObservationNICUAdmission
+      - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
+      - ProcedureAntibioticSuspectedNeonatalSepsis
+      - ProcedureAssistedVentilationFollowingDelivery
+      - ProcedureAssistedVentilationMoreThanSixHours
+      - ProcedureSurfactantReplacementTherapy
+
+  BFDRProfilesCharacteristicsofLaborandDelivery :
+    name: BFDR Profiles Characteristics of Labor and Delivery 
+    resources:
+      - ConditionChorioamnionitis
+      - ObservationAntibioticsAdministeredDuringLabor
+      - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
+      - ObservationSteroidsFetalLungMaturation
+      - ProcedureAugmentationOfLabor
+      - ProcedureEpiduralOrSpinalAnesthesia
+      - ProcedureInductionOfLabor
+      
+  
+  BFDRProfilesMotherPrenatal:
+    name: BFDR Mother Prenatal Profiles
+    resources:
+      - CoveragePrincipalPayerDelivery
+      - ObservationCigaretteSmokingBeforeDuringPregnancy
+      - ObservationDateOfFirstPrenatalCareVisit
+      - ObservationDateOfLastLiveBirth
+      - ObservationDateOfLastOtherPregnancyOutcome
+      - ObservationMotherReceivedWICFood
+      - ObservationNumberBirthsNowDead
+      - ObservationNumberBirthsNowLiving
+      - ObservationNumberOtherPregnancyOutcomes
+      - ObservationNumberPrenatalVisits
+      - ObservationPlannedToDeliverAtHome
+      
+  
+  BFDRProfilesMedicalandHealthInformation:
+    name: BFDR Medical and Health Information Profiles
+    resources:
+      - ConditionInfectionPresentDuringPregnancy
+      - ObservationLaborTrialAttempted
+      - ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy
+      - ObservationNoneOfSpecifiedObstetricProcedures
+      - ObservationNumberPreviousCesareans
+      - ObservationUnknownFinalRouteMethodDelivery
+      - ProcedureFinalRouteMethodDelivery
+      - ProcedureObstetric
+
+  BFDRProfilesPregnancyRiskFactors:
+    name: BFDR Pregnancy Risk Factors Profiles
+    resources:
       - ConditionEclampsiaHypertension
       - ConditionGestationalDiabetes
       - ConditionGestationalHypertension
       - ConditionPrepregnancyDiabetes
-      - ObservationApgarScore
-      - ObservationBirthWeight
-      #- ObservationFinalRouteAndMethodOfDelivery
-      - ObservationGestationalAgeAtDelivery
-      - ObservationInfantLiving
-      - ObservationLastMenstrualPeriod
-      - ObservationMotherDeliveryWeight
-      - ObservationMotherHeight
-      - ObservationMotherPrepregnancyWeight
-      - ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn
+      - ConditionPrepregnancyHypertension
       - ObservationNoneOfSpecifiedPregnancyRiskFactors
-      - ObservationNumberBirthsNowDead
-      - ObservationNumberBirthsNowLiving
-      - ObservationNumberFetalDeathsThisDelivery
-      - ObservationNumberLiveBirthsThisDelivery
-      - ObservationNumberOtherPregnancyOutcomes
-      - ObservationNumberPrenatalVisits
-      - ObservationNumberPreviousCesareans
+      - ObservationPreviousCesarean
       - ObservationPreviousPretermBirth
-      - ObservationUnknownFinalRouteMethodDelivery
-      - ProcedureInfertilityTreatment
       - ProcedureArtificialInsemination
       - ProcedureAssistedFertilization
-      #- ObservationPregnancyRiskFactor
-      #- PatientDecedentFetus
-      #- PatientMother
-      - ConditionChorioamnionitis
-      - ConditionCongenitalAnomalyOfNewborn
-      - ConditionFetalDeathCauseOrCondition
-      - ConditionFetalDeathOtherCauseOrCondition
-      - ProcedureFinalRouteMethodDelivery
-      - ConditionInfectionPresentDuringPregnancy
+      - ProcedureInfertilityTreatment
+      
+  BFDRProfilesMaternalMorbidity:
+    name: BFDR Maternal Morbidity Profiles
+    resources:
       - ConditionPerinealLaceration
       - ConditionRupturedUterus
-      - ConditionSeizure
-      - CoveragePrincipalPayerDelivery
-      - EncounterBirth
-      - Encounter_Maternity
-      - ObservationAntibioticsAdministeredDuringLabor
+      - ObservationICUAdmission
+      - ProcedureBloodTransfusion
+      - ProcedureUnplannedHysterectomy
+      - ObservationNoneOfSpecifiedMaternalMorbidities
+  
+  BFDRProfilesFetalDeathInformation:
+    name: BFDR Fetal Death Information Profiles
+    resources:
+      - ConditionFetalDeathCauseOrCondition
+      - ConditionFetalDeathOtherCauseOrCondition
       - ObservationAutopsyHistologicalExamResultsUsed
-      - ObservationCigaretteSmokingBeforeDuringPregnancy
       - ObservationCodedInitiatingFetalDeathCauseOrCondition
       - ObservationCodedOtherFetalDeathCauseOrCondition
-      - ObservationDateOfFirstPrenatalCareVisit
-      - ObservationDateOfLastLiveBirth
-      - ObservationDateOfLastOtherPregnancyOutcome
       - ObservationFetalDeathTimePoint
-      - ObservationFetalPresentation
-      #- ObservationFinalRouteAndMethodOfDelivery
       - ObservationHistologicalPlacentalExamPerformed
-      - ObservationICUAdmission
-      - ObservationInfantBreastfedAtDischarge
-      - ObservationLaborTrialAttempted
-      #- ObservationMethodOfDisposition
+      
+  BFDRProfilesParentInformation:
+    name: BFDR Parent Information Profiles
+    resources:
       - ObservationMotherMarriedDuringPregnancy
-      - ObservationMotherReceivedWICFood
-      - ObservationNICUAdmission
-      - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
-      - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
-      - ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy
-      - ObservationNoneOfSpecifiedMaternalMorbidities
-      - ObservationNoneOfSpecifiedObstetricProcedures
       - ObservationPaternityAcknowledgementSigned
-      - ObservationPlannedToDeliverAtHome
-      - ObservationPreviousCesarean
       - ObservationSSNRequestedForChild
-      - ObservationSteroidsFetalLungMaturation
-      - ProcedureAntibioticSuspectedNeonatalSepsis
-      - ProcedureAssistedVentilationFollowingDelivery
-      - ProcedureAssistedVentilationMoreThanSixHours
-      - ProcedureAugmentationOfLabor
-      - ProcedureBloodTransfusion
-      - ProcedureEpiduralOrSpinalAnesthesia
-      - ProcedureInductionOfLabor
-      - ProcedureObstetric
-      - ProcedureSurfactantReplacementTherapy
-      - ProcedureUnplannedHysterectomy
 
-  BFDRExtensions:
-    name: BFDR Extensions 
+  BFDRExtensionsAdministrative:
+    name: BFDR Administrative Extensions
     resources:
       - ExtensionDateFiledByRegistrar
       - ExtensionDatereceivedByRegistrar
-      - ExtensionEncounterMaternityReference
       - ExtensionFetalDeathLocalFileNumber
       - ExtensionFetalDeathReportNumber
       - ExtensionLiveBirthCertificateNumber
       - ExtensionLiveBirthLocalFileNumber
+  
+
+  # BFDRExtensions:
+  #   name: BFDR Extensions 
+  #   resources:
+  #     - ExtensionDateFiledByRegistrar
+  #     - ExtensionDatereceivedByRegistrar
+  #     - ExtensionEncounterMaternityReference
+  #     - ExtensionFetalDeathLocalFileNumber
+  #     - ExtensionFetalDeathReportNumber
+  #     - ExtensionLiveBirthCertificateNumber
+  #     - ExtensionLiveBirthLocalFileNumber
 
   # BFDRCompositionBundleProfiles:
   #   name: BFDR  Compositions and Bundles 
@@ -751,6 +811,12 @@ groups:
       - HistologicalPlacentalExaminationCM
       - InfectionsDuringPregnancyLiveBirthCM
       - NewbornCongenitalAnomaliesCM
+
+  BFDRParameters:
+    name: BFDR Parameters
+    resources:
+      - expansion-parameters-bfdr
+
 
   BFDRExamples:
     name: BFDR Examples
@@ -1255,6 +1321,11 @@ groups:
     name: MDI Value Set
     resources:
       - ValueSetTrackingNumberType
+
+  MDIParameters:
+    name: MDI Parameters
+    resources:
+      - expansion-parameters-mdi
   
   MDIExamples:
     name: MDI Examples
