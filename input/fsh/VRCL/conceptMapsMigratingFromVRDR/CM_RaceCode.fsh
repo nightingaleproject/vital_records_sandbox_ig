@@ -1,4 +1,4 @@
-Instance: RaceCodeCM
+Instance: ConceptMapRaceCodeVitalRecords
 InstanceOf: ConceptMap
 Title: "ConceptMap - Race Code Vital Records"
 // Id: vrdr-race-code-cm

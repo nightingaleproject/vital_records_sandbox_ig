@@ -6,7 +6,7 @@ Description: "This valueset contains the set of codes used to represent NCHS Rac
 
 NCHS will stop delivering this coded data in this representation in 2022.
 
-Mapping to IJE codes [here](ConceptMap-RaceRecode40CM.html)."
+Mapping to IJE codes [here](ConceptMap-ConceptMapRaceRecode40VitalRecords.html)."
 //* include codes from system CodeSystemRaceRecode40VitalRecords
 * CodeSystemRaceRecode40VitalRecords#01 "White"
 * CodeSystemRaceRecode40VitalRecords#02 "Black"

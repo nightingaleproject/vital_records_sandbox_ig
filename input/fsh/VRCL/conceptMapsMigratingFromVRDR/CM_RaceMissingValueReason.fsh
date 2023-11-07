@@ -1,4 +1,4 @@
-Instance: RaceMissingValueReasonCM
+Instance: ConceptMapRaceMissingValueReasonVitalRecords
 InstanceOf: ConceptMap
 Title: "ConceptMap - Race Missing Value Reason Vital Records"
 // Id: vrdr-race-missing-value-reason-cm

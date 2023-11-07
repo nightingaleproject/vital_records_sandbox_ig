@@ -1,4 +1,4 @@
-Instance: HispanicNoUnknownCM
+Instance: ConceptMapHispanicNoUnknownVitalRecords
 InstanceOf: ConceptMap
 Title: "ConceptMap - Hispanic No Unknown Vital Records"
 Usage: #definition
