@@ -405,10 +405,10 @@ groups:
       - EditFlagsCS
       - CodeSystemLocalObservationsCodesVitalRecords
 
-  PHINVADSValuesets:
-    name:  ValueSets from PHINVADS
-    resources:
-      - ValueSetEducationLevelPersonVitalRecords
+  #PHINVADSValuesets:
+    #name:  ValueSets from PHINVADS
+    #resources:
+      #- ValueSetEducationLevelPersonVitalRecords
       #- FetalDeathCauseOrConditionVS
       #- FetalDeathTimePointsVS
       #- FetalPresentationsVS
@@ -426,6 +426,7 @@ groups:
       - ValueSetBirthSexVitalRecords
       # - ValueSetCanadaProvincesVitalRecords
       - ValueSetEducationLevelVitalRecords
+      - ValueSetEducationLevelPersonVitalRecords
       - ValueSetCodedRaceAndEthnicityPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetHispanicNoUnknownVitalRecords
@@ -438,7 +439,6 @@ groups:
       - ValueSetRaceMissingValueReasonVitalRecords
       - ValueSetRaceRecode40VitalRecords
       - ValueSetResidenceCountryVitalRecords
-      - ValueSetSpouseAliveVitalRecords
       - ValueSetStatesTerritoriesAndProvincesVitalRecords
       - ValueSetUSStatesAndTerritoriesVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
@@ -452,11 +452,9 @@ groups:
       - ConceptMapEducationLevelVitalRecords
       - ConceptMapHispanicNoUnknownVitalRecords
       - ConceptMapHispanicOriginVitalRecords
-      - NewbornCongenitalAnomaliesCM
       - ConceptMapRaceCodeVitalRecords 
       - ConceptMapRaceMissingValueReasonVitalRecords
       - ConceptMapRaceRecode40VitalRecords
-      - SpouseAliveCM
       - ConceptMapUnitsOfAgeVitalRecords
       - ConceptMapYesNoNotApplicableVitalRecords
       - ConceptMapYesNoUnknownNotApplicableVitalRecords
@@ -470,8 +468,6 @@ groups:
       - InputRaceAndEthnicityFather
       - InputRaceAndEthnicityMother
       - expansion-parameters-vr-common
-      - location-death-vr-atlanta-ga-a-freeman
-      - location-injury-vr-atlanta-ga-a-freeman
       - observation-autopsy-performed-indicator-vr-a-freeman
       - observation-autopsy-performed-not-named-common
       #- observation-tabulated-ethnicity-jada-ann-quinn-common
@@ -757,6 +753,7 @@ groups:
       - FetalPresentationCM
       - HistologicalPlacentalExaminationCM
       - InfectionsDuringPregnancyLiveBirthCM
+      - NewbornCongenitalAnomaliesCM
 
   BFDRExamples:
     name: BFDR Examples
@@ -1087,6 +1084,7 @@ groups:
       - PlaceOfDeathVS
       - PlaceOfInjuryVS
       - ReplaceStatusVS
+      - SpouseAliveVS
       - SystemRejectVS
       - TransaxConversionVS
       - TransportationIncidentRoleVS
@@ -1115,6 +1113,7 @@ groups:
       - PlaceOfDeathCM
       - PlaceOfInjuryCM
       - ReplaceStatusCM
+      - SpouseAliveCM
       - SystemRejectCM
       - TransaxConversionCM
       - TransportationIncidentRoleCM
@@ -1187,6 +1186,8 @@ groups:
       - InjuryLocation-Example1
       - InputRaceAndEthnicity-Example1
       - InputRaceAndEthnicityUT-Example1
+      - location-death-vr-atlanta-ga-a-freeman
+      - location-injury-vr-atlanta-ga-a-freeman
       - MannerOfDeath-Example1
       - MannerOfDeathUT-Example1
       - ManualUnderlyingCauseOfDeath-Example1

@@ -1,7 +1,7 @@
 Instance: observation-autopsy-performed-indicator-vr-a-freeman
 InstanceOf: ObservationAutopsyPerformedIndicatorVitalRecords
-Title: "Observation - Autopsy Performed Indicator Vital Records - A Freeman"
-Description: "Example "
+Title: "Observation - Autopsy Performed Indicator example [A Freeman]"
+Description: "Example of Observation-autopsy-performed-indicator-vr profile (A Freeman)"
 Usage: #example
 * status = #final
 * subject = Reference(us-core-patient-vr-a-freeman)

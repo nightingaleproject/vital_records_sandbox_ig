@@ -1,7 +1,7 @@
 ValueSet: ValueSetRaceMissingValueReasonVitalRecords
 Id: ValueSet-race-missing-value-reason-vr
-Title: "Race Missing Value Reason"
-Description: "A set of code values used to indicate the reason decedent race data is absent.
+Title: "ValueSet - Race Missing Value Reason Vital Records"
+Description: "This valueset contains the set of codes used to indicate the reason decedent race data is absent.
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapRaceMissingValueReasonVitalRecords.html)."
 * insert boilerplate

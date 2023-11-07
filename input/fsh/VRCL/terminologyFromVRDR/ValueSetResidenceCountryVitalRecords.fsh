@@ -1,7 +1,7 @@
 ValueSet: ValueSetResidenceCountryVitalRecords
 Id: ValueSet-residence-country-vr
-Title: "Residence Country Value Set"
-Description: "2 Letter Residence Country Codes from GEC and ISO 3166-1.  Excludes historic countries that no longer exist"
+Title: "ValueSet - Residence Country Vital Records"
+Description: "This valueset contains the set of codes used to represent 2 Letter Residence Country Codes from GEC and ISO 3166-1.  Excludes historic countries that no longer exist"
 * include codes from system CodeSystemCountryCodeVitalRecords
 * exclude CodeSystemCountryCodeVitalRecords#CL
 * exclude CodeSystemCountryCodeVitalRecords#CZ

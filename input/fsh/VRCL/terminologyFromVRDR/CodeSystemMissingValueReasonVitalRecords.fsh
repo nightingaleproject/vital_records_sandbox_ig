@@ -1,6 +1,6 @@
 CodeSystem: CodeSystemMissingValueReasonVitalRecords
 Id: CodeSystem-missing-value-reason-vr
-Title: "Missing Value Reason Codesystem"
+Title: "CodeSystem - Missing Value Reason Vital Records"
 Description: "Missing Value Reason Codesystem"
 * ^caseSensitive = false
 * #R "Refused" "Patient was asked but refused to provide an answer."

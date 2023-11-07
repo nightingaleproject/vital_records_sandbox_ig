@@ -1,6 +1,6 @@
 Extension: ExtensionPartialDateTimeVitalRecords
 Id: ExtensionPartialDateTimeVitalRecords
-Title: "Partial Date Time"
+Title: "Extension - Partial Date Time Vital Records"
 Description: "Provides values of a partial dateTime (Extension).
 
 If a component is missing, it is assumed unknown.
@@ -30,7 +30,7 @@ When the known components of the date can be expressed as a valid dateTime, the 
 
 Extension: ExtensionPartialDateVitalRecords
 Id: ExtensionPartialDateVitalRecords
-Title: "Partial Date"
+Title: "Extension - Partial Date Vital Records"
 Description: "Provides values of a partial date (Extension).
 
 If a component is missing, it is assumed unknown.
@@ -53,7 +53,7 @@ When the known components of the date can be expressed as a valid dateTime, the 
 
 Extension: ExtensionDatePartAbsentReasonVitalRecords
 Id: ExtensionDatePartAbsentReasonVitalRecords
-Title: "Partial Date Absent Reason"
+Title: "Extension - Partial Date Absent Reason Vital Records"
 Description: "Provides values of a partial date (Extension).
 If a component is missing, it is assumed unknown.
 * This extension SHOULD NOT be used when the value can be expressed as a [date](https://build.fhir.org/datatypes.html#date), specifically YYYY, YYYY-MM or YYYY-MM-DD).

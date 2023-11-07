@@ -1,6 +1,6 @@
 Extension: ExtensionCityCodeVitalRecords
 Id: CityCode
-Title: "City Code"
+Title: "Extension - City Code Vital Records"
 Description: "City expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)"
 * ^context.type = #element
 * ^context.expression = "Address.city"
@@ -14,7 +14,7 @@ Description: "City expressed as a numeric value.  As of the date of publication,
 
 Extension: ExtensionDistrictCodeVitalRecords
 Id: DistrictCode
-Title: "District Code"
+Title: "Extension - District Code Vital Records"
 Description: "District expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)"
 //* insert boilerplate
 * ^context.type = #element
@@ -37,31 +37,31 @@ Description: "District expressed as a numeric value.  As of the date of publicat
 
 Extension: ExtensionPreDirectionalVitalRecords
 Id: PreDirectional
-Title: "PreDirectional"
+Title: "Extension - PreDirectional Vital Records"
 Description: "PreDirectional"
 * insert addressextension(10)
 Extension: ExtensionStreetNameVitalRecords
 Id: StreetName
-Title: "StreetName"
+Title: "Extension - StreetName Vital Records"
 Description: "StreetName"
 * insert addressextension(50)
 Extension: ExtensionStreetNumberVitalRecords
 Id: StreetNumber
-Title: "StreetNumber"
+Title: "Extension - StreetNumber Vital Records"
 Description: "StreetNumber"
 * insert addressextension(10)
 Extension: ExtensionStreetDesignatorVitalRecords
 Id: StreetDesignator
-Title: "StreetDesignator"
+Title: "Extension - StreetDesignator Vital Records"
 Description: "StreetDesignator"
 * insert addressextension(10)
 Extension: ExtensionPostDirectionalVitalRecords
 Id: PostDirectional
-Title: "PostDirectional"
+Title: "Extension - PostDirectional Vital Records"
 Description: "PostDirectional"
 * insert addressextension(10)
 Extension: ExtensionUnitOrAptNumberVitalRecords
 Id: UnitOrAptNumber
-Title: "UnitOrAptNumber"
+Title: "Extension - UnitOrAptNumber Vital Records"
 Description: "UnitOrAptNumber"
 * insert addressextension(10)
