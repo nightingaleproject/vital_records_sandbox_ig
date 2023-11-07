@@ -1216,7 +1216,7 @@ groups:
       - CompositionMDIToEDRS
       - DiagnosticReportToxicologyToMDI 
       - MessageHeaderToxicologyToMDI
-      - ObservationAutopsyPerformedIndicator
+      #- ObservationAutopsyPerformedIndicator
       - ObservationToxicologyLabResult
       - SpecimenToxicologyLab
 

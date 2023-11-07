@@ -206,7 +206,7 @@ Description: "This Composition profile represents data sent from an MDI informat
 //     * ^short = "If autopsy was performed, if autopsy findings are available, and the autopsy Performer"
 //     * ^definition = "If autopsy was performed, if autopsy findings are available, and the autopsy Performer"
 // * section[narratives] ^label = "This slice contains additional death investigation narrative descriptions."
-* insert BundleSectionSlice(exam-autopsy, autopsy-performed, 0, *,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], ObservationAutopsyPerformedIndicator )
+* insert BundleSectionSlice(exam-autopsy, autopsy-performed, 0, *,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], ObservationAutopsyPerformedIndicatorVitalRecords )
 * insert BundleSectionSlice(exam-autopsy, autopsy-location, 0, *,  [[If autopsy was performed, location.]],  [[If autopsy was performed, location.]], USCoreOrganizationProfile or USCoreLocation )
 
 
