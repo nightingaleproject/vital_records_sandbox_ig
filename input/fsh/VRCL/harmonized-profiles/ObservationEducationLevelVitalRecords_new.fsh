@@ -11,7 +11,7 @@ VRDR has no MS flags. VRDR has bypassEditFlag extension, VRCL does not.
 */
 
 Profile: ObservationEducationLevelVitalRecords
-Parent: Observation
+Parent: ObservationSimpleVitalRecords
 Id: Observation-education-level-vr
 Title: "Observation - Education Level Vital Records"
 Description: "The highest degree or level of schooling completed by the decedent or parent. 

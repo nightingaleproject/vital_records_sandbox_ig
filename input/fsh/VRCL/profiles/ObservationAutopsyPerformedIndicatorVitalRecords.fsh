@@ -1,5 +1,5 @@
 Profile: ObservationAutopsyPerformedIndicatorVitalRecords
-Parent: Observation
+Parent: ObservationSimpleVitalRecords
 Id: Observation-autopsy-performed-indicator-vr
 Title: "Observation - Autopsy Performed Indicator Vital Records"
 Description: "This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."

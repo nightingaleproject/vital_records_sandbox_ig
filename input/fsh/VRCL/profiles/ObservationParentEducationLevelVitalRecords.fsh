@@ -1,5 +1,5 @@
 Profile: ObservationParentEducationLevelVitalRecords
-Parent: Observation
+Parent: ObservationSimpleVitalRecords
 Id: Observation-parent-education-level-vr
 Title: "Observation - Parent Education Level Vital Records"
 Description: "The highest degree or level of schooling completed by the parent."

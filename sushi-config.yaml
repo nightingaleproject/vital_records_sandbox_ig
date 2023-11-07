@@ -321,6 +321,7 @@ groups:
   VRCLProfiles:
     name: VRCL Profiles
     resources:
+      - ObservationSimpleVitalRecords
       - ObservationAutopsyPerformedIndicatorVitalRecords
       - ObservationCodedRaceAndEthnicityVitalRecords
       - ObservationEducationLevelVitalRecords

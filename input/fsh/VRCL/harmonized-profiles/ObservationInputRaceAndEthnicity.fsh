@@ -1,5 +1,5 @@
 Profile: ObservationInputRaceAndEthnicityVitalRecords
-Parent: Observation
+Parent: ObservationSimpleVitalRecords
 Id: input-race-and-ethnicity-vr
 Title: "Observation - Input Race and Ethnicity Vital Records"
 Description: "Input (from EDRS or EBRS) Race and Ethnicity (Observation). This is information collected by jurisdictions and submitted to NCHS.
