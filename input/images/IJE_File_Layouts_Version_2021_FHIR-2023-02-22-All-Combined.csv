@@ -1422,7 +1422,7 @@ U = Unknown",,BFDR,ObservationMotherReceivedWICFood,value,codeable,[ValueSetYesN
 1278,ITOP,96,844,1,"Retained products
 (at time of procedure)",RETAN_TP,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
 367,Surveillance,96,1378,1,Decedent's spouse living at decedent's DOD?,SPOUSELV,"1=yes; 2=no; 8=unmarried; 9=unknown;
-blank if not reported",I,VRDR,Decedent,extension[ValueSetSpouseAliveVitalRecords] ,codeable, [ValueSetSpouseAliveVitalRecords],,,,,,Decedent,
+blank if not reported",I,VRDR,Decedent,extension[ValueSetSpouseAliveVitalRecords] ,codeable, [SpouseAliveVS],,,,,,Decedent,
 1279,ITOP,97,845,1,"Death 
 (at time of procedure)",DEATH_TP,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
 105,Mortality,97,693,2,Date of Registration--Month,DOR_MO,"01-12, Blank",,VRDR,DeathCertificate,date,dateTime,-,,y,,,,DeathCertificate,
@@ -1861,7 +1861,7 @@ IJE Fetal Death Data Elements: RUT, AINT
 414,Surveillance,143,3392,5,Decedent's Birth Place City - Code,DBPLACECITYCODE,NCHS Instruction Manual: Part 8,i,VRDR,Decedent,extension[patient-birthPlace].value[x].city.extension[ cityCode],integer,see [CityCodes],,,,,,Decedent,
 960,Fetal Death,143,524,4,Weight of Fetus,FWG,0000-9999,,BFDR,ObservationBirthWeight,value,quantity,,B,,,,,Observation-birth-weight-vr,
 155,Mortality,143,1384,1,Decedent's spouse living at decedent's DOD?,SPOUSELV,"1=yes; 2=no; 8=unmarried; 9=unknown;
-blank if not reported",I,VRDR,Decedent,extension[ SpouseAlive ] ,codeable, [ValueSetSpouseAliveVitalRecords],,,,,,Decedent,
+blank if not reported",I,VRDR,Decedent,extension[ SpouseAlive ] ,codeable, [SpouseAliveVS],,,,,,Decedent,
 607,Natality,143,787,2,Previous Live Births Now Dead,PLBD,"00-30, 99",,BFDR,ObservationNumberBirthsNowDead,value,integer,,B,,,,,Observation-number-births-now-dead-vr,
 1484,Birth Infant Death,143,787,2,Previous Live Births Now Dead,PLBD,"00-30, 99",,,,,,,,,,,,,
 1325,ITOP,143,1185,1,Reason for Termination -- Mental health,REASON_MENTAL_HLTH,"Y, N",,not implemented,not implemented,,,,,,,,,not implemented,

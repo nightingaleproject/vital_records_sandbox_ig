@@ -452,7 +452,6 @@ groups:
       - EducationLevelCM 
       - HispanicNoUnknownCM
       - HispanicOriginCM
-      - NewbornCongenitalAnomaliesCM
       - RaceCodeCM 
       - RaceMissingValueReasonCM
       - RaceRecode40CM
@@ -751,6 +750,7 @@ groups:
       - FetalPresentationCM
       - HistologicalPlacentalExaminationCM
       - InfectionsDuringPregnancyLiveBirthCM
+      - NewbornCongenitalAnomaliesCM
 
   BFDRExamples:
     name: BFDR Examples
