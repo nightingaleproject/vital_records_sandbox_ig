@@ -18,14 +18,10 @@ All of the none-of-the-above values are represented as observations with a clear
 {: .grid }
 
 <style>
-    div.inputs {
-    width:1800px;
-    overflow:auto;
-    }
     table.style1 { 
         border-collapse: collapse; 
         width: 100%; 
-        table-layout: auto;
+        table-layout: fixed;
     }  
     table.style1 tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -39,18 +35,17 @@ All of the none-of-the-above values are represented as observations with a clear
     </style>
 ### Fetal Death IJE Mapping
 
-<div class='inputs'>
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
 <tr>
-<td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>
-<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>
-<td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>IJE Name</b></td>
+<td style='background-color:#98c1d9; width: 20%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
-<td style='background-color:#98c1d9;'><b>Type</b></td>
-<td style='background-color:#98c1d9;'><b>Value Set/Comments</b></td>
-<td style='background-color:#98c1d9;'><b>Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)</b></td>
+<td style='background-color:#98c1d9; width: 7%;'><b>Type</b></td>
+<td style='background-color:#98c1d9; width: 14%;'><b>Value Set/Comments</b></td>
+<td style='background-color:#98c1d9; width: 3%;'><b>Use</b></td>
 </tr>
 <tr><td style='text-align: center;'>3</td><td>Certificate Number</td><td style='text-align: center;'>FILENO</td><td><a href='StructureDefinition-CompositionProviderFetalDeathReport.html'>CompositionProviderFetalDeathReport</a></td><td>extension[fetalDeathReportNumber].value</td><td>identifier</td><td>Used for Jurisdiction Report, Coded Cause of Fetal Death, and Coded Race and Ethnicity Compositions also</td><td>B</td></tr>
 <tr><td style='text-align: center;'>5</td><td>Auxiliary State file number</td><td style='text-align: center;'>AUXNO</td><td><a href='StructureDefinition-CompositionProviderFetalDeathReport.html'>CompositionProviderFetalDeathReport</a></td><td>extension[fetalDeathLocalFileNumber].value</td><td>identifier</td><td>Used for Jurisdiction Report also</td><td>B</td></tr>
@@ -217,7 +212,7 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr><td style='text-align: center;'>1</td><td>Date of Delivery (Fetus)--Year</td><td style='text-align: center;'>FDOD_YR</td><td><a href='StructureDefinition-Patient-decedent-fetus-vr.html'>PatientDecedentFetusVitalRecords</a></td><td>birthDate</td><td></td><td></td><td>B</td></tr>
 <tr><td style='text-align: center;'>2</td><td>State, U.S. Territory or Canadian Province of Place of Delivery - code</td><td style='text-align: center;'>DSTATE</td><td><a href='StructureDefinition-Patient-decedent-fetus-vr.html'>PatientDecedentFetusVitalRecords</a></td><td>extension[patient-birthPlace].value[x].state</td><td>codeable</td><td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a> </td><td>B</td></tr>
 <tr><td style='text-align: center;'>6</td><td>Time of Delivery</td><td style='text-align: center;'>TD</td><td><a href='StructureDefinition-Patient-decedent-fetus-vr.html'>PatientDecedentFetusVitalRecords</a></td><td>birthDate.extension[patient-birthTime]</td><td></td><td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td><td>B</td></tr>
-<tr><td style='text-align: center;'>7</td><td>Sex</td><td style='text-align: center;'>FSEX</td><td><a href='StructureDefinition-Patient-decedent-fetus-vr.html'>PatientDecedentFetusVitalRecords</a></td><td>extension[us-core-birthsex].value</td><td>codeable</td><td><a href='http://hl7.org/fhir/us/core/ValueSet/birthsex'>USCoreBirthSexVS</a></td><td>B</td></tr>
+<tr><td style='text-align: center;'>7</td><td>Sex</td><td style='text-align: center;'>FSEX</td><td><a href='StructureDefinition-Patient-decedent-fetus-vr.html'>PatientDecedentFetusVitalRecords</a></td><td>extension[birthsex].value</td><td>codeable</td><td><a href='ValueSet-ValueSet-birth-sex-fetus-vr.html'>ValueSetBirthSexFetusVitalRecords</a></td><td>B</td></tr>
 <tr><td style='text-align: center;'>8</td><td>Date of Delivery (Fetus)--Month</td><td style='text-align: center;'>FDOD_MO</td><td><a href='StructureDefinition-Patient-decedent-fetus-vr.html'>PatientDecedentFetusVitalRecords</a></td><td>birthDate</td><td></td><td></td><td>B</td></tr>
 <tr><td style='text-align: center;'>9</td><td>Date of Delivery (Fetus)--Day</td><td style='text-align: center;'>FDOD_DY</td><td><a href='StructureDefinition-Patient-decedent-fetus-vr.html'>PatientDecedentFetusVitalRecords</a></td><td>birthDate</td><td></td><td></td><td>B</td></tr>
 <tr><td style='text-align: center;'>152</td><td>Set Order</td><td style='text-align: center;'>SORD</td><td><a href='StructureDefinition-Patient-decedent-fetus-vr.html'>PatientDecedentFetusVitalRecords</a></td><td>multipleBirth[x]</td><td>integer</td><td></td><td>B</td></tr>
@@ -282,21 +277,19 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr><td style='text-align: center;'>363</td><td>Blank for Twenty-Byte Field</td><td style='text-align: center;'>PLACE20</td><td><a href='StructureDefinition-Observation-emerging-issues-vr.html'>ObservationEmergingIssuesVitalRecords</a></td><td>component[EmergingIssue20].value</td><td>string(20)</td><td></td><td>B</td></tr>
 </tbody>
 </table>
-</div>
 ### Coded Content
 
-<div class='inputs'>
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
 <tr>
-<td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>
-<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>
-<td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>IJE Name</b></td>
+<td style='background-color:#98c1d9; width: 20%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
-<td style='background-color:#98c1d9;'><b>Type</b></td>
-<td style='background-color:#98c1d9;'><b>Value Set/Comments</b></td>
-<td style='background-color:#98c1d9;'><b>Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)</b></td>
+<td style='background-color:#98c1d9; width: 7%;'><b>Type</b></td>
+<td style='background-color:#98c1d9; width: 14%;'><b>Value Set/Comments</b></td>
+<td style='background-color:#98c1d9; width: 3%;'><b>Use</b></td>
 </tr>
 <tr><td style='text-align: center;'>208</td><td>Coded initiating cause/condition</td><td style='text-align: center;'>ICOD</td><td><a href='StructureDefinition-Observation-coded-initiating-fetal-death-cause-or-condition.html'>ObservationCodedInitiatingFetalDeathCauseOrCondition</a></td><td>value</td><td>codeable</td><td>[https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933]</td><td>N</td></tr>
 <tr><td style='text-align: center;'>209</td><td>Coded other significant causes or conditions- first mentioned</td><td style='text-align: center;'>OCOD1</td><td><a href='StructureDefinition-Observation-coded-other-fetal-death-cause-or-condition.html'>ObservationCodedOtherFetalDeathCauseOrCondition</a></td><td>position.value=1,  <br />value</td><td>codeable</td><td>[https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933]</td><td>N</td></tr>
@@ -344,21 +337,19 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr><td style='text-align: center;'>333</td><td>Father's Edited Hispanic Origin Code</td><td style='text-align: center;'>FETHNICE</td><td><a href='StructureDefinition-coded-race-and-ethnicity-vr.html'>ObservationCodedRaceAndEthnicityVitalRecords</a></td><td>component[HispanicCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td><td>codeable</td><td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td><td>N</td></tr>
 </tbody>
 </table>
-</div>
 ### Not Implemented Content
 
-<div>
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
 <tr>
-<td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>
-<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>
-<td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>IJE Name</b></td>
+<td style='background-color:#98c1d9; width: 20%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
-<td style='background-color:#98c1d9;'><b>Type</b></td>
-<td style='background-color:#98c1d9;'><b>Value Set/Comments</b></td>
-<td style='background-color:#98c1d9;'><b>Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)</b></td>
+<td style='background-color:#98c1d9; width: 7%;'><b>Type</b></td>
+<td style='background-color:#98c1d9; width: 14%;'><b>Value Set/Comments</b></td>
+<td style='background-color:#98c1d9; width: 3%;'><b>Use</b></td>
 </tr>
 <tr><td style='text-align: center;'>4</td><td>Void flag</td><td style='text-align: center;'>VOID</td><td>[not implemented]</td><td></td><td></td><td></td><td>-</td></tr>
 <tr><td style='text-align: center;'>29</td><td>Mother Married?--Ever(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015)</td><td style='text-align: center;'>MARE</td><td>[not implemented]</td><td></td><td></td><td></td><td>-</td></tr>
@@ -441,4 +432,3 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr><td style='text-align: center;'>365</td><td>Blank for Jurisdictional Use Only</td><td style='text-align: center;'>BLANK2</td><td>[not implemented]</td><td></td><td></td><td></td><td>-</td></tr>
 </tbody>
 </table>
-</div>

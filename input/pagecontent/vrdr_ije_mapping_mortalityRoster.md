@@ -1,13 +1,9 @@
 
 <style>
-    div.inputs {
-    width:1800px;
-    overflow:auto;
-    }
     table.style1 { 
         border-collapse: collapse; 
         width: 100%; 
-        table-layout: auto;
+        table-layout: fixed;
     }  
     table.style1 tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -21,7 +17,6 @@
     </style>
 ### Mortality Roster IJE Mapping
 
-<div>
 <table align='left' border='1' cellpadding='1' cellspacing='1' style='width:100%;'>
 <tbody>
 <tr>
@@ -66,10 +61,8 @@
 <tr><td style='text-align: center;'>24</td><td>Mother's Suffix</td><td style='text-align: center;'>MOMSUFF</td><td><a href='StructureDefinition-vrdr-decedent-mother.html'>DecedentMother</a></td><td>name.suffix , name.use = official</td><td>string</td><td>-</td></tr>
 </tbody>
 </table>
-</div>
 ### Not Implemented Content
 
-<div>
 <table align='left' border='1' cellpadding='1' cellspacing='1' style='width:100%;'>
 <tbody>
 <tr>
@@ -85,4 +78,3 @@
 <tr><td style='text-align: center;'>35</td><td>Blank for Future Expansion</td><td style='text-align: center;'>BLANK2</td><td>[not implemented]</td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
-</div>
