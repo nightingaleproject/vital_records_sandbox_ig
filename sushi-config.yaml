@@ -458,7 +458,7 @@ groups:
       - UnitsOfAgeCM
   
   VRCLParameters:
-    name:
+    name: VRCL Parameters
     resources:
       - expansion-parameters-vr-common
 
@@ -526,6 +526,7 @@ groups:
       - ObservationGestationalAgeAtDelivery
       - ObservationInfantBreastfedAtDischarge
       - ObservationInfantLiving
+      - ObservationMotherDeliveryWeight
       - ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn
       - ObservationNumberFetalDeathsThisDelivery
       - ObservationNumberLiveBirthsThisDelivery
@@ -561,6 +562,9 @@ groups:
       - ObservationDateOfFirstPrenatalCareVisit
       - ObservationDateOfLastLiveBirth
       - ObservationDateOfLastOtherPregnancyOutcome
+      - ObservationLastMenstrualPeriod
+      - ObservationMotherHeight
+      - ObservationMotherPrepregnancyWeight
       - ObservationMotherReceivedWICFood
       - ObservationNumberBirthsNowDead
       - ObservationNumberBirthsNowLiving
