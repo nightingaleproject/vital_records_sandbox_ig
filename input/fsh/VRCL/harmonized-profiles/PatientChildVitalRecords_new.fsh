@@ -8,7 +8,7 @@ Description: "The subject patient (newborn/infant/child) for whom clinical data 
 * extension[birthsex] 1.. MS
 * extension[birthPlace] MS 
 * identifier[MRN] MS
-* extension[birthsex].valueCode from ValueSetBirthSexVitalRecords (required)
+* extension[birthsex].valueCode from ValueSetBirthSexChildVitalRecords (required)
 * insert childName 
 * insert birthDateAndTime
 * insert multipleBirths 

@@ -423,7 +423,8 @@ groups:
     name: VRCL ValueSets
     resources:  
       - ValueSetBirthplaceCountryVitalRecords
-      - ValueSetBirthSexVitalRecords
+      - ValueSetBirthSexChildVitalRecords
+      - ValueSetBirthSexFetusVitalRecords
       # - ValueSetCanadaProvincesVitalRecords
       - ValueSetEducationLevelVitalRecords
       - ValueSetEducationLevelPersonVitalRecords
@@ -449,6 +450,8 @@ groups:
   VRCLConceptMaps:
     name: VRCL Concept Maps
     resources:
+      - ConceptMapBirthSexChildVitalRecords
+      - ConceptMapBirthSexFetusVitalRecords
       - ConceptMapEducationLevelVitalRecords
       - ConceptMapHispanicNoUnknownVitalRecords
       - ConceptMapHispanicOriginVitalRecords
@@ -461,7 +464,7 @@ groups:
       - ConceptMapYesNoUnknownVitalRecords
   
   VRCLParameters:
-    name:
+    name: VRCL Parameters
     resources:
       - expansion-parameters-vr-common
 
