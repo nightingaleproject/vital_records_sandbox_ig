@@ -11,4 +11,4 @@ Usage: #example
 * effectiveDateTime = "2019-12-02"
 * performer = Reference(practitioner-vital-records-janet-seito)
 * valueQuantity = 20 'wk'
-* valueQuantity.extension[bypassEditFlag].valueCodeableConcept = EditFlagsCS#off "Off"
+* valueQuantity.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#off "Off"

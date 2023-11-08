@@ -402,7 +402,7 @@ groups:
       - CodeSystemMissingValueReasonVitalRecords
       - CodeSystemRaceCodeVitalRecords
       - CodeSystemRaceRecode40VitalRecords
-      - EditFlagsCS
+      - CodeSystemEditFlagsVitalRecords
       - CodeSystemLocalObservationsCodesVitalRecords
 
   #PHINVADSValuesets:
