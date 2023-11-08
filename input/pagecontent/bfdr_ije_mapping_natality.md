@@ -23,14 +23,10 @@ All of the none-of-the-above values are represented as observations with a clear
 {: .grid }
 
 <style>
-    div.inputs {
-    width:1800px;
-    overflow:auto;
-    }
     table.style1 { 
         border-collapse: collapse; 
         width: 100%; 
-        table-layout: auto;
+        table-layout: fixed;
     }  
     table.style1 tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -44,18 +40,17 @@ All of the none-of-the-above values are represented as observations with a clear
     </style>
 ### Natality (Live Birth) IJE Mapping
 
-<div class='inputs'>
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
 <tr>
-<td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>
-<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>
-<td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>IJE Name</b></td>
+<td style='background-color:#98c1d9; width: 20%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
-<td style='background-color:#98c1d9;'><b>Type</b></td>
-<td style='background-color:#98c1d9;'><b>Value Set/Comments</b></td>
-<td style='background-color:#98c1d9;'><b>Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)</b></td>
+<td style='background-color:#98c1d9; width: 7%;'><b>Type</b></td>
+<td style='background-color:#98c1d9; width: 14%;'><b>Value Set/Comments</b></td>
+<td style='background-color:#98c1d9; width: 3%;'><b>Use</b></td>
 </tr>
 <tr><td style='text-align: center;'>3</td><td>Certificate Number</td><td style='text-align: center;'>FILENO</td><td><a href='StructureDefinition-CompositionProviderLiveBirthReport.html'>CompositionProviderLiveBirthReport</a></td><td>extension[liveBirthCertificateNumber].value</td><td>identifier</td><td>Used for Jurisdiction Report and Coded Race and Ethnicity Compositions also</td><td>B</td></tr>
 <tr><td style='text-align: center;'>5</td><td>Auxiliary State file number</td><td style='text-align: center;'>AUXNO</td><td><a href='StructureDefinition-CompositionProviderLiveBirthReport.html'>CompositionProviderLiveBirthReport</a></td><td>extension[liveBirthLocalFileNumber].value</td><td>identifier</td><td>Used for Jurisdiction Report also</td><td>B</td></tr>
@@ -218,7 +213,7 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr><td style='text-align: center;'>1</td><td>Date of Birth (Infant)--Year</td><td style='text-align: center;'>IDOB_YR</td><td><a href='StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td><td>birthDate</td><td>date</td><td></td><td>B</td></tr>
 <tr><td style='text-align: center;'>2</td><td>State, U.S. Territory or Canadian Province of Birth (Infant) - code</td><td style='text-align: center;'>BSTATE</td><td><a href='StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td><td>extension[patient-birthPlace].value[x].state</td><td>string</td><td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td><td>B</td></tr>
 <tr><td style='text-align: center;'>6</td><td>Time of Birth</td><td style='text-align: center;'>TB</td><td><a href='StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td><td>birthDate.extension[patient-birthTime]</td><td></td><td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td><td>B</td></tr>
-<tr><td style='text-align: center;'>7</td><td>Sex</td><td style='text-align: center;'>ISEX</td><td><a href='StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td><td>extension[us-core-birthsex].value</td><td>codeable</td><td><a href='http://hl7.org/fhir/us/core/ValueSet/birthsex'>USCoreBirthSexVS</a></td><td>B</td></tr>
+<tr><td style='text-align: center;'>7</td><td>Sex</td><td style='text-align: center;'>ISEX</td><td><a href='StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td><td>extension[birthsex].value</td><td>codeable</td><td><a href='ValueSet-ValueSet-birth-sex-child-vr.html'>ValueSetBirthSexChildVitalRecords</a></td><td>B</td></tr>
 <tr><td style='text-align: center;'>8</td><td>Date of Birth (Infant)--Month</td><td style='text-align: center;'>IDOB_MO</td><td><a href='StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td><td>birthDate</td><td>date</td><td></td><td>B</td></tr>
 <tr><td style='text-align: center;'>9</td><td>Date of Birth (Infant)--Day</td><td style='text-align: center;'>IDOB_DY</td><td><a href='StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td><td>birthDate</td><td>date</td><td></td><td>B</td></tr>
 <tr><td style='text-align: center;'>10</td><td>County of Birth</td><td style='text-align: center;'>CNTYO</td><td><a href='StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td><td>extension[patient-birthplace].value[x].district.extension[countyCode]</td><td>integer</td><td>See <a href='usage.html#county-codes'>CountyCodes</a></td><td>B</td></tr>
@@ -318,21 +313,19 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr><td style='text-align: center;'>351</td><td>Blank for Twenty-Byte Field</td><td style='text-align: center;'>PLACE20</td><td><a href='StructureDefinition-Observation-emerging-issues-vr.html'>ObservationEmergingIssuesVitalRecords</a></td><td>component[EmergingIssue20].value</td><td>string(20)</td><td></td><td>B</td></tr>
 </tbody>
 </table>
-</div>
 ### Coded Content
 
-<div class='inputs'>
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
 <tr>
-<td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>
-<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>
-<td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>IJE Name</b></td>
+<td style='background-color:#98c1d9; width: 20%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
-<td style='background-color:#98c1d9;'><b>Type</b></td>
-<td style='background-color:#98c1d9;'><b>Value Set/Comments</b></td>
-<td style='background-color:#98c1d9;'><b>Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)</b></td>
+<td style='background-color:#98c1d9; width: 7%;'><b>Type</b></td>
+<td style='background-color:#98c1d9; width: 14%;'><b>Value Set/Comments</b></td>
+<td style='background-color:#98c1d9; width: 3%;'><b>Use</b></td>
 </tr>
 <tr><td style='text-align: center;'>62</td><td>Mother's Race Tabulation Variable 1E</td><td style='text-align: center;'>MRACE1E</td><td><a href='StructureDefinition-coded-race-and-ethnicity-vr.html'>ObservationCodedRaceAndEthnicityVitalRecords</a></td><td>component[FirstEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ]</td><td>codeable</td><td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td><td>N</td></tr>
 <tr><td style='text-align: center;'>63</td><td>Mother's Race Tabulation Variable 2E</td><td style='text-align: center;'>MRACE2E</td><td><a href='StructureDefinition-coded-race-and-ethnicity-vr.html'>ObservationCodedRaceAndEthnicityVitalRecords</a></td><td>component[SecondEditedCode].value, <br />subject=Reference[ PatientMotherVitalRecords ]</td><td>codeable</td><td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td><td>N</td></tr>
@@ -372,21 +365,19 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr><td style='text-align: center;'>296</td><td>Father's Edited Hispanic Origin Code</td><td style='text-align: center;'>FETHNICE</td><td><a href='StructureDefinition-coded-race-and-ethnicity-vr.html'>ObservationCodedRaceAndEthnicityVitalRecords</a></td><td>component[HispanicCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td><td>codeable</td><td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td><td>N</td></tr>
 </tbody>
 </table>
-</div>
 ### Not Implemented Content
 
-<div>
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
 <tr>
-<td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>
-<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>
-<td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>IJE Name</b></td>
+<td style='background-color:#98c1d9; width: 20%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
-<td style='background-color:#98c1d9;'><b>Type</b></td>
-<td style='background-color:#98c1d9;'><b>Value Set/Comments</b></td>
-<td style='background-color:#98c1d9;'><b>Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)</b></td>
+<td style='background-color:#98c1d9; width: 7%;'><b>Type</b></td>
+<td style='background-color:#98c1d9; width: 14%;'><b>Value Set/Comments</b></td>
+<td style='background-color:#98c1d9; width: 3%;'><b>Use</b></td>
 </tr>
 <tr><td style='text-align: center;'>4</td><td>Void flag</td><td style='text-align: center;'>VOID</td><td>[not implemented]</td><td></td><td></td><td></td><td>-</td></tr>
 <tr><td style='text-align: center;'>29</td><td>Mother Married?--Ever (NCHS DELETED THIS ITEM EFFECTIVE 2014/2015)</td><td style='text-align: center;'>MARE</td><td>[not implemented]</td><td></td><td></td><td></td><td>-</td></tr>
@@ -435,4 +426,3 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr><td style='text-align: center;'>353</td><td>Blank for Jurisdictional Use Only</td><td style='text-align: center;'>BLANK2</td><td>[not implemented]</td><td></td><td></td><td></td><td>-</td></tr>
 </tbody>
 </table>
-</div>

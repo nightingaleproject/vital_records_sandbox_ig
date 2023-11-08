@@ -1,13 +1,9 @@
 
 <style>
-    div.inputs {
-    width:1800px;
-    overflow:auto;
-    }
     table.style1 { 
         border-collapse: collapse; 
         width: 100%; 
-        table-layout: auto;
+        table-layout: fixed;
     }  
     table.style1 tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -21,7 +17,6 @@
     </style>
 ### Death Record IJE Mapping
 
-<div>
 <table align='left' border='1' cellpadding='1' cellspacing='1' style='width:100%;'>
 <tbody>
 <tr>
@@ -214,10 +209,8 @@
 <tr><td style='text-align: center;'>111</td><td>Did Tobacco Use Contribute to Death?</td><td style='text-align: center;'>TOBAC</td><td><a href='StructureDefinition-vrdr-tobacco-use-contributed-to-death.html'>TobaccoUseContributedToDeath</a></td><td>value</td><td>codeable</td><td><a href='ValueSet-vrdr-contributory-tobacco-use-vs.html'>ContributoryTobaccoUseVS</a></td></tr>
 </tbody>
 </table>
-</div>
 ### Coded Content
 
-<div>
 <table align='left' border='1' cellpadding='1' cellspacing='1' style='width:100%;'>
 <tbody>
 <tr>
@@ -253,10 +246,8 @@
 <tr><td style='text-align: center;'>NA</td><td>Death Record Identifier</td><td style='text-align: center;'>*NO IJE MAPPING*</td><td><a href='StructureDefinition-vrdr-demographic-coded-bundle.html'>DemographicCodedContentBundle</a></td><td>identifier.value</td><td>string(12)</td><td>YYYYJJNNNNNN,  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number</td></tr>
 </tbody>
 </table>
-</div>
 ### Not Implemented Content
 
-<div>
 <table align='left' border='1' cellpadding='1' cellspacing='1' style='width:100%;'>
 <tbody>
 <tr>
@@ -293,4 +284,3 @@
 <tr><td style='text-align: center;'>259</td><td>Blank for Jurisdictional Use Only</td><td style='text-align: center;'>BLANK3</td><td>[not implemented]</td><td></td><td></td><td>-</td></tr>
 </tbody>
 </table>
-</div>

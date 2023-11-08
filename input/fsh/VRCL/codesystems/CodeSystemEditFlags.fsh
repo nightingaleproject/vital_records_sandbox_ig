@@ -1,4 +1,4 @@
-CodeSystem: EditFlagsCS
+CodeSystem: CodeSystemEditFlagsVitalRecords
 Id: CodeSystem-vr-edit-flags
 Title: "CodeSystem - Birth and Death Edit Flags Vital Records"
 Description: "This code system contains codes to represent all edit flags"

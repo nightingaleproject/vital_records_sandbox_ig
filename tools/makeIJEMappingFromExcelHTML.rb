@@ -56,25 +56,19 @@ def printHeader(hHeading, pOutputFile, pIG, tableStyle)
     pOutputFile.puts hHeading
     pOutputFile.puts ""
     if pIG == "BFDR"
-        if tableStyle == "BFDR Inputs" or tableStyle == "Coding"
-            pOutputFile.puts "<div class='inputs'>"
-        else
-            pOutputFile.puts "<div>"
-        end
         pOutputFile.puts "<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>"
         pOutputFile.puts "<tbody>"
         pOutputFile.puts "<tr>"
-        pOutputFile.puts "<td style='background-color:#98c1d9; text-align: center;'><b>#</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9; width: 20%;'><b>Description</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>IJE Name</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9; width: 15%;'><b>Profile</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>IJE Name</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; width: 20%;'><b>Profile</b></td>"
         pOutputFile.puts "<td style='background-color:#98c1d9;'><b>Field</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9;'><b>Type</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9;'><b>Value Set/Comments</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9;'><b>Unique to Provider Report (P), Jurisdiction Report (J), Both (B), or Neither (N)</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; width: 7%;'><b>Type</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; width: 14%;'><b>Value Set/Comments</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; width: 3%;'><b>Use</b></td>"
         pOutputFile.puts "</tr>"
     else
-        pOutputFile.puts "<div>"
         pOutputFile.puts "<table align='left' border='1' cellpadding='1' cellspacing='1' style='width:100%;'>"
         pOutputFile.puts "<tbody>"
         pOutputFile.puts "<tr>"
@@ -101,14 +95,10 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
         profiles.append([profileName, profileHeading])
     end
     pOutputFile.puts"<style>
-    div.inputs {
-    width:1800px;
-    overflow:auto;
-    }
     table.style1 { 
         border-collapse: collapse; 
         width: 100%; 
-        table-layout: auto;
+        table-layout: fixed;
     }  
     table.style1 tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -131,13 +121,11 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
             if codedHeader == false && y.to_s == "Coding"
                 pOutputFile.puts "</tbody>"
                 pOutputFile.puts "</table>"
-                pOutputFile.puts "</div>"
                 codedHeader = printHeader("### Coded Content", pOutputFile, pRowFilterIG, "Coding")
             end
             if notImplementedHeader == false && y.to_s == "Not Implemented"
                 pOutputFile.puts "</tbody>"
                 pOutputFile.puts "</table>"
-                pOutputFile.puts "</div>"
                 notImplementedHeader = printHeader("### Not Implemented Content", pOutputFile, pRowFilterIG, "Not Implemented")
             end
             field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = fhirig = fhirunique = ""
@@ -160,7 +148,6 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
     end
     pOutputFile.puts "</tbody>"
     pOutputFile.puts "</table>"
-    pOutputFile.puts "</div>"
     pOutputFile.close
 end
 

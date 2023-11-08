@@ -219,10 +219,10 @@ For Canadian Provinces:
 1189,ITOP,7,28,2,Date of Termination - Day,DOT_DY,"01-31 (based on month), 99",,not implemented,not implemented,,,,,,,,,not implemented,
 824,Fetal Death,7,30,1,Sex,FSEX,"M = Male
 F = Female
-U = Unknown",,VRCPL,PatientDecedentFetusVitalRecords,extension[us-core-birthsex].value,codeable,[USCoreBirthSexVS],B,,,,,Patient-decedent-fetus-vr,
+U = Unknown",,VRCPL,PatientDecedentFetusVitalRecords,extension[birthsex].value,codeable,[ValueSetBirthSexFetusVitalRecords],B,,,,,Patient-decedent-fetus-vr,
 471,Natality,7,30,1,Sex,ISEX,"M = Male
 F = Female
-N = Not Yet Determined",,VRCPL,PatientChildVitalRecords,extension[us-core-birthsex].value,codeable,[USCoreBirthSexVS],B,,,,,Patient-child-vr,
+N = Not Yet Determined",,VRCPL,PatientChildVitalRecords,extension[birthsex].value,codeable,[ValueSetBirthSexChildVitalRecords],B,,,,,Patient-child-vr,
 1348,Birth Infant Death,7,30,1,Sex,ISEX,"M = Male
 F = Female
 N = Not Yet Determined",,,,,,,,,,,,,

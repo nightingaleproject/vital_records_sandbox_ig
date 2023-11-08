@@ -24,7 +24,7 @@ This profile is mapped to:
 | Fetal Death | 1 | Date of Delivery (Fetus)--Year | FDOD_YR | birthDate | | |
 | Fetal Death | 2 | State, U.S. Territory or Canadian Province of Place of Delivery - code | DSTATE | extension[patient-birthPlace].value[x].state |codeable |[ValueSetStatesTerritoriesAndProvincesVitalRecords]  |
 | Fetal Death | 6 | Time of Delivery | TD | birthDate.extension[patient-birthTime] | |See [PartialDatesAndTimes] |
-| Fetal Death | 7 | Sex | FSEX | extension[us-core-birthsex].value |codeable |[USCoreBirthSexVS] |
+| Fetal Death | 7 | Sex | FSEX | extension[birthsex].value |codeable |[ValueSetBirthSexFetusVitalRecords] |
 | Fetal Death | 8 | Date of Delivery (Fetus)--Month | FDOD_MO | birthDate | | |
 | Fetal Death | 9 | Date of Delivery (Fetus)--Day | FDOD_DY | birthDate | | |
 | Fetal Death | 152 | Set Order | SORD | multipleBirth[x] |integer | |
