@@ -3,7 +3,7 @@ Id: ValueSet-race-code-vr
 Title: "ValueSet - Race Code Vital Records"
 Description: "This valueset contains the set of codes used to represent NCHS Race Codes.
 
-Mapping to IJE codes [here](ConceptMap-RaceCodeCM.html)."
+Mapping to IJE codes [here](ConceptMap-ConceptMapRaceCodeVitalRecords.html)."
 //* include codes from system RaceCodeCSCS
 * CodeSystemRaceCodeVitalRecords#100 "White Checkbox"
 * CodeSystemRaceCodeVitalRecords#101 "White"

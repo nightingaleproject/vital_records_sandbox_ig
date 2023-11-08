@@ -1,4 +1,4 @@
-Instance: EducationLevelCM
+Instance: ConceptMapEducationLevelVitalRecords
 InstanceOf: ConceptMap
 Title: "ConceptMap - Education Level Vital Records"
 // Id: vrdr-education-level-cm

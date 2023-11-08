@@ -4,7 +4,7 @@ Title: "ValueSet - HispanicOrigin Vital Records"
 Description: "This valueset contains the set of codes used to represent NCHS HispanicOrigin.
 
 
-Mapping to IJE codes [here](ConceptMap-HispanicOriginCM.html)."
+Mapping to IJE codes [here](ConceptMap-ConceptMapHispanicOriginVitalRecords.html)."
 //* include codes from system CodeSystemHispanicOriginVitalRecords
 * CodeSystemHispanicOriginVitalRecords#100 "Non-Hispanic"
 * CodeSystemHispanicOriginVitalRecords#200 "Spaniard"
