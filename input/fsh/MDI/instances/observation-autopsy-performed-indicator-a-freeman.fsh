@@ -1,5 +1,5 @@
 Instance: observation-autopsy-performed-indicator-a-freeman
-InstanceOf: ObservationAutopsyPerformedIndicator
+InstanceOf: ObservationAutopsyPerformedIndicatorVitalRecords
 Title: "Observation - Autopsy Performed Indicator - Freeman"
 Description: "Observation - Autopsy Performed Indicator: Freeman example"
 Usage: #example
