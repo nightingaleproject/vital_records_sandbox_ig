@@ -70,7 +70,6 @@ vFormsMappingSpreadsheet.default_sheet = "BFDR Form Items"
 
 def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pFormsMappingSpreadsheet)
     pProfileIntrosSpreadsheet.default_sheet = pIG
-    puts pProfileIntrosSpreadsheet.default_sheet
     # stream the BRDR_Profile_Intros.xlsx spreadsheet - this also contains any usage text for the start of the intro.md file (one file for each profile)
     # some of the profiles don't have any usage or ije mappings (currently the Bundle for example, skip those rows)
         pProfileIntrosSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
