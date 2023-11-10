@@ -75,6 +75,8 @@ pages:
     title: Vital Records Common Library Home
   usage.md:
     title: Usage
+  vrcl-content-transitions.md:
+    title: VRCL Content Transitions 
   vrdr-content-transitions.md:
     title: VRDR Content Transitions 
   bfdr-content-transitions.md:
@@ -219,6 +221,7 @@ menu:
     Home: vrcl_index.html
     Terminology: vrcl_terminology.html
     Specification: vrcl_the_specification.html
+    Content Transitions: vrcl-content-transitions.html
     Changes: vrcl_change_log.html
   MDI: 
     Home: mdi_index.html
