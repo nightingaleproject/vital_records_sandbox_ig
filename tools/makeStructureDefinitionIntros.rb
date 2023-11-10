@@ -145,4 +145,3 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
 
 createSDIntros("BFDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet)
 createSDIntros("VRDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet)
-
