@@ -30,18 +30,18 @@ IJE_FHIR_IG_COL = 9
 IJE_PROFILE_COL = 10
 IJE_FHIR_FIELD_COL = 11
 IJE_FHIR_TYPE_COL = 12
-IJE_FHIR_ENCODING_COL = 13
-IJE_MAPPING_PROFILE_COL = 18
+IJE_FHIR_COMMENTS_COL = 13
+#IJE_MAPPING_PROFILE_COL = 19 #NOT USED
 
 # BFDR_Profile_Intros.xlsx columns
 INTRO_ORDER_COL = 0
 INTRO_HEADING_COL = 1 
-INTRO_PROFILE_NAME_CONDENSED_COL = 2
-INTRO_PROFILE_NAME_COL = 3
+INTRO_PROFILE_NAME_COL = 2
+INTRO_PROFILE_ID_COL = 3
 INTRO_PROFILE_USAGE_COL = 4
 INTRO_FORM_MAPPING_COL = 5
 INTRO_IJE_MAPPING_COL = 6
-INTRO_PROFILE_LOCATION_COL = 7
+#INTRO_PROFILE_LOCATION_COL = 7 #NOT USED
 
 # BFDR_Forms_mapping.xlsx columns
 FORMS_ORDER_COL = 0
@@ -58,7 +58,7 @@ FORMS_CONTEXT_COL = 8
 
 # ARGV[0] input/mapping/BFDR_Profile_Intros.xlsx
 vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
-vProfileIntrosSpreadsheet.default_sheet = "BFDR"
+vProfileIntrosSpreadsheet.default_sheet = "VRCL"
 
 # ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 
 vSpreadsheet = open_spreadsheet(ARGV[1])
@@ -79,8 +79,8 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
             
             vProfileName = vProfileIntro = vGeneratedFileName = ""
     
-            vProfileName = row[INTRO_PROFILE_NAME_CONDENSED_COL].to_s
-            vProfileNameHyphen = row[INTRO_PROFILE_NAME_COL].to_s
+            vProfileName = row[INTRO_PROFILE_NAME_COL].to_s
+            vProfileNameHyphen = row[INTRO_PROFILE_ID_COL].to_s
             vGeneratedFileName = "generated/" + pIG.to_s + "/StructureDefinition-" + vProfileNameHyphen.to_s + "-intro.md"
             vIntroOutputFile = File.open(vGeneratedFileName, "w")
             
@@ -113,28 +113,28 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
               pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
                 next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName
                   
-                vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
+                vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_COMMENTS_COL].to_s + " |" 
               end
 
               # now process any fetal death rows
               pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
                 next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName
                 
-                vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
+                vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_COMMENTS_COL].to_s + " |" 
               end
 
               # now process any death record/mortality rows
               pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
                 next if (row[IJE_USECASE_COL].to_s != "Mortality") || row[IJE_PROFILE_COL].to_s != vProfileName
                 
-                vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
+                vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_COMMENTS_COL].to_s + " |" 
               end
  
               # now process any mortality roster rows
               pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
                 next if (row[IJE_USECASE_COL].to_s != "Mortality Roster") || row[IJE_PROFILE_COL].to_s != vProfileName
                 
-                vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
+                vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_COMMENTS_COL].to_s + " |" 
               end              
               vIntroOutputFile.puts "{: .grid }"
               vIntroOutputFile.puts "{% include markdown-link-references.md %}"
@@ -143,6 +143,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
     end
 
 
-createSDIntros("BFDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet)
-createSDIntros("VRDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet)
+#createSDIntros("BFDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet)
+#createSDIntros("VRDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet)
+createSDIntros("VRCL", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet)
 

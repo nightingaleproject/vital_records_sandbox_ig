@@ -32,17 +32,17 @@ IJE_FHIR_FIELD_COL = 11
 IJE_FHIR_TYPE_COL = 12
 IJE_FHIR_COMMENTS_COL = 13
 IJE_UNIQUENESS_COL = 14
-IJE_MAPPING_PROFILE_COL = 19
+#IJE_MAPPING_PROFILE_COL = 19 #NOT USED
 
 # BFDR_Profile_Intros.xlsx columns
 INTRO_ORDER_COL = 0
 INTRO_HEADING_COL = 1 
-INTRO_PROFILE_NAME_CONDENSED_COL = 2
-INTRO_PROFILE_NAME_COL = 3
+INTRO_PROFILE_NAME_COL = 2
+INTRO_PROFILE_ID_COL = 3
 INTRO_PROFILE_USAGE_COL = 4
 INTRO_FORM_MAPPING_COL = 5
 INTRO_IJE_MAPPING_COL = 6
-INTRO_PROFILE_LOCATION_COL = 7
+#INTRO_PROFILE_LOCATION_COL = 7 #NOT USED
 
 # ARGV[0] input/mapping/BFDR_Profile_Intros.xlsx
 vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
@@ -90,7 +90,7 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
     pIntroSpreadsheet.default_sheet = pRowFilterIG
     pIntroSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
         #next if row[INTRO_PROFILE_LOCATION_COL].value.to_s != pRowFilterIG
-        profileName = row[INTRO_PROFILE_NAME_CONDENSED_COL].value.to_s if row[INTRO_PROFILE_NAME_CONDENSED_COL] 
+        profileName = row[INTRO_PROFILE_NAME_COL].value.to_s if row[INTRO_PROFILE_NAME_COL] 
         profileHeading = row[INTRO_HEADING_COL].value.to_s if row[INTRO_HEADING_COL]
         profiles.append([profileName, profileHeading])
     end
