@@ -34,28 +34,116 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 1 | Date of Birth (Infant)--Year | IDOB_YR | birthDate |date | |
-| Natality | 2 | State, U.S. Territory or Canadian Province of Birth (Infant) - code | BSTATE | extension[patient-birthPlace].value[x].state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
-| Natality | 6 | Time of Birth | TB | birthDate.extension[patient-birthTime] | |See [PartialDatesAndTimes] |
-| Natality | 7 | Sex | ISEX | extension[birthsex].value |codeable |[ValueSetBirthSexChildVitalRecords] |
-| Natality | 8 | Date of Birth (Infant)--Month | IDOB_MO | birthDate |date | |
-| Natality | 9 | Date of Birth (Infant)--Day | IDOB_DY | birthDate |date | |
-| Natality | 10 | County of Birth | CNTYO | extension[patient-birthplace].value[x].district.extension[countyCode] |integer |See [CountyCodes] |
-| Natality | 207 | Plurality | PLUR | extension[patient-multipleBirthTotal].valuePositiveInt |integer | |
-| Natality | 208 | Set Order | SORD | multipleBirth[x] |integer | |
-| Natality | 211 | Plurality--Edit Flag | PLUR_BYPASS | multipleBirth.extension[bypassEditFlag].value |codeable |[PluralityEditFlagsVS], <br />See [Handling of edit flags] |
-| Natality | 237 | Mother's Reported Age | MAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ] |quantity | |
-| Natality | 238 | Father's Reported Age | FAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ] |quantity | |
-| Natality | 247 | Child's First Name | KIDFNAME | name.given, <br />name.use = official |string | |
-| Natality | 248 | Child's Middle Name | KIDMNAME | name.given, <br />name.use = official  |string | |
-| Natality | 249 | Child's Last Name | KIDLNAME | name.family, <br />name.use = official |string | |
-| Natality | 250 | Child's Surname Suffix (moved from end) | KIDSUFFX | name.suffix, <br />name.use = official |string | |
-| Natality | 251 | County of Birth (Literal) | BIRTH_CO | extension[patient-birthPlace].value[x].district |string | |
-| Natality | 252 | City/town/place of birth (Literal) | BRTHCITY | extension[patient-birthPlace].value[x].city |string | |
-| Natality | 332 | Infant's Medical Record Number | INF_MED_REC_NUM | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR”  |string | |
-| Fetal Death | 151 | Plurality | PLUR | extension[patient-multipleBirthTotal].valuePositiveInt |integer | |
-| Fetal Death | 171 | Mother's Reported Age | MAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ] |quantity | |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality (Mother)</strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>237</td>
+  <td>Mother's Reported Age</td>
+  <td>MAGER</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ]</td>
+  <td>quantity</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality (Father)</strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>238</td>
+  <td>Father's Reported Age</td>
+  <td>FAGER</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>quantity</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death (Mother)</strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>171</td>
+  <td>Mother's Reported Age</td>
+  <td>MAGER</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ]</td>
+  <td>quantity</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<p><br/></p>

@@ -3,37 +3,125 @@ EmergingIssues profile supports placeholder fields required for 2022 submissions
                 There are 6 1-char fields (PLACE1_1-6), 3 8-char fields (PLACE8_1-3), and one 20-char field (PLACE20-1).
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 342 | Blank for One-Byte Field 1 | PLACE1_1 | component[EmergingIssue1_1].value |string(1) | |
-| Natality | 343 | Blank for One-Byte Field 2 | PLACE1_2 | component[EmergingIssue1_2].value |string(1) | |
-| Natality | 344 | Blank for One-Byte Field 3 | PLACE1_3 | component[EmergingIssue1_3].value |string(1) | |
-| Natality | 345 | Blank for One-Byte Field 4 | PLACE1_4 | component[EmergingIssue1_4].value |string(1) | |
-| Natality | 346 | Blank for One-Byte Field 5 | PLACE1_5 | component[EmergingIssue1_5].value |string(1) | |
-| Natality | 347 | Blank for One-Byte Field 6 | PLACE1_6 | component[EmergingIssue1_6].value |string(1) | |
-| Natality | 348 | Blank for Eight-Byte Field 1 | PLACE8_1 | component[EmergingIssue8_1].value |string(8) | |
-| Natality | 349 | Blank for Eight-Byte Field 2 | PLACE8_2 | component[EmergingIssue8_2].value |string(8) | |
-| Natality | 350 | Blank for Eight-Byte Field 3 | PLACE8_3 | component[EmergingIssue8_3].value |string(8) | |
-| Natality | 351 | Blank for Twenty-Byte Field | PLACE20 | component[EmergingIssue20].value |string(20) | |
-| Fetal Death | 354 | Blank for One-Byte Field 1 | PLACE1_1 | component[EmergingIssue1_1].value |string(1) | |
-| Fetal Death | 355 | Blank for One-Byte Field 2 | PLACE1_2 | component[EmergingIssue1_2].value |string(1) | |
-| Fetal Death | 356 | Blank for One-Byte Field 3 | PLACE1_3 | component[EmergingIssue1_3].value |string(1) | |
-| Fetal Death | 357 | Blank for One-Byte Field 4 | PLACE1_4 | component[EmergingIssue1_4].value |string(1) | |
-| Fetal Death | 358 | Blank for One-Byte Field 5 | PLACE1_5 | component[EmergingIssue1_5].value |string(1) | |
-| Fetal Death | 359 | Blank for One-Byte Field 6 | PLACE1_6 | component[EmergingIssue1_6].value |string(1) | |
-| Fetal Death | 360 | Blank for Eight-Byte Field 1 | PLACE8_1 | component[EmergingIssue8_1].value |string(8) | |
-| Fetal Death | 361 | Blank for Eight-Byte Field 2 | PLACE8_2 | component[EmergingIssue8_2].value |string(8) | |
-| Fetal Death | 362 | Blank for Eight-Byte Field 3 | PLACE8_3 | component[EmergingIssue8_3].value |string(8) | |
-| Fetal Death | 363 | Blank for Twenty-Byte Field | PLACE20 | component[EmergingIssue20].value |string(20) | |
-| Mortality | 248 | Blank for One-Byte Field 1 | PLACE1_1 | component[EmergingIssue1_1].value |string(1) | |
-| Mortality | 249 | Blank for One-Byte Field 2 | PLACE1_2 | component[EmergingIssue1_2].value |string(1) | |
-| Mortality | 250 | Blank for One-Byte Field 3 | PLACE1_3 | component[EmergingIssue1_3].value |string(1) | |
-| Mortality | 251 | Blank for One-Byte Field 4 | PLACE1_4 | component[EmergingIssue1_4].value |string(1) | |
-| Mortality | 252 | Blank for One-Byte Field 5 | PLACE1_5 | component[EmergingIssue1_5].value |string(1) | |
-| Mortality | 253 | Blank for One-Byte Field 6 | PLACE1_6 | component[EmergingIssue1_6].value |string(1) | |
-| Mortality | 254 | Blank for Eight-Byte Field 1 | PLACE8_1 | component[EmergingIssue8_1].value |string(8) | |
-| Mortality | 255 | Blank for Eight-Byte Field 2 | PLACE8_2 | component[EmergingIssue8_2].value |string(8) | |
-| Mortality | 256 | Blank for Eight-Byte Field 3 | PLACE8_3 | component[EmergingIssue8_3].value |string(8) | |
-| Mortality | 257 | Blank for Twenty-Byte Field | PLACE20 | component[EmergingIssue20].value |string(20) | |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu'> Mortality (Decedent) </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>248</td>
+  <td>Blank for One-Byte Field 1</td>
+  <td>PLACE1_1</td>
+  <td>component[EmergingIssue1_1].value</td>
+  <td>string(1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>249</td>
+  <td>Blank for One-Byte Field 2</td>
+  <td>PLACE1_2</td>
+  <td>component[EmergingIssue1_2].value</td>
+  <td>string(1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>250</td>
+  <td>Blank for One-Byte Field 3</td>
+  <td>PLACE1_3</td>
+  <td>component[EmergingIssue1_3].value</td>
+  <td>string(1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>251</td>
+  <td>Blank for One-Byte Field 4</td>
+  <td>PLACE1_4</td>
+  <td>component[EmergingIssue1_4].value</td>
+  <td>string(1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>252</td>
+  <td>Blank for One-Byte Field 5</td>
+  <td>PLACE1_5</td>
+  <td>component[EmergingIssue1_5].value</td>
+  <td>string(1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>253</td>
+  <td>Blank for One-Byte Field 6</td>
+  <td>PLACE1_6</td>
+  <td>component[EmergingIssue1_6].value</td>
+  <td>string(1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>254</td>
+  <td>Blank for Eight-Byte Field 1</td>
+  <td>PLACE8_1</td>
+  <td>component[EmergingIssue8_1].value</td>
+  <td>string(8)</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>255</td>
+  <td>Blank for Eight-Byte Field 2</td>
+  <td>PLACE8_2</td>
+  <td>component[EmergingIssue8_2].value</td>
+  <td>string(8)</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>256</td>
+  <td>Blank for Eight-Byte Field 3</td>
+  <td>PLACE8_3</td>
+  <td>component[EmergingIssue8_3].value</td>
+  <td>string(8)</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>257</td>
+  <td>Blank for Twenty-Byte Field</td>
+  <td>PLACE20</td>
+  <td>component[EmergingIssue20].value</td>
+  <td>string(20)</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<p><br/></p>

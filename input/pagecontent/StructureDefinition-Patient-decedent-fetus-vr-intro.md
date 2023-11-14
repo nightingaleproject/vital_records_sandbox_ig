@@ -19,20 +19,107 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Fetal Death | 1 | Date of Delivery (Fetus)--Year | FDOD_YR | birthDate | | |
-| Fetal Death | 2 | State, U.S. Territory or Canadian Province of Place of Delivery - code | DSTATE | extension[patient-birthPlace].value[x].state |codeable |[ValueSetStatesTerritoriesAndProvincesVitalRecords]  |
-| Fetal Death | 6 | Time of Delivery | TD | birthDate.extension[patient-birthTime] | |See [PartialDatesAndTimes] |
-| Fetal Death | 7 | Sex | FSEX | extension[birthsex].value |codeable |[ValueSetBirthSexFetusVitalRecords] |
-| Fetal Death | 8 | Date of Delivery (Fetus)--Month | FDOD_MO | birthDate | | |
-| Fetal Death | 9 | Date of Delivery (Fetus)--Day | FDOD_DY | birthDate | | |
-| Fetal Death | 152 | Set Order | SORD | multipleBirth[x] |integer | |
-| Fetal Death | 155 | Plurality--Edit Flag | PLUR_BYPASS | multipleBirth.extension[bypassEditFlag].value |codeable |[PluralityEditFlagsVS], <br />See [Handling of edit flags] |
-| Fetal Death | 172 | Father's Reported Age | FAGER | extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ] |quantity | |
-| Fetal Death | 219 | Fetus First Name | FETFNAME | name.given, <br />name.use = official |string |See [Note on Decedent Name] |
-| Fetal Death | 220 | Fetus Middle Name | FETMNAME | name.given, <br />name.use = official |string |See [Note on Decedent Name] |
-| Fetal Death | 221 | Fetus Last Name | FETLNAME | name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.) |string  |See [Note on Decedent Name] |
-| Fetal Death | 222 | Fetus Surname Suffix | SUFFIX | name.suffix, <br />name.use = official |string | |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death (Father)</strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>1</td>
+  <td>Date of Delivery (Fetus)--Year</td>
+  <td>FDOD_YR</td>
+  <td>birthDate</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>7</td>
+  <td>Sex</td>
+  <td>FSEX</td>
+  <td>extension[birthsex].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-birth-sex-fetus-vr.html'>ValueSetBirthSexFetusVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>8</td>
+  <td>Date of Delivery (Fetus)--Month</td>
+  <td>FDOD_MO</td>
+  <td>birthDate</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>9</td>
+  <td>Date of Delivery (Fetus)--Day</td>
+  <td>FDOD_DY</td>
+  <td>birthDate</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>172</td>
+  <td>Father's Reported Age</td>
+  <td>FAGER</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>quantity</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>219</td>
+  <td>Fetus First Name</td>
+  <td>FETFNAME</td>
+  <td>name.given, <br />name.use = official</td>
+  <td>string</td>
+  <td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>220</td>
+  <td>Fetus Middle Name</td>
+  <td>FETMNAME</td>
+  <td>name.given, <br />name.use = official</td>
+  <td>string</td>
+  <td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>221</td>
+  <td>Fetus Last Name</td>
+  <td>FETLNAME</td>
+  <td>name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.)</td>
+  <td>string </td>
+  <td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<p><br/></p>
