@@ -747,3 +747,224 @@ Coded race and ethnicity data is communicated for both the mother and father in 
 <tr>
   <td style='text-align: center'>Fetal Death</td>
   <td>332</td>
+  <td>Father's Hispanic Code for Literal</td>
+  <td>FETHNIC5C</td>
+  <td>component[HispanicCodeForLiteral].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>333</td>
+  <td>Father's Edited Hispanic Origin Code</td>
+  <td>FETHNICE</td>
+  <td>component[HispanicCode].value, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Mortality (Decedent) </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>67</td>
+  <td>First Edited Code</td>
+  <td>RACE1E</td>
+  <td>component[FirstEditedCode].value</td>
+  <td></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>68</td>
+  <td>Second Edited Code</td>
+  <td>RACE2E</td>
+  <td>component[SecondEditedCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>69</td>
+  <td>Third Edited Code</td>
+  <td>RACE3E</td>
+  <td>component[ThirdEditedCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>70</td>
+  <td>Fourth Edited Code</td>
+  <td>RACE4E</td>
+  <td>component[FourthEditedCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>71</td>
+  <td>Fifth Edited Code</td>
+  <td>RACE5E</td>
+  <td>component[FifthEditedCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>72</td>
+  <td>Sixth Edited Code</td>
+  <td>RACE6E</td>
+  <td>component[SixthEditedCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>73</td>
+  <td>Seventh Edited Code</td>
+  <td>RACE7E</td>
+  <td>component[SeventhEditedCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>74</td>
+  <td>Eighth Edited Code</td>
+  <td>RACE8E</td>
+  <td>component[EighthEditedCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>75</td>
+  <td>First American Indian Code</td>
+  <td>RACE16C</td>
+  <td>component[FirstAmericanIndianCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>76</td>
+  <td>Second American Indian Code</td>
+  <td>RACE17C</td>
+  <td>component[SecondAmericanIndianCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>77</td>
+  <td>First Other Asian Code</td>
+  <td>RACE18C</td>
+  <td>component[FirstOtherAsianCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>78</td>
+  <td>Second Other Asian Code</td>
+  <td>RACE19C</td>
+  <td>component[SecondOtherAsianCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>79</td>
+  <td>First Other Pacific Islander Code</td>
+  <td>RACE20C</td>
+  <td>component[FirstOtherPacificIslanderCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>80</td>
+  <td>Second Other Pacific Islander Code</td>
+  <td>RACE21C</td>
+  <td>component[SecondOtherPacificIslanderCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>81</td>
+  <td>First Other Race Code</td>
+  <td>RACE22C</td>
+  <td>component[FirstOtherRaceCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>82</td>
+  <td>Second Other Race Code</td>
+  <td>RACE23C</td>
+  <td>component[SecondOtherRaceCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>160</td>
+  <td>Hispanic</td>
+  <td>DETHNICE </td>
+  <td>component[HispanicCode].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>247</td>
+  <td>Hispanic Code for Literal</td>
+  <td>DETHNIC5C</td>
+  <td>component[HispanicCodeForLiteral].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>NA</td>
+  <td>Race Recode 40  (No longer provided as of 2022)</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>component[ValueSetRaceRecode40VitalRecords].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-recode-40-vr.html'>ValueSetRaceRecode40VitalRecords</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<p><br/></p>

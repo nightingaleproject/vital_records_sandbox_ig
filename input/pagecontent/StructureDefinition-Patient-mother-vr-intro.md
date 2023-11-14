@@ -312,3 +312,204 @@ This profile is mapped to:
   <td>319</td>
   <td>Mother's Mailing Address State (Literal)</td>
   <td>MAIL_STATETXT</td>
+  <td>address.state (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>320</td>
+  <td>Mother's Mailing Address Country (Literal)</td>
+  <td>MAIL_CNTRYTXT</td>
+  <td>address.country (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>333</td>
+  <td>Mother's Medical Record Number</td>
+  <td>MOM_MED_REC_NUM</td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR” </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>340</td>
+  <td>For use of jurisdictions with domestic partnerships, othertypes of relationships.</td>
+  <td>MARITAL_DESCRIP</td>
+  <td>maritalStatus.text</td>
+  <td>string</td>
+  <td>codeable.text should show up in differential with description from col F</td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death (Mother)</strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>14</td>
+  <td>Date of Birth (Mother)--Year</td>
+  <td>MDOB_YR</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>15</td>
+  <td>Date of Birth (Mother)--Month</td>
+  <td>MDOB_MO</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>16</td>
+  <td>Date of Birth (Mother)--Day</td>
+  <td>MDOB_DY</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>17</td>
+  <td>Date of Birth (Mother)--Edit Flag</td>
+  <td>MAGE_BYPASS</td>
+  <td>birthDate.extension[bypassEditFlag].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>239</td>
+  <td>Mother's Legal First Name</td>
+  <td>MOMFNAME</td>
+  <td>name.given, <br />name.use = official</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>240</td>
+  <td>Mother's Legal Middle Name</td>
+  <td>MOMMNAME</td>
+  <td>name.given, <br />name.use = official </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>241</td>
+  <td>Mother's Legal Last Name</td>
+  <td>MOMLNAME</td>
+  <td>name.family, <br />name.use = official</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>242</td>
+  <td>Mother's Legal Surname Suffix</td>
+  <td>MOMSUFFIX</td>
+  <td>name.suffix, <br />name.use = official </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>243</td>
+  <td>Mother's First Maiden Name</td>
+  <td>MOMFMNME</td>
+  <td>name.given, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>244</td>
+  <td>Mother's Middle Maiden Name</td>
+  <td>MOMMMID</td>
+  <td>name.given, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>245</td>
+  <td>Mother's Last Maiden Name</td>
+  <td>MOMMAIDN</td>
+  <td>name.family, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>246</td>
+  <td>Mother's Maiden Surname Suffix</td>
+  <td>MOMMSUFFIX</td>
+  <td>name.suffix, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>265</td>
+  <td>Mother's Social Security Number</td>
+  <td>MOM_SSN</td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>279</td>
+  <td>State, U.S. Territory or Canadian Province of Birth (Mother) - literal</td>
+  <td>MBPLACE_ST_TER_TXT</td>
+  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>280</td>
+  <td>Mother's Country of Birth (Literal)</td>
+  <td>MBPLACE_CNTRY_TXT</td>
+  <td>extension[patient-birthPlace].value[x].country (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<p><br/></p>

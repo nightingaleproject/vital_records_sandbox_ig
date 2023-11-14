@@ -1125,7 +1125,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
 
 <summary>
 
-<strong class='context-menu'> Mortality </strong>
+<strong class='context-menu'> Mortality (Decedent) </strong>
 
 </summary>
 <table class='grid'>
@@ -1361,3 +1361,52 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td style='text-align: center'>Mortality</td>
   <td>63</td>
   <td>Decedent's Race--First Other Pacific Islander Literal</td>
+  <td>RACE20</td>
+  <td>component[ FirstOtherPacificIslanderLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>64</td>
+  <td>Decedent's Race--Second Other Pacific Islander Literal</td>
+  <td>RACE21</td>
+  <td>component[ SecondOtherPacificIslanderLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>65</td>
+  <td>Decedent's Race--First Other Literal</td>
+  <td>RACE22</td>
+  <td>component[ FirstOtherRaceLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>66</td>
+  <td>Decedent's Race--Second Other Literal</td>
+  <td>RACE23</td>
+  <td>component[ SecondOtherRaceLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>83</td>
+  <td>Decedent's Race--Missing</td>
+  <td>RACE_MVR</td>
+  <td>component[ MissingValueReason].valueCoding</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-missing-value-reason-vr.html'>ValueSetRaceMissingValueReasonVitalRecords</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<p><br/></p>
