@@ -22,7 +22,7 @@
 | Name         | Previous IG  |  Current IG      | Comments/Updates  |
 | :----------: | -----------  |  -----------     | :---------------: |
 | [ConditionEclampsiaHypertension] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Condition-eclampsia-hypertension-vr.html) | [BFDR](placeholder.html) | renamed to [ConditionEclampsiaHypertension] | 
-| [LocationInjuryVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Location-injury-vr.html) | [VRDR](placeholder.html) | renamed to [ConditionEclampsiaHypertension] | 
+| [LocationInjuryVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Location-injury-vr.html) | [VRDR](placeholder.html) | only used for death use case, so omitted from VRCL | 
 {: .grid }
 
 # Removed Extensions
