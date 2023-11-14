@@ -1,23 +1,40 @@
-# New Content
 
-| Name    | Type     |  Comment         | Link  |
-| :-------: | -------- |  --------------- | :-----: |
-| Patient - Vital Records | Profile | Serves as an abstract profile (parent to [PatientChildVitalRecords], [PatientDecedentFetusVitalRecords], [PatientMotherVitalRecords], and [Decedent]) | [PatientVitalRecords] |
+# Current Profiles
+| Name         | Previous IG  |  Current IG      | Comments/Updates  |
+| :----------: | -----------  |  -----------     | :---------------: |
+| [PatientVitalRecords] | - | [VRCL](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Patient-child-vr.html) | Serves as an abstract profile (parent to [PatientChildVitalRecords], [PatientDecedentFetusVitalRecords], [PatientMotherVitalRecords], and [Decedent]) |
+| [PatientChildVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Patient-child-vr.html) | [VRCL]([PatientChildVitalRecords]) | Now inherits from [PatientVitalRecords] rather than [USCorePatientProfile], removed slices for identifier, added bypassedit flag to multiplebirth, birthTime, dataAbsentReason, partialDate no longer extensions  |
 {: .grid }
 
-# Remaining Content
-
-| Name    | Type     | Updates     | Comment         | Link  |
-| :-------: | -------- | ----------- | --------------- | :-----: |
-| Patient - Child - Vital Records | Profile | Now inherits from [PatientVitalRecords] rather than [USCorePatientProfile], removed slices for identifier, added bypassedit flag to multiplebirth, birthTime, dataAbsentReason, partialDate no longer extensions  | - | [PatientChildVitalRecords] |
+# Current Extensions
+| Name         | Previous IG  |  Current IG      | Comments/Updates  |
+| :----------: | -----------  |  -----------     | :---------------: |
+| [ExtensionWithinCityLimitsIndicatorVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Extension-within-city-limits-indicator-vr.html)  |  [VRCL](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Extension-within-city-limits-indicator-vr.html)    | changed to reference VRCL, rather than phinvads valueset |
 {: .grid }
 
-# Relocated Content
-
-| Name    | Type     | Previous IG | Current IG   | Updates     | Comment         | Link  |
-| :-------: | -------- | --------    | --------     | ----------- | --------------- | :-----: |
-| Condition - Eclampsia Hypertension | Profile | [VRCL] | [BFDR] | renamed to [ConditionEclampsiaHypertension] | - | [ConditionEclampsiaHypertension] |
-| Value Set - HispanicOrigin Vital Records | Valueset | [VRDR] | [VRCL] | renamed to [ValueSetHispanicOriginVitalRecords] | - | [ValueSetHispanicOriginVitalRecords] |
+# Current Valuesets
+| Name         | Previous IG  |  Current IG      | Comments/Updates  |
+| :----------: | -----------  |  -----------     | :---------------: |
+| [ValueSetHispanicOriginVitalRecords] | [VRDR](https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-hispanic-origin-vs.html) | [VRCL](http://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html) | renamed to [ValueSetHispanicOriginVitalRecords] | 
 {: .grid }
+
+# Removed Profiles
+| Name         | Previous IG  |  Current IG      | Comments/Updates  |
+| :----------: | -----------  |  -----------     | :---------------: |
+| [ConditionEclampsiaHypertension] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Condition-eclampsia-hypertension-vr.html) | [BFDR](placeholder.html) | renamed to [ConditionEclampsiaHypertension] | 
+| [LocationInjuryVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Location-injury-vr.html) | [VRDR](placeholder.html) | renamed to [ConditionEclampsiaHypertension] | 
+{: .grid }
+
+# Removed Extensions
+| Name         | Previous IG  |  Current IG      | Comments/Updates  |
+| :----------: | -----------  |  -----------     | :---------------: |
+{: .grid }
+
+# Removed Valuesets
+| Name         | Previous IG  |  Current IG      | Comments/Updates  |
+| :----------: | -----------  |  -----------     | :---------------: |
+| [ValueSetApgarTimingVitalRecords](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Observation-apgar-score-vr.html) |  [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Observation-apgar-score-vr.html) |  [BFDR](placeholder.html)    | Moved to Birth and Fetal Death Reporting IG |
+{: .grid }
+
 
 {% include markdown-link-references.md %}
