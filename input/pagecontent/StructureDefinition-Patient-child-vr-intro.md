@@ -42,7 +42,7 @@ This profile is mapped to:
 
 <summary>
 
-<strong class='context-menu' > Natality (Mother)</strong>
+<strong class='context-menu' > Natality </strong>
 
 </summary>
 <table class='grid'>
@@ -58,6 +58,96 @@ This profile is mapped to:
   </tr>
 </thead>
 <tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>1</td>
+  <td>Date of Birth (Infant)--Year</td>
+  <td>IDOB_YR</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>2</td>
+  <td>State, U.S. Territory or Canadian Province of Birth (Infant) - code</td>
+  <td>BSTATE</td>
+  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>6</td>
+  <td>Time of Birth</td>
+  <td>TB</td>
+  <td>birthDate.extension[patient-birthTime]</td>
+  <td></td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>7</td>
+  <td>Sex</td>
+  <td>ISEX</td>
+  <td>extension[birthsex].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-birth-sex-child-vr.html'>ValueSetBirthSexChildVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>8</td>
+  <td>Date of Birth (Infant)--Month</td>
+  <td>IDOB_MO</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>9</td>
+  <td>Date of Birth (Infant)--Day</td>
+  <td>IDOB_DY</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>10</td>
+  <td>County of Birth</td>
+  <td>CNTYO</td>
+  <td>extension[patient-birthplace].value[x].district.extension[countyCode]</td>
+  <td>integer</td>
+  <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>207</td>
+  <td>Plurality</td>
+  <td>PLUR</td>
+  <td>extension[patient-multipleBirthTotal].valuePositiveInt</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>208</td>
+  <td>Set Order</td>
+  <td>SORD</td>
+  <td>multipleBirth[x]</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>211</td>
+  <td>Plurality--Edit Flag</td>
+  <td>PLUR_BYPASS</td>
+  <td>multipleBirth.extension[bypassEditFlag].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-plurality-edit-flags.html'>PluralityEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+</tr>
 <tr>
   <td style='text-align: center'>Natality</td>
   <td>237</td>
@@ -67,33 +157,6 @@ This profile is mapped to:
   <td>quantity</td>
   <td></td>
 </tr>
-
-</tbody>
-</table>
-
-</details>
-<p></p>
-
-<details>
-
-<summary>
-
-<strong class='context-menu' > Natality (Father)</strong>
-
-</summary>
-<table class='grid'>
-<thead>
-  <tr>
-    <th style='text-align: center'><strong>Use Case</strong></th>
-    <th><strong>#</strong></th>
-    <th><strong>Description</strong></th>
-    <th><strong>IJE Name</strong></th>
-    <th><strong>Field</strong></th>
-    <th><strong>Type</strong></th>
-    <th><strong>Value Set/Comments</strong></th>
-  </tr>
-</thead>
-<tbody>
 <tr>
   <td style='text-align: center'>Natality</td>
   <td>238</td>
@@ -101,6 +164,69 @@ This profile is mapped to:
   <td>FAGER</td>
   <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
   <td>quantity</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>247</td>
+  <td>Child's First Name</td>
+  <td>KIDFNAME</td>
+  <td>name.given, <br />name.use = official</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>248</td>
+  <td>Child's Middle Name</td>
+  <td>KIDMNAME</td>
+  <td>name.given, <br />name.use = official </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>249</td>
+  <td>Child's Last Name</td>
+  <td>KIDLNAME</td>
+  <td>name.family, <br />name.use = official</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>250</td>
+  <td>Child's Surname Suffix (moved from end)</td>
+  <td>KIDSUFFX</td>
+  <td>name.suffix, <br />name.use = official</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>251</td>
+  <td>County of Birth (Literal)</td>
+  <td>BIRTH_CO</td>
+  <td>extension[patient-birthPlace].value[x].district</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>252</td>
+  <td>City/town/place of birth (Literal)</td>
+  <td>BRTHCITY</td>
+  <td>extension[patient-birthPlace].value[x].city</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>332</td>
+  <td>Infant's Medical Record Number</td>
+  <td>INF_MED_REC_NUM</td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR” </td>
+  <td>string</td>
   <td></td>
 </tr>
 
@@ -114,7 +240,7 @@ This profile is mapped to:
 
 <summary>
 
-<strong class='context-menu'> Fetal Death (Mother)</strong>
+<strong class='context-menu'> Fetal Death </strong>
 
 </summary>
 <table class='grid'>
@@ -132,6 +258,15 @@ This profile is mapped to:
 <tbody>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
+  <td>151</td>
+  <td>Plurality</td>
+  <td>PLUR</td>
+  <td>extension[patient-multipleBirthTotal].valuePositiveInt</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
   <td>171</td>
   <td>Mother's Reported Age</td>
   <td>MAGER</td>
@@ -146,4 +281,3 @@ This profile is mapped to:
 </details>
 <p></p>
 
-<p><br/></p>

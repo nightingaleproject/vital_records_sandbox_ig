@@ -17,7 +17,7 @@ This profile is mapped to:
 
 <summary>
 
-<strong class='context-menu' > Natality (Mother)</strong>
+<strong class='context-menu' > Natality </strong>
 
 </summary>
 <table class='grid'>
@@ -42,33 +42,6 @@ This profile is mapped to:
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-education-level-vr.html'>ValueSetEducationLevelVitalRecords</a></td>
 </tr>
-
-</tbody>
-</table>
-
-</details>
-<p></p>
-
-<details>
-
-<summary>
-
-<strong class='context-menu' > Natality (Father)</strong>
-
-</summary>
-<table class='grid'>
-<thead>
-  <tr>
-    <th style='text-align: center'><strong>Use Case</strong></th>
-    <th><strong>#</strong></th>
-    <th><strong>Description</strong></th>
-    <th><strong>IJE Name</strong></th>
-    <th><strong>Field</strong></th>
-    <th><strong>Type</strong></th>
-    <th><strong>Value Set/Comments</strong></th>
-  </tr>
-</thead>
-<tbody>
 <tr>
   <td style='text-align: center'>Natality</td>
   <td>78</td>
@@ -89,7 +62,7 @@ This profile is mapped to:
 
 <summary>
 
-<strong class='context-menu'> Fetal Death (Mother)</strong>
+<strong class='context-menu'> Fetal Death </strong>
 
 </summary>
 <table class='grid'>
@@ -114,33 +87,6 @@ This profile is mapped to:
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-education-level-vr.html'>ValueSetEducationLevelVitalRecords</a></td>
 </tr>
-
-</tbody>
-</table>
-
-</details>
-<p></p>
-
-<details>
-
-<summary>
-
-<strong class='context-menu'> Fetal Death (Father)</strong>
-
-</summary>
-<table class='grid'>
-<thead>
-  <tr>
-    <th style='text-align: center'><strong>Use Case</strong></th>
-    <th><strong>#</strong></th>
-    <th><strong>Description</strong></th>
-    <th><strong>IJE Name</strong></th>
-    <th><strong>Field</strong></th>
-    <th><strong>Type</strong></th>
-    <th><strong>Value Set/Comments</strong></th>
-  </tr>
-</thead>
-<tbody>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
   <td>283</td>
@@ -157,4 +103,3 @@ This profile is mapped to:
 </details>
 <p></p>
 
-<p><br/></p>
