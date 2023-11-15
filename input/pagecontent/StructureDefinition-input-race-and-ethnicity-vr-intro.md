@@ -1,148 +1,1411 @@
 In cases where multiple races are recorded for a person an algorithm (NCHS defined) is used to select a single race. The goal is to provide race statistics that are comparable with those used historically to facilitate time series analysis. The goal is to maintain consistency between data collected after the definitional change (allowing collection of multiple races and ethnicities) and that collected prior to that time. This intent is to maintain the integrity of time series (data collected from a range of time periods) reporting.
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Natality | 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Natality | 36 | Mother of Hispanic Origin?--Cuban | METHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Natality | 37 | Mother of Hispanic Origin?--Other | METHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Natality | 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5 | component[ HispanicLiteral ].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Natality | 39 | Mother's Race--White | MRACE1 | component[ White].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 40 | Mother's Race--Black or African American | MRACE2 | component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 41 | Mother's Race--American Indian or Alaska Native | MRACE3 | component[ AmericanIndianOrAlaskanNative].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 42 | Mother's Race--Asian Indian | MRACE4 | component[ AsianIndian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 43 | Mother's Race--Chinese | MRACE5 | component[ Chinese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 44 | Mother's Race--Filipino | MRACE6 | component[ Filipino].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 45 | Mother's Race--Japanese | MRACE7 | component[ Japanese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 46 | Mother's Race--Korean | MRACE8 | component[ Korean].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 47 | Mother's Race--Vietnamese | MRACE9 | component[ Vietnamese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 48 | Mother's Race--Other Asian | MRACE10 | component[ OtherAsian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 49 | Mother's Race--Native Hawaiian | MRACE11 | component[ NativeHawaiian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 50 | Mother's Race--Guamanian or Chamorro | MRACE12 | component[ GuamanianOrChamorro].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 51 | Mother's Race--Samoan | MRACE13 | component[ Samoan].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 52 | Mother's Race--Other Pacific Islander | MRACE14 | component[ OtherPacificIslander].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 53 | Mother's Race--Other | MRACE15 | component[ OtherRace].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Natality | 54 | Mother's Race--First American Indian or Alaska Native Literal | MRACE16 | component[ AmericanIndianorAlaskanNativeLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Natality | 55 | Mother's Race--Second American Indian or Alaska Native Literal | MRACE17 | component[ AmericanIndianorAlaskanNativeLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Natality | 56 | Mother's Race--First Other Asian Literal | MRACE18 | component[ OtherAsianLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Natality | 57 | Mother's Race--Second Other Asian Literal | MRACE19 | component[ OtherAsianLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Natality | 58 | Mother's Race--First Other Pacific Islander Literal | MRACE20 | component[ OtherPacificIslandLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Natality | 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21 | component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Natality | 60 | Mother's Race--First Other Literal | MRACE22 | component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Natality | 61 | Mother's Race--Second Other Literal | MRACE23 | component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Natality | 80 | Father of Hispanic Origin?--Mexican | FETHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Natality | 81 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Natality | 82 | Father of Hispanic Origin?--Cuban | FETHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Natality | 83 | Father of Hispanic Origin?--Other | FETHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Natality | 84 | Father of Hispanic Origin?--Other Literal | FETHNIC5 | component[ HispanicLiteral ].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Natality | 85 | Father's Race--White | FRACE1 | component[ White].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 86 | Father's Race--Black or African American | FRACE2 | component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 87 | Father's Race--American Indian or Alaska Native | FRACE3 | component[ AmericanIndianOrAlaskanNative].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 88 | Father's Race--Asian Indian | FRACE4 | component[ AsianIndian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 89 | Father's Race--Chinese | FRACE5 | component[ Chinese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 90 | Father's Race--Filipino | FRACE6 | component[ Filipino].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 91 | Father's Race--Japanese | FRACE7 | component[ Japanese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 92 | Father's Race--Korean | FRACE8 | component[ Korean].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 93 | Father's Race--Vietnamese | FRACE9 | component[ Vietnamese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 94 | Father's Race--Other Asian | FRACE10 | component[ OtherAsian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 95 | Father's Race--Native Hawaiian | FRACE11 | component[ NativeHawaiian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 96 | Father's Race--Guamanian or Chamorro | FRACE12 | component[ GuamanianOrChamorro].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 97 | Father's Race--Samoan | FRACE13 | component[ Samoan].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 98 | Father's Race--Other Pacific Islander | FRACE14 | component[ OtherPacificIslander].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 99 | Father's Race--Other | FRACE15 | component[ OtherRace].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Natality | 100 | Father's Race--First American Indian or Alaska Native Literal | FRACE16 | component[ AmericanIndianorAlaskanNativeLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Natality | 101 | Father's Race--Second American Indian or Alaska Native Literal | FRACE17 | component[ AmericanIndianorAlaskanNativeLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Natality | 102 | Father's Race--First Other Asian Literal | FRACE18 | component[ OtherAsianLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Natality | 103 | Father's Race--Second Other Asian Literal | FRACE19 | component[ OtherAsianLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Natality | 104 | Father's Race--First Other Pacific Islander Literal | FRACE20 | component[ OtherPacificIslandLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Natality | 105 | Father's Race--Second Other Pacific Islander Literal | FRACE21 | component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Natality | 106 | Father's Race--First Other Literal | FRACE22 | component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Natality | 107 | Father's Race--Second Other Literal | FRACE23 | component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Fetal Death | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Fetal Death | 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Fetal Death | 36 | Mother of Hispanic Origin?--Cuban | METHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Fetal Death | 37 | Mother of Hispanic Origin?--Other | METHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Fetal Death | 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5 | component[ HispanicLiteral ].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Fetal Death | 39 | Mother's Race--White | MRACE1 | component[ White].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 40 | Mother's Race--Black or African American | MRACE2 | component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 41 | Mother's Race--American Indian or Alaska Native | MRACE3 | component[ AmericanIndianOrAlaskanNative].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 42 | Mother's Race--Asian Indian | MRACE4 | component[ AsianIndian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 43 | Mother's Race--Chinese | MRACE5 | component[ Chinese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 44 | Mother's Race--Filipino | MRACE6 | component[ Filipino].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 45 | Mother's Race--Japanese | MRACE7 | component[ Japanese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 46 | Mother's Race--Korean | MRACE8 | component[ Korean].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 47 | Mother's Race--Vietnamese | MRACE9 | component[ Vietnamese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 48 | Mother's Race--Other Asian | MRACE10 | component[ OtherAsian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 49 | Mother's Race--Native Hawaiian | MRACE11 | component[ NativeHawaiian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 50 | Mother's Race--Guamanian or Chamorro | MRACE12 | component[ GuamanianOrChamorro].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 51 | Mother's Race--Samoan | MRACE13 | component[ Samoan].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 52 | Mother's Race--Other Pacific Islander | MRACE14 | component[ OtherPacificIslander].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 53 | Mother's Race--Other | MRACE15 | component[ OtherRace].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ] |boolean | |
-| Fetal Death | 54 | Mother's Race--First American Indian or Alaska Native Literal | MRACE16 | component[ AmericanIndianorAlaskanNativeLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Fetal Death | 55 | Mother's Race--Second American Indian or Alaska Native Literal | MRACE17 | component[ AmericanIndianorAlaskanNativeLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Fetal Death | 56 | Mother's Race--First Other Asian Literal | MRACE18 | component[ OtherAsianLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Fetal Death | 57 | Mother's Race--Second Other Asian Literal | MRACE19 | component[ OtherAsianLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Fetal Death | 58 | Mother's Race--First Other Pacific Islander Literal | MRACE20 | component[ OtherPacificIslandLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Fetal Death | 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21 | component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Fetal Death | 60 | Mother's Race--First Other Literal | MRACE22 | component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Fetal Death | 61 | Mother's Race--Second Other Literal | MRACE23 | component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ] |string | |
-| Fetal Death | 285 | Father of Hispanic Origin?--Mexican | FETHNIC1 | component[ HispanicMexican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Fetal Death | 286 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2 | component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Fetal Death | 287 | Father of Hispanic Origin?--Cuban | FETHNIC3 | component[ HispanicCuban ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Fetal Death | 288 | Father of Hispanic Origin?--Other | FETHNIC4 | component[ HispanicOther ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Fetal Death | 289 | Father of Hispanic Origin?--Other Literal | FETHNIC5 | component[ HispanicLiteral ].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Fetal Death | 290 | Father's Race--White | FRACE1 | component[ White].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 291 | Father's Race--Black or African American | FRACE2 | component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 292 | Father's Race--American Indian or Alaska Native | FRACE3 | component[ AmericanIndianOrAlaskanNative].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 293 | Father's Race--Asian Indian | FRACE4 | component[ AsianIndian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 294 | Father's Race--Chinese | FRACE5 | component[ Chinese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 295 | Father's Race--Filipino | FRACE6 | component[ Filipino].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 296 | Father's Race--Japanese | FRACE7 | component[ Japanese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 297 | Father's Race--Korean | FRACE8 | component[ Korean].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 298 | Father's Race--Vietnamese | FRACE9 | component[ Vietnamese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 299 | Father's Race--Other Asian | FRACE10 | component[ OtherAsian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 300 | Father's Race--Native Hawaiian | FRACE11 | component[ NativeHawaiian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 301 | Father's Race--Guamanian or Chamorro | FRACE12 | component[ GuamanianOrChamorro].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 302 | Father's Race--Samoan | FRACE13 | component[ Samoan].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 303 | Father's Race--Other Pacific Islander | FRACE14 | component[ OtherPacificIslander].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 304 | Father's Race--Other | FRACE15 | component[ OtherRace].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |boolean | |
-| Fetal Death | 305 | Father's Race--First American Indian or Alaska Native Literal | FRACE16 | component[ AmericanIndianorAlaskanNativeLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Fetal Death | 306 | Father's Race--Second American Indian or Alaska Native Literal | FRACE17 | component[ AmericanIndianorAlaskanNativeLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Fetal Death | 307 | Father's Race--First Other Asian Literal | FRACE18 | component[ OtherAsianLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Fetal Death | 308 | Father's Race--Second Other Asian Literal | FRACE19 | component[ OtherAsianLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Fetal Death | 309 | Father's Race--First Other Pacific Islander Literal | FRACE20 | component[ OtherPacificIslandLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Fetal Death | 310 | Father's Race--Second Other Pacific Islander Literal | FRACE21 | component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Fetal Death | 311 | Father's Race--First Other Literal | FRACE22 | component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Fetal Death | 312 | Father's Race--Second Other Literal | FRACE23 | component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ] |string | |
-| Mortality | 39 | Decedent of Hispanic Origin?--Mexican | DETHNIC1 | component[ HispanicMexican].valueCoding |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Mortality | 40 | Decedent of Hispanic Origin?--Puerto Rican | DETHNIC2 | component[ HispanicPuertoRican].valueCoding |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Mortality | 41 | Decedent of Hispanic Origin?--Cuban | DETHNIC3 | component[ HispanicCuban ].valueCoding |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Mortality | 42 | Decedent of Hispanic Origin?--Other | DETHNIC4 | component[ HispanicOther ].valueCoding |codeable |[ValueSetHispanicNoUnknownVitalRecords] |
-| Mortality | 43 | Decedent of Hispanic Origin?--Other, Literal | DETHNIC5 | component[ HispanicLiteral ].valueString |string |- |
-| Mortality | 44 | Decedent's Race--White | RACE1 | component[ White].valueBoolean |boolean |- |
-| Mortality | 45 | Decedent's Race--Black or African American | RACE2 | component[ BlackOrAfricanAmerican].valueBoolean |boolean |- |
-| Mortality | 46 | Decedent's Race--American Indian or Alaska Native | RACE3 | component[ AmericanIndianOrAlaskanNative].valueBoolean |boolean |- |
-| Mortality | 47 | Decedent's Race--Asian Indian | RACE4 | component[ AsianIndian].valueBoolean |boolean |- |
-| Mortality | 48 | Decedent's Race--Chinese | RACE5 | component[ Chinese].valueBoolean |boolean |- |
-| Mortality | 49 | Decedent's Race--Filipino | RACE6 | component[ Filipino].valueBoolean |boolean |- |
-| Mortality | 50 | Decedent's Race--Japanese | RACE7 | component[ Japanese].valueBoolean |boolean |- |
-| Mortality | 51 | Decedent's Race--Korean | RACE8 | component[ Korean].valueBoolean |boolean |- |
-| Mortality | 52 | Decedent's Race--Vietnamese | RACE9 | component[ Vietnamese].valueBoolean |boolean |- |
-| Mortality | 53 | Decedent's Race--Other Asian | RACE10 | component[ OtherAsian].valueBoolean |boolean |- |
-| Mortality | 54 | Decedent's Race--Native Hawaiian | RACE11 | component[ NativeHawaiian].valueBoolean |boolean |- |
-| Mortality | 55 | Decedent's Race--Guamanian or Chamorro | RACE12 | component[ GuamanianOrChamorro].valueBoolean |boolean |- |
-| Mortality | 56 | Decedent's Race--Samoan | RACE13 | component[ Samoan].valueBoolean |boolean |- |
-| Mortality | 57 | Decedent's Race--Other Pacific Islander | RACE14 | component[ OtherPacificIslander].valueBoolean |boolean |- |
-| Mortality | 58 | Decedent's Race--Other | RACE15 | component[ OtherRace].valueBoolean |boolean |- |
-| Mortality | 59 | Decedent's Race--First American Indian or Alaska Native Literal | RACE16 | component[ FirstAmericanIndianOrAlaskanNativeLiteral].valueString |string |- |
-| Mortality | 60 | Decedent's Race--Second American Indian or Alaska Native Literal | RACE17 | component[ SecondAmericanIndianOrAlaskanNativeLiteral].valueString |string |- |
-| Mortality | 61 | Decedent's Race--First Other Asian Literal | RACE18 | component[ FirstOtherAsianLiteral].valueString |string |- |
-| Mortality | 62 | Decedent's Race--Second Other Asian Literal | RACE19 | component[ SecondOtherAsianLiteral].valueString |string |- |
-| Mortality | 63 | Decedent's Race--First Other Pacific Islander Literal | RACE20 | component[ FirstOtherPacificIslanderLiteral].valueString |string |- |
-| Mortality | 64 | Decedent's Race--Second Other Pacific Islander Literal | RACE21 | component[ SecondOtherPacificIslanderLiteral].valueString |string |- |
-| Mortality | 65 | Decedent's Race--First Other Literal | RACE22 | component[ FirstOtherRaceLiteral].valueString |string |- |
-| Mortality | 66 | Decedent's Race--Second Other Literal | RACE23 | component[ SecondOtherRaceLiteral].valueString |string |- |
-| Mortality | 83 | Decedent's Race--Missing | RACE_MVR | component[ MissingValueReason].valueCoding |codeable |[ValueSetRaceMissingValueReasonVitalRecords] |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality (Mother)</strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>34</td>
+  <td>Mother of Hispanic Origin?--Mexican</td>
+  <td>METHNIC1</td>
+  <td>component[ HispanicMexican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>35</td>
+  <td>Mother of Hispanic Origin?--Puerto Rican</td>
+  <td>METHNIC2</td>
+  <td>component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>36</td>
+  <td>Mother of Hispanic Origin?--Cuban</td>
+  <td>METHNIC3</td>
+  <td>component[ HispanicCuban ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>37</td>
+  <td>Mother of Hispanic Origin?--Other</td>
+  <td>METHNIC4</td>
+  <td>component[ HispanicOther ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>38</td>
+  <td>Mother of Hispanic Origin?--Other Literal</td>
+  <td>METHNIC5</td>
+  <td>component[ HispanicLiteral ].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>39</td>
+  <td>Mother's Race--White</td>
+  <td>MRACE1</td>
+  <td>component[ White].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>40</td>
+  <td>Mother's Race--Black or African American</td>
+  <td>MRACE2</td>
+  <td>component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>41</td>
+  <td>Mother's Race--American Indian or Alaska Native</td>
+  <td>MRACE3</td>
+  <td>component[ AmericanIndianOrAlaskanNative].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>42</td>
+  <td>Mother's Race--Asian Indian</td>
+  <td>MRACE4</td>
+  <td>component[ AsianIndian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>43</td>
+  <td>Mother's Race--Chinese</td>
+  <td>MRACE5</td>
+  <td>component[ Chinese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>44</td>
+  <td>Mother's Race--Filipino</td>
+  <td>MRACE6</td>
+  <td>component[ Filipino].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>45</td>
+  <td>Mother's Race--Japanese</td>
+  <td>MRACE7</td>
+  <td>component[ Japanese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>46</td>
+  <td>Mother's Race--Korean</td>
+  <td>MRACE8</td>
+  <td>component[ Korean].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>47</td>
+  <td>Mother's Race--Vietnamese</td>
+  <td>MRACE9</td>
+  <td>component[ Vietnamese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>48</td>
+  <td>Mother's Race--Other Asian</td>
+  <td>MRACE10</td>
+  <td>component[ OtherAsian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>49</td>
+  <td>Mother's Race--Native Hawaiian</td>
+  <td>MRACE11</td>
+  <td>component[ NativeHawaiian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>50</td>
+  <td>Mother's Race--Guamanian or Chamorro</td>
+  <td>MRACE12</td>
+  <td>component[ GuamanianOrChamorro].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>51</td>
+  <td>Mother's Race--Samoan</td>
+  <td>MRACE13</td>
+  <td>component[ Samoan].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>52</td>
+  <td>Mother's Race--Other Pacific Islander</td>
+  <td>MRACE14</td>
+  <td>component[ OtherPacificIslander].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>53</td>
+  <td>Mother's Race--Other</td>
+  <td>MRACE15</td>
+  <td>component[ OtherRace].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>54</td>
+  <td>Mother's Race--First American Indian or Alaska Native Literal</td>
+  <td>MRACE16</td>
+  <td>component[ AmericanIndianorAlaskanNativeLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>55</td>
+  <td>Mother's Race--Second American Indian or Alaska Native Literal</td>
+  <td>MRACE17</td>
+  <td>component[ AmericanIndianorAlaskanNativeLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>56</td>
+  <td>Mother's Race--First Other Asian Literal</td>
+  <td>MRACE18</td>
+  <td>component[ OtherAsianLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>57</td>
+  <td>Mother's Race--Second Other Asian Literal</td>
+  <td>MRACE19</td>
+  <td>component[ OtherAsianLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>58</td>
+  <td>Mother's Race--First Other Pacific Islander Literal</td>
+  <td>MRACE20</td>
+  <td>component[ OtherPacificIslandLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>59</td>
+  <td>Mother's Race--Second Other Pacific Islander Literal</td>
+  <td>MRACE21</td>
+  <td>component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>60</td>
+  <td>Mother's Race--First Other Literal</td>
+  <td>MRACE22</td>
+  <td>component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>61</td>
+  <td>Mother's Race--Second Other Literal</td>
+  <td>MRACE23</td>
+  <td>component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality (Father)</strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>80</td>
+  <td>Father of Hispanic Origin?--Mexican</td>
+  <td>FETHNIC1</td>
+  <td>component[ HispanicMexican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>81</td>
+  <td>Father of Hispanic Origin?--Puerto Rican</td>
+  <td>FETHNIC2</td>
+  <td>component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>82</td>
+  <td>Father of Hispanic Origin?--Cuban</td>
+  <td>FETHNIC3</td>
+  <td>component[ HispanicCuban ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>83</td>
+  <td>Father of Hispanic Origin?--Other</td>
+  <td>FETHNIC4</td>
+  <td>component[ HispanicOther ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>84</td>
+  <td>Father of Hispanic Origin?--Other Literal</td>
+  <td>FETHNIC5</td>
+  <td>component[ HispanicLiteral ].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>85</td>
+  <td>Father's Race--White</td>
+  <td>FRACE1</td>
+  <td>component[ White].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>86</td>
+  <td>Father's Race--Black or African American</td>
+  <td>FRACE2</td>
+  <td>component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>87</td>
+  <td>Father's Race--American Indian or Alaska Native</td>
+  <td>FRACE3</td>
+  <td>component[ AmericanIndianOrAlaskanNative].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>88</td>
+  <td>Father's Race--Asian Indian</td>
+  <td>FRACE4</td>
+  <td>component[ AsianIndian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>89</td>
+  <td>Father's Race--Chinese</td>
+  <td>FRACE5</td>
+  <td>component[ Chinese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>90</td>
+  <td>Father's Race--Filipino</td>
+  <td>FRACE6</td>
+  <td>component[ Filipino].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>91</td>
+  <td>Father's Race--Japanese</td>
+  <td>FRACE7</td>
+  <td>component[ Japanese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>92</td>
+  <td>Father's Race--Korean</td>
+  <td>FRACE8</td>
+  <td>component[ Korean].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>93</td>
+  <td>Father's Race--Vietnamese</td>
+  <td>FRACE9</td>
+  <td>component[ Vietnamese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>94</td>
+  <td>Father's Race--Other Asian</td>
+  <td>FRACE10</td>
+  <td>component[ OtherAsian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>95</td>
+  <td>Father's Race--Native Hawaiian</td>
+  <td>FRACE11</td>
+  <td>component[ NativeHawaiian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>96</td>
+  <td>Father's Race--Guamanian or Chamorro</td>
+  <td>FRACE12</td>
+  <td>component[ GuamanianOrChamorro].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>97</td>
+  <td>Father's Race--Samoan</td>
+  <td>FRACE13</td>
+  <td>component[ Samoan].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>98</td>
+  <td>Father's Race--Other Pacific Islander</td>
+  <td>FRACE14</td>
+  <td>component[ OtherPacificIslander].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>99</td>
+  <td>Father's Race--Other</td>
+  <td>FRACE15</td>
+  <td>component[ OtherRace].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>100</td>
+  <td>Father's Race--First American Indian or Alaska Native Literal</td>
+  <td>FRACE16</td>
+  <td>component[ AmericanIndianorAlaskanNativeLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>101</td>
+  <td>Father's Race--Second American Indian or Alaska Native Literal</td>
+  <td>FRACE17</td>
+  <td>component[ AmericanIndianorAlaskanNativeLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>102</td>
+  <td>Father's Race--First Other Asian Literal</td>
+  <td>FRACE18</td>
+  <td>component[ OtherAsianLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>103</td>
+  <td>Father's Race--Second Other Asian Literal</td>
+  <td>FRACE19</td>
+  <td>component[ OtherAsianLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>104</td>
+  <td>Father's Race--First Other Pacific Islander Literal</td>
+  <td>FRACE20</td>
+  <td>component[ OtherPacificIslandLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>105</td>
+  <td>Father's Race--Second Other Pacific Islander Literal</td>
+  <td>FRACE21</td>
+  <td>component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>106</td>
+  <td>Father's Race--First Other Literal</td>
+  <td>FRACE22</td>
+  <td>component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>107</td>
+  <td>Father's Race--Second Other Literal</td>
+  <td>FRACE23</td>
+  <td>component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death (Mother)</strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>34</td>
+  <td>Mother of Hispanic Origin?--Mexican</td>
+  <td>METHNIC1</td>
+  <td>component[ HispanicMexican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>35</td>
+  <td>Mother of Hispanic Origin?--Puerto Rican</td>
+  <td>METHNIC2</td>
+  <td>component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>36</td>
+  <td>Mother of Hispanic Origin?--Cuban</td>
+  <td>METHNIC3</td>
+  <td>component[ HispanicCuban ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>37</td>
+  <td>Mother of Hispanic Origin?--Other</td>
+  <td>METHNIC4</td>
+  <td>component[ HispanicOther ].valueCoding, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>38</td>
+  <td>Mother of Hispanic Origin?--Other Literal</td>
+  <td>METHNIC5</td>
+  <td>component[ HispanicLiteral ].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>39</td>
+  <td>Mother's Race--White</td>
+  <td>MRACE1</td>
+  <td>component[ White].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>40</td>
+  <td>Mother's Race--Black or African American</td>
+  <td>MRACE2</td>
+  <td>component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>41</td>
+  <td>Mother's Race--American Indian or Alaska Native</td>
+  <td>MRACE3</td>
+  <td>component[ AmericanIndianOrAlaskanNative].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>42</td>
+  <td>Mother's Race--Asian Indian</td>
+  <td>MRACE4</td>
+  <td>component[ AsianIndian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>43</td>
+  <td>Mother's Race--Chinese</td>
+  <td>MRACE5</td>
+  <td>component[ Chinese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>44</td>
+  <td>Mother's Race--Filipino</td>
+  <td>MRACE6</td>
+  <td>component[ Filipino].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>45</td>
+  <td>Mother's Race--Japanese</td>
+  <td>MRACE7</td>
+  <td>component[ Japanese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>46</td>
+  <td>Mother's Race--Korean</td>
+  <td>MRACE8</td>
+  <td>component[ Korean].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>47</td>
+  <td>Mother's Race--Vietnamese</td>
+  <td>MRACE9</td>
+  <td>component[ Vietnamese].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>48</td>
+  <td>Mother's Race--Other Asian</td>
+  <td>MRACE10</td>
+  <td>component[ OtherAsian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>49</td>
+  <td>Mother's Race--Native Hawaiian</td>
+  <td>MRACE11</td>
+  <td>component[ NativeHawaiian].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>50</td>
+  <td>Mother's Race--Guamanian or Chamorro</td>
+  <td>MRACE12</td>
+  <td>component[ GuamanianOrChamorro].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>51</td>
+  <td>Mother's Race--Samoan</td>
+  <td>MRACE13</td>
+  <td>component[ Samoan].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>52</td>
+  <td>Mother's Race--Other Pacific Islander</td>
+  <td>MRACE14</td>
+  <td>component[ OtherPacificIslander].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>53</td>
+  <td>Mother's Race--Other</td>
+  <td>MRACE15</td>
+  <td>component[ OtherRace].valueBoolean, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>54</td>
+  <td>Mother's Race--First American Indian or Alaska Native Literal</td>
+  <td>MRACE16</td>
+  <td>component[ AmericanIndianorAlaskanNativeLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>55</td>
+  <td>Mother's Race--Second American Indian or Alaska Native Literal</td>
+  <td>MRACE17</td>
+  <td>component[ AmericanIndianorAlaskanNativeLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>56</td>
+  <td>Mother's Race--First Other Asian Literal</td>
+  <td>MRACE18</td>
+  <td>component[ OtherAsianLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>57</td>
+  <td>Mother's Race--Second Other Asian Literal</td>
+  <td>MRACE19</td>
+  <td>component[ OtherAsianLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>58</td>
+  <td>Mother's Race--First Other Pacific Islander Literal</td>
+  <td>MRACE20</td>
+  <td>component[ OtherPacificIslandLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>59</td>
+  <td>Mother's Race--Second Other Pacific Islander Literal</td>
+  <td>MRACE21</td>
+  <td>component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>60</td>
+  <td>Mother's Race--First Other Literal</td>
+  <td>MRACE22</td>
+  <td>component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>61</td>
+  <td>Mother's Race--Second Other Literal</td>
+  <td>MRACE23</td>
+  <td>component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ PatientMotherVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death (Father)</strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>285</td>
+  <td>Father of Hispanic Origin?--Mexican</td>
+  <td>FETHNIC1</td>
+  <td>component[ HispanicMexican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>286</td>
+  <td>Father of Hispanic Origin?--Puerto Rican</td>
+  <td>FETHNIC2</td>
+  <td>component[ HispanicPuertoRican].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>287</td>
+  <td>Father of Hispanic Origin?--Cuban</td>
+  <td>FETHNIC3</td>
+  <td>component[ HispanicCuban ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>288</td>
+  <td>Father of Hispanic Origin?--Other</td>
+  <td>FETHNIC4</td>
+  <td>component[ HispanicOther ].valueCoding, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>289</td>
+  <td>Father of Hispanic Origin?--Other Literal</td>
+  <td>FETHNIC5</td>
+  <td>component[ HispanicLiteral ].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>290</td>
+  <td>Father's Race--White</td>
+  <td>FRACE1</td>
+  <td>component[ White].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>291</td>
+  <td>Father's Race--Black or African American</td>
+  <td>FRACE2</td>
+  <td>component[ BlackOrAfricanAmerican].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>292</td>
+  <td>Father's Race--American Indian or Alaska Native</td>
+  <td>FRACE3</td>
+  <td>component[ AmericanIndianOrAlaskanNative].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>293</td>
+  <td>Father's Race--Asian Indian</td>
+  <td>FRACE4</td>
+  <td>component[ AsianIndian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>294</td>
+  <td>Father's Race--Chinese</td>
+  <td>FRACE5</td>
+  <td>component[ Chinese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>295</td>
+  <td>Father's Race--Filipino</td>
+  <td>FRACE6</td>
+  <td>component[ Filipino].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>296</td>
+  <td>Father's Race--Japanese</td>
+  <td>FRACE7</td>
+  <td>component[ Japanese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>297</td>
+  <td>Father's Race--Korean</td>
+  <td>FRACE8</td>
+  <td>component[ Korean].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>298</td>
+  <td>Father's Race--Vietnamese</td>
+  <td>FRACE9</td>
+  <td>component[ Vietnamese].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>299</td>
+  <td>Father's Race--Other Asian</td>
+  <td>FRACE10</td>
+  <td>component[ OtherAsian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>300</td>
+  <td>Father's Race--Native Hawaiian</td>
+  <td>FRACE11</td>
+  <td>component[ NativeHawaiian].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>301</td>
+  <td>Father's Race--Guamanian or Chamorro</td>
+  <td>FRACE12</td>
+  <td>component[ GuamanianOrChamorro].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>302</td>
+  <td>Father's Race--Samoan</td>
+  <td>FRACE13</td>
+  <td>component[ Samoan].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>303</td>
+  <td>Father's Race--Other Pacific Islander</td>
+  <td>FRACE14</td>
+  <td>component[ OtherPacificIslander].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>304</td>
+  <td>Father's Race--Other</td>
+  <td>FRACE15</td>
+  <td>component[ OtherRace].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>305</td>
+  <td>Father's Race--First American Indian or Alaska Native Literal</td>
+  <td>FRACE16</td>
+  <td>component[ AmericanIndianorAlaskanNativeLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>306</td>
+  <td>Father's Race--Second American Indian or Alaska Native Literal</td>
+  <td>FRACE17</td>
+  <td>component[ AmericanIndianorAlaskanNativeLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>307</td>
+  <td>Father's Race--First Other Asian Literal</td>
+  <td>FRACE18</td>
+  <td>component[ OtherAsianLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>308</td>
+  <td>Father's Race--Second Other Asian Literal</td>
+  <td>FRACE19</td>
+  <td>component[ OtherAsianLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>309</td>
+  <td>Father's Race--First Other Pacific Islander Literal</td>
+  <td>FRACE20</td>
+  <td>component[ OtherPacificIslandLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>310</td>
+  <td>Father's Race--Second Other Pacific Islander Literal</td>
+  <td>FRACE21</td>
+  <td>component[ OtherPacificIslandLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>311</td>
+  <td>Father's Race--First Other Literal</td>
+  <td>FRACE22</td>
+  <td>component[ OtherRaceLiteral1].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>312</td>
+  <td>Father's Race--Second Other Literal</td>
+  <td>FRACE23</td>
+  <td>component[ OtherRaceLiteral2].valueString, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Mortality (Decedent) </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>39</td>
+  <td>Decedent of Hispanic Origin?--Mexican</td>
+  <td>DETHNIC1</td>
+  <td>component[ HispanicMexican].valueCoding</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>40</td>
+  <td>Decedent of Hispanic Origin?--Puerto Rican</td>
+  <td>DETHNIC2</td>
+  <td>component[ HispanicPuertoRican].valueCoding</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>41</td>
+  <td>Decedent of Hispanic Origin?--Cuban</td>
+  <td>DETHNIC3</td>
+  <td>component[ HispanicCuban ].valueCoding</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>42</td>
+  <td>Decedent of Hispanic Origin?--Other</td>
+  <td>DETHNIC4</td>
+  <td>component[ HispanicOther ].valueCoding</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>43</td>
+  <td>Decedent of Hispanic Origin?--Other, Literal</td>
+  <td>DETHNIC5</td>
+  <td>component[ HispanicLiteral ].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>44</td>
+  <td>Decedent's Race--White</td>
+  <td>RACE1</td>
+  <td>component[ White].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>45</td>
+  <td>Decedent's Race--Black or African American</td>
+  <td>RACE2</td>
+  <td>component[ BlackOrAfricanAmerican].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>46</td>
+  <td>Decedent's Race--American Indian or Alaska Native</td>
+  <td>RACE3</td>
+  <td>component[ AmericanIndianOrAlaskanNative].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>47</td>
+  <td>Decedent's Race--Asian Indian</td>
+  <td>RACE4</td>
+  <td>component[ AsianIndian].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>48</td>
+  <td>Decedent's Race--Chinese</td>
+  <td>RACE5</td>
+  <td>component[ Chinese].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>49</td>
+  <td>Decedent's Race--Filipino</td>
+  <td>RACE6</td>
+  <td>component[ Filipino].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>50</td>
+  <td>Decedent's Race--Japanese</td>
+  <td>RACE7</td>
+  <td>component[ Japanese].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>51</td>
+  <td>Decedent's Race--Korean</td>
+  <td>RACE8</td>
+  <td>component[ Korean].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>52</td>
+  <td>Decedent's Race--Vietnamese</td>
+  <td>RACE9</td>
+  <td>component[ Vietnamese].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>53</td>
+  <td>Decedent's Race--Other Asian</td>
+  <td>RACE10</td>
+  <td>component[ OtherAsian].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>54</td>
+  <td>Decedent's Race--Native Hawaiian</td>
+  <td>RACE11</td>
+  <td>component[ NativeHawaiian].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>55</td>
+  <td>Decedent's Race--Guamanian or Chamorro</td>
+  <td>RACE12</td>
+  <td>component[ GuamanianOrChamorro].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>56</td>
+  <td>Decedent's Race--Samoan</td>
+  <td>RACE13</td>
+  <td>component[ Samoan].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>57</td>
+  <td>Decedent's Race--Other Pacific Islander</td>
+  <td>RACE14</td>
+  <td>component[ OtherPacificIslander].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>58</td>
+  <td>Decedent's Race--Other</td>
+  <td>RACE15</td>
+  <td>component[ OtherRace].valueBoolean</td>
+  <td>boolean</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>59</td>
+  <td>Decedent's Race--First American Indian or Alaska Native Literal</td>
+  <td>RACE16</td>
+  <td>component[ FirstAmericanIndianOrAlaskanNativeLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>60</td>
+  <td>Decedent's Race--Second American Indian or Alaska Native Literal</td>
+  <td>RACE17</td>
+  <td>component[ SecondAmericanIndianOrAlaskanNativeLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>61</td>
+  <td>Decedent's Race--First Other Asian Literal</td>
+  <td>RACE18</td>
+  <td>component[ FirstOtherAsianLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>62</td>
+  <td>Decedent's Race--Second Other Asian Literal</td>
+  <td>RACE19</td>
+  <td>component[ SecondOtherAsianLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>63</td>
+  <td>Decedent's Race--First Other Pacific Islander Literal</td>
+  <td>RACE20</td>
+  <td>component[ FirstOtherPacificIslanderLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>64</td>
+  <td>Decedent's Race--Second Other Pacific Islander Literal</td>
+  <td>RACE21</td>
+  <td>component[ SecondOtherPacificIslanderLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>65</td>
+  <td>Decedent's Race--First Other Literal</td>
+  <td>RACE22</td>
+  <td>component[ FirstOtherRaceLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>66</td>
+  <td>Decedent's Race--Second Other Literal</td>
+  <td>RACE23</td>
+  <td>component[ SecondOtherRaceLiteral].valueString</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>83</td>
+  <td>Decedent's Race--Missing</td>
+  <td>RACE_MVR</td>
+  <td>component[ MissingValueReason].valueCoding</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-missing-value-reason-vr.html'>ValueSetRaceMissingValueReasonVitalRecords</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

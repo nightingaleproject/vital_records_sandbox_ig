@@ -58,89 +58,799 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 14 | Date of Birth (Mother)--Year | MDOB_YR | birthDate |date |See [PartialDatesAndTimes] |
-| Natality | 15 | Date of Birth (Mother)--Month | MDOB_MO | birthDate |date |See [PartialDatesAndTimes] |
-| Natality | 16 | Date of Birth (Mother)--Day | MDOB_DY | birthDate |date |See [PartialDatesAndTimes] |
-| Natality | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS | birthDate.extension[bypassEditFlag].value |codeable |[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] |
-| Natality | 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER | extension[patient-birthPlace].value[x].state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
-| Natality | 19 | Birthplace of Mother--Country | BPLACEC_CNT | extension[patient-birthPlace].value[x].country  |string |[ValueSetResidenceCountryVitalRecords] |
-| Natality | 20 | Residence of Mother--City | CITYC | address.city.extension[ cityCode ] |integer |See [CityCodes] |
-| Natality | 21 | Residence of Mother--County | COUNTYC | address.district.extension[countyCode] |integer |See [CountyCodes] |
-| Natality | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
-| Natality | 23 | Residence of Mother--Country | COUNTRYC | address.country |string |[ValueSetResidenceCountryVitalRecords] |
-| Natality | 24 | Residence of Mother--Inside City Limits | LIMITS | address.extension[ withinCityLimitsIndicator ].value |codeable |[ValueSetYesNoUnknownVitalRecords] |
-| Natality | 254 | Mother's First Name | MOMFNAME | name.given, <br />name.use = official |string | |
-| Natality | 255 | Mother's Middle Name | MOMMIDDL | name.given, <br />name.use = official  |string | |
-| Natality | 256 | Mother's Last Name | MOMLNAME | name.family, <br />name.use = official |string | |
-| Natality | 257 | Mother's Surname Suffix  | MOMSUFFX | name.suffix, <br />name.use = official  |string | |
-| Natality | 258 | Mother's First Maiden Name | MOMFMNME | name.given, <br />name.use = maiden |string | |
-| Natality | 259 | Mother's Middle Maiden Name | MOMMMID | name.given, <br />name.use = maiden |string | |
-| Natality | 260 | Mother's Maiden Surname | MOMMAIDN | name.family, <br />name.use = maiden |string | |
-| Natality | 261 | Mother's Maiden Surname Suffix | MOMMSUFX | name.suffix, <br />name.use = maiden |string | |
-| Natality | 262 | Residence Street Number | STNUM | address.extension[stnum] |string | |
-| Natality | 263 | Residence Pre Directional | PREDIR | address.extension[predir] |string | |
-| Natality | 264 | Residence Street name | STNAME | address.extension[stname] |string | |
-| Natality | 265 | Residence Street designator | STDESIG | address.extension[stdesig] |string | |
-| Natality | 266 | Residence Post Directional | POSTDIR | address.extension[postdir] |string | |
-| Natality | 267 | Residence Unit or Apartment Number | UNUM | address.extension[unitnum] |string | |
-| Natality | 268 | Mother's Residence Street Address | ADDRESS | address.line |string | |
-| Natality | 269 | Mother's Residence Zip Code and Zip+4 | ZIPCODE | address.postalCode |string | |
-| Natality | 270 | Mother's Residence County (Literal) | COUNTYTXT | address.district |string | |
-| Natality | 271 | Mother's Residence City/Town (Literal) | CITYTEXT | address.city |string | |
-| Natality | 272 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
-| Natality | 273 | Mother's Residence Country (Literal) | CNTRYTXT | address.country (expanded from 2 letter code) |string |See [CountryLiterals] |
-| Natality | 278 | Mother's Social Security Number | MOM_SSN | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”  |string | |
-| Natality | 305 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT | extension[patient-birthPlace].value[x].state |string |See [StateLiterals] |
-| Natality | 306 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT | extension[patient-birthPlace].value[x].country (expanded from 2 letter code) |string |See [CountryLiterals] |
-| Natality | 309 | Mother's Mailing Address Street number | MAIL_STNUM | address.extension[stnum] |string | |
-| Natality | 310 | Mother's Mailing Address Pre Directional | MAIL_PREDIR | address.extension[predir] |string | |
-| Natality | 311 | Mother's Mailing Address Street name | MAIL_STNAME | address.extension[stname] |string | |
-| Natality | 312 | Mother's Mailing Address Street designator | MAIL_STDESIG | address.extension[stdesig] |string | |
-| Natality | 313 | Mother's Mailing Address Post Directional | MAIL_POSTDIR | address.extension[postdir] |string | |
-| Natality | 314 | Mother's Mailing Address Unit or Apartment Number | MAIL_UNUM | address.extension[unitnum] |string | |
-| Natality | 315 | Mother's Mailing Address Street Address | MAIL_ADDRESS | address.line |string | |
-| Natality | 316 | Mother's Mailing Address Zip Code and Zip+4 | MAIL_ZIPCODE | address.postalCode |string | |
-| Natality | 317 | Mother's Mailing Address County (Literal) | MAIL_COUNTYTXT | address.district |string | |
-| Natality | 318 | Mother's Mailing Address City/Town (Literal) | MAIL_CITYTEXT | address.city |string | |
-| Natality | 319 | Mother's Mailing Address State (Literal) | MAIL_STATETXT | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
-| Natality | 320 | Mother's Mailing Address Country (Literal) | MAIL_CNTRYTXT | address.country (expanded from 2 letter code) |string |See [CountryLiterals] |
-| Natality | 333 | Mother's Medical Record Number | MOM_MED_REC_NUM | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR”  |string | |
-| Natality | 340 | For use of jurisdictions with domestic partnerships, othertypes of relationships. | MARITAL_DESCRIP | maritalStatus.text |string |codeable.text should show up in differential with description from col F |
-| Fetal Death | 14 | Date of Birth (Mother)--Year | MDOB_YR | birthDate |date |See [PartialDatesAndTimes] |
-| Fetal Death | 15 | Date of Birth (Mother)--Month | MDOB_MO | birthDate |date |See [PartialDatesAndTimes] |
-| Fetal Death | 16 | Date of Birth (Mother)--Day | MDOB_DY | birthDate |date |See [PartialDatesAndTimes] |
-| Fetal Death | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS | birthDate.extension[bypassEditFlag].value |codeable |[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags] |
-| Fetal Death | 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER | extension[patient-birthPlace].value[x].state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
-| Fetal Death | 19 | Mother's Birthplace--Country | BPLACEC_CNT | extension[patient-birthPlace].value[x].country  |string |[ValueSetResidenceCountryVitalRecords] |
-| Fetal Death | 20 | Residence of Mother--City/Town | CITYC | address.city.extension[ cityCode ] |integer |See [CityCodes] |
-| Fetal Death | 21 | Residence of Mother--County | COUNTYC | address.district.extension[countyCode] |integer |See [CountyCodes] |
-| Fetal Death | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
-| Fetal Death | 23 | Residence of Mother--Country | COUNTRYC | address.country |string |[ValueSetResidenceCountryVitalRecords] |
-| Fetal Death | 24 | Residence of Mother--Inside City/Town Limits | LIMITS | address.extension[ withinCityLimitsIndicator ].value |codeable |[ValueSetYesNoUnknownVitalRecords] |
-| Fetal Death | 239 | Mother's Legal First Name | MOMFNAME | name.given, <br />name.use = official |string | |
-| Fetal Death | 240 | Mother's Legal Middle Name | MOMMNAME | name.given, <br />name.use = official  |string | |
-| Fetal Death | 241 | Mother's Legal Last Name | MOMLNAME | name.family, <br />name.use = official |string | |
-| Fetal Death | 242 | Mother's Legal Surname Suffix | MOMSUFFIX | name.suffix, <br />name.use = official  |string | |
-| Fetal Death | 243 | Mother's First Maiden Name | MOMFMNME | name.given, <br />name.use = maiden |string | |
-| Fetal Death | 244 | Mother's Middle Maiden Name | MOMMMID | name.given, <br />name.use = maiden |string | |
-| Fetal Death | 245 | Mother's Last Maiden Name | MOMMAIDN | name.family, <br />name.use = maiden |string | |
-| Fetal Death | 246 | Mother's Maiden Surname Suffix | MOMMSUFFIX | name.suffix, <br />name.use = maiden |string | |
-| Fetal Death | 247 | Mother's Residence Street number | STNUM | address.extension[stnum] |string | |
-| Fetal Death | 248 | Mother's Residence Pre Directional | PREDIR | address.extension[predir] |string | |
-| Fetal Death | 249 | Mother's Residence Street name | STNAME | address.extension[stname] |string | |
-| Fetal Death | 250 | Mother's Residence Street designator | STDESIG | address.extension[stdesig] |string | |
-| Fetal Death | 251 | Mother's Residence Post Directional | POSTDIR | address.extension[postdir] |string | |
-| Fetal Death | 252 | Mother's Residence Unit or Apartment Number | APTNUMB | address.extension[unitnum] |string | |
-| Fetal Death | 253 | Mother's Residence Street Address | ADDRESS | address.line |string | |
-| Fetal Death | 254 | Mother's Residence Zip code and Zip+4 | ZIPCODE | address.postalCode |string | |
-| Fetal Death | 255 | Mother's Residence County (literal) | COUNTYTXT | address.district |string | |
-| Fetal Death | 256 | Mother's Residence City/Town/Place (literal)  | CITYTXT | address.city |string | |
-| Fetal Death | 257 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
-| Fetal Death | 258 | Mother's Residence Country (literal) | CNTRYTXT | address.country (expanded from 2 letter code) |string |See [CountryLiterals] |
-| Fetal Death | 265 | Mother's Social Security Number | MOM_SSN | identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”  |string | |
-| Fetal Death | 279 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT | extension[patient-birthPlace].value[x].state |string |See [StateLiterals] |
-| Fetal Death | 280 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT | extension[patient-birthPlace].value[x].country (expanded from 2 letter code) |string |See [CountryLiterals] |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>14</td>
+  <td>Date of Birth (Mother)--Year</td>
+  <td>MDOB_YR</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>15</td>
+  <td>Date of Birth (Mother)--Month</td>
+  <td>MDOB_MO</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>16</td>
+  <td>Date of Birth (Mother)--Day</td>
+  <td>MDOB_DY</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>17</td>
+  <td>Date of Birth (Mother)--Edit Flag</td>
+  <td>MAGE_BYPASS</td>
+  <td>birthDate.extension[bypassEditFlag].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>18</td>
+  <td>State, U.S. Territory or Canadian Province of Birth (Mother) - code</td>
+  <td>BPLACEC_ST_TER</td>
+  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>19</td>
+  <td>Birthplace of Mother--Country</td>
+  <td>BPLACEC_CNT</td>
+  <td>extension[patient-birthPlace].value[x].country </td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>20</td>
+  <td>Residence of Mother--City</td>
+  <td>CITYC</td>
+  <td>address.city.extension[ cityCode ]</td>
+  <td>integer</td>
+  <td>See <a href='usage.html#city-codes'>CityCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>21</td>
+  <td>Residence of Mother--County</td>
+  <td>COUNTYC</td>
+  <td>address.district.extension[countyCode]</td>
+  <td>integer</td>
+  <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>22</td>
+  <td>State, U.S. Territory or Canadian Province of Residence (Mother) - code</td>
+  <td>STATEC</td>
+  <td>address.state</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>23</td>
+  <td>Residence of Mother--Country</td>
+  <td>COUNTRYC</td>
+  <td>address.country</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>24</td>
+  <td>Residence of Mother--Inside City Limits</td>
+  <td>LIMITS</td>
+  <td>address.extension[ withinCityLimitsIndicator ].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>254</td>
+  <td>Mother's First Name</td>
+  <td>MOMFNAME</td>
+  <td>name.given, <br />name.use = official</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>255</td>
+  <td>Mother's Middle Name</td>
+  <td>MOMMIDDL</td>
+  <td>name.given, <br />name.use = official </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>256</td>
+  <td>Mother's Last Name</td>
+  <td>MOMLNAME</td>
+  <td>name.family, <br />name.use = official</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>257</td>
+  <td>Mother's Surname Suffix </td>
+  <td>MOMSUFFX</td>
+  <td>name.suffix, <br />name.use = official </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>258</td>
+  <td>Mother's First Maiden Name</td>
+  <td>MOMFMNME</td>
+  <td>name.given, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>259</td>
+  <td>Mother's Middle Maiden Name</td>
+  <td>MOMMMID</td>
+  <td>name.given, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>260</td>
+  <td>Mother's Maiden Surname</td>
+  <td>MOMMAIDN</td>
+  <td>name.family, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>261</td>
+  <td>Mother's Maiden Surname Suffix</td>
+  <td>MOMMSUFX</td>
+  <td>name.suffix, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>262</td>
+  <td>Residence Street Number</td>
+  <td>STNUM</td>
+  <td>address.extension[stnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>263</td>
+  <td>Residence Pre Directional</td>
+  <td>PREDIR</td>
+  <td>address.extension[predir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>264</td>
+  <td>Residence Street name</td>
+  <td>STNAME</td>
+  <td>address.extension[stname]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>265</td>
+  <td>Residence Street designator</td>
+  <td>STDESIG</td>
+  <td>address.extension[stdesig]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>266</td>
+  <td>Residence Post Directional</td>
+  <td>POSTDIR</td>
+  <td>address.extension[postdir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>267</td>
+  <td>Residence Unit or Apartment Number</td>
+  <td>UNUM</td>
+  <td>address.extension[unitnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>268</td>
+  <td>Mother's Residence Street Address</td>
+  <td>ADDRESS</td>
+  <td>address.line</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>269</td>
+  <td>Mother's Residence Zip Code and Zip+4</td>
+  <td>ZIPCODE</td>
+  <td>address.postalCode</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>270</td>
+  <td>Mother's Residence County (Literal)</td>
+  <td>COUNTYTXT</td>
+  <td>address.district</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>271</td>
+  <td>Mother's Residence City/Town (Literal)</td>
+  <td>CITYTEXT</td>
+  <td>address.city</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>272</td>
+  <td>State, U.S. Territory or Canadian Province of Residence (Mother) - literal</td>
+  <td>STATETXT</td>
+  <td>address.state (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>273</td>
+  <td>Mother's Residence Country (Literal)</td>
+  <td>CNTRYTXT</td>
+  <td>address.country (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>278</td>
+  <td>Mother's Social Security Number</td>
+  <td>MOM_SSN</td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>305</td>
+  <td>State, U.S. Territory or Canadian Province of Birth (Mother) - literal</td>
+  <td>MBPLACE_ST_TER_TXT</td>
+  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>306</td>
+  <td>Mother's Country of Birth (Literal)</td>
+  <td>MBPLACE_CNTRY_TXT</td>
+  <td>extension[patient-birthPlace].value[x].country (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>309</td>
+  <td>Mother's Mailing Address Street number</td>
+  <td>MAIL_STNUM</td>
+  <td>address.extension[stnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>310</td>
+  <td>Mother's Mailing Address Pre Directional</td>
+  <td>MAIL_PREDIR</td>
+  <td>address.extension[predir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>311</td>
+  <td>Mother's Mailing Address Street name</td>
+  <td>MAIL_STNAME</td>
+  <td>address.extension[stname]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>312</td>
+  <td>Mother's Mailing Address Street designator</td>
+  <td>MAIL_STDESIG</td>
+  <td>address.extension[stdesig]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>313</td>
+  <td>Mother's Mailing Address Post Directional</td>
+  <td>MAIL_POSTDIR</td>
+  <td>address.extension[postdir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>314</td>
+  <td>Mother's Mailing Address Unit or Apartment Number</td>
+  <td>MAIL_UNUM</td>
+  <td>address.extension[unitnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>315</td>
+  <td>Mother's Mailing Address Street Address</td>
+  <td>MAIL_ADDRESS</td>
+  <td>address.line</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>316</td>
+  <td>Mother's Mailing Address Zip Code and Zip+4</td>
+  <td>MAIL_ZIPCODE</td>
+  <td>address.postalCode</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>317</td>
+  <td>Mother's Mailing Address County (Literal)</td>
+  <td>MAIL_COUNTYTXT</td>
+  <td>address.district</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>318</td>
+  <td>Mother's Mailing Address City/Town (Literal)</td>
+  <td>MAIL_CITYTEXT</td>
+  <td>address.city</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>319</td>
+  <td>Mother's Mailing Address State (Literal)</td>
+  <td>MAIL_STATETXT</td>
+  <td>address.state (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>320</td>
+  <td>Mother's Mailing Address Country (Literal)</td>
+  <td>MAIL_CNTRYTXT</td>
+  <td>address.country (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>333</td>
+  <td>Mother's Medical Record Number</td>
+  <td>MOM_MED_REC_NUM</td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR” </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>340</td>
+  <td>For use of jurisdictions with domestic partnerships, othertypes of relationships.</td>
+  <td>MARITAL_DESCRIP</td>
+  <td>maritalStatus.text</td>
+  <td>string</td>
+  <td>codeable.text should show up in differential with description from col F</td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>14</td>
+  <td>Date of Birth (Mother)--Year</td>
+  <td>MDOB_YR</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>15</td>
+  <td>Date of Birth (Mother)--Month</td>
+  <td>MDOB_MO</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>16</td>
+  <td>Date of Birth (Mother)--Day</td>
+  <td>MDOB_DY</td>
+  <td>birthDate</td>
+  <td>date</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>17</td>
+  <td>Date of Birth (Mother)--Edit Flag</td>
+  <td>MAGE_BYPASS</td>
+  <td>birthDate.extension[bypassEditFlag].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>18</td>
+  <td>State, U.S. Territory or Canadian Province of Birth (Mother) - code</td>
+  <td>BPLACEC_ST_TER</td>
+  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>19</td>
+  <td>Mother's Birthplace--Country</td>
+  <td>BPLACEC_CNT</td>
+  <td>extension[patient-birthPlace].value[x].country </td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>20</td>
+  <td>Residence of Mother--City/Town</td>
+  <td>CITYC</td>
+  <td>address.city.extension[ cityCode ]</td>
+  <td>integer</td>
+  <td>See <a href='usage.html#city-codes'>CityCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>21</td>
+  <td>Residence of Mother--County</td>
+  <td>COUNTYC</td>
+  <td>address.district.extension[countyCode]</td>
+  <td>integer</td>
+  <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>22</td>
+  <td>State, U.S. Territory or Canadian Province of Residence (Mother) - code</td>
+  <td>STATEC</td>
+  <td>address.state</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>23</td>
+  <td>Residence of Mother--Country</td>
+  <td>COUNTRYC</td>
+  <td>address.country</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>24</td>
+  <td>Residence of Mother--Inside City/Town Limits</td>
+  <td>LIMITS</td>
+  <td>address.extension[ withinCityLimitsIndicator ].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>239</td>
+  <td>Mother's Legal First Name</td>
+  <td>MOMFNAME</td>
+  <td>name.given, <br />name.use = official</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>240</td>
+  <td>Mother's Legal Middle Name</td>
+  <td>MOMMNAME</td>
+  <td>name.given, <br />name.use = official </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>241</td>
+  <td>Mother's Legal Last Name</td>
+  <td>MOMLNAME</td>
+  <td>name.family, <br />name.use = official</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>242</td>
+  <td>Mother's Legal Surname Suffix</td>
+  <td>MOMSUFFIX</td>
+  <td>name.suffix, <br />name.use = official </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>243</td>
+  <td>Mother's First Maiden Name</td>
+  <td>MOMFMNME</td>
+  <td>name.given, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>244</td>
+  <td>Mother's Middle Maiden Name</td>
+  <td>MOMMMID</td>
+  <td>name.given, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>245</td>
+  <td>Mother's Last Maiden Name</td>
+  <td>MOMMAIDN</td>
+  <td>name.family, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>246</td>
+  <td>Mother's Maiden Surname Suffix</td>
+  <td>MOMMSUFFIX</td>
+  <td>name.suffix, <br />name.use = maiden</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>247</td>
+  <td>Mother's Residence Street number</td>
+  <td>STNUM</td>
+  <td>address.extension[stnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>248</td>
+  <td>Mother's Residence Pre Directional</td>
+  <td>PREDIR</td>
+  <td>address.extension[predir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>249</td>
+  <td>Mother's Residence Street name</td>
+  <td>STNAME</td>
+  <td>address.extension[stname]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>250</td>
+  <td>Mother's Residence Street designator</td>
+  <td>STDESIG</td>
+  <td>address.extension[stdesig]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>251</td>
+  <td>Mother's Residence Post Directional</td>
+  <td>POSTDIR</td>
+  <td>address.extension[postdir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>252</td>
+  <td>Mother's Residence Unit or Apartment Number</td>
+  <td>APTNUMB</td>
+  <td>address.extension[unitnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>253</td>
+  <td>Mother's Residence Street Address</td>
+  <td>ADDRESS</td>
+  <td>address.line</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>254</td>
+  <td>Mother's Residence Zip code and Zip+4</td>
+  <td>ZIPCODE</td>
+  <td>address.postalCode</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>255</td>
+  <td>Mother's Residence County (literal)</td>
+  <td>COUNTYTXT</td>
+  <td>address.district</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>256</td>
+  <td>Mother's Residence City/Town/Place (literal) </td>
+  <td>CITYTXT</td>
+  <td>address.city</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>257</td>
+  <td>State, U.S. Territory or Canadian Province of Residence (Mother) - literal</td>
+  <td>STATETXT</td>
+  <td>address.state (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>258</td>
+  <td>Mother's Residence Country (literal)</td>
+  <td>CNTRYTXT</td>
+  <td>address.country (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>265</td>
+  <td>Mother's Social Security Number</td>
+  <td>MOM_SSN</td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” </td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>279</td>
+  <td>State, U.S. Territory or Canadian Province of Birth (Mother) - literal</td>
+  <td>MBPLACE_ST_TER_TXT</td>
+  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>280</td>
+  <td>Mother's Country of Birth (Literal)</td>
+  <td>MBPLACE_CNTRY_TXT</td>
+  <td>extension[patient-birthPlace].value[x].country (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

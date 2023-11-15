@@ -32,6 +32,8 @@ IJE_FHIR_FIELD_COL = 11
 IJE_FHIR_TYPE_COL = 12
 IJE_FHIR_COMMENTS_COL = 13
 #IJE_MAPPING_PROFILE_COL = 19 #NOT USED
+IJE_FHIR_COMMENTS_COL = 13
+#IJE_MAPPING_PROFILE_COL = 19 #NOT USED
 
 # BFDR_Profile_Intros.xlsx columns
 INTRO_ORDER_COL = 0
@@ -58,6 +60,7 @@ FORMS_CONTEXT_COL = 8
 
 # ARGV[0] input/mapping/BFDR_Profile_Intros.xlsx
 vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
+vProfileIntrosSpreadsheet.default_sheet = "VRCL"
 vProfileIntrosSpreadsheet.default_sheet = "VRCL"
 
 # ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 

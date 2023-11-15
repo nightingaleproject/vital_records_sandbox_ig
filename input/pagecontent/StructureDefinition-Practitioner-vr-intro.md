@@ -23,19 +23,169 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 124 | Attendant Title | ATTEND | qualification.code |codeable |[BirthAttendantTitlesVS] |
-| Natality | 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | qualification.code.text |string | |
-| Natality | 326 | Attendant's Name | ATTEND_NAME | name.text |string | |
-| Natality | 327 | Attendant's NPI | ATTEND_NPI | identifier:NPI |string | |
-| Natality | 328 | Certifier's Name | CERTIF_NAME | name.text |string | |
-| Natality | 329 | Certifier's NPI | CERTIF_NPI | identifier:NPI |identifier | |
-| Natality | 330 | Certifier Title | CERTIF | qualification.code |codeable |[BirthAttendantTitlesVS] |
-| Natality | 331 | Certifier ("Other" specified text) | CERTIF_OTH_TXT | qualification.code.text |string | |
-| Fetal Death | 78 | Attendant | ATTEND | qualification.code |codeable |[BirthAttendantTitlesVS] |
-| Fetal Death | 340 | Attendant's Name | ATTEND_NAME | name.text |string | |
-| Fetal Death | 341 | Attendant's NPI | ATTEND_NPI | identifier:NPI |string | |
-| Fetal Death | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | qualification.code.text |string |code.text should contain description |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>124</td>
+  <td>Attendant Title</td>
+  <td>ATTEND</td>
+  <td>qualification.code</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>304</td>
+  <td>Attendant ("Other" specified text)</td>
+  <td>ATTEND_OTH_TXT</td>
+  <td>qualification.code.text</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>326</td>
+  <td>Attendant's Name</td>
+  <td>ATTEND_NAME</td>
+  <td>name.text</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>327</td>
+  <td>Attendant's NPI</td>
+  <td>ATTEND_NPI</td>
+  <td>identifier:NPI</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>328</td>
+  <td>Certifier's Name</td>
+  <td>CERTIF_NAME</td>
+  <td>name.text</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>329</td>
+  <td>Certifier's NPI</td>
+  <td>CERTIF_NPI</td>
+  <td>identifier:NPI</td>
+  <td>identifier</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>330</td>
+  <td>Certifier Title</td>
+  <td>CERTIF</td>
+  <td>qualification.code</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>331</td>
+  <td>Certifier ("Other" specified text)</td>
+  <td>CERTIF_OTH_TXT</td>
+  <td>qualification.code.text</td>
+  <td>string</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>78</td>
+  <td>Attendant</td>
+  <td>ATTEND</td>
+  <td>qualification.code</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>340</td>
+  <td>Attendant's Name</td>
+  <td>ATTEND_NAME</td>
+  <td>name.text</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>341</td>
+  <td>Attendant's NPI</td>
+  <td>ATTEND_NPI</td>
+  <td>identifier:NPI</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>342</td>
+  <td>Attendant ("Other" specified text)</td>
+  <td>ATTEND_OTH_TXT</td>
+  <td>qualification.code.text</td>
+  <td>string</td>
+  <td>code.text should contain description</td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
