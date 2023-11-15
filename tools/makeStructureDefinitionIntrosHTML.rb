@@ -129,6 +129,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       end
     end
 
+    
 
     # if there are IJE mappings put them into the intro file for the profile
     if !row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty?
@@ -139,199 +140,296 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       vIntroOutputFile.puts " .context-menu {cursor: context-menu; color: #438bca;}"
       vIntroOutputFile.puts " .context-menu:hover {opacity: 0.5;}"
       vIntroOutputFile.puts "</style>"
-
-
-      
-      # process any natality mother rows first
-      first = true
-      pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-        next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M"
-        if first
-          vIntroOutputFile.puts "<details>"
-          vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "<summary>"
-          vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "<strong class='context-menu' > Natality (Mother)</strong>"
-          vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "</summary>"
-          vIntroOutputFile.puts "<table class='grid'>"
-          vIntroOutputFile.puts "<thead>"
-          vIntroOutputFile.puts "  <tr>"
-          vIntroOutputFile.puts "    <th style='text-align: center'><strong>Use Case</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>#</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Description</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>IJE Name</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Field</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Type</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Value Set/Comments</strong></th>"
-          vIntroOutputFile.puts "  </tr>"
-          vIntroOutputFile.puts "</thead>"
-          vIntroOutputFile.puts "<tbody>"
-          first = false
+    
+      # if filtering race or ethnicity further break down tables by mother/father
+      if vProfileName == "ObservationCodedRaceAndEthnicityVitalRecords" || vProfileName == "ObservationInputRaceAndEthnicityVitalRecords"
+        # process any natality mother rows first
+        first = true
+        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+          next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M"
+          if first
+            vIntroOutputFile.puts "<details>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<summary>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<strong class='context-menu' > Natality (Mother)</strong>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "</summary>"
+            vIntroOutputFile.puts "<table class='grid'>"
+            vIntroOutputFile.puts "<thead>"
+            vIntroOutputFile.puts "  <tr>"
+            vIntroOutputFile.puts "    <th style='text-align: center'><strong>Use Case</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>#</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Description</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>IJE Name</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Field</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Type</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Value Set/Comments</strong></th>"
+            vIntroOutputFile.puts "  </tr>"
+            vIntroOutputFile.puts "</thead>"
+            vIntroOutputFile.puts "<tbody>"
+            first = false
+          end
+          vIntroOutputFile.puts "<tr>"
+          vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_DESC_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_NAME_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
+          vIntroOutputFile.puts "</tr>"
+          # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
-        vIntroOutputFile.puts "<tr>"
-        vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FIELD_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_DESC_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_NAME_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_FIELD_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
-        vIntroOutputFile.puts "</tr>"
-        # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
-      end
-      unless first
-        vIntroOutputFile.puts ""
-        vIntroOutputFile.puts "</tbody>"
-        vIntroOutputFile.puts "</table>"
-        vIntroOutputFile.puts ""
-        vIntroOutputFile.puts "</details>"
-        vIntroOutputFile.puts "<p></p>"
-        vIntroOutputFile.puts ""
-      end
-
-      # process any natality father rows first
-      first = true
-      pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-        next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F"
-        if first
-          vIntroOutputFile.puts "<details>"
+        unless first
           vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "<summary>"
+          vIntroOutputFile.puts "</tbody>"
+          vIntroOutputFile.puts "</table>"
           vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "<strong class='context-menu' > Natality (Father)</strong>"
+          vIntroOutputFile.puts "</details>"
+          vIntroOutputFile.puts "<p></p>"
           vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "</summary>"
-          vIntroOutputFile.puts "<table class='grid'>"
-          vIntroOutputFile.puts "<thead>"
-          vIntroOutputFile.puts "  <tr>"
-          vIntroOutputFile.puts "    <th style='text-align: center'><strong>Use Case</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>#</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Description</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>IJE Name</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Field</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Type</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Value Set/Comments</strong></th>"
-          vIntroOutputFile.puts "  </tr>"
-          vIntroOutputFile.puts "</thead>"
-          vIntroOutputFile.puts "<tbody>"
-          first = false
         end
-        vIntroOutputFile.puts "<tr>"
-        vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FIELD_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_DESC_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_NAME_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_FIELD_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
-        vIntroOutputFile.puts "</tr>"
-        # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
-      end
-      unless first
-        vIntroOutputFile.puts ""
-        vIntroOutputFile.puts "</tbody>"
-        vIntroOutputFile.puts "</table>"
-        vIntroOutputFile.puts ""
-        vIntroOutputFile.puts "</details>"
-        vIntroOutputFile.puts "<p></p>"
-        vIntroOutputFile.puts ""
-      end
 
-      # now process any fetal death Mother rows
-      first = true
-      pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-        next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M"
-        if first
-          vIntroOutputFile.puts "<details>"
-          vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "<summary>"
-          vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "<strong class='context-menu'> Fetal Death (Mother)</strong>"
-          vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "</summary>"
-          vIntroOutputFile.puts "<table class='grid'>"
-          vIntroOutputFile.puts "<thead>"
-          vIntroOutputFile.puts "  <tr>"
-          vIntroOutputFile.puts "    <th style='text-align: center'><strong>Use Case</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>#</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Description</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>IJE Name</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Field</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Type</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Value Set/Comments</strong></th>"
-          vIntroOutputFile.puts "  </tr>"
-          vIntroOutputFile.puts "</thead>"
-          vIntroOutputFile.puts "<tbody>"
-          first = false
+        # process any natality father rows first
+        first = true
+        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+          next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F"
+          if first
+            vIntroOutputFile.puts "<details>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<summary>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<strong class='context-menu' > Natality (Father)</strong>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "</summary>"
+            vIntroOutputFile.puts "<table class='grid'>"
+            vIntroOutputFile.puts "<thead>"
+            vIntroOutputFile.puts "  <tr>"
+            vIntroOutputFile.puts "    <th style='text-align: center'><strong>Use Case</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>#</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Description</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>IJE Name</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Field</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Type</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Value Set/Comments</strong></th>"
+            vIntroOutputFile.puts "  </tr>"
+            vIntroOutputFile.puts "</thead>"
+            vIntroOutputFile.puts "<tbody>"
+            first = false
+          end
+          vIntroOutputFile.puts "<tr>"
+          vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_DESC_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_NAME_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
+          vIntroOutputFile.puts "</tr>"
+          # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
-        vIntroOutputFile.puts "<tr>"
-        vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FIELD_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_DESC_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_NAME_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_FIELD_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
-        vIntroOutputFile.puts "</tr>"
-        # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
-      end
-      unless first
-        vIntroOutputFile.puts ""
-        vIntroOutputFile.puts "</tbody>"
-        vIntroOutputFile.puts "</table>"
-        vIntroOutputFile.puts ""
-        vIntroOutputFile.puts "</details>"
-        vIntroOutputFile.puts "<p></p>"
-        vIntroOutputFile.puts ""
-      end
+        unless first
+          vIntroOutputFile.puts ""
+          vIntroOutputFile.puts "</tbody>"
+          vIntroOutputFile.puts "</table>"
+          vIntroOutputFile.puts ""
+          vIntroOutputFile.puts "</details>"
+          vIntroOutputFile.puts "<p></p>"
+          vIntroOutputFile.puts ""
+        end
 
-      # now process any fetal death Father rows
-      first = true
-      pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-        next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F"
-        if first
-          vIntroOutputFile.puts "<details>"
-          vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "<summary>"
-          vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "<strong class='context-menu'> Fetal Death (Father)</strong>"
-          vIntroOutputFile.puts ""
-          vIntroOutputFile.puts "</summary>"
-          vIntroOutputFile.puts "<table class='grid'>"
-          vIntroOutputFile.puts "<thead>"
-          vIntroOutputFile.puts "  <tr>"
-          vIntroOutputFile.puts "    <th style='text-align: center'><strong>Use Case</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>#</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Description</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>IJE Name</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Field</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Type</strong></th>"
-          vIntroOutputFile.puts "    <th><strong>Value Set/Comments</strong></th>"
-          vIntroOutputFile.puts "  </tr>"
-          vIntroOutputFile.puts "</thead>"
-          vIntroOutputFile.puts "<tbody>"
-          first = false
+        # now process any fetal death Mother rows
+        first = true
+        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+          next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M"
+          if first
+            vIntroOutputFile.puts "<details>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<summary>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<strong class='context-menu'> Fetal Death (Mother)</strong>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "</summary>"
+            vIntroOutputFile.puts "<table class='grid'>"
+            vIntroOutputFile.puts "<thead>"
+            vIntroOutputFile.puts "  <tr>"
+            vIntroOutputFile.puts "    <th style='text-align: center'><strong>Use Case</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>#</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Description</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>IJE Name</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Field</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Type</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Value Set/Comments</strong></th>"
+            vIntroOutputFile.puts "  </tr>"
+            vIntroOutputFile.puts "</thead>"
+            vIntroOutputFile.puts "<tbody>"
+            first = false
+          end
+          vIntroOutputFile.puts "<tr>"
+          vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_DESC_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_NAME_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
+          vIntroOutputFile.puts "</tr>"
+          # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
-        vIntroOutputFile.puts "<tr>"
-        vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FIELD_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_DESC_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_NAME_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_FIELD_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
-        vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
-        vIntroOutputFile.puts "</tr>"
-        # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
-      end
-      unless first
-        vIntroOutputFile.puts ""
-        vIntroOutputFile.puts "</tbody>"
-        vIntroOutputFile.puts "</table>"
-        vIntroOutputFile.puts ""
-        vIntroOutputFile.puts "</details>"
-        vIntroOutputFile.puts "<p></p>"
-        vIntroOutputFile.puts ""
+        unless first
+          vIntroOutputFile.puts ""
+          vIntroOutputFile.puts "</tbody>"
+          vIntroOutputFile.puts "</table>"
+          vIntroOutputFile.puts ""
+          vIntroOutputFile.puts "</details>"
+          vIntroOutputFile.puts "<p></p>"
+          vIntroOutputFile.puts ""
+        end
+
+        # now process any fetal death Father rows
+        first = true
+        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+          next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F"
+          if first
+            vIntroOutputFile.puts "<details>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<summary>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<strong class='context-menu'> Fetal Death (Father)</strong>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "</summary>"
+            vIntroOutputFile.puts "<table class='grid'>"
+            vIntroOutputFile.puts "<thead>"
+            vIntroOutputFile.puts "  <tr>"
+            vIntroOutputFile.puts "    <th style='text-align: center'><strong>Use Case</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>#</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Description</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>IJE Name</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Field</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Type</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Value Set/Comments</strong></th>"
+            vIntroOutputFile.puts "  </tr>"
+            vIntroOutputFile.puts "</thead>"
+            vIntroOutputFile.puts "<tbody>"
+            first = false
+          end
+          vIntroOutputFile.puts "<tr>"
+          vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_DESC_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_NAME_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
+          vIntroOutputFile.puts "</tr>"
+          # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
+        end
+        unless first
+          vIntroOutputFile.puts ""
+          vIntroOutputFile.puts "</tbody>"
+          vIntroOutputFile.puts "</table>"
+          vIntroOutputFile.puts ""
+          vIntroOutputFile.puts "</details>"
+          vIntroOutputFile.puts "<p></p>"
+          vIntroOutputFile.puts ""
+        end
+      else
+        # process any natality rows first
+        first = true
+        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+          next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName
+          if first
+            vIntroOutputFile.puts "<details>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<summary>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<strong class='context-menu' > Natality </strong>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "</summary>"
+            vIntroOutputFile.puts "<table class='grid'>"
+            vIntroOutputFile.puts "<thead>"
+            vIntroOutputFile.puts "  <tr>"
+            vIntroOutputFile.puts "    <th style='text-align: center'><strong>Use Case</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>#</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Description</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>IJE Name</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Field</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Type</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Value Set/Comments</strong></th>"
+            vIntroOutputFile.puts "  </tr>"
+            vIntroOutputFile.puts "</thead>"
+            vIntroOutputFile.puts "<tbody>"
+            first = false
+          end
+          vIntroOutputFile.puts "<tr>"
+          vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_DESC_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_NAME_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
+          vIntroOutputFile.puts "</tr>"
+          # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
+        end
+        unless first
+          vIntroOutputFile.puts ""
+          vIntroOutputFile.puts "</tbody>"
+          vIntroOutputFile.puts "</table>"
+          vIntroOutputFile.puts ""
+          vIntroOutputFile.puts "</details>"
+          vIntroOutputFile.puts "<p></p>"
+          vIntroOutputFile.puts ""
+        end
+
+        # now process any fetal death rows
+        first = true
+        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+          next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName
+          if first
+            vIntroOutputFile.puts "<details>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<summary>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "<strong class='context-menu'> Fetal Death </strong>"
+            vIntroOutputFile.puts ""
+            vIntroOutputFile.puts "</summary>"
+            vIntroOutputFile.puts "<table class='grid'>"
+            vIntroOutputFile.puts "<thead>"
+            vIntroOutputFile.puts "  <tr>"
+            vIntroOutputFile.puts "    <th style='text-align: center'><strong>Use Case</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>#</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Description</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>IJE Name</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Field</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Type</strong></th>"
+            vIntroOutputFile.puts "    <th><strong>Value Set/Comments</strong></th>"
+            vIntroOutputFile.puts "  </tr>"
+            vIntroOutputFile.puts "</thead>"
+            vIntroOutputFile.puts "<tbody>"
+            first = false
+          end
+          vIntroOutputFile.puts "<tr>"
+          vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_DESC_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_NAME_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_FIELD_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
+          vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
+          vIntroOutputFile.puts "</tr>"
+          # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
+        end
+        unless first
+          vIntroOutputFile.puts ""
+          vIntroOutputFile.puts "</tbody>"
+          vIntroOutputFile.puts "</table>"
+          vIntroOutputFile.puts ""
+          vIntroOutputFile.puts "</details>"
+          vIntroOutputFile.puts "<p></p>"
+          vIntroOutputFile.puts ""
+        end
       end
 
       # now process any death record/mortality rows
@@ -426,10 +524,10 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         vIntroOutputFile.puts "</table>"
         vIntroOutputFile.puts ""
         vIntroOutputFile.puts "</details>"
+        vIntroOutputFile.puts "<p></p>"
         vIntroOutputFile.puts ""
         first = true
       end
-      vIntroOutputFile.puts "<p><br/></p>"
     end
   end
 end

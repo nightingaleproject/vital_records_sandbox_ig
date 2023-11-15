@@ -66,7 +66,7 @@ This profile is mapped to:
 
 <summary>
 
-<strong class='context-menu' > Natality (Mother)</strong>
+<strong class='context-menu' > Natality </strong>
 
 </summary>
 <table class='grid'>
@@ -117,6 +117,69 @@ This profile is mapped to:
   <td>birthDate.extension[bypassEditFlag].value</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>18</td>
+  <td>State, U.S. Territory or Canadian Province of Birth (Mother) - code</td>
+  <td>BPLACEC_ST_TER</td>
+  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>19</td>
+  <td>Birthplace of Mother--Country</td>
+  <td>BPLACEC_CNT</td>
+  <td>extension[patient-birthPlace].value[x].country </td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>20</td>
+  <td>Residence of Mother--City</td>
+  <td>CITYC</td>
+  <td>address.city.extension[ cityCode ]</td>
+  <td>integer</td>
+  <td>See <a href='usage.html#city-codes'>CityCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>21</td>
+  <td>Residence of Mother--County</td>
+  <td>COUNTYC</td>
+  <td>address.district.extension[countyCode]</td>
+  <td>integer</td>
+  <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>22</td>
+  <td>State, U.S. Territory or Canadian Province of Residence (Mother) - code</td>
+  <td>STATEC</td>
+  <td>address.state</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>23</td>
+  <td>Residence of Mother--Country</td>
+  <td>COUNTRYC</td>
+  <td>address.country</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>24</td>
+  <td>Residence of Mother--Inside City Limits</td>
+  <td>LIMITS</td>
+  <td>address.extension[ withinCityLimitsIndicator ].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -189,6 +252,114 @@ This profile is mapped to:
   <td>name.suffix, <br />name.use = maiden</td>
   <td>string</td>
   <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>262</td>
+  <td>Residence Street Number</td>
+  <td>STNUM</td>
+  <td>address.extension[stnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>263</td>
+  <td>Residence Pre Directional</td>
+  <td>PREDIR</td>
+  <td>address.extension[predir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>264</td>
+  <td>Residence Street name</td>
+  <td>STNAME</td>
+  <td>address.extension[stname]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>265</td>
+  <td>Residence Street designator</td>
+  <td>STDESIG</td>
+  <td>address.extension[stdesig]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>266</td>
+  <td>Residence Post Directional</td>
+  <td>POSTDIR</td>
+  <td>address.extension[postdir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>267</td>
+  <td>Residence Unit or Apartment Number</td>
+  <td>UNUM</td>
+  <td>address.extension[unitnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>268</td>
+  <td>Mother's Residence Street Address</td>
+  <td>ADDRESS</td>
+  <td>address.line</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>269</td>
+  <td>Mother's Residence Zip Code and Zip+4</td>
+  <td>ZIPCODE</td>
+  <td>address.postalCode</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>270</td>
+  <td>Mother's Residence County (Literal)</td>
+  <td>COUNTYTXT</td>
+  <td>address.district</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>271</td>
+  <td>Mother's Residence City/Town (Literal)</td>
+  <td>CITYTEXT</td>
+  <td>address.city</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>272</td>
+  <td>State, U.S. Territory or Canadian Province of Residence (Mother) - literal</td>
+  <td>STATETXT</td>
+  <td>address.state (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>273</td>
+  <td>Mother's Residence Country (Literal)</td>
+  <td>CNTRYTXT</td>
+  <td>address.country (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -354,7 +525,7 @@ This profile is mapped to:
 
 <summary>
 
-<strong class='context-menu'> Fetal Death (Mother)</strong>
+<strong class='context-menu'> Fetal Death </strong>
 
 </summary>
 <table class='grid'>
@@ -405,6 +576,69 @@ This profile is mapped to:
   <td>birthDate.extension[bypassEditFlag].value</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>18</td>
+  <td>State, U.S. Territory or Canadian Province of Birth (Mother) - code</td>
+  <td>BPLACEC_ST_TER</td>
+  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>19</td>
+  <td>Mother's Birthplace--Country</td>
+  <td>BPLACEC_CNT</td>
+  <td>extension[patient-birthPlace].value[x].country </td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>20</td>
+  <td>Residence of Mother--City/Town</td>
+  <td>CITYC</td>
+  <td>address.city.extension[ cityCode ]</td>
+  <td>integer</td>
+  <td>See <a href='usage.html#city-codes'>CityCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>21</td>
+  <td>Residence of Mother--County</td>
+  <td>COUNTYC</td>
+  <td>address.district.extension[countyCode]</td>
+  <td>integer</td>
+  <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>22</td>
+  <td>State, U.S. Territory or Canadian Province of Residence (Mother) - code</td>
+  <td>STATEC</td>
+  <td>address.state</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>23</td>
+  <td>Residence of Mother--Country</td>
+  <td>COUNTRYC</td>
+  <td>address.country</td>
+  <td>string</td>
+  <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>24</td>
+  <td>Residence of Mother--Inside City/Town Limits</td>
+  <td>LIMITS</td>
+  <td>address.extension[ withinCityLimitsIndicator ].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -480,6 +714,114 @@ This profile is mapped to:
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
+  <td>247</td>
+  <td>Mother's Residence Street number</td>
+  <td>STNUM</td>
+  <td>address.extension[stnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>248</td>
+  <td>Mother's Residence Pre Directional</td>
+  <td>PREDIR</td>
+  <td>address.extension[predir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>249</td>
+  <td>Mother's Residence Street name</td>
+  <td>STNAME</td>
+  <td>address.extension[stname]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>250</td>
+  <td>Mother's Residence Street designator</td>
+  <td>STDESIG</td>
+  <td>address.extension[stdesig]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>251</td>
+  <td>Mother's Residence Post Directional</td>
+  <td>POSTDIR</td>
+  <td>address.extension[postdir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>252</td>
+  <td>Mother's Residence Unit or Apartment Number</td>
+  <td>APTNUMB</td>
+  <td>address.extension[unitnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>253</td>
+  <td>Mother's Residence Street Address</td>
+  <td>ADDRESS</td>
+  <td>address.line</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>254</td>
+  <td>Mother's Residence Zip code and Zip+4</td>
+  <td>ZIPCODE</td>
+  <td>address.postalCode</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>255</td>
+  <td>Mother's Residence County (literal)</td>
+  <td>COUNTYTXT</td>
+  <td>address.district</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>256</td>
+  <td>Mother's Residence City/Town/Place (literal) </td>
+  <td>CITYTXT</td>
+  <td>address.city</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>257</td>
+  <td>State, U.S. Territory or Canadian Province of Residence (Mother) - literal</td>
+  <td>STATETXT</td>
+  <td>address.state (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>258</td>
+  <td>Mother's Residence Country (literal)</td>
+  <td>CNTRYTXT</td>
+  <td>address.country (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
   <td>265</td>
   <td>Mother's Social Security Number</td>
   <td>MOM_SSN</td>
@@ -512,4 +854,3 @@ This profile is mapped to:
 </details>
 <p></p>
 
-<p><br/></p>

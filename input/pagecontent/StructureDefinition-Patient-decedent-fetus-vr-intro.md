@@ -27,7 +27,7 @@ This profile is mapped to:
 
 <summary>
 
-<strong class='context-menu'> Fetal Death (Father)</strong>
+<strong class='context-menu'> Fetal Death </strong>
 
 </summary>
 <table class='grid'>
@@ -51,6 +51,24 @@ This profile is mapped to:
   <td>birthDate</td>
   <td></td>
   <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>2</td>
+  <td>State, U.S. Territory or Canadian Province of Place of Delivery - code</td>
+  <td>DSTATE</td>
+  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a> </td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>6</td>
+  <td>Time of Delivery</td>
+  <td>TD</td>
+  <td>birthDate.extension[patient-birthTime]</td>
+  <td></td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -78,6 +96,24 @@ This profile is mapped to:
   <td>birthDate</td>
   <td></td>
   <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>152</td>
+  <td>Set Order</td>
+  <td>SORD</td>
+  <td>multipleBirth[x]</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>155</td>
+  <td>Plurality--Edit Flag</td>
+  <td>PLUR_BYPASS</td>
+  <td>multipleBirth.extension[bypassEditFlag].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-plurality-edit-flags.html'>PluralityEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -115,6 +151,15 @@ This profile is mapped to:
   <td>string </td>
   <td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td>
 </tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>222</td>
+  <td>Fetus Surname Suffix</td>
+  <td>SUFFIX</td>
+  <td>name.suffix, <br />name.use = official</td>
+  <td>string</td>
+  <td></td>
+</tr>
 
 </tbody>
 </table>
@@ -122,4 +167,3 @@ This profile is mapped to:
 </details>
 <p></p>
 
-<p><br/></p>
