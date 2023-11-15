@@ -23,13 +23,11 @@
 <artifact id="StructureDefinition/AuxiliaryStateIdentifier1" key="StructureDefinition-AuxiliaryStateIdentifier1" name="Auxiliary State Identifier1"/>
 <artifact id="StructureDefinition/AuxiliaryStateIdentifier2" key="StructureDefinition-AuxiliaryStateIdentifier2" name="Auxiliary State Identifier2"/>
 <artifact id="StructureDefinition/vrdr-birth-record-identifier" key="StructureDefinition-vrdr-birth-record-identifier" name="Birth Record Identifier"/>
-<artifact id="ValueSet/ValueSet-birth-weight-edit-flags" key="ValueSet-ValueSet-birth-weight-edit-flags" name="Birth Weight Edit Flags (NCHS)"/>
 <artifact id="ConceptMap/BirthAndFetalDeathFinancialClassCM" key="ConceptMap-BirthAndFetalDeathFinancialClassCM" name="BirthAndFetalDeathFinancialClass Concept Map"/>
 <artifact id="ConceptMap/BirthAttendantTitlesCM" key="ConceptMap-BirthAttendantTitlesCM" name="BirthAttendantTitles Concept Map"/>
 <artifact id="ConceptMap/BirthDeliveryOccurredCM" key="ConceptMap-BirthDeliveryOccurredCM" name="BirthDeliveryOccurred Concept Map"/>
 <artifact id="Observation/BirthRecordIdentifier-Example1" key="Observation-BirthRecordIdentifier-Example1" name="BirthRecordIdentifier-Example1"/>
 <artifact id="Observation/BirthRecordIdentifierUT-Example1" key="Observation-BirthRecordIdentifierUT-Example1" name="BirthRecordIdentifierUT-Example1"/>
-<artifact id="ValueSet/ValueSet-birthplace-country-vr" key="ValueSet-ValueSet-birthplace-country-vr" name="Birthplace Country Value Set"/>
 <artifact id="StructureDefinition/vr-demographic-coded-bundle" key="StructureDefinition-vr-demographic-coded-bundle" name="Bundle - Demographic Coded Content Bundle for BFDR"/>
 <artifact id="StructureDefinition/BundleDocumentBFDR" key="StructureDefinition-BundleDocumentBFDR" name="Bundle - Document Birth and Fetal Death"/>
 <artifact id="StructureDefinition/Bundle-document-mdi-to-edrs" key="StructureDefinition-Bundle-document-mdi-to-edrs" name="Bundle - Document MDI to EDRS"/>
@@ -41,8 +39,6 @@
 <artifact id="Bundle/bundle-provider-fetal-death-not-named" key="Bundle-bundle-provider-fetal-death-not-named" name="Bundle - Provider Fetal Death Report - Fetus Not Named"/>
 <artifact id="Bundle/bundle-provider-live-birth-babyg-quinn" key="Bundle-bundle-provider-live-birth-babyg-quinn" name="Bundle - Provider Live Birth - Baby G Quinn"/>
 <artifact id="CodeSystem/vrdr-bypass-edit-flag-cs" key="CodeSystem-vrdr-bypass-edit-flag-cs" name="Bypass Edit Flag Code System"/>
-<artifact id="StructureDefinition/BypassEditFlag" key="StructureDefinition-BypassEditFlag" name="BypassEditFlag"/>
-<artifact id="CodeSystem/CodeSystem-canadian-provinces-vr" key="CodeSystem-CodeSystem-canadian-provinces-vr" name="Canadian Provinces"/>
 <artifact id="CapabilityStatement/CapabilityStatement-bfdr" key="CapabilityStatement-CapabilityStatement-bfdr" name="CapabilityStatement - Birth and Fetal Death"/>
 <artifact id="CapabilityStatement/CapabilityStatement-edrs-server" key="CapabilityStatement-CapabilityStatement-edrs-server" name="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
 <artifact id="CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server" key="CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server" name="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
@@ -60,19 +56,23 @@
 <artifact id="ValueSet/vrdr-certifier-types-vs" key="ValueSet-vrdr-certifier-types-vs" name="Certifier Types VS"/>
 <artifact id="Practitioner/Certifier-Example1" key="Practitioner-Certifier-Example1" name="Certifier-Example1"/>
 <artifact id="ConceptMap/CertifierTypesCM" key="ConceptMap-CertifierTypesCM" name="CertifierTypes Concept Map"/>
-<artifact id="ValueSet/cigarette-smoking-before-during-pregnancy" key="ValueSet-cigarette-smoking-before-during-pregnancy" name="Cigarette Smoking Before and During Pregnancy"/>
-<artifact id="StructureDefinition/CityCode" key="StructureDefinition-CityCode" name="City Code"/>
 <artifact id="CodeSystem/CodeSystem-abnormal-conditions-newborn" key="CodeSystem-CodeSystem-abnormal-conditions-newborn" name="CodeSystem - Abnormal Conditions Newborn"/>
 <artifact id="CodeSystem/CodeSystem-vr-birth-delivery-occurred" key="CodeSystem-CodeSystem-vr-birth-delivery-occurred" name="CodeSystem - Birth Delivery Occurred"/>
-<artifact id="CodeSystem/CodeSystem-vr-edit-flags" key="CodeSystem-CodeSystem-vr-edit-flags" name="CodeSystem - Birth and Death Edit Flags"/>
+<artifact id="CodeSystem/CodeSystem-vr-edit-flags" key="CodeSystem-CodeSystem-vr-edit-flags" name="CodeSystem - Birth and Death Edit Flags Vital Records"/>
 <artifact id="CodeSystem/CodeSystem-vr-birth-and-fetal-death-financial-class" key="CodeSystem-CodeSystem-vr-birth-and-fetal-death-financial-class" name="CodeSystem - Birth and Death Financial Class"/>
+<artifact id="CodeSystem/CodeSystem-canadian-provinces-vr" key="CodeSystem-CodeSystem-canadian-provinces-vr" name="CodeSystem - Canadian Provinces Vital Records"/>
+<artifact id="CodeSystem/CodeSystem-country-code-vr" key="CodeSystem-CodeSystem-country-code-vr" name="CodeSystem - Country Codes Vital Records"/>
 <artifact id="CodeSystem/CodeSystem-death-pregnancy-status" key="CodeSystem-CodeSystem-death-pregnancy-status" name="CodeSystem - Death Pregnancy Status Vital Records"/>
 <artifact id="CodeSystem/CodeSystem-vr-fetal-death-cause-or-condition" key="CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition" name="CodeSystem - Fetal Death Cause or Condition"/>
+<artifact id="CodeSystem/CodeSystem-hispanic-origin-vr" key="CodeSystem-CodeSystem-hispanic-origin-vr" name="CodeSystem - HispanicOrigin Vital Records"/>
 <artifact id="CodeSystem/CodeSystem-informant-relationship-to-mother" key="CodeSystem-CodeSystem-informant-relationship-to-mother" name="CodeSystem - Informant Relationship to Mother"/>
+<artifact id="CodeSystem/CodeSystem-jurisdictions-vr" key="CodeSystem-CodeSystem-jurisdictions-vr" name="CodeSystem - Jurisdictions Vital Records"/>
+<artifact id="CodeSystem/CodeSystem-local-observation-codes-vr" key="CodeSystem-CodeSystem-local-observation-codes-vr" name="CodeSystem - Local Observation Codes Vital Records"/>
 <artifact id="CodeSystem/CodeSystem-vr-codes" key="CodeSystem-CodeSystem-vr-codes" name="CodeSystem - MDI"/>
+<artifact id="CodeSystem/CodeSystem-missing-value-reason-vr" key="CodeSystem-CodeSystem-missing-value-reason-vr" name="CodeSystem - Missing Value Reason Vital Records"/>
+<artifact id="CodeSystem/CodeSystem-race-code-vr" key="CodeSystem-CodeSystem-race-code-vr" name="CodeSystem - Race Code Vital Records"/>
+<artifact id="CodeSystem/CodeSystem-race-recode-40-vr" key="CodeSystem-CodeSystem-race-recode-40-vr" name="CodeSystem - Race Recode 40 Vital Records"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Example1" key="Observation-CodedRaceAndEthnicity-Example1" name="CodedRaceAndEthnicity-Example1"/>
-<artifact id="Observation/CodedRaceAndEthnicity-Father" key="Observation-CodedRaceAndEthnicity-Father" name="CodedRaceAndEthnicity-Father"/>
-<artifact id="Observation/CodedRaceAndEthnicity-Mother" key="Observation-CodedRaceAndEthnicity-Mother" name="CodedRaceAndEthnicity-Mother"/>
 <artifact id="StructureDefinition/vrdr-coding-status-values" key="StructureDefinition-vrdr-coding-status-values" name="Coding Status Values"/>
 <artifact id="Parameters/CodingStatusValues-Example1" key="Parameters-CodingStatusValues-Example1" name="CodingStatusValues-Example1"/>
 <artifact id="StructureDefinition/CompositionCodedCauseOfFetalDeath" key="StructureDefinition-CompositionCodedCauseOfFetalDeath" name="Composition - Coded Cause of Fetal Death"/>
@@ -87,12 +87,20 @@
 <artifact id="Composition/composition-provider-fetal-death-not-named" key="Composition-composition-provider-fetal-death-not-named" name="Composition - Provider Fetal Death Report - Fetus Not Named"/>
 <artifact id="StructureDefinition/CompositionProviderLiveBirthReport" key="StructureDefinition-CompositionProviderLiveBirthReport" name="Composition - Provider Live Birth Report"/>
 <artifact id="Composition/composition-provider-live-birth-babyg-quinn" key="Composition-composition-provider-live-birth-babyg-quinn" name="Composition - Provider Live Birth Report - BabyG Quinn"/>
+<artifact id="ConceptMap/ConceptMapBirthSexChildVitalRecords" key="ConceptMap-ConceptMapBirthSexChildVitalRecords" name="ConceptMap - Birth Sex Child Vital Records"/>
+<artifact id="ConceptMap/ConceptMapBirthSexFetusVitalRecords" key="ConceptMap-ConceptMapBirthSexFetusVitalRecords" name="ConceptMap - Birth Sex Fetus Vital Records"/>
+<artifact id="ConceptMap/ConceptMapEducationLevelVitalRecords" key="ConceptMap-ConceptMapEducationLevelVitalRecords" name="ConceptMap - Education Level Vital Records"/>
+<artifact id="ConceptMap/ConceptMapHispanicNoUnknownVitalRecords" key="ConceptMap-ConceptMapHispanicNoUnknownVitalRecords" name="ConceptMap - Hispanic No Unknown Vital Records"/>
+<artifact id="ConceptMap/ConceptMapHispanicOriginVitalRecords" key="ConceptMap-ConceptMapHispanicOriginVitalRecords" name="ConceptMap - Hispanic Origin Vital Records"/>
+<artifact id="ConceptMap/ConceptMapRaceCodeVitalRecords" key="ConceptMap-ConceptMapRaceCodeVitalRecords" name="ConceptMap - Race Code Vital Records"/>
+<artifact id="ConceptMap/ConceptMapRaceMissingValueReasonVitalRecords" key="ConceptMap-ConceptMapRaceMissingValueReasonVitalRecords" name="ConceptMap - Race Missing Value Reason Vital Records"/>
+<artifact id="ConceptMap/ConceptMapRaceRecode40VitalRecords" key="ConceptMap-ConceptMapRaceRecode40VitalRecords" name="ConceptMap - Race Recode40 Vital Records"/>
+<artifact id="ConceptMap/ConceptMapUnitsOfAgeVitalRecords" key="ConceptMap-ConceptMapUnitsOfAgeVitalRecords" name="ConceptMap - Units Of Age Vital Records"/>
+<artifact id="ConceptMap/ConceptMapYesNoNotApplicableVitalRecords" key="ConceptMap-ConceptMapYesNoNotApplicableVitalRecords" name="ConceptMap - Yes No Not Applicable Vital Records"/>
+<artifact id="ConceptMap/ConceptMapYesNoUnknownNotApplicableVitalRecords" key="ConceptMap-ConceptMapYesNoUnknownNotApplicableVitalRecords" name="ConceptMap - Yes No Unknown Not Applicable Vital Records"/>
+<artifact id="ConceptMap/ConceptMapYesNoUnknownVitalRecords" key="ConceptMap-ConceptMapYesNoUnknownVitalRecords" name="ConceptMap - Yes No Unknown Vital Records"/>
 <artifact id="StructureDefinition/Condition-chorioamnionitis" key="StructureDefinition-Condition-chorioamnionitis" name="Condition - Chorioamnionitis"/>
 <artifact id="Condition/condition-chorioamnionitis-jada-ann-quinn" key="Condition-condition-chorioamnionitis-jada-ann-quinn" name="Condition - Chorioamnionitis - Jada Ann Quinn"/>
-<artifact id="Condition/condition-coded-initiating-fetal-death-cause-or-condition" key="Condition-condition-coded-initiating-fetal-death-cause-or-condition" name="Condition - Coded Initiating Cause of Fetal Death"/>
-<artifact id="StructureDefinition/Condition-coded-initiating-fetal-death-cause-or-condition" key="StructureDefinition-Condition-coded-initiating-fetal-death-cause-or-condition" name="Condition - Coded Initiating Fetal Death Cause or Condition"/>
-<artifact id="Condition/condition-coded-other-fetal-death-cause-or-condition-not-named" key="Condition-condition-coded-other-fetal-death-cause-or-condition-not-named" name="Condition - Coded Other Cause of Fetal Death"/>
-<artifact id="StructureDefinition/Condition-coded-other-fetal-death-cause-or-condition" key="StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition" name="Condition - Coded Other Fetal Death Cause or Condition"/>
 <artifact id="StructureDefinition/Condition-congenital-anomaly-of-newborn" key="StructureDefinition-Condition-congenital-anomaly-of-newborn" name="Condition - Congenital Anomaly of Newborn"/>
 <artifact id="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2" key="Condition-condition-congenital-anomaly-of-newborn-babyg-quinn-2" name="Condition - Congenital Anomaly of Newborn - Baby G Quinn"/>
 <artifact id="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn" key="Condition-condition-congenital-anomaly-of-newborn-babyg-quinn" name="Condition - Congenital Anomaly of Newborn - BabyG Quinn"/>
@@ -122,7 +130,6 @@
 <artifact id="Condition/condition-seizure-babyg-quinn" key="Condition-condition-seizure-babyg-quinn" name="Condition - Seizure - BabyG Quinn"/>
 <artifact id="ValueSet/vrdr-contributory-tobacco-use-vs" key="ValueSet-vrdr-contributory-tobacco-use-vs" name="Contributory Tobacco Use VS"/>
 <artifact id="ConceptMap/ContributoryTobaccoUseCM" key="ConceptMap-ContributoryTobaccoUseCM" name="ContributoryTobaccoUse Concept Map"/>
-<artifact id="CodeSystem/CodeSystem-country-code-vr" key="CodeSystem-CodeSystem-country-code-vr" name="Country Codes"/>
 <artifact id="StructureDefinition/Coverage-principal-payer-delivery" key="StructureDefinition-Coverage-principal-payer-delivery" name="Coverage - Principal Payer for Delivery"/>
 <artifact id="Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn" key="Coverage-coverage-principal-payer-for-delivery-jada-ann-quinn" name="Coverage - Principal Payer for Delivery - Jada Ann Quinn"/>
 <artifact id="CodeSystem/vrdr-date-of-death-determination-methods-cs" key="CodeSystem-vrdr-date-of-death-determination-methods-cs" name="Date of Death Determination Methods"/>
@@ -175,7 +182,6 @@
 <artifact id="Location/DispositionLocation-Example1" key="Location-DispositionLocation-Example1" name="DispositionLocation-Example1"/>
 <artifact id="Location/DispositionLocationUT-Example1" key="Location-DispositionLocationUT-Example1" name="DispositionLocationUT-Example1"/>
 <artifact id="Observation/DispositionMethodUT-Example1" key="Observation-DispositionMethodUT-Example1" name="DispositionMethodUT-Example1"/>
-<artifact id="StructureDefinition/DistrictCode" key="StructureDefinition-DistrictCode" name="District Code"/>
 <artifact id="CodeSystem/vrdr-document-section-cs" key="CodeSystem-vrdr-document-section-cs" name="Document Section Code System"/>
 <artifact id="ValueSet/vrdr-edit-bypass-01-vs" key="ValueSet-vrdr-edit-bypass-01-vs" name="Edit Bypass 01"/>
 <artifact id="ValueSet/vrdr-edit-bypass-012-vs" key="ValueSet-vrdr-edit-bypass-012-vs" name="Edit Bypass 012"/>
@@ -185,8 +191,6 @@
 <artifact id="ConceptMap/EditBypass012CM" key="ConceptMap-EditBypass012CM" name="EditBypass012 Concept Map"/>
 <artifact id="ConceptMap/EditBypass01234CM" key="ConceptMap-EditBypass01234CM" name="EditBypass01234 Concept Map"/>
 <artifact id="ConceptMap/EditBypass0124CM" key="ConceptMap-EditBypass0124CM" name="EditBypass0124 Concept Map"/>
-<artifact id="ValueSet/ValueSet-education-level-vr" key="ValueSet-ValueSet-education-level-vr" name="Education Level"/>
-<artifact id="ConceptMap/EducationLevelCM" key="ConceptMap-EducationLevelCM" name="EducationLevel Concept Map"/>
 <artifact id="Observation/EducationUT-Example1" key="Observation-EducationUT-Example1" name="EducationUT-Example1"/>
 <artifact id="Observation/EmergingIssues-Example1" key="Observation-EmergingIssues-Example1" name="EmergingIssues-Example1"/>
 <artifact id="Observation/EmergingIssuesUT-Example1" key="Observation-EmergingIssuesUT-Example1" name="EmergingIssuesUT-Example1"/>
@@ -200,23 +204,33 @@
 <artifact id="Observation/EntityAxisCauseOfDeath-Example2" key="Observation-EntityAxisCauseOfDeath-Example2" name="EntityAxisCauseOfDeath-Example2"/>
 <artifact id="Observation/EntityAxisCauseOfDeath-Example3" key="Observation-EntityAxisCauseOfDeath-Example3" name="EntityAxisCauseOfDeath-Example3"/>
 <artifact id="Observation/EntityAxisCauseOfDeath-Example4" key="Observation-EntityAxisCauseOfDeath-Example4" name="EntityAxisCauseOfDeath-Example4"/>
-<artifact id="ValueSet/ValueSet-estimate-of-gestation-edit-flags" key="ValueSet-ValueSet-estimate-of-gestation-edit-flags" name="Estimate of Gestation Edit Flags (NCHS)"/>
 <artifact id="StructureDefinition/vrdr-examiner-contacted" key="StructureDefinition-vrdr-examiner-contacted" name="Examiner Contacted"/>
 <artifact id="Observation/ExaminerContacted-Example1" key="Observation-ExaminerContacted-Example1" name="ExaminerContacted-Example1"/>
 <artifact id="Observation/ExaminerContactedUT-Example1" key="Observation-ExaminerContactedUT-Example1" name="ExaminerContactedUT-Example1"/>
+<artifact id="StructureDefinition/BypassEditFlag" key="StructureDefinition-BypassEditFlag" name="Extension - BypassEditFlag Vital Records"/>
+<artifact id="StructureDefinition/CityCode" key="StructureDefinition-CityCode" name="Extension - City Code Vital Records"/>
 <artifact id="StructureDefinition/Extension-date-filed-by-registrar" key="StructureDefinition-Extension-date-filed-by-registrar" name="Extension - Date Filed by Registrar"/>
 <artifact id="StructureDefinition/Extension-date-received-by-registrar" key="StructureDefinition-Extension-date-received-by-registrar" name="Extension - Date received by Registrar"/>
+<artifact id="StructureDefinition/DistrictCode" key="StructureDefinition-DistrictCode" name="Extension - District Code Vital Records"/>
 <artifact id="StructureDefinition/Extension-encounter-maternity-reference" key="StructureDefinition-Extension-encounter-maternity-reference" name="Extension - Encounter Maternity Reference"/>
 <artifact id="StructureDefinition/Extension-fetal-death-local-file-number" key="StructureDefinition-Extension-fetal-death-local-file-number" name="Extension - Fetal Death Local File Number"/>
 <artifact id="StructureDefinition/Extension-fetal-death-report-number" key="StructureDefinition-Extension-fetal-death-report-number" name="Extension - Fetal Death Report Number"/>
 <artifact id="StructureDefinition/Extension-live-birth-certificate-number" key="StructureDefinition-Extension-live-birth-certificate-number" name="Extension - Live Birth Certificate Number"/>
 <artifact id="StructureDefinition/Extension-live-birth-local-file-number" key="StructureDefinition-Extension-live-birth-local-file-number" name="Extension - Live Birth Local File Number"/>
+<artifact id="StructureDefinition/ExtensionDatePartAbsentReasonVitalRecords" key="StructureDefinition-ExtensionDatePartAbsentReasonVitalRecords" name="Extension - Partial Date Absent Reason Vital Records"/>
+<artifact id="StructureDefinition/ExtensionPartialDateTimeVitalRecords" key="StructureDefinition-ExtensionPartialDateTimeVitalRecords" name="Extension - Partial Date Time Vital Records"/>
+<artifact id="StructureDefinition/ExtensionPartialDateVitalRecords" key="StructureDefinition-ExtensionPartialDateVitalRecords" name="Extension - Partial Date Vital Records"/>
+<artifact id="StructureDefinition/PostDirectional" key="StructureDefinition-PostDirectional" name="Extension - PostDirectional Vital Records"/>
+<artifact id="StructureDefinition/PreDirectional" key="StructureDefinition-PreDirectional" name="Extension - PreDirectional Vital Records"/>
 <artifact id="StructureDefinition/Extension-relatedperson-birthplace-vr" key="StructureDefinition-Extension-relatedperson-birthplace-vr" name="Extension - RelatedPerson Birth Place Vital Records"/>
 <artifact id="StructureDefinition/Extension-relatedperson-deceased-vr" key="StructureDefinition-Extension-relatedperson-deceased-vr" name="Extension - RelatedPerson Deceased Vital Records"/>
+<artifact id="StructureDefinition/StreetDesignator" key="StructureDefinition-StreetDesignator" name="Extension - StreetDesignator Vital Records"/>
+<artifact id="StructureDefinition/StreetName" key="StructureDefinition-StreetName" name="Extension - StreetName Vital Records"/>
+<artifact id="StructureDefinition/StreetNumber" key="StructureDefinition-StreetNumber" name="Extension - StreetNumber Vital Records"/>
 <artifact id="StructureDefinition/Extension-tracking-number" key="StructureDefinition-Extension-tracking-number" name="Extension - Tracking Number"/>
+<artifact id="StructureDefinition/UnitOrAptNumber" key="StructureDefinition-UnitOrAptNumber" name="Extension - UnitOrAptNumber Vital Records"/>
 <artifact id="StructureDefinition/Extension-within-city-limits-indicator-vr" key="StructureDefinition-Extension-within-city-limits-indicator-vr" name="Extension - Within City Limits Indicator Vital Records"/>
 <artifact id="RelatedPerson/FatherUT-Example1" key="RelatedPerson-FatherUT-Example1" name="FatherUT-Example1"/>
-<artifact id="ValueSet/ValueSet-fathers-date-of-birth-edit-flags" key="ValueSet-ValueSet-fathers-date-of-birth-edit-flags" name="Fathers Date of Birth Edit Flags (NCHS)"/>
 <artifact id="ConceptMap/FetalDeathCauseOrConditionCM" key="ConceptMap-FetalDeathCauseOrConditionCM" name="FetalDeathCauseOrCondition Concept Map"/>
 <artifact id="ConceptMap/FetalDeathTimePointsCM" key="ConceptMap-FetalDeathTimePointsCM" name="FetalDeathTimePoints Concept Map"/>
 <artifact id="ConceptMap/FetalPresentationCM" key="ConceptMap-FetalPresentationCM" name="FetalPresentation Concept Map"/>
@@ -227,11 +241,6 @@
 <artifact id="StructureDefinition/vrdr-funeral-home" key="StructureDefinition-vrdr-funeral-home" name="Funeral Home"/>
 <artifact id="Organization/FuneralHome-Example1" key="Organization-FuneralHome-Example1" name="FuneralHome-Example1"/>
 <artifact id="Organization/FuneralHomeUT-Example1" key="Organization-FuneralHomeUT-Example1" name="FuneralHomeUT-Example1"/>
-<artifact id="ValueSet/ValueSet-hispanic-no-unknown-vr" key="ValueSet-ValueSet-hispanic-no-unknown-vr" name="Hispanic(Yes) No Unknown"/>
-<artifact id="ConceptMap/HispanicNoUnknownCM" key="ConceptMap-HispanicNoUnknownCM" name="HispanicNoUnknown Concept Map"/>
-<artifact id="CodeSystem/CodeSystem-hispanic-origin-vr" key="CodeSystem-CodeSystem-hispanic-origin-vr" name="HispanicOrigin CS"/>
-<artifact id="ConceptMap/HispanicOriginCM" key="ConceptMap-HispanicOriginCM" name="HispanicOrigin Concept Map"/>
-<artifact id="ValueSet/ValueSet-hispanic-origin-vr" key="ValueSet-ValueSet-hispanic-origin-vr" name="HispanicOrigin Value Set"/>
 <artifact id="ConceptMap/HistologicalPlacentalExaminationCM" key="ConceptMap-HistologicalPlacentalExaminationCM" name="HistologicalPlacentalExamination Concept Map"/>
 <artifact id="ValueSet/vrdr-icd10-causes-of-death-vs" key="ValueSet-vrdr-icd10-causes-of-death-vs" name="ICD10 Causes of Death VS"/>
 <artifact id="ConceptMap/InfectionsDuringPregnancyLiveBirthCM" key="ConceptMap-InfectionsDuringPregnancyLiveBirthCM" name="InfectionsDuringPregnancyLiveBirth Concept Map"/>
@@ -240,18 +249,12 @@
 <artifact id="Observation/InjuryIncident-Example2" key="Observation-InjuryIncident-Example2" name="InjuryIncident-Example2"/>
 <artifact id="Observation/InjuryIncidentUT-Example1" key="Observation-InjuryIncidentUT-Example1" name="InjuryIncidentUT-Example1"/>
 <artifact id="Location/InjuryLocation-Example1" key="Location-InjuryLocation-Example1" name="InjuryLocation-Example1"/>
-<artifact id="StructureDefinition/input-race-and-ethnicity-vr" key="StructureDefinition-input-race-and-ethnicity-vr" name="Input Race and Ethnicity"/>
 <artifact id="Observation/InputRaceAndEthnicity-Example1" key="Observation-InputRaceAndEthnicity-Example1" name="InputRaceAndEthnicity-Example1"/>
-<artifact id="Observation/InputRaceAndEthnicityFather" key="Observation-InputRaceAndEthnicityFather" name="InputRaceAndEthnicityFather"/>
-<artifact id="Observation/InputRaceAndEthnicityMother" key="Observation-InputRaceAndEthnicityMother" name="InputRaceAndEthnicityMother"/>
 <artifact id="Observation/InputRaceAndEthnicityUT-Example1" key="Observation-InputRaceAndEthnicityUT-Example1" name="InputRaceAndEthnicityUT-Example1"/>
 <artifact id="CodeSystem/vrdr-intentional-reject-cs" key="CodeSystem-vrdr-intentional-reject-cs" name="Intentional Reject CodeSystem"/>
 <artifact id="ValueSet/vrdr-intentional-reject-vs" key="ValueSet-vrdr-intentional-reject-vs" name="Intentional Reject ValueSet"/>
 <artifact id="ConceptMap/IntentionalRejectCM" key="ConceptMap-IntentionalRejectCM" name="IntentionalReject Concept Map"/>
-<artifact id="ValueSet/ValueSet-jurisdiction-vr" key="ValueSet-ValueSet-jurisdiction-vr" name="Jurisdictions Value Set"/>
-<artifact id="CodeSystem/CodeSystem-jurisdictions-vr" key="CodeSystem-CodeSystem-jurisdictions-vr" name="Jurisdictions that are not US States or Territories"/>
 <artifact id="CodeSystem/vrdr-component-cs" key="CodeSystem-vrdr-component-cs" name="Local Component Codes"/>
-<artifact id="CodeSystem/CodeSystem-local-observation-codes-vr" key="CodeSystem-CodeSystem-local-observation-codes-vr" name="Local Observation Codes"/>
 <artifact id="CodeSystem/vrdr-observations-cs" key="CodeSystem-vrdr-observations-cs" name="Local Observation Codes"/>
 <artifact id="CodeSystem/vrdr-organization-type-cs" key="CodeSystem-vrdr-organization-type-cs" name="Local Organization Type"/>
 <artifact id="Location/location-death-atlanta-ga-a-freeman" key="Location-location-death-atlanta-ga-a-freeman" name="Location - Death - Atlanta GA Freeman"/>
@@ -274,14 +277,11 @@
 <artifact id="ValueSet/vrdr-method-of-disposition-vs" key="ValueSet-vrdr-method-of-disposition-vs" name="Method of Disposition VS"/>
 <artifact id="ConceptMap/MethodOfDispositionCM" key="ConceptMap-MethodOfDispositionCM" name="MethodOfDisposition Concept Map"/>
 <artifact id="Observation/MilitaryServiceUT-Example1" key="Observation-MilitaryServiceUT-Example1" name="MilitaryServiceUT-Example1"/>
-<artifact id="CodeSystem/CodeSystem-missing-value-reason-vr" key="CodeSystem-CodeSystem-missing-value-reason-vr" name="Missing Value Reason Codesystem"/>
 <artifact id="StructureDefinition/vrdr-mortality-roster-bundle" key="StructureDefinition-vrdr-mortality-roster-bundle" name="Mortality Roster Bundle"/>
 <artifact id="Practitioner/Mortician-Example1" key="Practitioner-Mortician-Example1" name="Mortician-Example1"/>
 <artifact id="RelatedPerson/MotherUT-Example1" key="RelatedPerson-MotherUT-Example1" name="MotherUT-Example1"/>
-<artifact id="ValueSet/ValueSet-mothers-date-of-birth-edit-flags" key="ValueSet-ValueSet-mothers-date-of-birth-edit-flags" name="Mothers Date of Birth Edit Flags (NCHS)"/>
 <artifact id="StructureDefinition/NVSS-SexAtDeath" key="StructureDefinition-NVSS-SexAtDeath" name="NVSS SexAtDeath"/>
 <artifact id="ConceptMap/NewbornCongenitalAnomaliesCM" key="ConceptMap-NewbornCongenitalAnomaliesCM" name="NewbornCongenitalAnomalies Concept Map"/>
-<artifact id="ValueSet/ValueSet-number-previous-cesareans-edit-flags" key="ValueSet-ValueSet-number-previous-cesareans-edit-flags" name="Number of Previous Cesareans Edit Flags (NCHS)"/>
 <artifact id="StructureDefinition/Observation-apgar-score" key="StructureDefinition-Observation-apgar-score" name="Observation - APGAR Score"/>
 <artifact id="StructureDefinition/Observation-steroids-fetal-lung-maturation" key="StructureDefinition-Observation-steroids-fetal-lung-maturation" name="Observation - Administration of Steroids for Fetal Lung Maturation"/>
 <artifact id="Observation/observation-steroids-fetal-lung-maturation-jada-ann-quinn" key="Observation-observation-steroids-fetal-lung-maturation-jada-ann-quinn" name="Observation - Administration of Steroids for Fetal Lung Maturation - Jada Ann Quinn"/>
@@ -290,10 +290,9 @@
 <artifact id="Observation/observation-apgar-score-babyg-quinn-1-min" key="Observation-observation-apgar-score-babyg-quinn-1-min" name="Observation - Apgar Score - BabyG Quinn: 1 min"/>
 <artifact id="Observation/observation-apgar-score-babyg-quinn-5-min" key="Observation-observation-apgar-score-babyg-quinn-5-min" name="Observation - Apgar Score - BabyG Quinn: 5 min"/>
 <artifact id="Observation/observation-autopsy-performed-not-named" key="Observation-observation-autopsy-performed-not-named" name="Observation - Autopsy Performed - Fetus Not Named"/>
-<artifact id="StructureDefinition/Observation-autopsy-performed-indicator" key="StructureDefinition-Observation-autopsy-performed-indicator" name="Observation - Autopsy Performed Indicator"/>
 <artifact id="Observation/observation-autopsy-performed-indicator-a-freeman" key="Observation-observation-autopsy-performed-indicator-a-freeman" name="Observation - Autopsy Performed Indicator - Freeman"/>
 <artifact id="StructureDefinition/Observation-autopsy-performed-indicator-vr" key="StructureDefinition-Observation-autopsy-performed-indicator-vr" name="Observation - Autopsy Performed Indicator Vital Records"/>
-<artifact id="Observation/observation-autopsy-performed-indicator-vr-a-freeman" key="Observation-observation-autopsy-performed-indicator-vr-a-freeman" name="Observation - Autopsy Performed Indicator Vital Records - A Freeman"/>
+<artifact id="Observation/observation-autopsy-performed-indicator-vr-a-freeman" key="Observation-observation-autopsy-performed-indicator-vr-a-freeman" name="Observation - Autopsy Performed Indicator example [A Freeman]"/>
 <artifact id="Observation/observation-autopsy-performed-not-named-common" key="Observation-observation-autopsy-performed-not-named-common" name="Observation - Autopsy Performed example [Fetus Not Named]"/>
 <artifact id="StructureDefinition/Observation-autopsy-histological-exam-results-used" key="StructureDefinition-Observation-autopsy-histological-exam-results-used" name="Observation - Autopsy or Histological Exam Results Used"/>
 <artifact id="Observation/observation-autopsy-histological-exam-results-used-not-named" key="Observation-observation-autopsy-histological-exam-results-used-not-named" name="Observation - Autopsy or Histological Exam Results Used - Fetus Not Named"/>
@@ -312,7 +311,13 @@
 <artifact id="Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn" key="Observation-observation-cig-smoking-pregnancy-2-jada-ann-quinn" name="Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: first 3 months"/>
 <artifact id="Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn" key="Observation-observation-cig-smoking-pregnancy-4-jada-ann-quinn" name="Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: last 3 months"/>
 <artifact id="Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn" key="Observation-observation-cig-smoking-pregnancy-3-jada-ann-quinn" name="Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: second 3 months"/>
-<artifact id="StructureDefinition/coded-race-and-ethnicity-vr" key="StructureDefinition-coded-race-and-ethnicity-vr" name="Observation - Coded Race and Ethnicity"/>
+<artifact id="Observation/observation-coded-initiating-fetal-death-cause-or-condition" key="Observation-observation-coded-initiating-fetal-death-cause-or-condition" name="Observation - Coded Initiating Cause of Fetal Death"/>
+<artifact id="StructureDefinition/Observation-coded-initiating-fetal-death-cause-or-condition" key="StructureDefinition-Observation-coded-initiating-fetal-death-cause-or-condition" name="Observation - Coded Initiating Fetal Death Cause or Condition"/>
+<artifact id="Observation/observation-coded-other-fetal-death-cause-or-condition-not-named" key="Observation-observation-coded-other-fetal-death-cause-or-condition-not-named" name="Observation - Coded Other Cause of Fetal Death"/>
+<artifact id="StructureDefinition/Observation-coded-other-fetal-death-cause-or-condition" key="StructureDefinition-Observation-coded-other-fetal-death-cause-or-condition" name="Observation - Coded Other Fetal Death Cause or Condition"/>
+<artifact id="StructureDefinition/coded-race-and-ethnicity-vr" key="StructureDefinition-coded-race-and-ethnicity-vr" name="Observation - Coded Race and Ethnicity Vital Records"/>
+<artifact id="Observation/CodedRaceAndEthnicity-Father" key="Observation-CodedRaceAndEthnicity-Father" name="Observation - CodedRaceAndEthnicity example [Father]"/>
+<artifact id="Observation/CodedRaceAndEthnicity-Mother" key="Observation-CodedRaceAndEthnicity-Mother" name="Observation - CodedRaceAndEthnicity example [Mother]"/>
 <artifact id="Observation/observation-contributing-cause-of-death-part2-a-freeman" key="Observation-observation-contributing-cause-of-death-part2-a-freeman" name="Observation - Contributing Cause of Death Part 2 - Freeman"/>
 <artifact id="StructureDefinition/Observation-date-of-first-prenatal-care-visit" key="StructureDefinition-Observation-date-of-first-prenatal-care-visit" name="Observation - Date of First Prenatal Care Visit"/>
 <artifact id="Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee" key="Observation-observation-date-of-first-prenatal-care-visit-carmen-teresa-lee" name="Observation - Date of First Prenatal Care Visit - Carmen Teresa Lee"/>
@@ -348,6 +353,9 @@
 <artifact id="StructureDefinition/Observation-infant-living" key="StructureDefinition-Observation-infant-living" name="Observation - Infant Living"/>
 <artifact id="Observation/observation-infant-living-babyg-quinn" key="Observation-observation-infant-living-babyg-quinn" name="Observation - Infant Living - Baby G Quinn"/>
 <artifact id="StructureDefinition/vrdr-injury-incident" key="StructureDefinition-vrdr-injury-incident" name="Observation - Injury Incident"/>
+<artifact id="StructureDefinition/input-race-and-ethnicity-vr" key="StructureDefinition-input-race-and-ethnicity-vr" name="Observation - Input Race and Ethnicity Vital Records"/>
+<artifact id="Observation/InputRaceAndEthnicityFather" key="Observation-InputRaceAndEthnicityFather" name="Observation - InputRaceAndEthnicity example [Father]"/>
+<artifact id="Observation/InputRaceAndEthnicityMother" key="Observation-InputRaceAndEthnicityMother" name="Observation - InputRaceAndEthnicity example [Mother]"/>
 <artifact id="StructureDefinition/Observation-labor-trial-attempted" key="StructureDefinition-Observation-labor-trial-attempted" name="Observation - Labor Trial Attempted"/>
 <artifact id="Observation/observation-labor-trial-attempted-babyg-quinn" key="Observation-observation-labor-trial-attempted-babyg-quinn" name="Observation - Labor Trial Attempted - Baby G Quinn"/>
 <artifact id="StructureDefinition/Observation-last-menstrual-period" key="StructureDefinition-Observation-last-menstrual-period" name="Observation - Last Menstrual Period"/>
@@ -381,8 +389,8 @@
 <artifact id="StructureDefinition/Observation-None-congenital-anomolies-of-the-newborn" key="StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn" name="Observation - None Of Specified Congenital Anomolies Of The Newborn"/>
 <artifact id="StructureDefinition/Observation-no-infections-present-during-pregnancy" key="StructureDefinition-Observation-no-infections-present-during-pregnancy" name="Observation - None Of Specified Infections Specified During Pregnancy"/>
 <artifact id="StructureDefinition/Observation-none-of-specified-maternal-morbidities" key="StructureDefinition-Observation-none-of-specified-maternal-morbidities" name="Observation - None Of Specified Maternal Morbidities"/>
-<artifact id="StructureDefinition/Observation-none-of-specified-obstetric-procedures" key="StructureDefinition-Observation-none-of-specified-obstetric-procedures" name="Observation - None Of Specified Maternal Morbidities"/>
 <artifact id="Observation/observation-none-maternal-morbidities-jada-ann-quinn" key="Observation-observation-none-maternal-morbidities-jada-ann-quinn" name="Observation - None Of Specified Maternal Morbidities - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Observation-none-of-specified-obstetric-procedures" key="StructureDefinition-Observation-none-of-specified-obstetric-procedures" name="Observation - None Of Specified Obstetric Procedures"/>
 <artifact id="StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors" key="StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors" name="Observation - None Of Specified Pregnancy Risk Factors"/>
 <artifact id="Observation/observation-none-specified-risk-factors-jada-ann-quinn" key="Observation-observation-none-specified-risk-factors-jada-ann-quinn" name="Observation - None of Specified Risk Factors - Jada Ann Quinn"/>
 <artifact id="Observation/observation-number-births-now-dead-jada-ann-quinn" key="Observation-observation-number-births-now-dead-jada-ann-quinn" name="Observation - Number Births Now Dead - Jada Ann Quinn"/>
@@ -390,8 +398,8 @@
 <artifact id="Observation/observation-nbr-live-births-delivery-carmen-teresa-lee" key="Observation-observation-nbr-live-births-delivery-carmen-teresa-lee" name="Observation - Number Live Births This Delivery - Carmen Teresa Lee"/>
 <artifact id="Observation/observation-number-live-births-this-delivery-carmen-teresa-lee" key="Observation-observation-number-live-births-this-delivery-carmen-teresa-lee" name="Observation - Number Live Births This Delivery - Carmen Teresa Lee"/>
 <artifact id="Observation/observation-number-live-births-this-delivery-jada-ann-quinn" key="Observation-observation-number-live-births-this-delivery-jada-ann-quinn" name="Observation - Number Live Births This Delivery - Jada Ann Quinn"/>
-<artifact id="Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn" key="Observation-observation-number-other-pregnancy-outcomes-jada-ann-quinn" name="Observation - Number Other Pregnancy Outcomes - Jada Ann Quinn"/>
 <artifact id="Observation/observation-nbr-other-pregnancy-outcomes-jada-ann-quinn" key="Observation-observation-nbr-other-pregnancy-outcomes-jada-ann-quinn" name="Observation - Number Other Pregnancy Outcomes - Jada Ann Quinn"/>
+<artifact id="Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn" key="Observation-observation-number-other-pregnancy-outcomes-jada-ann-quinn" name="Observation - Number Other Pregnancy Outcomes - Jada Ann Quinn"/>
 <artifact id="Observation/observation-number-prenatal-visits-jada-ann-quinn" key="Observation-observation-number-prenatal-visits-jada-ann-quinn" name="Observation - Number Prenatal Visits - Jada Ann Quinn"/>
 <artifact id="Observation/observation-number-prenatal-visits-jada-ann-quinn-w-edit" key="Observation-observation-number-prenatal-visits-jada-ann-quinn-w-edit" name="Observation - Number Prenatal Visits - Jada Ann Quinn, with Edit Flag"/>
 <artifact id="Observation/observation-number-previous-cesareans-jada-ann-quinn" key="Observation-observation-number-previous-cesareans-jada-ann-quinn" name="Observation - Number Previous Cesareans - Jada Ann Quinn"/>
@@ -415,7 +423,6 @@
 <artifact id="Observation/observation-parent-education-level-james-quinn-w-edit" key="Observation-observation-parent-education-level-james-quinn-w-edit" name="Observation - Parent Education Level - James Quinn, with Edit Flag"/>
 <artifact id="Observation/observation-parent-education-level-tom-yan-lee" key="Observation-observation-parent-education-level-tom-yan-lee" name="Observation - Parent Education Level - Tom Yan Lee"/>
 <artifact id="Observation/observation-parent-education-level-tom-yan-lee-w-edit" key="Observation-observation-parent-education-level-tom-yan-lee-w-edit" name="Observation - Parent Education Level - Tom Yan Lee, with Edit Flag"/>
-<artifact id="StructureDefinition/Observation-parent-education-level-vr" key="StructureDefinition-Observation-parent-education-level-vr" name="Observation - Parent Education Level Vital Records"/>
 <artifact id="StructureDefinition/Observation-paternity-acknowledgement-signed" key="StructureDefinition-Observation-paternity-acknowledgement-signed" name="Observation - Paternity Acknowledgement Signed"/>
 <artifact id="Observation/observation-paternity-acknowledgement-signed-james-quinn" key="Observation-observation-paternity-acknowledgement-signed-james-quinn" name="Observation - Paternity Acknowledgement Signed - James Quinn"/>
 <artifact id="StructureDefinition/Observation-planned-to-deliver-at-home" key="StructureDefinition-Observation-planned-to-deliver-at-home" name="Observation - Planned to Deliver at Home"/>
@@ -444,13 +451,10 @@
 <artifact id="Observation/observation-number-previous-cesareans-carmen-teresa-lee" key="Observation-observation-number-previous-cesareans-carmen-teresa-lee" name="Observations - Number Previous Cesareans - Carmen Teresa Lee"/>
 <artifact id="Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit" key="Observation-observation-number-previous-cesareans-carmen-teresa-lee-w-edit" name="Observations - Number Previous Cesareans - Carmen Teresa Lee, with Edit Flag"/>
 <artifact id="Parameters/expansion-parameters-mdi" key="Parameters-expansion-parameters-mdi" name="Parameters - SNOMED US Version"/>
-<artifact id="StructureDefinition/ExtensionPartialDateVitalRecords" key="StructureDefinition-ExtensionPartialDateVitalRecords" name="Partial Date"/>
-<artifact id="StructureDefinition/ExtensionDatePartAbsentReasonVitalRecords" key="StructureDefinition-ExtensionDatePartAbsentReasonVitalRecords" name="Partial Date Absent Reason"/>
-<artifact id="StructureDefinition/ExtensionPartialDateTimeVitalRecords" key="StructureDefinition-ExtensionPartialDateTimeVitalRecords" name="Partial Date Time"/>
 <artifact id="StructureDefinition/Patient-child-vr" key="StructureDefinition-Patient-child-vr" name="Patient - Child Vital Records"/>
 <artifact id="Patient/patient-child-babyg-quinn" key="Patient-patient-child-babyg-quinn" name="Patient - Child example [Baby G Quinn]"/>
 <artifact id="Patient/patient-child-babyg-quinn-w-edit" key="Patient-patient-child-babyg-quinn-w-edit" name="Patient - Child example [Baby G Quinn], with Edit Flag"/>
-<artifact id="StructureDefinition/Patient-decedent-fetus-vr" key="StructureDefinition-Patient-decedent-fetus-vr" name="Patient - Decedent Fetus Vital Records"/>
+<artifact id="StructureDefinition/Patient-decedent-fetus" key="StructureDefinition-Patient-decedent-fetus" name="Patient - Decedent Fetus"/>
 <artifact id="Patient/patient-decedent-fetus-not-named" key="Patient-patient-decedent-fetus-not-named" name="Patient - Decedent Fetus example [Fetus Not Named]"/>
 <artifact id="Patient/patient-decedent-fetus-not-named-w-edit" key="Patient-patient-decedent-fetus-not-named-w-edit" name="Patient - Decedent Fetus example [Fetus Not Named], with Edit Flag"/>
 <artifact id="Patient/patient-mother-birth-date-part-absent" key="Patient-patient-mother-birth-date-part-absent" name="Patient - Mother Date Part Absent"/>
@@ -466,15 +470,11 @@
 <artifact id="ConceptMap/PlaceOfDeathCM" key="ConceptMap-PlaceOfDeathCM" name="PlaceOfDeath Concept Map"/>
 <artifact id="ConceptMap/PlaceOfInjuryCM" key="ConceptMap-PlaceOfInjuryCM" name="PlaceOfInjury Concept Map"/>
 <artifact id="Observation/PlaceOfInjury-Example1" key="Observation-PlaceOfInjury-Example1" name="PlaceOfInjury-Example1"/>
-<artifact id="ValueSet/ValueSet-plurality-edit-flags" key="ValueSet-ValueSet-plurality-edit-flags" name="Plurality Edit Flags (NCHS)"/>
-<artifact id="StructureDefinition/PostDirectional" key="StructureDefinition-PostDirectional" name="PostDirectional"/>
 <artifact id="StructureDefinition/Practitioner-vr" key="StructureDefinition-Practitioner-vr" name="Practitioner - Vital Records"/>
 <artifact id="Practitioner/practitioner-vital-records-avery-jones" key="Practitioner-practitioner-vital-records-avery-jones" name="Practitioner - Vital Records - Avery Jones, MD"/>
 <artifact id="Practitioner/practitioner-vital-records-janet-seito" key="Practitioner-practitioner-vital-records-janet-seito" name="Practitioner - Vital Records - Janet Seito"/>
 <artifact id="Practitioner/practitioner-vital-records-jessica-leung" key="Practitioner-practitioner-vital-records-jessica-leung" name="Practitioner - Vital Records - Jessica Leung"/>
 <artifact id="Practitioner/PractitionerUT-Example1" key="Practitioner-PractitionerUT-Example1" name="PractitionerUT-Example1"/>
-<artifact id="StructureDefinition/PreDirectional" key="StructureDefinition-PreDirectional" name="PreDirectional"/>
-<artifact id="ValueSet/ValueSet-pregnancy-report-edit-flags" key="ValueSet-ValueSet-pregnancy-report-edit-flags" name="Pregnancy Report Edit Flags (NCHS)"/>
 <artifact id="Observation/PregnancyUT-Example1" key="Observation-PregnancyUT-Example1" name="PregnancyUT-Example1"/>
 <artifact id="StructureDefinition/Procedure-antibiotics-suspected-neonatal-sepsis" key="StructureDefinition-Procedure-antibiotics-suspected-neonatal-sepsis" name="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
 <artifact id="Procedure/procedure-antibiotic-sepsis-babyg-quinn" key="Procedure-procedure-antibiotic-sepsis-babyg-quinn" name="Procedure - Antibiotic for Suspected Neonatal Sepsis - BabyG Quinn"/>
@@ -512,20 +512,12 @@
 <artifact id="Questionnaire/Questionnaire-patients-fetal-death" key="Questionnaire-Questionnaire-patients-fetal-death" name="Questionnaire - Patient's Fetal Death Worksheet"/>
 <artifact id="QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn" key="QuestionnaireResponse-QuestionnaireResponse-mothers-live-birth-jada-quinn" name="QuestionnaireResponse - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn"/>
 <artifact id="QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee" key="QuestionnaireResponse-QuestionnaireResponse-patients-fetal-death-carmen-lee" name="QuestionnaireResponse - Patient's Fetal Death Worksheet: Carmen Lee"/>
-<artifact id="CodeSystem/CodeSystem-race-code-vr" key="CodeSystem-CodeSystem-race-code-vr" name="Race Code CS"/>
-<artifact id="ValueSet/ValueSet-race-code-vr" key="ValueSet-ValueSet-race-code-vr" name="Race Code Value Set"/>
-<artifact id="ValueSet/ValueSet-race-missing-value-reason-vr" key="ValueSet-ValueSet-race-missing-value-reason-vr" name="Race Missing Value Reason"/>
-<artifact id="CodeSystem/CodeSystem-race-recode-40-vr" key="CodeSystem-CodeSystem-race-recode-40-vr" name="Race Recode 40 CS"/>
-<artifact id="ValueSet/ValueSet-race-recode-40-vr" key="ValueSet-ValueSet-race-recode-40-vr" name="Race Recode 40 Value Set"/>
-<artifact id="ConceptMap/RaceCodeCM" key="ConceptMap-RaceCodeCM" name="RaceCodes Concept Map"/>
-<artifact id="ConceptMap/RaceMissingValueReasonCM" key="ConceptMap-RaceMissingValueReasonCM" name="RaceMissingValueReason Concept Map"/>
-<artifact id="ConceptMap/RaceRecode40CM" key="ConceptMap-RaceRecode40CM" name="RaceRecode40 Concept Map"/>
 <artifact id="StructureDefinition/vrdr-record-axis-cause-of-death" key="StructureDefinition-vrdr-record-axis-cause-of-death" name="Record Axis Cause Of Death"/>
 <artifact id="Observation/RecordAxisCauseOfDeath-Example1" key="Observation-RecordAxisCauseOfDeath-Example1" name="RecordAxisCauseOfDeath-Example1"/>
 <artifact id="Observation/RecordAxisCauseOfDeath-Example2" key="Observation-RecordAxisCauseOfDeath-Example2" name="RecordAxisCauseOfDeath-Example2"/>
 <artifact id="StructureDefinition/RelatedPerson-parent-vr" key="StructureDefinition-RelatedPerson-parent-vr" name="Related Person - Parent Vital Records"/>
-<artifact id="RelatedPerson/relatedperson-father-tony-lewis-common" key="RelatedPerson-relatedperson-father-tony-lewis-common" name="RelatedPerson - Adoptive Father"/>
-<artifact id="RelatedPerson/relatedperson-mother-carol-hoffer-common" key="RelatedPerson-relatedperson-mother-carol-hoffer-common" name="RelatedPerson - Adoptive Mother"/>
+<artifact id="RelatedPerson/relatedperson-father-tony-lewis-common" key="RelatedPerson-relatedperson-father-tony-lewis-common" name="RelatedPerson - Adoptive Father example [Tony Lewis]"/>
+<artifact id="RelatedPerson/relatedperson-mother-carol-hoffer-common" key="RelatedPerson-relatedperson-mother-carol-hoffer-common" name="RelatedPerson - Adoptive Mother example [Carol Hoffer]"/>
 <artifact id="RelatedPerson/relatedperson-father-natural-james-brandon-quinn" key="RelatedPerson-relatedperson-father-natural-james-brandon-quinn" name="RelatedPerson - Father Natural - Vital Records - James Brandon Quinn"/>
 <artifact id="RelatedPerson/relatedperson-father-natural-james-brandon-quinn-w-edit" key="RelatedPerson-relatedperson-father-natural-james-brandon-quinn-w-edit" name="RelatedPerson - Father Natural - Vital Records - James Brandon Quinn, with Edit Flag"/>
 <artifact id="RelatedPerson/relatedperson-father-natural-tom-yan-lee" key="RelatedPerson-relatedperson-father-natural-tom-yan-lee" name="RelatedPerson - Father Natural - Vital Records - Tom Yan Lee"/>
@@ -533,17 +525,15 @@
 <artifact id="StructureDefinition/RelatedPerson-father-natural-vr" key="StructureDefinition-RelatedPerson-father-natural-vr" name="RelatedPerson - Father Natural Vital Records"/>
 <artifact id="StructureDefinition/RelatedPerson-father-vr" key="StructureDefinition-RelatedPerson-father-vr" name="RelatedPerson - Father Vital Records"/>
 <artifact id="RelatedPerson/relatedperson-father-tom-yan-lee-common" key="RelatedPerson-relatedperson-father-tom-yan-lee-common" name="RelatedPerson - Father example [Tom Yan Lee]"/>
-<artifact id="RelatedPerson/relatedperson-mother-gestational-carmen-teresa-lee-common" key="RelatedPerson-relatedperson-mother-gestational-carmen-teresa-lee-common" name="RelatedPerson - Mother Gestaional example [Carmen Teresa Lee]"/>
 <artifact id="RelatedPerson/relatedperson-mother-carmen-teresa-lee" key="RelatedPerson-relatedperson-mother-carmen-teresa-lee" name="RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee"/>
 <artifact id="RelatedPerson/relatedperson-mother-jada-ann-quinn" key="RelatedPerson-relatedperson-mother-jada-ann-quinn" name="RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn"/>
-<artifact id="StructureDefinition/RelatedPerson-mother-gestational-vr" key="StructureDefinition-RelatedPerson-mother-gestational-vr" name="RelatedPerson - Mother Gestational Vital Records"/>
+<artifact id="RelatedPerson/relatedperson-mother-gestational-carmen-teresa-lee-common" key="RelatedPerson-relatedperson-mother-gestational-carmen-teresa-lee-common" name="RelatedPerson - Mother Gestational example [Carmen Teresa Lee]"/>
 <artifact id="StructureDefinition/RelatedPerson-mother-vr" key="StructureDefinition-RelatedPerson-mother-vr" name="RelatedPerson - Mother Vital Records"/>
-<artifact id="RelatedPerson/relatedperson-parent-stepmother" key="RelatedPerson-relatedperson-parent-stepmother" name="RelatedPerson - Stepmother"/>
+<artifact id="RelatedPerson/relatedperson-parent-stepmother" key="RelatedPerson-relatedperson-parent-stepmother" name="RelatedPerson - Stepmother example [Susan Grant]"/>
 <artifact id="ConceptMap/ReplaceStatusCM" key="ConceptMap-ReplaceStatusCM" name="ReplaceStatus Concept Map"/>
 <artifact id="ValueSet/vrdr-replace-status-vs" key="ValueSet-vrdr-replace-status-vs" name="Replacement Status VS"/>
 <artifact id="CodeSystem/vrdr-replace-status-cs" key="CodeSystem-vrdr-replace-status-cs" name="Replacement Status of Death Record Submission"/>
 <artifact id="StructureDefinition/ReplaceStatus" key="StructureDefinition-ReplaceStatus" name="Replacement Status of a Death Record (deprecated)"/>
-<artifact id="ValueSet/ValueSet-residence-country-vr" key="ValueSet-ValueSet-residence-country-vr" name="Residence Country Value Set"/>
 <artifact id="StructureDefinition/Specimen-toxicology-lab" key="StructureDefinition-Specimen-toxicology-lab" name="Specimen - Toxicology Lab"/>
 <artifact id="Specimen/specimen-bile-toxicology-a-freeman" key="Specimen-specimen-bile-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Bile"/>
 <artifact id="Specimen/specimen-blood-toxicology-a-freeman" key="Specimen-specimen-blood-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Blood"/>
@@ -551,14 +541,10 @@
 <artifact id="Specimen/specimen-stomach-contents-toxicology-a-freeman" key="Specimen-specimen-stomach-contents-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Stomach Contents"/>
 <artifact id="Specimen/specimen-urine-toxicology-a-freeman" key="Specimen-specimen-urine-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Urine"/>
 <artifact id="Specimen/specimen-vitreous-humor-toxicology-a-freeman" key="Specimen-specimen-vitreous-humor-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Vitreous Humor"/>
-<artifact id="ValueSet/ValueSet-spouse-alive-vr" key="ValueSet-ValueSet-spouse-alive-vr" name="Spouse Alive Value Set"/>
+<artifact id="ValueSet/vrdr-spouse-alive-vs" key="ValueSet-vrdr-spouse-alive-vs" name="Spouse Alive VS"/>
 <artifact id="StructureDefinition/SpouseAlive" key="StructureDefinition-SpouseAlive" name="Spouse Is Alive"/>
 <artifact id="ConceptMap/SpouseAliveCM" key="ConceptMap-SpouseAliveCM" name="SpouseAlive Concept Map"/>
 <artifact id="StructureDefinition/StateSpecificField" key="StructureDefinition-StateSpecificField" name="State Specific Field"/>
-<artifact id="ValueSet/ValueSet-states-territories-provinces-vr" key="ValueSet-ValueSet-states-territories-provinces-vr" name="States, Territories and Provinces Value Set"/>
-<artifact id="StructureDefinition/StreetDesignator" key="StructureDefinition-StreetDesignator" name="StreetDesignator"/>
-<artifact id="StructureDefinition/StreetName" key="StructureDefinition-StreetName" name="StreetName"/>
-<artifact id="StructureDefinition/StreetNumber" key="StructureDefinition-StreetNumber" name="StreetNumber"/>
 <artifact id="StructureDefinition/vrdr-surgery-date" key="StructureDefinition-vrdr-surgery-date" name="Surgery Date"/>
 <artifact id="Observation/SurgeryDate-Example1" key="Observation-SurgeryDate-Example1" name="SurgeryDate-Example1"/>
 <artifact id="CodeSystem/vrdr-system-reject-cs" key="CodeSystem-vrdr-system-reject-cs" name="System Reject Code System"/>
@@ -584,39 +570,57 @@
 <artifact id="Practitioner/us-core-practitioner-b-goldberger" key="Practitioner-us-core-practitioner-b-goldberger" name="US Core Practitioner - Dr. Bruce Goldberger"/>
 <artifact id="Practitioner/us-core-practitioner-j-jones" key="Practitioner-us-core-practitioner-j-jones" name="US Core Practitioner - Dr. Jane Jones"/>
 <artifact id="Practitioner/us-core-practitioner-s-jones" key="Practitioner-us-core-practitioner-s-jones" name="US Core Practitioner - Dr. Sam Jones"/>
-<artifact id="ValueSet/ValueSet-usstates-territories-vr" key="ValueSet-ValueSet-usstates-territories-vr" name="US States, Territories Value Set"/>
 <artifact id="Parameters/expansion-parameters-bfdr" key="Parameters-expansion-parameters-bfdr" name="USA SNOMED-CT"/>
-<artifact id="StructureDefinition/UnitOrAptNumber" key="StructureDefinition-UnitOrAptNumber" name="UnitOrAptNumber"/>
-<artifact id="ConceptMap/UnitsOfAgeCM" key="ConceptMap-UnitsOfAgeCM" name="UnitsOfAge Concept Map"/>
+<artifact id="Patient/us-core-patient-vr-a-freeman" key="Patient-us-core-patient-vr-a-freeman" name="USCorePatient - Patient example [A Freeman]"/>
+<artifact id="Patient/us-core-patient-vr-unknown-name" key="Patient-us-core-patient-vr-unknown-name" name="USCorePatient - Patient example [Unknown Name]"/>
 <artifact id="Observation/UsualWorkUT-Example1" key="Observation-UsualWorkUT-Example1" name="UsualWorkUT-Example1"/>
 <artifact id="ValueSet/ValueSet-apgar-timing" key="ValueSet-ValueSet-apgar-timing" name="ValueSet - APGAR Score Timing"/>
 <artifact id="ValueSet/ValueSet-birth-attendant-titles" key="ValueSet-ValueSet-birth-attendant-titles" name="ValueSet - Birth Attendants Titles"/>
 <artifact id="ValueSet/ValueSet-birth-delivery-occurred" key="ValueSet-ValueSet-birth-delivery-occurred" name="ValueSet - Birth Delivery Occurred"/>
+<artifact id="ValueSet/ValueSet-birth-sex-child-vr" key="ValueSet-ValueSet-birth-sex-child-vr" name="ValueSet - Birth Sex Child Vital Records"/>
+<artifact id="ValueSet/ValueSet-birth-sex-fetus-vr" key="ValueSet-ValueSet-birth-sex-fetus-vr" name="ValueSet - Birth Sex Fetus Vital Records"/>
+<artifact id="ValueSet/ValueSet-birth-weight-edit-flags" key="ValueSet-ValueSet-birth-weight-edit-flags" name="ValueSet - Birth Weight Edit Flags (NCHS)"/>
 <artifact id="ValueSet/ValueSet-birth-and-fetal-death-financial-class" key="ValueSet-ValueSet-birth-and-fetal-death-financial-class" name="ValueSet - Birth and Fetal Death Financial Class"/>
+<artifact id="ValueSet/ValueSet-birthplace-country-vr" key="ValueSet-ValueSet-birthplace-country-vr" name="ValueSet - Birthplace Country Vital Records"/>
+<artifact id="ValueSet/cigarette-smoking-before-during-pregnancy" key="ValueSet-cigarette-smoking-before-during-pregnancy" name="ValueSet - Cigarette Smoking Before and During Pregnancy"/>
 <artifact id="ValueSet/ValueSet-coded-race-and-ethnicity-person-vr" key="ValueSet-ValueSet-coded-race-and-ethnicity-person-vr" name="ValueSet - Coded Race and Ethnicity Person Vital Records"/>
 <artifact id="ValueSet/ValueSet-death-pregnancy-status" key="ValueSet-ValueSet-death-pregnancy-status" name="ValueSet - Death Pregnancy Status"/>
 <artifact id="ValueSet/ValueSet-delivery-routes" key="ValueSet-ValueSet-delivery-routes" name="ValueSet - Delivery Routes"/>
 <artifact id="ValueSet/ValueSet-education-level-person-vr" key="ValueSet-ValueSet-education-level-person-vr" name="ValueSet - Education Level Person Vital Records"/>
+<artifact id="ValueSet/ValueSet-education-level-vr" key="ValueSet-ValueSet-education-level-vr" name="ValueSet - Education Level Vital Records"/>
+<artifact id="ValueSet/ValueSet-estimate-of-gestation-edit-flags" key="ValueSet-ValueSet-estimate-of-gestation-edit-flags" name="ValueSet - Estimate of Gestation Edit Flags (NCHS)"/>
 <artifact id="ValueSet/ValueSet-father-relationship-vr" key="ValueSet-ValueSet-father-relationship-vr" name="ValueSet - Father Relationship Vital Records"/>
+<artifact id="ValueSet/ValueSet-fathers-date-of-birth-edit-flags" key="ValueSet-ValueSet-fathers-date-of-birth-edit-flags" name="ValueSet - Fathers Date of Birth Edit Flags (NCHS)"/>
 <artifact id="ValueSet/ValueSet-fetal-death-cause-or-condition" key="ValueSet-ValueSet-fetal-death-cause-or-condition" name="ValueSet - Fetal Death Cause or Condition"/>
 <artifact id="ValueSet/ValueSet-fetal-death-time-points" key="ValueSet-ValueSet-fetal-death-time-points" name="ValueSet - Fetal Death Time Points"/>
 <artifact id="ValueSet/ValueSet-fetal-presentations" key="ValueSet-ValueSet-fetal-presentations" name="ValueSet - Fetal Presentations"/>
+<artifact id="ValueSet/ValueSet-hispanic-no-unknown-vr" key="ValueSet-ValueSet-hispanic-no-unknown-vr" name="ValueSet - Hispanic(Yes) No Unknown Vital Records"/>
+<artifact id="ValueSet/ValueSet-hispanic-origin-vr" key="ValueSet-ValueSet-hispanic-origin-vr" name="ValueSet - HispanicOrigin Vital Records"/>
 <artifact id="ValueSet/ValueSet-histological-placental-examination" key="ValueSet-ValueSet-histological-placental-examination" name="ValueSet - Histological Placental Examination"/>
 <artifact id="ValueSet/ValueSet-infections-during-pregnancy-live-birth" key="ValueSet-ValueSet-infections-during-pregnancy-live-birth" name="ValueSet - Infections During Pregnancy Live Birth"/>
 <artifact id="ValueSet/ValueSet-informant-relationship-to-mother" key="ValueSet-ValueSet-informant-relationship-to-mother" name="ValueSet - Informant Relationship to Mother"/>
 <artifact id="ValueSet/ValueSet-input-race-and-ethnicity-person-vr" key="ValueSet-ValueSet-input-race-and-ethnicity-person-vr" name="ValueSet - Input Race and Ethnicity Person Vital Records"/>
+<artifact id="ValueSet/ValueSet-jurisdiction-vr" key="ValueSet-ValueSet-jurisdiction-vr" name="ValueSet - Jurisdictions Vital Records"/>
 <artifact id="ValueSet/ValueSet-mother-relationship-vr" key="ValueSet-ValueSet-mother-relationship-vr" name="ValueSet - Mother Relationship Vital Records"/>
+<artifact id="ValueSet/ValueSet-mothers-date-of-birth-edit-flags" key="ValueSet-ValueSet-mothers-date-of-birth-edit-flags" name="ValueSet - Mothers Date of Birth Edit Flags (NCHS)"/>
 <artifact id="ValueSet/ValueSet-newborn-congenital-anomalies" key="ValueSet-ValueSet-newborn-congenital-anomalies" name="ValueSet - Newborn Congenital Anomalies"/>
+<artifact id="ValueSet/ValueSet-number-previous-cesareans-edit-flags" key="ValueSet-ValueSet-number-previous-cesareans-edit-flags" name="ValueSet - Number of Previous Cesareans Edit Flags (NCHS)"/>
 <artifact id="ValueSet/ValueSet-obstetric-procedure-outcome" key="ValueSet-ValueSet-obstetric-procedure-outcome" name="ValueSet - Obstetric Procedure Outcome"/>
 <artifact id="ValueSet/ValueSet-obstetric-procedure" key="ValueSet-ValueSet-obstetric-procedure" name="ValueSet - Obstetric Procedures"/>
+<artifact id="ValueSet/ValueSet-plurality-edit-flags" key="ValueSet-ValueSet-plurality-edit-flags" name="ValueSet - Plurality Edit Flags (NCHS)"/>
+<artifact id="ValueSet/ValueSet-pregnancy-report-edit-flags" key="ValueSet-ValueSet-pregnancy-report-edit-flags" name="ValueSet - Pregnancy Report Edit Flags (NCHS)"/>
+<artifact id="ValueSet/ValueSet-race-code-vr" key="ValueSet-ValueSet-race-code-vr" name="ValueSet - Race Code Vital Records"/>
+<artifact id="ValueSet/ValueSet-race-missing-value-reason-vr" key="ValueSet-ValueSet-race-missing-value-reason-vr" name="ValueSet - Race Missing Value Reason Vital Records"/>
+<artifact id="ValueSet/ValueSet-race-recode-40-vr" key="ValueSet-ValueSet-race-recode-40-vr" name="ValueSet - Race Recode 40 Vital Records"/>
+<artifact id="ValueSet/ValueSet-residence-country-vr" key="ValueSet-ValueSet-residence-country-vr" name="ValueSet - Residence Country Vital Records"/>
+<artifact id="ValueSet/ValueSet-states-territories-provinces-vr" key="ValueSet-ValueSet-states-territories-provinces-vr" name="ValueSet - States, Territories and Provinces Vital Records"/>
 <artifact id="ValueSet/ValueSet-tracking-number-type" key="ValueSet-ValueSet-tracking-number-type" name="ValueSet - Tracking Number Type"/>
+<artifact id="ValueSet/ValueSet-usstates-territories-vr" key="ValueSet-ValueSet-usstates-territories-vr" name="ValueSet - US States, Territories Vital Records"/>
 <artifact id="ValueSet/ValueSet-units-of-age-vr" key="ValueSet-ValueSet-units-of-age-vr" name="ValueSet - Units of Age Vital Records"/>
+<artifact id="ValueSet/ValueSet-yes-no-not-applicable-vr" key="ValueSet-ValueSet-yes-no-not-applicable-vr" name="ValueSet - Yes No Not Applicable Vital Records"/>
 <artifact id="ValueSet/ValueSet-yes-no-unknown-not-applicable-vr" key="ValueSet-ValueSet-yes-no-unknown-not-applicable-vr" name="ValueSet - Yes No Unknown NotApplicable Vital Records"/>
 <artifact id="ValueSet/ValueSet-yes-no-unknown-vr" key="ValueSet-ValueSet-yes-no-unknown-vr" name="ValueSet - Yes No Unknown Vital Records"/>
-<artifact id="ValueSet/ValueSet-yes-no-not-applicable-vr" key="ValueSet-ValueSet-yes-no-not-applicable-vr" name="ValueSet - Yes, No, Not Applicable Vital Records"/>
 <artifact id="Parameters/expansion-parameters-vr-common" key="Parameters-expansion-parameters-vr-common" name="expansion-parameters-vr-common"/>
-<artifact id="Patient/us-core-patient-vr-a-freeman" key="Patient-us-core-patient-vr-a-freeman" name="us-core-patient-vr-a-freeman"/>
-<artifact id="Patient/us-core-patient-vr-unknown-name" key="Patient-us-core-patient-vr-unknown-name" name="us-core-patient-vr-unknown-name"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
@@ -634,7 +638,6 @@
 <page key="bfdr_use_cases" name="BFDR Use Cases"/>
 <page key="bfdr_vital_records_form_mapping" name="BFDR Vital Records Form Mapping"/>
 <page key="bfdr_index" name="Birth and Fetal Death Reporting Home"/>
-<page key="DeathRecordDataDictionary" name="Death Record Data Dictionary"/>
 <page key="index" name="Home"/>
 <page key="mdi_background" name="MDI Background"/>
 <page key="mdi_best_practices" name="MDI Best Practices"/>
@@ -645,7 +648,6 @@
 <page key="mdi_security_recommendations" name="MDI Security Recommendations"/>
 <page key="mdi_specification" name="MDI Specification"/>
 <page key="mdi_terminology" name="MDI Terminology"/>
-<page key="MortalityRosterDataDictionary" name="Mortality Roster Data Dictionary"/>
 <page key="bfdr_patient_worksheet_questionnaires" name="Patient Worksheet Questionnaires"/>
 <page key="SurveillanceDataDictionary" name="Surveillance Data Dictionary"/>
 <page key="toc" name="Table of Contents"/>

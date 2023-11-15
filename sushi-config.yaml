@@ -326,15 +326,13 @@ groups:
       - ObservationEducationLevelVitalRecords
       - ObservationEmergingIssuesVitalRecords
       - ObservationInputRaceAndEthnicityVitalRecords
-      - ObservationParentEducationLevelVitalRecords
       - PatientChildVitalRecords
-      - PatientDecedentFetusVitalRecords
+      - PatientDecedentFetus
       - PatientMotherVitalRecords
       - PatientVitalRecords
       - PractitionerVitalRecords
       - RelatedPersonFatherNaturalVitalRecords
       - RelatedPersonFatherVitalRecords
-      - RelatedPersonMotherGestationalVitalRecords
       - RelatedPersonMotherVitalRecords
       - RelatedPersonParentVitalRecords
 
@@ -366,7 +364,7 @@ groups:
   #     - ObservationEducationLevelVitalRecords
   #     - InputRaceAndEthnicity 
   #     - PatientChildVitalRecords
-  #     - PatientDecedentFetusVitalRecords
+  #     - PatientDecedentFetus
   #     - PatientMotherVitalRecords
   #     - PatientVitalRecords
   #     - PractitionerVitalRecords
