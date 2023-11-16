@@ -1,4 +1,4 @@
-//content from PatientDecedentFetusVitalRecords moving from VRCL to BFDR
+//content from PatientDecedentFetus moving from VRCL to BFDR
 Profile: PatientDecedentFetusNew
 Parent: USCorePatientProfile
 Title: "Patient - Decedent Fetus"

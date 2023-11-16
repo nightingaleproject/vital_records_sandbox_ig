@@ -1,5 +1,10 @@
 ## Change Log
 
+### As of 15 November 2023
+- Removed Parent Education Level Vital Records Profile (unused and redudnant with Education Level)
+- Moved Decedent Fetus Vital Records Profile to BFDR
+- Removed Gestational Mother Vital Records Profile (unused)
+
 ### As of 31 October 2023
 - Removed ObservationRaceVitalRecords and ObservationTabulatedEthnicityVitalRecords and related instances
 
@@ -16,7 +21,7 @@ VRCL was reorganized to contain only demographic content (education, race, ethni
 - observationEducationLevel_new
 - observationInputRaceAndEthnicity_new
 - patientChildVitalRecords_new
-- patientDecedentFetusVitalRecords_new
+- PatientDecedentFetus_new
 - patientMotherFetusVitalRecords_new
 - patientFetusVitalRecords_new
 - practitionerFetusVitalRecords_new
@@ -105,7 +110,7 @@ VRCL was reorganized to contain only demographic content (education, race, ethni
 #### **Other Superceded Content**
 
 - patientChildVitalRecords
-- patientDecedentFetusVitalRecords
+- PatientDecedentFetus
 - patientMotherVitalRecords
 - practitionerVitalRecords
 - relatedPersonFatherNaturalVitalRecords

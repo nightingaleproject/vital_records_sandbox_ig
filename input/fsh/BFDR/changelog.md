@@ -1,4 +1,7 @@
 ## Change Log
+
+### As of 15 November 2023
+- Moved Decedent Fetus Vital Records Profile in from VRCL
 ### 31 October 2023
 - Removed ObservationRaceVitalRecords and ObservationTabulatedEthnicityVitalRecords in VRCL and related instances in BFDR
 

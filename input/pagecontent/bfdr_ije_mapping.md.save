@@ -95,7 +95,7 @@ See the [Sources of Data Section](use_cases.html#sources-of-data) for details ab
 | 27 | Date of Birth (Father)--Day | FDOB_DY | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
 | 26 | Date of Birth (Father)--Month | FDOB_MO | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
 | 25 | Date of Birth (Father)--Year | FDOB_YR | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
-| 78 | Father's Education | FEDUC | [Observation-parent-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-parent-education-level-vr.html) | VRCPL |
+| 78 | Father's Education | FEDUC | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html) | VRCPL |
 | 79 | Father's Education--Edit Flag | FEDUC_BYPASS | [Observation-edit-flag-fathers-education](StructureDefinition-Observation-edit-flag-fathers-education.html) | BFDR |
 | 300 | Father's Hispanic Origin - Specify | FETHNIC_T | [Observation-tabulated-ethnicity-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-tabulated-ethnicity-vr.html) | VRCPL |
 | 80 | Father of Hispanic Origin?--Mexican | FETHNIC1 | [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) | US CORE |
@@ -200,7 +200,7 @@ See the [Sources of Data Section](use_cases.html#sources-of-data) for details ab
 | 16 | Date of Birth (Mother)--Day | MDOB_DY | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) | VRCPL |
 | 15 | Date of Birth (Mother)--Month | MDOB_MO | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) | VRCPL |
 | 14 | Date of Birth (Mother)--Year | MDOB_YR | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) | VRCPL |
-| 32 | Mother's Education | MEDUC | [Observation-parent-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-parent-education-level-vr.html) | VRCPL |
+| 32 | Mother's Education | MEDUC | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html) | VRCPL |
 | 33 | Mother's Education--Edit Flag | MEDUC_BYPASS | [Observation-edit-flag-mothers-education](StructureDefinition-Observation-edit-flag-mothers-education.html) | BFDR |
 | 298 | Mother's Hispanic Origin - Specify | METHNIC_T | [Observation-tabulated-ethnicity-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-tabulated-ethnicity-vr.html) | VRCPL |
 | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) | US CORE |
@@ -418,7 +418,7 @@ See the [Sources of Data Section](use_cases.html#sources-of-data) for details ab
 | 8 | Date of Delivery (Fetus)--Month | FDOD_MO | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
 | 1 | Date of Delivery (Fetus)--Year | FDOD_YR | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
 | 153 | Number of Fetal Deaths | FDTH | [Observation-number-fetal-deaths-this-delivery-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-number-fetal-deaths-this-delivery-vr.html) | VRCPL |
-| 283 | Father's Education | FEDUC | [Observation-parent-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-parent-education-level-vr.html) | VRCPL |
+| 283 | Father's Education | FEDUC | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html) | VRCPL |
 | 284 | Father's Education--Edit Flag | FEDUC_BYPASS | [Observation-edit-flag-fathers-education](StructureDefinition-Observation-edit-flag-fathers-education.html) | BFDR |
 | 219 | Fetus First Name | FETFNAME | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
 | 337 | Father's Hispanic Origin - Specify | FETHNIC_T | [Observation-tabulated-ethnicity-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-tabulated-ethnicity-vr.html) | VRCPL |
@@ -497,7 +497,7 @@ See the [Sources of Data Section](use_cases.html#sources-of-data) for details ab
 | 16 | Date of Birth (Mother)--Day | MDOB_DY | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) | VRCPL |
 | 15 | Date of Birth (Mother)--Month | MDOB_MO | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) | VRCPL |
 | 14 | Date of Birth (Mother)--Year | MDOB_YR | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) | VRCPL |
-| 32 | Mother's Education | MEDUC | [Observation-parent-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-parent-education-level-vr.html) | VRCPL |
+| 32 | Mother's Education | MEDUC | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html) | VRCPL |
 | 33 | Mother's Education--Edit Flag | MEDUC_BYPASS | [Observation-edit-flag-mothers-education](StructureDefinition-Observation-edit-flag-mothers-education.html) | BFDR |
 | 335 | Mother's Hispanic Origin - Specify | METHNIC_T | [Observation-tabulated-ethnicity-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-tabulated-ethnicity-vr.html) | VRCPL |
 | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) | VRCPL |

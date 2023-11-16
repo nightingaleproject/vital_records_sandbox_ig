@@ -15,7 +15,7 @@ Description: "This profile communicates coded race and ethnicity information to 
   * ^short = "Race and ethnicity information Document"
   * ^definition = "Race and ethnicity information Document"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientChildVitalRecords or PatientDecedentFetus)
 * author ..1 MS
   * ^short = "The author is the NCHS."
   * ^definition = "The author is the NCHS."

@@ -8,6 +8,8 @@
 |   | Changed the SNOMED Code used to represent a NICU admission |  This code appears in both the Observation - NICU Admission, and in the Abnormal Conditions Vital Records Value Set.  The code was changed from 405269005 Neonatal intensive care unit (environment) to 830077005 Admission to neonatal intensive care unit (procedure) since that seems more appropriate. |
 |   | Changed the SNOMED Code used to represent normal (vaginal delivery) |  This code is used in a valueset of procedures, so should be a procedure.  The code was changed from 48782003	"Spontaneous vaginal delivery (finding) to 700000006 "Vaginal delivery of fetus (procedure)". |
 |    | Changed the Cause of Fetal Death model to follow the Model established by VRDR for Mortality reporting.  codedInitiating and CodedOther Cause of Fetal Death should be observations, not conditions.  These are produced by an algorithm or person based on the content of the fetal death report, and are not Conditions reported by the Patient or Provider on the problem list.  Similarly, the Fetal Death Cause and the Other Fetal Death Cause that are submitted are more properly coded as observations |
+|- | profile movement | Moved Decedent Fetus Vital Records Profile from VRCL to BFDR (along with instance) |
+
 ### STU 1.1 Update, July 2023
 
 | Jira Issue | Description of Change | Changes Made |

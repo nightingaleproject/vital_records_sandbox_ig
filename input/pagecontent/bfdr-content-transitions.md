@@ -89,7 +89,7 @@
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment         |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----------------- | 
-|Patient-Decedent Fetus |   subject  |    adding edit flag extension to patient VR     | [PatientDecedentFetusVitalRecords] |  [PatientDecedentFetusVitalRecordsNew]   |   staying in VRCL with updates   |
+|Patient-Decedent Fetus |   subject  |    adding edit flag extension to patient VR     | [PatientDecedentFetusVitalRecords] |  [PatientDecedentFetus]   |   staying in VRCL with updates   |
 |Encounter-Maternity |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
 |Practitioner |   author  |    generalized profile that adds a further constraint to capture the title of the practitioner    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |  -  |
 |Patient-Mother |   focus  |    adding edit flag extension to related person profile    | [PatientMotherVitalRecords] |   [RelatedPersonMotherVitalRecordsNew]    |   staying in VRCL with updates    |
@@ -240,7 +240,7 @@
 
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment         |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----------------- | 
-|Patient-Decedent Fetus |   subject  |    adding edit flag extension to patient VR     | [PatientDecedentFetusVitalRecords] |  [PatientDecedentFetusVitalRecordsNew]   |   staying in VRCL with updates   |
+|Patient-Decedent Fetus |   subject  |    adding edit flag extension to patient VR     | [PatientDecedentFetus] |  [PatientDecedentFetusNew]   |   staying in VRCL with updates   |
 |Encounter-Maternity |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
 |US Core Organization Profile |   Author  |    -    | [USCoreOrganization] |     -         |   -      |
 |Patient-Mother |   focus  |    adding edit flag extension to patient VR     | [PatientMotherVitalRecords] |     [PatientMotherVitalRecordsNew]        |   staying in VRCL with updates   |

@@ -2,6 +2,7 @@
 | Jira Issue | Description of Change | Changes Made |
 | -------- | -------- | -------- |
 |  | Restrict birth sex for newborn to M,F,U | Added [ValueSetBirthSexVitalRecords], and referenced from [PatientChildVitalRecords] |
+| - | profiles (re)moved | removed Parent Education Level Vital Records Profile (unused and redudnant with Education Level), removed Gestational Mother Vital Records Profile (unused), moved Decedent Fetus Vital Records Profile to BFDR |
 
 
 ### STU 1.1 Update, July 2023

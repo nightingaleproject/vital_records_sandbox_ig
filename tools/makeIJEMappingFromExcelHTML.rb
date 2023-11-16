@@ -128,6 +128,7 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
                 pOutputFile.puts "</table>"
                 notImplementedHeader = printHeader("### Not Implemented Content", pOutputFile, pRowFilterIG, "Not Implemented")
             end
+            
             field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = fhirig = fhirunique = ""
             field = row[IJE_FIELD_COL].value.to_s if row[IJE_FIELD_COL]
             ijename = row[IJE_NAME_COL].value.to_s if row[IJE_NAME_COL]

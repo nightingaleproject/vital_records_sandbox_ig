@@ -42,7 +42,7 @@ ObservationRaceVitalRecords                                       Profile     pr
 ObservationTabulatedEthnicityVitalRecords                         Profile     profiles/ObservationTabulatedEthnicityVitalRecords.fsh
 ObservationTobaccoUseContributedToDeathVitalRecords               Profile     profiles/ObservationTobaccoUseContributedToDeathVitalRecords.fsh
 PatientChildVitalRecords                                          Profile     profiles/PatientChildVitalRecords.fsh
-PatientDecedentFetusVitalRecords                                  Profile     profiles/PatientDecedentFetusVitalRecords.fsh
+PatientDecedentFetus                                  Profile     profiles/PatientDecedentFetus.fsh
 PatientMotherVitalRecords                                         Profile     profiles/PatientMotherVitalRecords.fsh
 PractitionerVitalRecords                                          Profile     profiles/PractitionerVitalRecords.fsh
 ProcedureDeathCertificationVitalRecords                           Profile     profiles/ProcedureDeathCertificationVitalRecords.fsh
