@@ -1,3 +1,7 @@
+[VRCL]: http://hl7.org/fhir/us/vr-common-library/
+[VRDR]: http://hl7.org/fhir/us/vrdr/
+[BFDR]: http://hl7.org/fhir/us/bfdr/
+[MDI]: https://hl7.org/fhir/us/mdi/
 [USCoreConditionEncounterDiagnosis]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-condition-encounter-diagnosis.html
 [USCoreConditionProblemsandHealthConcerns]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-condition-problems-health-concerns.html
 [USCoreLocation]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-location.html
