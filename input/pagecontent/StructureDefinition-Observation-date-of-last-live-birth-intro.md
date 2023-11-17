@@ -6,11 +6,97 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 145 | Date of Last Live Birth--Month | MLLB | value |dateTime |See [PartialDatesAndTimes] |
-| Natality | 146 | Date of Last Live Birth--Year | YLLB | value |dateTime |See [PartialDatesAndTimes] |
-| Fetal Death | 99 | Date of Last Live Birth--Month | MLLB | value |dateTime |See [PartialDatesAndTimes] |
-| Fetal Death | 100 | Date of Last Live Birth--Year | YLLB | value |dateTime |See [PartialDatesAndTimes] |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>145</td>
+  <td>Date of Last Live Birth--Month</td>
+  <td>MLLB</td>
+  <td>value</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>146</td>
+  <td>Date of Last Live Birth--Year</td>
+  <td>YLLB</td>
+  <td>value</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>99</td>
+  <td>Date of Last Live Birth--Month</td>
+  <td>MLLB</td>
+  <td>value</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>100</td>
+  <td>Date of Last Live Birth--Year</td>
+  <td>YLLB</td>
+  <td>value</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

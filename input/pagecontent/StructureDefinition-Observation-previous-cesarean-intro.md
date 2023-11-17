@@ -7,9 +7,79 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 165 | Risk Factors--Previous Cesarean | PCES |  |na |See [Note on missing pregnancy risk factors data] |
-| Fetal Death | 118 | Risk Factors--Previous Cesarean | PCES |  |na |See [Note on missing pregnancy risk factors data] |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>165</td>
+  <td>Risk Factors--Previous Cesarean</td>
+  <td>PCES</td>
+  <td></td>
+  <td>na</td>
+  <td>See <a href='usage.html#pregnancy-risk-factors'>Note on missing pregnancy risk factors data</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>118</td>
+  <td>Risk Factors--Previous Cesarean</td>
+  <td>PCES</td>
+  <td></td>
+  <td>na</td>
+  <td>See <a href='usage.html#pregnancy-risk-factors'>Note on missing pregnancy risk factors data</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

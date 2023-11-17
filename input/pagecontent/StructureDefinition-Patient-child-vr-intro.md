@@ -258,15 +258,6 @@ This profile is mapped to:
 <tbody>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
-  <td>151</td>
-  <td>Plurality</td>
-  <td>PLUR</td>
-  <td>extension[patient-multipleBirthTotal].valuePositiveInt</td>
-  <td>integer</td>
-  <td></td>
-</tr>
-<tr>
-  <td style='text-align: center'>Fetal Death</td>
   <td>171</td>
   <td>Mother's Reported Age</td>
   <td>MAGER</td>

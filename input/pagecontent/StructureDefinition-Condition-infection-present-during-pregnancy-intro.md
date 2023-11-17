@@ -7,13 +7,88 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 168 | Infections Present--Gonorrhea | GON | code=15628003 (Gonorrhea (disorder)) |na |See [Note on missing infections present data] |
-| Natality | 169 | Infections Present--Syphilis | SYPH | code=76272004 (Syphilis (disorder)) |na |See [Note on missing infections present data] |
-| Natality | 171 | Infections Present--Chlamydia | CHAM | code=105629000 (Chlamydial infection (disorder)) |na |See [Note on missing infections present data] |
-| Natality | 172 | Infections Present--Hepatitis B | HEPB | code=66071002 (Viral hepatitis type B (disorder)) |na |See [Note on missing infections present data] |
-| Natality | 173 | Infections Present--Hepatitis C | HEPC | code=50711007 (Viral hepatitis type C (disorder)) |na |See [Note on missing infections present data] |
-| Natality | Not Mapped | Infections Present--Genital herpes simplex | Not Mapped | code=33839006 (Genital herpes simplex (disorder)) |na |Michigan state-specific requirement. |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>168</td>
+  <td>Infections Present--Gonorrhea</td>
+  <td>GON</td>
+  <td>code=15628003 (Gonorrhea (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#infection-present-during-pregnancy'>Note on missing infections present data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>169</td>
+  <td>Infections Present--Syphilis</td>
+  <td>SYPH</td>
+  <td>code=76272004 (Syphilis (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#infection-present-during-pregnancy'>Note on missing infections present data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>171</td>
+  <td>Infections Present--Chlamydia</td>
+  <td>CHAM</td>
+  <td>code=105629000 (Chlamydial infection (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#infection-present-during-pregnancy'>Note on missing infections present data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>172</td>
+  <td>Infections Present--Hepatitis B</td>
+  <td>HEPB</td>
+  <td>code=66071002 (Viral hepatitis type B (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#infection-present-during-pregnancy'>Note on missing infections present data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>173</td>
+  <td>Infections Present--Hepatitis C</td>
+  <td>HEPC</td>
+  <td>code=50711007 (Viral hepatitis type C (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#infection-present-during-pregnancy'>Note on missing infections present data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>Not Mapped</td>
+  <td>Infections Present--Genital herpes simplex</td>
+  <td>Not Mapped</td>
+  <td>code=33839006 (Genital herpes simplex (disorder))</td>
+  <td>na</td>
+  <td>Michigan state-specific requirement.</td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

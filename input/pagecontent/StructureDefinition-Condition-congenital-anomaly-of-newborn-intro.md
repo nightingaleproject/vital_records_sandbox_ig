@@ -6,19 +6,142 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 219 | Congenital Anomalies of the Newborn--Anencephaly | ANEN | code=89369001 (Anencephalus (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 220 | Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida | MNSB | code=67531005 (Spina bifida (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 221 | Congenital Anomalies of the Newborn--Cyanotic congenital heart disease | CCHD | code=12770006 (Cyanotic congenital heart disease (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 222 | Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia | CDH | code=17190001 (Congenital diaphragmatic hernia (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 223 | Congenital Anomalies of the Newborn--Omphalocele | OMPH | code=18735004 (Congenital omphalocele (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 224 | Congenital Anomalies of the Newborn--Gastroschisis | GAST | code=72951007 (Gastroschisis (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 225 | Congenital Anomalies of the Newborn--Limb Reduction Defect | LIMB | code=67341007 (Longitudinal deficiency of limb (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 226 | Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate | CL | code=80281008 (Cleft lip (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 227 | Congenital Anomalies of the Newborn--Cleft Palate Alone | CP | code=87979003 (Cleft palate (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 228 | Congenital Anomalies of the Newborn--Down Syndrome | DOWT | code=70156005 (Anomaly of chromosome pair 21 (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 229 | Congenital Anomalies of the Newborn--Suspected Chromosomal disorder | CDIT | code=409709004 (Chromosomal disorder (disorder)) |na |See [Note on missing congenital anomaly data] |
-| Natality | 230 | Congenital Anomalies of the Newborn--Hypospadias | HYPO | code=416010008 (Hypospadias (disorder)) |na |See [Note on missing congenital anomaly data] |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>219</td>
+  <td>Congenital Anomalies of the Newborn--Anencephaly</td>
+  <td>ANEN</td>
+  <td>code=89369001 (Anencephalus (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>220</td>
+  <td>Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida</td>
+  <td>MNSB</td>
+  <td>code=67531005 (Spina bifida (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>221</td>
+  <td>Congenital Anomalies of the Newborn--Cyanotic congenital heart disease</td>
+  <td>CCHD</td>
+  <td>code=12770006 (Cyanotic congenital heart disease (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>222</td>
+  <td>Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia</td>
+  <td>CDH</td>
+  <td>code=17190001 (Congenital diaphragmatic hernia (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>223</td>
+  <td>Congenital Anomalies of the Newborn--Omphalocele</td>
+  <td>OMPH</td>
+  <td>code=18735004 (Congenital omphalocele (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>224</td>
+  <td>Congenital Anomalies of the Newborn--Gastroschisis</td>
+  <td>GAST</td>
+  <td>code=72951007 (Gastroschisis (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>225</td>
+  <td>Congenital Anomalies of the Newborn--Limb Reduction Defect</td>
+  <td>LIMB</td>
+  <td>code=67341007 (Longitudinal deficiency of limb (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>226</td>
+  <td>Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate</td>
+  <td>CL</td>
+  <td>code=80281008 (Cleft lip (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>227</td>
+  <td>Congenital Anomalies of the Newborn--Cleft Palate Alone</td>
+  <td>CP</td>
+  <td>code=87979003 (Cleft palate (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>228</td>
+  <td>Congenital Anomalies of the Newborn--Down Syndrome</td>
+  <td>DOWT</td>
+  <td>code=70156005 (Anomaly of chromosome pair 21 (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>229</td>
+  <td>Congenital Anomalies of the Newborn--Suspected Chromosomal disorder</td>
+  <td>CDIT</td>
+  <td>code=409709004 (Chromosomal disorder (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>230</td>
+  <td>Congenital Anomalies of the Newborn--Hypospadias</td>
+  <td>HYPO</td>
+  <td>code=416010008 (Hypospadias (disorder))</td>
+  <td>na</td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

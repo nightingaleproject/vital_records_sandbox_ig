@@ -1926,7 +1926,7 @@ X = Not Applicable",,BFDR,ObservationAutopsyHistologicalExamResultsUsed,value,co
 615,Natality,151,807,2,Number of Cigarettes Smoked in 2nd 3 months,CIGSN,"00-98, 99",,BFDR,ObservationCigaretteSmokingBeforeDuringPregnancy,"value, <br />code=87299-4 (Cigarettes smoked per day by Mother--2nd trimester)",integer,,B,,,,,Observation-cigarette-smoking-before-during-pregnancy
 1492,Birth Infant Death,151,807,2,Number of Cigarettes Smoked in 2nd 3 months,CIGSN,"00-98, 99",,,,,,,,,,,,
 163,Mortality,151,1553,7,Decedent's Residence - Unit or apt number,UNITNUM_R,,,VRDR,Decedent,address.extension[unitnum],string,-,,y,,,,Decedent
-968,Fetal Death,151,536,2,Plurality,PLUR,"01-12, 99",,VRCPL,PatientChildVitalRecords,extension[patient-multipleBirthTotal].valuePositiveInt,integer,,B,,,,,Observation-plurality-vr
+968,Fetal Death,151,536,2,Plurality,PLUR,"01-12, 99",,BFDR,PatientDecedentFetus,extension[patient-multipleBirthTotal].valuePositiveInt,integer,,B,,,,,Observation-plurality-vr
 422,Surveillance,151,3898,4,Person Pronouncing Time Pronounced,PPTIME,Military time,i,VRDR,DeathDate,component[datetimePronouncedDead].value,dateTime,-,,,,,,DeathDate
 1333,ITOP,151,1193,1,Reason for Termination -- Other,REASON_OTHER,"Y, N, or U if the reason is unknown",,not implemented,not implemented,,,,,,,,,not implemented
 423,Surveillance,152,4254,8,Certifier Date Signed,CERTDATE,Date signed by Certifier in mmddyyyy format,i,VRDR,DeathCertification,performed,dateTime,-,,,,,,DeathCertification

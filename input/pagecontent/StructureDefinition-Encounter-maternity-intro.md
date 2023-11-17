@@ -14,30 +14,268 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 125 | Mother Transferred? | TRAN | hospitalization.admitSource = "hosp-trans" |codeable |[HL7EncounterAdmitSourceVS], <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'hosp-trans' |
-| Natality | 302 | Facility Mother Moved From (if transferred) | HOSPFROM | hospitalization.origin.name |string | |
-| Fetal Death | 10 | County of Delivery | CNTYO | location.location.address.district.extension[countyCode] |integer |See [CountyCodes] |
-| Fetal Death | 11 | Place Where Delivery Occurred | DPLACE | location.physicalType |codeable |[BirthDeliveryOccurredVS] |
-| Fetal Death | 12 | Facility ID (NPI) - If available | FNPI | location.location.id |string | |
-| Fetal Death | 13 | Facility ID (State-Assigned) | SFN | location.location.identifier |Identifier | |
-| Fetal Death | 224 | Name of Delivery Facility | HOSP_D | location.location.name |string | |
-| Fetal Death | 225 | Place of Delivery Street number | STNUM_D | location.location.address.extension[stnum] |string | |
-| Fetal Death | 226 | Place of Delivery Pre Directional | PREDIR_D | location.location.address.extension[predir] |string | |
-| Fetal Death | 227 | Place of Delivery Street name | STNAME_D | location.location.address.extension[stname] |string | |
-| Fetal Death | 228 | Place of Delivery Street designator | STDESIG_D | location.location.address.extension[stdesig] |string | |
-| Fetal Death | 229 | Place of Delivery Post Directional | POSTDIR_D | location.location.address.extension[postdir] |string | |
-| Fetal Death | 230 | Place of Delivery Unit or Apartment Number | APTNUMB_D | location.location.address.extension[unitnum] |string | |
-| Fetal Death | 231 | Place of Delivery Street Address | ADDRESS_D | location.location.address.line |string | |
-| Fetal Death | 232 | Place of Delivery Zip code and Zip+4 | ZIPCODE_D | location.location.address.postalCode |string | |
-| Fetal Death | 233 | Place of Delivery County (literal) | CNTY_D | location.location.address.district |string | |
-| Fetal Death | 234 | Place of Delivery City/Town/Place (literal)  | CITY_D | location.location.address.city |string | |
-| Fetal Death | 235 | State, U.S. Territory or Canadian Province of Place of Delivery - literal | STATE_D | location.location.address.state (expanded from 2 letter code) |string |See [StateLiterals] |
-| Fetal Death | 236 | Place of Delivery Country (literal) | COUNTRY_D | location.location.address.country (expanded from 2 letter code) |string |See [CountryLiterals] |
-| Fetal Death | 339 | Facility Mother Moved From (if transferred) | HOSPFROM | hospitalization.origin.name |string | |
-| Fetal Death | 347 | Date Signed by Certifier--Year | CERTIFIED_YR | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
-| Fetal Death | 348 | Date Signed by Certifier--Month | CERTIFIED_MO | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
-| Fetal Death | 349 | Date Signed by Certifier--Day | CERTIFIED_DY | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>125</td>
+  <td>Mother Transferred?</td>
+  <td>TRAN</td>
+  <td>hospitalization.admitSource = "hosp-trans"</td>
+  <td>codeable</td>
+  <td><a href='http://hl7.org/fhir/ValueSet/encounter-admit-source'>HL7EncounterAdmitSourceVS</a>, <br />See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>Note on missing data</a>. <br />Need to discuss - clarity needed for values other than 'hosp-trans'</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>302</td>
+  <td>Facility Mother Moved From (if transferred)</td>
+  <td>HOSPFROM</td>
+  <td>hospitalization.origin.name</td>
+  <td>string</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>10</td>
+  <td>County of Delivery</td>
+  <td>CNTYO</td>
+  <td>location.location.address.district.extension[countyCode]</td>
+  <td>integer</td>
+  <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>11</td>
+  <td>Place Where Delivery Occurred</td>
+  <td>DPLACE</td>
+  <td>location.physicalType</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-birth-delivery-occurred.html'>BirthDeliveryOccurredVS</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>12</td>
+  <td>Facility ID (NPI) - If available</td>
+  <td>FNPI</td>
+  <td>location.location.id</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>13</td>
+  <td>Facility ID (State-Assigned)</td>
+  <td>SFN</td>
+  <td>location.location.identifier</td>
+  <td>Identifier</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>224</td>
+  <td>Name of Delivery Facility</td>
+  <td>HOSP_D</td>
+  <td>location.location.name</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>225</td>
+  <td>Place of Delivery Street number</td>
+  <td>STNUM_D</td>
+  <td>location.location.address.extension[stnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>226</td>
+  <td>Place of Delivery Pre Directional</td>
+  <td>PREDIR_D</td>
+  <td>location.location.address.extension[predir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>227</td>
+  <td>Place of Delivery Street name</td>
+  <td>STNAME_D</td>
+  <td>location.location.address.extension[stname]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>228</td>
+  <td>Place of Delivery Street designator</td>
+  <td>STDESIG_D</td>
+  <td>location.location.address.extension[stdesig]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>229</td>
+  <td>Place of Delivery Post Directional</td>
+  <td>POSTDIR_D</td>
+  <td>location.location.address.extension[postdir]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>230</td>
+  <td>Place of Delivery Unit or Apartment Number</td>
+  <td>APTNUMB_D</td>
+  <td>location.location.address.extension[unitnum]</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>231</td>
+  <td>Place of Delivery Street Address</td>
+  <td>ADDRESS_D</td>
+  <td>location.location.address.line</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>232</td>
+  <td>Place of Delivery Zip code and Zip+4</td>
+  <td>ZIPCODE_D</td>
+  <td>location.location.address.postalCode</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>233</td>
+  <td>Place of Delivery County (literal)</td>
+  <td>CNTY_D</td>
+  <td>location.location.address.district</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>234</td>
+  <td>Place of Delivery City/Town/Place (literal) </td>
+  <td>CITY_D</td>
+  <td>location.location.address.city</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>235</td>
+  <td>State, U.S. Territory or Canadian Province of Place of Delivery - literal</td>
+  <td>STATE_D</td>
+  <td>location.location.address.state (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>236</td>
+  <td>Place of Delivery Country (literal)</td>
+  <td>COUNTRY_D</td>
+  <td>location.location.address.country (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>339</td>
+  <td>Facility Mother Moved From (if transferred)</td>
+  <td>HOSPFROM</td>
+  <td>hospitalization.origin.name</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>347</td>
+  <td>Date Signed by Certifier--Year</td>
+  <td>CERTIFIED_YR</td>
+  <td>participant:certifier.period.start</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>348</td>
+  <td>Date Signed by Certifier--Month</td>
+  <td>CERTIFIED_MO</td>
+  <td>participant:certifier.period.start</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>349</td>
+  <td>Date Signed by Certifier--Day</td>
+  <td>CERTIFIED_DY</td>
+  <td>participant:certifier.period.start</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
