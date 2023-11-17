@@ -7,21 +7,160 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Fetal Death | 180 | Initiating cause/condition - Rupture of membranes prior to onset of labor | COD18a1 | code=44223004 (Premature rupture of membranes (disorder)) |na | |
-| Fetal Death | 181 | Initiating cause/condition - Abruptio placenta | COD18a2 | code=415105001 (Placental abruption (disorder)) |na | |
-| Fetal Death | 182 | Initiating cause/condition - Placental insufficiency | COD18a3 | code=237292005 (Placental insufficiency (disorder)) |na | |
-| Fetal Death | 183 | Initiating cause/condition - Prolapsed cord | COD18a4 | code=270500004 (Prolapsed cord (disorder)) |na | |
-| Fetal Death | 184 | Initiating cause/condition - Chorioamnionitis | COD18a5 | code=11612004 (Chorioamnionitis (disorder)) |na | |
-| Fetal Death | 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6 | code=FetalDeathCauseOrConditionCS#membranes |na | |
-| Fetal Death | 186 | Initiating cause/condition - Unknown | COD18a7 | code=UNK |na | |
-| Fetal Death | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8 | code=FetalDeathCauseOrConditionCS#maternalconditions, code.text |string |code.text should contain description |
-| Fetal Death | 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9 | code=FetalDeathCauseOrConditionCS#membranes, code.text |string |code.text should contain description |
-| Fetal Death | 189 | Initiating cause/condition - Other obstetrical or pregnancy complications literal | COD18a10 | code=FetalDeathCauseOrConditionCS#obstetricalcomplications, code.text |string |code.text should contain description |
-| Fetal Death | 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11 | code=702709008 (Fetal Anomaly (Specify)), <br />code.text |string |code.text should contain description |
-| Fetal Death | 191 | Initiating cause/condition - Fetal injury literal | COD18a12 | code=277489001 (Fetal trauma (disorder)), <br />code.text |string |specific description of fetal trauma should be provided in the code.text field |
-| Fetal Death | 192 | Initiating cause/condition - Fetal infection literal | COD18a13 | code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text |string |specific description of fetal infection should be provided in the code.text field |
-| Fetal Death | 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14 | code=FetalDeathCauseOrConditionCS#fetalconditions, <br />code.text |string |code.text should contain description |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>180</td>
+  <td>Initiating cause/condition - Rupture of membranes prior to onset of labor</td>
+  <td>COD18a1</td>
+  <td>code=44223004 (Premature rupture of membranes (disorder))</td>
+  <td>na</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>181</td>
+  <td>Initiating cause/condition - Abruptio placenta</td>
+  <td>COD18a2</td>
+  <td>code=415105001 (Placental abruption (disorder))</td>
+  <td>na</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>182</td>
+  <td>Initiating cause/condition - Placental insufficiency</td>
+  <td>COD18a3</td>
+  <td>code=237292005 (Placental insufficiency (disorder))</td>
+  <td>na</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>183</td>
+  <td>Initiating cause/condition - Prolapsed cord</td>
+  <td>COD18a4</td>
+  <td>code=270500004 (Prolapsed cord (disorder))</td>
+  <td>na</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>184</td>
+  <td>Initiating cause/condition - Chorioamnionitis</td>
+  <td>COD18a5</td>
+  <td>code=11612004 (Chorioamnionitis (disorder))</td>
+  <td>na</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>185</td>
+  <td>Initiating cause/condition - Other complications of placenta, cord, or membranes</td>
+  <td>COD18a6</td>
+  <td>code=FetalDeathCauseOrConditionCS#membranes</td>
+  <td>na</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>186</td>
+  <td>Initiating cause/condition - Unknown</td>
+  <td>COD18a7</td>
+  <td>code=UNK</td>
+  <td>na</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>187</td>
+  <td>Initiating cause/condition - Maternal conditions/diseases literal</td>
+  <td>COD18a8</td>
+  <td>code=FetalDeathCauseOrConditionCS#maternalconditions, code.text</td>
+  <td>string</td>
+  <td>code.text should contain description</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>188</td>
+  <td>Initiating cause/condition - Other complications of placenta, cord, or membranes literal</td>
+  <td>COD18a9</td>
+  <td>code=FetalDeathCauseOrConditionCS#membranes, code.text</td>
+  <td>string</td>
+  <td>code.text should contain description</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>189</td>
+  <td>Initiating cause/condition - Other obstetrical or pregnancy complications literal</td>
+  <td>COD18a10</td>
+  <td>code=FetalDeathCauseOrConditionCS#obstetricalcomplications, code.text</td>
+  <td>string</td>
+  <td>code.text should contain description</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>190</td>
+  <td>Initiating cause/condition - Fetal anomaly literal</td>
+  <td>COD18a11</td>
+  <td>code=702709008 (Fetal Anomaly (Specify)), <br />code.text</td>
+  <td>string</td>
+  <td>code.text should contain description</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>191</td>
+  <td>Initiating cause/condition - Fetal injury literal</td>
+  <td>COD18a12</td>
+  <td>code=277489001 (Fetal trauma (disorder)), <br />code.text</td>
+  <td>string</td>
+  <td>specific description of fetal trauma should be provided in the code.text field</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>192</td>
+  <td>Initiating cause/condition - Fetal infection literal</td>
+  <td>COD18a13</td>
+  <td>code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text</td>
+  <td>string</td>
+  <td>specific description of fetal infection should be provided in the code.text field</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>193</td>
+  <td>Initiating cause/condition - Other fetal conditions/disorders literal</td>
+  <td>COD18a14</td>
+  <td>code=FetalDeathCauseOrConditionCS#fetalconditions, <br />code.text</td>
+  <td>string</td>
+  <td>code.text should contain description</td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

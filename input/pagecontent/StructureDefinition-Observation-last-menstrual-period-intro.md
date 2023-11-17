@@ -7,13 +7,115 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 154 | Date Last Normal Menses Began--Year | DLMP_YR | value |dateTime |See [PartialDatesAndTimes] |
-| Natality | 155 | Date Last Normal Menses Began--Month | DLMP_MO | value |dateTime |See [PartialDatesAndTimes] |
-| Natality | 156 | Date Last Normal Menses Began--Day | DLMP_DY | value |dateTime |See [PartialDatesAndTimes] |
-| Fetal Death | 107 | Date Last Normal Menses Began--Year | DLMP_YR | value |dateTime |See [PartialDatesAndTimes] |
-| Fetal Death | 108 | Date Last Normal Menses Began--Month | DLMP_MO | value |dateTime |See [PartialDatesAndTimes] |
-| Fetal Death | 109 | Date Last Normal Menses Began--Day | DLMP_DY | value |dateTime |See [PartialDatesAndTimes] |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>154</td>
+  <td>Date Last Normal Menses Began--Year</td>
+  <td>DLMP_YR</td>
+  <td>value</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>155</td>
+  <td>Date Last Normal Menses Began--Month</td>
+  <td>DLMP_MO</td>
+  <td>value</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>156</td>
+  <td>Date Last Normal Menses Began--Day</td>
+  <td>DLMP_DY</td>
+  <td>value</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>107</td>
+  <td>Date Last Normal Menses Began--Year</td>
+  <td>DLMP_YR</td>
+  <td>value</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>108</td>
+  <td>Date Last Normal Menses Began--Month</td>
+  <td>DLMP_MO</td>
+  <td>value</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>109</td>
+  <td>Date Last Normal Menses Began--Day</td>
+  <td>DLMP_DY</td>
+  <td>value</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

@@ -16,16 +16,115 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE | location.physicalType |codeable |[BirthDeliveryOccurredVS] |
-| Natality | 12 | Facility ID (NPI) - if available | FNPI | location.location.id |string | |
-| Natality | 13 | Facility ID (State-Assigned) | SFN | location.location.identifier |Identifier | |
-| Natality | 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN | hospitalization.dischargeDisposition="other-hcf" |codeable |[USCoreDischargeDispositionVS] <br />See [Note on missing data]. <br />Need to discuss - clarity needed for values other than 'other-hcf' |
-| Natality | 253 | Name of Facility of Birth | HOSP | location.location.name |string | |
-| Natality | 303 | Facility Infant Transferred To (if transferred w/in 24 hours) | HOSPTO | hospitalization.destination.name |string | |
-| Natality | 334 | Date Signed by Certifier--Year | CERTIFIED_YR | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
-| Natality | 335 | Date Signed by Certifier--Month | CERTIFIED_MO | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
-| Natality | 336 | Date Signed by Certifier--Day | CERTIFIED_DY | participant:certifier.period.start |dateTime |See [PartialDatesAndTimes] |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>11</td>
+  <td>Place Where Birth Occurred (type of place or institution)</td>
+  <td>BPLACE</td>
+  <td>location.physicalType</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-birth-delivery-occurred.html'>BirthDeliveryOccurredVS</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>12</td>
+  <td>Facility ID (NPI) - if available</td>
+  <td>FNPI</td>
+  <td>location.location.id</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>13</td>
+  <td>Facility ID (State-Assigned)</td>
+  <td>SFN</td>
+  <td>location.location.identifier</td>
+  <td>Identifier</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>231</td>
+  <td>Was Infant Transferred Within 24 Hours of Delivery?</td>
+  <td>ITRAN</td>
+  <td>hospitalization.dischargeDisposition="other-hcf"</td>
+  <td>codeable</td>
+  <td><a href='http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition'>USCoreDischargeDispositionVS</a> <br />See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>Note on missing data</a>. <br />Need to discuss - clarity needed for values other than 'other-hcf'</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>253</td>
+  <td>Name of Facility of Birth</td>
+  <td>HOSP</td>
+  <td>location.location.name</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>303</td>
+  <td>Facility Infant Transferred To (if transferred w/in 24 hours)</td>
+  <td>HOSPTO</td>
+  <td>hospitalization.destination.name</td>
+  <td>string</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>334</td>
+  <td>Date Signed by Certifier--Year</td>
+  <td>CERTIFIED_YR</td>
+  <td>participant:certifier.period.start</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>335</td>
+  <td>Date Signed by Certifier--Month</td>
+  <td>CERTIFIED_MO</td>
+  <td>participant:certifier.period.start</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>336</td>
+  <td>Date Signed by Certifier--Day</td>
+  <td>CERTIFIED_DY</td>
+  <td>participant:certifier.period.start</td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

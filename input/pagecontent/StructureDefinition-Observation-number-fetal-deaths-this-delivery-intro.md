@@ -4,8 +4,43 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Fetal Death | 153 | Number of Fetal Deaths | FDTH | value |integer | |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>153</td>
+  <td>Number of Fetal Deaths</td>
+  <td>FDTH</td>
+  <td>value</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

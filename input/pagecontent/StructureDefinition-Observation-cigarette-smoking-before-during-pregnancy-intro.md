@@ -7,15 +7,133 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Natality | 149 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN | value, <br />code=64794-1 (In the 3 months before you got pregnant, <br />how many cigarettes did you smoke on an average day) |integer | |
-| Natality | 150 | Number of Cigarettes Smoked in 1st 3 months | CIGFN | value, <br />code=87298-6 (Cigarettes smoked per day by Mother--1st trimester) |integer | |
-| Natality | 151 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN | value, <br />code=87299-4 (Cigarettes smoked per day by Mother--2nd trimester) |integer | |
-| Natality | 152 | Number of Cigarettes Smoked in  third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN | value, <br />code=64795-8 (In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day) |integer | |
-| Fetal Death | 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN | value, <br />code=64794-1 (In the 3 months before you got pregnant, <br />how many cigarettes did you smoke on an average day) |integer | |
-| Fetal Death | 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN | value, <br />code=87298-6 (Cigarettes smoked per day by Mother--1st trimester) |integer | |
-| Fetal Death | 105 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN | value, <br />code=87299-4 (Cigarettes smoked per day by Mother--2nd trimester) |integer | |
-| Fetal Death | 106 | Number of Cigarettes Smoked in third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN | value, <br />code=64795-8 (In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day) |integer | |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>149</td>
+  <td>Number of Cigarettes Smoked in 3 months prior to Pregnancy</td>
+  <td>CIGPN</td>
+  <td>value, <br />code=64794-1 (In the 3 months before you got pregnant, <br />how many cigarettes did you smoke on an average day)</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>150</td>
+  <td>Number of Cigarettes Smoked in 1st 3 months</td>
+  <td>CIGFN</td>
+  <td>value, <br />code=87298-6 (Cigarettes smoked per day by Mother--1st trimester)</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>151</td>
+  <td>Number of Cigarettes Smoked in 2nd 3 months</td>
+  <td>CIGSN</td>
+  <td>value, <br />code=87299-4 (Cigarettes smoked per day by Mother--2nd trimester)</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>152</td>
+  <td>Number of Cigarettes Smoked in  third trimester (RECOMMENDED CHANGE EFFECTIVE 2004)</td>
+  <td>CIGLN</td>
+  <td>value, <br />code=64795-8 (In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day)</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>103</td>
+  <td>Number of Cigarettes Smoked in 3 months prior to Pregnancy</td>
+  <td>CIGPN</td>
+  <td>value, <br />code=64794-1 (In the 3 months before you got pregnant, <br />how many cigarettes did you smoke on an average day)</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>104</td>
+  <td>Number of Cigarettes Smoked in 1st 3 months</td>
+  <td>CIGFN</td>
+  <td>value, <br />code=87298-6 (Cigarettes smoked per day by Mother--1st trimester)</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>105</td>
+  <td>Number of Cigarettes Smoked in 2nd 3 months</td>
+  <td>CIGSN</td>
+  <td>value, <br />code=87299-4 (Cigarettes smoked per day by Mother--2nd trimester)</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>106</td>
+  <td>Number of Cigarettes Smoked in third trimester (RECOMMENDED CHANGE EFFECTIVE 2004)</td>
+  <td>CIGLN</td>
+  <td>value, <br />code=64795-8 (In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day)</td>
+  <td>integer</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
