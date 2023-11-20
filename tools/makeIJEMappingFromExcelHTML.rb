@@ -54,19 +54,24 @@ vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
 
 def printHeader(hHeading, pOutputFile, pIG, tableStyle)
     pOutputFile.puts hHeading
-    pOutputFile.puts ""
+    if hHeading == "### Natality (Live Birth) IJE Mapping" || hHeading == "### Fetal Death IJE Mapping"
+        pOutputFile.puts "*IJE Names in <span style='color:darkviolet'>purple</span> text indicate element is unique to the Jurisdiction report, otherwise element is used for both Jurisdiction and Provider reports"
+    elsif hHeading == "### Coded Content"
+        pOutputFile.puts ""
+        pOutputFile.puts "*Coded content is used for compositions from NCHS to VRO, and is not included in Jurisdiction or Provider reports"
+    end
+        pOutputFile.puts ""
     if pIG == "BFDR"
         pOutputFile.puts "<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>"
         pOutputFile.puts "<tbody>"
         pOutputFile.puts "<tr>"
         pOutputFile.puts "<td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>"
         pOutputFile.puts "<td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>IJE Name</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9; width: 20%;'><b>Profile</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; text-align: center; width: 8%;'><b>IJE Name*</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; width: 27%;'><b>Profile</b></td>"
         pOutputFile.puts "<td style='background-color:#98c1d9;'><b>Field</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9; width: 7%;'><b>Type</b></td>"
+        pOutputFile.puts "<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>Type</b></td>"
         pOutputFile.puts "<td style='background-color:#98c1d9; width: 14%;'><b>Value Set/Comments</b></td>"
-        pOutputFile.puts "<td style='background-color:#98c1d9; width: 3%;'><b>Use</b></td>"
         pOutputFile.puts "</tr>"
     else
         pOutputFile.puts "<table align='left' border='1' cellpadding='1' cellspacing='1' style='width:100%;'>"
@@ -140,8 +145,12 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
             fhirunique = row[IJE_UNIQUENESS_COL].value.to_s if row[IJE_UNIQUENESS_COL] 
             description = row[IJE_DESC_COL].value.to_s if row[IJE_DESC_COL]
             if pRowFilterIG == "BFDR"
-                pOutputFile.puts "<tr><td style='text-align: center;'>" + field.chomp + "</td><td>" + description.chomp + "</td><td style='text-align: center;'>" + ijename + "</td><td>" + profile + "</td><td>" + fhirfield + "</td><td>" + fhirtype + "</td><td>" + fhirencoding + "</td><td>" + fhirunique + "</td></tr>"
-            else
+                if fhirunique == "J"
+                    pOutputFile.puts "<tr><td style='text-align: center;'>" + field.chomp + "</td><td>" + description.chomp + "</td><td style='text-align: center; color: darkviolet'>" + ijename + "</td><td>" + profile + "</td><td>" + fhirfield + "</td><td style='text-align: center;'>" + fhirtype + "</td><td>" + fhirencoding + "</td></tr>"
+                else
+                    pOutputFile.puts "<tr><td style='text-align: center;'>" + field.chomp + "</td><td>" + description.chomp + "</td><td style='text-align: center;'>" + ijename + "</td><td>" + profile + "</td><td>" + fhirfield + "</td><td style='text-align: center;'>" + fhirtype + "</td><td>" + fhirencoding + "</td></tr>"
+                end
+                else
                 pOutputFile.puts "<tr><td style='text-align: center;'>" + field.chomp + "</td><td>" + description.chomp + "</td><td style='text-align: center;'>" + ijename + "</td><td>" + profile + "</td><td>" + fhirfield + "</td><td>" + fhirtype + "</td><td>" + fhirencoding + "</td></tr>"
             end
         end
@@ -153,7 +162,7 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
 end
 
 #create BFDR data dictionary_natality
-vOutputFilename = "/generated/dataDictionaries/bfdr_ije_mapping_natality.md"
+vOutputFilename = "/generated/dataDictionaries/ije_mapping_natality.md"
 puts vOutputFilename
 vOutputFile = File.open(Dir.pwd + vOutputFilename, "w")
 vOutputFile.puts "Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdictional Exchange) data element names (codes). The IJE codes are used for data exchange among jurisdictions and with authorized data partners, such as National Vital Statistics System (NVSS). The National Center for Health Statistics (NCHS) has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG; however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS.
@@ -185,7 +194,7 @@ vOutputFile.puts ""
 createMappingTable("BFDR", "Natality", "### Natality (Live Birth) IJE Mapping", vOutputFile, vProfileIntrosSpreadsheet, vSpreadsheet)
 
 #create BFDR data dictionary_fetalDeath
-vOutputFilename1 = "/generated/dataDictionaries/bfdr_ije_mapping_fetalDeath.md"
+vOutputFilename1 = "/generated/dataDictionaries/ije_mapping_fetalDeath.md"
 puts vOutputFilename1
 vOutputFile1 = File.open(Dir.pwd + vOutputFilename1, "w")
 vOutputFile1.puts "Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdictional Exchange) data element names (codes). The IJE codes are used for data exchange among jurisdictions and with authorized data partners, such as National Vital Statistics System (NVSS). The National Center for Health Statistics (NCHS) has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG; however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS.
