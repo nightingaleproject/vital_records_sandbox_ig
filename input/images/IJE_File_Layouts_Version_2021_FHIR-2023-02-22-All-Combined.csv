@@ -2480,15 +2480,15 @@ U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=89369001 (Anencephal
 1560,Birth Infant Death,219,897,1,Congenital Anomalies of the Newborn--Anencephaly,ANEN,"Y = Yes
 N = No
 U = Unknown",,,,code = 434621000124103,,,,,,,,,
-1036,Fetal Death,219,2744,50,Fetus First Name,FETFNAME,Free form literal,,BFDR,PatientDecedentFetus,"name.given, <br />name.use = official",string,See [Note on Decedent Name],B,,,,,Patient-decedent-fetus,
+1036,Fetal Death,219,2744,50,Fetus First Name,FETFNAME,Free form literal,,BFDR,PatientDecedentFetus,"name.given, <br />name.use = official",string,See [Note on Child and Decedent Fetus name],B,,,,,Patient-decedent-fetus,
 231,Mortality,219,3898,4,Person Pronouncing Time Pronounced,PPTIME,Military time,i,VRDR,DeathDate,"component[datetimePronouncedDead].valueDateTime if a date is also specified, or component[datetimePronouncedDead].valueTime if no date is specified",dateTime or time,See [PartialDatesAndTimes],,,,,,DeathDate,
-1037,Fetal Death,220,2794,50,Fetus Middle Name,FETMNAME,Free form literal,,BFDR,PatientDecedentFetus,"name.given, <br />name.use = official",string,See [Note on Decedent Name],B,,,,,Patient-decedent-fetus,
+1037,Fetal Death,220,2794,50,Fetus Middle Name,FETMNAME,Free form literal,,BFDR,PatientDecedentFetus,"name.given, <br />name.use = official",string,See [Note on Child and Decedent Fetus name],B,,,,,Patient-decedent-fetus,
 684,Natality,220,898,1,Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida,MNSB,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=67531005 (Spina bifida (disorder)),na,See [Note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn,
 1561,Birth Infant Death,220,898,1,Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida,MNSB,"Y, N, U",,,,,,,,,,,,,
 232,Mortality,220,3902,50,Certifier's First Name,CERTFIRST, ,i,VRDR,Certifier,"name.given , name.use = official",string,-,,,,,,Certifier,
 685,Natality,221,899,1,Congenital Anomalies of the Newborn--Cyanotic congenital heart disease,CCHD,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=12770006 (Cyanotic congenital heart disease (disorder)),na,See [Note on missing congenital anomaly data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-congenital-anomaly-of-newborn,
 1562,Birth Infant Death,221,899,1,Congenital Anomalies of the Newborn--Cyanotic congenital heart disease,CCHD,"Y, N, U",,,,code=409709004,codeable,,,,,,,,
-1038,Fetal Death,221,2844,50,Fetus Last Name,FETLNAME,Free form literal,,BFDR,PatientDecedentFetus,"name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.)",string ,See [Note on Decedent Name],B,,,,,Patient-decedent-fetus,
+1038,Fetal Death,221,2844,50,Fetus Last Name,FETLNAME,Free form literal,,BFDR,PatientDecedentFetus,"name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.)",string ,See [Note on Child and Decedent Fetus name],B,,,,,Patient-decedent-fetus,
 233,Mortality,221,3952,50,Certifier's Middle Name,CERTMIDDLE, ,i,VRDR,Certifier,"name.given , name.use = official",string,-,,,,,,Certifier,
 686,Natality,222,900,1,Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia,CDH,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=17190001 (Congenital diaphragmatic hernia (disorder)),na,See [Note on missing congenital anomaly data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-congenital-anomaly-of-newborn,
 1563,Birth Infant Death,222,900,1,Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia,CDH,"Y, N, U",,,,,,,,,,,,,
