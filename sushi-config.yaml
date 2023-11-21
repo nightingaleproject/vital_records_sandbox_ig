@@ -83,9 +83,9 @@ pages:
     title: BFDR Content Transitions 
   mdi-content-transitions.md:
     title: MDI Content Transitions 
-  bfdr_ije_mapping_natality.md:
+  ije_mapping_natality.md:
     title: BFDR Data Dictionary Natality
-  bfdr_ije_mapping_fetalDeath.md:
+  ije_mapping_fetalDeath.md:
     title: BFDR Data Dictionary Fetal Death
   vrdr_ije_mapping_mortality.md:
     title: VRDR Data Dictionary Mortality
@@ -198,8 +198,8 @@ menu:
     All FHIR Artifacts: artifacts.html
     VRDR Mortality Data Dictionary: vrdr_ije_mapping_mortality.html
     VRDR Mortality Roster Data Dictionary: vrdr_ije_mapping_mortalityRoster.html
-    BFDR Natality Data Dictionary: bfdr_ije_mapping_natality.html
-    BFDR Fetal Death Data Dictionary: bfdr_ije_mapping_fetalDeath.html
+    BFDR Natality Data Dictionary: ije_mapping_natality.html
+    BFDR Fetal Death Data Dictionary: ije_mapping_fetalDeath.html
     IJE Mapping to FHIR (xlsx): IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx
   BFDR: 
     Home: bfdr_index.html
@@ -207,8 +207,8 @@ menu:
     Capability Statement: CapabilityStatement-CapabilityStatement-bfdr.html
     Changes: bfdr_change_log.html
     Content Transitions: bfdr-content-transitions.html
-    BFDR Natality Data Dictionary: bfdr_ije_mapping_natality.html
-    BFDR Fetal Death Data Dictionary: bfdr_ije_mapping_fetalDeath.html
+    BFDR Natality Data Dictionary: ije_mapping_natality.html
+    BFDR Fetal Death Data Dictionary: ije_mapping_fetalDeath.html
     Specification: bfdr_the_specification.html
     Forms Mapping: bfdr_vital_records_form_mapping.html
     Terminology: bfdr_terminology.html
