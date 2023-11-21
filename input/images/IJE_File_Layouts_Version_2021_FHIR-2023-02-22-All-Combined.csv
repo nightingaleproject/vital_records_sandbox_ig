@@ -831,10 +831,10 @@ U = Unknown",,VRDR,InputRaceAndEthnicity,component[ HispanicCuban ].valueCoding,
 9 = Unknown",,not implemented,not implemented,,,,,,,,,not implemented,
 497,Natality,33,94,1,Mother's Education--Edit Flag,MEDUC_BYPASS,"0 = Edit Passed
 1 = Edit Failed, Data Queried and Verified
-2 = Edit Failed, Data Queried, but not Verified",,BFDR,ObservationEducationLevelVitalRecords,value.extension[bypassEditFlag].value,codeable,"[EditBypass01234VS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-mothers-education,
+2 = Edit Failed, Data Queried, but not Verified",,BFDR,ObservationEducationLevelVitalRecords,value.extension[bypassEditFlag].value,codeable,"[ValueSetEditBypass01234VitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-mothers-education,
 850,Fetal Death,33,94,1,Mother's Education--Edit Flag,MEDUC_BYPASS,"0 = Edit Passed
 1 = Edit Failed, Data Queried and Verified
-2 = Edit Failed, Data Queried, but not Verified",,BFDR,ObservationEducationLevelVitalRecords,value.extension[bypassEditFlag].value,codeable,"[EditBypass01234VS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-mothers-education,
+2 = Edit Failed, Data Queried, but not Verified",,BFDR,ObservationEducationLevelVitalRecords,value.extension[bypassEditFlag].value,codeable,"[ValueSetEditBypass01234VitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-mothers-education,
 1374,Birth Infant Death,33,94,1,Mother's Education--Edit Flag,MEDUC_BYPASS,"0 = Edit Passed
 1 = Edit Failed, Data Queried and Verified
 2 = Edit Failed, Data Queried, but not Verified",,,,,,,,,,,,,
@@ -1231,7 +1231,7 @@ Now dead",PLBD,"00-30
 86,Mortality,79,562,3,First Other Pacific Islander Code,RACE20C,Appendix I,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,component[FirstOtherPacificIslanderCode].value,codeable,[ValueSetRaceCodeVitalRecords],,,,,,CodedRaceAndEthnicity,
 543,Natality,79,423,1,Father's Education--Edit Flag,FEDUC_BYPASS,"0 = Edit Passed
 1 = Edit Failed, Data Queried and Verified
-2 = Edit Failed, Data Queried, but not Verified",,BFDR,ObservationEducationLevelVitalRecords,value.extension[bypassEditFlag].value,codeable,"[EditBypass01234VS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-education,
+2 = Edit Failed, Data Queried, but not Verified",,BFDR,ObservationEducationLevelVitalRecords,value.extension[bypassEditFlag].value,codeable,"[ValueSetEditBypass01234VitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-education,
 1420,Birth Infant Death,79,423,1,Father's Education--Edit Flag,FEDUC_BYPASS,"0 = Edit Passed
 1 = Edit Failed, Data Queried and Verified
 2 = Edit Failed, Data Queried, but not Verified",,,,,,,,,,,,,
@@ -2838,7 +2838,7 @@ Decision: BFDR should mimic VRDR",Needs work,FHIR-41389,odh-UsualWork,
 1625,Birth Infant Death,284,2050,25,Occupation of Father,DAD_OC_T,Literal for father's usual occupation,,,,,,,,,,,,,
 1101,Fetal Death,284,4290,1,Father's Education--Edit Flag,FEDUC_BYPASS,"0 = Edit Passed
 1 = Edit Failed, Data Queried and Verified
-2 = Edit Failed, Data Queried, but not Verified",,BFDR,ObservationEducationLevelVitalRecords,value.extension[bypassEditFlag].value,codeable,"[EditBypass01234VS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-education,
+2 = Edit Failed, Data Queried, but not Verified",,BFDR,ObservationEducationLevelVitalRecords,value.extension[bypassEditFlag].value,codeable,"[ValueSetEditBypass01234VitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-education,
 749,Natality,285,2075,3,Occupation of Father (coded),DAD_OC_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,-,,,,,not implemented,
 1626,Birth Infant Death,285,2075,3,Occupation of Father (coded),DAD_OC_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,,,
 1102,Fetal Death,285,4291,1,Father of Hispanic Origin?--Mexican,FETHNIC1,"N = No, Not Mexican
