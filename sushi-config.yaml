@@ -339,8 +339,7 @@ groups:
       - CertifierTypesVS
       - ContributoryTobaccoUseVS
       - DateOfDeathDeterminationMethodsVS
-      - DeathPregnancyStatusVS
-      - EditBypass01234VS     
+      - DeathPregnancyStatusVS  
       - EditBypass0124VS
       - EditBypass012VS
       - EditBypass01VS
@@ -370,7 +369,6 @@ groups:
       - ActivityAtTimeOfDeathCM
       - CertifierTypesCM
       - ContributoryTobaccoUseCM
-      - EditBypass01234CM
       - EditBypass0124CM
       - EditBypass012CM
       - EditBypass01CM
