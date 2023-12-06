@@ -3,8 +3,8 @@
 ,Mortality Roster,1,1,20,"State, U.S. Territory or Canadian Province of Birth - literal",STATEBTH,"Valid state, U.S. territory or Canadian province literal",,VRDR,Decedent,extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code),string,See [StateLiterals],,,,,,
 272,Surveillance,1,1,4,Date of Death--Year,DOD_YR,4 digit year,,VRDR,DeathDate,value,dateTime,Required for processing,,y,,,,DeathDate
 1183,ITOP,1,1,4,Year of Termination,DOT_YR,4 digit year,,not implemented,not implemented,,,,,,,,,not implemented
-818,Fetal Death,1,1,4,Date of Delivery (Fetus)--Year,FDOD_YR,4 digit year,,BFDR,PatientDecedentFetus,birthDate,date,See [Note on birth date and time],B,,,,,Patient-decedent-fetus
-465,Natality,1,1,4,Date of Birth (Infant)--Year,IDOB_YR,4 digit year,,VRCPL,PatientChildVitalRecords,birthDate,date,See [Note on birth date and time],B,,,,,Patient-child-vr
+818,Fetal Death,1,1,4,Date of Delivery (Fetus)--Year,FDOD_YR,4 digit year,,BFDR,PatientDecedentFetus,birthDate,date,See [note on birth date and time],B,,,,,Patient-decedent-fetus
+465,Natality,1,1,4,Date of Birth (Infant)--Year,IDOB_YR,4 digit year,,VRCPL,PatientChildVitalRecords,birthDate,date,See [note on birth date and time],B,,,,,Patient-child-vr
 1342,Birth Infant Death,1,1,4,Date of Birth (Infant)--Year,IDOB_YR,4 digit year,,,,,,,,,,,,
 430,Surveillance,1,1,20,"State, U.S. Territory or Canadian Province of Birth - literal",STATEBTH,"Valid state, U.S. territory or Canadian province literal",,VRDR,Decedent,extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code),string,See [StateLiterals],,,,,,Decedent
 2,Mortality,2,5,2,"State, U.S. Territory or Canadian Province of Death - code",DSTATE,"NCHS Instruction Manual: Part 8
@@ -191,9 +191,9 @@ For Canadian Provinces:
 435,Mortality Roster,6,173,20,"State, U.S. Territory or Canadian Province of Death - literal",STATETEXT_D,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,VRDR,DeathLocation,address.state (expanded from 2 letter code),string,-,,,,,,DeathLocation
 1188,ITOP,6,26,2,Date of Termination - Month,DOT_MO,"01-12, 99",,not implemented,not implemented,,,,,,,,,not implemented
 278,Surveillance,6,75,1,Decedent's Legal Name--Middle,MNAME,,,VRDR,Decedent,"name.given , name.use = official (first letter)",string,-,,y,,,,Decedent
-470,Natality,6,26,4,Time of Birth,TB,"0000-2359, 9999",,VRCPL,PatientChildVitalRecords,birthDate.extension[patient-birthTime],dateTime,See [Note on birth date and time],B,,,,,Patient-child-vr
+470,Natality,6,26,4,Time of Birth,TB,"0000-2359, 9999",,VRCPL,PatientChildVitalRecords,birthDate.extension[patient-birthTime],dateTime,See [note on birth date and time],B,,,,,Patient-child-vr
 1347,Birth Infant Death,6,26,4,Time of Birth,TB,"0000-2359, 9999",,,,,,,,,,,,
-823,Fetal Death,6,26,4,Time of Delivery,TD,"Military Time 0000-2359, 9999",,BFDR,PatientDecedentFetus,birthDate.extension[patient-birthTime],dateTime,See [Note on birth date and time],B,,,,,Patient-decedent-fetus
+823,Fetal Death,6,26,4,Time of Delivery,TD,"Military Time 0000-2359, 9999",,BFDR,PatientDecedentFetus,birthDate.extension[patient-birthTime],dateTime,See [note on birth date and time],B,,,,,Patient-decedent-fetus
 14,Mortality,7,27,50,Decedent's Legal Name--Given ,GNAME,,,VRDR,Decedent,"name.given , name.use = official",string,-,,y,,,,Decedent
 436,Mortality Roster,7,193,2,"State, U.S. Territory or Canadian Province of Death - code",DSTATE,"NCHS Instruction Manual: Part 8
 For U.S. Territories:
@@ -230,16 +230,16 @@ N = Not Yet Determined",,,,,,,,,,,,
 15,Mortality,8,77,1,Decedent's Legal Name--Middle,MNAME,,,VRDR,Decedent,"name.given , name.use = official (first letter)",string,-,,y,,,,Decedent
 437,Mortality Roster,8,195,2,Date of Death--Month,DOD_MO,"01-12, 99",,VRDR,DeathDate,value,dateTime,See [PartialDatesAndTimes],,,,,,DeathDate
 1190,ITOP,8,30,4,Date ITOP Report Completed - Year,DOC_YR,4 digit year,,not implemented,not implemented,,,,,,,,,not implemented
-825,Fetal Death,8,31,2,Date of Delivery (Fetus)--Month,FDOD_MO,12-Jan,,BFDR,PatientDecedentFetus,birthDate,date,See [Note on birth date and time],B,,,,,Patient-decedent-fetus
-472,Natality,8,31,2,Date of Birth (Infant)--Month,IDOB_MO,12-Jan,,VRCPL,PatientChildVitalRecords,birthDate,date,See [Note on birth date and time],B,,,,,Patient-child-vr
+825,Fetal Death,8,31,2,Date of Delivery (Fetus)--Month,FDOD_MO,12-Jan,,BFDR,PatientDecedentFetus,birthDate,date,See [note on birth date and time],B,,,,,Patient-decedent-fetus
+472,Natality,8,31,2,Date of Birth (Infant)--Month,IDOB_MO,12-Jan,,VRCPL,PatientChildVitalRecords,birthDate,date,See [note on birth date and time],B,,,,,Patient-child-vr
 1349,Birth Infant Death,8,31,2,Date of Birth (Infant)--Month,IDOB_MO,12-Jan,,,,,,,,,,,,
 280,Surveillance,8,126,10,Decedent's Legal Name--Suffix,SUFF,,,VRDR,Decedent,"name.suffix , name.use = official",string,-,,y,,,,Decedent
 16,Mortality,9,78,50,Decedent's Legal Name--Last,LNAME,Last name is required,,VRDR,Decedent,"name.family , name.use = official. (absence is equivalent to 'UNKNOWN'.)",string,-,,y,,,,Decedent
 438,Mortality Roster,9,197,2,Date of Death--Day,DOD_DY,"01-31 (based on month), 99",,VRDR,DeathDate,value,dateTime,See [PartialDatesAndTimes],,,,,,DeathDate
 1191,ITOP,9,34,2,Date ITOP Report Completed - Month,DOC_MO,12-Jan,,not implemented,not implemented,,,,,,,,,not implemented
-826,Fetal Death,9,33,2,Date of Delivery (Fetus)--Day,FDOD_DY,01-31 (based on month),,BFDR,PatientDecedentFetus,birthDate,date,See [Note on birth date and time],B,,,,,Patient-decedent-fetus
+826,Fetal Death,9,33,2,Date of Delivery (Fetus)--Day,FDOD_DY,01-31 (based on month),,BFDR,PatientDecedentFetus,birthDate,date,See [note on birth date and time],B,,,,,Patient-decedent-fetus
 281,Surveillance,9,136,50,Father's Surname,FLNAME,,,VRDR,DecedentFather,name.family,string,-,,y,,,,DecedentFather
-473,Natality,9,33,2,Date of Birth (Infant)--Day,IDOB_DY,01-31 (based on month),,VRCPL,PatientChildVitalRecords,birthDate,date,See [Note on birth date and time],B,,,,,Patient-child-vr
+473,Natality,9,33,2,Date of Birth (Infant)--Day,IDOB_DY,01-31 (based on month),,VRCPL,PatientChildVitalRecords,birthDate,date,See [note on birth date and time],B,,,,,Patient-child-vr
 1350,Birth Infant Death,9,33,2,Date of Birth (Infant)--Day,IDOB_DY,01-31 (based on month),,,,,,,,,,,,
 17,Mortality,10,128,10,Decedent's Legal Name--Suffix,SUFF,,,VRDR,Decedent,"name.suffix , name.use = official",string,-,,y,,,,Decedent
 474,Natality,10,35,3,County of Birth,CNTYO,NCHS Instruction Manual: Part 8,,VRCPL,PatientChildVitalRecords,extension[patient-birthplace].value[x].district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-child-vr
