@@ -27,8 +27,8 @@
 [Note on missing method of delivery data]: usage.html#method-of-delivery
 [Note on missing obstetric procedures data]: usage.html#obstetric-procedures
 [Handling of edit flags]: usage.html#handling-of-edit-flags
-[Birth and Fetal Death Vital Reporting]: bfdr_index.html
-[Vital Records Common Library]: vrcl_index.html
+[Birth and Fetal Death Vital Reporting]: https://build.fhir.org/ig/HL7/fhir-bfdr/index.html
+[Vital Records Common Library]: https://build.fhir.org/ig/HL7/vr-common-library/index.html
 [Medicolegal Death Investigation]: mdi_index.html
 [Vital Records Death Reporting]: vrdr_index.html
 [PHVS_Occupation_CDC_Census2010VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186

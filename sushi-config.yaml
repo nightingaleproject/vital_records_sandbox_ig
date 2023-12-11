@@ -275,7 +275,7 @@ groups:
       - Decedent
       - DecedentPregnancyStatus
       - DecedentSpouse
-      - DecedentUsualWork
+      #- DecedentUsualWork
       - DemographicCodedContentBundle
       - DispositionLocation
       - EntityAxisCauseOfDeath
