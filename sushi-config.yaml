@@ -105,6 +105,8 @@ pages:
     title: VRDR Scope
   vrdr_usage.md:
     title: VRDR Usage
+  vrdr_example_TEST.md:
+    title: VRDR Example from STU2.2
   # DeathRecordDataDictionary.md:
   #   title: Death Record Data Dictionary
   # MortalityRosterDataDictionary.md:
@@ -174,6 +176,7 @@ menu:
     Content Transitions: vrdr-content-transitions.html
     VRDR Death Record Data Dictionary: vrdr_ije_mapping_mortality.html
     VRDR Mortality Roster Data Dictionary: vrdr_ije_mapping_mortalityRoster.html
+    VRDR STU2.2 Example: vrdr_example_TEST.html
     Credits: vrdr_credits.html
     Downloads: vrdr_downloads.html
 
