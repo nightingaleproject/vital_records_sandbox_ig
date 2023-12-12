@@ -1,8 +1,8 @@
-Profile: BundleDocumentMDIToEDRS
+Profile: BundleDocumentMDIAndEDRS
 Parent: Bundle
-Id: Bundle-document-mdi-to-edrs
-Title: "Bundle - Document MDI to EDRS"
-Description: "This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."
+Id: Bundle-document-mdi-and-edrs
+Title: "Bundle - Document MDI and EDRS"
+Description: "This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI and EDRS."
 * identifier 1.. 
   * ^short = "Persistent, unique identifier of each bundle instance"
 * type = #document (exactly)
@@ -11,7 +11,7 @@ Description: "This Bundle profile represents a Document Bundle exchanged between
   * ^slicing.discriminator.type = #profile
   * ^slicing.discriminator.path = "$this.resource"
   * ^slicing.rules = #open
-* entry contains MDItoEDRSComposition 1..1 
-* entry[MDItoEDRSComposition] ^short = "The Composition of data sent from an MDI information management system to an EDRS"
+* entry contains MDIandEDRSComposition 1..1 
+* entry[MDIandEDRSComposition] ^short = "The Composition of data sent between an MDI CMS and an EDRS"
   * resource 1.. 
-  * resource only CompositionMDIToEDRS
+  * resource only CompositionMDIAndEDRS

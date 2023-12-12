@@ -1,16 +1,15 @@
-Instance: CapabilityStatement-edrs-server
+Instance: CapabilityStatement-mdi-cms-server
 InstanceOf: CapabilityStatement
-Title: "CapabilityStatement - Electronic Death Reporting System (EDRS) Server"
-Description: "This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor, which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."
+Title: "CapabilityStatement - MDI CMS Server"
+Description: "This resource describes expected capabilities of an MDI CMS Server which is responsible for providing responses to the queries submitted by a Client. It lists FHIR profiles and search parameters that, at a minimum, should be supported by MDI CMS Servers. MDI CMS Clients have the option of choosing from this list to access necessary data."
 Usage: #definition
-* url = "http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-edrs-server"
-* version = "1.0.0"
-* name = "CapabilityStatementEDRSServer"
-* title = "CapabilityStatement - Electronic Death Reporting System (EDRS) Server"
+* url = "http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server"
+* name = "CapabilityStatementMdiCmsServer"
+* title = "CapabilityStatement - MDI CMS Server"
 * status = #active
 * experimental = false
 * date = "2022-07-03"
-* description = "This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor, which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."
+* description = "This resource describes expected capabilities of an MDI CMS Server which is responsible for providing responses to the queries submitted by a Client. It lists FHIR profiles and search parameters that, at a minimum, should be supported by MDI CMS Servers. MDI CMS Clients have the option of choosing from this list to access necessary data."
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
@@ -95,7 +94,10 @@ Usage: #definition
     * type = #Bundle
     * supportedProfile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs"
     * interaction.code = #read
-    * fhir_comments = " Returned Searchset Bundle "
+    * fhir_comments = "Returned Searchset Bundle "
+* messaging.supportedMessage
+  * mode = #receiver
+  * definition = "http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"
 * document[0]
   * mode = #producer
   * profile = "https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"

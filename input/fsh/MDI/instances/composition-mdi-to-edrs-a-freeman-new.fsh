@@ -1,5 +1,5 @@
 Instance: composition-mdi-to-edrs-a-freeman
-InstanceOf: CompositionMDIToEDRS
+InstanceOf: CompositionMDIAndEDRS
 Title: "MDI to EDRS Composition - Freeman"
 Description: "MDI to EDRS Composition: Freeman example"
 Usage: #example

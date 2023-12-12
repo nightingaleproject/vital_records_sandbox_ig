@@ -481,9 +481,9 @@ groups:
   MDIProfiles:
     name: MDI Profiles
     resources:  
-      - BundleDocumentMDIToEDRS 
+      - BundleDocumentMDIAndEDRS 
       - BundleMessageToxToMDI
-      - CompositionMDIToEDRS
+      - CompositionMDIAndEDRS
       - DiagnosticReportToxicologyToMDI 
       - MessageHeaderToxicologyToMDI
       #- ObservationAutopsyPerformedIndicator

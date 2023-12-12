@@ -1,5 +1,5 @@
-Instance: bundle-mdi-to-edrs-a-freeman
-InstanceOf: BundleDocumentMDIToEDRS
+Instance: bundle-mdi-and-edrs-a-freeman
+InstanceOf: BundleDocumentMDIAndEDRS
 Title: "Bundle - MDI to EDRS - Freeman"
 Description: "Bundle - MDI to EDRS: Freeman example"
 Usage: #example
@@ -13,7 +13,6 @@ Usage: #example
 * insert addentry(Observation, observation-manner-of-death-a-freeman-accidental)
 * insert addentry(Observation, observation-cause-of-death-part1-a-freeman)
 * insert addentry(Observation, observation-contributing-cause-of-death-part2-a-freeman)
-* insert addentry(Practitioner, us-core-practitioner-b-goldberger)
 * insert addentry(Location,location-death-atlanta-ga-a-freeman)
 * insert addentry(Location,location-injury-atlanta-ga-a-freeman)
 * insert addentry(Patient, us-core-patient-a-freeman)
