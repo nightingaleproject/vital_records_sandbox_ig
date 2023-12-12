@@ -98,7 +98,7 @@ Description: "DecedentUT-Example1"
   * suffix = "Jr"
 * gender = #male
 * birthDate = "2021-03-04"
-* birthDate.extension[partialDate]
+* birthDate.extension[partialDateTime]
   * extension[year].valueUnsignedInt = 2021
   * extension[month].valueUnsignedInt = 3
   * extension[day].valueUnsignedInt = 4
@@ -125,7 +125,7 @@ Description: "InputRaceAndEthnicityUT-Example1"
 // * id = "0a1ded2c-6140-4abc-9128-0af93e2f2ea5"
 * status = #final
 * subject = Reference(DecedentUT-Example1)
-* code = #inputraceandethnicity 
+* code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicity 
 * component[White].valueBoolean = true
 * component[BlackOrAfricanAmerican].valueBoolean = false
 * component[AmericanIndianOrAlaskanNative].valueBoolean = true
@@ -182,7 +182,7 @@ Description: "EducationUT-Example1"
 * subject = Reference(DecedentUT-Example1)
 * status = #final
 * code = $loinc#80913-7 "Highest level of education [US Standard Certificate of Death]"
-* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
+* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#editBypass0 "Edit Passed"
 * valueCodeableConcept = $v3-EducationLevel#ELEM "Elementary School"
 
 Instance: FatherUT-Example1
@@ -282,7 +282,7 @@ Description: "DispositionLocationUT-Example1"
 * address.country = "US"
 
 Instance: UsualWorkUT-Example1
-InstanceOf: DecedentUsualWork
+InstanceOf: ObservationUsualWorkVitalRecords
 Usage: #example
 Description: "UsualWorkUT-Example1"
 // * id = "0051e0b6-6990-4190-93a6-87442b4a50aa"
