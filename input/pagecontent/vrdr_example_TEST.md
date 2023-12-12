@@ -14,7 +14,8 @@
 
 #### qa report summary:
 DeathCertificate minimum required =1, but only found 0
-extension not found, does not resolve
+
+extension not found, does not resolve:
 * AuxiliaryStateIdentifier1
 * CertificateNumber
 * FilingFormat
@@ -36,7 +37,7 @@ extension not found, does not resolve
 * Date-Day
 * Date-Time
 
-unknown CodeSystem 
+unknown CodeSystem: 
 * vrdr-filing-format-cs
 * vrdr-document-section-cs
 * vrdr-bypass-edit-flag-cs
