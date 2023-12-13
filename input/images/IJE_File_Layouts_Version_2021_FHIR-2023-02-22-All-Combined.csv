@@ -50,13 +50,19 @@ For Canadian Provinces:
    QC  QUEBEC  
    SK  SASKATCHEWAN
    YT  YUKON",,VRDR,Decedent,extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present ,string,[ValueSetJurisdictionVitalRecords],,,,,,Decedent
-466,Natality,2,5,2,"State, U.S. Territory or Canadian Province of Birth (Infant) - code",BSTATE,"NCHS Instruction Manual: Part 8
+466,Natality,2,5,2,"State, U.S. Territory or Canadian Province of Birth (Infant) - code",BSTATE,"
+NCHS Instruction Manual: Part 8
+ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
+XX = COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN, BUT NOT U.S. OR CANADA
+YC = NEW YORK CITY
+
 For US Territories:
    MP  NORTHERN MARIANAS
    AS  AMERICAN SAMOA
    GU  GUAM
    VI   VIRGIN ISLANDS
    PR  PUERTO RICO
+   YC  NEW YORK CITY
 For Canadian Provinces:
    AB  ALBERTA  
    BC  BRITISH COLUMBIA 
@@ -70,7 +76,7 @@ For Canadian Provinces:
    PE  PRINCE EDWARD ISLAND 
    QC  QUEBEC  
    SK  SASKATCHEWAN
-   YT  YUKON",,VRCPL,PatientChildVitalRecords,extension[patient-birthPlace].value[x].state,string,[ValueSetStatesTerritoriesAndProvincesVitalRecords],B,,,,,Patient-child-vr
+   YT  YUKON",,VRCPL,PatientChildVitalRecords,extension[patient-birthPlace].value[x].state,string,[ValueSetJurisdictionVitalRecords],B,,,,,Patient-child-vr
 1343,Birth Infant Death,2,5,2,"State, U.S. Territory or Canadian Province of Birth (Infant) - code",BSTATE,"NCHS Instruction Manual: Part 8
 For US Territories:
    MP  NORTHERN MARIANAS
@@ -114,18 +120,23 @@ For Canadian Provinces:
    SK  SASKATCHEWAN
    YT  YUKON",,VRDR,DeathLocation,address.state or address.state.extension[nationalReportingJurisdictionId ],codeable,[StatesTerritoriesProvincesVS] in state field or [ValueSetJurisdictionVitalRecords] in extension,,y,,,,DeathLocation
 819,Fetal Death,2,5,2,"State, U.S. Territory or Canadian Province of Place of Delivery - code",DSTATE,"NCHS Instruction Manual: Part 8
+ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
+XX = COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN, BUT NOT U.S. OR CANADA
+YC = NEW YORK CITY
+
 For US Territories:
    MP  NORTHERN MARIANAS
    AS  AMERICAN SAMOA
    GU  GUAM
    VI   VIRGIN ISLANDS
    PR  PUERTO RICO
+   YC  NEW YORK CITY
 For Canadian Provinces:
    AB  ALBERTA  
    BC  BRITISH COLUMBIA 
    MB  MANITOBA 
    NB  NEW BRUNSWICK  
-   NL  NEWFOUNDLAND AND LABRADOR 
+   NL  NEWFOUNDLAND AND LABRADOR  
    NS  NOVA SCOTIA 
    NT  NORTHWEST TERRITORIES
    NU  NUNAVUT
@@ -133,7 +144,7 @@ For Canadian Provinces:
    PE  PRINCE EDWARD ISLAND 
    QC  QUEBEC  
    SK  SASKATCHEWAN
-   YT  YUKON",,BFDR,PatientDecedentFetus,extension[patient-birthPlace].value[x].state,codeable,[ValueSetStatesTerritoriesAndProvincesVitalRecords] ,B,,,,,Patient-decedent-fetus
+   YT  YUKON",,BFDR,PatientDecedentFetus,extension[patient-birthPlace].value[x].state,codeable,[ValueSetJurisdictionVitalRecords] ,B,,,,,Patient-decedent-fetus
 1184,ITOP,2,5,2,"State, U.S. Territory or Canadian Province of Termination - code",STATE_T,"NCHS Instruction Manual: Part 8
 For US Territories:
    MP  NORTHERN MARIANAS
@@ -1348,14 +1359,17 @@ Blank",,VRDR,BirthRecordIdentifier,component[birthYear].value,dateTime,YYYY comp
 1272,ITOP,90,837,2,Calculated Gestation from last menstrual period,CALC_WGEST,"00-95
 99 = Unknown",,not implemented,not implemented,,,,,,,,,not implemented
 98,Mortality,90,671,2,"Infant Death/Birth Linking - State, U.S. Territory or Canadian Province of Birth - code",BSTATE,"NCHS Instruction Manual: Part 8
-   ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
-   XX = COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN, BUT NOT U.S. OR CANADA                                                                                                                                                                                                                           YC = NEW YORK CITY
-For U.S. Territories:
+ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
+XX = COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN, BUT NOT U.S. OR CANADA
+YC = NEW YORK CITY
+
+For US Territories:
    MP  NORTHERN MARIANAS
    AS  AMERICAN SAMOA
    GU  GUAM
    VI   VIRGIN ISLANDS
    PR  PUERTO RICO
+   YC  NEW YORK CITY
 For Canadian Provinces:
    AB  ALBERTA  
    BC  BRITISH COLUMBIA 
