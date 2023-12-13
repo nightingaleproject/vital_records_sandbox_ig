@@ -534,11 +534,11 @@ groups:
   MDIExamples:
     name: MDI Examples
     resources:
-      - bundle-mdi-to-edrs-a-freeman
+      - bundle-mdi-and-edrs-a-freeman
       - bundle-mdi-tox-report-message-a-freeman
       - CapabilityStatement-edrs-server
       - CapabilityStatement-forensic-toxicology-laboratory-server
-      - CapabilityStatement-medical-examiner-coroner-server
+      #- CapabilityStatement-medical-examiner-coroner-server
       - composition-mdi-to-edrs-a-freeman
       - diagnosticreport-mdi-toxicology-lab-a-freeman
       - location-death-atlanta-ga-a-freeman

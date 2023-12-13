@@ -1,7 +1,7 @@
 Instance: bundle-mdi-and-edrs-a-freeman
 InstanceOf: BundleDocumentMDIAndEDRS
-Title: "Bundle - MDI to EDRS - Freeman"
-Description: "Bundle - MDI to EDRS: Freeman example"
+Title: "Bundle - MDI and EDRS - Freeman"
+Description: "Bundle - MDI and EDRS: Freeman example"
 Usage: #example
 * identifier
   * system = "urn:ietf:rfc:3986"
