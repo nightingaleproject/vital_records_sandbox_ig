@@ -43,6 +43,7 @@
 <tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/StructureDefinition-Observation-toxicology-lab-result.html'>ObservationToxicologyLabResult</a> </td><td><a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Observation-toxicology-lab-result.html'>MDI</a> </td><td>-</td></tr>
 <tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/StructureDefinition-Specimen-toxicology-lab.html'>SpecimenToxicologyLab</a> </td><td><a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Specimen-toxicology-lab.html'>MDI</a> </td><td>-</td></tr>
 <tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/MessageDefinition-MessageDefinition-toxicology-system.html'>MessageDefinitionToxicologySystem</a> </td><td><a href='http://hl7.org/fhir/us/mdi/STU1.1/MessageDefinition-MessageDefinition-toxicology-system.html'>MDI</a> </td><td>-</td></tr>
+<tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/StructureDefinition-DocumentReference-mdi-reportm.html'>DocumentReferenceMDIReport</a> </td><td><a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-DocumentReference-mdi-report.html'>MDI</a> </td><td> _________ </td></tr>
 </tbody>
 </table>
 
@@ -109,7 +110,6 @@
 <tr><td> <a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Procedure-death-certification.html'>ProcedureDeathCertification</a> </td><td><a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/StructureDefinition-vrdr-death-certification'>VRDR</a> </td><td>-</td></tr>
 <tr><td> <a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Location-death.html'>LocationDeath</a> </td><td><a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/StructureDefinition-vrdr-death-location'>VRDR</a> </td><td>-</td></tr>
 <tr><td> <a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Location-injury.html'>LocationInjury</a> </td><td><a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/StructureDefinition-vrdr-manner-of-death'>VRDR</a> </td><td>-</td></tr>
-<tr><td> <a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-DocumentReference-mdi-report.html'>DocumentReferenceMDIReport</a> </td><td>Removed</td><td>-</td></tr>
 </tbody>
 </table>
 
