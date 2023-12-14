@@ -9,7 +9,7 @@ Description: "Death Location (USCoreLocation)"
 * type = LocationTypeCS#death
 * type 1..1
 * name ^short = "Name of Death Location"
-* address 1..1
+* address 0..1
 * address ^short = "Place of Death address"
 * address.city ^short = "Address city"
 * address.state ^short = "Address state"
