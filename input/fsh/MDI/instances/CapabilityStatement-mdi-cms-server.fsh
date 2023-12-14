@@ -24,8 +24,8 @@ Usage: #definition
   * insert SupportProfile(http://hl7.org/fhir/us/vrsandbox/StructureDefinition/Composition-mdi-and-edrs, #SHALL)
   * insert SupportInteraction(#read, #SHALL)
   * insert SupportInteraction(#search-type, #SHALL)
-  * insert SupportSearchParam(subject, http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier, #reference, #SHALL)
-  * insert SupportSearchParam(patient, http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier, #reference, #SHALL)
+  * insert SupportSearchParam(subject, http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier, #token, #SHALL)
+  * insert SupportSearchParam(patient, http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier, #token, #SHALL)
   * insert SupportOperation(operation-composition-document, https://hl7.org/fhir/operation-composition-document, #SHALL)
 //     * searchParam[0]
 //       * name = "subject"
