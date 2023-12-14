@@ -21,7 +21,7 @@ Usage: #definition
 * rest[0]
   * mode = #server
   * insert SupportResource(Composition, #SHALL)
-  * insert SupportProfile($compositionmdiandedrs, #SHALL)
+  * insert SupportProfile(http://hl7.org/fhir/us/vrsandbox/StructureDefinition/Composition-mdi-and-edrs, #SHALL)
   * insert SupportInteraction(#read, #SHALL)
   * insert SupportInteraction(#search-type, #SHALL)
   * insert SupportSearchParam(subject, http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier, #reference, #SHALL)
@@ -41,7 +41,7 @@ Usage: #definition
 //       * documentation = "A server should be capable of generating a bundled document from a composition resource with all the referenced resources and either returns a full document bundle, or returns an error."
 // //    * fhir_comments = " Composition-mdi-and-edrs "
   * insert SupportResource(Patient, #SHALL)
-  * insert SupportProfile($uscorepatient, #SHALL)
+  * insert SupportProfile(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient, #SHALL)
   * insert SupportInteraction(#read, #SHALL)
   * insert SupportInteraction(#search-type, #SHALL)
   * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
