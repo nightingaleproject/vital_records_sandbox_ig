@@ -43,7 +43,7 @@
 <tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/StructureDefinition-Observation-toxicology-lab-result.html'>ObservationToxicologyLabResult</a> </td><td><a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Observation-toxicology-lab-result.html'>MDI</a> </td><td>-</td></tr>
 <tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/StructureDefinition-Specimen-toxicology-lab.html'>SpecimenToxicologyLab</a> </td><td><a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Specimen-toxicology-lab.html'>MDI</a> </td><td>-</td></tr>
 <tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/MessageDefinition-MessageDefinition-toxicology-system.html'>MessageDefinitionToxicologySystem</a> </td><td><a href='http://hl7.org/fhir/us/mdi/STU1.1/MessageDefinition-MessageDefinition-toxicology-system.html'>MDI</a> </td><td>-</td></tr>
-<tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/StructureDefinition-DocumentReference-mdi-reportm.html'>DocumentReferenceMDIReport</a> </td><td><a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-DocumentReference-mdi-report.html'>MDI</a> </td><td> _________ </td></tr>
+<tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/StructureDefinition-DocumentReference-mdi-reportm.html'>DocumentReferenceMDIReport</a> </td><td><a href='http://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-DocumentReference-mdi-report.html'>MDI</a> </td><td>-</td></tr>
 </tbody>
 </table>
 
