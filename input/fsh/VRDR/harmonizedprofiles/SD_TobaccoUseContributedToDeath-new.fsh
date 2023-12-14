@@ -9,6 +9,7 @@ Description: "Tobacco Use Contributed To Death (Observation)"
 * status only code
 * status = #final (exactly)
 * code 1..1
+  * ^short = "Did tobacco use contribute to death"
 * code only CodeableConcept
 * code = $loinc#69443-0 "Did tobacco use contribute to death"
 * subject 1..1
@@ -16,3 +17,4 @@ Description: "Tobacco Use Contributed To Death (Observation)"
 * value[x] 1..1
 * value[x] only CodeableConcept
 * value[x] from ContributoryTobaccoUseVS (required)
+  * ^binding.description = "A set of codes that reflect the extent to which tobacco use contributed to the person's death."
