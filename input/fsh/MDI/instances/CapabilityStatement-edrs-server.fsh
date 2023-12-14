@@ -3,8 +3,7 @@ InstanceOf: CapabilityStatement
 Title: "CapabilityStatement - Electronic Death Reporting System (EDRS) Server"
 Description: "This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor, which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."
 Usage: #definition
-* url = "http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-edrs-server"
-* version = "1.0.0"
+* fhirVersion = #4.0.1
 * name = "CapabilityStatementEDRSServer"
 * title = "CapabilityStatement - Electronic Death Reporting System (EDRS) Server"
 * status = #active
@@ -12,7 +11,6 @@ Usage: #definition
 * date = "2022-07-03"
 * description = "This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor, which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."
 * kind = #requirements
-* fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #xml
 * format[+] = #application/fhir+json
@@ -21,7 +19,7 @@ Usage: #definition
   * mode = #server
   * resource[0]
     * type = #Composition
-    * supportedProfile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"
+    * supportedProfile = Canonical(CompositionMDIAndEDRS)
     * interaction[0].code = #search-type
     * interaction[+].code = #read
     * searchParam[0]
@@ -36,7 +34,7 @@ Usage: #definition
       * name = "operation-composition-document"
       * definition = "https://hl7.org/fhir/operation-composition-document"
       * documentation = "A server should be capable of generating a bundled document from a composition resource with all the referenced resources and either returns a full document bundle, or returns an error."
-    * fhir_comments = " Composition-mdi-and-edrs "
+//    * fhir_comments = " Composition-mdi-and-edrs "
   * resource[+]
     * type = #Patient
     * supportedProfile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -70,35 +68,35 @@ Usage: #definition
       * definition = "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name"
       * type = #string
       * documentation = "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
-    * fhir_comments = " US Core Patient "
+//    * fhir_comments = " US Core Patient "
   * resource[+]
     * type = #Location
-    * supportedProfile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"
+    * supportedProfile = Canonical(DeathLocation)
     * interaction[0].code = #read
     * interaction[+].code = #search-type
     * searchParam
       * name = "address"
       * type = #string
-    * fhir_comments = " Location-death "
+//    * fhir_comments = " Location-death "
   * resource[+]
     * type = #Observation
-    * supportedProfile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"
+    * supportedProfile = Canonical(DeathDate)
     * interaction[0].code = #read
     * interaction[+].code = #search-type
     * searchParam
       * name = "date"
       * type = #date
-    * fhir_comments = " Observation-death-date "
+//    * fhir_comments = " Observation-death-date "
 * rest[+]
   * mode = #client
   * resource
     * type = #Bundle
-    * supportedProfile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs"
+    * supportedProfile = Canonical(BundleDocumentMDIAndEDRS)
     * interaction.code = #read
-    * fhir_comments = " Returned Searchset Bundle "
+//    * fhir_comments = " Returned Searchset Bundle "
 * document[0]
   * mode = #producer
-  * profile = "https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"
+  * profile = Canonical(CompositionMDIAndEDRS)
 * document[+]
   * mode = #consumer
-  * profile = "https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"
+  * profile = Canonical(CompositionMDIAndEDRS)

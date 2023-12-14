@@ -38,9 +38,10 @@ Description: "The Observation - Cause of Death Part 1 profile reflects the order
   * code = $loinc#69440-6 // "Disease onset to death interval"
   * value[x] 1..1
   * value[x] only string or Quantity
-  * valueString ^short = "Interval"
+  * valueString ^short = "Interval - string description"
   * valueString ^maxLength = 20
   * valueQuantity.code from ValueSetUnitsOfAgeVitalRecords (required)
+  * valueQuantity ^short = "Interval - quantity with units of time"
 * component[lineNumber]
   * ^short = "lineNumber"
   * code 1..1

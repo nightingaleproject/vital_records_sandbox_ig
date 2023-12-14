@@ -1,12 +1,8 @@
-Instance: composition-mdi-to-edrs-a-freeman
+Instance: composition-mdi-and-edrs-a-freeman
 InstanceOf: CompositionMDIAndEDRS
-Title: "MDI to EDRS Composition - Freeman"
-Description: "MDI to EDRS Composition: Freeman example"
+Title: "MDI and EDRS Composition - Freeman"
+Description: "MDI and EDRS Composition: Freeman example"
 Usage: #example
-* meta
-  * versionId = "19"
-  * lastUpdated = "2022-08-15T23:49:50.478+00:00"
-  * source = "#rrMJ4KdpMQ2Q66n0"
 * extension[ExtensionTrackingNumber]
   * valueIdentifier
     * type = $v2-0203#BCT
@@ -16,11 +12,11 @@ Usage: #example
 * type = $loinc#86807-5 "Death administrative information Document"
 * subject = Reference(us-core-patient-a-freeman)
 * date = "2022-02-20"
-* author = Reference(us-core-practitioner-b-goldberger)
+* author = Reference(us-core-practitioner-s-jones)
 * title = "MDI to EDRS Composition"
 * attester
   * mode = #professional
-  * party = Reference(us-core-practitioner-j-jones)
+  * party = Reference(us-core-practitioner-s-jones)
 * section[0]
   * title = "Additional Demographic Information Section"
   * code = CodeSystemMDI#demographics
@@ -38,7 +34,7 @@ Usage: #example
   * title = "Jurisdiction Section"
   * code = CodeSystemMDI#jurisdiction
   * entry[0] = Reference(observation-death-date-a-freeman)
-  * entry[+] = Reference(Procedure/procedure-death-certification-a-freeman)
+  * entry[+] = Reference(procedure-death-certification-a-freeman)
 * section[+]
   * title = "Cause and Manner of Death Section"
   * code = CodeSystemMDI#cause-manner

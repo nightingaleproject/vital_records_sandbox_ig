@@ -155,7 +155,7 @@ menu:
     Home: mdi_index.html
     Capability Statement EDRS: CapabilityStatement-CapabilityStatement-edrs-server.html
     Capability Statement Toxicology: CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server.html
-    Capability Statement ME/C: CapabilityStatement-CapabilityStatement-medical-examiner-coroner-server.html
+    Capability Statement ME/C: CapabilityStatement-CapabilityStatement-mdi-cms-server.html
     Content Transitions: mdi-content-transitions.html
     Background: mdi_background.html
     Best Practices: mdi_best_practices.html
@@ -539,7 +539,7 @@ groups:
       - CapabilityStatement-edrs-server
       - CapabilityStatement-forensic-toxicology-laboratory-server
       #- CapabilityStatement-medical-examiner-coroner-server
-      - composition-mdi-to-edrs-a-freeman
+      - composition-mdi-and-edrs-a-freeman
       - diagnosticreport-mdi-toxicology-lab-a-freeman
       - location-death-atlanta-ga-a-freeman
       - location-injury-atlanta-ga-a-freeman
@@ -570,7 +570,8 @@ groups:
       - us-core-patient-a-freeman
       - us-core-patient-unknown-name
       - us-core-practitioner-b-goldberger
-      - us-core-practitioner-j-jones
+      - us-core-practitioner-jm-lehz
+      #- us-core-practitioner-j-jones
       - us-core-practitioner-s-jones
 
 

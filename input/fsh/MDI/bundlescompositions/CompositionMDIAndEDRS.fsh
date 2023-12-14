@@ -48,14 +48,11 @@ Description: "This Composition profile represents data exchanged between an MDI 
   * ^definition = "The Composition is broken into sections that, where possible, align with the sections in the 'Common data elements working document'."
   * code 1..1
 
-* insert CompositionSectionEntrySlicingMDI(additional-demographics)
-* insert CompositionSectionEntrySlicingMDI(circumstances)
-* insert CompositionSectionEntrySlicingMDI(jurisdiction)
-* insert CompositionSectionEntrySlicingMDI(cause-manner)
-* insert CompositionSectionEntrySlicingMDI(medical-history)
-* insert CompositionSectionEntrySlicingMDI(exam-autopsy)
-* insert CompositionSectionEntryNoSlicingMDI(narratives )
-
+//* insert CompositionSectionEntrySlicingMDI(additional-demographics)
+* section contains additional-demographics 0..1
+* section[additional-demographics].entry ^slicing.discriminator.type = #profile
+* section[additional-demographics].entry ^slicing.discriminator.path = "$this.resolve()"
+* section[additional-demographics].entry ^slicing.rules = #open
 * section[additional-demographics] ^label = "This slice contains demographic information about the decedent that is not represented in the decedent Patient profile."
   * ^short = "This slice contains demographic information about the decedent that is not represented in the decedent Patient profile."
   * ^definition = "This section contains demographic information about the decedent that is not represented in the decedent Patient profile."
@@ -64,6 +61,12 @@ Description: "This Composition profile represents data exchanged between an MDI 
     * ^definition = "Demographic information section"
     * text MS
   * text MS
+* insert CompositionSectionEntrySlicingMDI(circumstances)
+* insert CompositionSectionEntrySlicingMDI(jurisdiction)
+* insert CompositionSectionEntrySlicingMDI(cause-manner)
+* insert CompositionSectionEntrySlicingMDI(medical-history)
+* insert CompositionSectionEntrySlicingMDI(exam-autopsy)
+* insert CompositionSectionEntryNoSlicingMDI(narratives )
 * section[circumstances] ^label = "This slice contains circumstances of the death."
   * ^short = "This slice contains circumstances of the death."
   * ^definition = "This section contains circumstances of the death."
