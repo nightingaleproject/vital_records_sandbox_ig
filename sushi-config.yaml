@@ -111,6 +111,8 @@ pages:
   #   title: Mortality Roster Data Dictionary
   SurveillanceDataDictionary.md:
     title: Surveillance Data Dictionary
+  vr_ig_harmonization.md:
+    title: FHIR Implementation Guide Harmonization Plan 
 
 
 
@@ -146,6 +148,7 @@ menu:
     Home: index.html
     VRDR: vrdr_index.html
     Usage: usage.html
+    Vital Records IG Harmonization:  vr_ig_harmonization.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
     VRDR Mortality Data Dictionary: vrdr_ije_mapping_mortality.html
