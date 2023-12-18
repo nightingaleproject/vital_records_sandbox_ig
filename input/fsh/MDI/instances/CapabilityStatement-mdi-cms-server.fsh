@@ -84,23 +84,35 @@ Usage: #definition
 //       * type = #string
 //       * documentation = "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
 // //    * fhir_comments = " US Core Patient "
-  * resource[+]
-    * type = #Location
-    * supportedProfile = Canonical(DeathLocation)
-    * interaction[0].code = #read
-    * interaction[+].code = #search-type
-    * searchParam
-      * name = "address"
-      * type = #string
+  * insert SupportResource(Location, #SHALL)
+  * insert SupportProfile(http://hl7.org/fhir/us/vrsandbox/StructureDefinition/vrdr-death-location, #SHALL)
+  * insert SupportInteraction(#read, #SHALL)
+  * insert SupportInteraction(#search-type, #SHALL)
+  * insert SupportSearchParam(address, http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address, #string, #SHALL)
+
+  * insert SupportResource(Observation, #SHALL)
+  * insert SupportProfile(http://hl7.org/fhir/us/vrsandbox/StructureDefinition/vrdr-death-date, #SHALL)
+  * insert SupportInteraction(#read, #SHALL)
+  * insert SupportInteraction(#search-type, #SHALL)
+  * insert SupportSearchParam(date, http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date, #date, #SHALL)
+
+//  * resource[+]
+//    * type = #Location
+//    * supportedProfile = Canonical(DeathLocation)
+//    * interaction[0].code = #read
+//    * interaction[+].code = #search-type
+//    * searchParam
+//      * name = "address"
+//      * type = #string
 //    * fhir_comments = " Location-death "
-  * resource[+]
-    * type = #Observation
-    * supportedProfile = Canonical(DeathDate)
-    * interaction[0].code = #read
-    * interaction[+].code = #search-type
-    * searchParam
-      * name = "date"
-      * type = #date
+//  * resource[+]
+//    * type = #Observation
+//    * supportedProfile = Canonical(DeathDate)
+//    * interaction[0].code = #read
+//    * interaction[+].code = #search-type
+//    * searchParam
+//     * name = "date"
+//      * type = #date
 //    * fhir_comments = " Observation-death-date "
 * rest[+]
   * mode = #client
