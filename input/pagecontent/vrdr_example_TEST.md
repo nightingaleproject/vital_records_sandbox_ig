@@ -1,3 +1,21 @@
+### Example: DeathCertificateDocument-Example1-TEST and DeathCertificate-Example2-TEST
+
+#### fixes to get sushi to build:
+* changed InputRaceAndEthnicity to ObservationInputRaceAndEthnicityVitalRecords
+* changed CodedRaceAndEthnicity to ObservationCodedRaceAndEthnicityVitalRecords
+* changed DecedentUsualWork to ObservationUsualWorkVitalRecords
+* changed EmergingIssues to ObservationEmergingIssuesVitalRecords
+* birthDate.extension[partialDate] to birthDate.extension[partialDateTime] for Decedent examples
+* address.extension[WithinCityLimitsIndicator] to address.extension[withinCityLimitsIndicator] for Decedent examples
+* valueCodeableConcept = PregnancyStatusCS#2 "Pregnant at time of death" to valueCodeableConcept = DeathPregnancyStatusCS#2 "Pregnant at time of death" in DecedentPregnancyStatus-Example1-TEST
+* added code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicity to InputRaceAndEthnicity-Example1-TEST and code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicity to CodedRaceAndEthnicity-Example1-TEST
+* RaceCodeCS to CodeSystemRaceCodeVitalRecords and RaceRecode40CS to CodeSystemRaceRecode40VitalRecords and HispanicOriginCS to CodeSystemHispanicOriginVitalRecords in CodedRaceAndEthnicity-Example1-TEST
+* added status = #final to DeathDate examples
+
+
+#### qa report summary:
+
+
 ### Example: DeathCertificateDocument-UT-1-TEST
 
 #### fixes to get sushi to build:
@@ -11,6 +29,7 @@
 * added * status = #final for c9383d2d-33b6-44c9-a0ab-43707ded5efc (DecedentPregnancyStatus)
 * added * status = #completed for a7c4c06c-84fc-4262-a6e7-78546812aa0a (DeathCertification)
 * changed * type = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-location-type-cs#death to LocationTypeCS#death for Inline-Instance-for-449f0be0-46ae-4006-ab61-319bc6c582be-6 (DeathLocation)
+
 
 #### qa report summary:
 DeathCertificate minimum required =1, but only found 0

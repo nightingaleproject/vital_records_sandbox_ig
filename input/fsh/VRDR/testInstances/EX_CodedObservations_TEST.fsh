@@ -102,25 +102,27 @@ Description: "ActivityAtTimeOfDeath-Example1-TEST"
 * valueCodeableConcept = ActivityAtTimeOfDeathCS#1 "While engaged in leisure activities."
 
 Instance: CodedRaceAndEthnicity-Example1-TEST
-InstanceOf: CodedRaceAndEthnicity
+InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "CodedRaceAndEthnicity-Example1-TEST"
-* insert AddMetaProfile(CodedRaceAndEthnicity)
+* insert AddMetaProfile(ObservationCodedRaceAndEthnicityVitalRecords)
 * status = #final
+* code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicity
 * subject.display = "NCHS generated"
-* component[FirstEditedCode].valueCodeableConcept = RaceCodeCS#101 "White"
-* component[SecondEditedCode].valueCodeableConcept = RaceCodeCS#122 "Israeli"
-* component[FirstAmericanIndianCode].valueCodeableConcept = RaceCodeCS#A31 "Arikara"
-* component[RaceRecode40].valueCodeableConcept = RaceRecode40CS#20 "AIAN and Asian"
-* component[HispanicCode].valueCodeableConcept = HispanicOriginCS#233 "Chilean"
+* component[FirstEditedCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#101 "White"
+* component[SecondEditedCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#122 "Israeli"
+* component[FirstAmericanIndianCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#A31 "Arikara"
+* component[RaceRecode40].valueCodeableConcept = CodeSystemRaceRecode40VitalRecords#20 "AIAN and Asian"
+* component[HispanicCode].valueCodeableConcept = CodeSystemHispanicOriginVitalRecords#233 "Chilean"
 
 
 Instance: InputRaceAndEthnicity-Example1-TEST
-InstanceOf: InputRaceAndEthnicity
+InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Description: "InputRaceAndEthnicity-Example1-TEST"
-* insert AddMetaProfile(InputRaceAndEthnicity)
+* insert AddMetaProfile(ObservationInputRaceAndEthnicityVitalRecords)
 * status = #final
+* code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicity
 * subject.display = "NCHS generated"
 * component[White].valueBoolean = true
 * component[BlackOrAfricanAmerican].valueBoolean = false

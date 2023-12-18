@@ -14,6 +14,7 @@ Description: "DeathDate-Example1-TEST"
 * valueDateTime.extension[partialDateTime].extension[time].valueTime.extension[dataabsent].valueCode = #unknown
 * component[datetimePronouncedDead].valueDateTime = "2020-11-13T16:39:40-05:00"
 * component[placeOfDeath].valueCodeableConcept = $sct#16983000 "Death in hospital"
+* status = #final
 
 Instance: DeathDate-Example2-TEST
 InstanceOf: DeathDate
@@ -32,6 +33,7 @@ Description: "DeathDate-Example1-TEST"
 * valueDateTime.extension[partialDateTime].extension[time].valueTime.extension[dataabsent].valueCode = #unknown
 * component[datetimePronouncedDead].valueDateTime = "2020-11-13T16:39:40-05:00"
 * component[placeOfDeath].valueCodeableConcept = $sct#16983000 "Death in hospital"
+* status = #final
 
 Instance: DeathDate-Example3-TEST
 InstanceOf: DeathDate
@@ -50,6 +52,7 @@ Description: "DeathDate-Example3 - Stripped down for Mortality Roster-TEST"
 * valueDateTime.extension[partialDateTime].extension[time].valueTime.extension[dataabsent].valueCode = #unknown // required
 //* component[datetimePronouncedDead].valueDateTime = "2020-11-13T16:39:40-05:00"
 //* component[placeOfDeath].valueCodeableConcept = $sct#16983000 "Death in hospital"
+* status = #final
 
 Instance: DeathDate-Example4-TEST
 InstanceOf: DeathDate
@@ -68,3 +71,4 @@ Description: "DeathDate-Example4 - an example with only a death time-TEST"
 * valueDateTime.extension[partialDateTime].extension[time].valueTime.extension[dataabsent].valueCode = #unknown
 * component[datetimePronouncedDead].valueTime = "16:39:40"
 * component[placeOfDeath].valueCodeableConcept = $sct#16983000 "Death in hospital"
+* status = #final
