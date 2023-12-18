@@ -16,6 +16,7 @@ Description: "This Observation provides the certified explanation of how the inj
 * effective[x] only dateTime
   * ^short = "Date/Time of Injury"
   * extension contains ExtensionPartialDateTimeVitalRecords named partialDateTime 0..1
+  * extension[partialDateTime] ^short = "The expectation is to send a value in addition to the extension, whenever possible. Use a data absent reason for anything not known."
 * performer only Reference(USCorePractitionerProfile)
   * ^short = "Certifier of the explanation."
   * ^definition = "Certifier of the explanation."

@@ -10,20 +10,20 @@ The OAuth 2.0 Authorization Framework (OAuth2), defined in [RFC 6749](https://ww
 * [OAuth 2.0 Authorization Framework](https://auth0.com/docs/authenticate/protocols/oauth)
 * [OAuth 2.0 Simplified](https://www.oauth.com)
 
-SMART on FHIR is a recommended security solution for FHIR. And, it uses OAuth2 for the security protocol. The SMART on FHIR is targeting to clinical data access for providers, patients, and clinical systems such as EHR. While SMART on FHIR can also be applied to MDI FHIR systems, this document does not recommend the SMART on FHIR as a minimum-security solution due to its granularity and complexity of access definitions on resources and users. Thus, this document discusses the general OAuth2 as a minimum level of security. However, if a system needs to be maintained at a similar level of security as clinical systems, SMART on FHIR is a recommended protocol. Details on the SMART on FHIR can be found in http://www.hl7.org/fhir/smart-app-launch/. 
+SMART on FHIR is a recommended security solution for FHIR. It uses OAuth2 for the security protocol. The SMART on FHIR is targeting to clinical data access for providers, patients, and clinical systems such as EHR. While SMART on FHIR can also be applied to MDI FHIR systems, this document does not recommend the SMART on FHIR as a minimum-security solution due to its granularity and complexity of access definitions on resources and users. Thus, this document discusses the general OAuth2 as a minimum level of security. However, if a system needs to be maintained at a similar level of security as clinical systems, SMART on FHIR is a recommended protocol. Details on the SMART on FHIR can be found in http://www.hl7.org/fhir/smart-app-launch/. 
 
-SMART on FHIR uses OAuth2 for security in accessing clinical data for providers, patients, and clinical systems such as EHRs. While SMART on FHIR can be applied to MDI CMS, the granularity and complexity of access definitions on resources and users sets it above a minimum security recommendation. However, if an MDI CMS needs to be maintained at a level of security similar to clinical systems, SMART on FHIR is a recommended protocol. Details on the SMART on FHIR can be found in http://www.hl7.org/fhir/smart-app-launch/.
+SMART on FHIR uses OAuth2 for security in accessing clinical data for providers, patients, and clinical systems such as EHRs. While SMART on FHIR can be applied to MDI CMS, the granularity and complexity of access definitions on resource sets and user sets are above a minimum security recommendation. However, if an MDI CMS needs to be maintained at a level of security similar to clinical systems, SMART on FHIR is a recommended protocol. Details on the SMART on FHIR can be found in http://www.hl7.org/fhir/smart-app-launch/.
 
-OAuth2 has components with different roles, which the MDI CMS can play. Each system will play a different role based on the dataflow in which it operates. The following table shows the OAuth2 roles and the role MDI CMS should play in the MDI-EDRS and Toxicology-MDI dataflows.
+OAuth2 has components with different roles that the MDI CMS can play. Each system will play a different role based on the dataflow in which it operates. The following table shows the OAuth2 roles, and the role MDI CMS should play in the MDI-EDRS and Toxicology-MDI dataflows.
 
 ***MDI Roles & Responsibilities***
 
 | Role | Responsibility | MDI CMS-EDRS | Tox-MDI CMS |
 | -------- | -------- | -------- | -------- |
-| Authorization Server     | Manages user authorization requests and responses.     | N/A     | N/A     |
-| Client     | A system that initiates the process to access the data.     | MDI CMS     | LIMS Users     |
-| Resource Owner     | A user or system who has authority on the resource to grant an access.     | MDI CMS/EDRS Users     | Text     |
-| Resource Provider     | A system that holds the resources and provides the requested resource to authorized users or systems.     | EDRS     | MDI CMS     |
+| Authorization Server     | Server that authenticates the resource owner and issues access tokens to the client application. The authorization server can be the same as the authentication server or can be a separate server.     | EDRS     | MDI CMS     |
+| Client     | Application that wants to access the resource on behalf of the resource owner. The client can be a web application, a mobile application, or a desktop application.     | MDI CMS     | LIMS     |
+| Resource Owner     | User who owns the resource (such as a photo or a document) that a client application wants to access. The resource owner grants permission to the client application to access the resource.     | MDI CMS users, EDRS users     | LIMS users     |
+| Resource Server (Provider)    | Server that hosts the resource that the client application wants to access. The resource server verifies the access token and grants access to the resource if the token is valid.     | EDRS     | MDI CMS     |
 
 Please note that toxicology-MDI CMS dataflow uses the FHIR message operation. This also uses REST API for transportation. Thus, OAuth2 can be used to secure the data exchange. However, FHIR messaging uses CREATE (HTTP POST) method due to the nature of messaging’s push operation, in which data are originally owned by the LIMS and pushed to the MDI CMS. However, in the REST API operation, the LIMS is a client, and MDI CMS plays a resource provider role, which owns the data after the operation is completed.
 
@@ -37,7 +37,7 @@ An example of human user cases would be when a certifier needs to access death d
 A human user may be a certifier who needs to access death data in an EDRS for search, update, or certification. The EDRS can allow only users in a certain role to change the data. In this case, the user is authenticated and authorized with scope parameters that define access. The human user authorization flow for human users follows this process:
 
 
-* Step 1: The cient (MDI CMS or LIMS) sends a request for authorization with parameters such as client id, redirect URL, response type = code for authorization code, scope, etc. In this step, users will be redirected to a login page. 
+* Step 1: The client (MDI CMS or LIMS) sends a request for authorization with parameters such as client id, redirect URL, response type = code for authorization code, scope, etc. In this step, users will be redirected to a login page. 
 * Step 2: Once the authenticated users are validated, an authorization code will be returned.
 * Step 3: Client will then use the authorized code to exchange with an access token at the token service endpoint. 
 * Step 4: Access Token is granted to client. There is a timeout. Thus, client may need to refresh the token periodically.
@@ -50,7 +50,7 @@ A human user may be a certifier who needs to access death data in an EDRS for se
 
 API User authorization is for client systems (or client applications) that need access without human intervention. A system is pre-authorized during registration. Since no human provides the credential information, the grant type should be set to *clientcredentials*, and the credentials should be set as defined by authorization server. The setting can be *clientid* and *clientsecret*, or the credential can be created with JSON Web Token (JWT), depending on authorization server configuration. The authorization flow for API Users follows this process: 
 * Step 1: The client requests a token server for an access token with parameters such as client ID, client_secret or authentication JWT, etc. The authorization server validates the request.
-* Step 2: The access token is granted to the client. A timeout period is defined for the token, thus, the client may need to refresh the token periodically.
+* Step 2: The access token is granted to the client. A timeout period is defined for the token; thus, the client may need to refresh the token periodically.
 * Step 3 – 6: The resources should be available to the client with the access token in the request header. The resource provider will check that the token is valid to proceed with the request. The response from the authorization server may contain scopes. If this is the case, the scopes can be used for further access controls.
 
 ***Figure: OAuth2 Flow for API Users***

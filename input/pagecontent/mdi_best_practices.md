@@ -1,17 +1,17 @@
-This MDI specification is designed to be flexible to accommodate a variety of systems, recognizing that information management systems used for assembling MDI data vary widely by state, jurisdiction, and agency. This means that many data concepts have few requirements but many “must support” designations. This section provides best practice recommendations on how to address select concepts.
+This MDI FHIR IG is designed to be flexible to accommodate a variety of systems, recognizing that information management systems used for assembling MDI data vary widely by state, jurisdiction, and agency. This means that many data concepts have few requirements but many “must support” designations. This section provides best practice recommendations on how to address select concepts.
 
 ### Bi-Directional Exchange: MDI CMS & EDRS
-The **Bundle - Document MDI to EDRS** profile represents a document exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange during the process of case record creation and updating. The Bundle contains a **Composition - MDI to EDRS**.
-The **Composition - MDI to EDRS** profile represents data exchanged between an MDI CMS and an EDRS, which can be in “draft” (non-finalized) by:
+The **Bundle - Document MDI and EDRS** profile represents a document exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange during the process of case record creation and updating. The Bundle contains a **Composition - MDI and EDRS**.
+The **Composition - MDI and EDRS** profile represents data exchanged between an MDI CMS and an EDRS, which can be in “draft” (non-finalized) by:
 * Setting status=preliminary
 * Using [Extension: Data Absent Reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) for author and attester, when the death certifier is not yet established
 
 ### Decedent
 This MDI IG uses the US Core Patient for the decedent subject of:
-* **Composition - MDI to EDRS** and the profiles referenced in its section entries
+* **Composition - MDI and EDRS** and the profiles referenced in its section entries
 * **DiagnosticReport - Toxicology Lab Result to MDI** and the profiles referenced for its specimens and results
 
-The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth sex, gender identity, birth date, telecom, address, and marital status). The Composition - MDI to EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
+The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth sex, gender identity, birth date, telecom, address, and marital status). The Composition - MDI and EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
 
 The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) profile requires 
 * 1..* patient identifier, each identifier specifying a system and value
@@ -30,14 +30,14 @@ The [Participant & Supporting Examples](artifacts.html#12) section of the Artifa
 This MDI IG provides opportunities for both identifiers and tracking numbers. 
 
 * **Identifiers**: Identifiers are unique to each individual instance (use) of a FHIR resource being exchanged. They are assigned from the data source and often generated automatically by its system. 
-* **Tracking numbers**: Tracking numbers identify a case or record over time and across many systems for interoperable communication. Tracking numbers in this MDI IG may be assigned by the originating organization, such as medical examiner and coroner offices or an EDRS, and should persist throughout updates to the death investigation data. They are optional and multiple tracking numbers may be recorded. A system receiving a record with a tracking number may append its own tracking number and return/send the record with both tracking numbers. The extensible ValueSet - Tracking Number Type contains codes to identify the type of tracking number and may be augmented by local implementations of this specification.
+* **Tracking numbers**: Tracking numbers identify a case or record over time and across many systems for interoperable communication. Tracking numbers in this MDI IG may be assigned by the originating organization, such as medical examiner and coroner offices or an EDRS and should persist throughout updates to the death investigation data. They are optional and multiple tracking numbers may be recorded. A system receiving a record with a tracking number may append its own tracking number and return/send the record with both tracking numbers. The extensible ValueSet - Tracking Number Type contains codes to identify the type of tracking number and may be augmented by local implementations of this specification.
 
 ### Certification
 Agencies and jurisdictions have a range of requirements for certification of information during the process of collecting and exchanging MDI data. Typically, a forensic toxicology diagnostic report will be considered certified when the final version is sent. A document bundle sent from an MDI CMS to an EDRS can use the status data element to indicate preliminary or final and certified.
 
-This MDI specification provides opportunities on most profiles for naming the responsible party. The legal nature of certification is a business requirement to be assigned by each agency or jurisdiction implementing this specification.
+This MDI FHIR IG provides opportunities on most profiles for naming the responsible party. The legal nature of certification is a business requirement to be assigned by each agency or jurisdiction implementing this specification.
 
-The Composition - MDI to EDRS author and attester are required and are the individual who will be listed as the certifier on the death certificate. 
+The Composition - MDI and EDRS author and attester are required and are the individual who will be listed as the certifier on the death certificate. 
 
 **Unknown author/attester**: Use the [Extension: Data Absent Reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) for instances when the author and/or attester is not yet known, for example in initial drafts of the MDI Composition.
 
@@ -69,15 +69,25 @@ The Observation.value[x].text is limited for both Observation - Cause of Death C
 * Mathematical expression of quantity range with units (e.g., “< 2.5 ng/mL”)
 
 ### API Specifications & Search Operations
-This MDI specification is designed for RESTful API implementations supporting data exchange interactions between systems via FHIR extended operations. (See [RESTful API](https://hl7.org/FHIR/http.html) for an overview.) This MDI IG uses extended operations with MDI-specific search parameters and a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI specification must conform to common design rules:
+This MDI FHIR IG is designed for RESTful API implementations supporting data exchange interactions between systems via FHIR extended operations. (See [RESTful API](https://hl7.org/FHIR/http.html) for an overview.) This MDI IG uses extended operations with MDI-specific search parameters and a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI FHIR IG must conform to common design rules:
 * MIME-type for FHIR resources is application/fhir+xml or application/fhir+json. This must be specified for Content-Type in the HTTP header.
 * application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used.
 
-An MDI-based Search API enables MDI CMS to search EDRS for decedent cases. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). Both POST and GET can be used with the following endpoint URL pattern:
-* POST [base]/Composition/$mdi-documents
-* GET [base]/Composition/$mdi-documents?name=value&…
+The CapabilityStatement resources defined in this MDI FHIR IG are of kind=requirements, so represent recommended capabilities of systems involved in MDI data exchange. They specify the bare minimum interactions and operations for a limited group of MDI resources.
+* [CapabilityStatement - MDI CMS Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server)
+* [CapabilityStatement - Electronic Death Reporting System (EDRS) Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-edrs-server)
+* [CapabilityStatement - Forensic Toxicology Laboratory Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server)
 
-***Table: Summary of MDI Search Parameter Definitions***
+It is expected that any specific FHIR server implementing this MDI FHIR IG may allow or require more interactions and operations for a larger set of resources than those specified in the CapabilityStatement resources listed above. An example of a CapabilityStatement that defines the full capabilities of a specific FHIR server (kind=instance), is available for the Raven FHIR Server, maintained by Georgia Tech Research Institute (GTRI):
+* [CapabilityStatement](https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) for Raven FHIR Server
+* [Raven Testing Platform](https://apps.hdap.gatech.edu/raven/) — A proof of concept for the MDI FHIR IG. It provides a tool for testing conformance to the MDI FHIR IG, including resource validation, record comparison, and data exchange workflows. 
+* [Raven Documentation](https://ravendocs.readthedocs.io/en/latest/) — End-use and technical manuals
+
+An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent cases, and vice versa. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). At a minimum, both POST and GET should be allowed with the following endpoint URL pattern:
+* POST [base]/Composition/$document
+* GET [base]/Composition/$document?name=value&…
+
+***Table: Summary of Minimum MDI Search Parameter Definitions***
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -90,27 +100,36 @@ An MDI-based Search API enables MDI CMS to search EDRS for decedent cases. This 
 <table class="tg">
 <thead>
   <tr>
-    <td class="tg-0lax"><b>Name</b> </td>
+    <td class="tg-0lax"><b>Search Parameter Name</b> </td>
     <td class="tg-0lax"><b>Cardinality</b> </td>
     <td class="tg-0lax"><b>Type</b> </td>
-    <td class="tg-0lax"><b>Documentation</b> </td>
+    <td class="tg-0lax"><b>Description</b> </td>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax" colspan="4"><b><i>In Parameters</i></b></td>
+    <td class="tg-0lax"><b><i>In Parameters</i></b></td>
+    <td class="tg-0lax">  </td>
+    <td class="tg-0lax">  </td>
+    <td class="tg-0lax"> </td>
   </tr>
   <tr>
     <td class="tg-0lax">id </td>
     <td class="tg-0lax">0..1 </td>
     <td class="tg-0lax">uri </td>
-    <td class="tg-0lax">Resource ID of Composition - MDI to EDRS</td>
+    <td class="tg-0lax">Composition.id of Composition - MDI and EDRS</td>
+  </tr>
+	  <tr>
+    <td class="tg-0lax">tracking-number </td>
+    <td class="tg-0lax">0..* </td>
+    <td class="tg-0lax">token </td>
+    <td class="tg-0lax">Composition.extension:extension-tracking-number of Composition - MDI and EDRS</td>
   </tr>
 	  <tr>
     <td class="tg-0lax">patient</td>
-    <td class="tg-0lax">0.. </td>
+    <td class="tg-0lax">0..* </td>
     <td class="tg-0lax"> </td>
-    <td class="tg-0lax">One or more decedent related search parameters </td>
+    <td class="tg-0lax">One or more decedent-related search parameters </td>
   </tr>
   <tr>
     <td class="tg-0lax">patient.birthdate </td>
@@ -137,32 +156,35 @@ An MDI-based Search API enables MDI CMS to search EDRS for decedent cases. This 
     <td class="tg-0lax">Decedent’s gender </td>
   </tr>
   <tr>
-    <td class="tg-0lax">tracking-number</td>
-    <td class="tg-0lax">0..1 </td>
-    <td class="tg-0lax">token </td>
-    <td class="tg-0lax">Search by identifier in Composition - MDI to EDRS</td>
-  </tr>
-  <tr>
     <td class="tg-0lax">death-location</td>
     <td class="tg-0lax">0..1 </td>
     <td class="tg-0lax">string </td>
-    <td class="tg-0lax">District of Death Location </td>
+    <td class="tg-0lax">Location.address in Location-death</td>
   </tr>
   <tr>
-    <td class="tg-0lax">death-date.[actual | pronounced | all]</td>
+    <td class="tg-0lax">death-date</td>
     <td class="tg-0lax">0..1 </td>
     <td class="tg-0lax">date </td>
-    <td class="tg-0lax">Date of Death. “all” applies to both actual/presumed and pronounced</td>
+    <td class="tg-0lax">Value[x] (actual or presumed date of death) in Observation - Death Date (either dateTime or Period)</td>
   </tr>
-  <tr>
-    <td class="tg-0lax" colspan="4"><b><i>Out Parameters</i></b></td>
+	  <tr>
+    <td class="tg-0lax">death-date-pronounced</td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">date </td>
+    <td class="tg-0lax">Observation.component:datetimePronouncedDead in Observation - Death Date (either time or dateTime)</td>
+  </tr>
+    <tr>
+    <td class="tg-0lax"><b><i>Out Parameters</i></b></td>
+    <td class="tg-0lax">  </td>
+    <td class="tg-0lax">  </td>
+    <td class="tg-0lax"> </td>
   </tr>
   <tr>
     <td class="tg-0lax">return </td>
     <td class="tg-0lax">0..1 </td>
-    <td class="tg-0lax">resource (Bundle - Searchset or Document MDI to EDRS) </td>
-    <td class="tg-0lax">Searchset Bundle that includes MDI document bundles. If [id] is supplied, then this should be Bundle - Document MDI to EDRS</td>
-  </tr>
+    <td class="tg-0lax">Bundle </td>
+    <td class="tg-0lax">Bundle - Searchset or Bundle - Document MDI and EDRS. If [id] is supplied, then this should be Bundle - Document MDI and EDRS</td>
+ </tr>
 </tbody>
 </table>
 
@@ -191,4 +213,4 @@ Code example:
 } 
 ```
 
-If [id] is provided within URL path (e.g., /Composition/[id]/$mdi-documents), then the output response should be an MDI document bundle as there will be only one or zero result.
+If [id] is provided within URL path (e.g., /Composition/[id]/$document), then the output response should be an MDI document bundle as there will be only one or zero result.

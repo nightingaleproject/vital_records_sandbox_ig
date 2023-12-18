@@ -111,6 +111,8 @@ pages:
   #   title: Mortality Roster Data Dictionary
   SurveillanceDataDictionary.md:
     title: Surveillance Data Dictionary
+  vr_ig_harmonization.md:
+    title: FHIR Implementation Guide Harmonization Plan 
 
 
 
@@ -146,6 +148,7 @@ menu:
     Home: index.html
     VRDR: vrdr_index.html
     Usage: usage.html
+    Vital Records IG Harmonization:  vr_ig_harmonization.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
     VRDR Mortality Data Dictionary: vrdr_ije_mapping_mortality.html
@@ -155,7 +158,7 @@ menu:
     Home: mdi_index.html
     Capability Statement EDRS: CapabilityStatement-CapabilityStatement-edrs-server.html
     Capability Statement Toxicology: CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server.html
-    Capability Statement ME/C: CapabilityStatement-CapabilityStatement-medical-examiner-coroner-server.html
+    Capability Statement ME/C: CapabilityStatement-CapabilityStatement-mdi-cms-server.html
     Content Transitions: mdi-content-transitions.html
     Background: mdi_background.html
     Best Practices: mdi_best_practices.html
@@ -461,13 +464,9 @@ groups:
       - MilitaryServiceUT-Example1
       - Mortician-Example1
       - MotherUT-Example1
-      - observation-cause-of-death-part1-a-freeman
-      - observation-contributing-cause-of-death-part2-a-freeman
-      - observation-decedent-pregnancy-a-freeman
-      - observation-manner-of-death-a-freeman-accidental
-      - observation-tobacco-use-a-freeman
       - PlaceOfInjury-Example1
       - PractitionerUT-Example1
+      - practitioner-vital-records-janet-seito
       - PregnancyUT-Example1 
       - procedure-death-certification-vr-a-freeman
       - ProcedureDeathCertificationUT-Example1
@@ -481,10 +480,12 @@ groups:
   MDIProfiles:
     name: MDI Profiles
     resources:  
-      - BundleDocumentMDIToEDRS 
+      - BundleDocumentMDIAndEDRS 
       - BundleMessageToxToMDI
-      - CompositionMDIToEDRS
+      - CompositionMDIAndEDRS
       - DiagnosticReportToxicologyToMDI 
+      - DocumentReferenceMDIReport
+      - MDICauseOfDeathPart1
       - MessageHeaderToxicologyToMDI
       #- ObservationAutopsyPerformedIndicator
       - ObservationToxicologyLabResult
@@ -534,19 +535,33 @@ groups:
   MDIExamples:
     name: MDI Examples
     resources:
-      - bundle-mdi-to-edrs-a-freeman
+      - bundle-mdi-and-edrs-a-freeman
       - bundle-mdi-tox-report-message-a-freeman
       - CapabilityStatement-edrs-server
       - CapabilityStatement-forensic-toxicology-laboratory-server
-      - CapabilityStatement-medical-examiner-coroner-server
-      - composition-mdi-to-edrs-a-freeman
+      - CapabilityStatement-mdi-cms-server
+      #- CapabilityStatement-medical-examiner-coroner-server
+      - composition-mdi-and-edrs-a-freeman
+      - composition-mdi-and-edrs-draft
       - diagnosticreport-mdi-toxicology-lab-a-freeman
+      - documentreference-mdi-autopsy-report-ex
+      - documentreference-mdi-investigator-narrative-ex
       - location-death-atlanta-ga-a-freeman
+      - location-death-lat-long
+      - location-death-string
       - location-injury-atlanta-ga-a-freeman
       - MessageDefinition-toxicology-system
       - messageheader-mdi-tox-result-report-a-freeman
       - observation-autopsy-performed-indicator-a-freeman
+      - observation-cause-of-death-part1-a-freeman
+      - observation-cause-of-death-part1-freeman-quantity-interval
+      - observation-contributing-cause-of-death-part2-a-freeman
       - observation-death-date-a-freeman
+      - observation-death-date-partialdate
+      - observation-death-date-period
+      - observation-decedent-pregnancy-a-freeman
+      - observation-manner-of-death-a-freeman-accidental
+      - observation-tobacco-use-a-freeman
       - observation-how-death-injury-occurred-a-freeman-med-ingest
       - procedure-death-certification-a-freeman
       - specimen-bile-toxicology-a-freeman
@@ -570,7 +585,8 @@ groups:
       - us-core-patient-a-freeman
       - us-core-patient-unknown-name
       - us-core-practitioner-b-goldberger
-      - us-core-practitioner-j-jones
+      - us-core-practitioner-jm-lehz
+      #- us-core-practitioner-j-jones
       - us-core-practitioner-s-jones
 
 

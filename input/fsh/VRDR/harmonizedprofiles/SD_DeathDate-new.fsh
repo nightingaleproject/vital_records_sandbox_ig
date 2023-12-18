@@ -24,11 +24,12 @@ This profile is designed to supplant the similar profiles in VRDR and MDI."
 * performer only Reference(USCorePractitionerProfile)
   * ^label = "Death Pronouncement Performer"
   * ^short = "Death Pronouncement Performer"
-* value[x] only dateTime
+* value[x] only dateTime or Period
   * ^short = "Date/Time of Death"
   * ^definition = "Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."
 * valueDateTime 0..1
   * extension contains ExtensionPartialDateTimeVitalRecords named partialDateTime 0..1 //uses VRCL extension
+  * extension[partialDateTime] ^short = "The expectation is to send a value in addition to the extension, whenever possible. Use a data absent reason for anything not known."
 * note 0..1 
   * ^short = "Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"
   * ^definition = "Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"
@@ -45,7 +46,7 @@ This profile is designed to supplant the similar profiles in VRDR and MDI."
 * component[datetimePronouncedDead] ^short = "Date/Time Pronounced Dead"
   * code = $loinc#80616-6
   * value[x] 1..1
-  * value[x] only dateTime
+  * value[x] only time or dateTime
 * component[placeOfDeath] ^short = "Place of Death"
   * code = $loinc#58332-8
   * value[x] 1..1
