@@ -12,3 +12,4 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 //Alias: $Extension-date-year-vr = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr
 //Alias: $ValueSet-certifier-types-vr = http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types-vr
+Alias: $us-core-documentreference-category = http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category
