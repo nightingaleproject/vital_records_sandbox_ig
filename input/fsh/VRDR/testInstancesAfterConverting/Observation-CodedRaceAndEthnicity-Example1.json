@@ -1,0 +1,118 @@
+{
+  "resourceType": "Observation",
+  "id": "CodedRaceAndEthnicity-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-coded-race-and-ethnicity"
+    ]
+  },
+  "subject": {
+    "display": "NCHS generated"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+            "code": "FirstEditedCode"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "101",
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs",
+            "display": "White"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+            "code": "SecondEditedCode"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "122",
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs",
+            "display": "Israeli"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+            "code": "FirstAmericanIndianCode"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "A31",
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-code-cs",
+            "display": "Arikara"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+            "code": "RaceRecode40"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "20",
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-race-recode-40-cs",
+            "display": "AIAN and Asian"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+            "code": "HispanicCode"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "233",
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-hispanic-origin-cs",
+            "display": "Chilean"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "codedraceandethnicity",
+        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs"
+      }
+    ]
+  }
+}

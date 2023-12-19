@@ -1,0 +1,29 @@
+{
+  "resourceType": "Observation",
+  "id": "CauseOfDeathPart2-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/vrdr-cause-of-death-part2"
+    ]
+  },
+  "valueCodeableConcept": {
+    "text": "hypertensive heart disease"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/Certifier-Example1"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "69441-4",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent-Example1"
+  },
+  "status": "final"
+}

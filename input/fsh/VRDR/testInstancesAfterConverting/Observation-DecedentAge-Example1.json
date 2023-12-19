@@ -1,0 +1,41 @@
+{
+  "resourceType": "Observation",
+  "id": "DecedentAge-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-age"
+    ]
+  },
+  "valueQuantity": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "0",
+              "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-bypass-edit-flag-cs",
+              "display": "Edit Passed"
+            }
+          ]
+        }
+      }
+    ],
+    "value": 42,
+    "code": "a",
+    "system": "http://unitsofmeasure.org",
+    "unit": "years"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "39016-1",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent-Example1"
+  }
+}

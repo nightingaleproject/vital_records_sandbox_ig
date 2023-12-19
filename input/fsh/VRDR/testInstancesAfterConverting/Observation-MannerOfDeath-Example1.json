@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "MannerOfDeath-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-manner-of-death"
+    ]
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/Certifier-Example1"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "69449-7",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent-Example1"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "38605008",
+        "system": "http://snomed.info/sct",
+        "display": "Natural death"
+      }
+    ]
+  }
+}

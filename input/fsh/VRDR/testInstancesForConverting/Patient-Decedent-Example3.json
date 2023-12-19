@@ -1,0 +1,89 @@
+{
+  "resourceType": "Patient",
+  "id": "Decedent-Example3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/vrdr-decedent"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/NVSS-SexAtDeath",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "unknown",
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "display": "Unknown"
+          }
+        ]
+      }
+    },
+    {
+      "valueAddress": {
+        "state": "NY",
+        "country": "US"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "SB",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "display": "Social Beneficiary Identifier"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-ssn",
+      "value": "987654321"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Madelyn"
+      ],
+      "use": "official",
+      "family": "Patel"
+    },
+    {
+      "given": [
+        "Joyce"
+      ],
+      "use": "maiden",
+      "text": "Joyce McCain",
+      "family": "McCain"
+    }
+  ],
+  "address": [
+    {
+      "state": "NY"
+    }
+  ],
+  "gender": "female",
+  "_birthDate": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "day",
+            "valueUnsignedInt": 10
+          },
+          {
+            "url": "month",
+            "valueUnsignedInt": 11
+          },
+          {
+            "url": "year",
+            "valueUnsignedInt": 2004
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/ExtensionPartialDateTimeVitalRecords"
+      }
+    ]
+  }
+}

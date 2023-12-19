@@ -1,0 +1,170 @@
+{
+  "resourceType": "Patient",
+  "id": "Decedent-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/SpouseAlive",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Y",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/NVSS-SexAtDeath",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "unknown",
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "display": "Unknown"
+          }
+        ]
+      }
+    },
+    {
+      "valueAddress": {
+        "city": "Roanoke",
+        "state": "VA",
+        "country": "US"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "SB",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "display": "Social Beneficiary Identifier"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-ssn",
+      "value": "987654321"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Madelyn"
+      ],
+      "use": "official",
+      "family": "Patel"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/WithinCityLimitsIndicator",
+          "valueCoding": {
+            "code": "Y",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "display": "Yes"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetName",
+          "valueString": "Lockwood"
+        }
+      ],
+      "line": [
+        "5590 Lockwood Drive"
+      ],
+      "city": "Danville",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/CityCode",
+            "valuePositiveInt": 1234
+          }
+        ]
+      },
+      "state": "VA",
+      "district": "Fairfax",
+      "_district": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/DistrictCode",
+            "valuePositiveInt": 321
+          }
+        ]
+      },
+      "country": "US"
+    }
+  ],
+  "maritalStatus": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "0",
+              "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-bypass-edit-flag-cs",
+              "display": "Edit Passed"
+            }
+          ]
+        }
+      }
+    ],
+    "coding": [
+      {
+        "code": "S",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "display": "Never Married"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "name": {
+        "text": "Joe Smith"
+      },
+      "relationship": [
+        {
+          "text": "Friend of family",
+          "coding": [
+            {
+              "code": "U",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "gender": "female",
+  "_birthDate": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "day",
+            "valueUnsignedInt": 10
+          },
+          {
+            "url": "month",
+            "valueUnsignedInt": 11
+          },
+          {
+            "url": "year",
+            "valueUnsignedInt": 2004
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType": "Observation",
+  "id": "PlaceOfInjury-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-place-of-injury"
+    ]
+  },
+  "subject": {
+    "display": "NCHS generated"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "11376-1",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "status": "final",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "LA14084-0",
+        "system": "http://loinc.org",
+        "display": "Home"
+      }
+    ]
+  }
+}

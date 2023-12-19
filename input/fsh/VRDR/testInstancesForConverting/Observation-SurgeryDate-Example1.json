@@ -1,0 +1,22 @@
+{
+  "resourceType": "Observation",
+  "id": "SurgeryDate-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/vrdr-surgery-date"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "80992-1",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "effectiveDateTime": "2019-11-12",
+  "subject": {
+    "reference": "Patient/Decedent-Example1"
+  }
+}

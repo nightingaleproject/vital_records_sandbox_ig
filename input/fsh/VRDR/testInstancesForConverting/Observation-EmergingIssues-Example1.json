@@ -1,0 +1,67 @@
+{
+  "resourceType": "Observation",
+  "id": "EmergingIssues-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-emerging-issues-vr"
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code": "EmergingIssue1_1"
+          }
+        ]
+      },
+      "valueString": "H"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code": "EmergingIssue1_2"
+          }
+        ]
+      },
+      "valueString": "I"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code": "EmergingIssue8_1"
+          }
+        ]
+      },
+      "valueString": "Hi 8_1"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code": "EmergingIssue20"
+          }
+        ]
+      },
+      "valueString": "Hi 20_1"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr",
+        "code": "emergingissues"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent-Example1"
+  }
+}

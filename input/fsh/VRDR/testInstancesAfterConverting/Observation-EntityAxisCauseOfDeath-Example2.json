@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "EntityAxisCauseOfDeath-Example2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-entity-axis-cause-of-death"
+    ]
+  },
+  "subject": {
+    "display": "NCHS generated"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "lineNumber",
+            "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-component-cs"
+          }
+        ]
+      },
+      "valueInteger": 2
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "position",
+            "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-component-cs"
+          }
+        ]
+      },
+      "valueInteger": 1
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "80356-9",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "status": "final",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "T27.3",
+        "system": "http://hl7.org/fhir/sid/icd-10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "resourceType": "Observation",
+  "id": "EmergingIssues-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-emerging-issues"
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+            "code": "EmergingIssue1_1"
+          }
+        ]
+      },
+      "valueString": "H"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+            "code": "EmergingIssue1_2"
+          }
+        ]
+      },
+      "valueString": "I"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+            "code": "EmergingIssue8_1"
+          }
+        ]
+      },
+      "valueString": "Hi 8_1"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+            "code": "EmergingIssue20"
+          }
+        ]
+      },
+      "valueString": "Hi 20_1"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs",
+        "code": "emergingissues"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent-Example1"
+  }
+}
