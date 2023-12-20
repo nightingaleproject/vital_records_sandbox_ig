@@ -32,10 +32,19 @@ uris = {
 'http://hl7.org/fhir/us/vrsandbox/CodeSystem/' => 'http://hl7.org/fhir/us/vrdr/CodeSystem/' #general change
 }
 
-#this is needed because Decedent examples in VRDR use partialDate extension for birthdate. this was changed to partialDateTime extension in the our new abstract Patien profile
+#this is needed because Decedent examples in VRDR use partialDate extension for birthdate. this was changed to partialDateTime extension in the our new abstract Patient profile
 decedentOnlyUris = {
 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/ExtensionPartialDateTimeVitalRecords' => 'http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate'
 }
+
+#this is needed to substitute the partialDateTime extension for the Decedent part of the DeathCertificateDocument and MortalityRoster bundles
+def exchangeFirstURL(pOutputFile, pInputFile, uris)
+    content = File.read(pInputFile)
+    uris.each{|key, value|
+        content=content.sub(key,value)}
+    File.open(pOutputFile, 'w') { |file| file.write(content) }
+    return pOutputFile
+end
 
 #global substitute 
 def exchangeURLs(pOutputFile, pInputFile, uris)
@@ -52,8 +61,11 @@ Dir.foreach(Dir.pwd + testInstancesBeforeConvertingFolder) do |filename|
     next if filename == '.' or filename == '..'
     vOutputFile = File.open(Dir.pwd + testInstancesAfterConvertingFolder + filename, "w")
     vInputFile = File.open(Dir.pwd + testInstancesBeforeConvertingFolder + filename)
-    if filename.include? "Patient-Decedent-Example"
-        vInputFile = exchangeURLs(vOutputFile, vInputFile, decedentOnlyUris)
+    if filename.include? "Patient-Decedent-Example" 
+        vInputFile = exchangeURLs(vOutputFile, vInputFile, decedentOnlyUris) #exchange birthdate url in Decedent examples
+    end
+    if filename.include? "Bundle-DeathCertificateDocument-Example" or filename.include? "Bundle-MortalityRosterBundle-Example"
+        vInputFile = exchangeFirstURL(vOutputFile, vInputFile, decedentOnlyUris) #exchange Decedent birthdate url in bundles
     end
     exchangeURLs(vOutputFile, vInputFile, uris)
 end
