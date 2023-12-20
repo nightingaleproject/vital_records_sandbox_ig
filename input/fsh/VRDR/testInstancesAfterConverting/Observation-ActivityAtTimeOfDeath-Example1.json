@@ -1,0 +1,30 @@
+{
+  "resourceType": "Observation",
+  "id": "ActivityAtTimeOfDeath-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-activity-at-time-of-death"
+    ]
+  },
+  "subject": {
+    "display": "NCHS generated"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "80626-5",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "status": "final",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "1",
+        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-activity-at-time-of-death-cs",
+        "display": "While engaged in leisure activities."
+      }
+    ]
+  }
+}

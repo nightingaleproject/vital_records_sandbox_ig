@@ -11,7 +11,7 @@
       "coding": [
         {
           "code": "funeralhome",
-          "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-organization-type-cs",
+          "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-organization-type-cs",
           "display": "Funeral Home"
         }
       ]

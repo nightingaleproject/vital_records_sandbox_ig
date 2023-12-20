@@ -14,7 +14,7 @@
           "coding": [
             {
               "code": "2",
-              "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-bypass-edit-flag-cs",
+              "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs",
               "display": "Edit Failed, Data Queried, but not Verified"
             }
           ]

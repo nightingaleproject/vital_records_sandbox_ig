@@ -112,7 +112,7 @@
           "coding": [
             {
               "code": "0",
-              "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-bypass-edit-flag-cs",
+              "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs",
               "display": "Edit Passed"
             }
           ]
@@ -151,19 +151,19 @@
       {
         "extension": [
           {
-            "url": "day",
+            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day",
             "valueUnsignedInt": 10
           },
           {
-            "url": "month",
+            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month",
             "valueUnsignedInt": 11
           },
           {
-            "url": "year",
+            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year",
             "valueUnsignedInt": 2004
           }
         ],
-        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime"
+        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate"
       }
     ]
   }

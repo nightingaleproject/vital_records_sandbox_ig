@@ -61,7 +61,7 @@
       {
         "extension": [
           {
-            "url": "day",
+            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day",
             "_valueUnsignedInt": {
               "extension": [
                 {
@@ -72,15 +72,15 @@
             }
           },
           {
-            "url": "month",
+            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month",
             "valueUnsignedInt": 11
           },
           {
-            "url": "year",
+            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year",
             "valueUnsignedInt": 2020
           },
           {
-            "url": "time",
+            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Time",
             "valueTime": "12:13:14",
             "_valueTime": {
               "extension": [

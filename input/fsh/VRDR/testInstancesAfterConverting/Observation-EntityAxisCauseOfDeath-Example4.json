@@ -15,7 +15,7 @@
         "coding": [
           {
             "code": "lineNumber",
-            "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-component-cs"
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"
           }
         ]
       },
@@ -26,7 +26,7 @@
         "coding": [
           {
             "code": "position",
-            "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-component-cs"
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"
           }
         ]
       },
@@ -37,7 +37,7 @@
         "coding": [
           {
             "code": "eCodeIndicator",
-            "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-component-cs"
+            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"
           }
         ]
       },

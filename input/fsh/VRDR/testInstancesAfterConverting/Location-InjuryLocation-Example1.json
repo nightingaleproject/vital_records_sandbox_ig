@@ -1,0 +1,24 @@
+{
+  "resourceType": "Location",
+  "id": "InjuryLocation-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-injury-location"
+    ]
+  },
+  "address": {
+    "text": "5590 Lockwood Drive 20621 US"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "injury",
+          "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-location-type-cs"
+        }
+      ]
+    }
+  ],
+  "description": "5590 Lockwood Drive 20621 US",
+  "name": "Home"
+}

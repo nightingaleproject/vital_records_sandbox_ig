@@ -1,0 +1,30 @@
+{
+  "resourceType": "Location",
+  "id": "DeathLocation-Example1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location"
+    ]
+  },
+  "address": {
+    "city": "Albany",
+    "state": "NY",
+    "country": "US"
+  },
+  "position": {
+    "latitude": 38.889248,
+    "longitude": -77.050636
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "death",
+          "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-location-type-cs"
+        }
+      ]
+    }
+  ],
+  "name": "Pecan Grove Nursing Home",
+  "description": "nursing home"
+}

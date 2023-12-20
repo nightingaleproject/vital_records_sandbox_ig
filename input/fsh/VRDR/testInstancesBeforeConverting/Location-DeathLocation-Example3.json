@@ -1,0 +1,24 @@
+{
+  "resourceType": "Location",
+  "id": "DeathLocation-Example3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vrsandbox/StructureDefinition/vrdr-death-location"
+    ]
+  },
+  "address": {
+    "state": "NY",
+    "country": "US"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "death",
+          "system": "http://hl7.org/fhir/us/vrsandbox/CodeSystem/vrdr-location-type-cs"
+        }
+      ]
+    }
+  ],
+  "name": "Pecan Grove Nursing Home"
+}
