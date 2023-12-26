@@ -1,8 +1,4 @@
 
-RuleSet: addentry(type, id)
-* entry[+].resource = {id}
-* entry[=].fullUrl = "http://www.example.org/fhir/{type}/{id}"
-
 RuleSet: Identifiers2020NY000182
 * identifier.value = "2020NY000182"
 * identifier.extension[certificateNumber].valueString = "000182"
