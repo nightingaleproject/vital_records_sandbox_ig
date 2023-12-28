@@ -15,27 +15,29 @@
     border-bottom: 2px solid #98c1d9;
     }
     </style>
+<br/><br/>
+<br/><br/>
 ### Mortality Roster IJE Mapping
 
-<table align='left' border='1' cellpadding='1' cellspacing='1' style='width:100%;'>
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
 <tr>
-<td style='background-color:#D0F0C0; text-align: center;'><b>#</b></td>
-<td style='background-color:#D0F0C0;'><b>Description</b></td>
-<td style='background-color:#D0F0C0;'><b>IJE Name</b></td>
-<td style='background-color:#D0F0C0;'><b>Profile</b></td>
-<td style='background-color:#D0F0C0;'><b>Field</b></td>
-<td style='background-color:#D0F0C0;'><b>Type</b></td>
-<td style='background-color:#D0F0C0;'><b>Value Set/Comments</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 8%;'><b>IJE Name</b></td>
+<td style='background-color:#98c1d9; width: 27%;'><b>Profile</b></td>
+<td style='background-color:#98c1d9;'><b>Field</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>Type</b></td>
+<td style='background-color:#98c1d9; width: 14%;'><b>Value Set/Comments</b></td>
 </tr>
 <tr><td style='text-align: center;'>8</td><td>Date of Death--Month</td><td style='text-align: center;'>DOD_MO</td><td><a href='StructureDefinition-vrdr-death-date.html'>DeathDate</a></td><td>value</td><td>dateTime</td><td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td></tr>
 <tr><td style='text-align: center;'>9</td><td>Date of Death--Day</td><td style='text-align: center;'>DOD_DY</td><td><a href='StructureDefinition-vrdr-death-date.html'>DeathDate</a></td><td>value</td><td>dateTime</td><td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td></tr>
 <tr><td style='text-align: center;'>10</td><td>Date of Death--Year</td><td style='text-align: center;'>DOD_YR</td><td><a href='StructureDefinition-vrdr-death-date.html'>DeathDate</a></td><td>value</td><td>dateTime</td><td>Required for processing</td></tr>
 <tr><td style='text-align: center;'>6</td><td>State, U.S. Territory or Canadian Province of Death - literal</td><td style='text-align: center;'>STATETEXT_D</td><td><a href='StructureDefinition-vrdr-death-location.html'>DeathLocation</a></td><td>address.state (expanded from 2 letter code)</td><td>string</td><td>-</td></tr>
-<tr><td style='text-align: center;'>7</td><td>State, U.S. Territory or Canadian Province of Death - code</td><td style='text-align: center;'>DSTATE</td><td><a href='StructureDefinition-vrdr-death-location.html'>DeathLocation</a></td><td>address.state or address.state.extension[nationalReportingJurisdictionId ]</td><td>codeable</td><td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a> or <a href='ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a></td></tr>
-<tr><td style='text-align: center;'>30</td><td>Death Country - Code</td><td style='text-align: center;'>DCOUNTRYC</td><td><a href='StructureDefinition-vrdr-death-location.html'>DeathLocation</a></td><td>address.country </td><td>string </td><td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a>.  Note: For US Death certificates should be US.   </td></tr>
+<tr><td style='text-align: center;'>7</td><td>State, U.S. Territory or Canadian Province of Death - code</td><td style='text-align: center;'>DSTATE</td><td><a href='StructureDefinition-vrdr-death-location.html'>DeathLocation</a></td><td>address.state or address.state.extension[nationalReportingJurisdictionId ]</td><td>codeable</td><td>[ValueSetStatesTerritoriesAndProvincesVitalRecords] or [ValueSetJurisdictionVitalRecords]</td></tr>
+<tr><td style='text-align: center;'>30</td><td>Death Country - Code</td><td style='text-align: center;'>DCOUNTRYC</td><td><a href='StructureDefinition-vrdr-death-location.html'>DeathLocation</a></td><td>address.country </td><td>string </td><td>[ValueSetResidenceCountryVitalRecords].  Note: For US Death certificates should be US.   </td></tr>
 <tr><td style='text-align: center;'>1</td><td>State, U.S. Territory or Canadian Province of Birth - literal</td><td style='text-align: center;'>STATEBTH</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code)</td><td>string</td><td>See <a href='usage.html#state-literals'>StateLiterals</a></td></tr>
-<tr><td style='text-align: center;'>2</td><td>State, U.S. Territory or Canadian Province of Birth - code</td><td style='text-align: center;'>BPLACE_ST</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present </td><td>string</td><td><a href='ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a></td></tr>
+<tr><td style='text-align: center;'>2</td><td>State, U.S. Territory or Canadian Province of Birth - code</td><td style='text-align: center;'>BPLACE_ST</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present </td><td>string</td><td>[ValueSetJurisdictionVitalRecords]</td></tr>
 <tr><td style='text-align: center;'>3</td><td>Decedent's Legal Name--Given </td><td style='text-align: center;'>GNAME</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>name.given , name.use = official</td><td>string</td><td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td></tr>
 <tr><td style='text-align: center;'>4</td><td>Decedent's Legal Name--Middle</td><td style='text-align: center;'>MIDNAME</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>name.given , name.use = official (first letter)</td><td>string</td><td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td></tr>
 <tr><td style='text-align: center;'>5</td><td>Decedent's Legal Name--Last</td><td style='text-align: center;'>LNAME</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>name.family , name.use = official</td><td>string</td><td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td></tr>
@@ -47,9 +49,9 @@
 <tr><td style='text-align: center;'>22</td><td>Decedent's Suffix</td><td style='text-align: center;'>SUFF</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>name.suffix , name.use = official</td><td>string</td><td>-</td></tr>
 <tr><td style='text-align: center;'>26</td><td>Decedent's Maiden Name</td><td style='text-align: center;'>DMAIDEN</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>name.text , name.use=maiden</td><td>string</td><td></td></tr>
 <tr><td style='text-align: center;'>27</td><td>State, U.S. Territory or Canadian Province of Decedent's Residence - literal</td><td style='text-align: center;'>STATETEXT_R </td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>address.state (expanded from 2 letter code)</td><td>string</td><td>See <a href='usage.html#state-literals'>StateLiterals</a></td></tr>
-<tr><td style='text-align: center;'>28</td><td>State, U.S. Territory or Canadian Province of Decedent's Residence - code</td><td style='text-align: center;'>STATEC</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>address.state</td><td>string</td><td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td></tr>
-<tr><td style='text-align: center;'>29</td><td>Birthplace Country - Code</td><td style='text-align: center;'>BPLACE_CT</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>extension[patient-birthPlace].value[x].country </td><td>string</td><td><a href='ValueSet-ValueSet-birthplace-country-vr.html'>ValueSetBirthplaceCountryVitalRecords</a>.</td></tr>
-<tr><td style='text-align: center;'>31</td><td>Decedent's Residence Country - Code</td><td style='text-align: center;'>COUNTRYC</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>address.country</td><td>string</td><td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td></tr>
+<tr><td style='text-align: center;'>28</td><td>State, U.S. Territory or Canadian Province of Decedent's Residence - code</td><td style='text-align: center;'>STATEC</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>address.state</td><td>string</td><td>[ValueSetStatesTerritoriesAndProvincesVitalRecords]</td></tr>
+<tr><td style='text-align: center;'>29</td><td>Birthplace Country - Code</td><td style='text-align: center;'>BPLACE_CT</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>extension[patient-birthPlace].value[x].country </td><td>string</td><td>[ValueSetBirthplaceCountryVitalRecords].</td></tr>
+<tr><td style='text-align: center;'>31</td><td>Decedent's Residence Country - Code</td><td style='text-align: center;'>COUNTRYC</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>address.country</td><td>string</td><td>[ValueSetResidenceCountryVitalRecords]</td></tr>
 <tr><td style='text-align: center;'>32</td><td>Decedent's SSN (may be used by some jurisdictions when allowed by law, to match with the SSN contained with the birth record)</td><td style='text-align: center;'>SSN</td><td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td><td>identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code="SB"</td><td>string</td><td>-</td></tr>
 <tr><td style='text-align: center;'>16</td><td>Father's First Name</td><td style='text-align: center;'>DADFNAME</td><td><a href='StructureDefinition-vrdr-decedent-father.html'>DecedentFather</a></td><td>name.given , name.use = official</td><td>string</td><td>-</td></tr>
 <tr><td style='text-align: center;'>17</td><td>Father's Middle Name</td><td style='text-align: center;'>DADMIDNAME</td><td><a href='StructureDefinition-vrdr-decedent-father.html'>DecedentFather</a></td><td>name.given , name.use = official</td><td>string</td><td>-</td></tr>
@@ -63,16 +65,16 @@
 </table>
 ### Not Implemented Content
 
-<table align='left' border='1' cellpadding='1' cellspacing='1' style='width:100%;'>
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
 <tr>
-<td style='background-color:#D0F0C0; text-align: center;'><b>#</b></td>
-<td style='background-color:#D0F0C0;'><b>Description</b></td>
-<td style='background-color:#D0F0C0;'><b>IJE Name</b></td>
-<td style='background-color:#D0F0C0;'><b>Profile</b></td>
-<td style='background-color:#D0F0C0;'><b>Field</b></td>
-<td style='background-color:#D0F0C0;'><b>Type</b></td>
-<td style='background-color:#D0F0C0;'><b>Value Set/Comments</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 8%;'><b>IJE Name</b></td>
+<td style='background-color:#98c1d9; width: 27%;'><b>Profile</b></td>
+<td style='background-color:#98c1d9;'><b>Field</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 6%;'><b>Type</b></td>
+<td style='background-color:#98c1d9; width: 14%;'><b>Value Set/Comments</b></td>
 </tr>
 <tr><td style='text-align: center;'>25</td><td>Filler</td><td style='text-align: center;'>BLANK1</td><td>[not implemented]</td><td></td><td></td><td></td></tr>
 <tr><td style='text-align: center;'>35</td><td>Blank for Future Expansion</td><td style='text-align: center;'>BLANK2</td><td>[not implemented]</td><td></td><td></td><td></td></tr>
