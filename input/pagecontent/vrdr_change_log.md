@@ -1,15 +1,30 @@
-### VRDR STU 2.2 CI Build
-* __InputRaceAndEthnicity__
-  * Aligned documentation of race literal fields with profiles (e.g., OtherRaceLiteral1 --> FirstOtherRaceLiteral , FirstOtherPacificIslandLiteral --> FirstOtherPacificIslanderLiteral, SecondOtherPacificIslandLiteral --> SecondOtherPacificIslanderLiteral)
-  * Deleted 'leading zeroes' from description of Certificate Number and State Auxiliary Number
-* __DeathDate.component[datetimePronouncedDead]__  [FHIR-40898](https://jira.hl7.org/browse/FHIR-40898)
+### Post STU2.2 (December 2023 and onward)
+* Clarified description of [BirthRecordIdentifier] that it is only used for infant deaths.
+* Clarified that certificate numbers are 6 digit numbers with leading zeroes allowed.  They are (unfortunately) defined as FHIR strings.
+* Restricted [LocationJurisdictionId] Extension to Address.state context.
+* Added a new bundle for [Coded Industry and Occupation][IndustryOccupationCodedContentBundle] with [example][IndustryOccupationCodedContentBundle-Example1] to address [FHIR-42748](https://jira.hl7.org/browse/FHIR-42748)
+* Modified composition examples to use ruleset for general cleanup and to address publisher errors related to fullurl based rules around matching relative references
+* MaritalStatus valueset and corresponding concept map were moved to VRCL for general utility. Decedent profile made to reference MaritalStatus VS in VRCL. [FHIR-43416](https://jira.hl7.org/browse/FHIR-43416)
+
+### VRDR STU2.2 (September 2023)
+* __Typos__:  Fixed some typos and extra, missing commas
+* __Links__:  Fixed some broken links in the narrative
+* __Concept Maps__:  Added notes to all of the [ConceptMaps](artifacts.html#terminology-concept-maps) supporting mapping from legacy TRX, MRE and IJE terminology to the valuesets defined in this IG indicating that 'TRX', 'MRE' and 'IJE' are not proper URIs, and that proper URIs will be incorporated into future versions.
+* __Concept Map__ [UnitsOfAgeCM] : Corrected an error in the codesystem for the code UNK, changing it from UCUM to NullFlavor.
+* __Clarifying__ [PartialDate] __and__ [PartialDateTime]: Additional clarification on the use of these extensions has been has been added to the [usage](usage.html#partial-dates-and-times) page.
+* __[Decedent]__ Decedent's last name (LNAME) is required by NCHS, and is expected to be 'UNKNOWN' if missing.   Documented that not providing Decedent.name.fname is equivalent to LNAME='UNKNOWN'.  Clarified with a [note](usage.html#decedent-name) that, based on USCore requirements, conformance to the profile requires that the last, middle, or first name be present, or have a data absent extension. Corrected the types for coded City (CITYC) and County (COUNTYC) of residence in the data dictionary from string to integer.  Changes are visible in [Death Record data dictionary](DeathRecordDataDictionary.html), [Mortality Roster data dictionary](MortalityRosterDataDictionary.html) and [Decedent].    [FHIR-41611](https://jira.hl7.org/browse/FHIR-41611) [FHIR-41679](https://jira.hl7.org/browse/FHIR-41679)
+* __[Decedent], [DeathLocation], and [InjuryLocation]:__ The data dictionary description of content now correctly refers to the coded county value using the districtCode extension.  Previously it referenced countyCode.   The profiles were correct.  Only the data dictionary document required correction.
+* __[Decedent]__ Gender is *not* required by NCHS, but is required for USCore conformance.   Added Gender to the [Death Record data dictionary](DeathRecordDataDictionary.html), [Mortality Roster data dictionary](MortalityRosterDataDictionary.html)  and [Decedent], with an accompanying usage [note](https://build.fhir.org/ig/HL7/vrdr/branches/STU2.2-preview1/usage.html#decedent-gender). [FHIR-41679](https://jira.hl7.org/browse/FHIR-41679)
+* __Extension Contexts__: Due to changes in publication requirements and conformance to best practices, the context of several extensions has been restricted ([BypassEditFlag](StructureDefinition-BypassEditFlag.html), [DateDay], [DateMonth], [DateYear], [FilingFormat], [LocationJurisdictionId], [PartialDate], [PartialDateTime], [ReplaceStatus](StructureDefinition-ReplaceStatus.html), [StateSpecificField], [NVSSSexAtDeath], and [SpouseAlive]).  This should have no impact on implementers. [FHIR-41612](https://jira.hl7.org/browse/FHIR-41612)
+* __[InputRaceAndEthnicity]__
+  * Aligned documentation of race literal fields with profile's actual content(e.g., OtherRaceLiteral1 --> FirstOtherRaceLiteral , FirstOtherPacificIslandLiteral --> FirstOtherPacificIslanderLiteral, SecondOtherPacificIslandLiteral --> SecondOtherPacificIslanderLiteral).  The profile content was correct. This was only a change to the documentation in the [data dictionary](DeathRecordDataDictionary.html) and the narrative [introduction to the profile](StructureDefinition-vrdr-input-race-and-ethnicity.html#usage).  [FHIR-41611](https://jira.hl7.org/browse/FHIR-41611)
+* __Leading Zeroes__: Deleted 'leading zeroes' from description of [Certificate Number](StructureDefinition-CertificateNumber.html) and [State Auxiliary Number 1](StructureDefinition-AuxiliaryStateIdentifier1.html) and [State Auxiliary Number 2](StructureDefinition-AuxiliaryStateIdentifier2.html) [FHIR-41611](https://jira.hl7.org/browse/FHIR-41611)
+* __[DeathDate].component[datetimePronouncedDead]__  [FHIR-40898](https://jira.hl7.org/browse/FHIR-40898)
   * In STU2.1, we added a PartialDateTime extension which proved inappropriate.
-  * This value can not be either a time or a dateTime and that addresses the problem in STU2 that a death time without a death date was awkward to specify.
-* __Terminology:__
-  * removed: CanadaProvinces value set (unused), JurisdictiosProvinces value set (unused)
+  * This value was constrained to a dateTime, and is now constrained to a dateTime or a time. This addresses the problem in STU2 that a death time without a death date was awkward to specify.  This is possible in IJE, but a FHIR dateTime must include the date component.   A [DeathDate example](Observation-DeathDate-Example4.html) has been added to illustrate use of a time-only DeathDate.
 
 ### VRDR STU 2.1 (March 2023)
-* __Terminology:__
+* __Terminology:__ [FHIR-3946](https://jira.hl7.org/browse/FHIR-3946)
   * Pregnancy Status:  Added missing code for 'Not reported on certificate'.
   * Race and Ethnicity: Added some missing codes
   * Certifier Types: Corrected display strings to align with SNOMEDCT
@@ -28,21 +43,19 @@
 ### VRDR STU 2 Publication Version (August 31, 2022)
 #### General Changes
 * __Scope:__ The VRDR IG now supports standards-based interoperable exchange of death record information that is information-content equivalent with the legacy IJE, MRE, TRX, and Mortality Roster formats.   The mapping of legacy IJE fields to the FHIR profiles is clearly documented.   Profiles that did not support any data fields used for submission of death records to NCHS or for inter-jurisdictional exchange were eliminated.
-* __Documentation:__ A [death record data dictionary](vrdr_ije_mapping_mortality.html) that maps IJE fields has been added, and each profile includes the data dictionary elements that the profile supports. A separate [mortality roster data dictionary](vrdr_ije_mapping_mortalityRoster.html) is also included.
-* __Use Case Documentation:__ Documentation is provided for the [four use cases](vrdr_background.html#use-cases) the VRDR is intended to support, and how the IG's profiles are used in support of each use case.
-<!--- TODO after IGs separate, revert new profiles back to:  [new profiles](artifacts.html#e-coded-observations)--->
-* __Inclusion of FHIR Profiles for Coded Content:__ Eight [new profiles](artifacts.html#13), seven of which are Observations, have been added to support interoperable exchange of the decedent's coded race, ethnicity and cause of death.
-* __Race and Ethnicity:__ The Race and Ethnicity submitted as part of death registration are now represented accurately with respect to the NCHS process.  Separate profiles are provided for submission of [sending race and ethnicity to NCHS](https://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-input-race-and-ethnicity-vr.html), and to represent [coded race and ethnicity](https://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-coded-race-and-ethnicity-vr.html).
+* __Documentation:__ A [death record data dictionary](DeathRecordDataDictionary.html) that maps IJE fields has been added, and each profile includes the data dictionary elements that the profile supports. A separate [mortality roster data dictionary](MortalityRosterDataDictionary.html) is also included.
+* __Use Case Documentation:__ Documentation is provided for the [four use cases](background.html#use-cases) the VRDR is intended to support, and how the IG's profiles are used in support of each use case.
+* __Inclusion of FHIR Profiles for Coded Content:__ Eight [new profiles](artifacts.html#e-coded-observations), seven of which are Observations, have been added to support interoperable exchange of the decedent's coded race, ethnicity and cause of death.
+* __Race and Ethnicity:__ The Race and Ethnicity submitted as part of death registration are now represented accurately with respect to the NCHS process.  Separate profiles are provided for submission of [sending race and ethnicity to NCHS](StructureDefinition-vrdr-input-race-and-ethnicity.html), and to represent [coded race and ethnicity](StructureDefinition-vrdr-coded-race-and-ethnicity.html).
 * __Additional Bundles:__ In addition to the [DeathCertificateDocument](StructureDefinition-vrdr-death-certificate-document.html) new bundles have been defined for exchange of [coded demographic](StructureDefinition-vrdr-demographic-coded-bundle.html),  [cause of death](StructureDefinition-vrdr-cause-of-death-coded-bundle.html), and [mortality roster](StructureDefinition-vrdr-mortality-roster-bundle.html) information.  The new bundles are information content equivalent to their legacy counterparts.  All four bundles use the same set of identifiers.
-* __Examples:__ [Examples](artifacts.html#vrdr-examples) are included for all profiles and extensions.
+* __Examples:__ [Examples](artifacts.html#example-example-instances) are included for all profiles and extensions.
 * __Consistent Naming and Identifiers:__ The names and identifiers have been changed to achieve consistency.
 * __USCore:__ Now depends on USCore 5.0.1, and the included USCoreRelatedPersonProfile.   RelatedPerson.active = true.
 
 #### Terminology Changes
 * __Standard Terminologies:__  An attempt has been made to use standard terminologies and code systems (e.g., SNOMED-CT, LOINC, HL7) wherever possible.
 * __Non-Standard Terminologies:__ Non-standard terminologies are represented within the IG, rather than by reference to PHINVADs.
-<!--- TODO after IGs separate, revert new profiles back to:  [new profiles](artifacts.html#e-coded-observations)--->
-* __ValueSets:__ All valuesets are included within the IG, rather than by reference to PHINVADs.   [Concept maps](artifacts.html#5) are provided to enable client software to map from legacy codes to the codes used in the IG's valuesets.
+* __ValueSets:__ All valuesets are included within the IG, rather than by reference to PHINVADs.   [Concept maps](artifacts.html#terminology-concept-maps) are provided to enable client software to map from legacy codes to the codes used in the IG's valuesets.
 * __States, Territories, Jurisdictions, Provinces and Countries:__ All of these geographic entities are represented consistently throughout the IG using 2-letter postal abbreviations.
 
 #### Notable Changes to Profiles

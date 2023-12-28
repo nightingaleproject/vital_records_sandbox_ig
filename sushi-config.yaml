@@ -350,7 +350,6 @@ groups:
       - ICD10CausesOfDeathVS
       - IntentionalRejectVS
       - MannerOfDeathVS
-      - MaritalStatusVS
       - MethodOfDispositionVS
       - PlaceOfDeathVS
       - PlaceOfInjuryVS
@@ -378,7 +377,6 @@ groups:
       - FilingFormatCM
       - IntentionalRejectCM
       - MannerOfDeathCM
-      - MaritalStatusCM
       - MethodOfDispositionCM
       - PlaceOfDeathCM
       - PlaceOfInjuryCM
