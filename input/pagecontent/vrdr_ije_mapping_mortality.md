@@ -1,4 +1,5 @@
 
+The following table illustrates the mappings of fields in the Interjurisdictional Exchange (IJE) formats for death records to profiles and fields within this FHIR Implementation guide. This information is provided to guide implementers who are transitioning from the familiar IJE to the new FHIR format.
 <style>
     table.style1 { 
         border-collapse: collapse; 
