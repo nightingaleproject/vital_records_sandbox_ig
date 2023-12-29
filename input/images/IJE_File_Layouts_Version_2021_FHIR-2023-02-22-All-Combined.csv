@@ -646,7 +646,7 @@ A = Married but Separated
 W = Widowed
 D = Divorced
 S = Never Married
-U = Not Classifiable",,VRDR,Decedent,maritalStatus,codeable, [MaritalStatusVS],,y,,,,Decedent
+U = Not Classifiable",,VRDR,Decedent,maritalStatus,codeable, [ValueSetMaritalStatusVitalRecords],,y,,,,Decedent
 454,Mortality Roster,25,548,2,Filler,BLANK1,BLANK,,not implemented,not implemented,,,,,,,,,not implemented
 33,Mortality,26,225,2,"State, U.S. Territory or Canadian Province of Decedent's residence - code",STATEC,"NCHS Instruction Manual: Part 8
    ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
@@ -729,7 +729,7 @@ A = Married but Separated
 W = Widowed
 D = Divorced
 S = Never Married
-U = Not Classifiable",,VRDR,Decedent,maritalStatus,codeable, [MaritalStatusVS],,y,,,,Decedent
+U = Not Classifiable",,VRDR,Decedent,maritalStatus,codeable, [ValueSetMaritalStatusVitalRecords],,y,,,,Decedent
 301,Surveillance,29,233,2,Date of Death--Day,DOD_DY,"01-31 (based on month), 99",,VRDR,DeathDate,value,dateTime,See [PartialDatesAndTimes],,y,,,,DeathDate
 493,Natality,29,90,1,Mother Married?--Ever (NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),MARE,"Y = Yes
 N = No

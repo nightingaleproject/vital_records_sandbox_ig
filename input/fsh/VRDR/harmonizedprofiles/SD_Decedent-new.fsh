@@ -16,7 +16,7 @@ Description: "Decedent (PatientVitalRecords)"
 * birthDate ^short = "Date of Birth"
 * address ^short = "Decedent's Residence"
 * maritalStatus only CodeableConcept
-* maritalStatus from MaritalStatusVS (required)  // MARITAL
+* maritalStatus from ValueSetMaritalStatusVitalRecords (required)  // MARITAL
 * maritalStatus.text ^short = "Marital Description"
 * maritalStatus.extension contains
     BypassEditFlag named bypassEditFlag 0..1 // MARITAL_BYPASS

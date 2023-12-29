@@ -3,22 +3,169 @@ The death record submission process does not require an identifier.  As a result
 an identifier.
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Mortality | 220 | Certifier's First Name | CERTFIRST | name.given , name.use = official |string |- |
-| Mortality | 221 | Certifier's Middle Name | CERTMIDDLE | name.given , name.use = official |string |- |
-| Mortality | 222 | Certifier's Last Name | CERTLAST | name.family , name.use = official |string |- |
-| Mortality | 223 | Certifier's Suffix Name | CERTSUFFIX | name.suffix , name.use = official |string |- |
-| Mortality | 224 | Certifier - Street number | CERTSTNUM | address.extension[stnum] |string |- |
-| Mortality | 225 | Certifier - Pre Directional | CERTPREDIR | address.extension[predir] |string |- |
-| Mortality | 226 | Certifier - Street name | CERTSTRNAME | address.extension[stname] |string |- |
-| Mortality | 227 | Certifier - Street designator | CERTSTRDESIG | address.extension[stdesig] |string |- |
-| Mortality | 228 | Certifier - Post Directional | CERTPOSTDIR | address.extension[postdir] |string |- |
-| Mortality | 229 | Certifier - Unit or apt number | CERTUNITNUM | address.extension[unitnum] |string |- |
-| Mortality | 230 | Long string address for Certifier same as above but allows states to choose the way they capture information. | CERTADDRESS | address.line  |string |- |
-| Mortality | 231 | Certifier - City or Town name | CERTCITYTEXT | address.city  |string |- |
-| Mortality | 232 | State, U.S. Territory or Canadian Province of Certifier - code | CERTSTATECD | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
-| Mortality | 233 | State, U.S. Territory or Canadian Province of Certifier - literal | CERTSTATE | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
-| Mortality | 234 | Certifier - Zip | CERTZIP | address.postalCode |string |- |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details open>
+
+<summary>
+
+<strong class='context-menu'> Mortality (Decedent) </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>220</td>
+  <td>Certifier's First Name</td>
+  <td>CERTFIRST</td>
+  <td>name.given , name.use = official</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>221</td>
+  <td>Certifier's Middle Name</td>
+  <td>CERTMIDDLE</td>
+  <td>name.given , name.use = official</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>222</td>
+  <td>Certifier's Last Name</td>
+  <td>CERTLAST</td>
+  <td>name.family , name.use = official</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>223</td>
+  <td>Certifier's Suffix Name</td>
+  <td>CERTSUFFIX</td>
+  <td>name.suffix , name.use = official</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>224</td>
+  <td>Certifier - Street number</td>
+  <td>CERTSTNUM</td>
+  <td>address.extension[stnum]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>225</td>
+  <td>Certifier - Pre Directional</td>
+  <td>CERTPREDIR</td>
+  <td>address.extension[predir]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>226</td>
+  <td>Certifier - Street name</td>
+  <td>CERTSTRNAME</td>
+  <td>address.extension[stname]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>227</td>
+  <td>Certifier - Street designator</td>
+  <td>CERTSTRDESIG</td>
+  <td>address.extension[stdesig]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>228</td>
+  <td>Certifier - Post Directional</td>
+  <td>CERTPOSTDIR</td>
+  <td>address.extension[postdir]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>229</td>
+  <td>Certifier - Unit or apt number</td>
+  <td>CERTUNITNUM</td>
+  <td>address.extension[unitnum]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>230</td>
+  <td>Long string address for Certifier same as above but allows states to choose the way they capture information.</td>
+  <td>CERTADDRESS</td>
+  <td>address.line </td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>231</td>
+  <td>Certifier - City or Town name</td>
+  <td>CERTCITYTEXT</td>
+  <td>address.city </td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>232</td>
+  <td>State, U.S. Territory or Canadian Province of Certifier - code</td>
+  <td>CERTSTATECD</td>
+  <td>address.state</td>
+  <td>string</td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>233</td>
+  <td>State, U.S. Territory or Canadian Province of Certifier - literal</td>
+  <td>CERTSTATE</td>
+  <td>address.state (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>234</td>
+  <td>Certifier - Zip</td>
+  <td>CERTZIP</td>
+  <td>address.postalCode</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

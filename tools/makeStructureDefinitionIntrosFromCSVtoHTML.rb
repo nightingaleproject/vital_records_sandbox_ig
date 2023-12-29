@@ -12,7 +12,7 @@
 # IO.copy_stream(download2, 'input/mapping/BFDR_Forms_Mapping.csv')
 
 #run:
-#ruby tools/makeStructureDefinitionIntrosFromCSVtoHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv input/mapping/BFDR_Forms_Mapping.csv
+#ruby tools/makeStructureDefinitionIntrosFromCSVtoHTML.rb input/mapping/VRDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv input/mapping/BFDR_Forms_Mapping.csv
 
 require "json"
 require "pry"
@@ -48,7 +48,7 @@ IJE_FHIR_TYPE_COL = 12
 IJE_FHIR_COMMENTS_COL = 13
 #IJE_MAPPING_PROFILE_COL = 19 #NOT USED
 
-# BFDR_Profile_Intros.csv columns
+# VRDR_Profile_Intros.csv columns
 INTRO_ORDER_COL = 0
 INTRO_HEADING_COL = 1 
 INTRO_PROFILE_NAME_COL = 2
@@ -72,7 +72,7 @@ FORMS_FIELD_COL = 7
 FORMS_CONTEXT_COL = 8
 
 
-# ARGV[0] input/mapping/BFDR_Profile_Intros.csv
+# ARGV[0] input/mapping/VRDR_Profile_Intros.csv
 vProfileIntrosSpreadsheet = ARGV[0]
 #vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
 #vProfileIntrosSpreadsheet.default_sheet = "BFDR"
@@ -627,5 +627,5 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
 end
 
 
-createSDIntros("BFDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet, alias_links)
+createSDIntros("VRDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet, alias_links)
 

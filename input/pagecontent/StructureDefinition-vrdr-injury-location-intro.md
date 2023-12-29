@@ -1,14 +1,105 @@
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Mortality | 176 | County of Injury - literal | COUNTYTEXT_I | address.district |string |- |
-| Mortality | 177 | County of Injury code | COUNTYCODE_I | address.district.extension[ districtCode].value |integer |see [CountyCodes] |
-| Mortality | 178 | Town/city of Injury - literal | CITYTEXT_I | address.city |string |- |
-| Mortality | 179 | Town/city of Injury code | CITYCODE_I | address.city.extension[ cityCode].value |integer |see [CityCodes] |
-| Mortality | 180 | State, U.S. Territory or Canadian Province of Injury - code | STATECODE_I | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
-| Mortality | 181 | Place of injury. Longitude | LONG_I | position.longitude |float |- |
-| Mortality | 182 | Place of injury. Latitude | LAT_I | position.latitude |float |- |
-| Mortality | 237 | State, U.S. Territory or Canadian Province of Injury - literal | STINJURY | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details open>
+
+<summary>
+
+<strong class='context-menu'> Mortality (Decedent) </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>176</td>
+  <td>County of Injury - literal</td>
+  <td>COUNTYTEXT_I</td>
+  <td>address.district</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>177</td>
+  <td>County of Injury code</td>
+  <td>COUNTYCODE_I</td>
+  <td>address.district.extension[ districtCode].value</td>
+  <td>integer</td>
+  <td>see <a href='usage.html#county-codes'>CountyCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>178</td>
+  <td>Town/city of Injury - literal</td>
+  <td>CITYTEXT_I</td>
+  <td>address.city</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>179</td>
+  <td>Town/city of Injury code</td>
+  <td>CITYCODE_I</td>
+  <td>address.city.extension[ cityCode].value</td>
+  <td>integer</td>
+  <td>see <a href='usage.html#city-codes'>CityCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>180</td>
+  <td>State, U.S. Territory or Canadian Province of Injury - code</td>
+  <td>STATECODE_I</td>
+  <td>address.state</td>
+  <td>string</td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>181</td>
+  <td>Place of injury. Longitude</td>
+  <td>LONG_I</td>
+  <td>position.longitude</td>
+  <td>float</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>182</td>
+  <td>Place of injury. Latitude</td>
+  <td>LAT_I</td>
+  <td>position.latitude</td>
+  <td>float</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>237</td>
+  <td>State, U.S. Territory or Canadian Province of Injury - literal</td>
+  <td>STINJURY</td>
+  <td>address.state (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
