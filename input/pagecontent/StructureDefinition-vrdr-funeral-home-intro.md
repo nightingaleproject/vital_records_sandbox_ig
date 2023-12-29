@@ -1,18 +1,141 @@
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Mortality | 206 | Funeral Facility Name | FUNFACNAME | name |string |- |
-| Mortality | 207 | Funeral Facility - Street number | FUNFACSTNUM | address.extension[stnum] |string |- |
-| Mortality | 208 | Funeral Facility - Pre Directional | FUNFACPREDIR | address.extension[predir] |string |- |
-| Mortality | 209 | Funeral Facility - Street name | FUNFACSTRNAME | address.extension[stname] |string |- |
-| Mortality | 210 | Funeral Facility - Street designator | FUNFACSTRDESIG | address.extension[stdesig] |string |- |
-| Mortality | 211 | Funeral Facility - Post Directional | FUNPOSTDIR | address.extension[postdir] |string |- |
-| Mortality | 212 | Funeral Facility - Unit or apt number | FUNUNITNUM | address.extension[unitnum] |string |- |
-| Mortality | 213 | Long string address for Funeral Facility same as above but allows states to choose the way they capture information. | FUNFACADDRESS | address.line |string |address.line  |
-| Mortality | 214 | Funeral Facility - City or Town name | FUNCITYTEXT | address.city |string |address.city  |
-| Mortality | 215 | State, U.S. Territory or Canadian Province of Funeral Facility - code | FUNSTATECD | address.state |string |[ValueSetStatesTerritoriesAndProvincesVitalRecords] |
-| Mortality | 216 | State, U.S. Territory or Canadian Province of Funeral Facility - literal | FUNSTATE | address.state (expanded from 2 letter code) |string |See [StateLiterals] |
-| Mortality | 217 | Funeral Facility - ZIP | FUNZIP | address.postalCode |string |- |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details open>
+
+<summary>
+
+<strong class='context-menu'> Mortality (Decedent) </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>206</td>
+  <td>Funeral Facility Name</td>
+  <td>FUNFACNAME</td>
+  <td>name</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>207</td>
+  <td>Funeral Facility - Street number</td>
+  <td>FUNFACSTNUM</td>
+  <td>address.extension[stnum]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>208</td>
+  <td>Funeral Facility - Pre Directional</td>
+  <td>FUNFACPREDIR</td>
+  <td>address.extension[predir]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>209</td>
+  <td>Funeral Facility - Street name</td>
+  <td>FUNFACSTRNAME</td>
+  <td>address.extension[stname]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>210</td>
+  <td>Funeral Facility - Street designator</td>
+  <td>FUNFACSTRDESIG</td>
+  <td>address.extension[stdesig]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>211</td>
+  <td>Funeral Facility - Post Directional</td>
+  <td>FUNPOSTDIR</td>
+  <td>address.extension[postdir]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>212</td>
+  <td>Funeral Facility - Unit or apt number</td>
+  <td>FUNUNITNUM</td>
+  <td>address.extension[unitnum]</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>213</td>
+  <td>Long string address for Funeral Facility same as above but allows states to choose the way they capture information.</td>
+  <td>FUNFACADDRESS</td>
+  <td>address.line</td>
+  <td>string</td>
+  <td>address.line </td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>214</td>
+  <td>Funeral Facility - City or Town name</td>
+  <td>FUNCITYTEXT</td>
+  <td>address.city</td>
+  <td>string</td>
+  <td>address.city </td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>215</td>
+  <td>State, U.S. Territory or Canadian Province of Funeral Facility - code</td>
+  <td>FUNSTATECD</td>
+  <td>address.state</td>
+  <td>string</td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>216</td>
+  <td>State, U.S. Territory or Canadian Province of Funeral Facility - literal</td>
+  <td>FUNSTATE</td>
+  <td>address.state (expanded from 2 letter code)</td>
+  <td>string</td>
+  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>217</td>
+  <td>Funeral Facility - ZIP</td>
+  <td>FUNZIP</td>
+  <td>address.postalCode</td>
+  <td>string</td>
+  <td>-</td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+

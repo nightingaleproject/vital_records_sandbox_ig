@@ -20,10 +20,61 @@ The DecedentAge profile of Observation records the decedents age at time of deat
   The Decedent Age profile includes:
 ### IJE Mapping
 
-| **Use Case** |  **#**   |  **Description**  | **IJE Name**  |  **Field**  |  **Type**  | **Value Set/Comments**  |
-| :---------: | --------------- | ------------ | ------------- | ---------- | ---------- | -------------- |
-| Mortality | 16 | Decedent's Age--Type | AGETYPE | valueQuantity.code |codeable |[ValueSetUnitsOfAgeVitalRecords] |
-| Mortality | 17 | Decedent's Age--Units | AGE  | valueQuantity.value |decimal |- |
-| Mortality | 18 | Decedent's Age--Edit Flag | AGE_BYPASS | value.extension[ BypassEditFlag ].value |codeable |See [Note on Decedent Name] |
-{: .grid }
-{% include markdown-link-references.md %}
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details open>
+
+<summary>
+
+<strong class='context-menu'> Mortality (Decedent) </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>16</td>
+  <td>Decedent's Age--Type</td>
+  <td>AGETYPE</td>
+  <td>valueQuantity.code</td>
+  <td>codeable</td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-units-of-age-vr.html'>ValueSetUnitsOfAgeVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>17</td>
+  <td>Decedent's Age--Units</td>
+  <td>AGE </td>
+  <td>valueQuantity.value</td>
+  <td>decimal</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>18</td>
+  <td>Decedent's Age--Edit Flag</td>
+  <td>AGE_BYPASS</td>
+  <td>value.extension[ BypassEditFlag ].value</td>
+  <td>codeable</td>
+  <td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
