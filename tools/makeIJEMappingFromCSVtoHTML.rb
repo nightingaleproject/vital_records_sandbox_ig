@@ -183,6 +183,7 @@ vOutputFilename = "/generated/dataDictionaries/vrdr_ije_mapping_mortality.md"
 puts vOutputFilename
 vOutputFile = File.open(Dir.pwd + vOutputFilename, "w")
 vOutputFile.puts ""
+vOutputFile.puts "The following table illustrates the mappings of fields in the Interjurisdictional Exchange (IJE) formats for death records to profiles and fields within this FHIR Implementation guide. This information is provided to guide implementers who are transitioning from the familiar IJE to the new FHIR format."
 createMappingTable("VRDR", "Mortality", "### Death Record IJE Mapping", vOutputFile, vProfileIntrosSpreadsheet, vSpreadsheet)
 
 #create VRDR data dictionary_mortalityRoster
@@ -190,6 +191,7 @@ vOutputFilename1 = "/generated/dataDictionaries/vrdr_ije_mapping_mortalityRoster
 puts vOutputFilename1
 vOutputFile1 = File.open(Dir.pwd + vOutputFilename1, "w")
 vOutputFile1.puts ""
+vOutputFile1.puts "The following table illustrates the mappings of fields in the Interjurisdictional Exchange (IJE) formats for mortality rosters to profiles and fields within this FHIR Implementation guide. This information is provided to guide implementers who are transitioning from the familiar IJE to the new FHIR format."
 createMappingTable("VRDR", "Mortality Roster", "### Mortality Roster IJE Mapping", vOutputFile1, vProfileIntrosSpreadsheet, vSpreadsheet)
 
 
