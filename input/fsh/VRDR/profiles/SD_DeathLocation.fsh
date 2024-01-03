@@ -1,5 +1,5 @@
 Profile: DeathLocation
-Parent: USCoreLocation
+Parent: LocationVitalRecords
 Id: vrdr-death-location
 Title: "Death Location"
 Description: "Death Location (USCoreLocation)"
@@ -9,7 +9,6 @@ Description: "Death Location (USCoreLocation)"
 * type = LocationTypeCS#death
 * type 1..1
 * name ^short = "Name of Death Location"
-* address 0..1
 * address ^short = "Place of Death address"
 * address.city ^short = "Address city"
 * address.state ^short = "Address state"
@@ -17,14 +16,5 @@ Description: "Death Location (USCoreLocation)"
 * address.country ^short = "Address country"
 * address.postalCode ^short = "Address zip"
 * address.line ^short = "Address text"
-* address.state from ValueSetStatesTerritoriesAndProvincesVitalRecords  (required)
-* address.state 0..1
 * address.state ^short = "State/Jurisdiction of death.  Use value in Jurisdiction if present."
-* address.state.extension contains
-    LocationJurisdictionId named nationalReportingJurisdictionId 0..1  // jurisdiction_id
-* address.country from ValueSetResidenceCountryVitalRecords (required)
-* insert CityCode
-* insert CountyCode
-* insert AddressComponents
-* position 0..1
 * position ^short = "Place of death lat/long" // LONG_D and LAT_D
