@@ -5,6 +5,7 @@
 * Added a new bundle for [Coded Industry and Occupation][IndustryOccupationCodedContentBundle] with [example][IndustryOccupationCodedContentBundle-Example1] to address [FHIR-42748](https://jira.hl7.org/browse/FHIR-42748)
 * Modified composition examples to use ruleset for general cleanup and to address publisher errors related to fullurl based rules around matching relative references
 * MaritalStatus valueset and corresponding concept map were moved to VRCL for general utility. Decedent profile made to reference MaritalStatus VS in VRCL. [FHIR-43416](https://jira.hl7.org/browse/FHIR-43416)
+* [DeathLocation], [InjuryLocation], and [DispositionLocation] were updated to depend on the abstract [LocationVitalRecords](https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Location-vr.html) profile in VRCL. 
 
 ### VRDR STU2.2 (September 2023)
 * __Typos__:  Fixed some typos and extra, missing commas
