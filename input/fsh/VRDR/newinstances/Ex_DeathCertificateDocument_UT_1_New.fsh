@@ -115,7 +115,7 @@ Description: "DecedentUT-Example1"
 * address.state = "WY"
 * address.postalCode = "82070"
 * address.country = "US"
-* maritalStatus.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
+* maritalStatus.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#0 "Edit Passed"
 * maritalStatus = $v3-MaritalStatus#S "Never Married"
 
 Instance: InputRaceAndEthnicityUT-Example1
@@ -182,7 +182,7 @@ Description: "EducationUT-Example1"
 * subject = Reference(DecedentUT-Example1)
 * status = #final
 * code = $loinc#80913-7 "Highest level of education [US Standard Certificate of Death]"
-* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#editBypass0 "Edit Passed"
+* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#0 "Edit Passed"
 * valueCodeableConcept = $v3-EducationLevel#ELEM "Elementary School"
 
 Instance: FatherUT-Example1
@@ -260,7 +260,7 @@ Description: "AgeUT-Example1 "
 // * id = "7eda2a2c-f92d-4885-949f-34c500241300"
 * subject = Reference(DecedentUT-Example1)
 //* valueQuantity.extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
-* valueQuantity.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
+* valueQuantity.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#0 "Edit Passed"
 * valueQuantity = 10 'mo' "Months"
 
 Instance: DispositionMethodUT-Example1 
@@ -307,7 +307,7 @@ Description: "PregnancyUT-Example1"
 * status = #final 
 * subject = Reference(DecedentUT-Example1)
 //* valueCodeableConcept.extension[0].url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"
-* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
+* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#0 "Edit Passed"
 * valueCodeableConcept = $v3-NullFlavor#NA "Not applicable"
 
 Instance: ExaminerContactedUT-Example1 

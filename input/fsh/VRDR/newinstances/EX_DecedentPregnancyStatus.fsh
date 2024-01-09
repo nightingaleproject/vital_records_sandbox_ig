@@ -6,4 +6,4 @@ Description: "DecedentPregnancyStatus-Example1"
 * subject = Reference(Decedent-Example1)
 * status = #final
 * valueCodeableConcept = DeathPregnancyStatusCS#2 "Pregnant at time of death"
-* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#2 "Edit Failed, Data Queried, but not Verified"
+* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#2 "Edit Failed, Data Queried, but not Verified"
