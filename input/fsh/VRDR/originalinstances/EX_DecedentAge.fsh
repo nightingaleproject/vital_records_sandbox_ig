@@ -9,4 +9,4 @@ Description: "DecedentAge-Example1"
 * valueQuantity.code = #a
 * valueQuantity.system = $UCUM
 * valueQuantity.unit = "years"
-* valueQuantity.extension[bypassEditFlag].valueCodeableConcept = BypassEditFlagCS#0 "Edit Passed"
+* valueQuantity.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#0 "Edit Passed"

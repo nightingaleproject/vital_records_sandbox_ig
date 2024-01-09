@@ -143,7 +143,6 @@
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
 <tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/CodeSystem-vrdr-activity-at-time-of-death-cs.html'>ActivityAtTimeOfDeathCS</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-activity-at-time-of-death-cs.html'>VRDR</a> </td><td>-</td></tr>
-<tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/CodeSystem-vrdr-bypass-edit-flag-cs.html'>BypassEditFlagCS</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-bypass-edit-flag-cs.html'>VRDR</a> </td><td>-</td></tr>
 <tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/CodeSystem-CodeSystem-death-pregnancy-status.html'>DeathPregnancyStatusCS</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-pregnancy-status-cs.html'>VRDR</a> </td><td>-</td></tr>
 <tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/CodeSystem-vrdr-date-of-death-determination-methods-cs.html'>DateOfDeathDeterminationMethodsCS</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-date-of-death-determination-methods-cs.html'>VRDR</a> </td><td>-</td></tr>
 <tr><td> <a href='https://build.fhir.org/ig/nightingaleproject/vital_records_sandbox_ig/CodeSystem-vrdr-document-section-cs.html'>DocumentSectionCS</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-document-section-cs.html'>VRDR</a> </td><td>-</td></tr>
@@ -243,6 +242,7 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Current Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
+<tr><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-bypass-edit-flag-cs.html'>BypassEditFlagCS</a> </td><td><a href='http://build.fhir.org/ig/HL7/vr-common-library/CodeSystem-CodeSystem-vr-edit-flags.html'>VRDR</a> </td><td>-</td></tr>
 <tr><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-canadian-provinces-cs.html'>CanadianProvincesCS</a> </td><td><a href='http://build.fhir.org/ig/HL7/vr-common-library/CodeSystem-CodeSystem-canadian-provinces-vr.html'>VRCL</a> </td><td>-</td></tr>
 <tr><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-country-code-cs.html'>CountryCodeCS</a> </td><td><a href='http://build.fhir.org/ig/HL7/vr-common-library/CodeSystem-CodeSystem-country-code-vr.html'>VRCL</a> </td><td>-</td></tr>
 <tr><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-hispanic-origin-cs.html'>HispanicOriginCS</a> </td><td><a href='http://build.fhir.org/ig/HL7/vr-common-library/CodeSystem-CodeSystem-hispanic-origin-vr.html'>VRCL</a> </td><td>-</td></tr>
