@@ -1,9 +1,9 @@
 
 RuleSet: Identifiers2020NY000182
 * identifier.value = "2020NY000182"
-* identifier.extension[certificateNumber].valueString = "000182"
-* identifier.extension[auxiliaryStateIdentifier1].valueString = "000000000001"
-* identifier.extension[auxiliaryStateIdentifier2].valueString = "100000000001"
+* identifier.extension[CertificateNumberVitalRecords].valueString = "000182"
+* identifier.extension[AuxiliaryStateIdentifier1VitalRecords].valueString = "000000000001"
+* identifier.extension[AuxiliaryStateIdentifier2VitalRecords].valueString = "100000000001"
 
 Instance: CauseOfDeathCodedContentBundle-Example1
 InstanceOf: CauseOfDeathCodedContentBundle

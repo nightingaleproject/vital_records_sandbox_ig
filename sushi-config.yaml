@@ -298,15 +298,15 @@ groups:
     name: VRDR Extensions 
     resources:
       - AliasStatus
-      - AuxiliaryStateIdentifier1
-      - AuxiliaryStateIdentifier2
-      - CertificateNumber
+      #- AuxiliaryStateIdentifier1
+      #- AuxiliaryStateIdentifier2
+      #- CertificateNumber
       #- DateDay
       #- DateMonth
       #- DateTime
       #- DateYear
       - FilingFormat
-      - LocationJurisdictionId
+      #- LocationJurisdictionId
       - NVSSSexAtDeath
       #- PartialDate
       #- PartialDateTime

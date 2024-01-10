@@ -1,4 +1,4 @@
-RuleSet: AuxiliaryStateIdentifier
+/*RuleSet: AuxiliaryStateIdentifier
 * ^context.type = #element
 * ^context.expression = "Identifier"
 * value[x] 1..1
@@ -25,7 +25,7 @@ Description: "Death certificate number. Six digit number.  Leading zeroes are op
 * ^context.expression = "Identifier"
 * value[x] 1..1
 * value[x] only string
-* valueString ^maxLength = 6
+* valueString ^maxLength = 6*/
 
 Extension: StateSpecificField
 Id: StateSpecificField
