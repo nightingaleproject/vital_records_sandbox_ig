@@ -151,7 +151,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
     * ^short = "Entries that are contained in the Cause-Manner section"
     * ^definition = "Entries that are contained in the Cause-Manner section"
   * emptyReason MS
-* insert BundleSectionSlice(cause-manner, cause, 0, 4,  [[Up to 4 lines of cause of death.]],  [[Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death.]], CauseOfDeathPart1 )
+* insert BundleSectionSlice(cause-manner, cause, 0, 4,  [[Up to 4 lines of cause of death.]],  [[Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death.]], MDICauseOfDeathPart1 )
 * insert BundleSectionSlice(cause-manner, other-condition, 0, 1,  [[Other significant conditions contributing to death but not resulting in the underlying cause.]],  [[Other significant conditions contributing to death but not resulting in the underlying cause.]], CauseOfDeathPart2 )
 * insert BundleSectionSlice(cause-manner, manner, 0, 1,  [[Manner of death]],  [[The conclusion arrived at upon completion of death investigation regarding the manner of death.]], MannerOfDeath )
 * insert BundleSectionSlice(cause-manner, how-injury, 0, 1,  [[Certified explanation of how injury occurred.]],  [[Certified explanation of how injury occurred.]], InjuryIncident )
