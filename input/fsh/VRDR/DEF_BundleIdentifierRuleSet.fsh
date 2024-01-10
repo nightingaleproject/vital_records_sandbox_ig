@@ -5,6 +5,6 @@ RuleSet: BundleIdentifiers
 * identifier.value ^maxLength = 12
 * identifier 1..1
 * identifier.extension contains
-    CertificateNumber named certificateNumber 0..1 and
-    AuxiliaryStateIdentifier1 named auxiliaryStateIdentifier1 0..1 and
-    AuxiliaryStateIdentifier2 named auxiliaryStateIdentifier2 0..1
+    CertificateNumberVitalRecords named certificateNumber 0..1 and
+    AuxiliaryStateIdentifier1VitalRecords named auxiliaryStateIdentifier1 0..1 and
+    AuxiliaryStateIdentifier2VitalRecords named auxiliaryStateIdentifier2 0..1
