@@ -259,6 +259,7 @@ groups:
       - AutomatedUnderlyingCauseOfDeath
       - AutopsyPerformedIndicator
       - BirthRecordIdentifier
+      - BirthRecordIdentifierChild
       - CauseOfDeathCodedContentBundle
       - CauseOfDeathPart1
       - CauseOfDeathPart2
@@ -283,6 +284,7 @@ groups:
       - DispositionLocation
       - EntityAxisCauseOfDeath
       - ExaminerContacted
+      - FetalDeathRecordIdentifier
       - FuneralHome
       - InjuryIncident 
       - InjuryLocation
