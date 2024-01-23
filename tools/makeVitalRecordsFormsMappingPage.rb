@@ -69,7 +69,7 @@ vOutputFile.puts "This page provides the mapping from standard forms and workshe
 This IG supports communicating information from an EHR system to the jurisdictional vital records offices and to NCHS for standard reporting forms:
  * [U.S. Standard Certificate Of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) ([see table](vital_records_form_mapping.html#us-standard-certificate-of-death-mapping))
 
-Information on updates to the live birth and fetal death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm) and [Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death](https://www.cdc.gov/nchs/nvss/facility-worksheets-guide.htm)"
+Information on updates to the death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm)"
 
 vOutputFile.puts ""
 
@@ -140,6 +140,7 @@ def createMappingTable(pRowFilter, pRowFilterLink, pOutputFile, pSpreadsheet)
         # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vMappingIg] + "StructureDefinition-" + vProfile + ".html)"
       elsif hasContext
         vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html'>#{vProfileName}</a>"  
+        vFieldProfile = row[FORMS_PROFILE_COL].to_s if row[FORMS_PROFILE_COL]
         vField = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + "#{vFieldProfile}" + ".html'>#{vField}</a>"  
         # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vMappingIg] + "StructureDefinition-" + vProfile + ".html)"
       else

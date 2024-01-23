@@ -19,7 +19,7 @@ This page provides the mapping from standard forms and worksheets used to exchan
 This IG supports communicating information from an EHR system to the jurisdictional vital records offices and to NCHS for standard reporting forms:
  * [U.S. Standard Certificate Of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) ([see table](vital_records_form_mapping.html#us-standard-certificate-of-death-mapping))
 
-Information on updates to the live birth and fetal death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm) and [Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death](https://www.cdc.gov/nchs/nvss/facility-worksheets-guide.htm)
+Information on updates to the death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm)
 
 ### <a href='https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf'>U.S. Standard Certificate of Death Mapping</a>
 
@@ -43,7 +43,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>2</td>
   <td>Sex</td>
   <td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-.html'>extension:NVSS-SexAtDeath</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html'>extension:NVSS-SexAtDeath</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
@@ -79,7 +79,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>6</td>
   <td>Birthplace</td>
   <td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td>
-  <td><a href='StructureDefinition-.html'>extension:birthPlace</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>7a</td>
