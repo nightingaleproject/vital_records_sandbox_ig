@@ -109,7 +109,7 @@ Information on updates to the death forms can be found at NVSS [Revisions of the
   <td style='text-align: center'>7e</td>
   <td>Apt No</td>
   <td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-vrdr-decedent.html'>address.extension:unitnumber</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-UnitOrAptNumber.html'>address.extension:unitnumber</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>7f</td>
@@ -121,7 +121,7 @@ Information on updates to the death forms can be found at NVSS [Revisions of the
   <td style='text-align: center'>7g</td>
   <td>Inside City Limits?</td>
   <td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-vrdr-decedent.html'>address.extension:withinCityLimitsIndicator</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>address.extension:withinCityLimitsIndicator</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>8</td>
