@@ -17,7 +17,7 @@
 This page provides the mapping from standard forms and worksheets used to exchange death information to the FHIR resources as defined in this IG.
 
 This IG supports communicating information from an EHR system to the jurisdictional vital records offices and to NCHS for standard reporting forms:
- * [U.S. Standard Certificate Of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) ([see table](vital_records_form_mapping.html#us-standard-certificate-of-death-mapping))
+ * [U.S. Standard Certificate Of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) ([see table](vrdr_forms_mapping.html#us-standard-certificate-of-death-mapping))
 
 Information on updates to the death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm)
 
@@ -109,7 +109,7 @@ Information on updates to the death forms can be found at NVSS [Revisions of the
   <td style='text-align: center'>7e</td>
   <td>Apt No</td>
   <td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td>
-  <td>address.extension:unitnumber</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-vrdr-decedent.html'>address.extension:unitnumber</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>7f</td>
@@ -121,7 +121,7 @@ Information on updates to the death forms can be found at NVSS [Revisions of the
   <td style='text-align: center'>7g</td>
   <td>Inside City Limits?</td>
   <td><a href='StructureDefinition-vrdr-decedent.html'>Decedent</a></td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-vrdr-decedent.html'>address.extension:withinCityLimitsIndicator</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>8</td>
