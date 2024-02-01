@@ -585,6 +585,19 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
     if !row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty?
       vIntroOutputFile.puts "" if !row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty?
       vIntroOutputFile.puts "### Form Mapping"
+      vIntroOutputFile.puts "<details>"
+      vIntroOutputFile.puts ""
+      vIntroOutputFile.puts "<summary>"
+      vIntroOutputFile.puts ""
+      vIntroOutputFile.puts "<strong class='context-menu' >Form Mapping</strong>"
+      vIntroOutputFile.puts ""
+      if firstTable
+        vIntroOutputFile.puts "<style>"
+        vIntroOutputFile.puts " .context-menu {cursor: context-menu; color: #438bca;}"
+        vIntroOutputFile.puts " .context-menu:hover {opacity: 0.5;}"
+        vIntroOutputFile.puts "</style>"
+      end
+      vIntroOutputFile.puts "</summary>"
       vIntroOutputFile.puts "<table class='grid'>"
       vIntroOutputFile.puts "<thead>"
       vIntroOutputFile.puts "  <tr>"

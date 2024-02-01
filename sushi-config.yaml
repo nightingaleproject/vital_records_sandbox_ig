@@ -105,6 +105,8 @@ pages:
     title: VRDR Scope
   vrdr_usage.md:
     title: VRDR Usage
+  vrdr_forms_mapping.md:
+    title: VRDR Forms Mapping
   # DeathRecordDataDictionary.md:
   #   title: Death Record Data Dictionary
   # MortalityRosterDataDictionary.md:
@@ -177,6 +179,7 @@ menu:
     Content Transitions: vrdr-content-transitions.html
     VRDR Death Record Data Dictionary: vrdr_ije_mapping_mortality.html
     VRDR Mortality Roster Data Dictionary: vrdr_ije_mapping_mortalityRoster.html
+    VRDR Forms Mapping: vrdr_forms_mapping.html
     Credits: vrdr_credits.html
     Downloads: vrdr_downloads.html
 
