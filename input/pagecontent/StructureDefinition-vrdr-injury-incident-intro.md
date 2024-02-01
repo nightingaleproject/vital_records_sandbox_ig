@@ -84,7 +84,7 @@
   <td>173</td>
   <td>Place of Injury- literal</td>
   <td>POILITRL</td>
-  <td>component[ placeOfInjury ].value.text</td>
+  <td>component[placeOfInjury].value.text</td>
   <td>string</td>
   <td>-</td>
 </tr>
@@ -102,7 +102,7 @@
   <td>175</td>
   <td>If Transportation Accident, Specify</td>
   <td>TRANSPRT</td>
-  <td>component[ transportationRole ].value.  (if value.code = OTH) the role should be specified in value.text)</td>
+  <td>component[transportationRole].value.  (if value.code = OTH) the role should be specified in value.text)</td>
   <td>codeable</td>
   <td><a href='ValueSet-vrdr-transportation-incident-role-vs.html'>TransportationIncidentRoleVS</a></td>
 </tr>
@@ -146,7 +146,7 @@
 <tr>
   <td style='text-align: center'>40</td>
   <td>Place of Injury</td>
-  <td>component[ placeOfInjury ].value.text</td>
+  <td>component[placeOfInjury].value.text</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf'> Certificate of Death</a></td>
 </tr>
 <tr>
@@ -164,7 +164,7 @@
 <tr>
   <td style='text-align: center'>44</td>
   <td>If Transportation Injury, Specify</td>
-  <td>component[ transportationRole ].value</td>
+  <td>component[transportationRole].value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf'> Certificate of Death</a></td>
 </tr>
 </tbody>
